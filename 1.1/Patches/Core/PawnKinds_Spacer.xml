@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsMoney</xpath>
+		<success>Always</success>
+		<value>
+			<techHediffsMoney>
+				<min>2400</min>
+				<max>6000</max>
+			</techHediffsMoney>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="Archotech"]</xpath>
+				<success>Invert</success>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+				<order>Append</order>
+				<value>
+					<li>Archotech</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="ArchotechWeapon"]</xpath>
+				<success>Invert</success>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+				<order>Append</order>
+				<value>
+					<li>ArchotechWeapon</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

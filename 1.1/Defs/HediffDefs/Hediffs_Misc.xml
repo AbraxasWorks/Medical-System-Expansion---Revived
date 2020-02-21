@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<hediffClass>OrenoMSE.Hediff_BodyPartModule</hediffClass>
+		<defName>MSE_BodyPartModule</defName>
+		<label>module slot</label>
+		<labelNoun>a module slot</labelNoun>
+		<defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>{0} module slot</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================ Bone Implants =================-->
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedEndoskeletonStimulator</defName>
+		<label>advanced endoskeleton stimulator</label>
+		<description>An advanced torso implant that stimulates the overall muscles so they can operate at maximum performance. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>63000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedMuscleStimulator</defName>
+		<label>advanced muscle stimulator</label>
+		<description>An advanced muscle implant that stimulates the overall muscles so they can operate at maximum performance. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>63000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Brain Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>AdvancedJoywire</defName>
+		<label>advanced joywire</label>
+		<description>An advanced brain implant that stimulates the brain's pleasure centers. It dramatically improves a user's mood without any side effect. Advanced Joywires are illegal on many worlds, and are known for destroying whole cultures. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>86000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>AdvancedPainstopper</defName>
+		<label>advanced painstopper</label>
+		<description>An advanced brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily. Can be activated or deactivated according to user will. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>86000</WorkToMake>
+			<Mass>0.08</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedBuilderAI</defName>
+		<label>advanced builder AI</label>
+		<description>An advanced brain implant that contain AI. Capable to communicate with the user brain and act as a guide for building. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedFarmerAI</defName>
+		<label>advanced farmer AI</label>
+		<description>An advanced brain implant that contain AI. Capable to communicate with the user brain and act as a guide for farming. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedDoctorAI</defName>
+		<label>advanced doctor AI</label>
+		<description>An advanced brain implant that contain AI. Capable to communicate with the user brain and act as a guide for doctoring. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedMinerAI</defName>
+		<label>advanced miner AI</label>
+		<description>An advanced brain implant that contain AI. Capable to communicate with the user brain and act as a guide for mining. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedDiplomatAI</defName>
+		<label>advanced diplomat AI</label>
+		<description>An advanced brain implant that contain AI. Able to communicate with the user brain and act as a guide for diplomacy. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedTamerAI</defName>
+		<label>advanced tamer AI</label>
+		<description>An advanced brain implant that contain AI. Able to communicate with the user brain and act as a guide for taming. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedChefAI</defName>
+		<label>advanced chef AI</label>
+		<description>An advanced brain implant that contain AI. Able to communicate with the user brain and act as a guide for cooking. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedHunterAI</defName>
+		<label>advanced hunter AI</label>
+		<description>An advanced brain implant that contain AI. Able to communicate with the user brain and act as a guide for hunting. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedLaborAI</defName>
+		<label>advanced labor AI</label>
+		<description>An advanced brain implant that contain AI. Able to communicate with the user brain and act as a guide for advanced unskilled labor. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>20</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>96000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Organ Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantArchotech">
+		<defName>MSE_AdvancedAppetiteSuppressant</defName>
+		<label>advanced appetite suppressant</label>
+		<description>An advanced stomach implant that suppres hungry. Requires archotech implants surgery research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<WorkToMake>86000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

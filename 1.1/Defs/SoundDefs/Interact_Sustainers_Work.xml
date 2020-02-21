@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>MSE_Assembling</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>3</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/Prostheses/MSE_Assembling</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>12</min>
+					<max>12</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541177</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>10</min>
+					<max>50</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<!-- <sustainIntervalRange>
+					<min>0.4705882</min>
+					<max>0.8941177</max>
+				</sustainIntervalRange> -->
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Heart</defName>
+		<label>heart</label>
+		<description>A biological heart. Pumps blood around the body. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Lung</defName>
+		<label>lung</label>
+		<description>A biological lung. A pair of these form the core of the respiratory system. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Kidney</defName>
+		<label>kidney</label>
+		<description>A biological kidney. Filters and removes waste products from the blood. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Liver</defName>
+		<label>liver</label>
+		<description>A biological liver. Plays an important role in metabolism. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Natural Organs ================-->
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Brain</defName>
+		<label>brain cells</label>
+		<description>A biological brain cells. The main core of almost all organic life. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Stomach</defName>
+		<label>stomach</label>
+		<description>A biological stomach. Digests food and turns it into energy. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================= Natural Limbs ================-->
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Leg</defName>
+		<label>leg</label>
+		<description>A biological leg. Lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Foot</defName>
+		<label>foot</label>
+		<description>A biological foot. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Toe</defName>
+		<label>toe</label>
+		<description>A biological toe. Part of foot that helps you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Shoulder</defName>
+		<label>shoulder</label>
+		<description>A biological shoulder. Lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Arm</defName>
+		<label>arm</label>
+		<description>A biological arm. Lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Hand</defName>
+		<label>hand</label>
+		<description>A biological hand. Part of arm that lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Finger</defName>
+		<label>finger</label>
+		<description>A biological finger. Part of hand that helps you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Eye</defName>
+		<label>eye</label>
+		<description>A biological eye. Absorbs light, which lets a person to see. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Ear</defName>
+		<label>ear</label>
+		<description>A biological ear. Picks up vibrations, allowing people to hear sound. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Nose</defName>
+		<label>nose</label>
+		<description>A biological nose. The finishing touch to a face. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Jaw</defName>
+		<label>jaw</label>
+		<description>A biological jaw. Allow people to eat and socializing. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

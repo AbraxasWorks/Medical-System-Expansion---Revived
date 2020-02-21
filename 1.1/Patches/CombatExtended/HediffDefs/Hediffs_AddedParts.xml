@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<!-- Simple prostheses -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartSimple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartSimple"][defName="SimpleProstheticHand"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Bionic prostheses -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionic"][defName="BionicHand"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Bionic prostheses - Special -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionicSpecial"][defName="PowerClaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionicSpecial"][defName="PowerArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartBionicSpecial"][defName="MSE_PowerBlade"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Archotech prostheses -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotech"][defName="ArchotechHand"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Archotech prostheses - Special -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotechSpecial"][defName="AdvancedPowerClaw"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotechSpecial"][defName="AdvancedPowerArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedBodyPartArchotechSpecial"][defName="MSE_AdvancedPowerBlade"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<!-- Bionic prosthetic modules -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleBionic"][defName="MSE_BionicArmModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleBionic"][defName="MSE_BionicHandModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleBionic"][defName="MSE_BionicFingerModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Bionic prosthetic modules - Special -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleBionic"][defName="MSE_PowerArmModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleBionic"][defName="MSE_PowerClawModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Archotech prosthetic modules -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleArchotech"][defName="MSE_ArchotechArmModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleArchotech"][defName="MSE_ArchotechHandModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleArchotech"][defName="MSE_ArchotechFingerModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<!-- Archotech prosthetic modules - Special -->
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleArchotech"][defName="MSE_AdvancedPowerArmModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+
+						<li Class="PatchOperationAttributeSet">
+							<xpath>Defs/HediffDef[@ParentName="MSE_AddedModuleArchotech"][defName="MSE_AdvancedPowerClawModule"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+							<attribute>Class</attribute>
+							<value>CombatExtended.ToolCE</value>
+						</li>
+					</operations>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
