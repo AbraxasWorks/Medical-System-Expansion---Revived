@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Birds and the Bees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/HediffDef[defName="ReproductiveOrgans"]</xpath>
+							<success>Invert</success>
+						</li>
+
+						<li Class="PatchOperationInsert">
+							<xpath>Defs/HediffDef[@Name="MSE_NaturalBodyPartNormal"]</xpath>
+							<value>
+								<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+									<defName>ReproductiveOrgans</defName>
+									<label>reproductive organs transplant rejection</label>
+								</HediffDef>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
+							<value>
+								<HediffDef ParentName="MSE_AddedBodyPartSimple">
+									<defName>SimpleProstheticReproductiveOrgans</defName>
+									<label>prosthetic reproductive organ</label>
+									<labelNoun>a prosthetic reproductive organ</labelNoun>
+									<spawnThingOnRemoved>SimpleProstheticReproductiveOrgans</spawnThingOnRemoved>
+									<addedPartProps>
+										<solid>true</solid>
+										<partEfficiency>0.00</partEfficiency>
+										<betterThanNatural>false</betterThanNatural>
+									</addedPartProps>
+								</HediffDef>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
+							<value>
+								<HediffDef ParentName="MSE_AddedBodyPartBionic">
+									<defName>BionicReproductiveOrgans</defName>
+									<label>bionic reproductive organ</label>
+									<labelNoun>a bionic reproductive organ</labelNoun>
+									<spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
+									<addedPartProps>
+										<solid>true</solid>
+										<partEfficiency>1.25</partEfficiency>
+									</addedPartProps>
+								</HediffDef>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/HediffDef[defName="ArchotechReproductiveOrgans"]</xpath>
+							<success>Invert</success>
+						</li>
+
+						<li Class="PatchOperationInsert">
+							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech"]</xpath>
+							<value>
+								<HediffDef ParentName="MSE_AddedBodyPartArchotech">
+									<defName>ArchotechReproductiveOrgans</defName>
+									<label>archotech reproductive organ</label>
+									<labelNoun>an archotech reproductive organ</labelNoun>
+									<spawnThingOnRemoved>ArchotechReproductiveOrgans</spawnThingOnRemoved>
+									<addedPartProps>
+										<solid>true</solid>
+										<partEfficiency>1.50</partEfficiency>
+									</addedPartProps>
+								</HediffDef>
+							</value>
+						</li>
+					</operations>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

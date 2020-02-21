@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicEye</defName>
+		<label>bionic eye</label>
+		<description>An advanced artifical eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicArm</defName>
+		<label>bionic arm</label>
+		<description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way. Requires bionics research to install it.</description>
+		<costList> 
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicLeg</defName>
+		<label>bionic leg</label>
+		<description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicSpine</defName>
+		<label>bionic spine</label>
+		<description>An advanced artificial spine. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It matches the performance of a biological spine. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+		<defName>BionicHeart</defName>
+		<label>bionic heart</label>
+		<description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. Requires bionic organs research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+		<defName>BionicStomach</defName>
+		<label>bionic stomach</label>
+		<description>An advanced artificial stomach. A set of sensors and chemical synthesizers efficiently digest nearly any energy-bearing foodstuff. An integrated lattice-dust healing system automatically repairs any damage caused by the powerful acids. It is better than a biological stomach in almost every way. Requires bionic organs research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicEar</defName>
+		<label>bionic ear</label>
+		<description>An advanced artificial ear implant. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>PowerClaw</defName>
+		<label>power claw</label>
+		<description>A combat-oriented hand replacement consisting of a mechanical hand with a vicious claw on each finger. It is vicious in combat, and its powerful mini-servos can crush a skull like a natural hand crushes an egg. The blades can be retracted, making it as useful as a biological hand for non-combat tasks. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--================ Bionic Organs =================-->
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+		<defName>BionicLung</defName>
+		<label>bionic lung</label>
+		<description>An advanced artificial lung. A lattice-dust healing system allows it to recover from damage. It is better than a biological lung in almost every way. Requires bionic organs research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+		<defName>BionicKidney</defName>
+		<label>bionic kidney</label>
+		<description>An advanced artificial kidney. A lattice-dust healing system allows it to recover from damage. It is better than a biological kidney in almost every way. Requires bionic organs research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+		<defName>BionicLiver</defName>
+		<label>bionic liver</label>
+		<description>An advanced artificial liver. A lattice-dust healing system allows it to recover from damage. It is better than a biological liver in almost every way. Requires bionic organs research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================= Bionic Limbs =================-->
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicShoulder</defName>
+		<label>bionic shoulder</label>
+		<description>An advanced artificial shoulder. With its biogel nerve-link and lattice-dust healing system, it is better than a biological shoulder in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic">
+		<defName>BionicJaw</defName>
+		<label>bionic jaw</label>
+		<description>An advanced artificial jaw. With its biogel nerve-link and lattice-dust healing system, it is better than a biological jaw in almost every way. Requires bionics research to install it.</description>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================= Bionic Bones =================-->
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicClavicle</defName>
+		<label>bionic clavicle</label>
+		<description>An advanced artificial clavicle. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicSternum</defName>
+		<label>bionic sternum</label>
+		<description>An advanced artificial sternum. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicRib</defName>
+		<label>bionic rib</label>
+		<description>An advanced artificial rib. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicPelvis</defName>
+		<label>bionic pelvis</label>
+		<description>An advanced artificial pelvis. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicHumerus</defName>
+		<label>bionic humerus</label>
+		<description>An advanced artificial humerus. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicRadius</defName>
+		<label>bionic radius</label>
+		<description>An advanced artificial radius. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicFemur</defName>
+		<label>bionic femur</label>
+		<description>An advanced artificial femur. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+		<defName>BionicTibia</defName>
+		<label>bionic tibia</label>
+		<description>An advanced artificial tibia. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Special Bionics ================-->
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>AntitoxinKidney</defName>
+		<label>antitoxin kidney</label>
+		<description>An advanced artificial antitoxin kidney. With lattice-dust healing system allows it to recover from damage and toxin filtering system allow it to filter toxin from blood. It is better than a biological kidney in almost every way. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>MedicalLiver</defName>
+		<label>medical liver</label>
+		<description>An advanced artificial medical liver. With lattice-dust healing system allows it to recover from damage and it can secreted more kind of immune system. It is better than a biological liver in almost every way. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>EnergizedLiver</defName>
+		<label>energized liver</label>
+		<description>An advanced artificial energized liver. With lattice-dust healing system allows it to recover from damage and it can secreted special hormone that make user more energetic. It is better than a biological liver in almost every way. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>MSE_PowerBlade</defName>
+		<label>power blade</label>
+		<description>An advanced artificial power blade. With its biogel nerve-link, lattice-dust healing system, and scyther blade attached to it, it is better than a biological shoulder in almost every way. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2400</MarketValue>
+			<WorkToMake>114000</WorkToMake>
+			<Mass>7</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>PowerArm</defName>
+		<label>power arm</label>
+		<description>An advanced artificial power arm. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<WorkToMake>78000</WorkToMake>
+			<Mass>6</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>BreathingSupportRib</defName>
+		<label>breathing support rib</label>
+		<description>An advanced artificial breathing support rib. With lattice-dust healing system allows it to recover from damage and it can make user breath more ease. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>RelaxationRib</defName>
+		<label>relaxation rib</label>
+		<description>An advanced artificial relaxation rib. With lattice-dust healing system allows it to recover from damage and it can make user feel more relaxed. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>ColdRegulatorRib</defName>
+		<label>cold regulator rib</label>
+		<description>An advanced artificial cold regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate cold temperature. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+		<defName>HeatRegulatorRib</defName>
+		<label>heat regulator rib</label>
+		<description>An advanced artificial heat regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate hot temperature. Requires special bionics research to install it.</description>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

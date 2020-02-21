@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<MessageSuccessfullyRemovedImplant>{SURGEON_labelShort} has successfully removed {PATIENT_labelShort}'s {HEDIFF} implant.</MessageSuccessfullyRemovedImplant>
+
+</LanguageData>

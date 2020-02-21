@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Brain</defName>
+		<label>brain cells transplant rejection</label>
+		<initialSeverity>0.65</initialSeverity>
+		<comps Inherit="False">
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>48</baseTendDurationHours>
+				<severityPerDayTended>-0.10</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_GrowthMode">
+				<severityPerDayGrowing>0.05</severityPerDayGrowing>
+				<severityPerDayRemission>-0.03</severityPerDayRemission>
+				<severityPerDayGrowingRandomFactor>
+					<min>0.45</min>
+					<max>1.65</max>
+				</severityPerDayGrowingRandomFactor>
+				<severityPerDayRemissionRandomFactor>
+					<min>0.60</min>
+					<max>1.40</max>
+				</severityPerDayRemissionRandomFactor>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>ResurrectionSickness</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Heart</defName>
+		<label>heart transplant rejection</label>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Lung</defName>
+		<label>lung transplant rejection</label>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Asthma</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Kidney</defName>
+		<label>kidney transplant rejection</label>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Liver</defName>
+		<label>liver transplant rejection</label>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
+		<defName>Stomach</defName>
+		<label>stomach transplant rejection</label>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>4</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.60</partEfficiencyOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.40</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>FoodPoisoning</hediff>
+						<mtbDays>2</mtbDays>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Eye</defName>
+		<label>eye transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Ear</defName>
+		<label>ear transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Nose</defName>
+		<label>nose transplant rejection</label>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<painOffset>0.10</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.15</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.30</painOffset>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Jaw</defName>
+		<label>jaw transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Shoulder</defName>
+		<label>shoulder transplant rejection</label>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.10</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.40</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.70</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.50</painOffset>
+				<partEfficiencyOffset>-0.90</partEfficiencyOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Arm</defName>
+		<label>arm transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Hand</defName>
+		<label>hand transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Finger</defName>
+		<label>finger transplant rejection</label>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.50</painOffset>
+				<partEfficiencyOffset>-0.75</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Leg</defName>
+		<label>leg transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Foot</defName>
+		<label>foot transplant rejection</label>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
+		<defName>Toe</defName>
+		<label>toe transplant rejection</label>
+		<stages Inherit="False">
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>mild rejection</label>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>mild rejection</label>
+				<painOffset>0.15</painOffset>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>acute rejection</label>
+				<painOffset>0.30</painOffset>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<label>chronic rejection</label>
+				<painOffset>0.50</painOffset>
+				<partEfficiencyOffset>-0.75</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<label>chronic rejection</label>
+				<partEfficiencyOffset>-1.00</partEfficiencyOffset>
+				<destroyPart>true</destroyPart>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>
