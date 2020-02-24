@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Reflection;
-using Harmony;
+using HarmonyLib;
 
-namespace OrenoMSE.Harmony
+namespace OrenoMSE.Harmony2
 {
     /*
     // The code devrived from Zombieland mod by pardeike.

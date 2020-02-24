@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony
+namespace OrenoMSE.Harmony2
 {
     public class Harmony_RecipeInstallArtificialBodyPart
     {

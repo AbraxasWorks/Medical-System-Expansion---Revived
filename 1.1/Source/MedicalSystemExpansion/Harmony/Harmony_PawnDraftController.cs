@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony
+namespace OrenoMSE.Harmony2
 {
     public class Harmony_PawnDraftController
     {
