@@ -1,0 +1,2 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaExpandedProsthetic\Assemblies\ExpandedMedicalSystem.dll
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Debug\ExpandedMedicalSystem.dll
