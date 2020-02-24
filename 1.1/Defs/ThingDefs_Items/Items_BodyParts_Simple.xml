@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticLeg</defName>
+		<label>prosthetic leg</label>
+		<description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticArm</defName>
+		<label>prosthetic arm</label>
+		<description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Organ">
+		<defName>SimpleProstheticHeart</defName>
+		<label>prosthetic heart</label>
+		<description>A heart prosthesis. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative. Requires prosthetic organs research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>270</MarketValue>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>CochlearImplant</defName>
+		<label>cochlear implant</label>
+		<description>An implant which replaces normal hearing. An external microphone transmits a sound signal to electrodes wrapped around the inner ear's auditory sensing nerves. The electrodes stimulate the nerves according to the sound, creating a sensation of hearing. It's not as good as a natural ear, but it's a lot better than being deaf. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=========== Simple Prosthetic Limbs ============-->
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticFoot</defName>
+		<label>prosthetic foot</label>
+		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticToe</defName>
+		<label>prosthetic toe</label>
+		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticHand</defName>
+		<label>prosthetic hand</label>
+		<description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticFinger</defName>
+		<label>prosthetic finger</label>
+		<description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple">
+		<defName>SimpleProstheticJaw</defName>
+		<label>prosthetic jaw</label>
+		<description>A jaw prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real jaw. Requires prosthetics research to install it.</description>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=========== Simple Prosthetic Bones ============-->
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<description>A clavicle prosthesis. It is inferior to a real clavicle. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticSternum</defName>
+		<label>prosthetic sternum</label>
+		<description>A sternum prosthesis. It is inferior to a real sternum. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticRib</defName>
+		<label>prosthetic rib</label>
+		<description>A rib prosthesis. It is inferior to a real rib. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticPelvis</defName>
+		<label>prosthetic pelvis</label>
+		<description>A pelvis prosthesis. It is inferior to a real pelvis. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticHumerus</defName>
+		<label>prosthetic humerus</label>
+		<description>A humerus prosthesis. It is inferior to a real humerus. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticRadius</defName>
+		<label>prosthetic radius</label>
+		<description>A radius prosthesis. It is inferior to a real radius. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticFemur</defName>
+		<label>prosthetic femur</label>
+		<description>A femur prosthesis. It is inferior to a real femur. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticTibia</defName>
+		<label>prosthetic tibia</label>
+		<description>A tibia prosthesis. It is inferior to a real tibia. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

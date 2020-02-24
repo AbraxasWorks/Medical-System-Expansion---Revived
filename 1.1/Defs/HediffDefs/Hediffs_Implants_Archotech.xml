@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================ Bone Implants =================-->
+	<HediffDef ParentName="MSE_ImplantHediffArchotech">
+		<defName>MSE_AdvancedEndoskeletonStimulator</defName>
+		<label>advanced endoskeleton stimulator</label>
+		<labelNoun>an advanced endoskeleton stimulator</labelNoun>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedEndoskeletonStimulator</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--=============== Muscle Implants ================-->
+	<HediffDef ParentName="MSE_ImplantHediffBionic">
+		<defName>MSE_AdvancedArmMuscleStimulator</defName>
+		<label>arm muscle stimulator</label>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+				<!-- <statOffsets>
+					<MeleeDPS>1.20</MeleeDPS>
+				</statOffsets> Does not actually increase MeleeDPS -->
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedMuscleStimulator</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffBionic">
+		<defName>MSE_AdvancedLegMuscleStimulator</defName>
+		<label>leg muscle stimulator</label>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedMuscleStimulator</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--================ Brain Implants ================-->
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>AdvancedJoywire</defName>
+		<label>advanced joywire</label>
+		<labelNoun>an advanced joywire</labelNoun>
+		<stages>
+			<li>
+				<label>AR</label>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedJoywire</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>AdvancedPainstopper</defName>
+		<label>advanced painstopper</label>
+		<labelNoun>an advanced painstopper</labelNoun>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_Painstopper">
+				<label>painstopper</label>
+				<description>activate/deactivate painstopper that nullify pain.</description>
+				<uiIconPath>UI/Icons/Prosthetic/IconPainstopper</uiIconPath>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<painFactor>0</painFactor>
+			</li>
+			<li>
+				<label>disabled</label>
+				<minSeverity>1.0</minSeverity>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedPainstopper</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedBuilderAI</defName>
+		<label>advanced builder AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<ConstructionSpeed>0.30</ConstructionSpeed>
+					<ConstructSuccessChance>0.20</ConstructSuccessChance>
+					<SmoothingSpeed>0.30</SmoothingSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedBuilderAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedFarmerAI</defName>
+		<label>advanced farmer AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<PlantWorkSpeed>0.30</PlantWorkSpeed>
+					<PlantHarvestYield>0.20</PlantHarvestYield>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedFarmerAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedDoctorAI</defName>
+		<label>advanced doctor AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<MedicalOperationSpeed>0.30</MedicalOperationSpeed>
+					<MedicalSurgerySuccessChance>0.20</MedicalSurgerySuccessChance>
+					<MedicalTendSpeed>0.30</MedicalTendSpeed>
+					<MedicalTendQuality>0.20</MedicalTendQuality>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedDoctorAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedMinerAI</defName>
+		<label>advanced miner AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<MiningSpeed>0.30</MiningSpeed>
+					<MiningYield>0.20</MiningYield>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedMinerAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedDiplomatAI</defName>
+		<label>advanced diplomat AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<NegotiationAbility>0.30</NegotiationAbility>
+					<SocialImpact>0.30</SocialImpact>
+					<TradePriceImprovement>0.20</TradePriceImprovement>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedDiplomatAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedTamerAI</defName>
+		<label>advanced tamer AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<TameAnimalChance>0.20</TameAnimalChance>
+					<TrainAnimalChance>0.20</TrainAnimalChance>
+					<AnimalGatherSpeed>0.30</AnimalGatherSpeed>
+					<AnimalGatherYield>0.20</AnimalGatherYield>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedTamerAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedChefAI</defName>
+		<label>advanced chef AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<ButcheryFleshEfficiency>0.20</ButcheryFleshEfficiency>
+					<ButcheryFleshSpeed>0.30</ButcheryFleshSpeed>
+					<CookSpeed>0.30</CookSpeed>
+					<FoodPoisonChance>-0.20</FoodPoisonChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedChefAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedHunterAI</defName>
+		<label>advanced hunter AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<HuntingStealth>0.20</HuntingStealth>
+					<MeleeHitChance>0.20</MeleeHitChance>
+					<ShootingAccuracyPawn>30.0</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedHunterAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
+		<defName>MSE_AdvancedLaborAI</defName>
+		<label>advanced labor AI</label>
+		<stages>
+			<li>
+				<statOffsets>
+					<SmoothingSpeed>0.20</SmoothingSpeed>
+					<UnskilledLaborSpeed>0.30</UnskilledLaborSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedLaborAI</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!--================ Organ Implants ================-->
+	<HediffDef ParentName="MSE_ImplantHediffArchotech_Organ">
+		<defName>MSE_AdvancedAppetiteSuppressant</defName>
+		<label>advanced appetite suppressant</label>
+		<stages>
+			<li>
+				<hungerRateFactorOffset>-0.30</hungerRateFactorOffset>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_AdvancedAppetiteSuppressant</spawnThingOnRemoved>
+	</HediffDef>
+
+</Defs>

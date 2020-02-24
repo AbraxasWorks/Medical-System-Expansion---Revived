@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryRemoveImplant_Brain">
+		<defName>RemoveJoywire_Brain</defName>
+		<label>remove joywire implant system</label>
+		<description>Remove a joywire implant system.</description>
+		<jobString>Removing joywire implant system.</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<removesHediff>Joywire</removesHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryRemoveImplant_Brain">
+		<defName>RemovePainstopper_Brain</defName>
+		<label>remove painstopper implant system</label>
+		<description>Remove a painstopper implant system.</description>
+		<jobString>Removing painstopper implant system.</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<removesHediff>Painstopper</removesHediff>
+	</RecipeDef>
+
+</Defs>

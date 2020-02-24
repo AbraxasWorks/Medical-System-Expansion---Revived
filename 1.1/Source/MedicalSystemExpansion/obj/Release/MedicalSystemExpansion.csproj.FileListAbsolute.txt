@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedicalSystemExpansion\Assemblies\MedicalSystemExpansion.dll
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\MedicalSystemExpansion.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\MedicalSystemExpansion.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\MedicalSystemExpansion.dll
