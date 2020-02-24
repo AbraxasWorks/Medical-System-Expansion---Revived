@@ -13,7 +13,7 @@
 			<Mass>3</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -35,7 +35,7 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -57,7 +57,7 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
@@ -82,7 +82,7 @@
 			<Mass>0.05</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -104,7 +104,7 @@
 			<Mass>2</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -126,7 +126,7 @@
 			<Mass>2</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
@@ -149,7 +149,7 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -171,7 +171,7 @@
 			<Mass>0.01</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
@@ -194,7 +194,7 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>
@@ -216,7 +216,7 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Sculpt</effectWorking>
 			<soundWorking>Recipe_Sculpt</soundWorking>

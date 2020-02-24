@@ -27,7 +27,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartArtificialBase" Abstract="True">
+	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartProstheticBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -118,7 +118,7 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartArtificialBase" Abstract="True">
+	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
 		<!-- Vanilla Code -->
 		<!-- Because EPOE messed up vanilla BodyPartArchotechBase -->
 		<graphicData>
@@ -129,7 +129,7 @@
 		<!-- Vanilla Code END -->
 
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>MSE_Assembling</soundWorking>

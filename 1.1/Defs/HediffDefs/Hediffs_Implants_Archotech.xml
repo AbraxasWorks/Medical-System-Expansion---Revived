@@ -224,7 +224,7 @@
 			<li>
 				<statOffsets>
 					<SmoothingSpeed>0.20</SmoothingSpeed>
-					<UnskilledLaborSpeed>0.30</UnskilledLaborSpeed>
+					<GeneralLaborSpeed>0.30</GeneralLaborSpeed>
 				</statOffsets>
 			</li>
 		</stages>

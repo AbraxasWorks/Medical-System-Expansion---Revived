@@ -1,7 +1,7 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.Harmony
+namespace OrenoMSE.Harmony2
 {
     public class Harmony_Hediff
     {
