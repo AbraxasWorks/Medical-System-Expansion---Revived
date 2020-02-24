@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================= Implant Base =================-->
+	<HediffDef Name="MSE_ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_Implant</hediffClass>
+		<isBad>false</isBad>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+	<!--===================== END ======================-->
+
+
+	<!--=================== Bionic =====================-->
+
+	<HediffDef Name="MSE_ImplantHediffBionic" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(198, 255, 0)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantHediffBionic_Brain" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(118, 255, 3)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantHediffBionic_Organ" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(174, 234, 0)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<!--================== Archotech ===================-->
+
+	<HediffDef Name="MSE_ImplantHediffArchotech" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(255, 145, 0)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantHediffArchotech_Brain" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(255, 61, 0)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantHediffArchotech_Organ" ParentName="MSE_ImplantHediffBase" Abstract="True">
+		<defaultLabelColor>(255, 109, 0)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+</Defs>

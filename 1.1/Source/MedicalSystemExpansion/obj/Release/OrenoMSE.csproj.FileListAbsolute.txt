@@ -1,0 +1,12 @@
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\OrenoMSE.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\OrenoMSE.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\ExpandedMedicalSystem\ExpandedMedicalSystem\obj\Release\OrenoMSE.dll
+D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\MedicalSystemExpansion\obj\Release\OrenoMSE.dll
+D:\Documents\Visual Studio 2017\Projects\MedicalSystemExpansion\MedicalSystemExpansion\obj\Release\OrenoMSE.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedicalSystemExpansion\Assemblies\OrenoMSE.dll
+D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.dll
+D:\Documents\Visual Studio 2017\Projects\Oreno\Framework\MedicalSystemExpansion\obj\Release\OrenoMSE.csprojAssemblyReference.cache
