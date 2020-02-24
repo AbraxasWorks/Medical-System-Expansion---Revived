@@ -27,19 +27,19 @@
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 		<!-- <thingCategories>
-			<li>BodyPartsArtificial</li>
+			<li>BodyParts</li>
 		</thingCategories> -->
 		<pathCost>10</pathCost>
 		<!-- Vanilla Code END -->
 
 		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>MSE_Assembling</soundWorking>
 		</recipeMaker>
 		<thingCategories>
-			<li>BodyPartsArtificial</li>
+			<li>BodyParts</li>
 			<li>Implants</li>
 		</thingCategories>
 		<thingSetMakerTags>
