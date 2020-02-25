@@ -4,6 +4,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Brain</defName>
 		<label>brain cells transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<initialSeverity>0.65</initialSeverity>
 		<comps Inherit="False">
 			<li Class="HediffCompProperties_TendDuration">
@@ -95,6 +96,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Heart</defName>
 		<label>heart transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -167,6 +169,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Lung</defName>
 		<label>lung transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -239,6 +242,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Kidney</defName>
 		<label>kidney transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -310,6 +314,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Liver</defName>
 		<label>liver transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -382,6 +387,7 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
 		<defName>Stomach</defName>
 		<label>stomach transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -454,16 +460,19 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Eye</defName>
 		<label>eye transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Ear</defName>
 		<label>ear transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Nose</defName>
 		<label>nose transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -497,11 +506,13 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Jaw</defName>
 		<label>jaw transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Shoulder</defName>
 		<label>shoulder transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -556,16 +567,19 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Arm</defName>
 		<label>arm transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Hand</defName>
 		<label>hand transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Finger</defName>
 		<label>finger transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -602,16 +616,19 @@
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Leg</defName>
 		<label>leg transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Foot</defName>
 		<label>foot transplant rejection</label>
+		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 		<defName>Toe</defName>
 		<label>toe transplant rejection</label>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<minSeverity>0.001</minSeverity>

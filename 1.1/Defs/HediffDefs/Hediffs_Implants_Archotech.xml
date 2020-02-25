@@ -6,6 +6,7 @@
 		<defName>MSE_AdvancedEndoskeletonStimulator</defName>
 		<label>advanced endoskeleton stimulator</label>
 		<labelNoun>an advanced endoskeleton stimulator</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -27,6 +28,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic">
 		<defName>MSE_AdvancedArmMuscleStimulator</defName>
 		<label>arm muscle stimulator</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -46,6 +48,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic">
 		<defName>MSE_AdvancedLegMuscleStimulator</defName>
 		<label>leg muscle stimulator</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -64,6 +67,7 @@
 		<defName>AdvancedJoywire</defName>
 		<label>advanced joywire</label>
 		<labelNoun>an advanced joywire</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<label>AR</label>
@@ -76,6 +80,7 @@
 		<defName>AdvancedPainstopper</defName>
 		<label>advanced painstopper</label>
 		<labelNoun>an advanced painstopper</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="OrenoMSE.HediffCompProperties_Painstopper">
 				<label>painstopper</label>
@@ -99,6 +104,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedBuilderAI</defName>
 		<label>advanced builder AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -114,6 +120,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedFarmerAI</defName>
 		<label>advanced farmer AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -128,6 +135,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedDoctorAI</defName>
 		<label>advanced doctor AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -144,6 +152,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedMinerAI</defName>
 		<label>advanced miner AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -158,6 +167,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedDiplomatAI</defName>
 		<label>advanced diplomat AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -173,6 +183,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedTamerAI</defName>
 		<label>advanced tamer AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -189,6 +200,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedChefAI</defName>
 		<label>advanced chef AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -205,6 +217,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedHunterAI</defName>
 		<label>advanced hunter AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -220,6 +233,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Brain">
 		<defName>MSE_AdvancedLaborAI</defName>
 		<label>advanced labor AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -235,6 +249,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffArchotech_Organ">
 		<defName>MSE_AdvancedAppetiteSuppressant</defName>
 		<label>advanced appetite suppressant</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<hungerRateFactorOffset>-0.30</hungerRateFactorOffset>

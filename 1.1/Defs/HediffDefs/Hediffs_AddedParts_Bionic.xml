@@ -5,6 +5,7 @@
 		<defName>BionicEye</defName>
 		<label>bionic eye</label>
 		<labelNoun>a bionic eye</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -16,6 +17,7 @@
 		<defName>BionicArm</defName>
 		<label>bionic arm</label>
 		<labelNoun>a bionic arm</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -41,6 +43,7 @@
 		<defName>BionicLeg</defName>
 		<label>bionic leg</label>
 		<labelNoun>a bionic leg</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -52,6 +55,7 @@
 		<defName>BionicSpine</defName>
 		<label>bionic spine</label>
 		<labelNoun>a bionic spine</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicSpine</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -63,6 +67,7 @@
 		<defName>BionicHeart</defName>
 		<label>bionic heart</label>
 		<labelNoun>a bionic heart</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicHeart</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -74,6 +79,7 @@
 		<defName>BionicStomach</defName>
 		<label>bionic stomach</label>
 		<labelNoun>a bionic stomach</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicStomach</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -85,6 +91,7 @@
 		<defName>BionicEar</defName>
 		<label>bionic ear</label>
 		<labelNoun>a bionic ear</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicEar</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -96,6 +103,7 @@
 		<defName>PowerClaw</defName>
 		<label>power claw</label>
 		<labelNoun>a power claw</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -125,6 +133,7 @@
 		<defName>BionicLung</defName>
 		<label>bionic lung</label>
 		<labelNoun>a bionic lung</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicLung</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -136,6 +145,7 @@
 		<defName>BionicKidney</defName>
 		<label>bionic kidney</label>
 		<labelNoun>a bionic kidney</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicKidney</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -147,6 +157,7 @@
 		<defName>BionicLiver</defName>
 		<label>bionic liver</label>
 		<labelNoun>a bionic liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicLiver</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -160,6 +171,7 @@
 		<defName>BionicFoot</defName>
 		<label>bionic foot</label>
 		<labelNoun>a bionic foot</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicFoot</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -171,6 +183,7 @@
 		<defName>BionicToe</defName>
 		<label>bionic toe</label>
 		<labelNoun>a bionic toe</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicToe</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -182,6 +195,7 @@
 		<defName>BionicShoulder</defName>
 		<label>bionic shoulder</label>
 		<labelNoun>a bionic shoulder</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicShoulder</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -193,6 +207,7 @@
 		<defName>BionicHand</defName>
 		<label>bionic hand</label>
 		<labelNoun>a bionic hand</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -218,6 +233,7 @@
 		<defName>BionicFinger</defName>
 		<label>bionic finger</label>
 		<labelNoun>a bionic finger</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -229,6 +245,7 @@
 		<defName>BionicJaw</defName>
 		<label>bionic jaw</label>
 		<labelNoun>a bionic jaw</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicJaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -242,6 +259,7 @@
 		<defName>BionicClavicle</defName>
 		<label>bionic clavicle</label>
 		<labelNoun>a bionic clavicle</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicClavicle</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -253,6 +271,7 @@
 		<defName>BionicSternum</defName>
 		<label>bionic sternum</label>
 		<labelNoun>a bionic sternum</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicSternum</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -263,6 +282,7 @@
 		<defName>BionicRib</defName>
 		<label>bionic rib</label>
 		<labelNoun>a bionic rib</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicRib</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -273,6 +293,7 @@
 		<defName>BionicPelvis</defName>
 		<label>bionic pelvis</label>
 		<labelNoun>a bionic pelvis</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicPelvis</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -284,6 +305,7 @@
 		<defName>BionicHumerus</defName>
 		<label>bionic humerus</label>
 		<labelNoun>a bionic humerus</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicHumerus</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -295,6 +317,7 @@
 		<defName>BionicRadius</defName>
 		<label>bionic radius</label>
 		<labelNoun>a bionic radius</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicRadius</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -306,6 +329,7 @@
 		<defName>BionicFemur</defName>
 		<label>bionic femur</label>
 		<labelNoun>a bionic femur</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicFemur</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -317,6 +341,7 @@
 		<defName>BionicTibia</defName>
 		<label>bionic tibia</label>
 		<labelNoun>a bionic tibia</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>BionicTibia</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -330,6 +355,7 @@
 		<defName>AntitoxinKidney</defName>
 		<label>antitoxin kidney</label>
 		<labelNoun>an antitoxin kidney</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -351,6 +377,7 @@
 		<defName>MedicalLiver</defName>
 		<label>medical liver</label>
 		<labelNoun>a medical liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -372,6 +399,7 @@
 		<defName>EnergizedLiver</defName>
 		<label>energized liver</label>
 		<labelNoun>an energized liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -393,6 +421,7 @@
 		<defName>PowerArm</defName>
 		<label>power arm</label>
 		<labelNoun>a power arm</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -420,6 +449,7 @@
 		<defName>MSE_PowerBlade</defName>
 		<label>power blade</label>
 		<labelNoun>a power blade</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -448,6 +478,7 @@
 		<defName>BreathingSupportRib</defName>
 		<label>breathing support ribcage</label>
 		<labelNoun>a breathing support ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -473,6 +504,7 @@
 		<defName>RelaxationRib</defName>
 		<label>relaxation ribcage</label>
 		<labelNoun>a relaxation ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -493,6 +525,7 @@
 		<defName>ColdRegulatorRib</defName>
 		<label>cold regulator ribcage</label>
 		<labelNoun>a cold regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -513,6 +546,7 @@
 		<defName>HeatRegulatorRib</defName>
 		<label>heat regulator ribcage</label>
 		<labelNoun>a heat regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>

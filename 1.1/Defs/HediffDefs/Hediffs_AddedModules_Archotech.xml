@@ -5,6 +5,7 @@
 		<defName>MSE_ArchotechClavicleModule</defName>
 		<label>archotech clavicle module</label>
 		<labelNoun>an archotech clavicle module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -25,6 +26,7 @@
 		<defName>MSE_ArchotechArmModule</defName>
 		<label>archotech arm module</label>
 		<labelNoun>an archotech arm module</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -59,6 +61,7 @@
 		<defName>MSE_ArchotechHumerusModule</defName>
 		<label>archotech humerus module</label>
 		<labelNoun>an archotech humerus module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -79,6 +82,7 @@
 		<defName>MSE_ArchotechRadiusModule</defName>
 		<label>archotech radius module</label>
 		<labelNoun>an archotech radius module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -99,6 +103,7 @@
 		<defName>MSE_ArchotechHandModule</defName>
 		<label>archotech hand module</label>
 		<labelNoun>an archotech hand module</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -133,6 +138,7 @@
 		<defName>MSE_ArchotechFingerModule</defName>
 		<label>archotech finger module</label>
 		<labelNoun>an archotech finger module</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -167,6 +173,7 @@
 		<defName>MSE_ArchotechFemurModule</defName>
 		<label>archotech femur module</label>
 		<labelNoun>an archotech femur module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -187,6 +194,7 @@
 		<defName>MSE_ArchotechTibiaModule</defName>
 		<label>archotech tibia module</label>
 		<labelNoun>an archotech tibia module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -207,6 +215,7 @@
 		<defName>MSE_ArchotechFootModule</defName>
 		<label>archotech foot module</label>
 		<labelNoun>an archotech foot module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -227,6 +236,7 @@
 		<defName>MSE_ArchotechToeModule</defName>
 		<label>archotech toe module</label>
 		<labelNoun>an archotech toe module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -247,6 +257,7 @@
 		<defName>MSE_AdvancedRangedPlatformModule</defName>
 		<label>advanced ranged platform module</label>
 		<labelNoun>an advanced ranged platform module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -271,6 +282,7 @@
 		<defName>MSE_AdvancedMeleePlatformModule</defName>
 		<label>advanced melee platform module</label>
 		<labelNoun>an advanced melee platform module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -295,6 +307,7 @@
 		<defName>MSE_AdvancedPowerArmModule</defName>
 		<label>advanced power arm module</label>
 		<labelNoun>an advanced power arm module</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -331,6 +344,7 @@
 		<defName>MSE_AdvancedPowerClawModule</defName>
 		<label>advanced power claw module</label>
 		<labelNoun>an advanced power claw module</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -367,6 +381,7 @@
 		<defName>MSE_AdamantiumBoneModule</defName>
 		<label>adamantium bone module</label>
 		<labelNoun>an adamantium bone module</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
