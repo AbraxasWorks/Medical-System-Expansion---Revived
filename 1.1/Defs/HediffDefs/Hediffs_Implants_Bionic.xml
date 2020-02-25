@@ -5,6 +5,7 @@
 		<defName>Joywire</defName>
 		<label>joywire</label>
 		<labelNoun>a joywire</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
@@ -24,6 +25,7 @@
 		<defName>Painstopper</defName>
 		<label>painstopper</label>
 		<labelNoun>a painstopper</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -44,6 +46,7 @@
 		<defName>MSE_EndoskeletonStimulator</defName>
 		<label>endoskeleton stimulator</label>
 		<labelNoun>an endoskeleton stimulator</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -72,6 +75,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic">
 		<defName>MSE_ArmMuscleStimulator</defName>
 		<label>arm muscle stimulator</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -98,6 +102,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic">
 		<defName>MSE_LegMuscleStimulator</defName>
 		<label>leg muscle stimulator</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -122,6 +127,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_BuilderAI</defName>
 		<label>builder AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -144,6 +150,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_FarmerAI</defName>
 		<label>farmer AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -165,6 +172,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_DoctorAI</defName>
 		<label>doctor AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -188,6 +196,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_MinerAI</defName>
 		<label>miner AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -209,6 +218,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_DiplomatAI</defName>
 		<label>diplomat AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -231,6 +241,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_TamerAI</defName>
 		<label>tamer AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -254,6 +265,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_ChefAI</defName>
 		<label>chef AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -277,6 +289,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_HunterAI</defName>
 		<label>hunter AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -299,6 +312,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Brain">
 		<defName>MSE_BasicLaborAI</defName>
 		<label>basic labor AI</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -321,6 +335,7 @@
 	<HediffDef ParentName="MSE_ImplantHediffBionic_Organ">
 		<defName>MSE_AppetiteSuppressant</defName>
 		<label>appetite suppressant</label>
+		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>

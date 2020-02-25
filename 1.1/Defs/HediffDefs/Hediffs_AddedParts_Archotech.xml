@@ -5,6 +5,7 @@
 		<defName>ArchotechEye</defName>
 		<label>archotech eye</label>
 		<labelNoun>an archotech eye</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechEye</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -16,6 +17,7 @@
 		<defName>ArchotechArm</defName>
 		<label>archotech arm</label>
 		<labelNoun>an archotech arm</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -41,6 +43,7 @@
 		<defName>ArchotechLeg</defName>
 		<label>archotech leg</label>
 		<labelNoun>an archotech leg</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -54,6 +57,7 @@
 		<defName>ArchotechHeart</defName>
 		<label>archotech heart</label>
 		<labelNoun>a archotech heart</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechHeart</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -65,6 +69,7 @@
 		<defName>ArchotechStomach</defName>
 		<label>archotech stomach</label>
 		<labelNoun>a archotech stomach</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechStomach</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -76,6 +81,7 @@
 		<defName>ArchotechLung</defName>
 		<label>archotech lung</label>
 		<labelNoun>a archotech lung</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechLung</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -87,6 +93,7 @@
 		<defName>ArchotechKidney</defName>
 		<label>archotech kidney</label>
 		<labelNoun>a archotech kidney</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechKidney</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -98,6 +105,7 @@
 		<defName>ArchotechLiver</defName>
 		<label>archotech liver</label>
 		<labelNoun>a archotech liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechLiver</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -111,6 +119,7 @@
 		<defName>ArchotechEar</defName>
 		<label>archotech ear</label>
 		<labelNoun>a archotech ear</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechEar</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -122,6 +131,7 @@
 		<defName>ArchotechFoot</defName>
 		<label>archotech foot</label>
 		<labelNoun>a archotech foot</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechFoot</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -133,6 +143,7 @@
 		<defName>ArchotechToe</defName>
 		<label>archotech toe</label>
 		<labelNoun>a archotech toe</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechToe</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -144,6 +155,7 @@
 		<defName>ArchotechShoulder</defName>
 		<label>archotech shoulder</label>
 		<labelNoun>a archotech shoulder</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechShoulder</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -155,6 +167,7 @@
 		<defName>ArchotechHand</defName>
 		<label>archotech hand</label>
 		<labelNoun>a archotech hand</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -180,6 +193,7 @@
 		<defName>ArchotechFinger</defName>
 		<label>archotech finger</label>
 		<labelNoun>a archotech finger</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechFinger</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -191,6 +205,7 @@
 		<defName>ArchotechJaw</defName>
 		<label>archotech jaw</label>
 		<labelNoun>a archotech jaw</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechJaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -204,6 +219,7 @@
 		<defName>ArchotechSpine</defName>
 		<label>archotech spine</label>
 		<labelNoun>a archotech spine</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechSpine</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -215,6 +231,7 @@
 		<defName>ArchotechClavicle</defName>
 		<label>archotech clavicle</label>
 		<labelNoun>a archotech clavicle</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechClavicle</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -226,6 +243,7 @@
 		<defName>ArchotechSternum</defName>
 		<label>archotech sternum</label>
 		<labelNoun>a archotech sternum</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechSternum</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -235,7 +253,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechRib</defName>
 		<label>archotech rib</label>
-		<labelNoun>a archotech rib</labelNoun>
+		<labelNoun>an archotech rib</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechRib</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -245,7 +264,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechPelvis</defName>
 		<label>archotech pelvis</label>
-		<labelNoun>a archotech pelvis</labelNoun>
+		<labelNoun>an archotech pelvis</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechPelvis</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -256,7 +276,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechHumerus</defName>
 		<label>archotech humerus</label>
-		<labelNoun>a archotech humerus</labelNoun>
+		<labelNoun>an archotech humerus</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechHumerus</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -267,7 +288,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechRadius</defName>
 		<label>archotech radius</label>
-		<labelNoun>a archotech radius</labelNoun>
+		<labelNoun>an archotech radius</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechRadius</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -278,7 +300,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechFemur</defName>
 		<label>archotech femur</label>
-		<labelNoun>a archotech femur</labelNoun>
+		<labelNoun>an archotech femur</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechFemur</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -289,7 +312,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 		<defName>ArchotechTibia</defName>
 		<label>archotech tibia</label>
-		<labelNoun>a archotech tibia</labelNoun>
+		<labelNoun>an archotech tibia</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>ArchotechTibia</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -303,6 +327,7 @@
 		<defName>AdvancedAntitoxinKidney</defName>
 		<label>advanced antitoxin kidney</label>
 		<labelNoun>an advanced antitoxin kidney</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -324,6 +349,7 @@
 		<defName>AdvancedMedicalLiver</defName>
 		<label>advanced medical liver</label>
 		<labelNoun>an advanced medical liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -345,6 +371,7 @@
 		<defName>AdvancedEnergizedLiver</defName>
 		<label>advanced energized liver</label>
 		<labelNoun>an advanced energized liver</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -366,6 +393,7 @@
 		<defName>AdvancedPowerArm</defName>
 		<label>advanced power arm</label>
 		<labelNoun>an advanced power arm</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -393,6 +421,7 @@
 		<defName>MSE_AdvancedPowerBlade</defName>
 		<label>advanced power blade</label>
 		<labelNoun>an advanced power blade</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -421,6 +450,7 @@
 		<defName>AdvancedPowerClaw</defName>
 		<label>advanced power claw</label>
 		<labelNoun>an advanced power claw</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -447,6 +477,7 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
 		<defName>AdvancedBreathingSupportRib</defName>
 		<label>advanced breathing support ribcage</label>
+		<description>Test. Fix Later</description>
 		<labelNoun>an advanced breathing support ribcage</labelNoun>
 		<stages Inherit="False">
 			<li>
@@ -473,6 +504,7 @@
 		<defName>AdvancedRelaxationRib</defName>
 		<label>advanced relaxation ribcage</label>
 		<labelNoun>an advanced relaxation ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -493,6 +525,7 @@
 		<defName>AdvancedColdRegulatorRib</defName>
 		<label>advanced cold regulator ribcage</label>
 		<labelNoun>an advanced cold regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>
@@ -513,6 +546,7 @@
 		<defName>AdvancedHeatRegulatorRib</defName>
 		<label>advanced heat regulator ribcage</label>
 		<labelNoun>an advanced heat regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
 		<stages Inherit="False">
 			<li>
 				<statOffsets>

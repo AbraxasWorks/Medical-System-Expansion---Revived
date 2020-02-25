@@ -5,6 +5,7 @@
 		<defName>SimpleProstheticLeg</defName>
 		<label>prosthetic leg</label>
 		<labelNoun>a prosthetic leg</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -17,6 +18,7 @@
 		<defName>SimpleProstheticArm</defName>
 		<label>prosthetic arm</label>
 		<labelNoun>a prosthetic arm</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -43,6 +45,7 @@
 		<defName>SimpleProstheticHeart</defName>
 		<label>prosthetic heart</label>
 		<labelNoun>a prosthetic heart</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticHeart</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -55,6 +58,7 @@
 		<defName>CochlearImplant</defName>
 		<label>cochlear implant</label>
 		<labelNoun>a cochlear implant</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>CochlearImplant</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.65</partEfficiency>
@@ -68,6 +72,7 @@
 		<defName>SimpleProstheticFoot</defName>
 		<label>prosthetic foot</label>
 		<labelNoun>a prosthetic foot</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -80,6 +85,7 @@
 		<defName>SimpleProstheticToe</defName>
 		<label>prosthetic toe</label>
 		<labelNoun>a prosthetic toe</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticToe</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -92,6 +98,7 @@
 		<defName>SimpleProstheticHand</defName>
 		<label>prosthetic hand</label>
 		<labelNoun>a prosthetic hand</labelNoun>
+		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -118,6 +125,7 @@
 		<defName>SimpleProstheticFinger</defName>
 		<label>prosthetic finger</label>
 		<labelNoun>a prosthetic finger</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticFinger</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -130,6 +138,7 @@
 		<defName>SimpleProstheticJaw</defName>
 		<label>prosthetic jaw</label>
 		<labelNoun>a prosthetic jaw</labelNoun>
+		<description>Test. Fix Later</description>
 		<spawnThingOnRemoved>SimpleProstheticJaw</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -144,6 +153,7 @@
 		<defName>SimpleProstheticClavicle</defName>
 		<label>prosthetic clavicle</label>
 		<labelNoun>a prosthetic clavicle</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -155,6 +165,7 @@
 		<defName>SimpleProstheticSternum</defName>
 		<label>prosthetic sternum</label>
 		<labelNoun>a prosthetic sternum</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
@@ -166,6 +177,7 @@
 		<defName>SimpleProstheticRib</defName>
 		<label>prosthetic rib</label>
 		<labelNoun>a prosthetic rib</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
@@ -177,6 +189,7 @@
 		<defName>SimpleProstheticPelvis</defName>
 		<label>prosthetic pelvis</label>
 		<labelNoun>a prosthetic pelvis</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.90</partEfficiency>
@@ -188,6 +201,7 @@
 		<defName>SimpleProstheticHumerus</defName>
 		<label>prosthetic humerus</label>
 		<labelNoun>a prosthetic humerus</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -199,6 +213,7 @@
 		<defName>SimpleProstheticRadius</defName>
 		<label>prosthetic radius</label>
 		<labelNoun>a prosthetic radius</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -210,6 +225,7 @@
 		<defName>SimpleProstheticFemur</defName>
 		<label>prosthetic femur</label>
 		<labelNoun>a prosthetic femur</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.90</partEfficiency>
@@ -221,6 +237,7 @@
 		<defName>SimpleProstheticTibia</defName>
 		<label>prosthetic tibia</label>
 		<labelNoun>a prosthetic tibia</labelNoun>
+		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.90</partEfficiency>
