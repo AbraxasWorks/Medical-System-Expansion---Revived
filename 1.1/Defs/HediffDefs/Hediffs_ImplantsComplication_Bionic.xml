@@ -4,6 +4,7 @@
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
 		<defName>MSE_JoywireComplication</defName>
 		<label>joywire complication</label>
+		<description>Test. Fix later</description>
 		<stages>
 			<li>
 				<minSeverity>0.0001</minSeverity>
@@ -65,6 +66,7 @@
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_Brain">
 		<defName>MSE_PainstopperComplication</defName>
 		<label>painstopper complication</label>
+		<description>Test. Fix later</description>
 		<stages>
 			<li>
 				<minSeverity>0.0001</minSeverity>
@@ -125,6 +127,7 @@
 	<HediffDef ParentName="MSE_ImplantComplicationHediff">
 		<defName>MSE_EndoskeletonStimulatorComplication</defName>
 		<label>endoskeleton stimulator complication</label>
+		<description>Test. Fix later</description>
 		<lethalSeverity>1.00</lethalSeverity>
 		<stages>
 			<li>
@@ -201,11 +204,13 @@
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_Muscle">
 		<defName>MSE_ArmMuscleStimulatorComplication</defName>
 		<label>arm muscle stimulator complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_Muscle">
 		<defName>MSE_LegMuscleStimulatorComplication</defName>
 		<label>leg muscle stimulator complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<!--========= Brain Implants Complication ==========-->
@@ -273,52 +278,62 @@
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_BuilderAIComplication</defName>
 		<label>builder AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_FarmerAIComplication</defName>
 		<label>farmer AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_DoctorAIComplication</defName>
 		<label>doctor AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_MinerAIComplication</defName>
 		<label>miner AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_DiplomatAIComplication</defName>
 		<label>diplomat AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_TamerAIComplication</defName>
 		<label>tamer AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_ChefAIComplication</defName>
 		<label>chef AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_HunterAIComplication</defName>
 		<label>hunter AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_BrainAI">
 		<defName>MSE_BasicLaborAIComplication</defName>
 		<label>basic labor AI complication</label>
+		<description>Test. Fix later</description>
 	</HediffDef>
 
 	<!--========= Organ Implants Complication ==========-->
 	<HediffDef ParentName="MSE_ImplantComplicationHediff_Organ">
 		<defName>MSE_AppetiteSuppressantComplication</defName>
 		<label>appetite suppressant complication</label>
+		<description>Test. Fix later</description>
 		<stages>
 			<li>
 				<minSeverity>0.0001</minSeverity>

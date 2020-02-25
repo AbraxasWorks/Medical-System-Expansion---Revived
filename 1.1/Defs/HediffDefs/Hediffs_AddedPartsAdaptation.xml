@@ -16,7 +16,7 @@
 	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBasic</defName>
 		<label>artificial ABS</label>
-		<description>Getting used to it </description>
+		<description>Getting used to it</description>
 		<defaultLabelColor>(100, 255, 218)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
