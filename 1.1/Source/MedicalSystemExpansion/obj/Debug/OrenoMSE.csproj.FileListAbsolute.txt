@@ -3,6 +3,3 @@ C:\Users\nfhfy\OneDrive\Документы\GitHub\Medical-System-Expansion---Rev
 C:\Users\nfhfy\OneDrive\Документы\GitHub\Medical-System-Expansion---Revived\Source\MedicalSystemExpansion\obj\Debug\OrenoMSE.csprojAssemblyReference.cache
 C:\Users\nfhfy\OneDrive\Документы\GitHub\Medical-System-Expansion---Revived\Source\MedicalSystemExpansion\obj\Debug\OrenoMSE.csproj.CoreCompileInputs.cache
 C:\Users\nfhfy\OneDrive\Документы\GitHub\Medical-System-Expansion---Revived\Source\MedicalSystemExpansion\obj\Debug\MSE-Revived.dll
-C:\Users\NUH\Desktop\WorkShop\Git\Medical-System-Expansion---Revived\1.1\1.1\Assemblies\MSE-Revived.dll
-C:\Users\NUH\Desktop\WorkShop\Git\Medical-System-Expansion---Revived\1.1\Source\MedicalSystemExpansion\obj\Debug\OrenoMSE.csproj.CopyComplete
-C:\Users\NUH\Desktop\WorkShop\Git\Medical-System-Expansion---Revived\1.1\Source\MedicalSystemExpansion\obj\Debug\MSE-Revived.dll
