@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MSE_BodyPartNatural" ParentName="BodyPartNaturalBase" Abstract="True">
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.3</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags Inherit="False">
+			<li>MSE_NaturalParts</li>
+		</tradeTags>
+
+		<!-- Make it consumable -->
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>NeverForNutrition</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+			<sourceDef>Human</sourceDef>
+		</ingestible>
+		<statBases>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBasic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_BasicProsthetics</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>BasicProstheses</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>MSE_BasicProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartSimple" ParentName="BodyPartProstheticBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>SimpleProstheses</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>MSE_SimpleProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartSimple_Bone" ParentName="MSE_BodyPartSimple" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartSimple_Organ" ParentName="MSE_BodyPartSimple" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartBionic" ParentName="BodyPartBionicBase" Abstract="True">
+		<recipeMaker>
+			<soundWorking>MSE_Assembling</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>TableBionicProstheses</li>
+			</recipeUsers>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>BionicProstheses</li>
+		</thingCategories>
+		<tradeTags Inherit="False">
+			<li>MSE_BionicProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionic_Bone" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionic_Organ" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartBionicSpecial" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>MSE_SpecialBionics</researchPrerequisite>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
+		<!-- Vanilla Code -->
+		<!-- Because EPOE messed up vanilla BodyPartArchotechBase -->
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemArchotech</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<!-- Vanilla Code END -->
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>MSE_Assembling</soundWorking>
+			<recipeUsers>
+				<li>ArchotechProsthesesBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_ArchotechCrafting</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Archotech</techLevel>
+		<thingCategories>
+			<li>ArchotechProstheses</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Archotech</li>
+		</techHediffsTags>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="MSE_BodyPartArchotechSpecial" ParentName="MSE_BodyPartArchotech" Abstract="True">
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

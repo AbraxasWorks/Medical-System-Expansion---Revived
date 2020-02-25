@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MSE_ImplantBase" Abstract="True">
+		<!-- Vanilla Code -->
+		<!-- Because EPOE messed up vanilla ImplantBase -->
+		<label>implant</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isTechHediff>true</isTechHediff>
+		<!-- <techLevel>Spacer</techLevel> -->
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<!-- <thingCategories>
+			<li>BodyParts</li>
+		</thingCategories> -->
+		<pathCost>10</pathCost>
+		<!-- Vanilla Code END -->
+
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>MSE_Assembling</soundWorking>
+		</recipeMaker>
+		<thingCategories>
+			<li>BodyParts</li>
+			<li>Implants</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef Name="MSE_ImplantBionic" ParentName="MSE_ImplantBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBionic2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>TableBionicProstheses</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_Implants</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<tradeTags Inherit="False">
+			<li>MSE_BionicProstheses</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef Name="MSE_ImplantBionic_Brain" ParentName="MSE_ImplantBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_ImplantArchotech" ParentName="MSE_ImplantBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemArchotech2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ArchotechProsthesesBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>MSE_ArchotechImplantsCrafting</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Archotech</techLevel>
+		<techHediffsTags>
+			<li>Archotech</li>
+		</techHediffsTags>
+	</ThingDef>
+
+</Defs>

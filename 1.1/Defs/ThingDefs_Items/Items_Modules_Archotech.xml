@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechClavicleModule</defName>
+		<label>archotech clavicle module</label>
+		<description>An artifical clavicle module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechClavicle>1</ArchotechClavicle>
+		</costList>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechArmModule</defName>
+		<label>archotech arm module</label>
+		<description>An artifical arm module built by an archotech. It looks and feels like natural arm, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to arm module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<ArchotechArm>1</ArchotechArm>
+		</costList>
+		<statBases>
+			<MarketValue>5200</MarketValue>
+			<WorkToMake>100000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechHumerusModule</defName>
+		<label>archotech humerus module</label>
+		<description>An artifical humerus module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to humerus module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechHumerus>1</ArchotechHumerus>
+		</costList>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechRadiusModule</defName>
+		<label>archotech radius module</label>
+		<description>An artifical radius module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to radius module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechRadius>1</ArchotechRadius>
+		</costList>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechHandModule</defName>
+		<label>archotech hand module</label>
+		<description>An artifical hand module built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to hand module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ArchotechHand>1</ArchotechHand>
+		</costList>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechFingerModule</defName>
+		<label>archotech finger module</label>
+		<description>An artifical finger module built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to finger module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechFinger>1</ArchotechFinger>
+		</costList>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechFemurModule</defName>
+		<label>archotech femur module</label>
+		<description>An artifical femur module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to femur module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechFemur>1</ArchotechFemur>
+		</costList>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechTibiaModule</defName>
+		<label>archotech tibia module</label>
+		<description>An artifical tibia module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to tibia module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ArchotechTibia>1</ArchotechTibia>
+		</costList>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechFootModule</defName>
+		<label>archotech foot module</label>
+		<description>An artifical foot module built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to foot module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ArchotechFoot>1</ArchotechFoot>
+		</costList>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>MSE_ArchotechToeModule</defName>
+		<label>archotech toe module</label>
+		<description>An artifical toe module built by an archotech. It looks and feels like natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to toe module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ArchotechToe>1</ArchotechToe>
+		</costList>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--============== Special Archotech ===============-->
+
+	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+		<defName>MSE_AdvancedRangedPlatformModule</defName>
+		<label>advanced ranged platform module</label>
+		<description>An advanced ranged platform module. If it is harmed, it repairs itself over time. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ArchotechClavicle>1</ArchotechClavicle>
+		</costList>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+		<defName>MSE_AdvancedMeleePlatformModule</defName>
+		<label>advanced melee platform module</label>
+		<description>An advanced melee platform module. If it is harmed, it repairs itself over time. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<ArchotechClavicle>1</ArchotechClavicle>
+		</costList>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+		<defName>MSE_AdvancedPowerArmModule</defName>
+		<label>advanced power arm module</label>
+		<description>An advanced power arm module built by an archotech. It looks and feels like natural arm, have high blunt damage, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to arm module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<ComponentSpacer>8</ComponentSpacer>
+			<AdvancedPowerArm>1</AdvancedPowerArm>
+		</costList>
+		<statBases>
+			<MarketValue>11000</MarketValue>
+			<WorkToMake>320000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+		<defName>MSE_AdvancedPowerClawModule</defName>
+		<label>advanced power claw module</label>
+		<description>An advanced power claw module built by an archotech. It looks and feels like natural hand, has sharp claw attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to hand module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<ComponentSpacer>6</ComponentSpacer>
+			<AdvancedPowerClaw>1</AdvancedPowerClaw>
+		</costList>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<WorkToMake>140000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+		<defName>MSE_AdamantiumBoneModule</defName>
+		<label>adamantium bone module</label>
+		<description>A bone module that crafted with high quality adamantium alloy. Able to sustain almost all attack. Even if it is harmed, it repairs itself over time. You can install it to all bone module slot. Requires modules surgery research to install it.</description>
+		<costList>
+			<Silver>200</Silver>
+			<Uranium>25</Uranium>
+			<Gold>60</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

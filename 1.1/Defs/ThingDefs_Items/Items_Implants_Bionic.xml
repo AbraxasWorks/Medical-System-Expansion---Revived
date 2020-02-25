@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>Joywire</defName>
+		<label>joywire</label>
+		<description>A brain implant that stimulates the brain's pleasure centers. While it dramatically improves a user's mood, the blanket of happiness makes it hard to concentrate on anything real. Joywires are illegal on many worlds, and are known for destroying whole cultures. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>57000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>Painstopper</defName>
+		<label>painstopper</label>
+		<description>A brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>57000</WorkToMake>
+			<Mass>0.08</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Bone Implants =================-->
+
+	<ThingDef ParentName="MSE_ImplantBionic">
+		<defName>MSE_EndoskeletonStimulator</defName>
+		<label>endoskeleton stimulator</label>
+		<description>A torso implant that stimulates the overall muscles so they can operate at maximum performance. Requires implants research before installing.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantBionic">
+		<defName>MSE_MuscleStimulator</defName>
+		<label>muscle stimulator</label>
+		<description>A muscle implant that stimulates the overall muscles so they can operate at maximum performance. Requires implants research before installing.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Brain Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_BuilderAI</defName>
+		<label>builder AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for building. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_FarmerAI</defName>
+		<label>farmer AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for farming. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_DoctorAI</defName>
+		<label>doctor AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for doctoring. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_MinerAI</defName>
+		<label>miner AI</label>
+		<description>A brain implant that contain AI. Capable to communicate with the user brain and act as a guide for mining. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_DiplomatAI</defName>
+		<label>diplomat AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for diplomacy. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_TamerAI</defName>
+		<label>tamer AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for taming. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_ChefAI</defName>
+		<label>chef AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for cooking. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_HunterAI</defName>
+		<label>hunter AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for hunting. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_ImplantBionic_Brain">
+		<defName>MSE_BasicLaborAI</defName>
+		<label>basic labor AI</label>
+		<description>A brain implant that contain AI. Able to communicate with the user brain and act as a guide for basic unskilled labor. Requires brain implants research before installing.</description>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<WorkToMake>64000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--================ Organ Implants ================-->
+
+	<ThingDef ParentName="MSE_ImplantBionic">
+		<defName>MSE_AppetiteSuppressant</defName>
+		<label>appetite suppressant</label>
+		<description>A stomach implant that suppres hungry. Requires implants research before installing.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>57000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

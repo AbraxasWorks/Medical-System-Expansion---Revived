@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================ Bone Implants =================-->
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
+		<defName>MSE_InstallAdvancedEndoskeletonStimulator</defName>
+		<label>install advanced endoskeleton stimulator</label>
+		<description>Install an advanced endoskeleton stimulator.</description>
+		<jobString>Installing advanced endoskeleton stimulator.</jobString>
+		<workAmount>3200</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedEndoskeletonStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedEndoskeletonStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedEndoskeletonStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!--=============== Muscle Implants ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
+		<defName>MSE_InstallAdvancedArmMuscleStimulator</defName>
+		<label>install advanced arm muscle stimulator</label>
+		<description>Install an advanced arm muscle stimulator.</description>
+		<jobString>Installing advanced arm muscle stimulator.</jobString>
+		<workAmount>3200</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedMuscleStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedMuscleStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedArmMuscleStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantBionic">
+		<defName>MSE_InstallAdvancedLegMuscleStimulator</defName>
+		<label>install advanced leg muscle stimulator</label>
+		<description>Install an advanced leg muscle stimulator.</description>
+		<jobString>Installing advanced leg muscle stimulator.</jobString>
+		<workAmount>3200</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedMuscleStimulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedMuscleStimulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedLegMuscleStimulator</addsHediff>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_ImplantSystem">
+				<isSpecial>true</isSpecial>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!--================ Brain Implants ================-->
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>InstallAdvancedJoywire</defName>
+		<label>install advanced joywire</label>
+		<description>Install an advanced joywire.</description>
+		<jobString>Installing advanced joywire.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedJoywire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedJoywire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedJoywire</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>InstallAdvancedPainstopper</defName>
+		<label>install advanced painstopper</label>
+		<description>Install an advanced painstopper.</description>
+		<jobString>Installing advanced painstopper.</jobString>
+		<workAmount>5600</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPainstopper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AdvancedPainstopper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPainstopper</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedBuilderAI</defName>
+		<label>install advanced builder AI</label>
+		<description>Install an advanced builder AI.</description>
+		<jobString>Installing advanced builder AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedBuilderAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedBuilderAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedBuilderAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedFarmerAI</defName>
+		<label>install advanced farmer AI</label>
+		<description>Install an advanced farmer AI.</description>
+		<jobString>Installing advanced farmer AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedFarmerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedFarmerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedFarmerAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedDoctorAI</defName>
+		<label>install advanced doctor AI</label>
+		<description>Install an advanced doctor AI.</description>
+		<jobString>Installing advanced doctor AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedDoctorAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedDoctorAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedDoctorAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedMinerAI</defName>
+		<label>install advanced miner AI</label>
+		<description>Install an advanced miner AI.</description>
+		<jobString>Installing advanced miner AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedMinerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedMinerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedMinerAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedDiplomatAI</defName>
+		<label>install advanced diplomat AI</label>
+		<description>Install an advanced diplomat AI.</description>
+		<jobString>Installing advanced diplomat AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedDiplomatAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedDiplomatAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedDiplomatAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedTamerAI</defName>
+		<label>install advanced tamer AI</label>
+		<description>Install an advanced tamer AI.</description>
+		<jobString>Installing advanced tamer AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedTamerAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedTamerAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedTamerAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedChefAI</defName>
+		<label>install advanced chef AI</label>
+		<description>Install an advanced chef AI.</description>
+		<jobString>Installing advanced chef AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedChefAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedChefAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedChefAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedHunterAI</defName>
+		<label>install advanced hunter AI</label>
+		<description>Install an advanced hunter AI.</description>
+		<jobString>Installing advanced hunter AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedHunterAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedHunterAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedHunterAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedLaborAI</defName>
+		<label>install advanced labor AI</label>
+		<description>Install an advanced labor AI.</description>
+		<jobString>Installing advanced labor AI.</jobString>
+		<workAmount>6500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedLaborAI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedLaborAI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedLaborAI</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryImplantArchotech_Brain">
+		<defName>MSE_InstallAdvancedAppetiteSuppressant</defName>
+		<label>install advanced appetite suppressant</label>
+		<description>Install an advanced appetite suppressant.</description>
+		<jobString>Installing advanced appetite suppressant.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_AdvancedAppetiteSuppressant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>MSE_AdvancedAppetiteSuppressant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_AdvancedAppetiteSuppressant</addsHediff>
+	</RecipeDef>
+
+</Defs>

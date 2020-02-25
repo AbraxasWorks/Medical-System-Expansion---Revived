@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_SurgerySupport</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<tendable>true</tendable>
+		<initialSeverity>0.40</initialSeverity>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_SpawnInitialSeverity" />
+		</modExtensions>
+	</HediffDef>
+
+
+	<HediffDef Name="MSE_ImplantComplicationHediff" ParentName="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>72</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.32</severityPerDayNotImmune>
+				<immunityPerDaySick>0.38</immunityPerDaySick>
+				<severityPerDayImmune>-0.52</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.18</immunityPerDayNotSick>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantComplicationHediff_Brain" ParentName="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<lethalSeverity>1.00</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>24</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.28</severityPerDayNotImmune>
+				<immunityPerDaySick>0.32</immunityPerDaySick>
+				<severityPerDayImmune>-0.46</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.12</immunityPerDayNotSick>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef Name="MSE_ImplantComplicationHediff_Organ" ParentName="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>48</baseTendDurationHours>
+				<severityPerDayTended>-0.25</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.30</severityPerDayNotImmune>
+				<immunityPerDaySick>0.36</immunityPerDaySick>
+				<severityPerDayImmune>-0.48</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.15</immunityPerDayNotSick>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>
