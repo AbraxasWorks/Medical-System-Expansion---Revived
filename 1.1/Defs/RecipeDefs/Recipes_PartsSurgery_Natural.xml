@@ -39,7 +39,6 @@
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
 		</appliedOnFixedBodyParts>
-		<recipeUsers Inherit="False" />
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -87,7 +86,6 @@
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
-		<recipeUsers Inherit="False" />
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -135,7 +133,6 @@
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
-		<recipeUsers Inherit="False" />
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -184,7 +181,6 @@
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
-		<recipeUsers Inherit="False" />
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
