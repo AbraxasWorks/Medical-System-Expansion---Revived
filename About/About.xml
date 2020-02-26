@@ -7,7 +7,9 @@
 		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
-	<!--<packageId>Abraxas.</packageId>-->
+
+	<packageId>Abraxas.MSERevived</packageId>
+
 	<url>https://github.com/AbraxasWorks/Medical-System-Expansion---Revived</url>
 	<description>Credit for the creation of this mod goes to Oreno, I just didn't want to see it die.
 	
