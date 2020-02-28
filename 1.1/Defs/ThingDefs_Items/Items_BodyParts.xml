@@ -84,11 +84,13 @@
 			<li>Simple</li>
 		</techHediffsTags>
 	</ThingDef>
+  
 	<ThingDef Name="MSE_BodyPartSimple_Bone" ParentName="MSE_BodyPartSimple" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+  
 	<ThingDef Name="MSE_BodyPartSimple_Organ" ParentName="MSE_BodyPartSimple" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
@@ -114,6 +116,7 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 	</ThingDef>
+  
 	<ThingDef Name="MSE_BodyPartBionic_Bone" ParentName="MSE_BodyPartBionic" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
@@ -124,6 +127,7 @@
 			<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+  
 	<ThingDef Name="MSE_BodyPartBionicSpecial" ParentName="MSE_BodyPartBionic" Abstract="True">
 		<recipeMaker>
 			<skillRequirements>
@@ -135,18 +139,8 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	
-	<!-- ArchoTech -->
-	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
-		<!-- Vanilla Code -->
-		<!-- Because EPOE messed up vanilla BodyPartArchotechBase -->
-		<graphicData>
-			<texPath>Things/Item/Health/HealthItemArchotech</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
-		</graphicData>
-		<!-- Vanilla Code END -->
-
+  <!-- ArchoTech -->
+	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartArchotechBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -172,6 +166,7 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
+  
 	<ThingDef Name="MSE_BodyPartArchotechSpecial" ParentName="MSE_BodyPartArchotech" Abstract="True">
 		<recipeMaker>
 			<skillRequirements>

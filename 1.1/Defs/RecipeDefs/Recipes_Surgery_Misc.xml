@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="MSE_Surgery">
+	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>MSE_RemoveBodyPartSystem</defName>
 		<label>remove part system</label>
 		<description>Remove a body part system.</description>
