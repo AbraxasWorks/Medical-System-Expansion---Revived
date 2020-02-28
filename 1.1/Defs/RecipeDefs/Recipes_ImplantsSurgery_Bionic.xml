@@ -40,7 +40,6 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Joywire</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryImplantBionic_Brain">
@@ -82,7 +81,6 @@
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Painstopper</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--================ Bone Implants =================-->

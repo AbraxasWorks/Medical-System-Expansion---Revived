@@ -29,7 +29,6 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegLeg</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBasic">
@@ -60,7 +59,6 @@
 			<li>Foot</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>WoodenFoot</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBasic">
@@ -91,7 +89,6 @@
 			<li>Jaw</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Denture</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--================= Basic Parts ==================-->
