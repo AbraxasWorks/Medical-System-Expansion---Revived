@@ -40,7 +40,6 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechArm</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryArchotech">
@@ -82,7 +81,6 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechLeg</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryArchotech">
@@ -124,7 +122,6 @@
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechEye</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--============== Archotech Organs ================-->

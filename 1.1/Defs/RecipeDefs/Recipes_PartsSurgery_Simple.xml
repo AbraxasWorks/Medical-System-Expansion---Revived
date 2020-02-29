@@ -40,7 +40,6 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticLeg</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgerySimple">
@@ -82,7 +81,6 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticArm</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgerySimple_Organ">
@@ -124,7 +122,6 @@
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticHeart</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgerySimple">
@@ -166,7 +163,6 @@
 			<li>Ear</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>CochlearImplant</addsHediff>
-		<recipeUsers Inherit="False" />
 	</RecipeDef>
 
 	<!--=========== Simple Prosthetic Limbs ============-->

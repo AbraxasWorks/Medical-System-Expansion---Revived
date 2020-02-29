@@ -27,6 +27,7 @@
 		</statBases>
 	</ThingDef>
 
+	<!-- Wooden -->
 	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartProstheticBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBasic</texPath>
@@ -54,8 +55,24 @@
 			<li>Poor</li>
 		</techHediffsTags>
 	</ThingDef>
-
+	
+	<!-- Prosthetics -->
 	<ThingDef Name="MSE_BodyPartSimple" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+			<researchPrerequisite>Prosthetics</researchPrerequisite>
+		</recipeMaker>
 		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>SimpleProstheses</li>
@@ -77,7 +94,8 @@
 			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+	
+	<!-- Bionic -->
 	<ThingDef Name="MSE_BodyPartBionic" ParentName="BodyPartBionicBase" Abstract="True">
 		<recipeMaker>
 			<soundWorking>MSE_Assembling</soundWorking>
@@ -117,7 +135,8 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
-
+	
+	<!-- ArchoTech -->
 	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
 		<!-- Vanilla Code -->
 		<!-- Because EPOE messed up vanilla BodyPartArchotechBase -->
