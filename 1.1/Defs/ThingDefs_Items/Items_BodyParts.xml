@@ -94,7 +94,8 @@
 			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
+	
+	<!-- Bionic -->
 	<ThingDef Name="MSE_BodyPartBionic" ParentName="BodyPartBionicBase" Abstract="True">
 		<recipeMaker>
 			<soundWorking>MSE_Assembling</soundWorking>
@@ -134,7 +135,8 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
-
+	
+	<!-- ArchoTech -->
 	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
 		<!-- Vanilla Code -->
 		<!-- Because EPOE messed up vanilla BodyPartArchotechBase -->
