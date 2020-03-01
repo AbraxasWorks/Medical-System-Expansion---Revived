@@ -1,37 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="MSE_ImplantBase" Abstract="True">
-		<!-- Vanilla Code -->
-		<!-- Because EPOE messed up vanilla ImplantBase -->
-		<label>implant</label>
-		<thingClass>ThingWithComps</thingClass>
-		<category>Item</category>
-		<useHitPoints>true</useHitPoints>
-		<selectable>true</selectable>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>0.7</Flammability>
-			<DeteriorationRate>2.0</DeteriorationRate>
-			<Beauty>-4</Beauty>
-		</statBases>
-		<altitudeLayer>Item</altitudeLayer>
-		<tickerType>Never</tickerType>
-		<alwaysHaulable>true</alwaysHaulable>
-		<isTechHediff>true</isTechHediff>
-		<!-- <techLevel>Spacer</techLevel> -->
-		<tradeTags>
-			<li>TechHediff</li>
-		</tradeTags>
-		<comps>
-			<li Class="CompProperties_Forbiddable"/>
-		</comps>
-		<!-- <thingCategories>
-			<li>BodyParts</li>
-		</thingCategories> -->
-		<pathCost>10</pathCost>
-		<!-- Vanilla Code END -->
-
+	<ThingDef Name="MSE_ImplantBase" ParentName="BodyPartProstheticBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
