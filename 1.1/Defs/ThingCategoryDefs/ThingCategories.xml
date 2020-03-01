@@ -2,38 +2,20 @@
 <Defs>
 
 	<ThingCategoryDef>
-		<defName>BasicProstheses</defName>
-		<label>basic prostheses</label>
-		<parent>BodyPartsSimple</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>SimpleProstheses</defName>
-		<label>simple prostheses</label>
-		<parent>BodyPartsProsthetic</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>BionicProstheses</defName>
-		<label>bionic prostheses</label>
-		<parent>BodyPartsBionic</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>ArchotechProstheses</defName>
-		<label>archotech prostheses</label>
-		<parent>BodyPartsArchotech</parent>
-	</ThingCategoryDef>
-	
-	<ThingCategoryDef>
 		<defName>MSE_ProstheticModules_Category</defName>
 		<label>prosthetic modules</label>
 		<parent>BodyParts</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
-		<defName>MSE_ProstheticModules</defName>
-		<label>prosthetic modules</label>
+		<defName>MSE_ArchotechModules</defName>
+		<label>archotech modules</label>
+		<parent>MSE_ProstheticModules_Category</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>MSE_BionicModules</defName>
+		<label>bionic modules</label>
 		<parent>MSE_ProstheticModules_Category</parent>
 	</ThingCategoryDef>
 

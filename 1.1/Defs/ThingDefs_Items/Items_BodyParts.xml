@@ -45,8 +45,8 @@
 			<researchPrerequisite>MSE_BasicProsthetics</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Neolithic</techLevel>
-		<thingCategories>
-			<li>BasicProstheses</li>
+		<thingCategories Inherit="False">
+			<li>BodyPartsSimple</li>
 		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_BasicProstheses</li>
@@ -74,8 +74,8 @@
 			<researchPrerequisite>Prosthetics</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>SimpleProstheses</li>
+		<thingCategories Inherit="False">
+			<li>BodyPartsProsthetic</li>
 		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_SimpleProstheses</li>
@@ -104,8 +104,8 @@
 			</recipeUsers>
 		</recipeMaker>
 		<techLevel>Spacer</techLevel>
-		<thingCategories>
-			<li>BionicProstheses</li>
+		<thingCategories Inherit="False">
+			<li>BodyPartsBionic</li>
 		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_BionicProstheses</li>
@@ -162,8 +162,8 @@
 			<researchPrerequisite>MSE_ArchotechCrafting</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Archotech</techLevel>
-		<thingCategories>
-			<li>ArchotechProstheses</li>
+		<thingCategories Inherit="False">
+			<li>BodyPartsArchotech</li>
 		</thingCategories>
 		<techHediffsTags>
 			<li>Archotech</li>
