@@ -28,7 +28,7 @@
 	</ThingDef>
 
 	<!-- Wooden -->
-	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartProstheticBase" Abstract="True">
+	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartBase" Abstract="True">
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -54,6 +54,9 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+		</statBases>
 	</ThingDef>
 	
 	<!-- Prosthetics -->
@@ -73,10 +76,6 @@
 			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 			<researchPrerequisite>Prosthetics</researchPrerequisite>
 		</recipeMaker>
-		<techLevel>Industrial</techLevel>
-		<thingCategories Inherit="False">
-			<li>BodyPartsProsthetic</li>
-		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_SimpleProstheses</li>
 		</tradeTags>
@@ -105,10 +104,6 @@
 				<li>TableBionicProstheses</li>
 			</recipeUsers>
 		</recipeMaker>
-		<techLevel>Spacer</techLevel>
-		<thingCategories Inherit="False">
-			<li>BodyPartsBionic</li>
-		</thingCategories>
 		<tradeTags Inherit="False">
 			<li>MSE_BionicProstheses</li>
 		</tradeTags>
@@ -122,6 +117,7 @@
 			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+
 	<ThingDef Name="MSE_BodyPartBionic_Organ" ParentName="MSE_BodyPartBionic" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>
@@ -139,6 +135,7 @@
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
 	</ThingDef>
+
   <!-- ArchoTech -->
 	<ThingDef Name="MSE_BodyPartArchotech" ParentName="BodyPartArchotechBase" Abstract="True">
 		<recipeMaker>
@@ -155,10 +152,6 @@
 			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 			<researchPrerequisite>MSE_ArchotechCrafting</researchPrerequisite>
 		</recipeMaker>
-		<techLevel>Archotech</techLevel>
-		<thingCategories Inherit="False">
-			<li>BodyPartsArchotech</li>
-		</thingCategories>
 		<techHediffsTags>
 			<li>Archotech</li>
 		</techHediffsTags>
