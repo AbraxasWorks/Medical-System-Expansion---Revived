@@ -38,8 +38,7 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>MSE_Assembling</soundWorking>
 		</recipeMaker>
-		<thingCategories>
-			<li>BodyParts</li>
+		<thingCategories Inherit="False">
 			<li>Implants</li>
 		</thingCategories>
 		<thingSetMakerTags>

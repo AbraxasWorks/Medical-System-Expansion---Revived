@@ -10,9 +10,6 @@
 			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 			<researchPrerequisite>MSE_ModulesCrafting</researchPrerequisite>
 		</recipeMaker>
-		<thingCategories>
-			<li>MSE_ProstheticModules</li>
-		</thingCategories>
 	</ThingDef>
 
 	<ThingDef Name="MSE_ModuleBionic" ParentName="MSE_ModuleBase" Abstract="True">
@@ -33,6 +30,9 @@
 		<tradeTags Inherit="False">
 			<li>MSE_BionicProstheses</li>
 		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>MSE_BionicModules</li>
+		</thingCategories>
 		<!-- <techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags> -->
@@ -68,6 +68,9 @@
 		<!-- <techHediffsTags>
 			<li>Archotech</li>
 		</techHediffsTags> -->
+		<thingCategories Inherit="False">
+			<li>MSE_ArchotechModules</li>
+		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
