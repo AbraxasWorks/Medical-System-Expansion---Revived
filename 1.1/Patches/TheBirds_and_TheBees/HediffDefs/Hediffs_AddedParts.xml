@@ -42,6 +42,7 @@
 									<defName>SimpleProstheticReproductiveOrgans</defName>
 									<label>prosthetic reproductive organ</label>
 									<labelNoun>a prosthetic reproductive organ</labelNoun>
+									<description>a prosthetic reproductive organ</description>
 									<spawnThingOnRemoved>SimpleProstheticReproductiveOrgans</spawnThingOnRemoved>
 									<addedPartProps>
 										<solid>true</solid>
@@ -68,6 +69,7 @@
 									<defName>BionicReproductiveOrgans</defName>
 									<label>bionic reproductive organ</label>
 									<labelNoun>a bionic reproductive organ</labelNoun>
+									<description>a Bionic reproductive organ</description>
 									<spawnThingOnRemoved>BionicReproductiveOrgans</spawnThingOnRemoved>
 									<addedPartProps>
 										<solid>true</solid>
@@ -94,6 +96,7 @@
 									<defName>ArchotechReproductiveOrgans</defName>
 									<label>archotech reproductive organ</label>
 									<labelNoun>an archotech reproductive organ</labelNoun>
+									<description>an ArchoTech reproductive organ</description>
 									<spawnThingOnRemoved>ArchotechReproductiveOrgans</spawnThingOnRemoved>
 									<addedPartProps>
 										<solid>true</solid>
