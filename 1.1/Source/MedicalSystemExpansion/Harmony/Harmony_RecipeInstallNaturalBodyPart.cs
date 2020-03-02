@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_RecipeInstallNaturalBodyPart
     {
@@ -13,7 +13,7 @@ namespace OrenoMSE.Harmony2
             [HarmonyPostfix]
             private static void AdditionalHediff(Recipe_InstallNaturalBodyPart __instance, Pawn pawn, BodyPartRecord part)
             {
-                MSE_VanillaExtender.RecipeApplyHediffs(__instance, pawn, part);
+                MSE_VanillaExtender.RecipeApplyExtraHediffs(__instance, pawn, part);
             }
         }
     }

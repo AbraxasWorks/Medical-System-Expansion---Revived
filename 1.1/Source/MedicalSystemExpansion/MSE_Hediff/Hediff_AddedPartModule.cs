@@ -28,7 +28,7 @@ namespace OrenoMSE
                 this.pawn.health.hediffSet.AddDirect(hediff_BodyPartModule, null, null);
             }
 
-            MSE_VanillaExtender.HediffApplyHediffs(this, this.pawn, base.Part);
+            MSE_VanillaExtender.HediffApplyExtraHediffs(this, this.pawn, base.Part);
         }
 
         public override void ExposeData()

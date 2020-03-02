@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_HediffImplant
     {
@@ -13,7 +13,7 @@ namespace OrenoMSE.Harmony2
             [HarmonyPriority(Priority.Last)]
             private static void AdditionalHediff(Hediff_Implant __instance)
             {
-                MSE_VanillaExtender.HediffApplyHediffs(__instance, __instance.pawn, __instance.Part);
+                MSE_VanillaExtender.HediffApplyExtraHediffs(__instance, __instance.pawn, __instance.Part);
             }
         }
     }

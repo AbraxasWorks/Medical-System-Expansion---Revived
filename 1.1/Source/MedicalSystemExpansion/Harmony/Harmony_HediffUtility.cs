@@ -2,7 +2,7 @@
 using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_HediffUtility
     {
@@ -13,12 +13,11 @@ namespace OrenoMSE.Harmony2
             [HarmonyPostfix]
             public static void DontHealInjury(ref bool __result, Hediff hd)
             {
-                List<Hediff> hediffs = hd.pawn.health.hediffSet.hediffs;
-                for (int i = 0; i < hediffs.Count; i++)
+                foreach ( Hediff hediff in hd.pawn.health.hediffSet.hediffs )
                 {
-                    if (hediffs[i].Part == hd.Part && hediffs[i].def.HasModExtension<MSE_DontHealInjury>())
+                    if ( hediff.Part == hd.Part && hediff.def.HasModExtension<MSE_DontHealInjury>())
                     {
-                        MSE_DontHealInjury dontHealInjury = hediffs[i].def.GetModExtension<MSE_DontHealInjury>();
+                        MSE_DontHealInjury dontHealInjury = hediff.def.GetModExtension<MSE_DontHealInjury>();
                         if (dontHealInjury != null && dontHealInjury.notHealInjury)
                         {
                             __result = true;

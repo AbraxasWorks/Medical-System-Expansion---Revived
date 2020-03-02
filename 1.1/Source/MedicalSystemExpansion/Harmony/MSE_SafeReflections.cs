@@ -2,7 +2,7 @@
 using System.Reflection;
 using HarmonyLib;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     /*
     // The code devrived from Zombieland mod by pardeike.

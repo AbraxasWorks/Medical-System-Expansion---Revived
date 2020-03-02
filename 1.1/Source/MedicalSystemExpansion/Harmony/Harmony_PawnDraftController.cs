@@ -3,7 +3,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_PawnDraftController
     {
@@ -15,13 +15,12 @@ namespace OrenoMSE.Harmony2
             public static void HediffGizmos(ref IEnumerable<Gizmo> __result, Pawn_DraftController __instance)
             {
                 List<Gizmo> gizmos = new List<Gizmo>(__result);
-                List<Hediff> hediffs = __instance.pawn.health.hediffSet.hediffs;
-                for (int i = 0; i < hediffs.Count; i++)
+                foreach ( Hediff hediff in __instance.pawn.health.hediffSet.hediffs )
                 {
-                    HediffComp_HediffGizmo hediffGizmo = hediffs[i].TryGetComp<HediffComp_HediffGizmo>();
+                    HediffComp_HediffGizmo hediffGizmo = hediff.TryGetComp<HediffComp_HediffGizmo>();
                     if (hediffGizmo != null)
                     {
-                        foreach (Gizmo h in hediffGizmo.CompGetGizmos())
+                        foreach ( Gizmo h in hediffGizmo.CompGetGizmos() )
                         {
                             gizmos.Add(h);
                         }

@@ -4,7 +4,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_RecipeInstallArtificialBodyPart
     {
@@ -15,18 +15,18 @@ namespace OrenoMSE.Harmony2
             [HarmonyPostfix]
             private static void ExcludePartSystem(ref IEnumerable<BodyPartRecord> __result, Pawn pawn, RecipeDef recipe)
             {
-                List<BodyPartRecord> bpList = __result.ToList();
-                for (int i = 0; i < bpList.Count; i++)
+                List<BodyPartRecord> newRes = new List<BodyPartRecord>();
+
+                foreach ( BodyPartRecord bodypart in __result )
                 {
-                    BodyPartRecord record = bpList[i];
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == record);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == record);
-                    if (check1 || check2)
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => (d is Hediff_BodyPartModule) && d.Part == bodypart );
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == bodypart );
+                    if ( !(check1 || check2) )
                     {
-                        bpList.Remove(record);
+                        newRes.Add( bodypart );
                     }
                 }
-                __result = bpList.AsEnumerable();
+                __result = newRes.AsEnumerable();
             }
         }
     }

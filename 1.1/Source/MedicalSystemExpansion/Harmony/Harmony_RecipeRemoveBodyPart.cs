@@ -5,7 +5,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_RecipeRemoveBodyPart
     {
@@ -31,30 +31,30 @@ namespace OrenoMSE.Harmony2
 
             public static IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn)
             {
-                IEnumerable<BodyPartRecord> parts = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null);
-                using (IEnumerator<BodyPartRecord> enumerator = parts.GetEnumerator())
+                //IEnumerable<BodyPartRecord> parts = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null);
+                foreach ( BodyPartRecord bodyPart in pawn.health.hediffSet.GetNotMissingParts() )
                 {
-                    while (enumerator.MoveNext())
+                    // The bodypart does not have a hediff with a part system component
+                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == bodyPart);
+                    // The bodypart does not have a SurgerySupport hediff
+                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_SurgerySupport) && d.Part == bodyPart);
+                    // The bodypart has a BAD, VISIBLE hediff that is not an injury or surgerysupport
+                    var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury || d is Hediff_SurgerySupport) && d.def.isBad && d.Visible && d.Part == bodyPart);
+
+                    if (pawn.health.hediffSet.HasDirectlyAddedPartFor(bodyPart) && check1 && check2) // has prosthetic, no partsystem and no surgerysupport
                     {
-                        BodyPartRecord part = enumerator.Current;
-                        var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
-                        var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_SurgerySupport) && d.Part == part);
-                        var check3 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_Injury || d is Hediff_SurgerySupport) && d.def.isBad && d.Visible && d.Part == part);
-                        if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part) && check1 && check2)
+                        if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)) // is not a child of a prosthetic
                         {
-                            if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
-                            {
-                                yield return part;
-                            }
+                            yield return bodyPart;
                         }
-                        else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, part) && !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part))
-                        {
-                            yield return part;
-                        }
-                        else if (part != pawn.RaceProps.body.corePart && part.def.canSuggestAmputation && check3)
-                        {
-                            yield return part;
-                        }
+                    }
+                    else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, bodyPart) && !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)) // has no hediffs and is not a child of prosthetic
+                    {
+                        yield return bodyPart; // clean natural bodypart
+                    }
+                    else if (bodyPart != pawn.RaceProps.body.corePart && bodyPart.def.canSuggestAmputation && check3)
+                    {
+                        yield return bodyPart; 
                     }
                 }
                 yield break;

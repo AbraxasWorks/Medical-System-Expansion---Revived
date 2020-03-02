@@ -2,7 +2,7 @@
 using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_PawnGenerator
     {
@@ -15,15 +15,12 @@ namespace OrenoMSE.Harmony2
                 List<Hediff> hediffs = pawn.health.hediffSet?.hediffs;
                 if (hediffs != null)
                 {
-                    for (int i = 0; i < hediffs.Count; i++)
+                    foreach ( Hediff hediff in hediffs )
                     {
-                        if (hediffs[i].def.HasModExtension<MSE_SpawnInitialSeverity>())
+                        MSE_SpawnInitialSeverity spawnInitialSeverity = hediff.def.GetModExtension<MSE_SpawnInitialSeverity>();
+                        if (spawnInitialSeverity != null)
                         {
-                            MSE_SpawnInitialSeverity spawnInitialSeverity = hediffs[i].def.GetModExtension<MSE_SpawnInitialSeverity>();
-                            if (spawnInitialSeverity != null)
-                            {
-                                hediffs[i].Severity = spawnInitialSeverity.initialSeverity;
-                            }
+                            hediff.Severity = spawnInitialSeverity.initialSeverity;
                         }
                     }
                 }

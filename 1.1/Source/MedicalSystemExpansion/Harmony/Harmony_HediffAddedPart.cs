@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.Harmony2
+namespace OrenoMSE.HarmonyPatches
 {
     public class Harmony_HediffAddedPart
     {
@@ -16,7 +16,7 @@ namespace OrenoMSE.Harmony2
                 HediffComp_PartSystem partSystem = __instance.TryGetComp<HediffComp_PartSystem>();
                 if (partSystem != null)
                 {
-                    partSystem.SpecialPostAdd(dinfo);
+                    partSystem.SpecialPostAdd(dinfo); // TODO: can possibly be factored out by overriding CompPostPostAdd
                 }
             }
 
@@ -24,7 +24,7 @@ namespace OrenoMSE.Harmony2
             [HarmonyPriority(Priority.Last)]
             private static void AdditionalHediff(Hediff_AddedPart __instance)
             {
-                MSE_VanillaExtender.HediffApplyHediffs(__instance, __instance.pawn, __instance.Part);
+                MSE_VanillaExtender.HediffApplyExtraHediffs(__instance, __instance.pawn, __instance.Part);
             }
         }
     }
