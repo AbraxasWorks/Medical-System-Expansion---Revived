@@ -38,10 +38,22 @@ This mod not really that OP. &lt;b&gt;Raider chance to spawn with prostheses par
 - And many other features.
 </description>
 
-<loadBefore>
-</loadBefore>
-<loadAfter>
-</loadAfter>
-<incompatibleWith />
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+
+	<loadBefore>
+	</loadBefore>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>UnlimitedHugs.HugsLib</li>
+	</loadAfter>
+	<incompatibleWith />
 
 </ModMetaData>
