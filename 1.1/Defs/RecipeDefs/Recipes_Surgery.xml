@@ -40,6 +40,7 @@
 
 	<!-- Bionic prostheses -->
 	<RecipeDef Name="MSE_SurgeryBionic" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+		<workerClass>OrenoMSE.MSE_Recipe.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 		<surgerySuccessChanceFactor>1.05</surgerySuccessChanceFactor>
 		<researchPrerequisite>Bionics</researchPrerequisite>
 		<ingredients Inherit="False" />

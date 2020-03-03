@@ -9,16 +9,16 @@ namespace OrenoMSE.HarmonyPatches
         [HarmonyPatch("PostAdd")]
         internal class HediffWithComps_PostAdd
         {
-            [HarmonyPostfix]
-            [HarmonyPriority(Priority.First)]
-            private static void PartSystem(HediffWithComps __instance, DamageInfo? dinfo)
-            {
-                HediffComp_PartModule partModule = __instance.TryGetComp<HediffComp_PartModule>();
-                if (partModule != null)
-                {
-                    partModule.SpecialPostAdd(dinfo);
-                }
-            }
+            //[HarmonyPostfix]
+            //[HarmonyPriority(Priority.First)]
+            //private static void PartSystem(HediffWithComps __instance, DamageInfo? dinfo)
+            //{
+            //    HediffComp_PartModule partModule = __instance.TryGetComp<HediffComp_PartModule>();
+            //    if (partModule != null)
+            //    {
+            //        partModule.SpecialPostAdd(dinfo);
+            //    }
+            //}
         }
     }
 }

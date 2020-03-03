@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- Base class replacing -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BodyPartBase"]/thingClass</xpath>
+		<value>
+			<thingClass>OrenoMSE.MSE_ThingClass.MSE_ThingBodyPart</thingClass>
+		</value>
+	</Operation> 
+
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
