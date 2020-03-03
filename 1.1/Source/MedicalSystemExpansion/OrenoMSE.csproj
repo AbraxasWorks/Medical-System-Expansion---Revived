@@ -335,10 +335,10 @@
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallImplantSystem.cs" />
-    <Compile Include="MSE_Recipe\Recipe_InstallNaturalBodyPartWithChildren.cs" />
+    <Compile Include="MSE_Recipe\Recipe_InstallArtificialBodyPartWithChildren.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveImplantSystem.cs" />
-    <Compile Include="MSE_ThingClass\MSE_BodyPart.cs" />
+    <Compile Include="ThingComp\CompIncludedChildParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallBodyPartModule.cs" />
   </ItemGroup>

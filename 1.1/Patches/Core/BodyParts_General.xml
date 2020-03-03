@@ -4,9 +4,9 @@
 	<!-- Base class replacing -->
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="BodyPartBase"]/thingClass</xpath>
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
 		<value>
-			<thingClass>OrenoMSE.MSE_ThingClass.MSE_ThingBodyPart</thingClass>
+			<workerClass>OrenoMSE.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 		</value>
 	</Operation> 
 
