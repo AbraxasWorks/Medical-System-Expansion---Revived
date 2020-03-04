@@ -2,6 +2,7 @@
 <Defs>
 
 	<HediffDef Name="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<description>Implant complication</description>
 		<hediffClass>OrenoMSE.Hediff_SurgerySupport</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<tendable>true</tendable>
@@ -28,6 +29,7 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_ImplantComplicationHediff_Brain" ParentName="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<description>Brain implant complication</description>
 		<lethalSeverity>1.00</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<comps>
@@ -45,6 +47,7 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_ImplantComplicationHediff_Organ" ParentName="MSE_ImplantComplicationHediffBase" Abstract="True">
+		<description>Organ implant complication</description>
 		<makesSickThought>true</makesSickThought>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">

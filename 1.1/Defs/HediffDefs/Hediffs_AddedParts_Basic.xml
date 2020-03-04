@@ -5,7 +5,6 @@
 		<defName>PegLeg</defName>
 		<label>peg leg</label>
 		<labelNoun>a peg leg</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.60</partEfficiency>
@@ -18,7 +17,6 @@
 		<defName>WoodenFoot</defName>
 		<label>wooden foot</label>
 		<labelNoun>a wooden foot</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.80</partEfficiency>
@@ -31,7 +29,6 @@
 		<defName>Denture</defName>
 		<label>denture</label>
 		<labelNoun>a denture</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.80</partEfficiency>
@@ -46,7 +43,6 @@
 		<defName>WoodenToe</defName>
 		<label>wooden toe</label>
 		<labelNoun>a wooden toe</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.90</partEfficiency>
@@ -59,7 +55,6 @@
 		<defName>WoodenArm</defName>
 		<label>wooden arm</label>
 		<labelNoun>a wooden arm</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.15</partEfficiency>
@@ -72,7 +67,6 @@
 		<defName>HookHand</defName>
 		<label>hook hand</label>
 		<labelNoun>a hook hand</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.20</partEfficiency>
@@ -85,7 +79,6 @@
 		<defName>WoodenFinger</defName>
 		<label>wooden finger</label>
 		<labelNoun>a wooden finger</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.30</partEfficiency>
@@ -98,7 +91,6 @@
 		<defName>Eyepatch</defName>
 		<label>eyepatch</label>
 		<labelNoun>an eyepatch</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<partEfficiency>0.00</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
@@ -110,7 +102,6 @@
 		<defName>WoodenEar</defName>
 		<label>wooden ear</label>
 		<labelNoun>a wooden ear</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.00</partEfficiency>
@@ -123,7 +114,6 @@
 		<defName>WoodenNose</defName>
 		<label>wooden nose</label>
 		<labelNoun>a wooden nose</labelNoun>
-		<description>Test. Fix Later</description>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>false</betterThanNatural>

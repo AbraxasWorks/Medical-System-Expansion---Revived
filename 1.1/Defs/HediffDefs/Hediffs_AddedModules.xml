@@ -3,6 +3,7 @@
 
 	<!--============ Added Part Module Base ============-->
 	<HediffDef Name="MSE_AddedModule" Abstract="True">
+		<description>A module</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<isBad>false</isBad>
 		<comps>
@@ -14,12 +15,14 @@
 
 	<!--=================== Bionic =====================-->
 	<HediffDef Name="MSE_AddedModuleBionic" ParentName="MSE_AddedModule" Abstract="True">
+		<description>A bionic module</description>
 		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
 		<comps /> <!-- Makes patching easier -->
 	</HediffDef>
 
 	<!--================== Archotech ===================-->
 	<HediffDef Name="MSE_AddedModuleArchotech" ParentName="MSE_AddedModule" Abstract="True">
+		<description>An archotech module</description>
 		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
 		<comps /> <!-- Makes patching easier -->
 	</HediffDef>
