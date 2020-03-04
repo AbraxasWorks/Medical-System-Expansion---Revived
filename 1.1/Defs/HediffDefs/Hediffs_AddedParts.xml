@@ -40,6 +40,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A very poor artificial body part.</description>
 	</HediffDef>
 
 	<!--=================== Simple =====================-->
@@ -55,6 +56,7 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<description>A poor artificial body part.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
@@ -77,6 +79,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A poor artificial organ.</description>
 	</HediffDef>
 
 	<!--=================== Bionic =====================-->
@@ -103,6 +106,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A bionic body part.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionic_Organ" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
@@ -114,6 +118,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A bionic organ.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionicSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
@@ -139,6 +144,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A special bionic body part.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
@@ -150,6 +156,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A special bionic organ.</description>
 	</HediffDef>
 
 	<!--================== Archotech ===================-->
@@ -176,6 +183,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>An archotech body part.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotech_Organ" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
@@ -187,6 +195,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>An archotech organ.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
@@ -212,6 +221,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A special archotech body part.</description>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
@@ -223,6 +233,7 @@
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
+		<description>A special archotech organ.</description>
 	</HediffDef>
 
 </Defs>

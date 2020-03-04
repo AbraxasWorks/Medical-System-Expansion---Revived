@@ -16,8 +16,8 @@
 	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBasic</defName>
 		<label>artificial ABS</label>
-		<description>Getting used to it</description>
-		<defaultLabelColor>(100, 255, 218)</defaultLabelColor>
+		<description>Adaptation to basic body part</description>
+		<defaultLabelColor>(141, 110, 99)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.18</severityPerDay>
@@ -58,7 +58,7 @@
 	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationSimple</defName>
 		<label>prosthetic ASP</label>
-		<description>Getting used to it</description>
+		<description>Adaptation to simple mechanical body part</description>
 		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -99,7 +99,7 @@
 	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationSimple_Organ</defName>
 		<label>prosthetic ASPO</label>
-		<description>Getting used to it</description>
+		<description>Adaptation to simple mechanical organ</description>
 		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
 		<chanceToCauseNoPain>0.15</chanceToCauseNoPain>
 		<comps>
@@ -173,6 +173,7 @@
 
 	<!--=================== Bionic =====================-->
 	<HediffDef Name="MSE_AddedBodyPartBionicAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Adaptation to bionic body part</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.78</severityPerDay>
@@ -211,18 +212,17 @@
 	<HediffDef ParentName="MSE_AddedBodyPartBionicAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBionic</defName>
 		<label>bionic ABN</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBionicSpecial</defName>
 		<label>bionic ABNS</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionicOrganAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Adaptation to bionic organ</description>
 		<chanceToCauseNoPain>0.30</chanceToCauseNoPain>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -288,19 +288,18 @@
 	<HediffDef ParentName="MSE_AddedBodyPartBionicOrganAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBionic_Organ</defName>
 		<label>bionic ABNO</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicOrganAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationBionicSpecial_Organ</defName>
 		<label>bionic ABNSO</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
 	</HediffDef>
 
 	<!--================== Archotech ===================-->
 	<HediffDef Name="MSE_AddedBodyPartArchotechAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Calibration of archotech body part</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-1.42</severityPerDay>
@@ -333,19 +332,18 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotechAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationArchotech</defName>
 		<label>archotech AAT</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_AddedBodyPartArchotechAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationArchotechSpecial</defName>
 		<label>archotech AATS</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechOrganAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
 		<chanceToCauseNoPain>1.38</chanceToCauseNoPain>
+		<description>Calibration of archotech organ</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.30</severityPerDay>
@@ -385,14 +383,12 @@
 	<HediffDef ParentName="MSE_AddedBodyPartArchotechOrganAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationArchotech_Organ</defName>
 		<label>archotech AATO</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_AddedBodyPartArchotechOrganAdaptationBase">
 		<defName>MSE_AddedBodyPartAdaptationArchotechSpecial_Organ</defName>
 		<label>archotech AATSO</label>
-		<description>Getting used to it</description>
 		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
 	</HediffDef>
 

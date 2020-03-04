@@ -7,6 +7,7 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_NaturalBodyPartNormal" ParentName="MSE_NaturalBodyPartBase" Abstract="True">
+		<description>Body part rejection</description>
 		<initialSeverity>0.35</initialSeverity>
 		<tendable>true</tendable>
 		<comps>
@@ -73,6 +74,7 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_NaturalBodyPartNormal_Organ" ParentName="MSE_NaturalBodyPartBase" Abstract="True">
+		<description>Organ rejection</description>
 		<initialSeverity>0.35</initialSeverity>
 		<makesSickThought>true</makesSickThought>
 		<tendable>true</tendable>

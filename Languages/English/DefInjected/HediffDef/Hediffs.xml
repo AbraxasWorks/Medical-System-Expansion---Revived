@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+<!-- BASIC -->
+
+<PegLeg.description>Artificial wooden leg. A very poor leg replacement, but it's better than nothing. Combine with eyepatch and hook hand for piraty look.</PegLeg.description>
+<WoodenFoot.description>Artificial wooden foot. A very poor foot replacement, but it's better than nothing.</WoodenFoot.description>
+<Denture.description>Artificial wooden denture. A very poor jaw replacement, but it's better than nothing.</Denture.description>
+<WoodenToe.description>Artificial wooden toe. A very poor toe replacement, but it's better than nothing.</WoodenToe.description>
+<WoodenArm.description>Artificial wooden arm. A very poor arm replacement, but it's better than nothing.</WoodenArm.description>
+<HookHand.description>Artificial wooden hook. A very poor hand replacement, but it's better than nothing. Combine with eyepatch and peg leg for piraty look.</HookHand.description>
+<WoodenFinger.description>Artificial wooden finger. A very poor finger replacement, but it's better than nothing.</WoodenFinger.description>
+<Eyepatch.description>An eyepatch to hide empty eye socket. Does not restore vision. Combine with peg leg and hook hand for piraty look.</Eyepatch.description>
+<WoodenEar.description>Artificial wooden ear. Does not restore hearing and serves only aesthetic purpose.</WoodenEar.description>
+<WoodenNose.description>Artificial wooden nose. Serves only aesthetic purpose.</WoodenNose.description>
+
+<!-- SIMPLE -->
+
+<SimpleProstheticLeg.description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</SimpleProstheticLeg.description>
+<SimpleProstheticArm.description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</SimpleProstheticArm.description>
+<SimpleProstheticHeart.description>A heart prosthesis. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative.</SimpleProstheticHeart.description>
+<CochlearImplant.description>An implant which replaces normal hearing. An external microphone transmits a sound signal to electrodes wrapped around the inner ear's auditory sensing nerves. The electrodes stimulate the nerves according to the sound, creating a sensation of hearing. It's not as good as a natural ear, but it's a lot better than being deaf.</CochlearImplant.description>
+<SimpleProstheticFoot.description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</SimpleProstheticFoot.description>
+<SimpleProstheticToe.description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</SimpleProstheticToe.description>
+<SimpleProstheticHand.description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand.</SimpleProstheticHand.description>
+<SimpleProstheticFinger.description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger.</SimpleProstheticFinger.description>
+<SimpleProstheticJaw.description>A jaw prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real jaw.</SimpleProstheticJaw.description>
+<SimpleProstheticClavicle.description>A clavicle prosthesis. It is inferior to a real clavicle.</SimpleProstheticClavicle.description>
+<SimpleProstheticSternum.description>A sternum prosthesis. It is inferior to a real sternum.</SimpleProstheticSternum.description>
+<SimpleProstheticRib.description>A rib prosthesis. It is inferior to a real rib.</SimpleProstheticRib.description>
+<SimpleProstheticPelvis.description>A pelvis prosthesis. It is inferior to a real pelvis.</SimpleProstheticPelvis.description>
+<SimpleProstheticHumerus.description>A humerus prosthesis. It is inferior to a real humerus.</SimpleProstheticHumerus.description>
+<SimpleProstheticRadius.description>A radius prosthesis. It is inferior to a real radius.</SimpleProstheticRadius.description>
+<SimpleProstheticFemur.description>A femur prosthesis. It is inferior to a real femur.</SimpleProstheticFemur.description>
+<SimpleProstheticTibia.description>A tibia prosthesis. It is inferior to a real tibia.</SimpleProstheticTibia.description>
+
+<!-- BIONIC -->
+
+<BionicEye.description>An advanced artifical eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</BionicEye.description>
+<BionicArm.description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</BionicArm.description>
+<BionicLeg.description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</BionicLeg.description>
+<BionicSpine.description>An advanced artificial spine. A biogel nerve bundle runs down an articulated plasteel core, surrounded by a lattice-dust healing system. It matches the performance of a biological spine.</BionicSpine.description>
+<BionicHeart.description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way.</BionicHeart.description>
+<BionicStomach.description>An advanced artificial stomach. A set of sensors and chemical synthesizers efficiently digest nearly any energy-bearing foodstuff. An integrated lattice-dust healing system automatically repairs any damage caused by the powerful acids. It is better than a biological stomach in almost every way.</BionicStomach.description>
+<BionicEar.description>An advanced artificial ear implant. A collection of invisible subdermal microphones capture sound and transmit it to a biogel nerve interface that links directly with the auditory nerve. It's sensitive enough to hear a cat before you see it, can't be damaged by loud noise, and automatically tunes itself to pick out meaningful sounds in noisy environments.</BionicEar.description>
+<PowerClaw.description>A combat-oriented hand replacement consisting of a mechanical hand with a vicious claw on each finger. It is vicious in combat, and its powerful mini-servos can crush a skull like a natural hand crushes an egg. The blades can be retracted, making it as useful as a biological hand for non-combat tasks.</PowerClaw.description>
+<BionicLung.description>An advanced artificial lung. A lattice-dust healing system allows it to recover from damage. It is better than a biological lung in almost every way.</BionicLung.description>
+<BionicKidney.description>An advanced artificial kidney. A lattice-dust healing system allows it to recover from damage. It is better than a biological kidney in almost every way.</BionicKidney.description>
+<BionicLiver.description>An advanced artificial liver. A lattice-dust healing system allows it to recover from damage. It is better than a biological liver in almost every way.</BionicLiver.description>
+<BionicFoot.description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way.</BionicFoot.description>
+<BionicToe.description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</BionicToe.description>
+<BionicShoulder.description>An advanced artificial shoulder. With its biogel nerve-link and lattice-dust healing system, it is better than a biological shoulder in almost every way.</BionicShoulder.description>
+<BionicHand.description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way.</BionicHand.description>
+<BionicFinger.description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</BionicFinger.description>
+<BionicJaw.description>An advanced artificial jaw. With its biogel nerve-link and lattice-dust healing system, it is better than a biological jaw in almost every way.</BionicJaw.description>
+<BionicClavicle.description>An advanced artificial clavicle. With lattice-dust healing system allows it to recover from damage.</BionicClavicle.description>
+<BionicSternum.description>An advanced artificial sternum. With lattice-dust healing system allows it to recover from damage.</BionicSternum.description>
+<BionicRib.description>An advanced artificial rib. With lattice-dust healing system allows it to recover from damage.</BionicRib.description>
+<BionicPelvis.description>An advanced artificial pelvis. With lattice-dust healing system allows it to recover from damage.</BionicPelvis.description>
+<BionicHumerus.description>An advanced artificial humerus. With lattice-dust healing system allows it to recover from damage.</BionicHumerus.description>
+<BionicRadius.description>An advanced artificial radius. With lattice-dust healing system allows it to recover from damage.</BionicRadius.description>
+<BionicFemur.description>An advanced artificial femur. With lattice-dust healing system allows it to recover from damage.</BionicFemur.description>
+<BionicTibia.description>An advanced artificial tibia. With lattice-dust healing system allows it to recover from damage.</BionicTibia.description>
+<AntitoxinKidney.description>An advanced artificial antitoxin kidney. With lattice-dust healing system allows it to recover from damage and toxin filtering system allow it to filter toxin from blood. It is better than a biological kidney in almost every way.</AntitoxinKidney.description>
+<MedicalLiver.description>An advanced artificial medical liver. With lattice-dust healing system allows it to recover from damage and it can secreted more kind of immune system. It is better than a biological liver in almost every way.</MedicalLiver.description>
+<EnergizedLiver.description>An advanced artificial energized liver. With lattice-dust healing system allows it to recover from damage and it can secreted special hormone that make user more energetic. It is better than a biological liver in almost every way.</EnergizedLiver.description>
+<MSE_PowerBlade.description>An advanced artificial power blade. With its biogel nerve-link, lattice-dust healing system, and scyther blade attached to it, it is better than a biological shoulder in almost every way.</MSE_PowerBlade.description>
+<PowerArm.description>An advanced artificial power arm. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way.</PowerArm.description>
+<BreathingSupportRib.description>An advanced artificial breathing support rib. With lattice-dust healing system allows it to recover from damage and it can make user breath more ease.</BreathingSupportRib.description>
+<RelaxationRib.description>An advanced artificial relaxation rib. With lattice-dust healing system allows it to recover from damage and it can make user feel more relaxed.</RelaxationRib.description>
+<ColdRegulatorRib.description>An advanced artificial cold regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate cold temperature.</ColdRegulatorRib.description>
+<HeatRegulatorRib.description>An advanced artificial heat regulator rib. With lattice-dust healing system allows it to recover from damage and it can support blood to regulate hot temperature.</HeatRegulatorRib.description>
+
+<!-- ARCHOTECH -->
+
+<ArchotechEye.description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will.</ArchotechEye.description>
+
+<ArchotechArm.description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechArm.description>
+
+<ArchotechLeg.description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechLeg.description>
+
+<!--============== Archotech Organs ================-->
+
+<ArchotechHeart.description>An artifical heart built by an archotech. It more efficient than natural heart and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechHeart.description>
+
+<ArchotechStomach.description>An artifical stomach built by an archotech. It more efficient than natural stomach and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechStomach.description>
+
+<ArchotechLung.description>An artifical lung built by an archotech. It more efficient than natural lung and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechLung.description>
+
+<ArchotechKidney.description>An artifical kidney built by an archotech. It more efficient than natural kidney and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechKidney.description>
+
+<ArchotechLiver.description>An artifical liver built by an archotech. It more efficient than natural liver and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechLiver.description>
+
+<!--=============== Archotech Limbs ================-->
+
+<ArchotechEar.description>An artifical ear built by an archotech. It looks and feels like natural ear, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechEar.description>
+
+<ArchotechFoot.description>An artifical foot built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechFoot.description>
+
+<ArchotechToe.description>An artifical toe built by an archotech. It looks and feels like natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechToe.description>
+
+<ArchotechShoulder.description>An artifical shoulder built by an archotech. It looks and feels like natural shoulder, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechShoulder.description>
+
+<ArchotechHand.description>An artifical hand built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechHand.description>
+
+<ArchotechFinger.description>An artifical finger built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechFinger.description>
+
+<ArchotechJaw.description>An artifical jaw built by an archotech. It looks and feels like natural jaw, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechJaw.description>
+
+<!--=============== Archotech Bones ================-->
+
+<ArchotechSpine.description>An artifical spine built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechSpine.description>
+
+<ArchotechClavicle.description>An artifical clavicle built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechClavicle.description>
+
+<ArchotechSternum.description>An artifical sternum built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechSternum.description>
+
+<ArchotechRib.description>An artifical rib built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechRib.description>
+
+<ArchotechPelvis.description>An artifical pelvis built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechPelvis.description>
+
+<ArchotechHumerus.description>An artifical humerus built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechHumerus.description>
+
+<ArchotechRadius.description>An artifical radius built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechRadius.description>
+
+<ArchotechFemur.description>An artifical femur built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechFemur.description>
+
+<ArchotechTibia.description>An artifical tibia built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</ArchotechTibia.description>
+
+<!--============== Special Archotech ===============-->
+
+<AdvancedAntitoxinKidney.description>An advanced antitoxin kidney built by an archotech. It more efficient than natural kidney, has advanced toxin filtering system, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedAntitoxinKidney.description>
+
+<AdvancedMedicalLiver.description>An advanced medical liver built by an archotech. It more efficient than natural liver, can secreted more kind of immune system, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedMedicalLiver.description>
+
+<AdvancedEnergizedLiver.description>An advanced energized liver built by an archotech. It more efficient than natural liver, can secreted special hormone that make user more energetic, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedEnergizedLiver.description>
+
+<MSE_AdvancedPowerBlade.description>An advanced power blade built by an archotech. It looks and feels like natural shoulder, has scyther blade attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</MSE_AdvancedPowerBlade.description>
+
+<AdvancedPowerArm.description>An advanced power arm built by an archotech. It looks and feels like natural arm, have high blunt damage, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedPowerArm.description>
+
+<AdvancedPowerClaw.description>An advanced power claw built by an archotech. It looks and feels like natural hand, has sharp claw attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedPowerClaw.description>
+
+<AdvancedBreathingSupportRib.description>An advanced breathing support rib built by an archotech. It can make user breath more ease and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedBreathingSupportRib.description>
+
+<AdvancedRelaxationRib.description>An advanced relaxation rib built by an archotech. It can make user feel more relaxed and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedRelaxationRib.description>
+
+<AdvancedColdRegulatorRib.description>An advanced cold regulator rib built by an archotech. It can support blood to regulate cold temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedColdRegulatorRib.description>
+
+<AdvancedHeatRegulatorRib.description>An advanced heat regulator rib built by an archotech. It can support blood to regulate hot temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time.</AdvancedHeatRegulatorRib.description>
+
+<!-- BIONIC IMPLANTS -->
+
+<Joywire.description>A brain implant that stimulates the brain's pleasure centers. While it dramatically improves a user's mood, the blanket of happiness makes it hard to concentrate on anything real. Joywires are illegal on many worlds, and are known for destroying whole cultures.</Joywire.description>
+
+<Painstopper.description>A brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</Painstopper.description>
+
+<!--================ Bone Implants =================-->
+
+<MSE_EndoskeletonStimulator.description>A torso implant that stimulates the overall muscles so they can operate at maximum performance.</MSE_EndoskeletonStimulator.description>
+
+<!--=============== Muscle Implants ================-->
+
+<MSE_MuscleStimulator.description>A muscle implant that stimulates the overall muscles so they can operate at maximum performance.</MSE_MuscleStimulator.description>
+
+<!--================ Brain Implants ================-->
+
+<MSE_BuilderAI.description>A brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for building.</MSE_BuilderAI.description>
+
+<MSE_FarmerAI.description>A brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for farming.</MSE_FarmerAI.description>
+
+<MSE_DoctorAI.description>A brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for doctoring.</MSE_DoctorAI.description>
+
+<MSE_MinerAI.description>A brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for mining.</MSE_MinerAI.description>
+
+<MSE_DiplomatAI.description>A brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for diplomacy.</MSE_DiplomatAI.description>
+
+<MSE_TamerAI.description>A brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for taming.</MSE_TamerAI.description>
+
+<MSE_ChefAI.description>A brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for cooking.</MSE_ChefAI.description>
+
+<MSE_HunterAI.description>A brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for hunting.</MSE_HunterAI.description>
+
+<MSE_BasicLaborAI.description>A brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for basic unskilled labor.</MSE_BasicLaborAI.description>
+
+<!--================ Organ Implants ================-->
+
+<MSE_AppetiteSuppressant.description>A stomach implant that suppresses hunger.</MSE_AppetiteSuppressant.description>
+
+<!-- ARCHOTECH IMPLANTS -->	
+
+<!--================ Bone Implants =================-->
+
+<MSE_AdvancedEndoskeletonStimulator.description>An advanced torso implant that stimulates the overall muscles so they can operate at maximum performance.</MSE_AdvancedEndoskeletonStimulator.description>
+
+<!--=============== Muscle Implants ================-->
+
+<MSE_AdvancedMuscleStimulator.description>An advanced muscle implant that stimulates the overall muscles so they can operate at maximum performance.</MSE_AdvancedMuscleStimulator.description>
+
+<!--================ Brain Implants ================-->
+
+<AdvancedJoywire.description>An advanced brain implant that stimulates the brain's pleasure centers. It dramatically improves a user's mood without any side effect. Advanced Joywires are illegal on many worlds, and are known for destroying whole cultures.</AdvancedJoywire.description>
+
+<AdvancedPainstopper.description>An advanced brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily. Can be activated or deactivated according to user will.</AdvancedPainstopper.description>
+
+<MSE_AdvancedBuilderAI.description>An advanced brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for building.</MSE_AdvancedBuilderAI.description>
+
+<MSE_AdvancedFarmerAI.description>An advanced brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for farming.</MSE_AdvancedFarmerAI.description>
+
+<MSE_AdvancedDoctorAI.description>An advanced brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for doctoring.</MSE_AdvancedDoctorAI.description>
+
+<MSE_AdvancedMinerAI.description>An advanced brain implant that contains an AI persona. Capable to communicate with the user brain and act as a guide for mining.</MSE_AdvancedMinerAI.description>
+
+<MSE_AdvancedDiplomatAI.description>An advanced brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for diplomacy.</MSE_AdvancedDiplomatAI.description>
+
+<MSE_AdvancedTamerAI.description>An advanced brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for taming.</MSE_AdvancedTamerAI.description>
+
+<MSE_AdvancedChefAI.description>An advanced brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for cooking.</MSE_AdvancedChefAI.description>
+
+<MSE_AdvancedHunterAI.description>An advanced brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for hunting.</MSE_AdvancedHunterAI.description>
+
+<MSE_AdvancedLaborAI.description>An advanced brain implant that contains an AI persona. Able to communicate with the user brain and act as a guide for advanced unskilled labor.</MSE_AdvancedLaborAI.description>
+
+<!--================ Organ Implants ================-->
+
+<MSE_AdvancedAppetiteSuppressant.description>An advanced stomach implant that suppresses hunger.</MSE_AdvancedAppetiteSuppressant.description>
+
+<!-- BIONIC MODULES -->
+
+<MSE_BionicClavicleModule.description>An advanced artificial clavicle module. With lattice-dust healing system allows it to recover from damage. You can install it to clavicle module slot.</MSE_BionicClavicleModule.description>
+
+<MSE_BionicArmModule.description>An advanced artificial arm module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological arm in almost every way. You can install it to arm module slot.</MSE_BionicArmModule.description>
+
+<MSE_BionicHumerusModule.description>An advanced artificial humerus module. With lattice-dust healing system allows it to recover from damage. You can install it to humerus module slot.</MSE_BionicHumerusModule.description>
+
+<MSE_BionicRadiusModule.description>An advanced artificial radius module. With lattice-dust healing system allows it to recover from damage. You can install it to radius module slot.</MSE_BionicRadiusModule.description>
+
+<MSE_BionicHandModule.description>An advanced artificial hand module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way. You can install it to hand module slot.</MSE_BionicHandModule.description>
+
+<MSE_BionicFingerModule.description>An advanced artificial finger module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way. You can install it to finger module slot.</MSE_BionicFingerModule.description>
+
+<MSE_BionicFemurModule.description>An advanced artificial femur module. With lattice-dust healing system allows it to recover from damage. You can install it to femur module slot.</MSE_BionicFemurModule.description>
+
+<MSE_BionicTibiaModule.description>An advanced artificial tibia module. With lattice-dust healing system allows it to recover from damage. You can install it to tibia module slot.</MSE_BionicTibiaModule.description>
+
+<MSE_BionicFootModule.description>An advanced artificial foot module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way. You can install it to foot module slot.</MSE_BionicFootModule.description>
+
+<MSE_BionicToeModule.description>An advanced artificial toe module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way. You can install it to toe module slot.</MSE_BionicToeModule.description>
+
+<!--=============== Special Bionics ================-->
+
+<MSE_RangedPlatformModule.description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot.</MSE_RangedPlatformModule.description>
+
+<MSE_MeleePlatformModule.description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot.</MSE_MeleePlatformModule.description>
+
+<MSE_PowerArmModule.description>An advanced artificial power arm module. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way. You can install it to arm module slot.</MSE_PowerArmModule.description>
+
+<MSE_PowerClawModule.description>An advanced artificial power claw module. With its biogel nerve-link, lattice-dust healing system, and has sharp claw attached to it, it is better than a biological hand in almost every way. You can install it to hand module slot.</MSE_PowerClawModule.description>
+
+<MSE_AdamantiumCoatedBoneModule.description>A bone module that coated with adamantium alloy. Able to sustain almost all attack. A lattice-dust healing system allows it to recover from damage. You can install it to all bone module slot.</MSE_AdamantiumCoatedBoneModule.description>
+
+<!-- ARCHOTECH MODULES -->
+
+<MSE_ArchotechClavicleModule.description>An artifical clavicle module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to clavicle module slot.</MSE_ArchotechClavicleModule.description>
+
+<MSE_ArchotechArmModule.description>An artifical arm module built by an archotech. It looks and feels like natural arm, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to arm module slot.</MSE_ArchotechArmModule.description>
+
+<MSE_ArchotechHumerusModule.description>An artifical humerus module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to humerus module slot.</MSE_ArchotechHumerusModule.description>
+
+<MSE_ArchotechRadiusModule.description>An artifical radius module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to radius module slot.</MSE_ArchotechRadiusModule.description>
+
+<MSE_ArchotechHandModule.description>An artifical hand module built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to hand module slot.</MSE_ArchotechHandModule.description>
+
+<MSE_ArchotechFingerModule.description>An artifical finger module built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to finger module slot.</MSE_ArchotechFingerModule.description>
+
+<MSE_ArchotechFemurModule.description>An artifical femur module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to femur module slot.</MSE_ArchotechFemurModule.description>
+
+<MSE_ArchotechTibiaModule.description>An artifical tibia module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to tibia module slot.</MSE_ArchotechTibiaModule.description>
+
+<MSE_ArchotechFootModule.description>An artifical foot module built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to foot module slot.</MSE_ArchotechFootModule.description>
+
+<MSE_ArchotechToeModule.description>An artifical toe module built by an archotech. It looks and feels like natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to toe module slot.</MSE_ArchotechToeModule.description>
+
+<!--============== Special Archotech ===============-->
+
+<MSE_AdvancedRangedPlatformModule.description>An advanced ranged platform module. If it is harmed, it repairs itself over time. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot.</MSE_AdvancedRangedPlatformModule.description>
+
+<MSE_AdvancedMeleePlatformModule.description>An advanced melee platform module. If it is harmed, it repairs itself over time. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot.</MSE_AdvancedMeleePlatformModule.description>
+
+<MSE_AdvancedPowerArmModule.description>An advanced power arm module built by an archotech. It looks and feels like natural arm, have high blunt damage, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to arm module slot.</MSE_AdvancedPowerArmModule.description>
+
+<MSE_AdvancedPowerClawModule.description>An advanced power claw module built by an archotech. It looks and feels like natural hand, has sharp claw attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to hand module slot.</MSE_AdvancedPowerClawModule.description>
+
+<MSE_AdamantiumBoneModule.description>A bone module that crafted with high quality adamantium alloy. Able to sustain almost all attack. Even if it is harmed, it repairs itself over time. You can install it to all bone module slot.</MSE_AdamantiumBoneModule.description>
+
+
+<!--========== Added Part Adaptation Base ==========-->
+<MSE_AddedBodyPartAdaptationBasic.description>The process of adaptation to basic wooden body part body goes through. Depending on individual factors, can take anywhere between 4-5 days and a season.</MSE_AddedBodyPartAdaptationBasic.description>
+
+<!--=================== Simple =====================-->
+<MSE_AddedBodyPartAdaptationSimple.description>The process of adaptation to simple mechanical body part body goes through. Depending on individual factors, can take anywhere between 2-4 and 10 days.</MSE_AddedBodyPartAdaptationSimple.description>
+
+<MSE_AddedBodyPartAdaptationSimple_Organ.description>The process of adaptation to simple mechanical organ body goes through. Depending on individual factors, can take anywhere between 4-5 days and a season.</MSE_AddedBodyPartAdaptationSimple_Organ.description>
+
+<!--=================== Bionic =====================-->
+<MSE_AddedBodyPartAdaptationBionic.description>The process of adaptation to bionic body part body goes through. Depending on individual factors, can take one to three days.</MSE_AddedBodyPartAdaptationBionic.description>
+
+<MSE_AddedBodyPartAdaptationBionicSpecial.description>The process of adaptation to bionic body part body goes through. Depending on individual factors, can take one to three days.</MSE_AddedBodyPartAdaptationBionicSpecial.description>
+
+<MSE_AddedBodyPartAdaptationBionic_Organ.description>The process of adaptation to bionic organ body goes through. Depending on individual factors, can take two to four days.</MSE_AddedBodyPartAdaptationBionic_Organ.description>
+
+<MSE_AddedBodyPartAdaptationBionicSpecial_Organ.description>The process of adaptation to bionic organ body goes through. Depending on individual factors, can take two to four days.</MSE_AddedBodyPartAdaptationBionicSpecial_Organ.description>
+
+<!--================== Archotech ===================-->
+<MSE_AddedBodyPartAdaptationArchotech.description>The process of calibration and firmware updates archotech body part goes through after being attached to a body. Advanced nerve-link connectors guarantee zero chance of body rejecting an archotech part. Depending on individual factors, calibration can take up to one day.</MSE_AddedBodyPartAdaptationArchotech.description>
+
+<MSE_AddedBodyPartAdaptationArchotechSpecial.description>The process of calibration and firmware updates archotech body part goes through after being attached to a body. Advanced nerve-link connectors guarantee zero chance of body rejecting an archotech part. Depending on individual factors, calibration can take up to one day.</MSE_AddedBodyPartAdaptationArchotechSpecial.description>
+
+<MSE_AddedBodyPartAdaptationArchotech_Organ.description>The process of calibration and firmware updates archotech organ goes through after being attached to a body. Advanced nerve-link connectors guarantee zero chance of body rejecting an archotech organ. Depending on individual factors, calibration can take up to two to five days.</MSE_AddedBodyPartAdaptationArchotech_Organ.description>
+
+<MSE_AddedBodyPartAdaptationArchotechSpecial_Organ.description>The process of calibration and firmware updates archotech organ goes through after being attached to a body. Advanced nerve-link connectors guarantee zero chance of body rejecting an archotech organ. Depending on individual factors, calibration can take up to two to five days.</MSE_AddedBodyPartAdaptationArchotechSpecial_Organ.description>
+
+<!-- NATURAL PART REJECTION -->
+
+<Brain.description>Brain cells transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+If allowed to progress too far will inevitably cause organ failure - brain will simply die due to  incompatibility between host and transplant cells.</Brain.description>
+
+<Heart.description>Heart transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+Advanced stages may cause heart attacks.
+
+If allowed to progress too far rejection will inevitably cause organ failure - heart will simply die due to incompatibility between host and transplant cells.</Heart.description>
+
+<Lung.description>Lung transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+Advanced stages may cause asthma.
+
+If allowed to progress too far rejection will inevitably cause organ failure - lung will simply die due to incompatibility between host and transplant cells.</Lung.description>
+
+<Kidney.description>Kidney transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - kidney will simply die due to incompatibility between host and transplant cells.</Kidney.description>
+
+<Liver.description>Liver transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - liver will simply die due to incompatibility between host and transplant cells.</Liver.description>
+
+<Stomach.description>Stomach transplant rejection. Depending on treatment and pure luck, host may recover in a week, a season or never.
+
+Advanced stages may cause host to develop allergy to even the mildest foods, with symptoms similar to food poisoning.
+
+If allowed to progress too far rejection will inevitably cause organ failure - stomach will simply die due to incompatibility between host and transplant cells.</Stomach.description>
+
+<Eye.description>Eye transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - eye will simply rot and fall out due to incompatibility between host and transplant cells.</Eye.description>
+
+<Ear.description>Ear transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - ear will simply rot and fall off due to incompatibility between host and transplant cells.</Ear.description>
+
+<Nose.description>Nose transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - nose will simply rot and fall off due to incompatibility between host and transplant cells.</Nose.description>
+
+<Jaw.description>Jaw transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - jaw will simply rot and fall off due to incompatibility between host and transplant cells.</Jaw.description>
+
+<Shoulder.description>Shoulder transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - shoulder will simply rot and fall off due to incompatibility between host and transplant cells.</Shoulder.description>
+
+<Arm.description>Arm transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - arm will simply rot and fall off due to incompatibility between host and transplant cells.</Arm.description>
+
+<Hand.description>Hand transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - hand will simply rot and fall off due to incompatibility between host and transplant cells.</Hand.description>
+
+<Finger.description>Finger transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - finger will simply rot and fall off due to incompatibility between host and transplant cells.</Finger.description>
+
+<Leg.description>Leg transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - leg will simply rot and fall off due to incompatibility between host and transplant cells.</Leg.description>
+
+<Foot.description>Foot transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - foot will simply rot and fall off due to incompatibility between host and transplant cells.</Foot.description>
+
+<Toe.description>Toe transplant rejection. Depending on treatment and pure luck, host may recover in two days, a week, a season or never.
+
+If allowed to progress too far rejection will inevitably cause organ failure - toe will simply rot and fall off due to incompatibility between host and transplant cells.</Toe.description>
+
+<!-- IMPLANT COMPLICATIONS -->
+
+<MSE_JoywireComplication.description>The joywire is attached to nucleus accumbens - the pleasure center of the brain, stimulating it to release dopamine and injecting endorphins and serotonin into surrounding synapses. This sudden change in hormonal balance and neural activity triggers neuroimmune response.
+
+With proper treatment, neuroimmune system can be suppressed until it accepts new brain activity patterns and hormonal balance as the new norm. This can take as little as two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system and the implant will throw hormonal balance into disarray and cause sporadic glial cell growths in random parts of the brain, effectively shutting down all neural activity.</MSE_JoywireComplication.description>
+
+<MSE_PainstopperComplication.description>The painstopper is attached to dorsal posterior insula - the pain center of the brain, surrounding it with glial tissue to prevent pain signals from reaching it. This sudden change in neural activity triggers neuroimmune response. 
+
+With proper treatment, neuroimmune system can be suppressed until it accepts new brain activity patterns as the new norm. This can take as little as two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system and the implant will cause sporadic glial cell growths in random parts of the brain, effectively shutting down all neural activity.</MSE_PainstopperComplication.description>
+
+<!--========== Bone Implants Complication ==========-->
+<MSE_EndoskeletonStimulatorComplication.description>Endoskeleton stimulator isn't a single device: it's a series of micro-servomotors installed in key joints, as well as plasteel reinforcement of appendicular skeleton. The change in skeletal system is so expansive it strains central nervous system and triggers massive immune response.
+
+With proper treatment, body will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, immune system will destroy all parts of the implant, killing host in the process.</MSE_EndoskeletonStimulatorComplication.description>
+
+<!--========= Muscle Implants Complication =========-->
+<MSE_ArmMuscleStimulatorComplication.description>Arm muscle stimulator is attached to lower end of brachial plexus on left or right side; it intercepts and amplifies electric signals sent by the brain into the arm. During rest, it uses ulnar, median, radial and musculocutaneous nerves as conduits for electric stimulation it delivers to arm muscles. This helps in keeping muscles toned and promotes tissue growth. This intervention in nervous system triggers massive immune response.
+
+With proper treatment, body will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, immune system will destroy the implant, releasing implant's stored electric charge directly into brachial plexus, cervical spine and brainstem. CNS will burn out, rendering host incompatible with life.</MSE_ArmMuscleStimulatorComplication.description>
+
+<MSE_LegMuscleStimulatorComplication.description>Leg muscle stimulator is attached to lower end of lumbar spine on left or right side; it intercepts and amplifies electric signals sent by the brain into the leg. During rest, it uses femoral, saphenous and sciatic nerves as conduits for electric stimulation it delivers to leg muscles. This helps in keeping muscles toned and promotes tissue growth. This intervention in nervous system triggers massive immune response.
+
+With proper treatment, body will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, immune system will destroy the implant, releasing implant's stored electric charge directly into lumbar spine and brainstem. CNS will burn out, rendering host incompatible with life.</MSE_LegMuscleStimulatorComplication.description>
+
+<!--========= Brain Implants Complication ==========-->
+<MSE_BuilderAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_BuilderAIComplication.description>
+
+<MSE_FarmerAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_FarmerAIComplication.description>
+
+<MSE_DoctorAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_DoctorAIComplication.description>
+
+<MSE_MinerAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_MinerAIComplication.description>
+
+<MSE_DiplomatAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_DiplomatAIComplication.description>
+
+<MSE_TamerAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_TamerAIComplication.description>
+
+<MSE_ChefAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_ChefAIComplication.description>
+
+<MSE_HunterAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_HunterAIComplication.description>
+
+<MSE_BasicLaborAIComplication.description>This AI implant is inserted next to basal ganglia. Process of adaptation involves suppressing neuroimmune system until nerve-link connectors are recognized as regular synapses as well as psychological assistance to the host to help him cope with the fact that there's two minds inside one skull now.
+
+With proper treatment, body and mind will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, neuroimmune system may attack basal ganglia, effectively shutting down communication between brain lobes. Alternatively, host mind may lock itself in one of temporal lobes, refusing to communicate or acknowledge the existence of the AI.
+
+Both of these complications lead to brain tissue degeneration and ultimately death.</MSE_BasicLaborAIComplication.description>
+
+<!--========= Organ Implants Complication ==========-->
+<MSE_AppetiteSuppressantComplication.description>Appetite suppressant is a stomach implant that induces a comprehensive change in metabolism. This change is massive, rapid and requires observation by qualified medical professional. 
+
+With proper treatment, body will adapt to the change within two to three days; however, if medical assistance is inadequate or isn't provided in time, immune system will destroy the implant, killing host in the process.</MSE_AppetiteSuppressantComplication.description>
+
+</LanguageData>

@@ -5,7 +5,6 @@
 		<defName>MSE_BionicClavicleModule</defName>
 		<label>bionic clavicle module</label>
 		<labelNoun>a bionic clavicle module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -26,7 +25,6 @@
 		<defName>MSE_BionicArmModule</defName>
 		<label>bionic arm module</label>
 		<labelNoun>a bionic arm module</labelNoun>
-		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -61,7 +59,6 @@
 		<defName>MSE_BionicHumerusModule</defName>
 		<label>bionic humerus module</label>
 		<labelNoun>a bionic humerus module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -82,7 +79,6 @@
 		<defName>MSE_BionicRadiusModule</defName>
 		<label>bionic radius module</label>
 		<labelNoun>a bionic radius module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -103,7 +99,6 @@
 		<defName>MSE_BionicHandModule</defName>
 		<label>bionic hand module</label>
 		<labelNoun>a bionic hand module</labelNoun>
-		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -138,7 +133,6 @@
 		<defName>MSE_BionicFingerModule</defName>
 		<label>bionic finger module</label>
 		<labelNoun>a bionic finger module</labelNoun>
-		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -173,7 +167,6 @@
 		<defName>MSE_BionicFemurModule</defName>
 		<label>bionic femur module</label>
 		<labelNoun>a bionic femur module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -194,7 +187,6 @@
 		<defName>MSE_BionicTibiaModule</defName>
 		<label>bionic tibia module</label>
 		<labelNoun>a bionic tibia module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -215,7 +207,6 @@
 		<defName>MSE_BionicFootModule</defName>
 		<label>bionic foot module</label>
 		<labelNoun>a bionic foot module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -236,7 +227,6 @@
 		<defName>MSE_BionicToeModule</defName>
 		<label>bionic toe module</label>
 		<labelNoun>a bionic toe module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<capMods>
@@ -257,7 +247,6 @@
 		<defName>MSE_RangedPlatformModule</defName>
 		<label>ranged platform module</label>
 		<labelNoun>a ranged platform module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -276,7 +265,6 @@
 		<defName>MSE_MeleePlatformModule</defName>
 		<label>melee platform module</label>
 		<labelNoun>a melee platform module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>
@@ -295,7 +283,6 @@
 		<defName>MSE_PowerArmModule</defName>
 		<label>power arm module</label>
 		<labelNoun>a power arm module</labelNoun>
-		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -322,7 +309,6 @@
 		<defName>MSE_PowerClawModule</defName>
 		<label>power claw module</label>
 		<labelNoun>a power claw module</labelNoun>
-		<description>Test. Fix Later</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -349,7 +335,6 @@
 		<defName>MSE_AdamantiumCoatedBoneModule</defName>
 		<label>adamantium coated bone module</label>
 		<labelNoun>an adamantium coated bone module</labelNoun>
-		<description>Test. Fix Later</description>
 		<stages>
 			<li>
 				<statOffsets>

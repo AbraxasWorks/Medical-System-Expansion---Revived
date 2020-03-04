@@ -17,6 +17,7 @@
 	</ThingDef>
 
 	<ThingDef Name="MSE_ImplantBionic" ParentName="MSE_ImplantBase" Abstract="True">
+		<description>A bionic implant</description>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBionic2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -47,6 +48,7 @@
 	</ThingDef>
 
 	<ThingDef Name="MSE_ImplantArchotech" ParentName="MSE_ImplantBase" Abstract="True">
+		<description>An archotech implant</description>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemArchotech2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
