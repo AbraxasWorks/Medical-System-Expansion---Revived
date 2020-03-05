@@ -3,7 +3,7 @@ using Verse;
 
 namespace OrenoMSE.HarmonyPatches
 {
-    public class Harmony_Hediff
+    public class Hediff_PrettyLabel
     {
         [HarmonyPatch(typeof(Hediff))]
         [HarmonyPatch("LabelBase", MethodType.Getter)]

@@ -49,28 +49,28 @@ namespace OrenoMSE
 			List<BodyPartRecord> partAndDirectChildren = new List<BodyPartRecord>( part.GetDirectChildParts() );
 			//partAndDirectChildren.Add( part );
 
-			Log.Message( "Starting recursive installation from " + part.Label );
+			//Log.Message( "Starting recursive installation from " + part.Label );
 			foreach ( Thing ingredient in ingredients )
 			{
 				if ( ingredient is ThingWithComps bodyPartIngredient ) 
 				{ // if it has comps
-					Log.Message( "Considering ingredient: " + bodyPartIngredient.Label );
+					//Log.Message( "Considering ingredient: " + bodyPartIngredient.Label );
 
 					CompIncludedChildParts compChildParts = bodyPartIngredient.GetComp<CompIncludedChildParts>();
 					if ( compChildParts != null )
 					{ // has child items
 
-						Log.Message( "With child parts: " + compChildParts.childPartsIncluded.ToString() );
+						//Log.Message( "With child parts: " + compChildParts.childPartsIncluded.ToString() );
 
 						foreach ( Thing childThing in compChildParts.childPartsIncluded )
 						{ // for each child thing
-							Log.Message( "Trying to install child " + childThing.Label );
+							//Log.Message( "Trying to install child " + childThing.Label );
 							bool hasFoundARec = false;
 							foreach ( RecipeDef anyrec in DefDatabase<RecipeDef>.AllDefs )
 							{ // each recipe that includes it
 								if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_InstallArtificialBodyPartWithChildren recursiveRecipe )
 								{ // try to get the RecipeWorker
-									Log.Message( "Candidate surgery: " + anyrec.defName );
+									//Log.Message( "Candidate surgery: " + anyrec.defName );
 									//int i = 0;
 									BodyPartRecord validBP =
 										MedicalRecipesUtility.GetFixedPartsToApplyOn( anyrec, pawn, // out of all the possible places to install this on the pawn
@@ -80,7 +80,7 @@ namespace OrenoMSE
 
 									if ( validBP != null ) // it actually found something
 									{
-										Log.Message( "Found a surgery: " + anyrec.defName );
+										//Log.Message( "Found a surgery: " + anyrec.defName );
 										recursiveRecipe.ApplyOnPawn( pawn, validBP, null, new List<Thing> { childThing }, null );
 										partAndDirectChildren.Remove( validBP );
 										hasFoundARec = true;

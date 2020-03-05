@@ -175,4 +175,46 @@
 		</statBases>
 	</ThingDef>
 
+
+	<!-- To finalize -->
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Humerus</defName>
+		<label>humerus</label>
+		<description>Test. Fix Later</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Radius</defName>
+		<label>radius</label>
+		<description>Test. Fix Later</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Femur</defName>
+		<label>femur</label>
+		<description>Test. Fix Later</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Tibia</defName>
+		<label>tibia</label>
+		<description>Test. Fix Later</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
 </Defs>

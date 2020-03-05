@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2009463077\v1.1\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -303,16 +303,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Harmony\Harmony_HediffAddedPart.cs" />
-    <Compile Include="Harmony\Harmony_Hediff.cs" />
+    <Compile Include="Harmony\Hediff_PrettyLabel.cs" />
     <Compile Include="Harmony\Harmony_HediffImplant.cs" />
     <Compile Include="Harmony\Harmony_HediffUtility.cs" />
     <Compile Include="Harmony\Harmony_HediffWithComps.cs" />
-    <Compile Include="Harmony\Harmony_PawnDraftController.cs" />
+    <Compile Include="Harmony\PawnDraftController.cs" />
     <Compile Include="Harmony\Harmony_RecipeInstallArtificialBodyPart.cs" />
     <Compile Include="Harmony\Harmony_PawnGenerator.cs" />
     <Compile Include="Harmony\Harmony_RecipeInstallNaturalBodyPart.cs" />
     <Compile Include="Harmony\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="Harmony\MSE_SafeReflections.cs" />
+    <Compile Include="Harmony\SpawnNaturalPartIfClean.cs" />
+    <Compile Include="Harmony\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="MSE_DefModExtension\MSE_AdditionalHediff.cs" />
     <Compile Include="MSE_DefModExtension\MSE_DontHealInjury.cs" />

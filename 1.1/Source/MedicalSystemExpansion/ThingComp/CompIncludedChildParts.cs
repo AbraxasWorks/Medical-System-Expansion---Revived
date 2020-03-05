@@ -38,12 +38,13 @@ namespace OrenoMSE
         {
             if ( this.childPartsIncluded != null )
             {
-                StringBuilder stringBuilder = new StringBuilder();
-                for ( int i = 0; i < this.childPartsIncluded.Count; i++ )
-                {
-                    stringBuilder.AppendLine( this.childPartsIncluded[i].Label );
-                }
-                return stringBuilder.ToString().TrimEndNewlines();
+                //StringBuilder stringBuilder = new StringBuilder();
+                //for ( int i = 0; i < this.childPartsIncluded.Count; i++ )
+                //{
+                //    stringBuilder.AppendLine( this.childPartsIncluded[i].Label );
+                //}
+                //return stringBuilder.ToString().TrimEndNewlines();
+                return "Includes " + this.childPartsIncluded.Count + ( this.childPartsIncluded.Count > 1 ? " subparts" : " subpart" );
             }
             return null;
         }
@@ -104,17 +105,20 @@ namespace OrenoMSE
 
         public IEnumerable<ThingDef> MissingParts()
         {
-            List< ThingDef > included = this.childPartsIncluded.ConvertAll((Thing x) => { return x.def; });
-            
-            foreach ( ThingDef expectedDef in this.Props.standardChildren )
+            if ( this.props != null )
             {
-                if ( included.Contains( expectedDef ) )
+                List< ThingDef > included = this.childPartsIncluded.ConvertAll((Thing x) => { return x.def; });
+            
+                foreach ( ThingDef expectedDef in this.Props.standardChildren )
                 {
-                    included.Remove( expectedDef );
-                }
-                else
-                {
-                    yield return expectedDef;
+                    if ( included.Contains( expectedDef ) )
+                    {
+                        included.Remove( expectedDef );
+                    }
+                    else
+                    {
+                        yield return expectedDef;
+                    }
                 }
             }
 

@@ -5,11 +5,11 @@ using Verse;
 
 namespace OrenoMSE.HarmonyPatches
 {
-    public class Harmony_PawnDraftController
+    public class PawnDraftController
     {
         [HarmonyPatch(typeof(Pawn_DraftController))]
         [HarmonyPatch("GetGizmos")]
-        internal class PawnDraftController_GetGizmos
+        internal class GetGizmos
         {
             [HarmonyPostfix]
             public static void HediffGizmos(ref IEnumerable<Gizmo> __result, Pawn_DraftController __instance)
