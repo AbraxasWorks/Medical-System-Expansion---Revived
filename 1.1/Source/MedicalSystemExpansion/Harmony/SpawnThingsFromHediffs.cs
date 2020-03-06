@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -8,6 +10,7 @@ namespace OrenoMSE.HarmonyPatches
 {
     public class MedicalRecipesUtility_SpawnThingsFromHediffs
     {
+        
         [HarmonyPatch( typeof( MedicalRecipesUtility ) )]
         [HarmonyPatch( "SpawnThingsFromHediffs" )]
         internal class SpawnThingsFromHediffs
@@ -22,6 +25,7 @@ namespace OrenoMSE.HarmonyPatches
                     GenSpawn.Spawn( item, pos, map );
                 }
 
+                Log.Message( "Completed SpawnThingsFromHediffs" );
                 return false;
             }
         }
@@ -88,23 +92,6 @@ namespace OrenoMSE.HarmonyPatches
 
             yield break;
         }
-        //public static IEnumerable<Thing> ThingsFromChildHediffs ( Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
-        //{
-        //    //Log.Message( "ThingsFromChildHediffs - " + part.Label );
-        //    foreach ( BodyPartRecord subPart in part.GetDirectChildParts() )
-        //    {
-        //        if ( !MedicalRecipesUtility.IsClean( pawn, part ) ) // If parent is not clean try to make natural parts out of children
-        //        {
-        //            MedicalRecipesUtility.SpawnNaturalPartIfClean( pawn, subPart, pos, map );
-        //        }
-        //        // return each thing coming from the child hediffs
-        //        foreach ( Thing subthing in MakeThingsFromHediffs( pawn, subPart, pos, map ) ) 
-        //        {
-        //            yield return subthing;
-        //        }
-        //    }
-        //    yield break;
-        //}
 
         public static void AddSubparts ( ref ThingWithComps item, ref List<Thing> available, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map, bool reset = true )
         {

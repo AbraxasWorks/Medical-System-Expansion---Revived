@@ -27,6 +27,7 @@ namespace OrenoMSE
             }
 
             MSE_VanillaExtender.HediffApplyExtraHediffs(this, this.pawn, base.Part);
+            Log.Message( "WTF" );
         }
 
         public override void ExposeData()

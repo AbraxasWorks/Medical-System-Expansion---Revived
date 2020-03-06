@@ -303,6 +303,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Harmony\Harmony_HediffAddedPart.cs" />
+    <Compile Include="Harmony\Hediff_AddDirect.cs" />
     <Compile Include="Harmony\Hediff_PrettyLabel.cs" />
     <Compile Include="Harmony\Harmony_HediffImplant.cs" />
     <Compile Include="Harmony\Harmony_HediffUtility.cs" />

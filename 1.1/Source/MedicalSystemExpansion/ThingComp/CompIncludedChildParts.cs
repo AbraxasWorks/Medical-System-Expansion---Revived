@@ -44,7 +44,10 @@ namespace OrenoMSE
                 //    stringBuilder.AppendLine( this.childPartsIncluded[i].Label );
                 //}
                 //return stringBuilder.ToString().TrimEndNewlines();
-                return "Includes " + this.childPartsIncluded.Count + ( this.childPartsIncluded.Count > 1 ? " subparts" : " subpart" );
+                return "Includes " 
+                    + this.childPartsIncluded.Count + ( this.childPartsIncluded.Count != 1 ? " subparts" : " subpart" ) 
+                    + ( this.MissingParts().Count() > 0 ? " (incomplete)" : "" ) 
+                    + ".";
             }
             return null;
         }
@@ -86,7 +89,7 @@ namespace OrenoMSE
                     yield return new StatDrawEntry(
                         StatCategoryDefOf.Basics,
                         "Missing subparts:", // Translate
-                        partLinks.Count.ToString(),
+                        missingPartLinks.Count.ToString(),
                         "These parts are missing:",
                         2501,
                         null,
@@ -142,37 +145,53 @@ namespace OrenoMSE
             // autogen
             if (autogenerate)
             {
-                string name = parentDef.defName;
+                try
+                {
+                    string name = parentDef.defName;
 
-                if ( name.Contains("Arm") )
-                {
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Hand" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Humerus" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Radius" ), false ) );
-                }
-                if ( name.Contains( "Hand" ) )
-                {
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
-                }
+                    List<ThingDef> temp = new List<ThingDef>();
 
-                if ( name.Contains( "Leg" ) )
-                {
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Foot" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Femur" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Tibia" ), false ) );
+                    if ( name.Contains("Arm") )
+                    {
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Hand" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Humerus" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Radius" ) ) );
+                    }
+                    if ( name.Contains( "Hand" ) )
+                    {
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Hand", "Finger" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Hand", "Finger" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Hand", "Finger" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Hand", "Finger" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Hand", "Finger" ) ) );
+                    }
+
+                    if ( name.Contains( "Leg" ) )
+                    {
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Foot" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Femur" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Tibia" ) ) );
+                    }
+                    if ( name.Contains( "Foot" ) )
+                    {
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Foot", "Toe" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Foot", "Toe" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Foot", "Toe" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Foot", "Toe" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Foot", "Toe" ) ) );
+                    }
+
+                    foreach ( ThingDef def in temp )
+                    {
+                        if ( def != null )
+                        {
+                            this.standardChildren.Add( def );
+                        }
+                    }
+
+
                 }
-                if ( name.Contains( "Foot" ) )
-                {
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
-                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
-                }
+                catch { }
             }
 
         }

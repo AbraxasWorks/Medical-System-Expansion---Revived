@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -37,6 +38,11 @@ namespace OrenoMSE.HarmonyPatches
             // populates childThings and drops eventual hediff things
             foreach ( BodyPartRecord subPart in part.GetDirectChildParts() )
             {
+                if ( !pawn.health.hediffSet.GetNotMissingParts().Contains( subPart ) )
+                {
+                    continue;
+                }
+
                 Thing childThing = MakeNaturalPartIfClean( pawn, subPart, pos, map );
                 //MedicalRecipesUtility.SpawnThingsFromHediffs( pawn, subPart, pos, map );
 
