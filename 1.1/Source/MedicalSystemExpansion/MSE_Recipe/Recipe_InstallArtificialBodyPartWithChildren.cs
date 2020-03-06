@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 
@@ -6,7 +7,20 @@ namespace OrenoMSE
 {
     class Recipe_InstallArtificialBodyPartWithChildren : Recipe_InstallArtificialBodyPart
     {
-		
+		public override IEnumerable<BodyPartRecord> GetPartsToApplyOn ( Pawn pawn, RecipeDef recipe )
+		{
+			return MedicalRecipesUtility.GetFixedPartsToApplyOn( recipe, pawn, delegate ( BodyPartRecord record )
+			{
+				IEnumerable<Hediff> source = from x in pawn.health.hediffSet.hediffs
+											 where x.Part == record
+											 select x;
+				return 
+					(source.Count<Hediff>() != 1 || source.First<Hediff>().def != recipe.addsHediff) 
+					&& (record.parent == null || pawn.health.hediffSet.GetNotMissingParts( BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null ).Contains( record.parent ))
+					/*&& (!pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts( record ) || pawn.health.hediffSet.HasDirectlyAddedPartFor( record ))*/;
+			} );
+		}
+
 		public override void ApplyOnPawn ( Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill )
 		{
 			// START VANILLA CODE (couldn't know if the surgery was successfull)
