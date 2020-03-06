@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleBionic">
+	<!-- <RecipeDef ParentName="MSE_SurgeryModuleBionic">
 		<defName>MSE_InstallBionicClavicleModule</defName>
 		<label>install bionic clavicle module</label>
 		<description>Install a bionic clavicle module.</description>
@@ -389,7 +389,7 @@
 			<li>Toe</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_BionicToeModule</addsHediff>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!--=========== Bionic Special Modules =============-->
 
@@ -471,7 +471,7 @@
 		<addsHediff>MSE_MeleePlatformModule</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleBionic">
+	<!-- <RecipeDef ParentName="MSE_SurgeryModuleBionic">
 		<defName>MSE_InstallPowerArmModule</defName>
 		<label>install power arm module</label>
 		<description>Install a power arm module.</description>
@@ -547,7 +547,7 @@
 			<li>Hand</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_PowerClawModule</addsHediff>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<RecipeDef ParentName="MSE_SurgeryModuleBionic">
 		<defName>MSE_InstallAdamantiumCoatedBoneModule</defName>

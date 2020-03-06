@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleArchotech">
+	<!-- <RecipeDef ParentName="MSE_SurgeryModuleArchotech">
 		<defName>MSE_InstallArchotechClavicleModule</defName>
 		<label>install archotech clavicle module</label>
 		<description>Install an archotech clavicle module.</description>
@@ -389,7 +389,7 @@
 			<li>Toe</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_ArchotechToeModule</addsHediff>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!--========== Archotech Special Modules ===========-->
 
@@ -471,7 +471,7 @@
 		<addsHediff>MSE_AdvancedMeleePlatformModule</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleArchotech">
+	<!-- <RecipeDef ParentName="MSE_SurgeryModuleArchotech">
 		<defName>MSE_InstallAdvancedPowerArmModule</defName>
 		<label>install advanced power arm module</label>
 		<description>Install an advanced power arm module.</description>
@@ -547,7 +547,7 @@
 			<li>Hand</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_AdvancedPowerClawModule</addsHediff>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<RecipeDef ParentName="MSE_SurgeryModuleArchotech">
 		<defName>MSE_InstallAdamantiumBoneModule</defName>

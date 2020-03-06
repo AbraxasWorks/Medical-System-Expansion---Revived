@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="MSE_ModuleArchotech">
+	<!-- <ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>MSE_ArchotechClavicleModule</defName>
 		<label>archotech clavicle module</label>
 		<description>An artifical clavicle module built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
@@ -149,7 +149,7 @@
 			<WorkToMake>15000</WorkToMake>
 			<Mass>0.05</Mass>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--============== Special Archotech ===============-->
 
@@ -187,7 +187,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+	<!-- <ThingDef ParentName="MSE_ModuleArchotechSpecial">
 		<defName>MSE_AdvancedPowerArmModule</defName>
 		<label>advanced power arm module</label>
 		<description>An advanced power arm module built by an archotech. It looks and feels like natural arm, have high blunt damage, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. You can install it to arm module slot. Requires modules surgery research to install it.</description>
@@ -217,7 +217,7 @@
 			<WorkToMake>140000</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
 		<defName>MSE_AdamantiumBoneModule</defName>

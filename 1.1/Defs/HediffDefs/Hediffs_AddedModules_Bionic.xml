@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<HediffDef ParentName="MSE_AddedModuleBionic">
+	<!-- <HediffDef ParentName="MSE_AddedModuleBionic">
 		<defName>MSE_BionicClavicleModule</defName>
 		<label>bionic clavicle module</label>
 		<labelNoun>a bionic clavicle module</labelNoun>
@@ -251,7 +251,7 @@
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
-	</HediffDef>
+	</HediffDef> -->
 
 	<HediffDef ParentName="MSE_AddedModuleBionic">
 		<defName>MSE_RangedPlatformModule</defName>
@@ -291,7 +291,7 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<HediffDef ParentName="MSE_AddedModuleBionic">
+	<!-- <HediffDef ParentName="MSE_AddedModuleBionic">
 		<defName>MSE_PowerArmModule</defName>
 		<label>power arm module</label>
 		<labelNoun>a power arm module</labelNoun>
@@ -343,7 +343,7 @@
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>
 		</addedPartProps>
-	</HediffDef>
+	</HediffDef> -->
 
 	<HediffDef ParentName="MSE_AddedModuleBionic">
 		<defName>MSE_AdamantiumCoatedBoneModule</defName>
