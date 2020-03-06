@@ -2,7 +2,7 @@
 <Defs>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Brain</defName>
+		<defName>BrainRejection</defName>
 		<label>brain cells transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<initialSeverity>0.65</initialSeverity>
@@ -94,7 +94,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Heart</defName>
+		<defName>HeartRejection</defName>
 		<label>heart transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages>
@@ -167,7 +167,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Lung</defName>
+		<defName>LungRejection</defName>
 		<label>lung transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages>
@@ -240,7 +240,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Kidney</defName>
+		<defName>KidneyRejection</defName>
 		<label>kidney transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages>
@@ -312,7 +312,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Liver</defName>
+		<defName>LiverRejection</defName>
 		<label>liver transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages>
@@ -385,7 +385,7 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal_Organ">
-		<defName>Stomach</defName>
+		<defName>StomachRejection</defName>
 		<label>stomach transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages>
@@ -458,19 +458,19 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Eye</defName>
+		<defName>EyeRejection</defName>
 		<label>eye transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Ear</defName>
+		<defName>EarRejection</defName>
 		<label>ear transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Nose</defName>
+		<defName>NoseRejection</defName>
 		<label>nose transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages Inherit="False">
@@ -504,13 +504,13 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Jaw</defName>
+		<defName>JawRejection</defName>
 		<label>jaw transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Shoulder</defName>
+		<defName>ShoulderRejection</defName>
 		<label>shoulder transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages Inherit="False">
@@ -565,19 +565,19 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Arm</defName>
+		<defName>ArmRejection</defName>
 		<label>arm transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Hand</defName>
+		<defName>HandRejection</defName>
 		<label>hand transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Finger</defName>
+		<defName>FingerRejection</defName>
 		<label>finger transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages Inherit="False">
@@ -614,19 +614,19 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Leg</defName>
+		<defName>LegRejection</defName>
 		<label>leg transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Foot</defName>
+		<defName>FootRejection</defName>
 		<label>foot transplant rejection</label>
 		<description>Test. Fix Later</description>
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_NaturalBodyPartNormal">
-		<defName>Toe</defName>
+		<defName>ToeRejection</defName>
 		<label>toe transplant rejection</label>
 		<description>Test. Fix Later</description>
 		<stages Inherit="False">

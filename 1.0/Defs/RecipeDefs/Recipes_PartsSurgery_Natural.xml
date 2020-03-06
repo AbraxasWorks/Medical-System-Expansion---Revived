@@ -43,7 +43,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Kidney</li>
+					<li>KidneyRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -91,7 +91,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Liver</li>
+					<li>LiverRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -139,7 +139,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Lung</li>
+					<li>LungRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -188,7 +188,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Heart</li>
+					<li>HeartRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -238,7 +238,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Brain</li>
+					<li>BrainRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -285,7 +285,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Stomach</li>
+					<li>StomachRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -334,7 +334,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Leg</li>
+					<li>LegRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -381,7 +381,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Foot</li>
+					<li>FootRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -428,7 +428,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Toe</li>
+					<li>ToeRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -475,7 +475,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Shoulder</li>
+					<li>ShoulderRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -522,7 +522,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Arm</li>
+					<li>ArmRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -569,7 +569,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Hand</li>
+					<li>HandRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -616,7 +616,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Finger</li>
+					<li>FingerRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -663,7 +663,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Eye</li>
+					<li>EyeRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -710,7 +710,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Ear</li>
+					<li>EarRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -757,7 +757,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Nose</li>
+					<li>NoseRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
@@ -804,7 +804,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
-					<li>Jaw</li>
+					<li>JawRejection</li>
 				</hediffsToAdd>
 			</li>
 		</modExtensions>
