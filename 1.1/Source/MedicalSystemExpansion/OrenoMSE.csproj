@@ -313,6 +313,7 @@
     <Compile Include="Harmony\Harmony_RecipeInstallNaturalBodyPart.cs" />
     <Compile Include="Harmony\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="Harmony\MSE_SafeReflections.cs" />
+    <Compile Include="Harmony\RestorePart.cs" />
     <Compile Include="Harmony\SpawnNaturalPartIfClean.cs" />
     <Compile Include="Harmony\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
@@ -338,6 +339,7 @@
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallImplantSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallArtificialBodyPartWithChildren.cs" />
+    <Compile Include="MSE_Recipe\Recipe_InstallNaturalBodyPartWithChildren.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveImplantSystem.cs" />
     <Compile Include="ThingComp\CompIncludedChildParts.cs" />

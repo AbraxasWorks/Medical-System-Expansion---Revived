@@ -29,13 +29,13 @@
 			<WorkToMake>26000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
-		<comps>
+		<!-- <comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
 					<li>BionicHand</li>
 				</standardChildren>
 			</li>
-		</comps>
+		</comps> -->
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartBionic">
@@ -238,7 +238,7 @@
 			<WorkToMake>12000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
-		<comps>
+		<!-- <comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
 					<li>BionicFinger</li>
@@ -248,7 +248,7 @@
 					<li>BionicFinger</li>
 				</standardChildren>
 			</li>
-		</comps>
+		</comps> -->
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartBionic">

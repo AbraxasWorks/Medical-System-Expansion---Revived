@@ -11,13 +11,13 @@ namespace OrenoMSE
         public override void PostPostMake ()
         {
             base.PostPostMake();
-            Log.Message( "CompPostMake" );
+            //Log.Message( "CompPostMake" );
 
             if ( this.Props.standardChildren != null )
             {
                 foreach ( ThingDef sChild in this.Props.standardChildren )
                 {
-                    Log.Message( "Adding from def: " + sChild.defName );
+                    //Log.Message( "Adding from def: " + sChild.defName );
                     this.childPartsIncluded.Add( ThingMaker.MakeThing( sChild ) );
                 }
             }
@@ -135,31 +135,53 @@ namespace OrenoMSE
             this.compClass = typeof( CompIncludedChildParts );
         }
 
-        //public override IEnumerable<StatDrawEntry> SpecialDisplayStats ( StatRequest req )
-        //{
-        //    foreach ( StatDrawEntry statDrawEntry in base.SpecialDisplayStats( req ) )
-        //    {
-        //        yield return statDrawEntry;
-        //    }
-        //    if ( this.standardChildren != null )
-        //    {
-        //        foreach ( ThingDef standardChild in this.standardChildren )
-        //        {
-        //            yield return new StatDrawEntry(
-        //                StatCategoryDefOf.Basics,
-        //                "Usually included prosthetics", // Translate
-        //                standardChild.label.CapitalizeFirst(),
-        //                "When crafted this usually includes theese parts",
-        //                2500,
-        //                null,
-        //                new List<Dialog_InfoCard.Hyperlink> { new Dialog_InfoCard.Hyperlink( standardChild ) },
-        //                false );
-        //        }
-        //    }
-        //    yield break;
-        //}
+        public override void ResolveReferences ( ThingDef parentDef )
+        {
+            base.ResolveReferences( parentDef );
+
+            // autogen
+            if (autogenerate)
+            {
+                string name = parentDef.defName;
+
+                if ( name.Contains("Arm") )
+                {
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Hand" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Humerus" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Arm", "Radius" ), false ) );
+                }
+                if ( name.Contains( "Hand" ) )
+                {
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Hand", "Finger" ), false ) );
+                }
+
+                if ( name.Contains( "Leg" ) )
+                {
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Foot" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Femur" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Leg", "Tibia" ), false ) );
+                }
+                if ( name.Contains( "Foot" ) )
+                {
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
+                    this.standardChildren.Add( DefDatabase<ThingDef>.GetNamed( name.Replace( "Foot", "Toe" ), false ) );
+                }
+            }
+
+        }
+
+
 
         public List<ThingDef> standardChildren = new List<ThingDef>();
+
+        public bool autogenerate = false;
     }
 
 }

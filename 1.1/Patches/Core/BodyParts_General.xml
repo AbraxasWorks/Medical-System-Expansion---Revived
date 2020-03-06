@@ -10,6 +10,27 @@
 		</value>
 	</Operation> 
 
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
+		<value>
+			<workerClass>OrenoMSE.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
+		</value>
+	</Operation> 
+
+	<!-- Adding comp to base class -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BodyPartBase"]/comps</xpath>
+		<order>Append</order>
+		<value>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</value>
+	</Operation>
+
+
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
