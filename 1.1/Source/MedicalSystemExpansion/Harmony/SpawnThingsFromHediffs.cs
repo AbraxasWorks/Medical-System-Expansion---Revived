@@ -25,7 +25,7 @@ namespace OrenoMSE.HarmonyPatches
                     GenSpawn.Spawn( item, pos, map );
                 }
 
-                Log.Message( "Completed SpawnThingsFromHediffs" );
+                //Log.Message( "Completed SpawnThingsFromHediffs" );
                 return false;
             }
         }
@@ -41,7 +41,7 @@ namespace OrenoMSE.HarmonyPatches
         /// <returns>All Things that hediffs from part and childparts can drop, with subparts inserted into the correct parent</returns>
         public static IEnumerable<Thing> MakeThingsFromHediffs ( Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
         {
-            Log.Message( "MakeThingsFromHediffs - " + part.Label );
+            //Log.Message( "MakeThingsFromHediffs - " + part.Label );
 
             // stop if the part is missing
             if ( !pawn.health.hediffSet.GetNotMissingParts().Contains( part ) )
