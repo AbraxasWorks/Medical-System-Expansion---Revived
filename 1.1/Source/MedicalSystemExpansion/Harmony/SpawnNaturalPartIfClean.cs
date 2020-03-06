@@ -6,14 +6,14 @@ using Verse;
 
 namespace OrenoMSE.HarmonyPatches
 {
-    public class MedicalRecipesUtility_SpawnNaturalPartIfClean
+    public class MedicalRecipesUtility_SpawnNaturalPartIfClean_Patch
     {
         [HarmonyPatch( typeof( MedicalRecipesUtility ) )]
         [HarmonyPatch( "SpawnNaturalPartIfClean" )]
         internal class SpawnNaturalPartIfClean
         {
             [HarmonyPostfix]
-            public static void IncludeChildParts ( ref Thing __result, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
+            public static void PostFix ( ref Thing __result, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
             {
                 // if it created a Thing check the children for Things to add 
                 if ( __result != null && __result is ThingWithComps resWithComps )

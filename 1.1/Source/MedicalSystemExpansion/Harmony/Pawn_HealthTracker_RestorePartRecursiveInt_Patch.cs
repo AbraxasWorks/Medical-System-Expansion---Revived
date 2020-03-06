@@ -21,6 +21,7 @@ namespace OrenoMSE.HarmonyPatches
 			}
 
 			// transpiler that removes the recursive call
+			[HarmonyTranspiler]
 			static IEnumerable<CodeInstruction> Transpiler ( IEnumerable<CodeInstruction> instructions )
 			{
 				foreach ( CodeInstruction instruction in instructions )

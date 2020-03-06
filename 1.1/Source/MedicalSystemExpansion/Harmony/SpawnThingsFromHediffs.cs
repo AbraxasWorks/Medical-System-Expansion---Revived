@@ -8,7 +8,7 @@ using Verse;
 
 namespace OrenoMSE.HarmonyPatches
 {
-    public class MedicalRecipesUtility_SpawnThingsFromHediffs
+    public class MedicalRecipesUtility_SpawnThingsFromHediffs_Patch
     {
         
         [HarmonyPatch( typeof( MedicalRecipesUtility ) )]
@@ -16,7 +16,7 @@ namespace OrenoMSE.HarmonyPatches
         internal class SpawnThingsFromHediffs
         {
             [HarmonyPrefix]
-            [HarmonyPriority( Priority.Low )]
+            [HarmonyPriority( Priority.Last )]
             public static bool ReplaceWithCustom ( Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
             {
                 // Spawn every thing that can be made from the heddiffs on this part and childparts

@@ -43,16 +43,17 @@ namespace OrenoMSE.HarmonyPatches
 
                     if (pawn.health.hediffSet.HasDirectlyAddedPartFor(bodyPart) && check1 && check2) // has prosthetic, no partsystem and no surgerysupport
                     {
-                        if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)) // is not a child of a prosthetic
-                        {
-                            yield return bodyPart;
-                        }
+                        //if (!pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)) // is not a child of a prosthetic
+                        //{
+                        //    yield return bodyPart;
+                        //}
+                        yield return bodyPart;
                     }
-                    else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, bodyPart) && !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)) // has no hediffs and is not a child of prosthetic
+                    else if (MedicalRecipesUtility.IsCleanAndDroppable(pawn, bodyPart)/* && !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(bodyPart)*/) // has no hediffs and is not a child of prosthetic
                     {
                         yield return bodyPart; // clean natural bodypart
                     }
-                    else if (bodyPart != pawn.RaceProps.body.corePart && bodyPart.def.canSuggestAmputation && check3)
+                    else if (bodyPart != pawn.RaceProps.body.corePart && bodyPart.def.canSuggestAmputation && check3) // can amputate due to bad hediff
                     {
                         yield return bodyPart; 
                     }
