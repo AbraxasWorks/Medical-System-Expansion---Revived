@@ -21,7 +21,7 @@ namespace OrenoMSE.HarmonyPatches
             //}
 
             [HarmonyPostfix]
-            [HarmonyPriority(Priority.Last)]
+            [HarmonyPriority(Priority.LowerThanNormal)]
             private static void AdditionalHediff(Hediff_AddedPart __instance)
             {
                 MSE_VanillaExtender.HediffApplyExtraHediffs(__instance, __instance.pawn, __instance.Part);

@@ -10,7 +10,7 @@ namespace OrenoMSE.HarmonyPatches
         internal class HediffImplant_PostAdd
         {
             [HarmonyPostfix]
-            [HarmonyPriority(Priority.Last)]
+            [HarmonyPriority(Priority.LowerThanNormal)]
             private static void AdditionalHediff(Hediff_Implant __instance)
             {
                 MSE_VanillaExtender.HediffApplyExtraHediffs(__instance, __instance.pawn, __instance.Part);
