@@ -14,13 +14,26 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 	[HarmonyPatch( "CalculatePartEfficiency" )]
 	internal class Patch
 	{
-		[HarmonyPostfix]
-		public static void PostFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, bool ignoreAddedParts, List<PawnCapacityUtility.CapacityImpactor> impactors )
+		[HarmonyPrefix]
+		[HarmonyPriority( Priority.High )]
+		public static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, bool ignoreAddedParts, List<PawnCapacityUtility.CapacityImpactor> impactors )
 		{
+			// if the part is missing
 			if ( !diffSet.GetNotMissingParts().Contains( part ) )
 			{
-				__result = 0f;
+				__result = 0f; // it has 0 efficiency
+
+				// if possible add it to the list of things affecting the stat 
+				if ( impactors != null )
+				{
+					var imp = new PawnCapacityUtility.CapacityImpactorBodyPartHealth { bodyPart = part };
+
+					impactors.Add( imp );
+				}
+
+				return false;
 			}
+			return true;
 		}
 	}
 }

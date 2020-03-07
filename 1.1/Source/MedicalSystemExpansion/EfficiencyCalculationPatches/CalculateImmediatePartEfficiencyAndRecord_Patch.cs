@@ -15,14 +15,17 @@ namespace OrenoMSE.EfficiencyCalculationPatches
         [HarmonyPatch( "CalculateImmediatePartEfficiencyAndRecord" )]
         internal class Patch
         {
-            [HarmonyPostfix]
-            private static void PostFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors )
+            [HarmonyPrefix]
+            [HarmonyPriority( Priority.Last )]
+            private static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors )
             {
                 //if ( diffSet.AncestorHasDirectlyAddedParts( part ) )
                 //{
                 //    return 1f;
                 //}
                 __result = PawnCapacityUtility.CalculatePartEfficiency( diffSet, part, false, impactors );
+
+                return false;
             }
         }
     }
