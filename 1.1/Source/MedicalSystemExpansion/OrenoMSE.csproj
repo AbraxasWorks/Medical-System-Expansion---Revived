@@ -303,7 +303,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Harmony\Harmony_HediffAddedPart.cs" />
-    <Compile Include="Harmony\Hediff_AddDirect.cs" />
+    <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
     <Compile Include="Harmony\Hediff_PrettyLabel.cs" />
     <Compile Include="Harmony\Harmony_HediffImplant.cs" />
     <Compile Include="Harmony\Harmony_HediffUtility.cs" />
@@ -312,11 +312,12 @@
     <Compile Include="Harmony\Harmony_RecipeInstallArtificialBodyPart.cs" />
     <Compile Include="Harmony\Harmony_PawnGenerator.cs" />
     <Compile Include="Harmony\Harmony_RecipeInstallNaturalBodyPart.cs" />
-    <Compile Include="Harmony\Harmony_RecipeRemoveBodyPart.cs" />
+    <Compile Include="PartInstallation\RecursiveInstallation.cs" />
+    <Compile Include="PartRemoval\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="Harmony\MSE_SafeReflections.cs" />
-    <Compile Include="Harmony\Pawn_HealthTracker_RestorePartRecursiveInt_Patch.cs" />
-    <Compile Include="Harmony\SpawnNaturalPartIfClean.cs" />
-    <Compile Include="Harmony\SpawnThingsFromHediffs.cs" />
+    <Compile Include="PartRemoval\Pawn_HealthTracker_RestorePartRecursiveInt_Patch.cs" />
+    <Compile Include="PartRemoval\SpawnNaturalPartIfClean.cs" />
+    <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="MSE_DefModExtension\MSE_AdditionalHediff.cs" />
     <Compile Include="MSE_DefModExtension\MSE_DontHealInjury.cs" />
@@ -339,8 +340,8 @@
     <Compile Include="MSE_Hediff\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="MSE_Hediff\Hediff_BodyPartModule.cs" />
     <Compile Include="MSE_Recipe\Recipe_InstallImplantSystem.cs" />
-    <Compile Include="MSE_Recipe\Recipe_InstallArtificialBodyPartWithChildren.cs" />
-    <Compile Include="MSE_Recipe\Recipe_InstallNaturalBodyPartWithChildren.cs" />
+    <Compile Include="PartInstallation\Recipe_InstallArtificialBodyPartWithChildren.cs" />
+    <Compile Include="PartInstallation\Recipe_InstallNaturalBodyPartWithChildren.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveBodyPartSystem.cs" />
     <Compile Include="MSE_Recipe\Recipe_RemoveImplantSystem.cs" />
     <Compile Include="ThingComp\CompIncludedChildParts.cs" />

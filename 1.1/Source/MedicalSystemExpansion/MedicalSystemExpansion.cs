@@ -72,7 +72,7 @@ namespace OrenoMSE
         /// <param name="hediff"></param>
         /// <param name="pawn"></param>
         /// <param name="bodyPart"></param>
-        public static void HediffApplyExtraHediffs( Hediff hediff, Pawn pawn, BodyPartRecord bodyPart ) // TODO: can be refactored to only require 1 argument
+        public static void HediffApplyExtraHediffs( Hediff hediff, Pawn pawn, BodyPartRecord bodyPart )
         {
             MSE_AdditionalHediff additionalHediffs = hediff.def.GetModExtension<MSE_AdditionalHediff>();
             if (additionalHediffs != null && !additionalHediffs.hediffsToAdd.NullOrEmpty())

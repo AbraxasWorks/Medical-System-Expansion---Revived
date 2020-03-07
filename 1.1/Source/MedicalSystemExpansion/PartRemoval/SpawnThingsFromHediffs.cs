@@ -25,24 +25,21 @@ namespace OrenoMSE.HarmonyPatches
                     GenSpawn.Spawn( item, pos, map );
                 }
 
-                //Log.Message( "Completed SpawnThingsFromHediffs" );
                 return false;
             }
         }
 
 
         /// <summary>
-        /// Generates a list of all Things that can be dropped from a part and subparts
+        /// Generates a list of all Things that can be dropped from a part and its subparts
         /// </summary>
         /// <param name="pawn">Pawn from which to check hediffs</param>
         /// <param name="part">From where to look for hediffs</param>
-        /// <param name="pos"></param>
-        /// <param name="map"></param>
+        /// <param name="pos">Position where to drop natural subparts</param>
+        /// <param name="map">Map where to drop natural subparts</param>
         /// <returns>All Things that hediffs from part and childparts can drop, with subparts inserted into the correct parent</returns>
         public static IEnumerable<Thing> MakeThingsFromHediffs ( Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
         {
-            //Log.Message( "MakeThingsFromHediffs - " + part.Label );
-
             // stop if the part is missing
             if ( !pawn.health.hediffSet.GetNotMissingParts().Contains( part ) )
             {
@@ -54,16 +51,14 @@ namespace OrenoMSE.HarmonyPatches
 
             foreach ( BodyPartRecord subPart in part.GetDirectChildParts() ) // for each subpart
             {
-                if ( !MedicalRecipesUtility.IsClean( pawn, part ) ) // If parent is not clean try to make natural parts out of children
+                if ( !MedicalRecipesUtility.IsClean( pawn, part ) ) // If parent is not clean
                 {
-                    MedicalRecipesUtility.SpawnNaturalPartIfClean( pawn, subPart, pos, map );
+                    MedicalRecipesUtility.SpawnNaturalPartIfClean( pawn, subPart, pos, map ); // try to make natural parts out of children
                 }
 
                 // add each thing coming from the child hediffs
-                foreach ( Thing subthing in MakeThingsFromHediffs( pawn, subPart, pos, map ) )
-                {
-                    subThings.Add( subthing );
-                }
+                subThings.AddRange( MakeThingsFromHediffs( pawn, subPart, pos, map ) );
+
             }
 
             // for every thing makeable from hediffs on this part: add subparts if possible then return it
@@ -77,13 +72,13 @@ namespace OrenoMSE.HarmonyPatches
                     
                     if ( item is ThingWithComps itemWithComps ) // compose if possible
                     {
-                        AddSubparts( ref itemWithComps, ref subThings, pawn, part, pos, map );
+                        AddSubparts( ref itemWithComps, ref subThings );
                     }
                     
                     yield return item;
                 }
             }
-            
+
             // return other unclaimed subthings 
             foreach ( Thing item in subThings )
             {
@@ -93,14 +88,19 @@ namespace OrenoMSE.HarmonyPatches
             yield break;
         }
 
-        public static void AddSubparts ( ref ThingWithComps item, ref List<Thing> available, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map, bool reset = true )
+        /// <summary>
+        /// From the list of available Things, add the compatible subparts to the item
+        /// </summary>
+        /// <param name="item">The item to add the subparts to</param>
+        /// <param name="available">The available things to add</param>
+        /// <param name="reset">Should it reset the list of subparts in the item</param>
+        public static void AddSubparts ( ref ThingWithComps item, ref List<Thing> available, bool reset = true )
         {
-            //Log.Message( "AddSubparts - " + part.Label );
             CompIncludedChildParts comp = item.TryGetComp<CompIncludedChildParts>();
             
             if ( comp != null )
             {
-                if ( reset )
+                if ( reset || comp.childPartsIncluded == null )
                 {
                     comp.childPartsIncluded = new List<Thing>();
                 }
@@ -116,13 +116,10 @@ namespace OrenoMSE.HarmonyPatches
                         available.Remove( match );
                         comp.childPartsIncluded.Add( match );
 
-                        AddSubparts( ref item, ref available, pawn, part, pos, map, false );
+                        AddSubparts( ref item, ref available, false );
                         return;
                     }
                 }
-                
-
-
             }
         }
 

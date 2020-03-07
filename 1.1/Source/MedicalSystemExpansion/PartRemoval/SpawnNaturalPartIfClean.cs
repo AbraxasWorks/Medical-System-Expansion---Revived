@@ -18,7 +18,7 @@ namespace OrenoMSE.HarmonyPatches
                 // if it created a Thing check the children for Things to add 
                 if ( __result != null && __result is ThingWithComps resWithComps )
                 {
-                    AddSubparts( ref resWithComps, pawn, part, pos, map );
+                    AddSubparts( ref resWithComps, pawn, part );
                 }
             }
         }
@@ -29,22 +29,16 @@ namespace OrenoMSE.HarmonyPatches
         /// <param name="item">Where the item parts are to be added</param>
         /// <param name="pawn">The pawn from which to check if the parts are ok</param>
         /// <param name="part">The parent part</param>
-        /// <param name="pos">Location where to spawn eventual other items from hediffs</param>
-        /// <param name="map">Map where to spawn eventual other items from hediffs</param>
-        public static void AddSubparts ( ref ThingWithComps item, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
+        public static void AddSubparts ( ref ThingWithComps item, Pawn pawn, BodyPartRecord part )
         {
             List<Thing> childThings = new List<Thing>();
 
-            // populates childThings and drops eventual hediff things
-            foreach ( BodyPartRecord subPart in part.GetDirectChildParts() )
-            {
-                if ( !pawn.health.hediffSet.GetNotMissingParts().Contains( subPart ) )
-                {
-                    continue;
-                }
-
-                Thing childThing = MakeNaturalPartIfClean( pawn, subPart, pos, map );
-                //MedicalRecipesUtility.SpawnThingsFromHediffs( pawn, subPart, pos, map );
+            // populates childThings
+            foreach ( BodyPartRecord subPart in from x in part.GetDirectChildParts()
+                                                where pawn.health.hediffSet.GetNotMissingParts().Contains( x ) // subpart is missing: skip it
+                                                select x )
+            {                
+                Thing childThing = MakeNaturalPartIfClean( pawn, subPart );
 
                 if ( childThing != null )
                 {
@@ -68,14 +62,12 @@ namespace OrenoMSE.HarmonyPatches
         }
 
         /// <summary>
-        /// If the part is clean it returns it as item; also drops Things from hediffs on subparts
+        /// If the part is clean it returns it as item
         /// </summary>
         /// <param name="pawn">The pawn from which to check if the parts are ok</param>
         /// <param name="part">The part to drop as item</param>
-        /// <param name="pos">Location where to spawn eventual other items</param>
-        /// <param name="map">Map where to spawn eventual other items</param>
         /// <returns>The Thing corresponding to the part if it is clean, with eventual subparts</returns>
-        public static Thing MakeNaturalPartIfClean( Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
+        public static Thing MakeNaturalPartIfClean( Pawn pawn, BodyPartRecord part )
         {
             if ( MedicalRecipesUtility.IsCleanAndDroppable( pawn, part ) )
             {
@@ -83,15 +75,15 @@ namespace OrenoMSE.HarmonyPatches
                 
                 if ( item is ThingWithComps itemWithComps )
                 {
-                    AddSubparts( ref itemWithComps, pawn, part, pos, map );
-                    return itemWithComps;
+                    AddSubparts( ref itemWithComps, pawn, part );
                 }
-                else
-                {
-                    return item;
-                }
+
+                return item;
             }
-            return null;
+            else
+            {
+                return null;
+            }
         }
     }
 }

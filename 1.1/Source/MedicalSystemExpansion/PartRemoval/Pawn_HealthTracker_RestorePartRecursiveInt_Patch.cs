@@ -28,7 +28,6 @@ namespace OrenoMSE.HarmonyPatches
 				{
 					if ( instruction.Calls( TargetMethodInfo() ) )
 					{
-						//instruction.opcode = OpCodes.Nop;
 						yield return new CodeInstruction( OpCodes.Pop );
 						yield return new CodeInstruction( OpCodes.Pop );
 						yield return new CodeInstruction( OpCodes.Pop );
@@ -41,35 +40,28 @@ namespace OrenoMSE.HarmonyPatches
 				yield break;
 			}
 
-
-
-
-
-			//[HarmonyPrefix]
-   //         [HarmonyPriority( Priority.Low )]
-   //         public static bool RemoveRecursion ( Pawn_HealthTracker __instance, BodyPartRecord part, Hediff diffException = null )
-			//{
-			//	// copied code from vanilla
+			/*
+			 * Vanilla equivalent:
+			 * 
 				
-			//	List<Hediff> hediffs = __instance.hediffSet.hediffs;
-			//	for ( int i = hediffs.Count - 1; i >= 0; i-- )
-			//	{
-			//		Hediff hediff = hediffs[i];
-			//		if ( hediff.Part == part && hediff != diffException )
-			//		{
-			//			Hediff hediff2 = hediffs[i];
-			//			hediffs.RemoveAt( i );
-			//			hediff2.PostRemoved();
-			//		}
-			//	}
-			//	//for ( int j = 0; j < part.parts.Count; j++ )                    // Removed recursion
-			//	//{
-			//	//	  this.RestorePartRecursiveInt( part.parts[j], diffException );
-			//	//}
+				List<Hediff> hediffs = __instance.hediffSet.hediffs;
+				for ( int i = hediffs.Count - 1; i >= 0; i-- )
+				{
+					Hediff hediff = hediffs[i];
+					if ( hediff.Part == part && hediff != diffException )
+					{
+						Hediff hediff2 = hediffs[i];
+						hediffs.RemoveAt( i );
+						hediff2.PostRemoved();
+					}
+				}
+				for ( int j = 0; j < part.parts.Count; j++ )                    
+				{
+					  this.RestorePartRecursiveInt( part.parts[j], diffException ); // <----- transpiler removes this call
+				}
 
-			//	// don't execute normal method
-			//	return false;
-   //         }
-        }
-    }
+			 * 
+			 */
+		}
+	}
 }

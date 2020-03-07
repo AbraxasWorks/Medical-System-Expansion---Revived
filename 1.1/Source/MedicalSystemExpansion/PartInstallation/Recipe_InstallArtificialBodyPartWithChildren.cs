@@ -60,58 +60,58 @@ namespace OrenoMSE
 
 			// END VANILLA CODE
 
-			List<BodyPartRecord> partAndDirectChildren = new List<BodyPartRecord>( part.GetDirectChildParts() );
-			//partAndDirectChildren.Add( part );
 
-			//Log.Message( "Starting recursive installation from " + part.Label );
-			foreach ( Thing ingredient in ingredients )
+
+
+			List<BodyPartRecord> directChildren = new List<BodyPartRecord>( part.GetDirectChildParts() );
+			
+			// iterate over non null CompIncludedChildParts
+			foreach ( CompIncludedChildParts compChildParts in
+				from x in ingredients
+				where x is ThingWithComps  // out of every thingwithcomps ingredient
+				let comp = (x as ThingWithComps).GetComp<CompIncludedChildParts>() // take the comp
+				where comp != null && comp.childPartsIncluded != null
+				select comp )
 			{
-				if ( ingredient is ThingWithComps bodyPartIngredient ) 
-				{ // if it has comps
-					//Log.Message( "Considering ingredient: " + bodyPartIngredient.Label );
+				// iterate over included child things
+				foreach ( Thing childThing in compChildParts.childPartsIncluded )
+				{
+					bool hasFoundARec = false;
 
-					CompIncludedChildParts compChildParts = bodyPartIngredient.GetComp<CompIncludedChildParts>();
-					if ( compChildParts != null )
-					{ // has child items
+					// iterate over recipes
+					foreach ( RecipeDef anyrec in DefDatabase<RecipeDef>.AllDefs )
+					{ 
+						// each recipe that includes it
+						if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_InstallArtificialBodyPartWithChildren recursiveRecipe )
+						{ 
+							// recursiveRecipe is the RecipeWorker
 
-						//Log.Message( "With child parts: " + compChildParts.childPartsIncluded.ToString() );
+							BodyPartRecord validBP =
+								MedicalRecipesUtility.GetFixedPartsToApplyOn( anyrec, pawn, // out of all the possible places to install this on the pawn
+										delegate ( BodyPartRecord bp )
+										{ return directChildren.Contains( bp ); } ) // choose between children of the current part
+									.FirstOrFallback(); // take the first
 
-						foreach ( Thing childThing in compChildParts.childPartsIncluded )
-						{ // for each child thing
-							//Log.Message( "Trying to install child " + childThing.Label );
-							bool hasFoundARec = false;
-							foreach ( RecipeDef anyrec in DefDatabase<RecipeDef>.AllDefs )
-							{ // each recipe that includes it
-								if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_InstallArtificialBodyPartWithChildren recursiveRecipe )
-								{ // try to get the RecipeWorker
-									//Log.Message( "Candidate surgery: " + anyrec.defName );
-									//int i = 0;
-									BodyPartRecord validBP =
-										MedicalRecipesUtility.GetFixedPartsToApplyOn( anyrec, pawn, // out of all the possible places to install this on the pawn
-												delegate ( BodyPartRecord bp ) 
-												{ return partAndDirectChildren.Contains( bp ); } ) // choose between children of the current part
-											.FirstOrFallback();	// take the first
-
-									if ( validBP != null ) // it actually found something
-									{
-										//Log.Message( "Found a surgery: " + anyrec.defName );
-										recursiveRecipe.ApplyOnPawn( pawn, validBP, null, new List<Thing> { childThing }, null );
-										partAndDirectChildren.Remove( validBP );
-										hasFoundARec = true;
-										break;
-									}
-								}
-							}
-							if (!hasFoundARec)
+							if ( validBP != null ) // it actually found something
 							{
-								Log.Error( "[MSE] Couldn't install " + childThing.Label );
-								childThing.Position = pawn.Position;
-								childThing.SpawnSetup(pawn.Map, false);
+								// apply the recipe 
+								recursiveRecipe.ApplyOnPawn( pawn, validBP, null, new List<Thing> { childThing }, null );
+
+								directChildren.Remove( validBP );
+								hasFoundARec = true;
+
+								break; // only need the first recipe
 							}
 						}
-						break; // after the first ingredient with children stop (it's the part that has just been installed before recursion)
+					}
+					if ( !hasFoundARec )
+					{
+						Log.Error( "[MSE] Couldn't install " + childThing.Label );
+						childThing.Position = pawn.Position;
+						childThing.SpawnSetup( pawn.Map, false );
 					}
 				}
+				break; // after the first ingredient with children stop (it's the part that has just been installed before recursion)
 			}
 		}
 	}
