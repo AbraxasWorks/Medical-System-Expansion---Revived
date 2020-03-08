@@ -22,6 +22,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 
 
 		// Patch to show that child parts of prosthetics are missing in the health tab
+		// should probably implement a transpiler
 
 		[HarmonyPrefix]
 		public static bool PreFix ( HediffSet __instance, ref List<Hediff_MissingPart> ___cachedMissingPartsCommonAncestors, ref Queue<BodyPartRecord> ___missingPartsCommonAncestorsQueue )
@@ -40,6 +41,8 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 			while ( ___missingPartsCommonAncestorsQueue.Count != 0 )
 			{
 				BodyPartRecord node = ___missingPartsCommonAncestorsQueue.Dequeue();
+
+				// show even if child of added part
 				if ( /**/true ) // !__instance.PartOrAnyAncestorHasDirectlyAddedParts( node ) )
 				{
 					Hediff_MissingPart hediff_MissingPart = (from x in __instance.GetHediffs<Hediff_MissingPart>()

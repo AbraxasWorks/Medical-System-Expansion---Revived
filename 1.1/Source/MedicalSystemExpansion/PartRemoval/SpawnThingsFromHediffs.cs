@@ -109,7 +109,7 @@ namespace OrenoMSE.HarmonyPatches
 
                 foreach ( Thing potential in available )
                 {
-                    Thing match = available.Find( delegate ( Thing x ) { return comp.MissingParts().Contains( x.def ); } );
+                    Thing match = available.Find( delegate ( Thing x ) { return comp.MissingParts.Contains( x.def ); } );
                     
                     if ( match != null )
                     {

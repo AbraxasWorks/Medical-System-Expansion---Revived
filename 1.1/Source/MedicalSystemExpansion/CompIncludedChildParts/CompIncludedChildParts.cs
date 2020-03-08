@@ -8,16 +8,29 @@ namespace OrenoMSE
 {
     class CompIncludedChildParts : ThingComp
     {
+        public CompProperties_CompIncludedChildParts Props
+        {
+            get
+            {
+                return (CompProperties_CompIncludedChildParts)this.props;
+            }
+        }
+
+        public List<Thing> childPartsIncluded = new List<Thing>();
+
+
+        // Creation / Deletion
+
         public override void PostPostMake ()
         {
             base.PostPostMake();
-            //Log.Message( "CompPostMake" );
 
+            // add standard children
+            // (if you want it inclomplete replace the list after creating the thing)
             if ( this.Props.standardChildren != null )
             {
                 foreach ( ThingDef sChild in this.Props.standardChildren )
                 {
-                    //Log.Message( "Adding from def: " + sChild.defName );
                     this.childPartsIncluded.Add( ThingMaker.MakeThing( sChild ) );
                 }
             }
@@ -26,6 +39,8 @@ namespace OrenoMSE
         public override void PostDestroy ( DestroyMode mode, Map previousMap )
         {
             base.PostDestroy( mode, previousMap );
+
+            // destroy included child items (idk if it does anything as they aren't spawned)
             if ( this.childPartsIncluded != null )
             {
                 foreach ( ThingWithComps childPart in this.childPartsIncluded )
@@ -35,50 +50,42 @@ namespace OrenoMSE
             }
         }
 
+
+        // Stats display
+
         public override string CompInspectStringExtra ()
         {
             if ( this.childPartsIncluded != null )
             {
-                return "Includes " 
-                    + this.childPartsIncluded.Count + ( this.childPartsIncluded.Count != 1 ? " subparts" : " subpart" ) 
-                    + ( this.MissingParts().Count() > 0 ? " (incomplete)" : "" ) 
+                return "Includes "
+                    + this.childPartsIncluded.Count + (this.childPartsIncluded.Count != 1 ? " subparts" : " subpart")
+                    + (this.MissingParts.Count() > 0 ? " (incomplete)" : "")
                     + ".";
             }
             return null;
         }
 
-        public CompProperties_CompIncludedChildParts Props
-        {
-            get
-            {
-                return (CompProperties_CompIncludedChildParts) this.props;
-            }
-        }
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats ()
         {
             if ( this.childPartsIncluded != null )
             {
-                List<Dialog_InfoCard.Hyperlink> partLinks = new List<Dialog_InfoCard.Hyperlink>();
-                foreach ( Thing childPart in this.childPartsIncluded )
-                {
-                    partLinks.Add( new Dialog_InfoCard.Hyperlink( childPart ) );
-                }
+                var includedPartLinks = new List<Dialog_InfoCard.Hyperlink>(
+                    from x in this.childPartsIncluded
+                    select new Dialog_InfoCard.Hyperlink( x ) );
 
-                List<Dialog_InfoCard.Hyperlink> missingPartLinks = new List<Dialog_InfoCard.Hyperlink>();
-                foreach ( ThingDef childPart in this.MissingParts() )
-                {
-                    missingPartLinks.Add( new Dialog_InfoCard.Hyperlink( childPart ) );
-                }
+                var missingPartLinks = new List<Dialog_InfoCard.Hyperlink>(
+                    from x in this.MissingParts
+                    select new Dialog_InfoCard.Hyperlink( x ) );
 
                 yield return new StatDrawEntry(
                     StatCategoryDefOf.Basics,
                     "Included subparts:", // Translate
-                    partLinks.Count.ToString(),
+                    includedPartLinks.Count.ToString(),
                     "When implanted it will also install theese:",
                     2500,
                     null,
-                    partLinks,
+                    includedPartLinks,
                     false );
 
                 if ( missingPartLinks.Count > 0 )
@@ -88,7 +95,7 @@ namespace OrenoMSE
                         "Missing subparts:", // Translate
                         missingPartLinks.Count.ToString(),
                         "These parts are missing:",
-                        2501,
+                        2500,
                         null,
                         missingPartLinks,
                         false );
@@ -98,35 +105,55 @@ namespace OrenoMSE
             yield break;
         }
 
+
+        // Save / Load
+
         public override void PostExposeData ()
         {
             base.PostExposeData();
             Scribe_Collections.Look<Thing>( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
         }
 
-        public IEnumerable<ThingDef> MissingParts()
+
+        // Missing Parts
+
+        public List<ThingDef> MissingParts
         {
+            get
+            {
+                if (missingPartsCache == null)
+                {
+                    this.UpdateMissingParts();
+                }
+                
+                return missingPartsCache;
+            }
+        }
+
+        public void UpdateMissingParts()
+        {
+            missingPartsCache = new List<ThingDef>();
+            
             if ( this.props != null )
             {
-                List< ThingDef > included = this.childPartsIncluded.ConvertAll((Thing x) => { return x.def; });
+                LinkedList<ThingDef> defsIncluded = new LinkedList<ThingDef>( from x in this.childPartsIncluded select x.def );
             
                 foreach ( ThingDef expectedDef in this.Props.standardChildren )
                 {
-                    if ( included.Contains( expectedDef ) )
+                    if ( defsIncluded.Contains( expectedDef ) )
                     {
-                        included.Remove( expectedDef );
+                        defsIncluded.Remove( expectedDef );
                     }
                     else
                     {
-                        yield return expectedDef;
+                        missingPartsCache.Add(expectedDef);
                     }
                 }
             }
-
-            yield break;
         }
 
-        public List<Thing> childPartsIncluded = new List<Thing>();
+        private List<ThingDef> missingPartsCache;
+
     }
 
 }

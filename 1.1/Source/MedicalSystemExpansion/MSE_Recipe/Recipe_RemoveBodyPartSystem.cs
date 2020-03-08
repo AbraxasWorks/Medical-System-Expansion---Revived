@@ -10,20 +10,17 @@ namespace OrenoMSE
     {
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {
-            IEnumerable<BodyPartRecord> parts = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null);
-            using (IEnumerator<BodyPartRecord> enumerator = parts.GetEnumerator())
+            IEnumerable<BodyPartRecord> parts = pawn.health.hediffSet.GetNotMissingParts();
+
+            foreach ( BodyPartRecord part in parts )
             {
-                while (enumerator.MoveNext())
+                var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
+                var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == part);
+                if ( check1 || check2 )
                 {
-                    BodyPartRecord part = enumerator.Current;
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
-                    var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartModule)) && d.Part == part);
-                    if (check1 || check2)
-                    {
-                        yield return part;
-                    }
-                }
-            }
+                    yield return part;
+                }   
+            }         
             yield break;
         }
 

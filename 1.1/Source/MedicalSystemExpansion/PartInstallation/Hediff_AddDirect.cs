@@ -6,7 +6,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.HarmonyPatches
+namespace OrenoMSE.PartInstallation
 {
     public class Hediff_AddDirect
     {
@@ -17,6 +17,8 @@ namespace OrenoMSE.HarmonyPatches
         {
 
             // adding custom exit condition for when trying to remove a part that is missing
+            // it might be better not to do this at all as it can mask underlying problems
+            // also probably better to implement a transpiler
 
             [HarmonyPrefix]
             [HarmonyPriority( Priority.Low )]

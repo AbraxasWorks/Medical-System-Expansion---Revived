@@ -3,7 +3,7 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.PartInstallation
 {
     static class InstallationUtilities
     {

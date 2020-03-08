@@ -3,9 +3,11 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.PartInstallation
 {
-    class Recipe_InstallArtificialBodyPartWithChildren : Recipe_InstallArtificialBodyPart
+	// This class gets patched into Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass
+
+	class Recipe_InstallArtificialBodyPartWithChildren : Recipe_InstallArtificialBodyPart
     {
 		public override IEnumerable<BodyPartRecord> GetPartsToApplyOn ( Pawn pawn, RecipeDef recipe )
 		{

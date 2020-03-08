@@ -3,8 +3,10 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace OrenoMSE.PartInstallation
 {
+	// This class gets patched into Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass
+
 	class Recipe_InstallNaturalBodyPartWithChildren : Recipe_InstallNaturalBodyPart
 	{
 

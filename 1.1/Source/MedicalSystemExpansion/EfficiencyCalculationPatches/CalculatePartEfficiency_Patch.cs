@@ -12,8 +12,11 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 {
 	[HarmonyPatch( typeof( PawnCapacityUtility ) )]
 	[HarmonyPatch( "CalculatePartEfficiency" )]
-	internal class Patch
+	internal class CalculatePartEfficiency_Patch
 	{
+		
+		// short circuit to return 0 efficency if the part is missing
+		
 		[HarmonyPrefix]
 		[HarmonyPriority( Priority.High )]
 		public static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, bool ignoreAddedParts, List<PawnCapacityUtility.CapacityImpactor> impactors )

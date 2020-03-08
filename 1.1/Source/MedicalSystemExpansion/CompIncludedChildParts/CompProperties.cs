@@ -19,13 +19,15 @@ namespace OrenoMSE
         {
             base.ResolveReferences( parentDef );
 
-            // autogen
+            // autogeneration
             if ( autogenerate )
             {
+                // should probably be improved
                 try
                 {
                     string name = parentDef.defName;
 
+                    // i use a temporary list so if the try fails no null things are added to standardChildren
                     List<ThingDef> temp = new List<ThingDef>();
 
                     if ( name.Contains( "Arm" ) )

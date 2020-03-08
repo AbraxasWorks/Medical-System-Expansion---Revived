@@ -15,10 +15,16 @@ namespace OrenoMSE.EfficiencyCalculationPatches
         [HarmonyPatch( "CalculateImmediatePartEfficiencyAndRecord" )]
         internal class Patch
         {
+
+
+            // don't say it has some efficiency just because it is child of added part
+            // should probably implement a transpiler
+
+
             [HarmonyPrefix]
             [HarmonyPriority( Priority.Last )]
             private static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors )
-            {
+            {                
                 //if ( diffSet.AncestorHasDirectlyAddedParts( part ) )
                 //{
                 //    return 1f;
