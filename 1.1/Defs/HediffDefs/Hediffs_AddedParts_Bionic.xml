@@ -31,6 +31,9 @@
 					</li>
 				</tools>
 			</li>
+			<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
 		</comps>
 		<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
 		<addedPartProps>

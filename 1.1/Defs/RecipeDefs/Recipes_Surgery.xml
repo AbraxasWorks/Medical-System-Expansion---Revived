@@ -122,20 +122,19 @@
 		<researchPrerequisite>MSE_BrainImplants</researchPrerequisite>
 	</RecipeDef>
 
-	<!--============ Part Modules Surgery ==============-->
-
+	<!--============ Modules Surgery ==============-->
 	<RecipeDef Name="MSE_SurgeryModule" ParentName="SurgeryInstallImplantBase" Abstract="True">
-		<workerClass>OrenoMSE.Recipe_InstallBodyPartModule</workerClass>
+		<workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
 		<ingredients Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryModuleBionic" ParentName="MSE_SurgeryModule" Abstract="True">
-		<surgerySuccessChanceFactor>1.15</surgerySuccessChanceFactor>
+		<surgerySuccessChanceFactor>1.6</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryModuleArchotech" ParentName="MSE_SurgeryModule" Abstract="True">
-		<surgerySuccessChanceFactor>1.30</surgerySuccessChanceFactor>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
 		<researchPrerequisite>MSE_ArchotechModules</researchPrerequisite>
 	</RecipeDef>
 

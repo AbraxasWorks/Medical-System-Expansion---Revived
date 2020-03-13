@@ -53,37 +53,7 @@ namespace OrenoMSE
             return false;
         }
 
-        public static void RecipeApplyExtraHediffs( Recipe_Surgery surgery, Pawn pawn, BodyPartRecord bodyPart )
-        {
-            MSE_AdditionalHediff additionalHediffs = surgery.recipe.GetModExtension<MSE_AdditionalHediff>();
-            if (additionalHediffs != null && !additionalHediffs.hediffsToAdd.NullOrEmpty())
-            {
-                foreach ( HediffDef hediffToAdd in additionalHediffs.hediffsToAdd )
-                {
-                    pawn.health.AddHediff( hediffToAdd, bodyPart, null, null );
-                }
-            }
-            return;
-        }
 
-        /// <summary>
-        /// Applies the extra hediffs specified in the given hediff's MSE_AdditionalHediff DefModExtension
-        /// </summary>
-        /// <param name="hediff"></param>
-        /// <param name="pawn"></param>
-        /// <param name="bodyPart"></param>
-        public static void HediffApplyExtraHediffs( Hediff hediff, Pawn pawn, BodyPartRecord bodyPart )
-        {
-            MSE_AdditionalHediff additionalHediffs = hediff.def.GetModExtension<MSE_AdditionalHediff>();
-            if (additionalHediffs != null && !additionalHediffs.hediffsToAdd.NullOrEmpty())
-            {
-                foreach ( HediffDef hediffToAdd in additionalHediffs.hediffsToAdd )
-                {
-                    pawn.health.AddHediff( hediffToAdd, bodyPart, null, null );
-                }
-            }
-            return;
-        }
 
         /// <summary>
         /// If the Hediff has a DefModExtension of MSE_HediffPrettyLabel create the label using it.

@@ -428,6 +428,8 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Clavicle</li>
+			<!-- TEST to remove -->
+			<li>Arm</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_RangedPlatformModule</addsHediff>
 	</RecipeDef>
@@ -467,6 +469,8 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Clavicle</li>
+			<!-- TEST to remove -->
+			<li>Arm</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>MSE_MeleePlatformModule</addsHediff>
 	</RecipeDef>

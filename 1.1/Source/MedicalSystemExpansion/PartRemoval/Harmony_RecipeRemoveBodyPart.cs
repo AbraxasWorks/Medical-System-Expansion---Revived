@@ -35,7 +35,7 @@ namespace OrenoMSE.HarmonyPatches
                 foreach ( BodyPartRecord bodyPart in pawn.health.hediffSet.GetNotMissingParts() )
                 {
                     // The bodypart does not have a hediff with a part system component
-                    var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == bodyPart);
+                    var check1 = true;// pawn.health.hediffSet.hediffs.Any((Hediff d) => !d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == bodyPart);
                     // The bodypart does not have a SurgerySupport hediff
                     var check2 = pawn.health.hediffSet.hediffs.Any((Hediff d) => !(d is Hediff_SurgerySupport) && d.Part == bodyPart);
                     // The bodypart has a BAD, VISIBLE hediff that is not an injury or surgerysupport

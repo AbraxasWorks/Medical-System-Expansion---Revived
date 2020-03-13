@@ -120,6 +120,8 @@ namespace OrenoMSE.HarmonyPatches
                         return;
                     }
                 }
+
+                comp.UpdateMissingParts();
             }
         }
 

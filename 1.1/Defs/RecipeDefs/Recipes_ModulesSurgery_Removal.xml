@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Modules Removal Surgery -->
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>MSE_RemoveModules</defName>
+		<label>remove modules</label>
+		<description>Remove a modules from a bodypart.</description>
+		<workerClass>OrenoMSE.Modules.Actual.Recipe_RemoveModules</workerClass>
+		<jobString>Removing modules.</jobString>
+		<workAmount>1500</workAmount>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+        <recipeUsers>
+        <li>Human</li>
+        </recipeUsers>
+	</RecipeDef>
+
+</Defs>

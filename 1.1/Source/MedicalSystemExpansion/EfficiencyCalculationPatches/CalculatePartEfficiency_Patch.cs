@@ -29,9 +29,13 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				// if possible add it to the list of things affecting the stat 
 				if ( impactors != null )
 				{
-					var imp = new PawnCapacityUtility.CapacityImpactorBodyPartHealth { bodyPart = part };
 
-					impactors.Add( imp );
+					if ( part.parent == null || diffSet.GetNotMissingParts().Contains(part.parent) )
+					{
+						var imp = new PawnCapacityUtility.CapacityImpactorBodyPartHealth { bodyPart = part };
+
+						impactors.Add( imp );
+					}
 				}
 
 				return false;

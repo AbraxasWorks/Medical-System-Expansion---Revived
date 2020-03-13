@@ -11,6 +11,6 @@ namespace OrenoMSE
             DefOfHelper.EnsureInitializedInCtor(typeof(MSE_HediffDefOf));
         }
 
-        public static HediffDef MSE_BodyPartModule;
+        public static HediffDef MSE_ModuleSlot;
     }
 }

@@ -17,7 +17,7 @@
 		<hediffClass>Hediff_AddedPart</hediffClass>
 		<isBad>false</isBad>
 		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_PartSystem" />
+			<!-- <li Class="OrenoMSE.HediffCompProperties_PartSystem" /> -->
 			<li Class="OrenoMSE.HediffCompProperties_PartSystemSelfRepair">
 				<repairLabel>self repairing</repairLabel>
 			</li>

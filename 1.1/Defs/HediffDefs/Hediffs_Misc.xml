@@ -2,8 +2,8 @@
 <Defs>
 
 	<HediffDef>
-		<hediffClass>OrenoMSE.Hediff_BodyPartModule</hediffClass>
-		<defName>MSE_BodyPartModule</defName>
+		<hediffClass>OrenoMSE.Modules.Slots.Hediff_ModuleSlot</hediffClass>
+		<defName>MSE_ModuleSlot</defName>
 		<label>module slot</label>
 		<labelNoun>a module slot</labelNoun>
 		<description>A slot for upgrading</description>
