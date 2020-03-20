@@ -8,6 +8,8 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
+                <!-- Tab replacing -->
+
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ResearchProjectDef[tab="EPOE"]/tab</xpath>
                     <value>
@@ -19,6 +21,27 @@
                     <xpath>Defs/ResearchTabDef[defName="EPOE"]</xpath>
                 </li>
 
+
+                <!-- Research tab redistribuion -->
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SurrogateOrgans"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="SyntheticOrgans"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2</researchViewY>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>2.5</researchViewY>
+                    </value>
+                </li>
 
 			</operations>
 		</match>

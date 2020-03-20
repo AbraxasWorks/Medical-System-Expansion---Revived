@@ -14,7 +14,7 @@
 		</tags>
 		<tab>MSE</tab>
 		<researchViewX>0</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<!--=============================== Tier 1 ===================================-->
@@ -30,7 +30,7 @@
 		</prerequisites>
 		<tab>MSE</tab>
 		<researchViewX>1</researchViewX>
-		<researchViewY>1.0</researchViewY>
+		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
 	<!-- <ResearchProjectDef>
@@ -59,7 +59,7 @@
 		</prerequisites>
 		<tab>MSE</tab>
 		<researchViewX>1</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -107,8 +107,8 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>3</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
