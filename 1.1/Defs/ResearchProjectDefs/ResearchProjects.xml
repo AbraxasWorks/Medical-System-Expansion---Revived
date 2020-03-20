@@ -4,7 +4,7 @@
 	<!--=============================== Tier 0 ===================================-->
 
 	<ResearchProjectDef>
-		<defName>MSE_BasicProsthetics</defName>
+		<defName>BasicProsthetics</defName>
 		<label>basic prosthetics</label>
 		<description>Craft basic prosthetic body parts.</description>
 		<baseCost>300</baseCost>
@@ -26,7 +26,7 @@
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>MSE_BasicProsthetics</li>
+			<li>BasicProsthetics</li>
 		</prerequisites>
 		<tab>MSE</tab>
 		<researchViewX>1</researchViewX>
@@ -54,7 +54,7 @@
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>MSE_BasicProsthetics</li>
+			<li>BasicProsthetics</li>
 			<li>Machining</li>
 		</prerequisites>
 		<tab>MSE</tab>

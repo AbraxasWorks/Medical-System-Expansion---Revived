@@ -42,7 +42,7 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-			<researchPrerequisite>MSE_BasicProsthetics</researchPrerequisite>
+			<researchPrerequisite>BasicProsthetics</researchPrerequisite>
 		</recipeMaker>
 		<techLevel>Neolithic</techLevel>
 		<thingCategories Inherit="False">
