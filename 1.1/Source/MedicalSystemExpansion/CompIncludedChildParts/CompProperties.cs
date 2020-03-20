@@ -80,6 +80,17 @@ namespace OrenoMSE
 
         }
 
+        public override IEnumerable<string> ConfigErrors ( ThingDef parentDef )
+        {
+            foreach ( var entry in base.ConfigErrors( parentDef ) )
+                yield return entry;
+
+            // warning for empy comp
+            if ( standardChildren == null || standardChildren.Count == 0 )
+            {
+                yield return "[MSE] CompIncludedChildParts on " + parentDef.defName + " has no children";
+            }
+        }
 
 
         public List<ThingDef> standardChildren = new List<ThingDef>();
