@@ -14,6 +14,11 @@
 			<WorkToMake>11000</WorkToMake>
 			<Mass>8</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple">
@@ -29,6 +34,11 @@
 			<WorkToMake>11000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Organ">
@@ -76,6 +86,11 @@
 			<WorkToMake>5000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple">
@@ -106,6 +121,11 @@
 			<WorkToMake>5000</WorkToMake>
 			<Mass>1</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple">

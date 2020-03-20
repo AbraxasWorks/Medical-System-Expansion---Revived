@@ -73,6 +73,11 @@
 			<MarketValue>250</MarketValue>
 			<Mass>6</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
@@ -83,6 +88,11 @@
 			<MarketValue>125</MarketValue>
 			<Mass>1.5</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
@@ -113,6 +123,11 @@
 			<MarketValue>250</MarketValue>
 			<Mass>4</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
@@ -123,6 +138,11 @@
 			<MarketValue>125</MarketValue>
 			<Mass>1</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
