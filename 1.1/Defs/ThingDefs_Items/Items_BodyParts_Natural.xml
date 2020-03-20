@@ -113,6 +113,11 @@
 			<MarketValue>400</MarketValue>
 			<Mass>5</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
@@ -197,6 +202,18 @@
 
 
 	<!-- To finalize -->
+
+	
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Clavicle</defName>
+		<label>clavicle</label>
+		<description>Test. Fix Later</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartNatural">
 		<defName>Humerus</defName>

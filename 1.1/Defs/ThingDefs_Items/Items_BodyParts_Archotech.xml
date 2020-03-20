@@ -222,6 +222,11 @@
 			<WorkToMake>90000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartArchotech">

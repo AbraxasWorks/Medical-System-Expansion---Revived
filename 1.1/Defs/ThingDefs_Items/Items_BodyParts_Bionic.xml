@@ -231,6 +231,11 @@
 			<WorkToMake>38000</WorkToMake>
 			<Mass>6</Mass>
 		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<autogenerate>True</autogenerate>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartBionic">

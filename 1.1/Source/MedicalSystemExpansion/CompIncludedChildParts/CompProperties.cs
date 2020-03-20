@@ -30,6 +30,11 @@ namespace OrenoMSE
                     // i use a temporary list so if the try fails no null things are added to standardChildren
                     List<ThingDef> temp = new List<ThingDef>();
 
+                    if ( name.Contains( "Shoulder" ) )
+                    {
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Shoulder", "Arm" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Shoulder", "Clavicle" ) ) );
+                    }
                     if ( name.Contains( "Arm" ) )
                     {
                         temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Hand" ) ) );

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<!-- Advanced Bionics -->
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+	                    <ThingDef ParentName="Advanced">    
+                            <defName>AdvancedBionicShoulder</defName>
+                            <label>advanced bionic shoulder</label>
+                            <!-- TODO: edit description and stats -->
+                            <description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+                            <statBases>
+                                <MarketValue>500</MarketValue>
+                                <Mass>2</Mass>
+                            </statBases>
+                            <techHediffsTags>
+                                <li>Advanced</li>
+                            </techHediffsTags>
+                            <comps>
+                                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                                    <autogenerate>True</autogenerate>
+                                    <standardChildren>
+                                        <li>BionicClavicle</li>
+                                    </standardChildren>
+                                </li>
+                            </comps>
+                        </ThingDef>
+                    </value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
