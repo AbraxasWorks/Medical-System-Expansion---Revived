@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[tab="EPOE"]/tab</xpath>
+                    <value>
+                        <tab>MSE</tab>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="EPOE"]</xpath>
+                </li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
