@@ -1,158 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicClavicleModule</defName>
-		<label>bionic clavicle module</label>
-		<description>An advanced artificial clavicle module. With lattice-dust healing system allows it to recover from damage. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicClavicle>1</BionicClavicle>
-		</costList>
-		<statBases>
-			<MarketValue>600</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicArmModule</defName>
-		<label>bionic arm module</label>
-		<description>An advanced artificial arm module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological arm in almost every way. You can install it to arm module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<BionicArm>1</BionicArm>
-		</costList>
-		<statBases>
-			<MarketValue>2000</MarketValue>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicHumerusModule</defName>
-		<label>bionic humerus module</label>
-		<description>An advanced artificial humerus module. With lattice-dust healing system allows it to recover from damage. You can install it to humerus module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicHumerus>1</BionicHumerus>
-		</costList>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicRadiusModule</defName>
-		<label>bionic radius module</label>
-		<description>An advanced artificial radius module. With lattice-dust healing system allows it to recover from damage. You can install it to radius module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicRadius>1</BionicRadius>
-		</costList>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicHandModule</defName>
-		<label>bionic hand module</label>
-		<description>An advanced artificial hand module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way. You can install it to hand module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>2</ComponentSpacer>
-			<BionicHand>1</BionicHand>
-		</costList>
-		<statBases>
-			<MarketValue>1200</MarketValue>
-			<WorkToMake>20000</WorkToMake>
-			<Mass>1</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicFingerModule</defName>
-		<label>bionic finger module</label>
-		<description>An advanced artificial finger module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way. You can install it to finger module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicFinger>1</BionicFinger>
-		</costList>
-		<statBases>
-			<MarketValue>600</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>0.1</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicFemurModule</defName>
-		<label>bionic femur module</label>
-		<description>An advanced artificial femur module. With lattice-dust healing system allows it to recover from damage. You can install it to femur module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicFemur>1</BionicFemur>
-		</costList>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicTibiaModule</defName>
-		<label>bionic tibia module</label>
-		<description>An advanced artificial tibia module. With lattice-dust healing system allows it to recover from damage. You can install it to tibia module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicTibia>1</BionicTibia>
-		</costList>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicFootModule</defName>
-		<label>bionic foot module</label>
-		<description>An advanced artificial foot module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way. You can install it to foot module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>2</ComponentSpacer>
-			<BionicFoot>1</BionicFoot>
-		</costList>
-		<statBases>
-			<MarketValue>1200</MarketValue>
-			<WorkToMake>20000</WorkToMake>
-			<Mass>1.5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionic">
-		<defName>MSE_BionicToeModule</defName>
-		<label>bionic toe module</label>
-		<description>An advanced artificial toe module. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way. You can install it to toe module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>1</ComponentSpacer>
-			<BionicToe>1</BionicToe>
-		</costList>
-		<statBases>
-			<MarketValue>600</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>0.05</Mass>
-		</statBases>
-	</ThingDef> -->
-
-	<!--=============== Special Bionics ================-->
-
 	<ThingDef ParentName="MSE_ModuleBionicSpecial">
 		<defName>MSE_RangedPlatformModule</defName>
 		<label>ranged platform module</label>
@@ -186,36 +34,6 @@
 	</ThingDef>
 
 	<!-- <ThingDef ParentName="MSE_ModuleBionicSpecial">
-		<defName>MSE_PowerArmModule</defName>
-		<label>power arm module</label>
-		<description>An advanced artificial power arm module. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way. You can install it to arm module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>4</ComponentSpacer>
-			<PowerArm>1</PowerArm>
-		</costList>
-		<statBases>
-			<MarketValue>3600</MarketValue>
-			<WorkToMake>120000</WorkToMake>
-			<Mass>6</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_ModuleBionicSpecial">
-		<defName>MSE_PowerClawModule</defName>
-		<label>power claw module</label>
-		<description>An advanced artificial power claw module. With its biogel nerve-link, lattice-dust healing system, and has sharp claw attached to it, it is better than a biological hand in almost every way. You can install it to hand module slot. Requires modules surgery research to install it.</description>
-		<costList>
-			<ComponentSpacer>3</ComponentSpacer>
-			<PowerClaw>1</PowerClaw>
-		</costList>
-		<statBases>
-			<MarketValue>2400</MarketValue>
-			<WorkToMake>50000</WorkToMake>
-			<Mass>4</Mass>
-		</statBases>
-	</ThingDef> -->
-
-	<ThingDef ParentName="MSE_ModuleBionicSpecial">
 		<defName>MSE_AdamantiumCoatedBoneModule</defName>
 		<label>adamantium coated bone module</label>
 		<description>A bone module that coated with adamantium alloy. Able to sustain almost all attack. A lattice-dust healing system allows it to recover from damage. You can install it to all bone module slot. Requires modules surgery research to install it.</description>
@@ -230,6 +48,6 @@
 			<WorkToMake>20000</WorkToMake>
 			<Mass>1.5</Mass>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>
