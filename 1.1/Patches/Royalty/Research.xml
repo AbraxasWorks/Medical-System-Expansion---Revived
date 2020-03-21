@@ -19,64 +19,67 @@
 
                 <!-- move them 10 to the left -->
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierA"][researchViewX="12.00"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>2</researchViewX>
-                    </value>
+                <li Class="OrenoMSE.XpathPatches.PatchOperationOffsetField">
+                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierA" or @ParentName="BaseBodyPartEmpire_TierB"]/researchViewX</xpath>
+                    <offset>-10</offset>
                 </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierA"][researchViewX="13.00"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>3</researchViewX>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB"][researchViewX="16.00"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>6</researchViewX>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB"][researchViewX="17.00"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>7</researchViewX>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB"][researchViewX="18.00"]/researchViewX</xpath>
-                    <value>
-                        <researchViewX>8</researchViewX>
-                    </value>
-                </li>
-
-
+                
 
 
                 <!-- extra dependecies -->
 
-                <!-- <li Class="PatchOperationSetName">
-                    <success>Always</success> MANDATORY due to vanilla bug
-                    <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB" or @ParentName="BaseBodyPartEmpire_TierA"]/hiddenPrerequisites</xpath>
-                    <name>prerequisites</name>
-                </li> -->
 
-                <!-- Research tab redistribuion -->
-
-                <!-- <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans" or defName="SyntheticOrgans" or defName="BionicWarfare"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2</researchViewY>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="SpecializedLimbs" or defName="FleshShaping"]/prerequisites</xpath>
+                    <value>                        
+                        <li>Bionics</li>
                     </value>
                 </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2.5</researchViewY>
-                    </value>
-                </li> -->
 
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="CompactWeaponry"]/prerequisites</xpath>
+                    <value>                        
+                        <li>MSE_ModulesCrafting</li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="ArtificialMetabolism" or defName="SkinHardening" or defName="HealingFactors" or defName="MolecularAnalysis"]/prerequisites</xpath>
+                    <value>                        
+                        <li>MSE_Implants</li>
+                    </value>
+                </li>
+                
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Expanded Prosthetics and Organ Engineering</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
+                                <value>                        
+                                    <li>BrainSurgery</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
+                                <value>                        
+                                    <li>MSE_BrainImplants</li>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </nomatch>
+                </li>
 
 
 
