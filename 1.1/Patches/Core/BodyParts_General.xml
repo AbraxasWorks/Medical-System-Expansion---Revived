@@ -18,21 +18,9 @@
 		</value>
 	</Operation> 
 
-	<!-- Adding comp to base class -->
-	<!-- <Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>/Defs/ThingDef[@Name="BodyPartBase"]/comps</xpath>
-		<order>Append</order>
-		<value>
-			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-				<autogenerate>True</autogenerate>
-			</li>
-		</value>
-	</Operation> -->
 
 
-
-	<Operation Class="PatchOperationSequence">
+	<!-- <Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
@@ -43,7 +31,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>

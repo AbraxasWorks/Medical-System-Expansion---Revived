@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationSequence">
+	<!-- <Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
@@ -38,7 +38,7 @@
 				<xpath>/Defs/BodyPartDef[defName="Pelvis"]/destroyableByDamage</xpath>
 			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>

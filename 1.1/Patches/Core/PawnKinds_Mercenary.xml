@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
+	<!-- <Operation Class="PatchOperationReplace">
 		<xpath>/Defs/PawnKindDef[@ParentName="MercenaryBase"][@Name="MercenaryMidTierBase"]/techHediffsMoney</xpath>
 		<success>Always</success>
 		<value>
@@ -10,7 +10,7 @@
 				<max>2400</max>
 			</techHediffsMoney>
 		</value>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/PawnKindDef[@ParentName="MercenaryBase"][@Name="MercenaryMidTierBase"]/techHediffsMoney</xpath>
