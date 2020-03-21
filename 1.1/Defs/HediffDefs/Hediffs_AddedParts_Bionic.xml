@@ -425,6 +425,7 @@
 		<label>power arm</label>
 		<labelNoun>a power arm</labelNoun>
 		<description>Test. Fix Later</description>
+    	<descriptionHyperlinks><ThingDef>PowerArm</ThingDef></descriptionHyperlinks>
 		<comps>
 			<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
 				<maxModules>1</maxModules>
@@ -438,27 +439,38 @@
 	</HediffDef>
 
 	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
-		<defName>MSE_PowerBlade</defName>
-		<label>power blade</label>
-		<labelNoun>a power blade</labelNoun>
+		<defName>PowerHand</defName>
+		<label>power hand</label>
+		<labelNoun>a power hand</labelNoun>
 		<description>Test. Fix Later</description>
+    	<descriptionHyperlinks><ThingDef>PowerHand</ThingDef></descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
-						<label>blade</label>
+						<label>bionic fist</label>
 						<capacities>
-							<li>Cut</li>
-							<li>Stab</li>
+							<li>Blunt</li>
 						</capacities>
-						<power>19.7</power>
+						<power>16.7</power>
 						<cooldownTime>2.4</cooldownTime>
 						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+								<def>Stun</def>
+								<amount>14</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
 					</li>
 				</tools>
 			</li>
+			<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
 		</comps>
-		<spawnThingOnRemoved>MSE_PowerBlade</spawnThingOnRemoved>
+		<spawnThingOnRemoved>PowerHand</spawnThingOnRemoved>
 		<addedPartProps>
 			<isGoodWeapon>true</isGoodWeapon>
 			<solid>true</solid>

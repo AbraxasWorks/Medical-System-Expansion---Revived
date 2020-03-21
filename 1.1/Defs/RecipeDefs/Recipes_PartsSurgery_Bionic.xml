@@ -1166,6 +1166,7 @@
 		<defName>InstallPowerArm</defName>
 		<label>install power arm</label>
 		<description>Install a power arm.</description>
+    	<descriptionHyperlinks><ThingDef>PowerArm</ThingDef></descriptionHyperlinks>
 		<jobString>Installing power arm.</jobString>
 		<workAmount>3500</workAmount>
 		<skillRequirements>
@@ -1204,10 +1205,11 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">
-		<defName>MSE_InstallPowerBlade</defName>
-		<label>install power blade</label>
-		<description>Install a power blade.</description>
-		<jobString>Installing power blade.</jobString>
+		<defName>InstallPowerHand</defName>
+		<label>install power hand</label>
+		<description>Install a power hand.</description>
+    	<descriptionHyperlinks><ThingDef>PowerHand</ThingDef></descriptionHyperlinks>
+		<jobString>Installing power hand.</jobString>
 		<workAmount>5000</workAmount>
 		<skillRequirements>
 			<Medicine>12</Medicine>
@@ -1224,7 +1226,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MSE_PowerBlade</li>
+						<li>PowerHand</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1235,13 +1237,13 @@
 				<li>Medicine</li>
 			</categories>
 			<thingDefs>
-				<li>MSE_PowerBlade</li>
+				<li>PowerHand</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>MSE_PowerBlade</addsHediff>
+		<addsHediff>PowerHand</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSE_SurgeryBionicSpecial">

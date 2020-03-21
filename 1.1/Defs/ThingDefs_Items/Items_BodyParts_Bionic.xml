@@ -459,27 +459,10 @@
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
-		<defName>MSE_PowerBlade</defName>
-		<label>power blade</label>
-		<description>An advanced artificial power blade. With its biogel nerve-link, lattice-dust healing system, and scyther blade attached to it, it is better than a biological shoulder in almost every way. Requires special bionics research to install it.</description>
-		<costList>
-			<Plasteel>50</Plasteel>
-			<ComponentSpacer>10</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2400</MarketValue>
-			<WorkToMake>114000</WorkToMake>
-			<Mass>7</Mass>
-		</statBases>
-		<techHediffsTags>
-			<li>AdvancedWeapon</li>
-		</techHediffsTags>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
 		<defName>PowerArm</defName>
 		<label>power arm</label>
 		<description>An advanced artificial power arm. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way. Requires special bionics research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallPowerArm</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Plasteel>35</Plasteel>
 			<ComponentSpacer>10</ComponentSpacer>
@@ -495,9 +478,40 @@
 		<comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
-					<li>PowerClaw</li>
+					<li>PowerHand</li>
 					<li>BionicHumerus</li>
 					<li>BionicRadius</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
+		<defName>PowerHand</defName>
+		<label>power hand</label>
+		<description>An advanced artificial power hand. With its biogel nerve-link, lattice-dust healing system, and scyther blade attached to it, it is better than a biological shoulder in almost every way. Requires special bionics research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallPowerHand</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2400</MarketValue>
+			<WorkToMake>114000</WorkToMake>
+			<Mass>7</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+					<!-- TODO: possibly add PowerClaw -->
+					<li>BionicFinger</li>
+					<li>BionicFinger</li>
+					<li>BionicFinger</li>
+					<li>BionicFinger</li>
+					<li>BionicFinger</li>
 				</standardChildren>
 			</li>
 		</comps>
