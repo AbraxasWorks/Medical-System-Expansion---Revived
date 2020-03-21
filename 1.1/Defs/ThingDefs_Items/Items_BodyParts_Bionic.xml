@@ -117,7 +117,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
 		<defName>PowerClaw</defName>
 		<label>power claw</label>
 		<description>A combat-oriented hand replacement consisting of a mechanical hand with a vicious claw on each finger. It is vicious in combat, and its powerful mini-servos can crush a skull like a natural hand crushes an egg. The blades can be retracted, making it as useful as a biological hand for non-combat tasks. Requires special bionics research to install it.</description>
@@ -458,7 +458,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
 		<defName>MSE_PowerBlade</defName>
 		<label>power blade</label>
 		<description>An advanced artificial power blade. With its biogel nerve-link, lattice-dust healing system, and scyther blade attached to it, it is better than a biological shoulder in almost every way. Requires special bionics research to install it.</description>
@@ -476,7 +476,7 @@
 		</techHediffsTags>
 	</ThingDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
+	<ThingDef ParentName="MSE_BodyPartBionicWeapon">
 		<defName>PowerArm</defName>
 		<label>power arm</label>
 		<description>An advanced artificial power arm. With its biogel nerve-link, lattice-dust healing system, and high blunt damage than normal arm, it is better than a biological arm in almost every way. Requires special bionics research to install it.</description>

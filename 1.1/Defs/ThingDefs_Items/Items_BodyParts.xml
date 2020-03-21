@@ -127,9 +127,21 @@
 	<ThingDef Name="MSE_BodyPartBionicSpecial" ParentName="MSE_BodyPartBionic" Abstract="True">
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>10</Crafting>
+				<Crafting>9</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>MSE_SpecialBionics</researchPrerequisite>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="MSE_BodyPartBionicWeapon" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>BionicWarfare</researchPrerequisite>
 		</recipeMaker>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>

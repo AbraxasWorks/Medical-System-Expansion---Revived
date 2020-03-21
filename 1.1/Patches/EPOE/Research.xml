@@ -31,10 +31,10 @@
                 </li>
 
                 <!-- remove research -->
-                <li Class="PatchOperationRemove">  
+                <li Class="PatchOperationRemove">
                     <xpath>/Defs/ResearchProjectDef[defName="MSE_ProstheticOrgans" or defName="MSE_BionicOrgans"]</xpath>
                 </li>
-                <li Class="PatchOperationReplace">  
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/ResearchProjectDef[defName="MSE_SpecialBionics"]/prerequisites/li[text()="MSE_BionicOrgans"]</xpath>
                     <value>
                         <li>SyntheticOrgans</li>
@@ -45,7 +45,7 @@
                 <!-- Research tab redistribuion -->
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans" or defName="SyntheticOrgans"]/researchViewY</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans" or defName="SyntheticOrgans" or defName="BionicWarfare"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2</researchViewY>
                     </value>
@@ -57,12 +57,28 @@
                     </value>
                 </li>
 
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="MSE_BoneReplacement"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>3</researchViewY>
+                <!-- special bionics (ribs) -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[@ParentName="MSE_BodyPartBionicSpecial"][defName="BreathingSupportRib" or defName="RelaxationRib" or defName="ColdRegulatorRib" or defName="HeatRegulatorRib"]</xpath>
+                    <value>                        
+                        <recipeMaker Inherit="False">
+                            <skillRequirements>
+                                <Crafting>7</Crafting>
+                            </skillRequirements>
+                            <researchPrerequisite>RibReplacements</researchPrerequisite>
+                        </recipeMaker>
                     </value>
                 </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MSE_SpecialBionics"]/label</xpath>
+                    <value>                        
+                        <label>specialized organs</label>
+                    </value>
+                </li>
+
+
 
 
 			</operations>

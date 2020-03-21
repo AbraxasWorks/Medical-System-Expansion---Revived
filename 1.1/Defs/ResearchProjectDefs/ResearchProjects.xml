@@ -33,20 +33,6 @@
 		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
-	<!-- <ResearchProjectDef>
-		<defName>MSE_FingerAndToeTransplantation</defName>
-		<label>finger and toe transplantation</label>
-		<description>Allows removed finger and toe from one body to be placed in the body of a recipient, to replace a damaged or missing organ.</description>
-		<baseCost>150</baseCost>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>MSE_OrganTransplantation</li>
-		</prerequisites>
-		<tab>MSE</tab>
-		<researchViewX>2</researchViewX>
-		<researchViewY>1.0</researchViewY>
-	</ResearchProjectDef> -->
-
 	<ResearchProjectDef>
 		<defName>Prosthetics</defName>
 		<label>prosthetics</label>
@@ -66,14 +52,14 @@
 		<defName>MSE_BoneReplacement</defName>
 		<label>bone replacement</label>
 		<description>Craft inexpensive prosthetic bone and replace broken bone with it. Requires a skilled crafter to make.</description>
-		<baseCost>400</baseCost>
+		<baseCost>300</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>Prosthetics</li>
 		</prerequisites>
 		<tab>MSE</tab>
 		<researchViewX>2</researchViewX>
-		<researchViewY>2.5</researchViewY>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -83,11 +69,11 @@
 		<baseCost>400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>MSE_BoneReplacement</li>
+			<li>Prosthetics</li>
 		</prerequisites>
 		<tab>MSE</tab>
 		<researchViewX>2</researchViewX>
-		<researchViewY>3.0</researchViewY>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -133,7 +119,7 @@
 		<defName>MSE_BionicBones</defName>
 		<label>bionic bones</label>
 		<description>Build high-tech bionic bones at a bionic machining table. Requires a skilled doctor to attach.</description>
-		<baseCost>1000</baseCost>
+		<baseCost>500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Bionics</li>
@@ -144,8 +130,8 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>4</researchViewX>
-		<researchViewY>2.5</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -155,7 +141,7 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>MSE_BionicBones</li>
+			<li>Bionics</li>
 			<li>MSE_ProstheticOrgans</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -163,13 +149,13 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>4</researchViewX>
-		<researchViewY>3.0</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>MSE_SpecialBionics</defName>
-		<label>special bionics</label>
+		<label>specialized bionics</label>
 		<description>Build ultra high-tech bionic body parts, bones, and organs at a bionic machining table. Requires a skilled doctor to attach.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
@@ -183,12 +169,30 @@
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
 		<researchViewX>4</researchViewX>
-		<researchViewY>3.5</researchViewY>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>BionicWarfare</defName>
+		<label>bionic warfare</label>
+		<description>Using bionics just in a peaceful way to restore missing limbs seems like such a waste. Let's use them as weapons! Unlocks bionic melee weapons.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Bionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<!--=============================== Tier 3 ===================================-->
 
-	<ResearchProjectDef>
+	<!-- <ResearchProjectDef>
 		<defName>MSE_ModulesSurgery</defName>
 		<label>modules surgery</label>
 		<description>Allows you to perform surgery to attach modules to bionic or archotech body part. Requires a very skilled doctor to attach.</description>
@@ -204,7 +208,7 @@
 		<tab>MSE</tab>
 		<researchViewX>4</researchViewX>
 		<researchViewY>1.0</researchViewY>
-	</ResearchProjectDef>
+	</ResearchProjectDef> -->
 
 	<ResearchProjectDef>
 		<defName>MSE_BrainImplants</defName>
@@ -239,19 +243,20 @@
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
 		<researchViewX>5</researchViewX>
-		<researchViewY>2.0</researchViewY>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<!--=============================== Tier 4 ===================================-->
 
 	<ResearchProjectDef>
 		<defName>MSE_ModulesCrafting</defName>
-		<label>modules crafting</label>
+		<label>modules</label>
 		<description>Allows you to craft modules. Requires a skilled crafter to make.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>MSE_ModulesSurgery</li>
+			<!-- <li>MSE_ModulesSurgery</li> -->
+			<li>Bionics</li>
 			<li>AdvancedFabrication</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -259,7 +264,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>5</researchViewX>
+		<researchViewX>4</researchViewX>
 		<researchViewY>1.0</researchViewY>
 	</ResearchProjectDef>
 
@@ -279,7 +284,7 @@
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
 		<researchViewX>6</researchViewX>
-		<researchViewY>3.0</researchViewY>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>

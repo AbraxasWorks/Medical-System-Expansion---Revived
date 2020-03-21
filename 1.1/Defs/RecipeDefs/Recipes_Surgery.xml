@@ -130,12 +130,12 @@
 
 	<RecipeDef Name="MSE_SurgeryModuleBionic" ParentName="MSE_SurgeryModule" Abstract="True">
 		<surgerySuccessChanceFactor>1.6</surgerySuccessChanceFactor>
-		<researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite>
+		<!-- <researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite> -->
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryModuleArchotech" ParentName="MSE_SurgeryModule" Abstract="True">
 		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-		<researchPrerequisite>MSE_ArchotechModules</researchPrerequisite>
+		<!-- <researchPrerequisite>MSE_ArchotechModules</researchPrerequisite> -->
 	</RecipeDef>
 
 </Defs>
