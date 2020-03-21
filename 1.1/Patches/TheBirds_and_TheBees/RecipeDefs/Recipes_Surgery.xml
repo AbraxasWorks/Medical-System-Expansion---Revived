@@ -12,12 +12,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/RecipeDef[defName="InstallNaturalReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallNaturalReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/RecipeDef[@Name="MSE_SurgeryNatural"]</xpath>
+							<xpath>/Defs/RecipeDef[@Name="MSE_SurgeryNatural"]</xpath>
 							<value>
 								<RecipeDef ParentName="MSE_SurgeryNatural">
 									<defName>InstallNaturalReproductiveOrgans</defName>
@@ -74,11 +74,11 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]/workerClass</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallBasicReproductiveOrgans"]/workerClass</xpath>
 							<value>
 								<workerClass>Recipe_Surgery</workerClass>
 							</value>
@@ -90,12 +90,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/RecipeDef[defName="InstallSimpleProstheticReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/RecipeDef[@Name="MSE_SurgerySimple"]</xpath>
+							<xpath>/Defs/RecipeDef[@Name="MSE_SurgerySimple"]</xpath>
 							<value>
 								<RecipeDef ParentName="MSE_SurgerySimple">
 									<defName>InstallSimpleProstheticReproductiveOrgans</defName>
@@ -146,11 +146,11 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/RecipeDef[defName="InstallBionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallBionicReproductiveOrgans"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/RecipeDef[defName="InstallBionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallBionicReproductiveOrgans"]</xpath>
 							<value>
 								<RecipeDef ParentName="MSE_SurgeryBionic">
 									<defName>InstallBionicReproductiveOrgans</defName>
@@ -201,12 +201,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/RecipeDef[defName="InstallArchotechReproductiveOrgans"]</xpath>
+							<xpath>/Defs/RecipeDef[defName="InstallArchotechReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/RecipeDef[@Name="MSE_SurgeryArchotech"]</xpath>
+							<xpath>/Defs/RecipeDef[@Name="MSE_SurgeryArchotech"]</xpath>
 							<value>
 								<RecipeDef ParentName="MSE_SurgeryArchotech">
 									<defName>InstallArchotechReproductiveOrgans</defName>

@@ -11,37 +11,59 @@
                 <!-- Tab replacing -->
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[tab="EPOE"]/tab</xpath>
+                    <xpath>/Defs/ResearchProjectDef[tab="EPOE"]/tab</xpath>
                     <value>
                         <tab>MSE</tab>
                     </value>
                 </li>
 
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/ResearchTabDef[defName="EPOE"]</xpath>
+                    <xpath>/Defs/ResearchTabDef[defName="EPOE"]</xpath>
+                </li>
+
+                <!-- extra dependecies -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="MSE_BrainImplants"]/prerequisites</xpath>
+                    <value>
+                        <li>BrainSurgery</li>
+                    </value>
+                </li>
+
+                <!-- remove research -->
+                <li Class="PatchOperationRemove">  
+                    <xpath>/Defs/ResearchProjectDef[defName="MSE_ProstheticOrgans" or defName="MSE_BionicOrgans"]</xpath>
+                </li>
+                <li Class="PatchOperationReplace">  
+                    <xpath>/Defs/ResearchProjectDef[defName="MSE_SpecialBionics"]/prerequisites/li[text()="MSE_BionicOrgans"]</xpath>
+                    <value>
+                        <li>SyntheticOrgans</li>
+                    </value>
                 </li>
 
 
                 <!-- Research tab redistribuion -->
 
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="SurrogateOrgans"]/researchViewY</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="SurrogateOrgans" or defName="SyntheticOrgans"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2</researchViewY>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="SyntheticOrgans"]/researchViewY</xpath>
-                    <value>
-                        <researchViewY>2</researchViewY>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
+                    <xpath>/Defs/ResearchProjectDef[defName="BrainSurgery"]/researchViewY</xpath>
                     <value>
                         <researchViewY>2.5</researchViewY>
                     </value>
                 </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="MSE_BoneReplacement"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>3</researchViewY>
+                    </value>
+                </li>
+
 
 			</operations>
 		</match>

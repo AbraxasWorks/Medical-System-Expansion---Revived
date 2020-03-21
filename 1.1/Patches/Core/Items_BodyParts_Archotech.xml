@@ -6,9 +6,9 @@
 
 	<!-- Archotech Eye -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -20,7 +20,7 @@
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechEye"]</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechEye"]</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -33,16 +33,16 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
 			<value>
 				<WorkToMake>90000</WorkToMake>
 			</value>
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechEye"]/statBases</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases</xpath>
 			<value>
 				<WorkToMake>90000</WorkToMake>
 			</value>
@@ -51,9 +51,9 @@
 
 	<!-- Archotech Arm -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -65,7 +65,7 @@
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechArm"]</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechArm"]</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -78,16 +78,16 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
 			<value>
 				<WorkToMake>70000</WorkToMake>
 			</value>
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechArm"]/statBases</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases</xpath>
 			<value>
 				<WorkToMake>70000</WorkToMake>
 			</value>
@@ -96,9 +96,9 @@
 
 	<!-- Archotech Leg -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -110,7 +110,7 @@
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechLeg"]</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]</xpath>
 			<value>
 				<costList>
 					<Uranium>25</Uranium>
@@ -123,16 +123,16 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
+		<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
 			<value>
 				<WorkToMake>70000</WorkToMake>
 			</value>
 		</match>
 
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ArchotechLeg"]/statBases</xpath>
+			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases</xpath>
 			<value>
 				<WorkToMake>70000</WorkToMake>
 			</value>
@@ -144,11 +144,11 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
+				<xpath>/Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
+				<xpath>/Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
 			</li>
 		</operations>
 	</Operation>

@@ -12,12 +12,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/BodyPartDef[defName="ReproductiveOrgans"]/spawnThingOnRemoved</xpath>
+							<xpath>/Defs/BodyPartDef[defName="ReproductiveOrgans"]/spawnThingOnRemoved</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/BodyPartDef[defName="ReproductiveOrgans"]</xpath>
+							<xpath>/Defs/BodyPartDef[defName="ReproductiveOrgans"]</xpath>
 							<order>Append</order>
 							<value>
 								<spawnThingOnRemoved>ReproductiveOrgans</spawnThingOnRemoved>

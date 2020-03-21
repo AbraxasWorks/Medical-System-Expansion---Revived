@@ -12,12 +12,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/ThingDef[defName="ReproductiveOrgans"]</xpath>
+							<xpath>/Defs/ThingDef[defName="ReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/ThingDef[@Name="MSE_BodyPartNatural"]</xpath>
+							<xpath>/Defs/ThingDef[@Name="MSE_BodyPartNatural"]</xpath>
 							<value>
 								<ThingDef ParentName="MSE_BodyPartNatural">
 									<defName>ReproductiveOrgans</defName>
@@ -37,12 +37,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/ThingDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
+							<xpath>/Defs/ThingDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/ThingDef[@Name="MSE_BodyPartSimple"]</xpath>
+							<xpath>/Defs/ThingDef[@Name="MSE_BodyPartSimple"]</xpath>
 							<value>
 								<ThingDef ParentName="MSE_BodyPartSimple">
 									<defName>SimpleProstheticReproductiveOrgans</defName>
@@ -67,11 +67,11 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/ThingDef[defName="BionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/ThingDef[defName="BionicReproductiveOrgans"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/ThingDef[defName="BionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/ThingDef[defName="BionicReproductiveOrgans"]</xpath>
 							<value>
 								<ThingDef ParentName="MSE_BodyPartBionic">
 									<defName>BionicReproductiveOrgans</defName>
@@ -96,12 +96,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/ThingDef[defName="ArchotechReproductiveOrgans"]</xpath>
+							<xpath>/Defs/ThingDef[defName="ArchotechReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/ThingDef[@Name="MSE_BodyPartArchotech"]</xpath>
+							<xpath>/Defs/ThingDef[@Name="MSE_BodyPartArchotech"]</xpath>
 							<value>
 								<ThingDef ParentName="MSE_BodyPartArchotech">
 									<defName>ArchotechReproductiveOrgans</defName>

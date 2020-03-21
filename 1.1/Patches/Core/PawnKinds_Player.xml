@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsMoney</xpath>
+		<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsMoney</xpath>
 		<success>Always</success>
 		<value>
 			<techHediffsMoney>
@@ -13,7 +13,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsChance</xpath>
+		<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsChance</xpath>
 		<success>Always</success>
 		<value>
 			<techHediffsChance>0.04</techHediffsChance>
@@ -24,12 +24,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags[li="Advanced"]</xpath>
+				<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags[li="Advanced"]</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags</xpath>
+				<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags</xpath>
 				<order>Append</order>
 				<value>
 					<li>Advanced</li>

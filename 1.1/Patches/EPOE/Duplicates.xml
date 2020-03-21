@@ -10,16 +10,16 @@
 
                 <!-- denture (is duplicate because of capital letter) -->
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/HediffDef[defName="denture"]</xpath>
+                    <xpath>/Defs/HediffDef[defName="denture"]</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/RecipeDef[defName="CreateDenture"]</xpath>
+                    <xpath>/Defs/RecipeDef[defName="CreateDenture" or addsHediff="denture"]</xpath>
                 </li>
+                <!-- <li Class="PatchOperationRemove">
+                    <xpath>/Defs/RecipeDef[addsHediff="denture"]</xpath>
+                </li> -->
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/RecipeDef[addsHediff="denture"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="denture"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="denture"]</xpath>
                 </li>
 
 

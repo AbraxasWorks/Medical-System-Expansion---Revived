@@ -12,7 +12,7 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase"]</xpath>
 							<value>
 								<HediffDef Name="MSE_AddedBodyPartBionicAT" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
 									<comps /> <!-- Makes patching easier -->
@@ -21,13 +21,13 @@
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
-							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARArm"]</xpath>
+							<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARArm"]</xpath>
 							<attribute>ParentName</attribute>
 							<value>MSE_AddedBodyPartBionicAT</value>
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
-							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARLeg"]</xpath>
+							<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid2"][defName="ARLeg"]</xpath>
 							<attribute>ParentName</attribute>
 							<value>MSE_AddedBodyPartBionicAT</value>
 						</li>
@@ -38,7 +38,7 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase"]</xpath>
 							<value>
 								<HediffDef Name="MSE_AddedBodyPartArchotechAT" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
 									<comps /> <!-- Makes patching easier -->
@@ -47,13 +47,13 @@
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
-							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Arm"]</xpath>
+							<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Arm"]</xpath>
 							<attribute>ParentName</attribute>
 							<value>MSE_AddedBodyPartArchotechAT</value>
 						</li>
 
 						<li Class="PatchOperationAttributeSet">
-							<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Leg"]</xpath>
+							<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroid3"][defName="AR2Leg"]</xpath>
 							<attribute>ParentName</attribute>
 							<value>MSE_AddedBodyPartArchotechAT</value>
 						</li>
@@ -69,13 +69,13 @@
 						<operations>
 
 							<li Class="PatchOperationAttributeSet">
-								<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPowerClaw"]</xpath>
+								<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPowerClaw"]</xpath>
 								<attribute>ParentName</attribute>
 								<value>MSE_AddedBodyPartBionicAT</value>
 							</li>
 
 							<li Class="PatchOperationAttributeSet">
-								<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPlasmaClaw"]</xpath>
+								<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBaseAndroidHD"][defName="RPlasmaClaw"]</xpath>
 								<attribute>ParentName</attribute>
 								<value>MSE_AddedBodyPartArchotechAT</value>
 							</li>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+                
+
+
+				<li Class="PatchOperationRemove">
+					<!-- <xpath>/Defs/ThingDef[defName="BionicLung" or defName="BionicKidney" or defName="BionicLiver"]</xpath> -->
+					<xpath>/Defs/ThingDef[@Name="MSE_BodyPartBionic_Organ" or @ParentName="MSE_BodyPartBionic_Organ" or Name="MSE_BodyPartSimple_Organ" or ParentName="MSE_BodyPartSimple_Organ"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[defName="BionicLung" or defName="BionicKidney" or defName="BionicLiver"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[addsHediff="BionicLung" or addsHediff="BionicKidney" or addsHediff="BionicLiver"]</xpath>
+				</li>
+
+
+			</operations>
+		</match>
+        <!-- Add other bionic organ prosthetics when epoe is not installed -->
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+							<defName>BionicHeart</defName>
+							<label>bionic heart</label>
+							<description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. Requires bionic organs research to install it.</description>
+							<costList>
+								<Plasteel>15</Plasteel>
+								<ComponentSpacer>5</ComponentSpacer>
+							</costList>
+							<statBases>
+								<MarketValue>1000</MarketValue>
+								<WorkToMake>26000</WorkToMake>
+								<Mass>1</Mass>
+							</statBases>
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+							<defName>BionicStomach</defName>
+							<label>bionic stomach</label>
+							<description>An advanced artificial stomach. A set of sensors and chemical synthesizers efficiently digest nearly any energy-bearing foodstuff. An integrated lattice-dust healing system automatically repairs any damage caused by the powerful acids. It is better than a biological stomach in almost every way. Requires bionic organs research to install it.</description>
+							<costList>
+								<Plasteel>15</Plasteel>
+								<ComponentSpacer>5</ComponentSpacer>
+							</costList>
+							<statBases>
+								<MarketValue>1000</MarketValue>
+								<WorkToMake>26000</WorkToMake>
+								<Mass>2</Mass>
+							</statBases>
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>	
+						<ThingDef ParentName="MSE_BodyPartSimple_Organ">
+							<defName>SimpleProstheticHeart</defName>
+							<label>prosthetic heart</label>
+							<description>A heart prosthesis. It contains an electric motor that pumps blood smoothly around the body. Users often report feeling tired, but it's better than the alternative. Requires prosthetic organs research to install it.</description>
+							<costList>
+								<Steel>25</Steel>
+								<ComponentIndustrial>5</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<MarketValue>270</MarketValue>
+								<WorkToMake>11000</WorkToMake>
+								<Mass>2</Mass>
+							</statBases>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+
+</Patch>

@@ -10,7 +10,7 @@
 	
 				<!-- Advanced Bionics -->
 				<li Class="PatchOperationAdd">
-                    <xpath>Defs</xpath>
+                    <xpath>/Defs</xpath>
                     <value>
                         <RecipeDef ParentName="SurgeryAdvanced">
                             <defName>InstallAdvancedBionicShoulder</defName>

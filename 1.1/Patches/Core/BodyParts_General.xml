@@ -4,7 +4,7 @@
 	<!-- Base class replacing -->
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
+		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
 		<value>
 			<workerClass>OrenoMSE.PartInstallation.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 		</value>
@@ -12,7 +12,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
+		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
 		<value>
 			<workerClass>OrenoMSE.PartInstallation.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
 		</value>
@@ -21,7 +21,7 @@
 	<!-- Adding comp to base class -->
 	<!-- <Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="BodyPartBase"]/comps</xpath>
+		<xpath>/Defs/ThingDef[@Name="BodyPartBase"]/comps</xpath>
 		<order>Append</order>
 		<value>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
@@ -36,11 +36,11 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ribcage"]/destroyableByDamage</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -49,12 +49,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Eye"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Eye"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Eye"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Eye"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Eye</spawnThingOnRemoved>
@@ -67,12 +67,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Ear"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ear"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Ear"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Ear"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Ear</spawnThingOnRemoved>
@@ -85,12 +85,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Nose"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Nose"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Nose"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Nose"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Nose</spawnThingOnRemoved>
@@ -103,12 +103,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Jaw"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Jaw"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Jaw"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Jaw"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Jaw</spawnThingOnRemoved>
@@ -121,12 +121,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Leg"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Leg"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Leg"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Leg"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Leg</spawnThingOnRemoved>
@@ -139,12 +139,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>Defs/BodyPartDef[defName="Foot"]/spawnThingOnRemoved</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Foot"]/spawnThingOnRemoved</xpath>
 				<success>Invert</success>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/BodyPartDef[defName="Foot"]</xpath>
+				<xpath>/Defs/BodyPartDef[defName="Foot"]</xpath>
 				<order>Append</order>
 				<value>
 					<spawnThingOnRemoved>Foot</spawnThingOnRemoved>

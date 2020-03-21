@@ -120,6 +120,9 @@
 		<comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<autogenerate>True</autogenerate>
+				<standardChildren>
+					<li>HookHand</li>
+				</standardChildren>
 			</li>
 		</comps>
 	</ThingDef>

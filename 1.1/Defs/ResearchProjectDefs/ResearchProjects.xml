@@ -90,6 +90,24 @@
 		<researchViewY>3.0</researchViewY>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>MSE_Implants</defName>
+		<label>implants</label>
+		<description>Build high-tech bionic implants at a bionic machining table. Requires a very skilled doctor to install.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<!-- <prerequisites>
+			<li>MSE_BionicOrgans</li>
+		</prerequisites> -->
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSE</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
 	<!--=============================== Tier 2 ===================================-->
 
 	<ResearchProjectDef>
@@ -189,24 +207,6 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>MSE_Implants</defName>
-		<label>implants</label>
-		<description>Build high-tech bionic implants at a bionic machining table. Requires a very skilled doctor to install.</description>
-		<baseCost>1500</baseCost>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>MSE_BionicOrgans</li>
-		</prerequisites>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<requiredResearchFacilities>
-			<li>MultiAnalyzer</li>
-		</requiredResearchFacilities>
-		<tab>MSE</tab>
-		<researchViewX>5</researchViewX>
-		<researchViewY>3.0</researchViewY>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
 		<defName>MSE_BrainImplants</defName>
 		<label>brain implants</label>
 		<description>Build high-tech bionic brain implants at a bionic machining table. Requires a very skilled doctor to install.</description>
@@ -220,8 +220,8 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSE</tab>
-		<researchViewX>5</researchViewX>
-		<researchViewY>3.5</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>

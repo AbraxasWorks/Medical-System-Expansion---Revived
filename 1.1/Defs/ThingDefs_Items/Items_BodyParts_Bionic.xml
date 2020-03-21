@@ -71,7 +71,8 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionic_Organ">
+	<!-- only add if epoe is not present -->
+	<!-- <ThingDef ParentName="MSE_BodyPartBionic_Organ">
 		<defName>BionicHeart</defName>
 		<label>bionic heart</label>
 		<description>An advanced artificial heart. It has synthetic muscle fibers for a realistic heartbeat, plus a high-flow pump for rapid circulation during high stress. It is better than a biological heart in almost every way. Requires bionic organs research to install it.</description>
@@ -99,7 +100,7 @@
 			<WorkToMake>26000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="MSE_BodyPartBionic">
 		<defName>BionicEar</defName>

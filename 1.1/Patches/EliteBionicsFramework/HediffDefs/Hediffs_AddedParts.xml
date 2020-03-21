@@ -12,7 +12,7 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartSimpleBase"]/comps</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartSimpleBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>1</linearAdjustment>
@@ -21,7 +21,7 @@
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase" or @Name="MSE_AddedBodyPartBionicSpecialBase"]/comps</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase" or @Name="MSE_AddedBodyPartBionicSpecialBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>3</linearAdjustment>
@@ -30,7 +30,7 @@
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase" or @Name="MSE_AddedBodyPartArchotechSpecialBase"]/comps</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase" or @Name="MSE_AddedBodyPartArchotechSpecialBase"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>5</linearAdjustment>
@@ -44,7 +44,7 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_ModuleAddedBionic"]/comps</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_ModuleAddedBionic"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>3</linearAdjustment>
@@ -53,7 +53,7 @@
 						</li>
 
 						<li Class="PatchOperationAdd">
-							<xpath>Defs/HediffDef[@Name="MSE_ModuleAddedArchotech"]/comps</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_ModuleAddedArchotech"]/comps</xpath>
 							<value>
 								<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
 									<linearAdjustment>5</linearAdjustment>

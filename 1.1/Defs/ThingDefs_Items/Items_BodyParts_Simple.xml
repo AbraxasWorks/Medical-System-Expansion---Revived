@@ -41,6 +41,8 @@
 		</comps>
 	</ThingDef>
 
+	<!-- added via patch -->
+<!-- 
 	<ThingDef ParentName="MSE_BodyPartSimple_Organ">
 		<defName>SimpleProstheticHeart</defName>
 		<label>prosthetic heart</label>
@@ -54,7 +56,7 @@
 			<WorkToMake>11000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="MSE_BodyPartSimple">
 		<defName>CochlearImplant</defName>

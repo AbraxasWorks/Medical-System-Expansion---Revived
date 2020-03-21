@@ -8,12 +8,83 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 	
+                <!-- Advanced Power Bionics -->
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]</xpath>
+						<value>
+							<comps>
+								<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+									<standardChildren>
+										<li>AdvancedPowerClaw</li>
+										<!-- TODO: add new defs for these advanced bionics -->
+										<li>BionicHumerus</li>
+										<li>BionicRadius</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]/comps</xpath>
+						<value>
+							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+								<standardChildren>
+									<li>AdvancedPowerClaw</li>
+									<!-- TODO: add new defs for these advanced bionics -->
+									<li>BionicHumerus</li>
+									<li>BionicRadius</li>
+								</standardChildren>
+							</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerClaw"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerClaw"]</xpath>
+						<value>
+							<comps>
+								<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                                    <standardChildren>
+                                        <!-- TODO: add new defs for these advanced bionics -->
+                                        <li>BionicFinger</li>
+                                        <li>BionicFinger</li>
+                                        <li>BionicFinger</li>
+                                        <li>BionicFinger</li>
+                                        <li>BionicFinger</li>
+                                    </standardChildren>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerClaw"]/comps</xpath>
+						<value>
+							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+								<standardChildren>
+									<!-- TODO: add new defs for these advanced bionics -->
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+								</standardChildren>
+							</li>
+						</value>
+					</match>
+				</li>
+
 
 				<!-- Advanced Bionics -->
+
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]/comps</xpath>
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]/comps</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
 						<value>
 							<comps>
 								<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
@@ -28,7 +99,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]/comps</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]/comps</xpath>
 						<value>
 							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -42,29 +113,10 @@
 					</match>
 				</li>
 
-    			<!-- <li Class="PatchOperationSequence">
-					<success>Always</success>
-					<operations>
-						<li Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]/comps</xpath>
-							<value>
-								<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-									<standardChildren>
-										<li>AdvancedBionicHand</li>
-										TODO: add new defs for these advanced bionics
-										<li>BionicHumerus</li>
-										<li>BionicRadius</li>
-									</standardChildren>
-								</li>
-							</value>
-						</li>
-					</operations>
-				</li> -->
-
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]/comps</xpath>
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]/comps</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]</xpath>
 						<value>
 							<comps><li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -79,7 +131,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]/comps</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]/comps</xpath>
 						<value>
 							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -96,9 +148,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]/comps</xpath>
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]/comps</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
 						<value>
 							<comps><li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -111,7 +163,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]/comps</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]/comps</xpath>
 						<value>
 							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -126,9 +178,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]/comps</xpath>
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]/comps</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
 						<value>
 							<comps><li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>
@@ -143,7 +195,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]/comps</xpath>
+						<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]/comps</xpath>
 						<value>
 							<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 								<standardChildren>

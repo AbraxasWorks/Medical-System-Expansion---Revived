@@ -12,12 +12,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/HediffDef[defName="ReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="ReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_NaturalBodyPartNormal"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_NaturalBodyPartNormal"]</xpath>
 							<value>
 								<HediffDef ParentName="MSE_NaturalBodyPartNormal">
 									<defName>ReproductiveOrgans</defName>
@@ -32,11 +32,11 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="SimpleProstheticReproductiveOrgans"]</xpath>
 							<value>
 								<HediffDef ParentName="MSE_AddedBodyPartSimple">
 									<defName>SimpleProstheticReproductiveOrgans</defName>
@@ -59,11 +59,11 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="BionicReproductiveOrgans"]</xpath>
 							<value>
 								<HediffDef ParentName="MSE_AddedBodyPartBionic">
 									<defName>BionicReproductiveOrgans</defName>
@@ -85,12 +85,12 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationTest">
-							<xpath>Defs/HediffDef[defName="ArchotechReproductiveOrgans"]</xpath>
+							<xpath>/Defs/HediffDef[defName="ArchotechReproductiveOrgans"]</xpath>
 							<success>Invert</success>
 						</li>
 
 						<li Class="PatchOperationInsert">
-							<xpath>Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotech"]</xpath>
 							<value>
 								<HediffDef ParentName="MSE_AddedBodyPartArchotech">
 									<defName>ArchotechReproductiveOrgans</defName>
