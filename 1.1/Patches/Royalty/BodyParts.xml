@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+                
+                <!-- Field Hand -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[defName="FieldHand"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>FieldFinger</li>
+								<li>FieldFinger</li>
+								<li>FieldFinger</li>
+								<li>FieldFinger</li>
+								<li>FieldFinger</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+                
+                <li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="FieldHand"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
+					<value>
+						<PlantWorkSpeed>0.10</PlantWorkSpeed>
+					</value>
+				</li>
+
+                <!-- Field Fingers -->
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="AddedBodyPartBase">
+                            <defName>FieldFinger</defName>
+                            <label>field finger</label>
+                            <labelNoun>a field finger</labelNoun>
+                            <description>An installed field finger.</description>
+                            <descriptionHyperlinks><ThingDef>FieldFinger</ThingDef></descriptionHyperlinks>
+                            <addedPartProps>
+                            <solid>true</solid>
+                            </addedPartProps>
+                            <stages>
+                            <li>
+                                <statOffsets>
+                                    <PlantWorkSpeed>0.30</PlantWorkSpeed>
+                                </statOffsets>
+                            </li>
+                            </stages>
+                            <spawnThingOnRemoved>FieldFinger</spawnThingOnRemoved>
+                        </HediffDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="BodyPartProstheticImperialBase">
+                            <defName>FieldFinger</defName>
+                            <label>field finger</label>
+                            <description>This mechanical finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once.</description>
+                            <descriptionHyperlinks><RecipeDef>InstallFieldFinger</RecipeDef></descriptionHyperlinks>
+                            <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+                            <costList>
+                                <Steel>8</Steel>
+                                <ComponentIndustrial>1</ComponentIndustrial>
+                            </costList>
+                            <recipeMaker>
+                                <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+                            </recipeMaker>
+                        </ThingDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+                        <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+                            <defName>InstallFieldFinger</defName>
+                            <label>install field finger</label>
+                            <description>Install a field finger.</description>
+                            <descriptionHyperlinks><ThingDef>FieldFinger</ThingDef></descriptionHyperlinks>
+                            <jobString>Installing field finger.</jobString>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                    <thingDefs>
+                                        <li>FieldFinger</li>
+                                    </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>FieldFinger</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <appliedOnFixedBodyParts>
+                                <li>Finger</li>   
+                            </appliedOnFixedBodyParts>
+                            <addsHediff>FieldFinger</addsHediff>
+                        </RecipeDef>
+					</value>
+				</li>
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
