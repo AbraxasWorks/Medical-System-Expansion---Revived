@@ -492,6 +492,15 @@
 		<techHediffsTags>
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+					<li>PowerClaw</li>
+					<li>BionicHumerus</li>
+					<li>BionicRadius</li>
+				</standardChildren>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MSE_BodyPartBionicSpecial">
