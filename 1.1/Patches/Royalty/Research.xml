@@ -56,11 +56,11 @@
 
                 <!-- extra dependecies -->
 
-                <li Class="PatchOperationSetName">
-                    <success>Always</success> <!-- MANDATORY due to vanilla bug -->
+                <!-- <li Class="PatchOperationSetName">
+                    <success>Always</success> MANDATORY due to vanilla bug
                     <xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB" or @ParentName="BaseBodyPartEmpire_TierA"]/hiddenPrerequisites</xpath>
                     <name>prerequisites</name>
-                </li>
+                </li> -->
 
                 <!-- Research tab redistribuion -->
 
