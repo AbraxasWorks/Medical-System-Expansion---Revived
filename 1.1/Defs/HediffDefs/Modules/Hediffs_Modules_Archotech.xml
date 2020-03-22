@@ -47,7 +47,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleArchotech">
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallAdvancedRangedPlatformModule</defName>
 		<label>install advanced ranged platform module</label>
 		<description>Install an advanced ranged platform module.</description>
@@ -133,7 +133,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<RecipeDef ParentName="MSE_SurgeryModuleArchotech">
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallAdvancedMeleePlatformModule</defName>
 		<label>install advanced melee platform module</label>
 		<description>Install an advanced melee platform module.</description>

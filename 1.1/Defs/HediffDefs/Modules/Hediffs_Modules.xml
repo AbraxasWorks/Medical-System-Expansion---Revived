@@ -24,6 +24,34 @@
 		<comps /> <!-- Makes patching easier -->
 	</HediffDef>
 
+
+	<!-- module surgery -->
+
+	<RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
+		<workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>ComponentIndustrial</li>
+			</categories>
+		</fixedIngredientFilter>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+		<!-- <researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite> -->
+	</RecipeDef>
+
+
 	<!-- module slot -->
 
 	<HediffDef>

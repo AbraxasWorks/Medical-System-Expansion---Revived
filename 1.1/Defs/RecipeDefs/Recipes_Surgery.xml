@@ -123,19 +123,17 @@
 	</RecipeDef>
 
 	<!--============ Modules Surgery ==============-->
-	<RecipeDef Name="MSE_SurgeryModule" ParentName="SurgeryInstallImplantBase" Abstract="True">
+	<!-- <RecipeDef Name="MSE_SurgeryModule" ParentName="SurgeryInstallImplantBase" Abstract="True">
 		<workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
 		<ingredients Inherit="False" />
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryModuleBionic" ParentName="MSE_SurgeryModule" Abstract="True">
 		<surgerySuccessChanceFactor>1.6</surgerySuccessChanceFactor>
-		<!-- <researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite> -->
 	</RecipeDef>
 
 	<RecipeDef Name="MSE_SurgeryModuleArchotech" ParentName="MSE_SurgeryModule" Abstract="True">
 		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-		<!-- <researchPrerequisite>MSE_ArchotechModules</researchPrerequisite> -->
-	</RecipeDef>
+	</RecipeDef> -->
 
 </Defs>

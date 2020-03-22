@@ -40,7 +40,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryModuleBionic">
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallRangedPlatformModule</defName>
 		<label>install ranged platform module</label>
 		<description>Install a ranged platform module.</description>
@@ -119,7 +119,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<RecipeDef ParentName="MSE_SurgeryModuleBionic">
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallMeleePlatformModule</defName>
 		<label>install melee platform module</label>
 		<description>Install a melee platform module.</description>
