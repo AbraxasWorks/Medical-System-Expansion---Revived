@@ -5,9 +5,6 @@
 	<HediffDef Name="MSE_ModuleAdded" Abstract="True">
 		<hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
 		<isBad>false</isBad>
-		<!-- <comps>
-			<li Class="OrenoMSE.HediffCompProperties_PartModule" />
-		</comps> -->
 	</HediffDef>
 	<!--===================== END ======================-->
 
