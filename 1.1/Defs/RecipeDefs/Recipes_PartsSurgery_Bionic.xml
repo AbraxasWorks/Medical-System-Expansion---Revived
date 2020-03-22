@@ -1241,7 +1241,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Shoulder</li>
+			<li>Hand</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PowerHand</addsHediff>
 	</RecipeDef>
