@@ -59,25 +59,12 @@
 		</skillRequirements>
 		<ingredients>
 			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentSpacer</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>MSE_AdvancedRangedPlatformModule</li>
-					</thingDefs>
-				</filter>
+				<filter><thingDefs><li>MSE_AdvancedRangedPlatformModule</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>ComponentSpacer</li>
 				<li>MSE_AdvancedRangedPlatformModule</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -145,25 +132,12 @@
 		</skillRequirements>
 		<ingredients>
 			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentSpacer</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>MSE_AdvancedMeleePlatformModule</li>
-					</thingDefs>
-				</filter>
+				<filter><thingDefs><li>MSE_AdvancedMeleePlatformModule</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>ComponentSpacer</li>
 				<li>MSE_AdvancedMeleePlatformModule</li>
 			</thingDefs>
 		</fixedIngredientFilter>

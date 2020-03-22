@@ -102,11 +102,7 @@
                             <jobString>Installing mechanical manipulator.</jobString>
                             <ingredients>
                                 <li>
-                                    <filter>
-                                    <thingDefs>
-                                        <li>MechanicalManipulator</li>
-                                    </thingDefs>
-                                    </filter>
+                                    <filter><thingDefs><li>MechanicalManipulator</li></thingDefs></filter>
                                     <count>1</count>
                                 </li>
                             </ingredients>
@@ -158,11 +154,7 @@
                             <jobString>Installing mechanical finger.</jobString>
                             <ingredients>
                                 <li>
-                                    <filter>
-                                    <thingDefs>
-                                        <li>MechanicalFinger</li>
-                                    </thingDefs>
-                                    </filter>
+                                    <filter><thingDefs><li>MechanicalFinger</li></thingDefs></filter>
                                     <count>1</count>
                                 </li>
                             </ingredients>
@@ -220,11 +212,7 @@
                             <jobString>Installing field finger.</jobString>
                             <ingredients>
                                 <li>
-                                    <filter>
-                                    <thingDefs>
-                                        <li>FieldFinger</li>
-                                    </thingDefs>
-                                    </filter>
+                                    <filter><thingDefs><li>FieldFinger</li></thingDefs></filter>
                                     <count>1</count>
                                 </li>
                             </ingredients>
@@ -270,7 +258,7 @@
                             <spawnThingOnRemoved>HandTalon</spawnThingOnRemoved>
                         </HediffDef>
 
-                        <RecipeDef ParentName="MSE_SurgeryModuleBionic">
+                        <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
                             <defName>InstallHandTalonModule</defName>
                             <label>install hand talon module</label>
                             <description>Install a hand talon module.</description>
@@ -278,11 +266,7 @@
                             <jobString>Installing hand talon module.</jobString>
                             <ingredients>
                             <li>
-                                <filter>
-                                <thingDefs>
-                                    <li>HandTalon</li>
-                                </thingDefs>
-                                </filter>
+                                <filter><thingDefs><li>HandTalon</li></thingDefs></filter>
                                 <count>1</count>
                             </li>
                             </ingredients>
@@ -326,7 +310,7 @@
                             <spawnThingOnRemoved>ElbowBlade</spawnThingOnRemoved>
                         </HediffDef>
 
-                        <RecipeDef ParentName="MSE_SurgeryModuleBionic">
+                        <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
                             <defName>InstallElbowBladeModule</defName>
                             <label>install elbow blade module</label>
                             <description>Install an elbow blade module.</description>
@@ -334,11 +318,7 @@
                             <jobString>Installing elbow blade module.</jobString>
                             <ingredients>
                             <li>
-                                <filter>
-                                <thingDefs>
-                                    <li>ElbowBlade</li>
-                                </thingDefs>
-                                </filter>
+                                <filter><thingDefs><li>ElbowBlade</li></thingDefs></filter>
                                 <count>1</count>
                             </li>
                             </ingredients>
@@ -382,7 +362,7 @@
                             <spawnThingOnRemoved>KneeSpike</spawnThingOnRemoved>
                         </HediffDef>
 
-                        <RecipeDef ParentName="MSE_SurgeryModuleBionic">
+                        <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
                             <defName>InstallKneeSpikeModule</defName>
                             <label>install knee spike module</label>
                             <description>Install a knee spike module.</description>
@@ -390,11 +370,7 @@
                             <jobString>Installing knee spike module.</jobString>
                             <ingredients>
                             <li>
-                                <filter>
-                                <thingDefs>
-                                    <li>KneeSpike</li>
-                                </thingDefs>
-                                </filter>
+                                <filter><thingDefs><li>KneeSpike</li></thingDefs></filter>
                                 <count>1</count>
                             </li>
                             </ingredients>
@@ -438,7 +414,7 @@
                             <spawnThingOnRemoved>VenomTalon</spawnThingOnRemoved>
                         </HediffDef>
 
-                        <RecipeDef ParentName="MSE_SurgeryModuleBionic">
+                        <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
                             <defName>InstallVenomTalonModule</defName>
                             <label>install venom talon module</label>
                             <description>Install a venom talon module.</description>
@@ -446,11 +422,7 @@
                             <jobString>Installing venom talon module.</jobString>
                             <ingredients>
                             <li>
-                                <filter>
-                                <thingDefs>
-                                    <li>VenomTalon</li>
-                                </thingDefs>
-                                </filter>
+                                <filter><thingDefs><li>VenomTalon</li></thingDefs></filter>
                                 <count>1</count>
                             </li>
                             </ingredients>

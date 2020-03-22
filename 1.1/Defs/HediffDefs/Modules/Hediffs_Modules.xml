@@ -43,9 +43,7 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>ComponentIndustrial</li>
-			</categories>
+			<thingDefs><li>ComponentIndustrial</li></thingDefs>
 		</fixedIngredientFilter>
 		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
 		<!-- <researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite> -->
