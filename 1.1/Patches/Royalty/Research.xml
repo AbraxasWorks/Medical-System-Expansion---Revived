@@ -55,29 +55,17 @@
                     <mods>
                         <li>Expanded Prosthetics and Organ Engineering</li>
                     </mods>
-                    <match Class="PatchOperationSequence">
-                        <operations>
-
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
-                                <value>                        
-                                    <li>BrainSurgery</li>
-                                </value>
-                            </li>
-
-                        </operations>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
+                        <value>                        
+                            <li>BrainSurgery</li>
+                        </value>
                     </match>
-                    <nomatch Class="PatchOperationSequence">
-                        <operations>
-
-                            <li Class="PatchOperationAdd">
-                                <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
-                                <value>                        
-                                    <li>MSE_BrainImplants</li>
-                                </value>
-                            </li>
-
-                        </operations>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ResearchProjectDef[defName="BrainWiring" or defName="NeuralComputation" or defName="CircadianInfluence"]/prerequisites</xpath>
+                        <value>                        
+                            <li>MSE_BrainImplants</li>
+                        </value>
                     </nomatch>
                 </li>
 

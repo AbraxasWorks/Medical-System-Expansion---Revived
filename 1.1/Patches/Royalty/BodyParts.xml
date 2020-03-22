@@ -17,6 +17,7 @@
 						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 							<standardChildren>
 								<li>MechanicalManipulator</li>
+                                <!-- TODO: add special bone like mechanical internal supports -->
 								<li>SimpleProstheticHumerus</li>
 								<li>SimpleProstheticRadius</li>
 							</standardChildren>
