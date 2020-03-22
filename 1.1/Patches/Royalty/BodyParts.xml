@@ -7,6 +7,175 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+
+                <!-- Drill Arm -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[defName="DrillArm"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>MechanicalManipulator</li>
+								<li>SimpleProstheticHumerus</li>
+								<li>SimpleProstheticRadius</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+                <!-- Mechanical Manipulator -->
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="AddedBodyPartBase">
+                            <defName>MechanicalManipulator</defName>
+                            <label>mechanical manipulator</label>
+                            <labelNoun>a mechanical manipulator</labelNoun>
+                            <description>An installed mechanical manipulator.</description>
+                            <descriptionHyperlinks><ThingDef>MechanicalManipulator</ThingDef></descriptionHyperlinks>
+                            <addedPartProps>
+                                <solid>true</solid>
+			                    <partEfficiency>0.90</partEfficiency>
+                            </addedPartProps>
+                            <spawnThingOnRemoved>MechanicalManipulator</spawnThingOnRemoved>
+                        </HediffDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="BodyPartProstheticImperialBase">
+                            <defName>MechanicalManipulator</defName>
+                            <label>mechanical manipulator</label>
+                            <description>A general-purpose manipulator, not as good as normal hand but better than nothing.</description>
+                            <descriptionHyperlinks><RecipeDef>InstallMechanicalManipulator</RecipeDef></descriptionHyperlinks>
+                            <costList>
+                                <Steel>30</Steel>
+                                <ComponentIndustrial>6</ComponentIndustrial>
+                            </costList>
+                            <recipeMaker>
+                                <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+                            </recipeMaker>
+                            <comps>
+                                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                                    <standardChildren>
+                                        <li>MechanicalFinger</li>
+                                        <li>MechanicalFinger</li>
+                                        <li>MechanicalFinger</li>
+                                        <li>MechanicalFinger</li>
+                                        <li>MechanicalFinger</li>
+                                    </standardChildren>
+                                </li>
+                            </comps>
+                        </ThingDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+                        <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+                            <defName>InstallMechanicalManipulator</defName>
+                            <label>install mechanical manipulator</label>
+                            <description>Install a mechanical manipulator.</description>
+                            <descriptionHyperlinks><ThingDef>MechanicalManipulator</ThingDef></descriptionHyperlinks>
+                            <jobString>Installing mechanical manipulator.</jobString>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                    <thingDefs>
+                                        <li>MechanicalManipulator</li>
+                                    </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>MechanicalManipulator</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <appliedOnFixedBodyParts>
+                                <li>Hand</li>   
+                            </appliedOnFixedBodyParts>
+                            <addsHediff>MechanicalManipulator</addsHediff>
+                        </RecipeDef>
+					</value>
+				</li>
+
+                <!-- Mechanical Finger -->
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<HediffDef ParentName="AddedBodyPartBase">
+                            <defName>MechanicalFinger</defName>
+                            <label>mechanical finger</label>
+                            <labelNoun>a mechanical finger</labelNoun>
+                            <description>An installed mechanical finger.</description>
+                            <descriptionHyperlinks><ThingDef>MechanicalFinger</ThingDef></descriptionHyperlinks>
+                            <addedPartProps>
+                                <solid>true</solid>
+			                    <partEfficiency>0.90</partEfficiency>
+                            </addedPartProps>
+                            <spawnThingOnRemoved>MechanicalFinger</spawnThingOnRemoved>
+                        </HediffDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="BodyPartProstheticImperialBase">
+                            <defName>MechanicalFinger</defName>
+                            <label>mechanical finger</label>
+                            <description>A general purpose mechanical finger.</description>
+                            <descriptionHyperlinks><RecipeDef>InstallMechanicalFinger</RecipeDef></descriptionHyperlinks>
+                            <costList>
+                                <Steel>4</Steel>
+                                <ComponentIndustrial>1</ComponentIndustrial>
+                            </costList>
+                            <recipeMaker>
+                                <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+                            </recipeMaker>
+                        </ThingDef>
+					</value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+                        <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+                            <defName>InstallMechanicalFinger</defName>
+                            <label>install mechanical finger</label>
+                            <description>Install a mechanical finger.</description>
+                            <descriptionHyperlinks><ThingDef>MechanicalFinger</ThingDef></descriptionHyperlinks>
+                            <jobString>Installing mechanical finger.</jobString>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                    <thingDefs>
+                                        <li>MechanicalFinger</li>
+                                    </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>MechanicalFinger</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <appliedOnFixedBodyParts>
+                                <li>Finger</li>   
+                            </appliedOnFixedBodyParts>
+                            <addsHediff>MechanicalFinger</addsHediff>
+                        </RecipeDef>
+					</value>
+				</li>
                 
                 <!-- Field Hand -->
 
@@ -45,7 +214,7 @@
                             <description>An installed field finger.</description>
                             <descriptionHyperlinks><ThingDef>FieldFinger</ThingDef></descriptionHyperlinks>
                             <addedPartProps>
-                            <solid>true</solid>
+                                <solid>true</solid>
                             </addedPartProps>
                             <stages>
                             <li>
@@ -67,7 +236,6 @@
                             <label>field finger</label>
                             <description>This mechanical finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once.</description>
                             <descriptionHyperlinks><RecipeDef>InstallFieldFinger</RecipeDef></descriptionHyperlinks>
-                            <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
                             <costList>
                                 <Steel>8</Steel>
                                 <ComponentIndustrial>1</ComponentIndustrial>
@@ -111,7 +279,7 @@
 					</value>
 				</li>
 
-
+                
 
 			</operations>
 		</match>
