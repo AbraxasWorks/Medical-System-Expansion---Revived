@@ -53,10 +53,6 @@
 		<description>Install an advanced ranged platform module.</description>
 		<descriptionHyperlinks><ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef></descriptionHyperlinks>
 		<jobString>Installing sdvanced ranged platform module.</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter><thingDefs><li>MSE_AdvancedRangedPlatformModule</li></thingDefs></filter>
@@ -126,10 +122,6 @@
 		<description>Install an advanced melee platform module.</description>
 		<descriptionHyperlinks><ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef></descriptionHyperlinks>
 		<jobString>Installing advanced melee platform module.</jobString>
-		<workAmount>5000</workAmount>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter><thingDefs><li>MSE_AdvancedMeleePlatformModule</li></thingDefs></filter>
