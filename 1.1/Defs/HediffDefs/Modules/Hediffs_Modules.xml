@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+
+
 	<!--============ Module Base ============-->
 	<HediffDef Name="MSE_ModuleAdded" Abstract="True">
 		<hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
@@ -19,6 +22,23 @@
 	<HediffDef Name="MSE_ModuleAddedArchotech" ParentName="MSE_ModuleAdded" Abstract="True">
 		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
 		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<!-- module slot -->
+
+	<HediffDef>
+		<hediffClass>OrenoMSE.Modules.Slots.Hediff_ModuleSlot</hediffClass>
+		<defName>MSE_ModuleSlot</defName>
+		<label>module slot</label>
+		<labelNoun>a module slot</labelNoun>
+		<description>A slot for upgrading</description>
+		<defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
+		<isBad>false</isBad>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>{0} module slot</labelPretty>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
 </Defs>
