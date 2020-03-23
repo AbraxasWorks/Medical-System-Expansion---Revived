@@ -29,12 +29,14 @@
 		<label>prosthetic clavicle</label>
 		<labelNoun>a prosthetic clavicle</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticClavicle</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticClavicle</defName>
 		<label>prosthetic clavicle</label>
 		<description>A clavicle prosthesis. It is inferior to a real clavicle. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticClavicle</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -49,6 +51,7 @@
 		<defName>InstallSimpleProstheticClavicle</defName>
 		<label>install prosthetic clavicle</label>
 		<description>Install a prosthetic clavicle.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticClavicle</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic clavicle.</jobString>
 		<workAmount>1500</workAmount>
 		<skillRequirements>
@@ -93,12 +96,14 @@
 		<label>prosthetic sternum</label>
 		<labelNoun>a prosthetic sternum</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticSternum</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticSternum</defName>
 		<label>prosthetic sternum</label>
 		<description>A sternum prosthesis. It is inferior to a real sternum. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticSternum</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -113,6 +118,7 @@
 		<defName>InstallSimpleProstheticSternum</defName>
 		<label>install prosthetic sternum</label>
 		<description>Install a prosthetic sternum.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticSternum</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic sternum.</jobString>
 		<workAmount>1500</workAmount>
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
@@ -158,12 +164,14 @@
 		<label>prosthetic rib</label>
 		<labelNoun>a prosthetic rib</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticRib</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticRib</defName>
 		<label>prosthetic rib</label>
 		<description>A rib prosthesis. It is inferior to a real rib. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticRib</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -178,6 +186,7 @@
 		<defName>InstallSimpleProstheticRib</defName>
 		<label>install prosthetic rib</label>
 		<description>Install a prosthetic rib.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticRib</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic rib.</jobString>
 		<workAmount>1500</workAmount>
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
@@ -223,12 +232,14 @@
 		<label>prosthetic pelvis</label>
 		<labelNoun>a prosthetic pelvis</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticPelvis</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticPelvis</defName>
 		<label>prosthetic pelvis</label>
 		<description>A pelvis prosthesis. It is inferior to a real pelvis. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticPelvis</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -243,6 +254,7 @@
 		<defName>InstallSimpleProstheticPelvis</defName>
 		<label>install prosthetic pelvis</label>
 		<description>Install a prosthetic pelvis.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticPelvis</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic pelvis.</jobString>
 		<workAmount>1500</workAmount>
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
@@ -288,12 +300,14 @@
 		<label>prosthetic humerus</label>
 		<labelNoun>a prosthetic humerus</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticHumerus</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticHumerus</defName>
 		<label>prosthetic humerus</label>
 		<description>A humerus prosthesis. It is inferior to a real humerus. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticHumerus</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -308,6 +322,7 @@
 		<defName>InstallSimpleProstheticHumerus</defName>
 		<label>install prosthetic humerus</label>
 		<description>Install a prosthetic humerus.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticHumerus</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic humerus.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
@@ -352,12 +367,14 @@
 		<label>prosthetic radius</label>
 		<labelNoun>a prosthetic radius</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticRadius</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticRadius</defName>
 		<label>prosthetic radius</label>
 		<description>A radius prosthesis. It is inferior to a real radius. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticRadius</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -372,6 +389,7 @@
 		<defName>InstallSimpleProstheticRadius</defName>
 		<label>install prosthetic radius</label>
 		<description>Install a prosthetic radius.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticRadius</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic radius.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
@@ -416,12 +434,14 @@
 		<label>prosthetic femur</label>
 		<labelNoun>a prosthetic femur</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticFemur</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticFemur</defName>
 		<label>prosthetic femur</label>
 		<description>A femur prosthesis. It is inferior to a real femur. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticFemur</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -436,6 +456,7 @@
 		<defName>InstallSimpleProstheticFemur</defName>
 		<label>install prosthetic femur</label>
 		<description>Install a prosthetic femur.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticFemur</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic femur.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
@@ -480,12 +501,14 @@
 		<label>prosthetic tibia</label>
 		<labelNoun>a prosthetic tibia</labelNoun>
 		<description>Test. Fix Later</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticTibia</ThingDef></descriptionHyperlinks>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
 		<defName>SimpleProstheticTibia</defName>
 		<label>prosthetic tibia</label>
 		<description>A tibia prosthesis. It is inferior to a real tibia. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticTibia</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Steel>25</Steel>
 		</costList>
@@ -500,6 +523,7 @@
 		<defName>InstallSimpleProstheticTibia</defName>
 		<label>install prosthetic tibia</label>
 		<description>Install a prosthetic tibia.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticTibia</ThingDef></descriptionHyperlinks>
 		<jobString>Installing prosthetic tibia.</jobString>
 		<workAmount>1000</workAmount>
 		<skillRequirements>
