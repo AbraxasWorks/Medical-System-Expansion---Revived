@@ -18,8 +18,8 @@
 							<standardChildren>
 								<li>AdvancedBionicHand</li>
 								<!-- TODO: add new defs for these advanced bionics -->
-								<li>BionicHumerus</li>
-								<li>BionicRadius</li>
+								<li>PlasteelHumerus</li>
+								<li>PlasteelRadius</li>
 							</standardChildren>
 						</li>
 					</value>
@@ -50,8 +50,8 @@
 							<standardChildren>
 								<li>AdvancedBionicFoot</li>
 								<!-- TODO: add new defs for these advanced bionics -->
-								<li>BionicFemur</li>
-								<li>BionicTibia</li>
+								<li>PlasteelFemur</li>
+								<li>PlasteelTibia</li>
 							</standardChildren>
 						</li>
 					</value>

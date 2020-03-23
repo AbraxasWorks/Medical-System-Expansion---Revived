@@ -16,10 +16,10 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>BionicRib</defName>
+		<defName>PlasteelRib</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>BionicRib</hediff>
+		<hediff>PlasteelRib</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraits>
 			<li>BodyPurist</li>

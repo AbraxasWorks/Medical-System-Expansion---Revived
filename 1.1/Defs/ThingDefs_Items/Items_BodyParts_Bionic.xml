@@ -289,127 +289,6 @@
 		</statBases>
 	</ThingDef>
 
-	<!--================= Bionic Bones =================-->
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicClavicle</defName>
-		<label>bionic clavicle</label>
-		<description>An advanced artificial clavicle. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>5</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>300</MarketValue>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicSternum</defName>
-		<label>bionic sternum</label>
-		<description>An advanced artificial sternum. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>5</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>300</MarketValue>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicRib</defName>
-		<label>bionic rib</label>
-		<description>An advanced artificial rib. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>2.5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicPelvis</defName>
-		<label>bionic pelvis</label>
-		<description>An advanced artificial pelvis. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicHumerus</defName>
-		<label>bionic humerus</label>
-		<description>An advanced artificial humerus. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicRadius</defName>
-		<label>bionic radius</label>
-		<description>An advanced artificial radius. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicFemur</defName>
-		<label>bionic femur</label>
-		<description>An advanced artificial femur. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>BionicTibia</defName>
-		<label>bionic tibia</label>
-		<description>An advanced artificial tibia. With lattice-dust healing system allows it to recover from damage. Requires bionic bones research to install it.</description>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
 
 	<!--=============== Special Bionics ================-->
 
@@ -479,8 +358,8 @@
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
 					<li>PowerHand</li>
-					<li>BionicHumerus</li>
-					<li>BionicRadius</li>
+					<li>PlasteelHumerus</li>
+					<li>PlasteelRadius</li>
 				</standardChildren>
 			</li>
 		</comps>

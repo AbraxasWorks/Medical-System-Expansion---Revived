@@ -66,7 +66,7 @@
                     <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                         <autogenerate>True</autogenerate>
                         <standardChildren>
-                            <li>BionicClavicle</li>
+                            <li>PlasteelClavicle</li>
                         </standardChildren>
                     </li>
                 </comps>

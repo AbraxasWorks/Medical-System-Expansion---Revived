@@ -31,7 +31,7 @@
 		<costList>
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<BionicClavicle>1</BionicClavicle>
+			<PlasteelClavicle>1</PlasteelClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>1200</MarketValue>
@@ -93,7 +93,7 @@
 		<costList>
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<BionicClavicle>1</BionicClavicle>
+			<PlasteelClavicle>1</PlasteelClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>1200</MarketValue>
