@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- abstracts -->
+
+    <HediffDef Name="MSE_Bones_Simple_Base" ParentName="MSE_AddedBodyPartSimple" Abstract="True">
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+  
+	<ThingDef Name="MSE_BodyPartSimple_Bone" ParentName="MSE_BodyPartSimple" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef Name="MSE_SurgerySimple_Bone" ParentName="MSE_SurgerySimple" Abstract="True">
+		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
+		<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- clavicle -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<labelNoun>a prosthetic clavicle</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<description>A clavicle prosthesis. It is inferior to a real clavicle. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticClavicle</defName>
+		<label>install prosthetic clavicle</label>
+		<description>Install a prosthetic clavicle.</description>
+		<jobString>Installing prosthetic clavicle.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticClavicle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticClavicle</addsHediff>
+	</RecipeDef>
+
+    <!-- sternum -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticSternum</defName>
+		<label>prosthetic sternum</label>
+		<labelNoun>a prosthetic sternum</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticSternum</defName>
+		<label>prosthetic sternum</label>
+		<description>A sternum prosthesis. It is inferior to a real sternum. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticSternum</defName>
+		<label>install prosthetic sternum</label>
+		<description>Install a prosthetic sternum.</description>
+		<jobString>Installing prosthetic sternum.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticSternum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticSternum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Sternum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticSternum</addsHediff>
+	</RecipeDef>
+
+    <!-- rib -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticRib</defName>
+		<label>prosthetic rib</label>
+		<labelNoun>a prosthetic rib</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticRib</defName>
+		<label>prosthetic rib</label>
+		<description>A rib prosthesis. It is inferior to a real rib. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticRib</defName>
+		<label>install prosthetic rib</label>
+		<description>Install a prosthetic rib.</description>
+		<jobString>Installing prosthetic rib.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRib</addsHediff>
+	</RecipeDef>
+
+    <!-- pelvis -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticPelvis</defName>
+		<label>prosthetic pelvis</label>
+		<labelNoun>a prosthetic pelvis</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticPelvis</defName>
+		<label>prosthetic pelvis</label>
+		<description>A pelvis prosthesis. It is inferior to a real pelvis. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticPelvis</defName>
+		<label>install prosthetic pelvis</label>
+		<description>Install a prosthetic pelvis.</description>
+		<jobString>Installing prosthetic pelvis.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticPelvis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticPelvis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pelvis</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticPelvis</addsHediff>
+	</RecipeDef>
+
+    <!-- humerus -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticHumerus</defName>
+		<label>prosthetic humerus</label>
+		<labelNoun>a prosthetic humerus</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticHumerus</defName>
+		<label>prosthetic humerus</label>
+		<description>A humerus prosthesis. It is inferior to a real humerus. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticHumerus</defName>
+		<label>install prosthetic humerus</label>
+		<description>Install a prosthetic humerus.</description>
+		<jobString>Installing prosthetic humerus.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHumerus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticHumerus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHumerus</addsHediff>
+	</RecipeDef>
+
+    <!-- radius -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticRadius</defName>
+		<label>prosthetic radius</label>
+		<labelNoun>a prosthetic radius</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticRadius</defName>
+		<label>prosthetic radius</label>
+		<description>A radius prosthesis. It is inferior to a real radius. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticRadius</defName>
+		<label>install prosthetic radius</label>
+		<description>Install a prosthetic radius.</description>
+		<jobString>Installing prosthetic radius.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRadius</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticRadius</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRadius</addsHediff>
+	</RecipeDef>
+
+    <!-- femur -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticFemur</defName>
+		<label>prosthetic femur</label>
+		<labelNoun>a prosthetic femur</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticFemur</defName>
+		<label>prosthetic femur</label>
+		<description>A femur prosthesis. It is inferior to a real femur. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticFemur</defName>
+		<label>install prosthetic femur</label>
+		<description>Install a prosthetic femur.</description>
+		<jobString>Installing prosthetic femur.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFemur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticFemur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Femur</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFemur</addsHediff>
+	</RecipeDef>
+
+    <!-- tibia -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>SimpleProstheticTibia</defName>
+		<label>prosthetic tibia</label>
+		<labelNoun>a prosthetic tibia</labelNoun>
+		<description>Test. Fix Later</description>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_BodyPartSimple_Bone">
+		<defName>SimpleProstheticTibia</defName>
+		<label>prosthetic tibia</label>
+		<description>A tibia prosthesis. It is inferior to a real tibia. Requires bone replacement research to install it.</description>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticTibia</defName>
+		<label>install prosthetic tibia</label>
+		<description>Install a prosthetic tibia.</description>
+		<jobString>Installing prosthetic tibia.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticTibia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticTibia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticTibia</addsHediff>
+	</RecipeDef>
+
+
+    
+
+</Defs>
