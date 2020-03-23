@@ -27,11 +27,6 @@
 		<ingredients Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef Name="MSE_SurgerySimple_Bone" ParentName="MSE_SurgerySimple" Abstract="True">
-		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
-		<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
-	</RecipeDef>
-
 	<RecipeDef Name="MSE_SurgerySimple_Organ" ParentName="MSE_SurgerySimple" Abstract="True">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>

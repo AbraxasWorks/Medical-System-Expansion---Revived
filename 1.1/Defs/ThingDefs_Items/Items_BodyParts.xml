@@ -84,12 +84,6 @@
 		</techHediffsTags>
 	</ThingDef>
   
-	<ThingDef Name="MSE_BodyPartSimple_Bone" ParentName="MSE_BodyPartSimple" Abstract="True">
-		<recipeMaker>
-			<researchPrerequisite>MSE_BoneReplacement</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
-  
 	<ThingDef Name="MSE_BodyPartSimple_Organ" ParentName="MSE_BodyPartSimple" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>MSE_ProstheticOrgans</researchPrerequisite>
