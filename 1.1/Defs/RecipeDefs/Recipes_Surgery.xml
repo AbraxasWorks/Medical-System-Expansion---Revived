@@ -45,10 +45,6 @@
 		<ingredients Inherit="False" />
 	</RecipeDef>
 
-	<RecipeDef Name="MSE_SurgeryBionic_Bone" ParentName="MSE_SurgeryBionic" Abstract="True">
-		<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
-	</RecipeDef>
-
 	<RecipeDef Name="MSE_SurgeryBionic_Organ" ParentName="MSE_SurgeryBionic" Abstract="True">
 		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
 		<researchPrerequisite>MSE_BionicOrgans</researchPrerequisite>

@@ -80,18 +80,8 @@
 	</HediffDef>
 
 	<!--=================== Bionic =====================-->
-	<HediffDef Name="MSE_AddedBodyPartBionicBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBionicBase" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.010</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionic" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">

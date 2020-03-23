@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- generics -->
+    <!-- abstracts -->
 
+    <HediffDef Name="MSE_Bones_Plasteel_Base" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+            <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+  
+	<ThingDef Name="MSE_BodyPartBionic_Bone" ParentName="MSE_BodyPartBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef Name="MSE_SurgeryBionic_Bone" ParentName="MSE_SurgeryBionic" Abstract="True">
+		<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
+	</RecipeDef>
 
     
 	<!-- clavicle -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelClavicle</defName>
 		<label>plasteel clavicle</label>
 		<labelNoun>a plasteel clavicle</labelNoun>
 		<description>Test. Fix Later</description>
 		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelClavicle</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
 	</HediffDef>
     
 	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
@@ -71,16 +93,13 @@
 
     <!-- sternum -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelSternum</defName>
 		<label>plasteel sternum</label>
 		<labelNoun>a plasteel sternum</labelNoun>
 		<description>Test. Fix Later</description>
 		<descriptionHyperlinks><ThingDef>PlasteelSternum</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelSternum</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
 	</HediffDef>
     
 	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
@@ -136,16 +155,13 @@
 
     <!-- rib -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelRib</defName>
 		<label>plasteel rib</label>
 		<labelNoun>a plasteel rib</labelNoun>
 		<description>Test. Fix Later</description>
 		<descriptionHyperlinks><ThingDef>PlasteelRib</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelRib</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
 	</HediffDef>
     
 	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
@@ -201,7 +217,7 @@
 
     <!-- pelvis -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelPelvis</defName>
 		<label>plasteel pelvis</label>
 		<labelNoun>a plasteel pelvis</labelNoun>
@@ -266,7 +282,7 @@
 
     <!-- humerus -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelHumerus</defName>
 		<label>plasteel humerus</label>
 		<labelNoun>a plasteel humerus</labelNoun>
@@ -330,7 +346,7 @@
 
     <!-- radius -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelRadius</defName>
 		<label>plasteel radius</label>
 		<labelNoun>a plasteel radius</labelNoun>
@@ -394,7 +410,7 @@
 
     <!-- femur -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelFemur</defName>
 		<label>plasteel femur</label>
 		<labelNoun>a plasteel femur</labelNoun>
@@ -458,7 +474,7 @@
 
     <!-- tibia -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartBionic">
+	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
 		<defName>PlasteelTibia</defName>
 		<label>plasteel tibia</label>
 		<labelNoun>a plasteel tibia</labelNoun>

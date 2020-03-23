@@ -111,12 +111,6 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 	</ThingDef>
-  
-	<ThingDef Name="MSE_BodyPartBionic_Bone" ParentName="MSE_BodyPartBionic" Abstract="True">
-		<recipeMaker>
-			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
 
 	<ThingDef Name="MSE_BodyPartBionic_Organ" ParentName="MSE_BodyPartBionic" Abstract="True">
 		<recipeMaker>
