@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- abstract -->
+
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionicSpecial</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationBionicSpecial_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+
+    <!--  -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>PowerClaw</defName>
+		<label>power claw</label>
+		<labelNoun>a power claw</labelNoun>
+		<description>Test. Fix Later</description>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>18.0</power>
+						<cooldownTime>2.0</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>PowerArm</defName>
+		<label>power arm</label>
+		<labelNoun>a power arm</labelNoun>
+		<description>Test. Fix Later</description>
+    	<descriptionHyperlinks><ThingDef>PowerArm</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>PowerArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>PowerHand</defName>
+		<label>power hand</label>
+		<labelNoun>a power hand</labelNoun>
+		<description>Test. Fix Later</description>
+    	<descriptionHyperlinks><ThingDef>PowerHand</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>16.7</power>
+						<cooldownTime>2.4</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+								<def>Stun</def>
+								<amount>14</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
+					</li>
+				</tools>
+			</li>
+			<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>PowerHand</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>BreathingSupportRib</defName>
+		<label>breathing support ribcage</label>
+		<labelNoun>a breathing support ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<!----><offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>BreathingSupportRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>RelaxationRib</defName>
+		<label>relaxation ribcage</label>
+		<labelNoun>a relaxation ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					<!----><MentalBreakThreshold>-0.10</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>RelaxationRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>ColdRegulatorRib</defName>
+		<label>cold regulator ribcage</label>
+		<labelNoun>a cold regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					<!----><ComfyTemperatureMin>-5.0</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>ColdRegulatorRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial">
+		<defName>HeatRegulatorRib</defName>
+		<label>heat regulator ribcage</label>
+		<labelNoun>a heat regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					<!----><ComfyTemperatureMax>5.0</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>HeatRegulatorRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+    <!-- organs -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial_Organ">
+		<defName>AntitoxinKidney</defName>
+		<label>antitoxin kidney</label>
+		<labelNoun>an antitoxin kidney</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					<!----><ToxicSensitivity>-0.25</ToxicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AntitoxinKidney</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial_Organ">
+		<defName>MedicalLiver</defName>
+		<label>medical liver</label>
+		<labelNoun>a medical liver</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					<!----><ImmunityGainSpeed>0.25</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MedicalLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicSpecial_Organ">
+		<defName>EnergizedLiver</defName>
+		<label>energized liver</label>
+		<labelNoun>an energized liver</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.010</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+				</statOffsets>
+				<!----><restFallFactor>0.75</restFallFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>EnergizedLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+
+
+</Defs>

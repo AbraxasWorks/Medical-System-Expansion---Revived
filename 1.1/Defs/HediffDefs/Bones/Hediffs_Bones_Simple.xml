@@ -3,7 +3,7 @@
 
     <!-- abstracts -->
 
-    <HediffDef Name="MSE_Bones_Simple_Base" ParentName="MSE_AddedBodyPartSimple" Abstract="True">
+    <HediffDef Name="MSE_Bones_Simple_Base" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -24,7 +24,7 @@
 
 	<!-- clavicle -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticClavicle</defName>
 		<label>prosthetic clavicle</label>
 		<labelNoun>a prosthetic clavicle</labelNoun>
@@ -91,7 +91,7 @@
 
     <!-- sternum -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticSternum</defName>
 		<label>prosthetic sternum</label>
 		<labelNoun>a prosthetic sternum</labelNoun>
@@ -159,7 +159,7 @@
 
     <!-- rib -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticRib</defName>
 		<label>prosthetic rib</label>
 		<labelNoun>a prosthetic rib</labelNoun>
@@ -227,7 +227,7 @@
 
     <!-- pelvis -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticPelvis</defName>
 		<label>prosthetic pelvis</label>
 		<labelNoun>a prosthetic pelvis</labelNoun>
@@ -295,7 +295,7 @@
 
     <!-- humerus -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticHumerus</defName>
 		<label>prosthetic humerus</label>
 		<labelNoun>a prosthetic humerus</labelNoun>
@@ -362,7 +362,7 @@
 
     <!-- radius -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticRadius</defName>
 		<label>prosthetic radius</label>
 		<labelNoun>a prosthetic radius</labelNoun>
@@ -429,7 +429,7 @@
 
     <!-- femur -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticFemur</defName>
 		<label>prosthetic femur</label>
 		<labelNoun>a prosthetic femur</labelNoun>
@@ -496,7 +496,7 @@
 
     <!-- tibia -->
 
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+	<HediffDef ParentName="MSE_Bones_Simple_Base">
 		<defName>SimpleProstheticTibia</defName>
 		<label>prosthetic tibia</label>
 		<labelNoun>a prosthetic tibia</labelNoun>

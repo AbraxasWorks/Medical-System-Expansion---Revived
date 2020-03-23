@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- abstracts -->
+
+	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationSimple</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<!-- replacement organs -->
+	<HediffDef Name="MSE_AddedBodyPartSimple_Organ" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationSimple_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+
+
+	<!--  -->
+
 	<HediffDef ParentName="MSE_AddedBodyPartSimple">
 		<defName>SimpleProstheticLeg</defName>
 		<label>prosthetic leg</label>

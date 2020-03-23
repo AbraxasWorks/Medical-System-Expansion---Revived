@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- abstract -->
+
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotechSpecial</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+		<comps /> <!-- Makes patching easier -->
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotechSpecial_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+    <!--  -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedPowerArm</defName>
+		<label>advanced power arm</label>
+		<labelNoun>an advanced power arm</labelNoun>
+		<description>Test. Fix Later</description>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>24.0</power>
+						<cooldownTime>2.0</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>AdvancedPowerArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>MSE_AdvancedPowerBlade</defName>
+		<label>advanced power blade</label>
+		<labelNoun>an advanced power blade</labelNoun>
+		<description>Test. Fix Later</description>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>blade</label>
+						<capacities>
+							<li>Cut</li>
+							<li>Stab</li>
+						</capacities>
+						<power>28.0</power>
+						<cooldownTime>2.4</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>MSE_AdvancedPowerBlade</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedPowerClaw</defName>
+		<label>advanced power claw</label>
+		<labelNoun>an advanced power claw</labelNoun>
+		<description>Test. Fix Later</description>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>26.3</power>
+						<cooldownTime>2.0</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>AdvancedPowerClaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedBreathingSupportRib</defName>
+		<label>advanced breathing support ribcage</label>
+		<description>Test. Fix Later</description>
+		<labelNoun>an advanced breathing support ribcage</labelNoun>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<!----><offset>0.20</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedBreathingSupportRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedRelaxationRib</defName>
+		<label>advanced relaxation ribcage</label>
+		<labelNoun>an advanced relaxation ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					<!----><MentalBreakThreshold>-0.20</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedRelaxationRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedColdRegulatorRib</defName>
+		<label>advanced cold regulator ribcage</label>
+		<labelNoun>an advanced cold regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					<!----><ComfyTemperatureMin>-10.0</ComfyTemperatureMin>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedColdRegulatorRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial">
+		<defName>AdvancedHeatRegulatorRib</defName>
+		<label>advanced heat regulator ribcage</label>
+		<labelNoun>an advanced heat regulator ribcage</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					<!----><ComfyTemperatureMax>10.0</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedHeatRegulatorRib</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+	</HediffDef>
+
+    <!-- organs -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial_Organ">
+		<defName>AdvancedAntitoxinKidney</defName>
+		<label>advanced antitoxin kidney</label>
+		<labelNoun>an advanced antitoxin kidney</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					<!----><ToxicSensitivity>-0.50</ToxicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedAntitoxinKidney</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial_Organ">
+		<defName>AdvancedMedicalLiver</defName>
+		<label>advanced medical liver</label>
+		<labelNoun>an advanced medical liver</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					<!----><ImmunityGainSpeed>0.50</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedMedicalLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechSpecial_Organ">
+		<defName>AdvancedEnergizedLiver</defName>
+		<label>advanced energized liver</label>
+		<labelNoun>an advanced energized liver</labelNoun>
+		<description>Test. Fix Later</description>
+		<stages Inherit="False">
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.020</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+				</statOffsets>
+				<!----><restFallFactor>0.50</restFallFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AdvancedEnergizedLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+
+
+</Defs>

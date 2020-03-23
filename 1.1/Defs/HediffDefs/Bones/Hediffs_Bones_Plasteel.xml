@@ -4,15 +4,6 @@
     <!-- abstracts -->
 
     <HediffDef Name="MSE_Bones_Plasteel_Base" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.010</ArmorRating_Heat>
-					<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
-				</statOffsets>
-			</li>
-		</stages>
 		<addedPartProps>
 			<solid>true</solid>
             <betterThanNatural>true</betterThanNatural>
