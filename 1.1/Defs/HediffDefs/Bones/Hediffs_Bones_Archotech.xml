@@ -3,7 +3,7 @@
 
     <!-- abstracts -->
 
-    <HediffDef Name="MSE_Bones_Archotech_Base" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
+    <HediffDef Name="MSE_Bones_Archotech_Base" ParentName="MSE_AddedBodyPartBase_Archotech" Abstract="True">
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.30</partEfficiency>

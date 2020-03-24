@@ -3,7 +3,7 @@
 
 	<!-- abstract -->
 
-	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBase_BionicSpecial" Abstract="True">
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -13,7 +13,7 @@
 		</modExtensions>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBase_BionicSpecial" Abstract="True">
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>

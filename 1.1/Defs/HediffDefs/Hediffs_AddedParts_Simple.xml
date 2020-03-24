@@ -3,7 +3,7 @@
 
 	<!-- abstracts -->
 
-	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartBase_Simple" Abstract="True">
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -12,18 +12,6 @@
 			</li>
 		</modExtensions>
 	</HediffDef>
-
-	<!-- replacement organs -->
-	<HediffDef Name="MSE_AddedBodyPartSimple_Organ" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
-		<modExtensions>
-			<li Class="OrenoMSE.MSE_AdditionalHediff">
-				<hediffsToAdd>
-					<li>MSE_AddedBodyPartAdaptationSimple_Organ</li>
-				</hediffsToAdd>
-			</li>
-		</modExtensions>
-	</HediffDef>
-
 
 
 	<!--  -->
@@ -46,20 +34,6 @@
 		<label>prosthetic arm</label>
 		<labelNoun>a prosthetic arm</labelNoun>
 		<description>Test. Fix Later</description>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>fist</label>
-						<capacities>
-							<li>Blunt</li>
-						</capacities>
-						<power>8.2</power>
-						<cooldownTime>2.0</cooldownTime>
-					</li>
-				</tools>
-			</li>
-		</comps>
 		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -67,33 +41,6 @@
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-
-	<HediffDef ParentName="MSE_AddedBodyPartSimple_Organ">
-		<defName>SimpleProstheticHeart</defName>
-		<label>prosthetic heart</label>
-		<labelNoun>a prosthetic heart</labelNoun>
-		<description>Test. Fix Later</description>
-		<spawnThingOnRemoved>SimpleProstheticHeart</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>0.80</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<HediffDef ParentName="MSE_AddedBodyPartSimple">
-		<defName>CochlearImplant</defName>
-		<label>cochlear implant</label>
-		<labelNoun>a cochlear implant</labelNoun>
-		<description>Test. Fix Later</description>
-		<spawnThingOnRemoved>CochlearImplant</spawnThingOnRemoved>
-		<addedPartProps>
-			<partEfficiency>0.65</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<!--=========== Simple Prosthetic Parts ============-->
 
 	<HediffDef ParentName="MSE_AddedBodyPartSimple">
 		<defName>SimpleProstheticFoot</defName>
@@ -130,11 +77,11 @@
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
-						<label>claw</label>
+						<label>fist</label>
 						<capacities>
-							<li>Scratch</li>
+							<li>Blunt</li>
 						</capacities>
-						<power>9.0</power>
+						<power>8.2</power>
 						<cooldownTime>2.0</cooldownTime>
 					</li>
 				</tools>
@@ -170,6 +117,18 @@
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.90</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartSimple">
+		<defName>CochlearImplant</defName>
+		<label>cochlear implant</label>
+		<labelNoun>a cochlear implant</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>CochlearImplant</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.65</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>

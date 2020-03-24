@@ -3,7 +3,7 @@
 
 	<!-- abstract -->
 
-	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartBase_ArchotechSpecial" Abstract="True">
 		<comps /> <!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
@@ -14,7 +14,7 @@
 		</modExtensions>
 	</HediffDef>
 
-	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartBase_ArchotechSpecial" Abstract="True">
 		<comps /> <!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">

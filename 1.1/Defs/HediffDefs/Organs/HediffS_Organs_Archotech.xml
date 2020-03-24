@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- abstracts -->
+
+	<HediffDef Name="MSE_AddedBodyPartArchotech_Organ" ParentName="MSE_AddedBodyPartBase_Archotech" Abstract="True">
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>MSE_AddedBodyPartAdaptationArchotech_Organ</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+    <!--  -->
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech_Organ">
+		<defName>ArchotechHeart</defName>
+		<label>archotech heart</label>
+		<labelNoun>a archotech heart</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>ArchotechHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech_Organ">
+		<defName>ArchotechStomach</defName>
+		<label>archotech stomach</label>
+		<labelNoun>a archotech stomach</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>ArchotechStomach</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech_Organ">
+		<defName>ArchotechLung</defName>
+		<label>archotech lung</label>
+		<labelNoun>a archotech lung</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>ArchotechLung</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech_Organ">
+		<defName>ArchotechKidney</defName>
+		<label>archotech kidney</label>
+		<labelNoun>a archotech kidney</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>ArchotechKidney</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotech_Organ">
+		<defName>ArchotechLiver</defName>
+		<label>archotech liver</label>
+		<labelNoun>a archotech liver</labelNoun>
+		<description>Test. Fix Later</description>
+		<spawnThingOnRemoved>ArchotechLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

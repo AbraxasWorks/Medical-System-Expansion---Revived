@@ -11,25 +11,9 @@
 	</HediffDef> -->
 	<!--===================== END ======================-->
 
-	<!--============ Added Part System Base ============-->
-	<!-- <HediffDef Name="MSE_AddedBodyPartSystemBase" Abstract="True">
-		<hediffClass>Hediff_AddedPart</hediffClass>
-		<isBad>false</isBad>
-		<comps>
-			<li Class="OrenoMSE.HediffCompProperties_PartSystem" />
-			<li Class="OrenoMSE.HediffCompProperties_PartSystemSelfRepair">
-				<repairLabel>self repairing</repairLabel>
-			</li>
-		</comps>
-		<modExtensions>
-			<li Class="OrenoMSE.MSE_ImplantSystem" />
-		</modExtensions>
-	</HediffDef> -->
-	<!--===================== END ======================-->
-
 
 	<!--==================== Basic =====================-->
-	<HediffDef Name="MSE_AddedBodyPartBasic" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_Basic" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(141, 110, 99)</defaultLabelColor>
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
@@ -41,7 +25,7 @@
 	</HediffDef>
 
 	<!--=================== Simple =====================-->
-	<HediffDef Name="MSE_AddedBodyPartSimpleBase" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_Simple" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
 		<stages>
 			<li>
@@ -55,7 +39,7 @@
 	</HediffDef>
 
 	<!--=================== Bionic =====================-->
-	<HediffDef Name="MSE_AddedBodyPartBionicBase" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_Bionic" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
 		<stages>
 			<li>
@@ -69,7 +53,7 @@
 	</HediffDef>
 
 	<!--=============== Special Bionic =================-->
-	<HediffDef Name="MSE_AddedBodyPartBionicSpecialBase" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_BionicSpecial" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
 		<stages>
 			<li>
@@ -83,7 +67,7 @@
 	</HediffDef>
 
 	<!--================== Archotech ===================-->
-	<HediffDef Name="MSE_AddedBodyPartArchotechBase" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_Archotech" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
 		<stages>
 			<li>
@@ -97,7 +81,7 @@
 	</HediffDef>
 
 	<!--============== Archotech Special ===============-->
-	<HediffDef Name="MSE_AddedBodyPartArchotechSpecialBase" ParentName="AddedBodyPartBase" Abstract="True">
+	<HediffDef Name="MSE_AddedBodyPartBase_ArchotechSpecial" ParentName="AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
 		<stages>
 			<li>
