@@ -31,6 +31,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
+
 						<ThingDef ParentName="MSE_BodyPartBionic_Organ">
 							<defName>BionicHeart</defName>
 							<label>bionic heart</label>
@@ -45,11 +46,7 @@
 								<Mass>1</Mass>
 							</statBases>
 						</ThingDef>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
+
 						<ThingDef ParentName="MSE_BodyPartBionic_Organ">
 							<defName>BionicStomach</defName>
 							<label>bionic stomach</label>
@@ -64,11 +61,7 @@
 								<Mass>2</Mass>
 							</statBases>
 						</ThingDef>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>	
+
 						<ThingDef ParentName="MSE_BodyPartSimple_Organ">
 							<defName>SimpleProstheticHeart</defName>
 							<label>prosthetic heart</label>
@@ -83,6 +76,7 @@
 								<Mass>2</Mass>
 							</statBases>
 						</ThingDef>
+						
 					</value>
 				</li>
 			</operations>

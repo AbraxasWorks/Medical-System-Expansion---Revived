@@ -28,36 +28,6 @@
 	</ThingDef>
 
 	<!-- Wooden -->
-	<ThingDef Name="MSE_BodyPartBasic" ParentName="BodyPartBase" Abstract="True">
-		<graphicData>
-			<texPath>Things/Item/Health/HealthItemBasic</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
-		</graphicData>
-		<recipeMaker>
-			<recipeUsers>
-				<li>CraftingSpot</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>3</Crafting>
-			</skillRequirements>
-			<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-			<researchPrerequisite>BasicProsthetics</researchPrerequisite>
-		</recipeMaker>
-		<techLevel>Neolithic</techLevel>
-		<thingCategories Inherit="False">
-			<li>BodyPartsSimple</li>
-		</thingCategories>
-		<tradeTags Inherit="False">
-			<li>MSE_BasicProstheses</li>
-		</tradeTags>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-		<statBases>
-			<WorkToMake>4000</WorkToMake>
-		</statBases>
-	</ThingDef>
 	
 	<!-- Prosthetics -->
 	<ThingDef Name="MSE_BodyPartSimple" ParentName="BodyPartProstheticBase" Abstract="True">

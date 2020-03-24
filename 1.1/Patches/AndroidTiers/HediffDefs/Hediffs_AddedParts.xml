@@ -12,9 +12,9 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBionicBase"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBase_Bionic"]</xpath>
 							<value>
-								<HediffDef Name="MSE_AddedBodyPartBionicAT" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
+								<HediffDef Name="MSE_AddedBodyPartBionicAT" ParentName="MSE_AddedBodyPartBase_Bionic" Abstract="True">
 									<comps /> <!-- Makes patching easier -->
 								</HediffDef>
 							</value>
@@ -38,9 +38,9 @@
 					<success>Always</success>
 					<operations>
 						<li Class="PatchOperationInsert">
-							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartArchotechBase"]</xpath>
+							<xpath>/Defs/HediffDef[@Name="MSE_AddedBodyPartBase_Archotech"]</xpath>
 							<value>
-								<HediffDef Name="MSE_AddedBodyPartArchotechAT" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
+								<HediffDef Name="MSE_AddedBodyPartArchotechAT" ParentName="MSE_AddedBodyPartBase_Archotech" Abstract="True">
 									<comps /> <!-- Makes patching easier -->
 								</HediffDef>
 							</value>

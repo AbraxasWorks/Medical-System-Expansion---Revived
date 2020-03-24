@@ -15,10 +15,6 @@
 	</RecipeDef>
 
 	<!-- Basic prostheses -->
-	<RecipeDef Name="MSE_SurgeryBasic" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
-		<surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
-		<ingredients Inherit="False" />
-	</RecipeDef>
 
 	<!-- Simple prostheses -->
 	<RecipeDef Name="MSE_SurgerySimple" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
