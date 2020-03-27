@@ -43,7 +43,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				BodyPartRecord node = ___missingPartsCommonAncestorsQueue.Dequeue();
 
 				// show even if child of added part
-				if ( /**/true ) // !__instance.PartOrAnyAncestorHasDirectlyAddedParts( node ) )
+				if ( !__instance.ParentPartIgnores( node ) ) //!__instance.PartOrAnyAncestorHasDirectlyAddedParts( node ) )
 				{
 					Hediff_MissingPart hediff_MissingPart = (from x in __instance.GetHediffs<Hediff_MissingPart>()
 																where x.Part == node

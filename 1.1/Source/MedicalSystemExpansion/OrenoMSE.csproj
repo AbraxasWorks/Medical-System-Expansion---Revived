@@ -309,6 +309,7 @@
     <Compile Include="EfficiencyCalculationPatches\CacheMissingPartsCommonAncestors_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculateLimbEfficiency_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculatePartEfficiency_Patch.cs" />
+    <Compile Include="EfficiencyCalculationPatches\IgnoreSubParts.cs" />
     <Compile Include="Modules\Actual\Recipe_RemoveModules.cs" />
     <Compile Include="Modules\Hediff_ModuleAbstract.cs" />
     <Compile Include="Modules\ModuleUtilities.cs" />

@@ -41,16 +41,36 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 					CalculatePartEfficiency = (cachedCPE = ( BodyPartRecord part ) => PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, part, impactors ));
 				}
 
+				// segments
+
+				List<BodyPartRecord> segments = new List<BodyPartRecord>( limbCore.GetConnectedParts( limbSegmentTag ).Prepend( limbCore ) );
+
+				// parts to ignore
+
+				List <BodyPartDef> partsToIgnore = 
+					new List<BodyPartDef>(
+						from hediff in diffSet.hediffs
+						where hediff is Hediff_AddedPart
+						where segments.Contains(hediff.Part)
+						let modExt = hediff.def.GetModExtension<IgnoreSubParts>()
+						where modExt != null
+						from p in modExt.ignoredSubParts
+						select p );
+
+				Log.Message( "Ignored subparts: " + partsToIgnore.Count );
+
+
 				// segment calculations
 
-				float limbEff = PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, limbCore, impactors );
-				float minSegmentEff = Mathf.Min( limbEff, 1 );
-				int functionalLimbSegments = limbEff > 0f ? 1 : 0;
-				int totLimbSegments = 1;
+				float limbEff = 0f;
+				float minSegmentEff = 1f;
+				int functionalLimbSegments = 0;
+				int totLimbSegments = 0;
 
-				Log.Message( limbCore.customLabel + " " + limbEff );
 
-				foreach ( BodyPartRecord limbSegment in limbCore.GetConnectedParts( limbSegmentTag ) )
+				foreach ( BodyPartRecord limbSegment in from p in segments
+														where !partsToIgnore.Contains(p.def)
+														select p )
 				{
 					float segmentEff = PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, limbSegment, impactors );
 					limbEff += segmentEff;
@@ -65,7 +85,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				if ( totLimbSegments > 0 && functionalLimbSegments == totLimbSegments ) // all parts are working 
 				{
 					limbEff /= totLimbSegments; // average of segments and core
-					limbEff = Mathf.Lerp( limbEff, limbEff * minSegmentEff, 0.5f );
+					limbEff = Mathf.Lerp( limbEff, minSegmentEff, 0.5f );
 				}
 				else
 				{
@@ -80,9 +100,14 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				if ( limbCore.HasChildParts( limbDigitTag ) )
 				{
 
-					IEnumerable<BodyPartRecord> childParts = limbCore.GetChildParts( limbDigitTag );
-					
-					limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * childParts.Average( CalculatePartEfficiency ) ), appendageWeight );
+					List<BodyPartRecord> childParts =
+						new List<BodyPartRecord>(
+							from p in limbCore.GetChildParts( limbDigitTag )
+							where !partsToIgnore.Contains( p.def )
+							select p );
+
+					if ( childParts.Count > 0 )
+						limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * childParts.Average( CalculatePartEfficiency ) ), appendageWeight );
 
 				}
 

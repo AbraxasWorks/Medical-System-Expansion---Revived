@@ -43,7 +43,7 @@
 
 	<!-- pegleg - replaces vanilla -->
 
-	<!-- <HediffDef ParentName="MSE_AddedBodyPartBase_Basic">
+	<HediffDef ParentName="MSE_AddedBodyPartBase_Basic">
 		<defName>PegLeg</defName>
 		<label>peg leg</label>
 		<labelNoun>a peg leg</labelNoun>
@@ -54,6 +54,16 @@
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 		<spawnThingOnRemoved>PegLeg</spawnThingOnRemoved>
+		<modExtensions>
+			<li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Foot</li>
+					<li>Tibia</li>
+					<li>Femur</li>
+					<li>Toe</li>
+				</ignoredSubParts>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartBasic">
@@ -106,7 +116,7 @@
 			<li>Leg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegLeg</addsHediff>
-	</RecipeDef> -->
+	</RecipeDef>
 
 	<!-- wooden leg -->
 
@@ -122,6 +132,14 @@
 			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 		<spawnThingOnRemoved>WoodenLeg</spawnThingOnRemoved>
+		<modExtensions>
+			<li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Tibia</li>
+					<li>Femur</li>
+				</ignoredSubParts>
+			</li>
+		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="MSE_BodyPartBasic">
