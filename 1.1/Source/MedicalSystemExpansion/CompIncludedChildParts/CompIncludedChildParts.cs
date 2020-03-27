@@ -132,7 +132,11 @@ namespace OrenoMSE
 
         public void UpdateMissingParts()
         {
-            missingPartsCache = new List<ThingDef>();
+            if ( missingPartsCache == null )
+                missingPartsCache = new List<ThingDef>();
+            else
+                missingPartsCache.Clear();
+
             
             if ( this.props != null )
             {
