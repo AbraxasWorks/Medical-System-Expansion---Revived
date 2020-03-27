@@ -33,15 +33,23 @@ namespace OrenoMSE.EfficiencyCalculationPatches
     
     static class Utilities
     {
-        public static bool ParentPartIgnores ( this HediffSet set, BodyPartRecord bodyPart )
+        public static bool PartShouldBeIgnored ( this HediffSet set, BodyPartRecord bodyPart )
         {
             if ( bodyPart.parent != null )
             {
-                var modExt = set.hediffs
-                    .Find( ( Hediff h ) => h is Hediff_AddedPart && h.Part == bodyPart.parent ) // added part on parent bodypartrecord
+                var modExt = set.GetHediffs<Hediff_AddedPart>()
+                    .FirstOrDefault( ( Hediff_AddedPart h ) => h.Part == bodyPart.parent )? // added part on parent bodypartrecord
                     .def.GetModExtension<IgnoreSubParts>();
 
-                return modExt != null && modExt.ignoredSubParts.Contains( bodyPart.def );
+                //bool res = 
+                return
+                    ( modExt != null && modExt.ignoredSubParts.Contains( bodyPart.def ) )
+                    || set.PartShouldBeIgnored( bodyPart.parent );
+
+                //if ( res )
+                //    Log.Message( "Part to ignore " + bodyPart.Label + " of " + set.pawn.Name );
+
+                //return res;
             }
             return false;
         }

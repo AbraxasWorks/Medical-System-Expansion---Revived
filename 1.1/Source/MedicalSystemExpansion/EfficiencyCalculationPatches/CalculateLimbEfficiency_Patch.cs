@@ -31,7 +31,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 
 			foreach ( BodyPartRecord limbCore in body.GetPartsWithTag( limbCoreTag ) )
 			{
-				Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
+				//Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
 				
 				// part efficiency lambda
 
@@ -57,7 +57,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 						from p in modExt.ignoredSubParts
 						select p );
 
-				Log.Message( "Ignored subparts: " + partsToIgnore.Count );
+				//Log.Message( "Ignored subparts: " + partsToIgnore.Count );
 
 
 				// segment calculations
@@ -76,7 +76,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 					limbEff += segmentEff;
 					minSegmentEff = Mathf.Min(segmentEff, minSegmentEff);
 
-					Log.Message( limbSegment.customLabel + " " + segmentEff );
+					//Log.Message( limbSegment.customLabel + " " + segmentEff );
 
 					if ( segmentEff > 0f ) functionalLimbSegments++; // part works
 					totLimbSegments++;
@@ -92,7 +92,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 					limbEff = 0; // missing segments
 				}
 
-				Log.Message( "parts: " + functionalLimbSegments + "/" + totLimbSegments + "; eff: " + limbEff );
+				//Log.Message( "parts: " + functionalLimbSegments + "/" + totLimbSegments + "; eff: " + limbEff );
 
 
 				// digit calculations
@@ -100,18 +100,17 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				if ( limbCore.HasChildParts( limbDigitTag ) )
 				{
 
-					List<BodyPartRecord> childParts =
-						new List<BodyPartRecord>(
-							from p in limbCore.GetChildParts( limbDigitTag )
-							where !partsToIgnore.Contains( p.def )
-							select p );
+					IEnumerable<BodyPartRecord> childParts =
+						from p in limbCore.GetChildParts( limbDigitTag )
+						where !partsToIgnore.Contains( p.def )
+						select p ;
 
-					if ( childParts.Count > 0 )
+					if ( childParts.Any() )
 						limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * childParts.Average( CalculatePartEfficiency ) ), appendageWeight );
 
 				}
 
-				Log.Message( "with fingers: " + limbEff );
+				//Log.Message( "with fingers: " + limbEff );
 
 				totLimbEff += limbEff;
 				totLimbs++;
