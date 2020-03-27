@@ -305,6 +305,7 @@
     <Compile Include="ApplyExtraHediffs\ApplyExtraHediffsUtilities.cs" />
     <Compile Include="ApplyExtraHediffs\HarmonyHooks.cs" />
     <Compile Include="CompIncludedChildParts\CompProperties.cs" />
+    <Compile Include="CompIncludedChildParts\StatPart_MissingSubParts.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculateImmediatePartEfficiencyAndRecord_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CacheMissingPartsCommonAncestors_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculateLimbEfficiency_Patch.cs" />

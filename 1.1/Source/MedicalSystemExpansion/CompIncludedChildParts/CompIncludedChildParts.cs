@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using Verse;
 
 namespace OrenoMSE
@@ -117,6 +118,8 @@ namespace OrenoMSE
 
         // Missing Parts
 
+        private List<ThingDef> missingPartsCache;
+
         public List<ThingDef> MissingParts
         {
             get
@@ -133,12 +136,16 @@ namespace OrenoMSE
         public void UpdateMissingParts()
         {
             if ( missingPartsCache == null )
+            {
                 missingPartsCache = new List<ThingDef>();
+            }
             else
+            {
                 missingPartsCache.Clear();
+            }
 
-            
-            if ( this.props != null )
+
+            if ( this.Props != null )
             {
                 LinkedList<ThingDef> defsIncluded = new LinkedList<ThingDef>( from x in this.childPartsIncluded select x.def );
             
@@ -154,9 +161,48 @@ namespace OrenoMSE
                     }
                 }
             }
+
+            UpdateMissingValue();
         }
 
-        private List<ThingDef> missingPartsCache;
+        // Missing value
+
+        private float missingValueCache = -1f;
+
+        public float MissingValue
+        {
+            get
+            {
+                if ( missingValueCache == -1f )
+                {
+                    this.UpdateMissingValue();
+                }
+
+                return missingValueCache;
+            }
+        }
+
+        public float UpdateMissingValue()
+        {
+            missingValueCache = 0f;
+
+            foreach ( var missingPart in this.MissingParts )
+            {
+                missingValueCache += missingPart.BaseMarketValue * 0.8f;
+            }
+            
+            foreach ( var subPart in this.childPartsIncluded )
+            {
+                var sComp = subPart.TryGetComp<CompIncludedChildParts>();
+
+                if ( sComp != null )
+                {
+                    missingValueCache += sComp.MissingValue;
+                }
+            }
+
+            return Mathf.Min( missingValueCache, this.parent.def.BaseMarketValue * 0.8f );
+        }
 
     }
 
