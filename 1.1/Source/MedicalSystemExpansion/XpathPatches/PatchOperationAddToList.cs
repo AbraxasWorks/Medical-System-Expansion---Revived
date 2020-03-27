@@ -24,7 +24,6 @@ namespace OrenoMSE.XpathPatches
             foreach ( XmlNode parentNode in from object x in xml.SelectNodes( xpath )
                                             select (XmlNode)x ) 
             {
-                result = true;
 
                 XmlNode listNode = parentNode.SelectSingleNode( list );
                 if ( listNode == null )
@@ -35,11 +34,35 @@ namespace OrenoMSE.XpathPatches
                 }
 
                 // finally add element to list
-                listNode.AppendChild( parentNode.OwnerDocument.ImportNode(valNode.FirstChild, true) );
+                switch ( order )
+                {
+                    case Order.Append:
+                        listNode.AppendChild( parentNode.OwnerDocument.ImportNode(valNode.FirstChild, true) );
+                        break;
+                    case Order.Prepend:
+                        listNode.PrependChild( parentNode.OwnerDocument.ImportNode( valNode.FirstChild, true ) );
+                        break;
+                }
+
+                result = true;
+
             }
 
 
             return result;
+        }
+
+
+
+
+        private PatchOperationAddToList.Order order = PatchOperationAddToList.Order.Append;
+
+        private enum Order
+        {
+            // Token: 0x04004A5B RID: 19035
+            Append,
+            // Token: 0x04004A5C RID: 19036
+            Prepend
         }
 
     }

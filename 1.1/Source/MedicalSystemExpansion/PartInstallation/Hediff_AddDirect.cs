@@ -118,24 +118,6 @@ namespace OrenoMSE.PartInstallation
 
                 return false;
             }
-
-
-
-            //[HarmonyPrefix]
-            //public static bool PreLog ( DamageInfo dinfo, Thing victim )
-            //{
-            //    //if ( dinfo.Def == DamageDefOf.SurgicalCut )
-            //    Log.Message( "Starting Apply" );
-
-            //    return true;
-            //}
-
-            //[HarmonyPostfix]
-            //public static void PostLog ( DamageInfo dinfo, Thing victim )
-            //{
-            //    //if ( dinfo.Def == DamageDefOf.SurgicalCut )
-            //    Log.Message( "Completed Apply" );
-            //}
         }
     }
 }

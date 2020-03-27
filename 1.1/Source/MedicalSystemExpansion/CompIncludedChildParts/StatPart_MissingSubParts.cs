@@ -12,7 +12,7 @@ namespace OrenoMSE
     class StatPart_MissingSubParts : StatPart
     {
         
-        // This stat part impacts market value subtractin the value of missing subparts
+        // This stat part impacts market value subtracting the value of missing subparts
 
 
         public override string ExplanationPart ( StatRequest req )
@@ -23,17 +23,12 @@ namespace OrenoMSE
 
                 if ( comp != null && comp.MissingValue != 0f )
                 {
-                    return "Some subparts are missing: -$" + comp.MissingValue;
+                    return "Some parts are missing: -$" + comp.MissingValue;
                 }
             }
 
             return null;
         }
-
-        //public override IEnumerable<Dialog_InfoCard.Hyperlink> GetInfoCardHyperlinks ( StatRequest req )
-        //{
-        //    return base.GetInfoCardHyperlinks( req );
-        //}
 
         public override void TransformValue ( StatRequest req, ref float val )
         {

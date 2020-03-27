@@ -7,6 +7,7 @@
         <value>
             <li Class="OrenoMSE.StatPart_MissingSubParts" />
         </value>
+        <order>Prepend</order>
     </Operation>
 
 </Patch>

@@ -161,8 +161,6 @@ namespace OrenoMSE
                     }
                 }
             }
-
-            UpdateMissingValue();
         }
 
         // Missing value
@@ -187,7 +185,7 @@ namespace OrenoMSE
             missingValueCache = 0f;
 
             foreach ( var missingPart in this.MissingParts )
-            {
+            {                
                 missingValueCache += missingPart.BaseMarketValue * 0.8f;
             }
             
@@ -197,11 +195,12 @@ namespace OrenoMSE
 
                 if ( sComp != null )
                 {
+                    sComp.UpdateMissingValue();
                     missingValueCache += sComp.MissingValue;
                 }
             }
 
-            return Mathf.Min( missingValueCache, this.parent.def.BaseMarketValue * 0.8f );
+            return Mathf.Clamp( missingValueCache, 0f, this.parent.def.BaseMarketValue * 0.8f );
         }
 
     }
