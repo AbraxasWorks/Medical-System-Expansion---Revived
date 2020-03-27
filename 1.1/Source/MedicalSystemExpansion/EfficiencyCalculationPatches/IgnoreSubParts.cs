@@ -35,7 +35,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
     {
         public static bool PartShouldBeIgnored ( this HediffSet set, BodyPartRecord bodyPart )
         {
-            if ( bodyPart.parent != null )
+            if ( bodyPart != null && bodyPart.parent != null )
             {
                 var modExt = set.GetHediffs<Hediff_AddedPart>()
                     .FirstOrDefault( ( Hediff_AddedPart h ) => h.Part == bodyPart.parent )? // added part on parent bodypartrecord

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using OrenoMSE.EfficiencyCalculationPatches;
 using RimWorld;
 using Verse;
 
@@ -16,9 +17,25 @@ namespace OrenoMSE.PartInstallation
         internal class AddDirect
         {
 
+            // Added error for when trying to add hediff to part that should be ignored
+
+            [HarmonyPrefix]
+            public static bool ErrorOnIgnoredPart ( HediffSet __instance, Hediff hediff )
+            {
+                if ( !( hediff is Hediff_MissingPart ) && __instance.PartShouldBeIgnored( hediff.Part ) )
+                {
+                    Log.Error( "Tried to add health diff to part that should be ignored. Canceling.", false );
+                    return false;
+                }
+
+                return true;
+            }
+
+
             // adding custom exit condition for when trying to remove a part that is missing
             // it might be better not to do this at all as it can mask underlying problems
             // also probably better to implement a transpiler
+
 
             [HarmonyPrefix]
             [HarmonyPriority( Priority.Low )]
