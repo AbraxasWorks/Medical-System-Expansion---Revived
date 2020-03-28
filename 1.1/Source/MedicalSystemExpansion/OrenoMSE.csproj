@@ -325,6 +325,7 @@
     <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
     <Compile Include="PartInstallation\InstallationRestrictions.cs" />
     <Compile Include="PartRemoval\IsClean_Patch.cs" />
+    <Compile Include="PawnGeneration\InstallPart_Patch.cs" />
     <Compile Include="PrettyLabel\Hediff_PrettyLabel.cs" />
     <Compile Include="DontHealInjury\Harmony_HediffUtility.cs" />
     <Compile Include="old\Harmony_HediffWithComps.cs" />
