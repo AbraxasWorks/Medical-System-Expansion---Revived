@@ -115,6 +115,13 @@
                                 <li>Hand</li>   
                             </appliedOnFixedBodyParts>
                             <addsHediff>MechanicalManipulator</addsHediff>
+                            <modExtensions>
+                                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                                    <whitelist>
+                                        <li>DrillArm</li>
+                                    </whitelist>
+                                </li>
+                            </modExtensions>
                         </RecipeDef>
 
                         <!-- Mechanical Finger -->
@@ -167,6 +174,13 @@
                                 <li>Finger</li>   
                             </appliedOnFixedBodyParts>
                             <addsHediff>MechanicalFinger</addsHediff>
+                            <modExtensions>
+                                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                                    <whitelist>
+                                        <li>MechanicalManipulator</li>
+                                    </whitelist>
+                                </li>
+                            </modExtensions>
                         </RecipeDef>
                 
                         <!-- Field Fingers -->
