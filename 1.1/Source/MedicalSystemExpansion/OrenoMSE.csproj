@@ -323,6 +323,7 @@
     <Compile Include="Modules\HediffCompProperties_ModuleHolder.cs" />
     <Compile Include="old\HediffAddedPart_Patch.cs" />
     <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
+    <Compile Include="PartRemoval\IsClean_Patch.cs" />
     <Compile Include="PrettyLabel\Hediff_PrettyLabel.cs" />
     <Compile Include="DontHealInjury\Harmony_HediffUtility.cs" />
     <Compile Include="old\Harmony_HediffWithComps.cs" />
