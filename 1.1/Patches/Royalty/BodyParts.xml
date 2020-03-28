@@ -225,6 +225,13 @@
                                 <li>Finger</li>   
                             </appliedOnFixedBodyParts>
                             <addsHediff>FieldFinger</addsHediff>
+                            <modExtensions>
+                                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                                    <whitelist>
+                                        <li>FieldHand</li>
+                                    </whitelist>
+                                </li>
+                            </modExtensions>
                         </RecipeDef>
 
                         <!-- Make implants usable as modules -->

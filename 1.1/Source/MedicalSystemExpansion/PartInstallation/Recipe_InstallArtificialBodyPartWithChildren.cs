@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using OrenoMSE.EfficiencyCalculationPatches;
 using RimWorld;
 using Verse;
 
@@ -13,13 +14,18 @@ namespace OrenoMSE.PartInstallation
 		{
 			return MedicalRecipesUtility.GetFixedPartsToApplyOn( recipe, pawn, delegate ( BodyPartRecord record )
 			{
-				IEnumerable<Hediff> source = from x in pawn.health.hediffSet.hediffs
-											 where x.Part == record
-											 select x;
-				return 
-					(source.Count<Hediff>() != 1 || source.First<Hediff>().def != recipe.addsHediff) 
+				IEnumerable<Hediff> alreadyPresent = from x in pawn.health.hediffSet.hediffs
+													 where x.Part == record
+													 where x.def == recipe.addsHediff
+													 select x;
+				return // hediff not already present
+					!alreadyPresent.Any()
+					// has something to attach to
 					&& (record.parent == null || pawn.health.hediffSet.GetNotMissingParts( BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null ).Contains( record.parent ))
-					/*&& (!pawn.health.hediffSet.PartOrAnyAncestorHasDirectlyAddedParts( record ) || pawn.health.hediffSet.HasDirectlyAddedPartFor( record ))*/;
+					// is compatible with parent
+					&& !recipe.HasRestrictionsForPart( record, pawn.health.hediffSet )
+					// part shouldn't be ignored
+					&& !pawn.health.hediffSet.PartShouldBeIgnored( record );
 			} );
 		}
 
