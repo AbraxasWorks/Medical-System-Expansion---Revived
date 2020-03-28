@@ -26,7 +26,7 @@ namespace OrenoMSE.PartRemoval
                 __result ||
                 !pawn.Dead && !(from x in pawn.health.hediffSet.hediffs
                                 where x.Part == part
-                                where !(x is Hediff_Implant)
+                                where !(x is Hediff_Implant) || x is Hediff_AddedPart
                                 select x).Any();
         }
     }
