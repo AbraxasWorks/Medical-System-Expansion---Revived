@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	<!-- abstracts -->
+	
+	<HediffDef Name="MSE_ModuleAddedArchotech" ParentName="MSE_ModuleAdded" Abstract="True">
+		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
+	</HediffDef>
+
+	<ThingDef Name="MSE_ModuleArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemArchotech3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<techLevel>Archotech</techLevel>
+		<techHediffsTags>
+			<li>Archotech</li>
+		</techHediffsTags>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
 	<!-- Advanced ranged platform module -->
 
 	<HediffDef ParentName="MSE_ModuleAddedArchotech">
@@ -29,7 +50,7 @@
 		</addedPartProps>
 	</HediffDef>
 	
-	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>MSE_AdvancedRangedPlatformModule</defName>
 		<label>advanced ranged platform module</label>
 		<description>An advanced ranged platform module. If it is harmed, it repairs itself over time. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
@@ -38,7 +59,6 @@
 			<Uranium>15</Uranium>
 			<Plasteel>25</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
-			<ArchotechClavicle>1</ArchotechClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>2500</MarketValue>
@@ -98,7 +118,7 @@
 		</addedPartProps>
 	</HediffDef>
 	
-	<ThingDef ParentName="MSE_ModuleArchotechSpecial">
+	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>MSE_AdvancedMeleePlatformModule</defName>
 		<label>advanced melee platform module</label>
 		<description>An advanced melee platform module. If it is harmed, it repairs itself over time. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
@@ -107,7 +127,6 @@
 			<Uranium>15</Uranium>
 			<Plasteel>25</Plasteel>
 			<ComponentSpacer>4</ComponentSpacer>
-			<ArchotechClavicle>1</ArchotechClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>2500</MarketValue>

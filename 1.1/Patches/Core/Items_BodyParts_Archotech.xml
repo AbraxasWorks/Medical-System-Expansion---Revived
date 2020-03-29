@@ -1,156 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- = Thanks to : GingerAvalanche
-		 = For found and offer patch to fix this mod compatibility issue -->
-
-	<!-- Archotech Eye -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/costList</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>50</Gold>
-					<Plasteel>20</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechEye"]</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>50</Gold>
-					<Plasteel>20</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases/WorkToMake</xpath>
-			<value>
-				<WorkToMake>90000</WorkToMake>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechEye"]/statBases</xpath>
-			<value>
-				<WorkToMake>90000</WorkToMake>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<!-- Archotech Arm -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/costList</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>30</Gold>
-					<Plasteel>40</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechArm"]</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>30</Gold>
-					<Plasteel>40</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases/WorkToMake</xpath>
-			<value>
-				<WorkToMake>70000</WorkToMake>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechArm"]/statBases</xpath>
-			<value>
-				<WorkToMake>70000</WorkToMake>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<!-- Archotech Leg -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/costList</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>30</Gold>
-					<Plasteel>40</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]</xpath>
-			<value>
-				<costList>
-					<Uranium>25</Uranium>
-					<Gold>30</Gold>
-					<Plasteel>40</Plasteel>
-					<ComponentSpacer>8</ComponentSpacer>
-				</costList>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases/WorkToMake</xpath>
-			<value>
-				<WorkToMake>70000</WorkToMake>
-			</value>
-		</match>
-
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="ArchotechLeg"]/statBases</xpath>
-			<value>
-				<WorkToMake>70000</WorkToMake>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<!-- Some defs cleaning -->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
+	<Operation Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]</xpath>
+		<list>comps</list>
+		<value>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+					<li>ArchotechHand</li>
+					<li>PlasteelHumerus</li>
+					<li>PlasteelRadius</li>
+				</standardChildren>
 			</li>
-
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[@ParentName="MSE_BodyPartArchotech"][defName="ArchotechEye" or defName="ArchotechArm" or defName="ArchotechLeg"]/recipeMaker</xpath>
-			</li>
-		</operations>
+		</value>
 	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechArm"]/appliedOnFixedBodyParts</xpath>
+	<value>    
+	  <appliedOnFixedBodyParts>
+		<li>Arm</li>
+	  </appliedOnFixedBodyParts>
+	</value>
+  </Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+	</Operation>
+	
+	<Operation Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
+		<list>comps</list>
+		<value>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+					<li>ArchotechFoot</li>
+					<li>PlasteelFemur</li>
+					<li>PlasteelTibia</li>
+				</standardChildren>
+			</li>
+		</value>
+	</Operation>
+
 
 </Patch>

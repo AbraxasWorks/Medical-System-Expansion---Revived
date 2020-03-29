@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- foot -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<labelNoun>a bionic foot</labelNoun>
+		<description>An installed bionic foot.</description>
+    <descriptionHyperlinks><ThingDef>BionicFoot</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicFoot</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicFoot</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>9</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+          <li>BionicToe</li>
+          <li>BionicToe</li>
+          <li>BionicToe</li>
+          <li>BionicToe</li>
+          <li>BionicToe</li>
+        </standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicFoot</defName>
+		<label>install bionic foot</label>
+		<description>Install a bionic foot.</description>
+    <descriptionHyperlinks><ThingDef>BionicFoot</ThingDef></descriptionHyperlinks>
+		<jobString>Installing bionic foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFoot</addsHediff>
+	</RecipeDef>
+
+	<!-- toe -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<labelNoun>a bionic toe</labelNoun>
+		<description>An installed bionic toe.</description>
+    <descriptionHyperlinks><ThingDef>BionicToe</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicToe</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicToe</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicToe</defName>
+		<label>install bionic toe</label>
+		<description>Install a bionic toe.</description>
+    <descriptionHyperlinks><ThingDef>BionicToe</ThingDef></descriptionHyperlinks>
+		<jobString>Installing bionic toe.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicToe</addsHediff>
+	</RecipeDef>
+
+	<!-- hand -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<labelNoun>a bionic hand</labelNoun>
+		<description>An installed bionic hand.</description>
+    <descriptionHyperlinks><ThingDef>BionicHand</ThingDef></descriptionHyperlinks>
+		<comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+		</comps>
+		<spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicHand</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<comps>
+			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+				<standardChildren>
+          <li>BionicFinger</li>
+          <li>BionicFinger</li>
+          <li>BionicFinger</li>
+          <li>BionicFinger</li>
+          <li>BionicFinger</li>
+        </standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicHand</defName>
+		<label>install bionic hand</label>
+		<description>Install a bionic hand.</description>
+    <descriptionHyperlinks><ThingDef>BionicHand</ThingDef></descriptionHyperlinks>
+		<jobString>Installing bionic hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHand</addsHediff>
+	</RecipeDef>
+
+	<!-- finger -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<labelNoun>a bionic finger</labelNoun>
+		<description>An installed bionic finger.</description>
+    <descriptionHyperlinks><ThingDef>BionicFinger</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicFinger</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicFinger</defName>
+		<label>install bionic finger</label>
+		<description>Install a bionic finger.</description>
+    <descriptionHyperlinks><ThingDef>BionicFinger</ThingDef></descriptionHyperlinks>
+		<jobString>Installing bionic finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFinger</addsHediff>
+	</RecipeDef>
+
+
+</Defs>

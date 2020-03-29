@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- abstracts -->
+	
+	<HediffDef Name="MSE_ModuleAddedBionic" ParentName="MSE_ModuleAdded" Abstract="True">
+		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
+	</HediffDef>
+
+	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<thingSetMakerTags>
+		<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
 	<!-- Ranged platform module -->
 
 	<HediffDef ParentName="MSE_ModuleAddedBionic">
@@ -23,7 +44,7 @@
 		</addedPartProps>
 	</HediffDef>
 	
-	<ThingDef ParentName="MSE_ModuleBionicSpecial">
+	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>MSE_RangedPlatformModule</defName>
 		<label>ranged platform module</label>
 		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
@@ -31,7 +52,6 @@
 		<costList>
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<PlasteelClavicle>1</PlasteelClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>1200</MarketValue>
@@ -85,7 +105,7 @@
 		</addedPartProps>
 	</HediffDef>
 	
-	<ThingDef ParentName="MSE_ModuleBionicSpecial">
+	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>MSE_MeleePlatformModule</defName>
 		<label>melee platform module</label>
 		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
@@ -93,7 +113,6 @@
 		<costList>
 			<Plasteel>15</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<PlasteelClavicle>1</PlasteelClavicle>
 		</costList>
 		<statBases>
 			<MarketValue>1200</MarketValue>

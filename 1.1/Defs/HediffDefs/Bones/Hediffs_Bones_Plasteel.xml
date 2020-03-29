@@ -1,330 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-    <!-- abstracts -->
-
-    <HediffDef Name="MSE_Bones_Plasteel_Base" ParentName="MSE_AddedBodyPartBase_Bionic" Abstract="True">
-		<addedPartProps>
-			<solid>true</solid>
-            <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-  
-	<ThingDef Name="MSE_BodyPartBionic_Bone" ParentName="MSE_BodyPartBionic" Abstract="True">
-		<recipeMaker>
-			<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
-
-	<RecipeDef Name="MSE_SurgeryBionic_Bone" ParentName="MSE_SurgeryBionic" Abstract="True">
-		<researchPrerequisite>MSE_BionicBones</researchPrerequisite>
-	</RecipeDef>
-
     
-	<!-- clavicle -->
-
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
-		<defName>PlasteelClavicle</defName>
-		<label>plasteel clavicle</label>
-		<labelNoun>a plasteel clavicle</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelClavicle</spawnThingOnRemoved>
-	</HediffDef>
-    
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>PlasteelClavicle</defName>
-		<label>plasteel clavicle</label>
-		<description>An advanced artificial clavicle. Requires plasteel bones research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelClavicle</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>5</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>300</MarketValue>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
-		<defName>InstallPlasteelClavicle</defName>
-		<label>install plasteel clavicle</label>
-		<description>Install a plasteel clavicle.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel clavicle.</jobString>
-		<workAmount>1500</workAmount>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter><thingDefs><li>PlasteelClavicle</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>PlasteelClavicle</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Clavicle</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelClavicle</addsHediff>
-	</RecipeDef>
-
-    <!-- sternum -->
-
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
-		<defName>PlasteelSternum</defName>
-		<label>plasteel sternum</label>
-		<labelNoun>a plasteel sternum</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>PlasteelSternum</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelSternum</spawnThingOnRemoved>
-	</HediffDef>
-    
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>PlasteelSternum</defName>
-		<label>plasteel sternum</label>
-		<description>An advanced artificial sternum. Requires plasteel bones research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelSternum</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>5</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>300</MarketValue>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>0.5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
-		<defName>InstallPlasteelSternum</defName>
-		<label>install plasteel sternum</label>
-		<description>Install a plasteel sternum.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelSternum</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel sternum.</jobString>
-		<workAmount>2000</workAmount>
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter><thingDefs><li>PlasteelSternum</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>PlasteelSternum</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Sternum</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelSternum</addsHediff>
-	</RecipeDef>
-
-    <!-- rib -->
-
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
-		<defName>PlasteelRib</defName>
-		<label>plasteel rib</label>
-		<labelNoun>a plasteel rib</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>PlasteelRib</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelRib</spawnThingOnRemoved>
-	</HediffDef>
-    
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>PlasteelRib</defName>
-		<label>plasteel rib</label>
-		<description>An advanced artificial rib. Requires plasteel bones research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelRib</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>2.5</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
-		<defName>InstallPlasteelRib</defName>
-		<label>install plasteel rib</label>
-		<description>Install a plasteel rib.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelRib</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel rib.</jobString>
-		<workAmount>2000</workAmount>
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter><thingDefs><li>PlasteelRib</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>PlasteelRib</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Ribcage</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelRib</addsHediff>
-	</RecipeDef>
-
-    <!-- pelvis -->
-
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
-		<defName>PlasteelPelvis</defName>
-		<label>plasteel pelvis</label>
-		<labelNoun>a plasteel pelvis</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>PlasteelPelvis</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelPelvis</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
-	</HediffDef>
-    
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
-		<defName>PlasteelPelvis</defName>
-		<label>plasteel pelvis</label>
-		<description>An advanced artificial pelvis. Requires plasteel bones research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelPelvis</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
-		<defName>InstallPlasteelPelvis</defName>
-		<label>install plasteel pelvis</label>
-		<description>Install a plasteel pelvis.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelPelvis</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel pelvis.</jobString>
-		<workAmount>2000</workAmount>
-		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>3</count>
-			</li>
-			<li>
-				<filter><thingDefs><li>PlasteelPelvis</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-			<thingDefs>
-				<li>PlasteelPelvis</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Pelvis</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelPelvis</addsHediff>
-	</RecipeDef>
-
     <!-- humerus -->
 
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>PlasteelHumerus</defName>
 		<label>plasteel humerus</label>
 		<labelNoun>a plasteel humerus</labelNoun>
-		<description>Test. Fix Later</description>
+		<description>An installed plasteel humerus.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelHumerus</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelHumerus</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-    <ThingDef ParentName="MSE_BodyPartBionic_Bone">
+    <ThingDef ParentName="BodyPartBionicBase">
 		<defName>PlasteelHumerus</defName>
 		<label>plasteel humerus</label>
-		<description>An advanced artificial humerus. Requires plasteel bones research to install it.</description>
+		<description>An advanced artificial humerus.</description>
 		<descriptionHyperlinks><RecipeDef>InstallPlasteelHumerus</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallPlasteelHumerus</defName>
 		<label>install plasteel humerus</label>
 		<description>Install a plasteel humerus.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelHumerus</ThingDef></descriptionHyperlinks>
 		<jobString>Installing plasteel humerus.</jobString>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>8</Medicine>
-		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter><thingDefs><li>PlasteelHumerus</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>PlasteelHumerus</li>
 			</thingDefs>
@@ -337,58 +55,46 @@
 
     <!-- radius -->
 
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>PlasteelRadius</defName>
 		<label>plasteel radius</label>
 		<labelNoun>a plasteel radius</labelNoun>
-		<description>Test. Fix Later</description>
+		<description>An installed plasteel radius.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelRadius</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelRadius</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
     
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>PlasteelRadius</defName>
 		<label>plasteel radius</label>
-		<description>An advanced artificial radius. Requires plasteel bones research to install it.</description>
+		<description>An advanced artificial radius.</description>
 		<descriptionHyperlinks><RecipeDef>InstallPlasteelRadius</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
 			<Mass>2</Mass>
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallPlasteelRadius</defName>
 		<label>install plasteel radius</label>
 		<description>Install a plasteel radius.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelRadius</ThingDef></descriptionHyperlinks>
 		<jobString>Installing plasteel radius.</jobString>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>8</Medicine>
-		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter><thingDefs><li>PlasteelRadius</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>PlasteelRadius</li>
 			</thingDefs>
@@ -401,58 +107,46 @@
 
     <!-- femur -->
 
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>PlasteelFemur</defName>
 		<label>plasteel femur</label>
 		<labelNoun>a plasteel femur</labelNoun>
-		<description>Test. Fix Later</description>
+		<description>An installed plasteel femur.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelFemur</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelFemur</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>PlasteelFemur</defName>
 		<label>plasteel femur</label>
-		<description>An advanced artificial femur. Requires plasteel bones research to install it.</description>
+		<description>An advanced artificial femur.</description>
 		<descriptionHyperlinks><RecipeDef>InstallPlasteelFemur</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallPlasteelFemur</defName>
 		<label>install plasteel femur</label>
 		<description>Install a plasteel femur.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelFemur</ThingDef></descriptionHyperlinks>
 		<jobString>Installing plasteel femur.</jobString>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>8</Medicine>
-		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter><thingDefs><li>PlasteelFemur</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>PlasteelFemur</li>
 			</thingDefs>
@@ -465,58 +159,46 @@
 
     <!-- tibia -->
 
-	<HediffDef ParentName="MSE_Bones_Plasteel_Base">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>PlasteelTibia</defName>
 		<label>plasteel tibia</label>
 		<labelNoun>a plasteel tibia</labelNoun>
-		<description>Test. Fix Later</description>
+		<description>An installed plasteel tibia.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelTibia</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>PlasteelTibia</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="MSE_BodyPartBionic_Bone">
+	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>PlasteelTibia</defName>
 		<label>plasteel tibia</label>
-		<description>An advanced artificial tibia. Requires plasteel bones research to install it.</description>
+		<description>An advanced artificial tibia.</description>
 		<descriptionHyperlinks><RecipeDef>InstallPlasteelTibia</RecipeDef></descriptionHyperlinks>
 		<costList>
 			<Plasteel>15</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<WorkToMake>6000</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryBionic_Bone">
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallPlasteelTibia</defName>
 		<label>install plasteel tibia</label>
 		<description>Install a plasteel tibia.</description>
 		<descriptionHyperlinks><ThingDef>PlasteelTibia</ThingDef></descriptionHyperlinks>
 		<jobString>Installing plasteel tibia.</jobString>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>8</Medicine>
-		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter><thingDefs><li>PlasteelTibia</li></thingDefs></filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>PlasteelTibia</li>
 			</thingDefs>

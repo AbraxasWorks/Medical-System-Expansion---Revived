@@ -5,26 +5,11 @@
 
 
 	<!--============ Module Base ============-->
-	<HediffDef Name="MSE_ModuleAdded" Abstract="True">
+	<HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
 		<hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
-		<isBad>false</isBad>
 	</HediffDef>
 	<!--===================== END ======================-->
-
-
-	<!--=================== Bionic =====================-->
-	<HediffDef Name="MSE_ModuleAddedBionic" ParentName="MSE_ModuleAdded" Abstract="True">
-		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
-	</HediffDef>
-
-	<!--================== Archotech ===================-->
-	<HediffDef Name="MSE_ModuleAddedArchotech" ParentName="MSE_ModuleAdded" Abstract="True">
-		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
-	</HediffDef>
-
-
+	
 	<!-- module surgery -->
 
 	<RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
@@ -51,7 +36,6 @@
 			<thingDefs><li>ComponentIndustrial</li></thingDefs>
 		</fixedIngredientFilter>
 		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-		<!-- <researchPrerequisite>MSE_ModulesSurgery</researchPrerequisite> -->
 	</RecipeDef>
 
 
@@ -101,5 +85,7 @@
 			</li>
 		</modExtensions>
 	</HediffDef>
+
+
 
 </Defs>

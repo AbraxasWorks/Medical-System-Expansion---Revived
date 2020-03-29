@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PegLeg"]</xpath>
+    <value>
+      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+        <ignoredSubParts>
+          <li>Foot</li>
+          <li>Femur</li>
+          <li>Tibia</li>
+        </ignoredSubParts>
+      </li>
+    </value>
+  </Operation>
+
+
+</Patch>

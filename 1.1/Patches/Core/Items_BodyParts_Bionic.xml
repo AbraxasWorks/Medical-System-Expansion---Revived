@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+    <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]</xpath>
+    <list>comps</list>
+    <value>
+      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+          <standardChildren>
+            <li>BionicHand</li>
+            <li>PlasteelHumerus</li>
+            <li>PlasteelRadius</li>
+          </standardChildren>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallBionicArm"]/appliedOnFixedBodyParts</xpath>
+    <value>    
+      <appliedOnFixedBodyParts>
+        <li>Arm</li>
+      </appliedOnFixedBodyParts>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+  </Operation>
+  
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+    <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]</xpath>
+    <list>comps</list>
+    <value>
+      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <standardChildren>
+          <li>BionicFoot</li>
+          <li>PlasteelFemur</li>
+          <li>PlasteelTibia</li>
+        </standardChildren>
+      </li>
+    </value>
+  </Operation>
+
+
+</Patch>
