@@ -340,7 +340,6 @@
     <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
-    <Compile Include="DontHealInjury\MSE_DontHealInjury.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
     <Compile Include="InitialSeverity\MSE_SpawnInitialSeverity.cs" />
     <Compile Include="MSE_DefModExtension\MSE_ImplantSystem.cs" />
