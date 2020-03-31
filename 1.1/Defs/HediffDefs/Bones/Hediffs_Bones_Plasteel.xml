@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- clavicle -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>PlasteelClavicle</defName>
+		<label>plasteel clavicle</label>
+		<labelNoun>a plasteel clavicle</labelNoun>
+		<description>An installed plasteel clavicle.</description>
+		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>PlasteelClavicle</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+    
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>PlasteelClavicle</defName>
+		<label>plasteel clavicle</label>
+		<description>An advanced artificial clavicle. Requires plasteel bones research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallPlasteelClavicle</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+		</costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallPlasteelClavicle</defName>
+		<label>install plasteel clavicle</label>
+		<description>Install a plasteel clavicle.</description>
+		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
+		<jobString>Installing plasteel clavicle.</jobString>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>PlasteelClavicle</li></thingDefs></filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PlasteelClavicle</addsHediff>
+	</RecipeDef>
     
     <!-- humerus -->
 

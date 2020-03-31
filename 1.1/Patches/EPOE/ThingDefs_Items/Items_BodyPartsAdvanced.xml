@@ -7,8 +7,59 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+
+        <!-- remove verbs -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm" or defName="AdvancedBionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+        </li>
 	
-				<!-- Advanced Bionics -->
+				<!-- adv power arm -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
+					<list>comps</list>
+					<value>
+            <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <maxModules>2</maxModules>
+            </li>
+					</value>
+				</li>
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>AdvancedBionicHand</li>
+								<!-- TODO: add new defs for these advanced bionics -->
+								<li>PlasteelHumerus</li>
+								<li>PlasteelRadius</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[defName="InstallAdvancedBionicArm"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <appliedOnFixedBodyParts>
+              <li>Arm</li>    
+            </appliedOnFixedBodyParts>
+          </value>
+        </li>
+
+        <!-- adv bionic arm -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicArm"]</xpath>
+					<list>comps</list>
+					<value>
+            <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <maxModules>1</maxModules>
+            </li>
+					</value>
+				</li>
 
 				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
 					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
@@ -22,6 +73,45 @@
 								<li>PlasteelRadius</li>
 							</standardChildren>
 						</li>
+					</value>
+				</li>
+
+        <!-- adv bionic leg -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
+					<list>comps</list>
+					<value>
+            <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <maxModules>1</maxModules>
+            </li>
+					</value>
+				</li>
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>AdvancedBionicFoot</li>
+								<!-- TODO: add new defs for these advanced bionics -->
+								<li>PlasteelFemur</li>
+								<li>PlasteelTibia</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+        <!-- adv bionic hand -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicHand"]</xpath>
+					<list>comps</list>
+					<value>
+            <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <maxModules>1</maxModules>
+            </li>
 					</value>
 				</li>
 
@@ -42,20 +132,7 @@
 					</value>
 				</li>
 
-				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
-					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
-					<list>comps</list>
-					<value>
-						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-							<standardChildren>
-								<li>AdvancedBionicFoot</li>
-								<!-- TODO: add new defs for these advanced bionics -->
-								<li>PlasteelFemur</li>
-								<li>PlasteelTibia</li>
-							</standardChildren>
-						</li>
-					</value>
-				</li>
+        <!-- adv bionic foot -->
 				
 				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
 					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
@@ -73,6 +150,77 @@
 						</li>
 					</value>
 				</li>
+
+
+        <!-- adding new parts -->
+
+        <li  Class="PatchOperationAdd"><xpath>/Defs</xpath><value>
+
+          <!-- adv bionic shoulder -->
+              
+          <HediffDef ParentName="addedPartAdvanced">
+            <defName>AdvancedBionicShoulder</defName>
+            <label>advanced bionic shoulder</label>
+            <labelNoun>an advanced bionic shoulder</labelNoun>
+            <description>An installed advanced bionic arm.</description>
+            <descriptionHyperlinks><ThingDef>AdvancedBionicShoulder</ThingDef></descriptionHyperlinks>
+            <addedPartProps>
+              <solid>true</solid>
+              <partEfficiency>1.35</partEfficiency>
+            </addedPartProps>
+            <spawnThingOnRemoved>AdvancedBionicShoulder</spawnThingOnRemoved>
+          </HediffDef>
+
+          <RecipeDef ParentName="SurgeryAdvanced">
+            <defName>InstallAdvancedBionicShoulder</defName>
+            <label>install advanced bionic shoulder</label>
+            <description>Installs advanced bionic shoulder.</description>
+            <descriptionHyperlinks><ThingDef>AdvancedBionicShoulder</ThingDef></descriptionHyperlinks>
+            <jobString>Installing advanced bionic shoulder.</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                <thingDefs>
+                  <li>AdvancedBionicShoulder</li>
+                </thingDefs>
+                </filter>
+                <count>1</count>
+              </li>
+            </ingredients>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>AdvancedBionicShoulder</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+            <appliedOnFixedBodyParts>
+              <li>Shoulder</li>
+            </appliedOnFixedBodyParts>
+            <addsHediff>AdvancedBionicShoulder</addsHediff>
+          </RecipeDef>
+          
+          <ThingDef ParentName="Advanced">    
+            <defName>AdvancedBionicShoulder</defName>
+            <label>advanced bionic shoulder</label>
+            <description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+            <descriptionHyperlinks><RecipeDef>InstallAdvancedBionicShoulder</RecipeDef></descriptionHyperlinks>
+            <costList>
+              <!-- <BionicShoulder>1</BionicShoulder> -->
+              <ComponentSpacer>5</ComponentSpacer>
+            </costList>
+            <statBases>
+              <Mass>7</Mass>
+            </statBases>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>AdvancedBionicArm</li>
+                  <li>PlasteelClavicle</li>
+                </standardChildren>
+              </li>
+            </comps>
+          </ThingDef>
+
+        </value></li>
 
 			</operations>
 		</match>

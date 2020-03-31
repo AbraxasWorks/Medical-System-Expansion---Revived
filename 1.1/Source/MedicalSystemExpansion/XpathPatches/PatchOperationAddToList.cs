@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Xml;
 
 using Verse;
 
 namespace OrenoMSE.XpathPatches
 {
-    class PatchOperationAddToList : PatchOperationPathed
+    internal class PatchOperationAddToList : PatchOperationPathed
     {
         protected string list;
 
@@ -22,7 +18,7 @@ namespace OrenoMSE.XpathPatches
 
 
             foreach ( XmlNode parentNode in from object x in xml.SelectNodes( xpath )
-                                            select (XmlNode)x ) 
+                                            select (XmlNode)x )
             {
 
                 XmlNode listNode = parentNode.SelectSingleNode( list );
@@ -37,11 +33,21 @@ namespace OrenoMSE.XpathPatches
                 switch ( order )
                 {
                     case Order.Append:
-                        listNode.AppendChild( parentNode.OwnerDocument.ImportNode(valNode.FirstChild, true) );
+                    {
+                        foreach ( XmlNode node in valNode.ChildNodes )
+                        {
+                            listNode.AppendChild( parentNode.OwnerDocument.ImportNode( node, true ) );
+                        }
                         break;
+                    }
                     case Order.Prepend:
-                        listNode.PrependChild( parentNode.OwnerDocument.ImportNode( valNode.FirstChild, true ) );
+                    {
+                        for ( int i = valNode.ChildNodes.Count - 1; i >= 0; i-- )
+                        {
+                            listNode.PrependChild( parentNode.OwnerDocument.ImportNode( valNode.ChildNodes[i], true ) );
+                        }
                         break;
+                    }
                 }
 
                 result = true;
@@ -59,9 +65,7 @@ namespace OrenoMSE.XpathPatches
 
         private enum Order
         {
-            // Token: 0x04004A5B RID: 19035
             Append,
-            // Token: 0x04004A5C RID: 19036
             Prepend
         }
 

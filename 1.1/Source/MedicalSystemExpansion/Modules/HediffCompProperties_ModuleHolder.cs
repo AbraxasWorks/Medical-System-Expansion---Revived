@@ -27,7 +27,7 @@ namespace OrenoMSE.Modules
 
 
 
-        public int maxModules = 0;
+        public int maxModules = 1;
 
     }
 }

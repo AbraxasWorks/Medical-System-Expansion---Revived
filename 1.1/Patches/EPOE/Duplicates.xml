@@ -8,21 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-                <!-- denture (is duplicate because of capital letter) -->
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/HediffDef[defName="denture"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/RecipeDef[defName="CreateDenture" or addsHediff="denture"]</xpath>
-                </li>
-                <!-- <li Class="PatchOperationRemove">
-                    <xpath>/Defs/RecipeDef[addsHediff="denture"]</xpath>
-                </li> -->
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="denture"]</xpath>
-                </li>
-
-
 			</operations>
 		</match>
 	</Operation>

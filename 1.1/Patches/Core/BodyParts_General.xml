@@ -3,7 +3,6 @@
 
 	<!-- Base class replacing -->
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
 		<value>
 			<workerClass>OrenoMSE.PartInstallation.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
@@ -11,7 +10,6 @@
 	</Operation> 
 
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
 		<value>
 			<workerClass>OrenoMSE.PartInstallation.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
