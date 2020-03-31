@@ -19,9 +19,9 @@
 					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
 					<list>comps</list>
 					<value>
-            <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
-              <maxModules>2</maxModules>
-            </li>
+						<li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+							<maxModules>2</maxModules>
+						</li>
 					</value>
 				</li>
 
