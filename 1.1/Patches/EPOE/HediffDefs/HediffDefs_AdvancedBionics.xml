@@ -41,7 +41,7 @@
 				</li>
 
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallAdvancedBionicArm"]/appliedOnFixedBodyParts</xpath>
+          <xpath>/Defs/RecipeDef[defName="InstallAdvancedPowerArm"]/appliedOnFixedBodyParts</xpath>
           <value>
             <appliedOnFixedBodyParts>
               <li>Arm</li>    
@@ -75,6 +75,15 @@
 						</li>
 					</value>
 				</li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[defName="InstallAdvancedBionicArm"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <appliedOnFixedBodyParts>
+              <li>Arm</li>    
+            </appliedOnFixedBodyParts>
+          </value>
+        </li>
 
         <!-- adv bionic leg -->
 
