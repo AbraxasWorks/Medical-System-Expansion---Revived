@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+        <!-- remove verbs -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+        </li>
+	
+        <!-- Simple arm -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>SimpleProstheticHand</li>
+								<li>SimpleProstheticHumerus</li>
+								<li>SimpleProstheticRadius</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
+          <value>
+            <appliedOnFixedBodyParts>
+              <li>Arm</li>    
+            </appliedOnFixedBodyParts>
+          </value>
+        </li>
+
+        <!-- Simple leg -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticLeg"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>SimpleProstheticFoot</li>
+								<li>SimpleProstheticFemur</li>
+								<li>SimpleProstheticTibia</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+        <!-- Simple hand -->
+
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>SimpleProstheticFinger</li>
+								<li>SimpleProstheticFinger</li>
+								<li>SimpleProstheticFinger</li>
+								<li>SimpleProstheticFinger</li>
+								<li>SimpleProstheticFinger</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+        <!-- Simple foot -->
+				
+				<li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
+					<list>comps</list>
+					<value>
+						<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+							<standardChildren>
+								<li>SimpleProstheticToe</li>
+								<li>SimpleProstheticToe</li>
+								<li>SimpleProstheticToe</li>
+								<li>SimpleProstheticToe</li>
+								<li>SimpleProstheticToe</li>
+							</standardChildren>
+						</li>
+					</value>
+				</li>
+
+
+        <!-- adding new parts -->
+
+        <li Class="PatchOperationAdd"><xpath>/Defs</xpath><value>
+
+          <!-- adv Simple shoulder -->
+              
+          <HediffDef ParentName="addedPartSimple">
+            <defName>SimpleProstheticShoulder</defName>
+            <label>simple prosthetic shoulder</label>
+            <labelNoun>a simple prosthetic shoulder</labelNoun>
+            <description>An installed simple prosthetic arm.</description>
+            <descriptionHyperlinks><ThingDef>SimpleProstheticShoulder</ThingDef></descriptionHyperlinks>
+            <addedPartProps>
+              <solid>true</solid>
+              <partEfficiency>0.8</partEfficiency>
+            </addedPartProps>
+            <spawnThingOnRemoved>SimpleProstheticShoulder</spawnThingOnRemoved>
+          </HediffDef>
+
+          <RecipeDef ParentName="SurgerySimple">
+            <defName>InstallSimpleProstheticShoulder</defName>
+            <label>install simple prosthetic shoulder</label>
+            <description>Installs a simple prosthetic shoulder.</description>
+            <descriptionHyperlinks><ThingDef>SimpleProstheticShoulder</ThingDef></descriptionHyperlinks>
+            <jobString>Installing simple prosthetic shoulder.</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>SimpleProstheticShoulder</li>
+                  </thingDefs>
+                </filter>
+                <count>1</count>
+              </li>
+            </ingredients>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>SimpleProstheticShoulder</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+            <appliedOnFixedBodyParts>
+              <li>Shoulder</li>
+            </appliedOnFixedBodyParts>
+            <addsHediff>SimpleProstheticShoulder</addsHediff>
+          </RecipeDef>
+          
+          <ThingDef ParentName="Simple">    
+            <defName>SimpleProstheticShoulder</defName>
+            <label>simple prosthetic shoulder</label>
+            <description>Replaces missing shoulders.</description>
+            <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticShoulder</RecipeDef></descriptionHyperlinks>
+            <costList>
+              <Steel>15</Steel>
+              <Plasteel>15</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+            <statBases>
+              <Mass>8</Mass>
+            </statBases>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>SimpleProstheticArm</li>
+                  <li>SimpleProstheticClavicle</li>
+                </standardChildren>
+              </li>
+            </comps>
+          </ThingDef>
+
+        </value></li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

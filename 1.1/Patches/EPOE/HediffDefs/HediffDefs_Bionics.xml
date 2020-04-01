@@ -179,8 +179,7 @@
             <description>One of the most sophisticated shoulder replacements.</description>
             <descriptionHyperlinks><RecipeDef>InstallBionicShoulder</RecipeDef></descriptionHyperlinks>
             <costList>
-              <!-- TODO -->
-              <!-- <SimpleProstheticShoulder>1</SimpleProstheticShoulder> -->
+              <SimpleProstheticShoulder>1</SimpleProstheticShoulder>
               <Plasteel>45</Plasteel>
               <ComponentIndustrial>5</ComponentIndustrial>
             </costList>

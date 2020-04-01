@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- clavicle -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<labelNoun>a prosthetic clavicle</labelNoun>
+		<description>An installed prosthetic clavicle.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticClavicle</ThingDef></descriptionHyperlinks>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<description>A clavicle prosthesis. It is inferior to a real clavicle. Requires bone replacement research to install it.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticClavicle</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticClavicle</defName>
+		<label>install prosthetic clavicle</label>
+		<description>Install a prosthetic clavicle.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticClavicle</ThingDef></descriptionHyperlinks>
+		<jobString>Installing prosthetic clavicle.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticClavicle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticClavicle</addsHediff>
+	</RecipeDef>
+
     <!-- humerus -->
 
 	<HediffDef ParentName="AddedBodyPartBase">
