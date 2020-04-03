@@ -8,7 +8,9 @@
 		<label>prosthetic foot</label>
 		<labelNoun>a prosthetic foot</labelNoun>
 		<description>An installed prosthetic foot.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticFoot</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFoot</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -20,7 +22,9 @@
 		<defName>SimpleProstheticFoot</defName>
 		<label>prosthetic foot</label>
 		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot. Requires prosthetics research to install it.</description>
-    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticFoot</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<Steel>16</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -28,18 +32,18 @@
 		<statBases>
 			<Mass>1.5</Mass>
 		</statBases>
-    <techHediffsTags>
-      <li>Simple</li>
-    </techHediffsTags>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
 		<comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
-          <li>SimpleProstheticToe</li>
-          <li>SimpleProstheticToe</li>
-          <li>SimpleProstheticToe</li>
-          <li>SimpleProstheticToe</li>
-          <li>SimpleProstheticToe</li>
-        </standardChildren>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+				</standardChildren>
 			</li>
 		</comps>
 	</ThingDef>
@@ -48,7 +52,9 @@
 		<defName>InstallSimpleProstheticFoot</defName>
 		<label>install prosthetic foot</label>
 		<description>Install a prosthetic foot.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticFoot</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFoot</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Installing prosthetic foot.</jobString>
 		<ingredients>
 			<li>
@@ -78,7 +84,9 @@
 		<label>prosthetic toe</label>
 		<labelNoun>a prosthetic toe</labelNoun>
 		<description>An installed prosthetic toe.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticToe</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticToe</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticToe</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -90,7 +98,9 @@
 		<defName>SimpleProstheticToe</defName>
 		<label>prosthetic toe</label>
 		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe. Requires prosthetics research to install it.</description>
-    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticToe</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<Steel>2</Steel>
 		</costList>
@@ -103,7 +113,9 @@
 		<defName>InstallSimpleProstheticToe</defName>
 		<label>install prosthetic toe</label>
 		<description>Install a prosthetic toe.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticToe</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticToe</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Installing prosthetic toe.</jobString>
 		<ingredients>
 			<li>
@@ -133,7 +145,9 @@
 		<label>prosthetic hand</label>
 		<labelNoun>a prosthetic hand</labelNoun>
 		<description>An installed prosthetic hand.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticHand</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHand</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -159,7 +173,9 @@
 		<defName>SimpleProstheticHand</defName>
 		<label>prosthetic hand</label>
 		<description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand. Requires prosthetics research to install it.</description>
-    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticHand</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticHand</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<Steel>16</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
@@ -170,12 +186,12 @@
 		<comps>
 			<li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
 				<standardChildren>
-          <li>SimpleProstheticFinger</li>
-          <li>SimpleProstheticFinger</li>
-          <li>SimpleProstheticFinger</li>
-          <li>SimpleProstheticFinger</li>
-          <li>SimpleProstheticFinger</li>
-        </standardChildren>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+				</standardChildren>
 			</li>
 		</comps>
 	</ThingDef>
@@ -184,7 +200,9 @@
 		<defName>InstallSimpleProstheticHand</defName>
 		<label>install prosthetic hand</label>
 		<description>Install a prosthetic hand.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticHand</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHand</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Installing prosthetic hand.</jobString>
 		<ingredients>
 			<li>
@@ -214,7 +232,9 @@
 		<label>prosthetic finger</label>
 		<labelNoun>a prosthetic finger</labelNoun>
 		<description>An installed prosthetic finger.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticFinger</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFinger</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticFinger</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
@@ -226,7 +246,9 @@
 		<defName>SimpleProstheticFinger</defName>
 		<label>prosthetic finger</label>
 		<description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger. Requires prosthetics research to install it.</description>
-    <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticFinger</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFinger</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<Steel>2</Steel>
 		</costList>
@@ -239,7 +261,9 @@
 		<defName>InstallSimpleProstheticFinger</defName>
 		<label>install prosthetic finger</label>
 		<description>Install a prosthetic finger.</description>
-    <descriptionHyperlinks><ThingDef>SimpleProstheticFinger</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFinger</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Installing prosthetic finger.</jobString>
 		<ingredients>
 			<li>
@@ -261,5 +285,5 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticFinger</addsHediff>
 	</RecipeDef>
-	
+
 </Defs>
