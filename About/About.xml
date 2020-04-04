@@ -1,22 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>Medical System Expansion - Revived</name>
-	<author>Abraxas</author>
+	<name>Medical System Expansion 2 - Core</name>
+	<author>Jon</author>
 	<supportedVersions>
-		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
 
-	<packageId>Abraxas.MSERevived</packageId>
+	<packageId>MSE.Core</packageId>
 
 	<url>https://github.com/AbraxasWorks/Medical-System-Expansion---Revived</url>
 	<description>Credit for the creation of this mod goes to Oreno, I just didn't want to see it die.
 	
-&lt;b&gt;Not Just Another Prostheses Mod&lt;/b&gt;. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod.
-
-
-&lt;b&gt;&lt;size=18&gt;Main Features&lt;/size&gt;&lt;/b&gt;
+&lt;b&gt;Not Just Another Prostheses Mod&lt;/b&gt;. An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod. &lt;b&gt;&lt;size=18&gt;Main Features&lt;/size&gt;&lt;/b&gt;
 - Installed prosthesis can keep its child parts. In vanilla or other mod, if you install prosthesis part like peg leg then you lost its foot and toe.
 - Exclusive body part system framework and it's modules. This allows you to install prosthetic modules on installed prosthesis.
 &lt;b&gt;This two main features only work on bionic and archotech body parts&lt;/b&gt;. It doesn't make sense to me for basic and simple body parts can have this features.
@@ -36,7 +32,7 @@ This mod not really that OP. &lt;b&gt;Raider chance to spawn with prostheses par
 - Harvested organs can rot and decay.
 - Now all bones can be destroyed by damage or attack.
 - And many other features.
-</description>
+	</description>
 
 	<modDependencies>
 		<li>
@@ -47,14 +43,16 @@ This mod not really that OP. &lt;b&gt;Raider chance to spawn with prostheses par
 	</modDependencies>
 
 	<loadBefore>
+		<li>Ykara.EPOE</li>
 	</loadBefore>
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>UnlimitedHugs.HugsLib</li>
-		<li>Ykara.EPOE</li>
 	</loadAfter>
-	<incompatibleWith />
+	<incompatibleWith>
+		<li>Abraxas.MSERevived</li>
+	</incompatibleWith>
 
 </ModMetaData>
