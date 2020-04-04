@@ -17,9 +17,8 @@
             <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
               <standardChildren>
                 <li>MechanicalManipulator</li>
-                <!-- TODO: add special bone like mechanical internal supports -->
-                <li>SimpleProstheticHumerus</li>
-                <li>SimpleProstheticRadius</li>
+                <li>MechanicalSupport</li>
+                <li>MechanicalSupport</li>
               </standardChildren>
             </li>
           </value>
@@ -518,6 +517,80 @@
                 <li>MiddleFingers</li>
               </appliedOnFixedBodyPartGroups>
               <addsHediff>VenomTalonModule</addsHediff>
+            </RecipeDef>
+
+            <!-- replacement internal support -->
+            <!-- humerus -->
+
+            <HediffDef ParentName="AddedBodyPartBase">
+              <defName>MechanicalSupport</defName>
+              <label>mechanical support</label>
+              <labelNoun>a mechanical support</labelNoun>
+              <description>An internal mechanical support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>MechanicalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <spawnThingOnRemoved>MechanicalSupport</spawnThingOnRemoved>
+              <addedPartProps>
+                <solid>true</solid>
+                <betterThanNatural>true</betterThanNatural>
+              </addedPartProps>
+            </HediffDef>
+
+            <ThingDef ParentName="BodyPartProstheticImperialBase">
+              <defName>MechanicalSupport</defName>
+              <label>mechanical support</label>
+              <description>A mechanical support.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallMechanicalSupport</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <Steel>10</Steel>
+                <ComponentIndustrial>3</ComponentIndustrial>
+              </costList>
+              <statBases>
+                <Mass>0.5</Mass>
+              </statBases>
+              <recipeMaker>
+                <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+              </recipeMaker>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+              <defName>InstallMechanicalSupport</defName>
+              <label>install mechanical support</label>
+              <description>Install a mechanical support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>MechanicalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing replacement mechanical support.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>MechanicalSupport</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>MechanicalSupport</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Humerus</li>
+                <li>Radius</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>MechanicalSupport</addsHediff>
+              <modExtensions>
+                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                  <whitelist>
+                    <li>DrillArm</li>
+                  </whitelist>
+                </li>
+              </modExtensions>
             </RecipeDef>
 
 
