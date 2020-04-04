@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Prosthetics and Organ Engineering</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- plasteel -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="PlasteelClavicle" or defName="PlasteelHumerus" or defName="PlasteelRadius" or defName="PlasteelFemur" or defName="PlasteelTibia"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/BodyPart/BionicPart</texPath>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+            </graphicData>
+          </value>
+        </li>
+
+        <!-- simple -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SimpleProstheticClavicle" or defName="SimpleProstheticHumerus" or defName="SimpleProstheticRadius" or defName="SimpleProstheticFemur" or defName="SimpleProstheticTibia"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/BodyPart/SimplePart</texPath>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+            </graphicData>
+          </value>
+        </li>
+
+
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>
