@@ -1,162 +1,182 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	<!-- abstracts -->
-	
-	<HediffDef Name="MSE_ModuleAddedArchotech" ParentName="MSE_ModuleAdded" Abstract="True">
-		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
-	</HediffDef>
 
-	<ThingDef Name="MSE_ModuleArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
-		<graphicData>
-			<texPath>Things/Item/Health/HealthItemArchotech3</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
-		</graphicData>
-		<techLevel>Archotech</techLevel>
-		<techHediffsTags>
-			<li>Archotech</li>
-		</techHediffsTags>
-		<thingSetMakerTags>
-			<li>RewardSpecial</li>
-		</thingSetMakerTags>
-	</ThingDef>
+  <!-- abstracts -->
 
-	<!-- Advanced ranged platform module -->
+  <HediffDef Name="MSE_ModuleAddedArchotech" ParentName="MSE_ModuleAdded" Abstract="True">
+    <defaultLabelColor>(255, 110, 64)</defaultLabelColor>
+  </HediffDef>
 
-	<HediffDef ParentName="MSE_ModuleAddedArchotech">
-		<defName>MSE_AdvancedRangedPlatformModule</defName>
-		<label>advanced ranged platform module</label>
-		<labelNoun>an advanced ranged platform module</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef></descriptionHyperlinks>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.03</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<ShootingAccuracyPawn>20.0</ShootingAccuracyPawn>
-					<AimingDelayFactor>-0.30</AimingDelayFactor>
-				</statOffsets>
-			</li>
-		</stages>
-		<spawnThingOnRemoved>MSE_AdvancedRangedPlatformModule</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
-	</HediffDef>
-	
-	<ThingDef ParentName="MSE_ModuleArchotech">
-		<defName>MSE_AdvancedRangedPlatformModule</defName>
-		<label>advanced ranged platform module</label>
-		<description>An advanced ranged platform module. If it is harmed, it repairs itself over time. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>MSE_InstallAdvancedRangedPlatformModule</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Uranium>15</Uranium>
-			<Plasteel>25</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2500</MarketValue>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
+  <ThingDef Name="MSE_ModuleArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemArchotech3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <techHediffsTags>
+      <li>Archotech</li>
+    </techHediffsTags>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
 
-	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
-		<defName>MSE_InstallAdvancedRangedPlatformModule</defName>
-		<label>install advanced ranged platform module</label>
-		<description>Install an advanced ranged platform module.</description>
-		<descriptionHyperlinks><ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef></descriptionHyperlinks>
-		<jobString>Installing sdvanced ranged platform module.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>MSE_AdvancedRangedPlatformModule</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>MSE_AdvancedRangedPlatformModule</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Clavicle</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>MSE_AdvancedRangedPlatformModule</addsHediff>
-	</RecipeDef>
+  <!-- Advanced ranged platform module -->
 
-	<!-- Advanced melee platform module -->
+  <HediffDef ParentName="MSE_ModuleAddedArchotech">
+    <defName>MSE_AdvancedRangedPlatformModule</defName>
+    <label>advanced ranged platform module</label>
+    <labelNoun>an advanced ranged platform module</labelNoun>
+    <description>Test. Fix Later</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef>
+    </descriptionHyperlinks>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.03</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ShootingAccuracyPawn>20.0</ShootingAccuracyPawn>
+          <AimingDelayFactor>-0.30</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>MSE_AdvancedRangedPlatformModule</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+  </HediffDef>
 
-	<HediffDef ParentName="MSE_ModuleAddedArchotech">
-		<defName>MSE_AdvancedMeleePlatformModule</defName>
-		<label>advanced melee platform module</label>
-		<labelNoun>an advanced melee platform module</labelNoun>
-		<description>Test. Fix Later</description>
-		<descriptionHyperlinks><ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef></descriptionHyperlinks>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.03</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<MeleeDodgeChance>20</MeleeDodgeChance>
-					<MeleeHitChance>30</MeleeHitChance>
-				</statOffsets>
-			</li>
-		</stages>
-		<spawnThingOnRemoved>MSE_AdvancedMeleePlatformModule</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-		</addedPartProps>
-	</HediffDef>
-	
-	<ThingDef ParentName="MSE_ModuleArchotech">
-		<defName>MSE_AdvancedMeleePlatformModule</defName>
-		<label>advanced melee platform module</label>
-		<description>An advanced melee platform module. If it is harmed, it repairs itself over time. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>MSE_InstallAdvancedMeleePlatformModule</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Uranium>15</Uranium>
-			<Plasteel>25</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-		<statBases>
-			<MarketValue>2500</MarketValue>
-			<WorkToMake>40000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
-	
-	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
-		<defName>MSE_InstallAdvancedMeleePlatformModule</defName>
-		<label>install advanced melee platform module</label>
-		<description>Install an advanced melee platform module.</description>
-		<descriptionHyperlinks><ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef></descriptionHyperlinks>
-		<jobString>Installing advanced melee platform module.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>MSE_AdvancedMeleePlatformModule</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>MSE_AdvancedMeleePlatformModule</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Clavicle</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>MSE_AdvancedMeleePlatformModule</addsHediff>
-	</RecipeDef>
+  <ThingDef ParentName="MSE_ModuleArchotech">
+    <defName>MSE_AdvancedRangedPlatformModule</defName>
+    <label>advanced ranged platform module</label>
+    <description>An advanced ranged platform module. If it is harmed, it repairs itself over time. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>MSE_InstallAdvancedRangedPlatformModule</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Uranium>15</Uranium>
+      <Plasteel>25</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>MSE_InstallAdvancedRangedPlatformModule</defName>
+    <label>install advanced ranged platform module</label>
+    <description>Install an advanced ranged platform module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing sdvanced ranged platform module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSE_AdvancedRangedPlatformModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSE_AdvancedRangedPlatformModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Clavicle</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MSE_AdvancedRangedPlatformModule</addsHediff>
+  </RecipeDef>
+
+  <!-- Advanced melee platform module -->
+
+  <HediffDef ParentName="MSE_ModuleAddedArchotech">
+    <defName>MSE_AdvancedMeleePlatformModule</defName>
+    <label>advanced melee platform module</label>
+    <labelNoun>an advanced melee platform module</labelNoun>
+    <description>Test. Fix Later</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef>
+    </descriptionHyperlinks>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.03</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <MeleeDodgeChance>20</MeleeDodgeChance>
+          <MeleeHitChance>30</MeleeHitChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>MSE_AdvancedMeleePlatformModule</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="MSE_ModuleArchotech">
+    <defName>MSE_AdvancedMeleePlatformModule</defName>
+    <label>advanced melee platform module</label>
+    <description>An advanced melee platform module. If it is harmed, it repairs itself over time. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>MSE_InstallAdvancedMeleePlatformModule</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Uranium>15</Uranium>
+      <Plasteel>25</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>MSE_InstallAdvancedMeleePlatformModule</defName>
+    <label>install advanced melee platform module</label>
+    <description>Install an advanced melee platform module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing advanced melee platform module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MSE_AdvancedMeleePlatformModule</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MSE_AdvancedMeleePlatformModule</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Clavicle</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MSE_AdvancedMeleePlatformModule</addsHediff>
+  </RecipeDef>
 
 
 </Defs>

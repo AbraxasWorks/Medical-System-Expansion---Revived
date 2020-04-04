@@ -1,264 +1,324 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- clavicle -->
+  <!-- clavicle -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>PlasteelClavicle</defName>
-		<label>plasteel clavicle</label>
-		<labelNoun>a plasteel clavicle</labelNoun>
-		<description>An installed plasteel clavicle.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelClavicle</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelClavicle</defName>
+    <label>plasteel clavicle</label>
+    <labelNoun>a plasteel clavicle</labelNoun>
+    <description>An installed plasteel clavicle.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelClavicle</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PlasteelClavicle</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-    
-	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>PlasteelClavicle</defName>
-		<label>plasteel clavicle</label>
-		<description>An advanced artificial clavicle. Requires plasteel bones research to install it.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelClavicle</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>5</Plasteel>
-		</costList>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-		<statBases>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
+    </addedPartProps>
+  </HediffDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallPlasteelClavicle</defName>
-		<label>install plasteel clavicle</label>
-		<description>Install a plasteel clavicle.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelClavicle</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel clavicle.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>PlasteelClavicle</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PlasteelClavicle</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Clavicle</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelClavicle</addsHediff>
-	</RecipeDef>
-    
-    <!-- humerus -->
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelClavicle</defName>
+    <label>plasteel clavicle</label>
+    <description>An advanced artificial clavicle. Requires plasteel bones research to install it.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPlasteelClavicle</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>5</Plasteel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
 
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>PlasteelHumerus</defName>
-		<label>plasteel humerus</label>
-		<labelNoun>a plasteel humerus</labelNoun>
-		<description>An installed plasteel humerus.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelHumerus</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelHumerus</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallPlasteelClavicle</defName>
+    <label>install plasteel clavicle</label>
+    <description>Install a plasteel clavicle.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelClavicle</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel clavicle.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelClavicle</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelClavicle</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Clavicle</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelClavicle</addsHediff>
+  </RecipeDef>
+
+  <!-- humerus -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelHumerus</defName>
+    <label>plasteel humerus</label>
+    <labelNoun>a plasteel humerus</labelNoun>
+    <description>An installed plasteel humerus.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelHumerus</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PlasteelHumerus</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
+    </addedPartProps>
+  </HediffDef>
 
-    <ThingDef ParentName="BodyPartBionicBase">
-		<defName>PlasteelHumerus</defName>
-		<label>plasteel humerus</label>
-		<description>An advanced artificial humerus.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelHumerus</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-		</costList>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-		<statBases>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelHumerus</defName>
+    <label>plasteel humerus</label>
+    <description>An advanced artificial humerus.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPlasteelHumerus</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallPlasteelHumerus</defName>
-		<label>install plasteel humerus</label>
-		<description>Install a plasteel humerus.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelHumerus</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel humerus.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>PlasteelHumerus</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PlasteelHumerus</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Humerus</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelHumerus</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallPlasteelHumerus</defName>
+    <label>install plasteel humerus</label>
+    <description>Install a plasteel humerus.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelHumerus</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel humerus.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelHumerus</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelHumerus</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Humerus</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelHumerus</addsHediff>
+  </RecipeDef>
 
-    <!-- radius -->
+  <!-- radius -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>PlasteelRadius</defName>
-		<label>plasteel radius</label>
-		<labelNoun>a plasteel radius</labelNoun>
-		<description>An installed plasteel radius.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelRadius</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelRadius</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelRadius</defName>
+    <label>plasteel radius</label>
+    <labelNoun>a plasteel radius</labelNoun>
+    <description>An installed plasteel radius.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelRadius</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PlasteelRadius</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-    
-	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>PlasteelRadius</defName>
-		<label>plasteel radius</label>
-		<description>An advanced artificial radius.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelRadius</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-		</costList>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-		<statBases>
-			<Mass>2</Mass>
-		</statBases>
-	</ThingDef>
+    </addedPartProps>
+  </HediffDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallPlasteelRadius</defName>
-		<label>install plasteel radius</label>
-		<description>Install a plasteel radius.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelRadius</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel radius.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>PlasteelRadius</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PlasteelRadius</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Radius</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelRadius</addsHediff>
-	</RecipeDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelRadius</defName>
+    <label>plasteel radius</label>
+    <description>An advanced artificial radius.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPlasteelRadius</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
 
-    <!-- femur -->
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallPlasteelRadius</defName>
+    <label>install plasteel radius</label>
+    <description>Install a plasteel radius.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelRadius</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel radius.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelRadius</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelRadius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Radius</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelRadius</addsHediff>
+  </RecipeDef>
 
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>PlasteelFemur</defName>
-		<label>plasteel femur</label>
-		<labelNoun>a plasteel femur</labelNoun>
-		<description>An installed plasteel femur.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelFemur</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelFemur</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
+  <!-- femur -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelFemur</defName>
+    <label>plasteel femur</label>
+    <labelNoun>a plasteel femur</labelNoun>
+    <description>An installed plasteel femur.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelFemur</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PlasteelFemur</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
+    </addedPartProps>
+  </HediffDef>
 
-	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>PlasteelFemur</defName>
-		<label>plasteel femur</label>
-		<description>An advanced artificial femur.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelFemur</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-		</costList>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-		<statBases>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelFemur</defName>
+    <label>plasteel femur</label>
+    <description>An advanced artificial femur.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPlasteelFemur</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>3</Mass>
+    </statBases>
+  </ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallPlasteelFemur</defName>
-		<label>install plasteel femur</label>
-		<description>Install a plasteel femur.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelFemur</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel femur.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>PlasteelFemur</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PlasteelFemur</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Femur</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelFemur</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallPlasteelFemur</defName>
+    <label>install plasteel femur</label>
+    <description>Install a plasteel femur.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelFemur</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel femur.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelFemur</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelFemur</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Femur</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelFemur</addsHediff>
+  </RecipeDef>
 
-    <!-- tibia -->
+  <!-- tibia -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>PlasteelTibia</defName>
-		<label>plasteel tibia</label>
-		<labelNoun>a plasteel tibia</labelNoun>
-		<description>An installed plasteel tibia.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelTibia</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>PlasteelTibia</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelTibia</defName>
+    <label>plasteel tibia</label>
+    <labelNoun>a plasteel tibia</labelNoun>
+    <description>An installed plasteel tibia.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelTibia</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>PlasteelTibia</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
+    </addedPartProps>
+  </HediffDef>
 
-	<ThingDef ParentName="BodyPartBionicBase">
-		<defName>PlasteelTibia</defName>
-		<label>plasteel tibia</label>
-		<description>An advanced artificial tibia.</description>
-		<descriptionHyperlinks><RecipeDef>InstallPlasteelTibia</RecipeDef></descriptionHyperlinks>
-		<costList>
-			<Plasteel>15</Plasteel>
-		</costList>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
-		<statBases>
-			<Mass>3</Mass>
-		</statBases>
-	</ThingDef>
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelTibia</defName>
+    <label>plasteel tibia</label>
+    <description>An advanced artificial tibia.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallPlasteelTibia</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>3</Mass>
+    </statBases>
+  </ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallPlasteelTibia</defName>
-		<label>install plasteel tibia</label>
-		<description>Install a plasteel tibia.</description>
-		<descriptionHyperlinks><ThingDef>PlasteelTibia</ThingDef></descriptionHyperlinks>
-		<jobString>Installing plasteel tibia.</jobString>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>PlasteelTibia</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PlasteelTibia</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Tibia</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>PlasteelTibia</addsHediff>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallPlasteelTibia</defName>
+    <label>install plasteel tibia</label>
+    <description>Install a plasteel tibia.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelTibia</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel tibia.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelTibia</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelTibia</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tibia</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelTibia</addsHediff>
+  </RecipeDef>
 
 
 

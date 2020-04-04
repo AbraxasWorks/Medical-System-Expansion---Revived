@@ -4,87 +4,99 @@
 
 
 
-	<!--============ Module Base ============-->
-	<HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
-		<hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
-	</HediffDef>
-	<!--===================== END ======================-->
-	
-	<!-- module surgery -->
+  <!--============ Module Base ============-->
+  <HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
+    <hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
+  </HediffDef>
+  <!--===================== END ======================-->
 
-	<RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
-		<workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
-		<workAmount>1500</workAmount>
-		<skillRequirements>
-			<Medicine>5</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter><categories><li>Medicine</li></categories></filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories><li>Medicine</li></categories>
-			<thingDefs><li>ComponentIndustrial</li></thingDefs>
-		</fixedIngredientFilter>
-		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-	</RecipeDef>
+  <!-- module surgery -->
+
+  <RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
+    <workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
+    <workAmount>1500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+  </RecipeDef>
 
 
-	<!-- Modules Removal Surgery -->
+  <!-- Modules Removal Surgery -->
 
-	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>MSE_RemoveModules</defName>
-		<label>remove modules</label>
-		<description>Remove a modules from a bodypart.</description>
-		<workerClass>OrenoMSE.Modules.Actual.Recipe_RemoveModules</workerClass>
-		<jobString>Removing modules.</jobString>
-		<workAmount>1500</workAmount>
-		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
-		</fixedIngredientFilter>
-        <recipeUsers>
-        <li>Human</li>
-        </recipeUsers>
-	</RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>MSE_RemoveModules</defName>
+    <label>remove modules</label>
+    <description>Remove a modules from a bodypart.</description>
+    <workerClass>OrenoMSE.Modules.Actual.Recipe_RemoveModules</workerClass>
+    <jobString>Removing modules.</jobString>
+    <workAmount>1500</workAmount>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+  </RecipeDef>
 
-	<!-- module slot -->
+  <!-- module slot -->
 
-	<HediffDef>
-		<hediffClass>OrenoMSE.Modules.Slots.Hediff_ModuleSlot</hediffClass>
-		<defName>MSE_ModuleSlot</defName>
-		<label>module slot</label>
-		<labelNoun>a module slot</labelNoun>
-		<description>A slot for upgrading</description>
-		<defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
-		<isBad>false</isBad>
-		<modExtensions>
-			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
-				<labelPretty>{0} module slot</labelPretty>
-			</li>
-		</modExtensions>
-	</HediffDef>
+  <HediffDef>
+    <hediffClass>OrenoMSE.Modules.Slots.Hediff_ModuleSlot</hediffClass>
+    <defName>MSE_ModuleSlot</defName>
+    <label>module slot</label>
+    <labelNoun>a module slot</labelNoun>
+    <description>A slot for upgrading</description>
+    <defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <modExtensions>
+      <li Class="OrenoMSE.MSE_HediffPrettyLabel">
+        <labelPretty>{0} module slot</labelPretty>
+      </li>
+    </modExtensions>
+  </HediffDef>
 
 
 

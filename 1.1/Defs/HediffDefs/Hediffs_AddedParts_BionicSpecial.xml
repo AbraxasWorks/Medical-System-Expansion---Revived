@@ -8,7 +8,9 @@
     <label>power claw module</label>
     <labelNoun>a power claw</labelNoun>
     <description>An installed power claw module.</description>
-    <descriptionHyperlinks><ThingDef>PowerClaw</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>PowerClaw</ThingDef>
+    </descriptionHyperlinks>
     <comps>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
@@ -31,7 +33,9 @@
     <defName>InstallPowerClaw</defName>
     <label>install power claw</label>
     <description>Install a power claw.</description>
-    <descriptionHyperlinks><ThingDef>PowerClaw</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>PowerClaw</ThingDef>
+    </descriptionHyperlinks>
     <jobString>Installing power claw.</jobString>
     <ingredients>
       <li>
