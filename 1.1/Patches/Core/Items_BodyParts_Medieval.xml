@@ -9,10 +9,32 @@
           <li>Foot</li>
           <li>Femur</li>
           <li>Tibia</li>
+          <li>Toe</li>
         </ignoredSubParts>
       </li>
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="WoodenFoot"]</xpath>
+    <value>
+      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+        <ignoredSubParts>
+          <li>Toe</li>
+        </ignoredSubParts>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="WoodenHand"]</xpath>
+    <value>
+      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+        <ignoredSubParts>
+          <li>Finger</li>
+        </ignoredSubParts>
+      </li>
+    </value>
+  </Operation>
 
 </Patch>

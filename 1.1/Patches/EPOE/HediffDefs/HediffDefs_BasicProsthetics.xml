@@ -81,15 +81,6 @@
           </value>
         </li>
 
-        <!-- remove wooden fingers and toes -->
-
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/HediffDef[defName="WoodenFinger" or defName="WoodenToe"]</xpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/RecipeDef[defName="InstallWoodenFinger" or defName="InstallWoodenToe"]</xpath>
-        </li>
-
       </operations>
     </match>
   </Operation>
