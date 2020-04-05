@@ -24,7 +24,7 @@ namespace OrenoMSE.PawnGeneration
                 if ( instr.opcode == OpCodes.Ldsfld && instr.OperandIs( typeof(PawnTechHediffsGenerator).GetField("emptyIngredientsList", BindingFlags.NonPublic | BindingFlags.Static ) ) )
                 {
                     yield return new CodeInstruction( OpCodes.Ldarg_1 );
-                    yield return new CodeInstruction( OpCodes.Call, typeof( InstallPart_Patch ).GetMethod(nameof(Test)) );
+                    yield return new CodeInstruction( OpCodes.Call, typeof( InstallPart_Patch ).GetMethod(nameof(SingletonFromDef)) );
                 }
                 else
                     yield return instr;
@@ -33,7 +33,7 @@ namespace OrenoMSE.PawnGeneration
         }
 
 
-        public static List<Thing> Test ( ThingDef partDef )
+        public static List<Thing> SingletonFromDef ( ThingDef partDef )
         {
             Log.Message( "Generated pawn with " + partDef.defName );
 
