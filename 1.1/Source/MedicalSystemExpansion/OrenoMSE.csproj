@@ -367,7 +367,6 @@
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />
     <Compile Include="XpathPatches\PatchOperationAddToList.cs" />
     <Compile Include="XpathPatches\PatchOperationOffsetField.cs" />
-    <Compile Include="XpathPatches\PatchOperationReplaceParentName.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

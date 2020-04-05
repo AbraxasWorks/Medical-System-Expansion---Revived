@@ -23,14 +23,14 @@ namespace OrenoMSE.PartInstallation
 
             // extract base call
 
-            int baseCallLength = instructionList.FirstIndexOf( i => i.Calls( typeof( Hediff_Implant ).GetMethod( nameof( Hediff_Implant.PostAdd ) ) ) ) + 1;
+            int baseCallLength = instructionList.FindIndex( i => i.Calls( typeof( Hediff_Implant ).GetMethod( nameof( Hediff_Implant.PostAdd ) ) ) ) + 1;
             List<CodeInstruction> baseCall = instructionList.GetRange( 0, baseCallLength );
             instructionList.RemoveRange( 0, baseCallLength );
 
 
             // insert after restore part
 
-            int indexOfRestorePart = instructionList.FirstIndexOf( i => i.Calls( typeof( Pawn_HealthTracker ).GetMethod( nameof( Pawn_HealthTracker.RestorePart ) ) ) ) + 1;
+            int indexOfRestorePart = instructionList.FindIndex( i => i.Calls( typeof( Pawn_HealthTracker ).GetMethod( nameof( Pawn_HealthTracker.RestorePart ) ) ) ) + 1;
             instructionList.InsertRange( indexOfRestorePart, baseCall );
 
             // return

@@ -26,6 +26,8 @@ namespace OrenoMSE.Modules
             base.CompPostPostAdd( dinfo );
 
             this.currentModules = 0;
+
+            UpdateSlotHediff();
         }
 
         // overriding comppostpostadd doesn't seem to work properly
@@ -36,11 +38,14 @@ namespace OrenoMSE.Modules
             {
                 if ( moduleSlot == null  )
                 {
+                    Log.Message( "Adding slot " + this.parent.pawn.Name + " " + this.parent.Part.Label );
+
                     // create the slot
 
                     moduleSlot = (Hediff_ModuleSlot)HediffMaker.MakeHediff( MSE_HediffDefOf.MSE_ModuleSlot, this.parent.pawn, this.parent.Part );
-                       
-                    this.parent.pawn.health.AddHediff( moduleSlot, null, null );
+                    
+
+                    this.parent.pawn.health.AddHediff( moduleSlot );
                 }
             }
             // else remove eventual slot
