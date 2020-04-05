@@ -322,6 +322,7 @@
     <Compile Include="Modules\HediffComp_ModuleHolder.cs" />
     <Compile Include="Modules\HediffCompProperties_ModuleHolder.cs" />
     <Compile Include="old\HediffAddedPart_Patch.cs" />
+    <Compile Include="PartInstallation\AddedPart_PostAdd.cs" />
     <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
     <Compile Include="PartInstallation\InstallationRestrictions.cs" />
     <Compile Include="PartRemoval\IsClean_Patch.cs" />
@@ -331,7 +332,6 @@
     <Compile Include="old\Harmony_HediffWithComps.cs" />
     <Compile Include="HediffCompGizmo\PawnDraftController.cs" />
     <Compile Include="old\Harmony_RecipeInstallArtificialBodyPart.cs" />
-    <Compile Include="InitialSeverity\Harmony_PawnGenerator.cs" />
     <Compile Include="PartInstallation\InstallationUtilities.cs" />
     <Compile Include="PartRemoval\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="MSE_SafeReflections.cs" />
@@ -341,7 +341,6 @@
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
-    <Compile Include="InitialSeverity\MSE_SpawnInitialSeverity.cs" />
     <Compile Include="MSE_DefModExtension\MSE_ImplantSystem.cs" />
     <Compile Include="Modules\MSE_DefOf\MSE_HediffDefOf.cs" />
     <Compile Include="HediffCompGizmo\HediffComp_HediffGizmo.cs" />
