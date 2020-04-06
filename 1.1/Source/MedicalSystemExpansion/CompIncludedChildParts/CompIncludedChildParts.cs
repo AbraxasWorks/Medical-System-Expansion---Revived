@@ -118,30 +118,30 @@ namespace OrenoMSE
 
         // Missing Parts
 
-        private List<ThingDef> missingPartsCache;
+        private List<ThingDef> cachedMissingParts;
 
         public List<ThingDef> MissingParts
         {
             get
             {
-                if (missingPartsCache == null)
+                if (cachedMissingParts == null)
                 {
                     this.UpdateMissingParts();
                 }
                 
-                return missingPartsCache;
+                return cachedMissingParts;
             }
         }
 
-        public void UpdateMissingParts()
+        protected void UpdateMissingParts()
         {
-            if ( missingPartsCache == null )
+            if ( cachedMissingParts == null )
             {
-                missingPartsCache = new List<ThingDef>();
+                cachedMissingParts = new List<ThingDef>();
             }
             else
             {
-                missingPartsCache.Clear();
+                cachedMissingParts.Clear();
             }
 
 
@@ -157,36 +157,36 @@ namespace OrenoMSE
                     }
                     else
                     {
-                        missingPartsCache.Add(expectedDef);
+                        cachedMissingParts.Add(expectedDef);
                     }
                 }
             }
         }
 
-        // Missing value
+        // Missing parts value
 
-        private float missingValueCache = -1f;
+        private float cachedMissingValue = -1f;
 
         public float MissingValue
         {
             get
             {
-                if ( missingValueCache == -1f )
+                if ( cachedMissingValue == -1f )
                 {
                     this.UpdateMissingValue();
                 }
 
-                return missingValueCache;
+                return cachedMissingValue;
             }
         }
 
-        public float UpdateMissingValue()
+        protected float UpdateMissingValue()
         {
-            missingValueCache = 0f;
+            cachedMissingValue = 0f;
 
             foreach ( var missingPart in this.MissingParts )
             {                
-                missingValueCache += missingPart.BaseMarketValue * 0.8f;
+                cachedMissingValue += missingPart.BaseMarketValue * 0.8f;
             }
             
             foreach ( var subPart in this.childPartsIncluded )
@@ -195,12 +195,19 @@ namespace OrenoMSE
 
                 if ( sComp != null )
                 {
-                    sComp.UpdateMissingValue();
-                    missingValueCache += sComp.MissingValue;
+                    cachedMissingValue += sComp.MissingValue;
                 }
             }
 
-            return Mathf.Clamp( missingValueCache, 0f, this.parent.def.BaseMarketValue * 0.8f );
+            return Mathf.Clamp( cachedMissingValue, 0f, this.parent.def.BaseMarketValue * 0.8f );
+        }
+
+
+
+        public void DirtyCache()
+        {
+            cachedMissingParts = null;
+            cachedMissingValue = -1f;
         }
 
     }

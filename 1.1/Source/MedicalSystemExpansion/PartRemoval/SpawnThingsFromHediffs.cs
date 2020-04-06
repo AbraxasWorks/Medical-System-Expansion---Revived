@@ -121,7 +121,7 @@ namespace OrenoMSE.HarmonyPatches
                     }
                 }
 
-                comp.UpdateMissingParts();
+                comp.DirtyCache();
             }
         }
 
