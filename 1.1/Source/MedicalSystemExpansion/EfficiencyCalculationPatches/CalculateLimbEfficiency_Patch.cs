@@ -27,19 +27,12 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 			int totLimbs = 0;
 			int functionalLimbs = 0;
 
-			Func<BodyPartRecord, float> cachedCPE = null;
+			Func<BodyPartRecord, float> CalculatePartEfficiency = null;
 
 			foreach ( BodyPartRecord limbCore in body.GetPartsWithTag( limbCoreTag ) )
 			{
 				//Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
 				
-				// part efficiency lambda
-
-				Func<BodyPartRecord, float> CalculatePartEfficiency;
-				if ( (CalculatePartEfficiency = cachedCPE) == null )
-				{
-					CalculatePartEfficiency = (cachedCPE = ( BodyPartRecord part ) => PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, part, impactors ));
-				}
 
 				// segments
 
@@ -74,9 +67,8 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				{
 					float segmentEff = PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, limbSegment, impactors );
 					limbEff += segmentEff;
-					minSegmentEff = Mathf.Min(segmentEff, minSegmentEff);
+					minSegmentEff = Mathf.Min(segmentEff, minSegmentEff); // keep track of min
 
-					//Log.Message( limbSegment.customLabel + " " + segmentEff );
 
 					if ( segmentEff > 0f ) functionalLimbSegments++; // part works
 					totLimbSegments++;
@@ -85,7 +77,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				if ( totLimbSegments > 0 && functionalLimbSegments == totLimbSegments ) // all parts are working 
 				{
 					limbEff /= totLimbSegments; // average of segments and core
-					limbEff = Mathf.Lerp( limbEff, minSegmentEff, 0.5f );
+					limbEff = Mathf.Lerp( limbEff, minSegmentEff, 0.7f );
 				}
 				else
 				{
@@ -100,13 +92,22 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 				if ( limbCore.HasChildParts( limbDigitTag ) )
 				{
 
-					IEnumerable<BodyPartRecord> childParts =
+					IEnumerable<BodyPartRecord> digits =
 						from p in limbCore.GetChildParts( limbDigitTag )
 						where !partsToIgnore.Contains( p.def )
 						select p ;
 
-					if ( childParts.Any() )
-						limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * childParts.Average( CalculatePartEfficiency ) ), appendageWeight );
+					if ( digits.Any() )
+					{
+						// part efficiency lambda
+
+						if ( CalculatePartEfficiency == null )
+						{
+							CalculatePartEfficiency = ( BodyPartRecord part ) => PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, part, impactors );
+						}
+
+						limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * digits.Average( CalculatePartEfficiency ) ), appendageWeight );
+					}
 
 				}
 
