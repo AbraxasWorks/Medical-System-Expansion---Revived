@@ -114,9 +114,18 @@ namespace OrenoMSE.PartInstallation
 					}
 					if ( !hasFoundARec )
 					{
-						Log.Error( "[MSE] Couldn't install " + childThing.Label );
-						childThing.Position = pawn.Position;
-						childThing.SpawnSetup( pawn.Map, false );
+						if ( pawn.Map != null && pawn.Position != null )
+						{
+							GenPlace.TryPlaceThing( childThing, pawn.Position, pawn.Map, ThingPlaceMode.Near );
+						}
+						else
+						{
+							childThing.Destroy();
+						}
+						
+						//Log.Error( "[MSE] Couldn't install " + childThing.Label );
+						//childThing.Position = pawn.Position;
+						//childThing.SpawnSetup( pawn.Map, false );
 					}
 				}
 				break; // after the first ingredient with children stop (it's the part that has just been installed before recursion)
