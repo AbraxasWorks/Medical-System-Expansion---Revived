@@ -20,22 +20,15 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags[li="Advanced"]</xpath>
-				<success>Invert</success>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags</xpath>
-				<order>Append</order>
-				<value>
-					<li>Advanced</li>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags[li="Advanced"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[@ParentName="BasePlayerPawnKind"][defName="Colonist"]/techHediffsTags</xpath>
+			<order>Append</order>
+			<value>
+				<li>Advanced</li>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>

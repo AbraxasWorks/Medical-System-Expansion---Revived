@@ -12,40 +12,26 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="Archotech"]</xpath>
-				<success>Invert</success>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
-				<order>Append</order>
-				<value>
-					<li>Archotech</li>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="Archotech"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+			<order>Append</order>
+			<value>
+				<li>Archotech</li>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="ArchotechWeapon"]</xpath>
-				<success>Invert</success>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
-				<order>Append</order>
-				<value>
-					<li>ArchotechWeapon</li>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags[li="ArchotechWeapon"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+			<order>Append</order>
+			<value>
+				<li>ArchotechWeapon</li>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>
