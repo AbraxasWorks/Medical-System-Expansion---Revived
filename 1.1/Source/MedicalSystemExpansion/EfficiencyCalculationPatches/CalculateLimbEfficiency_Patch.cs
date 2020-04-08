@@ -31,7 +31,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 
 			foreach ( BodyPartRecord limbCore in body.GetPartsWithTag( limbCoreTag ) )
 			{
-				//Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
+				Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
 				
 
 				// segments
@@ -49,15 +49,11 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 						where modExt != null
 						from p in modExt.ignoredSubParts
 						select p );
-
-				//Log.Message( "Ignored subparts: " + partsToIgnore.Count );
-
+				
 
 				// segment calculations
 
-				float limbEff = 0f;
-				float minSegmentEff = 1f;
-				int functionalLimbSegments = 0;
+				float limbEff = 1f;
 				int totLimbSegments = 0;
 
 
@@ -66,25 +62,15 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 														select p )
 				{
 					float segmentEff = PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, limbSegment, impactors );
-					limbEff += segmentEff;
-					minSegmentEff = Mathf.Min(segmentEff, minSegmentEff); // keep track of min
+					limbEff *= segmentEff;
 
-
-					if ( segmentEff > 0f ) functionalLimbSegments++; // part works
 					totLimbSegments++;
 				}
 
-				if ( totLimbSegments > 0 && functionalLimbSegments == totLimbSegments ) // all parts are working 
-				{
-					limbEff /= totLimbSegments; // average of segments and core
-					limbEff = Mathf.Lerp( limbEff, minSegmentEff, 0.7f );
-				}
-				else
-				{
-					limbEff = 0; // missing segments
-				}
+				limbEff = Mathf.Pow( limbEff, 2f / totLimbSegments ); // square of the geometric mean of segments
 
-				//Log.Message( "parts: " + functionalLimbSegments + "/" + totLimbSegments + "; eff: " + limbEff );
+
+				//Log.Message( "parts: " + totLimbSegments + "; eff: " + limbEff );
 
 
 				// digit calculations
@@ -106,12 +92,14 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 							CalculatePartEfficiency = ( BodyPartRecord part ) => PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord( diffSet, part, impactors );
 						}
 
-						limbEff = Mathf.Lerp( limbEff, Mathf.Sqrt( limbEff * digits.Average( CalculatePartEfficiency ) ), appendageWeight );
+						limbEff = Mathf.Lerp( limbEff, limbEff * digits.Average( CalculatePartEfficiency ), appendageWeight );
 					}
 
 				}
 
-				//Log.Message( "with fingers: " + limbEff );
+				limbEff = Mathf.Sqrt( limbEff );
+
+				Log.Message( "with fingers: " + limbEff ); //
 
 				totLimbEff += limbEff;
 				totLimbs++;
