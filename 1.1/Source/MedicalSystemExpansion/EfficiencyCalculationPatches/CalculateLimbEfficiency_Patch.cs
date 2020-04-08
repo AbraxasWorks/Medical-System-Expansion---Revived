@@ -31,7 +31,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 
 			foreach ( BodyPartRecord limbCore in body.GetPartsWithTag( limbCoreTag ) )
 			{
-				Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
+				//Log.Message( "limb efficiency of " + diffSet.pawn.Name + ", " + limbCore.customLabel );
 				
 
 				// segments
@@ -99,7 +99,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
 
 				limbEff = Mathf.Sqrt( limbEff );
 
-				Log.Message( "with fingers: " + limbEff ); //
+				//Log.Message( "with fingers: " + limbEff ); //
 
 				totLimbEff += limbEff;
 				totLimbs++;

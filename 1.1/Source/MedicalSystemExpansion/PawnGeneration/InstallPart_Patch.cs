@@ -35,7 +35,7 @@ namespace OrenoMSE.PawnGeneration
 
         public static List<Thing> SingletonFromDef ( ThingDef partDef )
         {
-            Log.Message( "Generated pawn with " + partDef.defName );
+            //Log.Message( "Generated pawn with " + partDef.defName );
 
             var compProp = partDef.GetCompProperties<CompProperties_CompIncludedChildParts>();
             if ( compProp != null )

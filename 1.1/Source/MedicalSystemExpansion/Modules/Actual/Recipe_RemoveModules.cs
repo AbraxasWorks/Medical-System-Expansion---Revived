@@ -21,11 +21,11 @@ namespace OrenoMSE.Modules.Actual
 									where x is Hediff_ModuleAdded
 									select x )
 			{
-				Log.Message( "Remove module " + hediff.Label );
+				//Log.Message( "Remove module " + hediff.Label );
 				yield return hediff.Part;
 			}
 
-			Log.Message( "Stopped looking for modules" );
+			//Log.Message( "Stopped looking for modules" );
 
 			yield break; 
         }

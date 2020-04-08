@@ -38,7 +38,7 @@ namespace OrenoMSE.Modules
             {
                 if ( moduleSlot == null  )
                 {
-                    Log.Message( "Adding slot " + this.parent.pawn.Name + " " + this.parent.Part.Label );
+                    //Log.Message( "Adding slot " + this.parent.pawn.Name + " " + this.parent.Part.Label );
 
                     // create the slot
 
@@ -60,7 +60,7 @@ namespace OrenoMSE.Modules
         {
             currentModules++;
 
-            Log.Message( "Added module to " + this.parent.Label );
+            //Log.Message( "Added module to " + this.parent.Label );
 
             if (currentModules > this.Props.maxModules )
             {
@@ -74,7 +74,7 @@ namespace OrenoMSE.Modules
         {
             currentModules--;
 
-            Log.Message( "Removed module from " + this.parent.Label );
+            //Log.Message( "Removed module from " + this.parent.Label );
 
             UpdateSlotHediff();
         }
