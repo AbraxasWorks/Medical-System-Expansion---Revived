@@ -101,9 +101,7 @@ namespace OrenoMSE.PartInstallation
 							childThing.Destroy();
 						}
 
-						//Log.Error( "[MSE] Couldn't install " + childThing.Label );
-						//childThing.Position = pawn.Position;
-						//childThing.SpawnSetup( pawn.Map, false );
+						Log.Warning( "[MSE] Couldn't install " + childThing.Label );
 					}
 				}
 				break; // after the first ingredient with children stop (it's the part that has just been installed before recursion)
