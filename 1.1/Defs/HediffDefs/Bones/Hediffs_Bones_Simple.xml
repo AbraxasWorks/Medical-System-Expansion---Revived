@@ -11,6 +11,10 @@
     <descriptionHyperlinks>
       <ThingDef>SimpleProstheticClavicle</ThingDef>
     </descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.75</partEfficiency>
+    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">

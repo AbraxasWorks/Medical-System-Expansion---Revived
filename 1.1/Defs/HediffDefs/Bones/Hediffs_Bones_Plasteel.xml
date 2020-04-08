@@ -14,6 +14,7 @@
     <addedPartProps>
       <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.10</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -78,6 +79,7 @@
     <addedPartProps>
       <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.10</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -142,6 +144,7 @@
     <addedPartProps>
       <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.10</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -206,6 +209,7 @@
     <addedPartProps>
       <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.10</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
@@ -270,6 +274,7 @@
     <addedPartProps>
       <solid>true</solid>
       <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.10</partEfficiency>
     </addedPartProps>
   </HediffDef>
 
