@@ -147,7 +147,7 @@ namespace OrenoMSE
 
             if ( this.Props != null )
             {
-                LinkedList<ThingDef> defsIncluded = new LinkedList<ThingDef>( from x in this.childPartsIncluded select x.def );
+                List<ThingDef> defsIncluded = new List<ThingDef>( from x in this.childPartsIncluded select x.def );
             
                 foreach ( ThingDef expectedDef in this.Props.standardChildren )
                 {
