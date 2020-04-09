@@ -292,22 +292,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_VerbGiver">
-                  <tools>
-                    <li>
-                      <label>talon</label>
-                      <capacities>
-                        <li>Scratch</li>
-                      </capacities>
-                      <power>15</power>                      <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
-                      <armorPenetration>0.15</armorPenetration>
-                      <cooldownTime>1.5</cooldownTime>
-                      <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-                    </li>
-                  </tools>
-                </li>
-              </comps>
+              <!-- verbs coopied from basegame -->
               <spawnThingOnRemoved>HandTalon</spawnThingOnRemoved>
             </HediffDef>
 
@@ -353,21 +338,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_VerbGiver">
-                  <tools>
-                    <li>
-                      <label>blade</label>
-                      <capacities>
-                        <li>Cut</li>
-                      </capacities>
-                      <power>18</power>
-                      <cooldownTime>2</cooldownTime>
-                      <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-                    </li>
-                  </tools>
-                </li>
-              </comps>
+              <!-- verbs coopied from basegame -->
               <spawnThingOnRemoved>ElbowBlade</spawnThingOnRemoved>
             </HediffDef>
 
@@ -413,22 +384,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_VerbGiver">
-                  <tools>
-                    <li>
-                      <label>spike</label>
-                      <capacities>
-                        <li>Stab</li>
-                      </capacities>
-                      <power>22</power>                      <!-- More power and AP but slower than other compact weapons -->
-                      <armorPenetration>0.38</armorPenetration>
-                      <cooldownTime>2.6</cooldownTime>
-                      <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-                    </li>
-                  </tools>
-                </li>
-              </comps>
+              <!-- verbs coopied from basegame -->
               <spawnThingOnRemoved>KneeSpike</spawnThingOnRemoved>
             </HediffDef>
 
@@ -474,22 +430,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <comps>
-                <li Class="HediffCompProperties_VerbGiver">
-                  <tools>
-                    <li>
-                      <label>venom talon</label>
-                      <capacities>
-                        <li>ScratchToxic</li>
-                      </capacities>
-                      <power>11</power>                      <!-- Toxic and fast but with poor armor penetration -->
-                      <armorPenetration>0.15</armorPenetration>
-                      <cooldownTime>1.5</cooldownTime>
-                      <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-                    </li>
-                  </tools>
-                </li>
-              </comps>
+              <!-- verbs coopied from basegame -->
               <spawnThingOnRemoved>VenomTalon</spawnThingOnRemoved>
             </HediffDef>
 
@@ -600,6 +541,28 @@
           </value>
         </li>
 
+        <!-- copy melee verbs from basegame -->
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
+          <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="HandTalonModule"]</xpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="HandTalon"]/comps</fromxpath>
+        </li>
+
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
+          <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="ElbowBladeModule"]</xpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="ElbowBlade"]/comps</fromxpath>
+        </li>
+
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
+          <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="KneeSpikeModule"]</xpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="KneeSpike"]/comps</fromxpath>
+        </li>
+
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
+          <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="VenomTalonModule"]</xpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="VenomTalon"]/comps</fromxpath>
+        </li>
+
+
         <!-- Add module recipe hyperlinks to thingdefs -->
 
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
@@ -637,3 +600,4 @@
   </Operation>
 
 </Patch>
+
