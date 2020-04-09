@@ -335,7 +335,6 @@
     <Compile Include="PartInstallation\InstallationUtilities.cs" />
     <Compile Include="PartRemoval\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="MSE_SafeReflections.cs" />
-    <Compile Include="PartRemoval\Pawn_HealthTracker_RestorePartRecursiveInt_Patch.cs" />
     <Compile Include="PartRemoval\SpawnNaturalPartIfClean.cs" />
     <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
