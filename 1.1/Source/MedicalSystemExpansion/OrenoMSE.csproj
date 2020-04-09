@@ -364,8 +364,8 @@
     <Compile Include="CompIncludedChildParts\CompIncludedChildParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />
-    <Compile Include="XpathPatches\PatchOperationAddCopy.cs" />
-    <Compile Include="XpathPatches\PatchOperationAddToList.cs" />
+    <Compile Include="XpathPatches\PatchOperationAddOrMergeCopy.cs" />
+    <Compile Include="XpathPatches\PatchOperationAddOrMerge.cs" />
     <Compile Include="XpathPatches\PatchOperationOffsetField.cs" />
   </ItemGroup>
   <ItemGroup>

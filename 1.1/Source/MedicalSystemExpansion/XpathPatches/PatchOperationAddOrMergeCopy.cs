@@ -5,7 +5,7 @@ using Verse;
 
 namespace OrenoMSE.XpathPatches
 {
-    internal class PatchOperationAddCopy : PatchOperationPathed
+    internal class PatchOperationAddOrMergeCopy : PatchOperationPathed
     {
 
         protected string fromxpath;
@@ -67,19 +67,15 @@ namespace OrenoMSE.XpathPatches
                         }
                     }
                 }
-
-
-
             }
-
 
             return result;
         }
 
 
-        private bool mergeIfExisting = true;
+        private readonly bool mergeIfExisting = true;
 
-        private Order order = Order.Append;
+        private readonly Order order = Order.Append;
 
         private enum Order
         {

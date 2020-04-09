@@ -27,15 +27,16 @@
           </value>
         </li>
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
-          <list>comps</list>
           <value>
-            <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-              <standardChildren>
-                <li>HookHand</li>
-              </standardChildren>
-            </li>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>HookHand</li>
+                </standardChildren>
+              </li>
+            </comps>
           </value>
         </li>
 
@@ -69,7 +70,7 @@
         </li>
 
         <!-- wooden foot -->
-        
+
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenFoot"]</xpath>
           <value>

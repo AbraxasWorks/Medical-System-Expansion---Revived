@@ -15,17 +15,18 @@
 
         <!-- Simple arm -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
-          <list>comps</list>
           <value>
-            <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-              <standardChildren>
-                <li>SimpleProstheticHand</li>
-                <li>SimpleProstheticHumerus</li>
-                <li>SimpleProstheticRadius</li>
-              </standardChildren>
-            </li>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>SimpleProstheticHand</li>
+                  <li>SimpleProstheticHumerus</li>
+                  <li>SimpleProstheticRadius</li>
+                </standardChildren>
+              </li>
+            </comps>
           </value>
         </li>
 
@@ -40,53 +41,56 @@
 
         <!-- Simple leg -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticLeg"]</xpath>
-          <list>comps</list>
           <value>
-            <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-              <standardChildren>
-                <li>SimpleProstheticFoot</li>
-                <li>SimpleProstheticFemur</li>
-                <li>SimpleProstheticTibia</li>
-              </standardChildren>
-            </li>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>SimpleProstheticFoot</li>
+                  <li>SimpleProstheticFemur</li>
+                  <li>SimpleProstheticTibia</li>
+                </standardChildren>
+              </li>
+            </comps>
           </value>
         </li>
 
         <!-- Simple hand -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
-          <list>comps</list>
           <value>
-            <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-              <standardChildren>
-                <li>SimpleProstheticFinger</li>
-                <li>SimpleProstheticFinger</li>
-                <li>SimpleProstheticFinger</li>
-                <li>SimpleProstheticFinger</li>
-                <li>SimpleProstheticFinger</li>
-              </standardChildren>
-            </li>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>SimpleProstheticFinger</li>
+                  <li>SimpleProstheticFinger</li>
+                  <li>SimpleProstheticFinger</li>
+                  <li>SimpleProstheticFinger</li>
+                  <li>SimpleProstheticFinger</li>
+                </standardChildren>
+              </li>
+            </comps>
           </value>
         </li>
 
         <!-- Simple foot -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddToList">
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
-          <list>comps</list>
           <value>
-            <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
-              <standardChildren>
-                <li>SimpleProstheticToe</li>
-                <li>SimpleProstheticToe</li>
-                <li>SimpleProstheticToe</li>
-                <li>SimpleProstheticToe</li>
-                <li>SimpleProstheticToe</li>
-              </standardChildren>
-            </li>
+            <comps>
+              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <standardChildren>
+                  <li>SimpleProstheticToe</li>
+                  <li>SimpleProstheticToe</li>
+                  <li>SimpleProstheticToe</li>
+                  <li>SimpleProstheticToe</li>
+                  <li>SimpleProstheticToe</li>
+                </standardChildren>
+              </li>
+            </comps>
           </value>
         </li>
 
