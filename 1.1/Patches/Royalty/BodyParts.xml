@@ -296,12 +296,13 @@
                 <li Class="HediffCompProperties_VerbGiver">
                   <tools>
                     <li>
-                      <label>scratch</label>
+                      <label>talon</label>
                       <capacities>
                         <li>Scratch</li>
                       </capacities>
-                      <power>15</power>
-                      <cooldownTime>2</cooldownTime>
+                      <power>15</power>                      <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
+                      <armorPenetration>0.15</armorPenetration>
+                      <cooldownTime>1.5</cooldownTime>
                       <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
                     </li>
                   </tools>
@@ -356,11 +357,11 @@
                 <li Class="HediffCompProperties_VerbGiver">
                   <tools>
                     <li>
-                      <label>slice</label>
+                      <label>blade</label>
                       <capacities>
                         <li>Cut</li>
                       </capacities>
-                      <power>15</power>
+                      <power>18</power>
                       <cooldownTime>2</cooldownTime>
                       <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
                     </li>
@@ -416,12 +417,13 @@
                 <li Class="HediffCompProperties_VerbGiver">
                   <tools>
                     <li>
-                      <label>stab</label>
+                      <label>spike</label>
                       <capacities>
                         <li>Stab</li>
                       </capacities>
-                      <power>15</power>
-                      <cooldownTime>2</cooldownTime>
+                      <power>22</power>                      <!-- More power and AP but slower than other compact weapons -->
+                      <armorPenetration>0.38</armorPenetration>
+                      <cooldownTime>2.6</cooldownTime>
                       <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
                     </li>
                   </tools>
@@ -480,8 +482,9 @@
                       <capacities>
                         <li>ScratchToxic</li>
                       </capacities>
-                      <power>8.2</power>
-                      <cooldownTime>2</cooldownTime>
+                      <power>11</power>                      <!-- Toxic and fast but with poor armor penetration -->
+                      <armorPenetration>0.15</armorPenetration>
+                      <cooldownTime>1.5</cooldownTime>
                       <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
                     </li>
                   </tools>
