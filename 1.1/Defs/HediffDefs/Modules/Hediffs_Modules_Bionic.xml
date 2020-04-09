@@ -41,9 +41,6 @@
       </li>
     </stages>
     <spawnThingOnRemoved>MSE_RangedPlatformModule</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="MSE_ModuleBionic">
@@ -112,9 +109,6 @@
       </li>
     </stages>
     <spawnThingOnRemoved>MSE_MeleePlatformModule</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="MSE_ModuleBionic">
