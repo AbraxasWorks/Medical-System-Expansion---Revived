@@ -294,7 +294,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <!-- verbs coopied from basegame -->
+              <!-- verbs copied from basegame -->
               <spawnThingOnRemoved>HandTalon</spawnThingOnRemoved>
             </HediffDef>
 
@@ -340,7 +340,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <!-- verbs coopied from basegame -->
+              <!-- verbs copied from basegame -->
               <spawnThingOnRemoved>ElbowBlade</spawnThingOnRemoved>
             </HediffDef>
 
@@ -386,7 +386,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <!-- verbs coopied from basegame -->
+              <!-- verbs copied from basegame -->
               <spawnThingOnRemoved>KneeSpike</spawnThingOnRemoved>
             </HediffDef>
 
@@ -432,7 +432,7 @@
               <addedPartProps>
                 <solid>true</solid>
               </addedPartProps>
-              <!-- verbs coopied from basegame -->
+              <!-- verbs copied from basegame -->
               <spawnThingOnRemoved>VenomTalon</spawnThingOnRemoved>
             </HediffDef>
 
@@ -548,17 +548,14 @@
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="HandTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="HandTalon"]/comps</fromxpath>
         </li>
-
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="ElbowBladeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="ElbowBlade"]/comps</fromxpath>
         </li>
-
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="KneeSpikeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="KneeSpike"]/comps</fromxpath>
         </li>
-
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="VenomTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="VenomTalon"]/comps</fromxpath>
