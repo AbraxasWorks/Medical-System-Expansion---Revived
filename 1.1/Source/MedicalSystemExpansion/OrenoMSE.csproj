@@ -13,19 +13,6 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
@@ -37,6 +24,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>CS0649</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -320,7 +308,6 @@
     <Compile Include="Modules\ModuleUtilities.cs" />
     <Compile Include="Modules\HediffComp_ModuleHolder.cs" />
     <Compile Include="Modules\HediffCompProperties_ModuleHolder.cs" />
-    <Compile Include="old\HediffAddedPart_Patch.cs" />
     <Compile Include="PartInstallation\AddedPart_PostAdd.cs" />
     <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
     <Compile Include="PartInstallation\InstallationRestrictions.cs" />
@@ -328,38 +315,24 @@
     <Compile Include="PawnGeneration\InstallPart_Patch.cs" />
     <Compile Include="PrettyLabel\Hediff_PrettyLabel.cs" />
     <Compile Include="DontHealInjury\Harmony_HediffUtility.cs" />
-    <Compile Include="old\Harmony_HediffWithComps.cs" />
     <Compile Include="HediffCompGizmo\PawnDraftController.cs" />
-    <Compile Include="old\Harmony_RecipeInstallArtificialBodyPart.cs" />
     <Compile Include="PartInstallation\InstallationUtilities.cs" />
-    <Compile Include="PartRemoval\Harmony_RecipeRemoveBodyPart.cs" />
     <Compile Include="MSE_SafeReflections.cs" />
     <Compile Include="PartRemoval\SpawnNaturalPartIfClean.cs" />
     <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
-    <Compile Include="MSE_DefModExtension\MSE_ImplantSystem.cs" />
     <Compile Include="Modules\MSE_DefOf\MSE_HediffDefOf.cs" />
     <Compile Include="HediffCompGizmo\HediffComp_HediffGizmo.cs" />
-    <Compile Include="Implants\Comps\HediffComp_Painstopper.cs" />
-    <Compile Include="old\HediffComp_PartModule.cs" />
-    <Compile Include="old\HediffComp_PartSystem.cs" />
+    <Compile Include="Implants\HediffComp_Painstopper.cs" />
     <Compile Include="SelfRepair\HediffComp_PartSystemSelfRepair.cs" />
-    <Compile Include="old\HediffCompProperties_PartModule.cs" />
-    <Compile Include="old\HediffCompProperties_PartSystem.cs" />
     <Compile Include="SelfRepair\HediffCompProperties_PartSystemSelfRepair.cs" />
-    <Compile Include="Implants\Comps\HediffCompProperties_Painstopper.cs" />
-    <Compile Include="MSE_Hediff\Hediff_SurgerySupport.cs" />
+    <Compile Include="Implants\HediffCompProperties_Painstopper.cs" />
     <Compile Include="Modules\Actual\Hediff_ModuleAdded.cs" />
-    <Compile Include="old\Hediff_AddedPartSystem.cs" />
-    <Compile Include="old\Hediff_AddedPartSystemNoModule.cs" />
     <Compile Include="Modules\Slots\Hediff_ModuleSlot.cs" />
-    <Compile Include="Implants\Recipe_InstallImplantSystem.cs" />
     <Compile Include="PartInstallation\Recipe_InstallArtificialBodyPartWithChildren.cs" />
     <Compile Include="PartInstallation\Recipe_InstallNaturalBodyPartWithChildren.cs" />
-    <Compile Include="old\Recipe_RemoveBodyPartSystem.cs" />
-    <Compile Include="Implants\Recipe_RemoveImplantSystem.cs" />
     <Compile Include="CompIncludedChildParts\CompIncludedChildParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />

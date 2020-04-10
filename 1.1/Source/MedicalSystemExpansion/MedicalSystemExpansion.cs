@@ -35,22 +35,6 @@ namespace OrenoMSE
             return false;
         }
 
-        public static bool PartHasAdvancedImplantSystem ( Pawn pawn, BodyPartRecord record )
-        {
-            List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
-            for ( int i = 0; i < hediffs.Count; i++ )
-            {
-                if ( hediffs[i].def.HasModExtension<MSE_ImplantSystem>() && hediffs[i].Part == record )
-                {
-                    MSE_ImplantSystem implantSystem = hediffs[i].def.GetModExtension<MSE_ImplantSystem>();
-                    if ( implantSystem.isSpecial )
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
 
         /// <summary>
         /// If the Hediff has a DefModExtension of MSE_HediffPrettyLabel create the label using it.
