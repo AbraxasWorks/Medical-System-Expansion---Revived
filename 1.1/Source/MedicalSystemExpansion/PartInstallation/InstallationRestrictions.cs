@@ -7,7 +7,7 @@ namespace OrenoMSE.PartInstallation
 {
     public class InstallationRestrictions : DefModExtension
     {
-        private List<HediffDef> whitelist;
+        private readonly List<HediffDef> whitelist;
 
         public bool CompatibleWithPart ( BodyPartRecord part, HediffSet hediffSet )
         {

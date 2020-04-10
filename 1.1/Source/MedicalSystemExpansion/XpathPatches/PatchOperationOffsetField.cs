@@ -7,7 +7,7 @@ namespace OrenoMSE.XpathPatches
 {
     internal class PatchOperationOffsetField : PatchOperationPathed
     {
-        private double offset;
+        private readonly double offset;
 
         protected override bool ApplyWorker ( XmlDocument xml )
         {

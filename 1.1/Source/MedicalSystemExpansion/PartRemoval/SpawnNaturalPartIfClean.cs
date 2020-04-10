@@ -13,7 +13,7 @@ namespace OrenoMSE.HarmonyPatches
         internal class SpawnNaturalPartIfClean
         {
             [HarmonyPostfix]
-            public static void PostFix ( ref Thing __result, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
+            public static void PostFix ( ref Thing __result, Pawn pawn, BodyPartRecord part )
             {
                 // if it created a Thing check the children for Things to add
                 if ( __result != null && __result is ThingWithComps resWithComps )

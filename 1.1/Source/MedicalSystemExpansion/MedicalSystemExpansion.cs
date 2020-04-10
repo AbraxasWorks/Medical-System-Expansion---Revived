@@ -27,7 +27,7 @@ namespace OrenoMSE
             List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
             for ( int i = 0; i < hediffs.Count; i++ )
             {
-                if ( hediffs[i] is Hediff_Injury hediff_Injury && hediffs[i].Part == bodyPart && (!mustBeVisible || hediffs[i].Visible) )
+                if ( hediffs[i] is Hediff_Injury && hediffs[i].Part == bodyPart && (!mustBeVisible || hediffs[i].Visible) )
                 {
                     return true;
                 }
