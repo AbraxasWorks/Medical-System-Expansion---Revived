@@ -92,7 +92,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Clavicle</li>
+      <li>Arm</li>
     </appliedOnFixedBodyParts>
     <addsHediff>MSE_AdvancedRangedPlatformModule</addsHediff>
   </RecipeDef>
@@ -167,7 +167,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Clavicle</li>
+      <li>Arm</li>
     </appliedOnFixedBodyParts>
     <addsHediff>MSE_AdvancedMeleePlatformModule</addsHediff>
   </RecipeDef>
