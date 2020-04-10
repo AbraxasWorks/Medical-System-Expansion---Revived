@@ -8,11 +8,6 @@
     <match Class="PatchOperationSequence">
       <operations>
 
-        <!-- remove verbs -->
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm" or defName="AdvancedBionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-        </li>
-
         <!-- adv power arm -->
 
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
@@ -416,6 +411,11 @@
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
+        </li>
+
+        <!-- remove verbs -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm" or defName="AdvancedBionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
         </li>
 
       </operations>

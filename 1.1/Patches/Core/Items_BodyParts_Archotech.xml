@@ -25,10 +25,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-	</Operation>
-
 	<Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
 		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
 		<value>
@@ -42,6 +38,22 @@
 				</li>
 			</comps>
 		</value>
+	</Operation>
+
+	<!-- copy melee verbs -->
+
+	<Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
+		<value>
+			<comps/>
+		</value>
+	</Operation>
+	<Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
 

@@ -154,20 +154,7 @@
     <descriptionHyperlinks>
       <ThingDef>BionicHand</ThingDef>
     </descriptionHyperlinks>
-    <comps>
-      <li Class="HediffCompProperties_VerbGiver">
-        <tools>
-          <li>
-            <label>fist</label>
-            <capacities>
-              <li>Blunt</li>
-            </capacities>
-            <power>12</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-        </tools>
-      </li>
-    </comps>
+    <!-- verbs added with patch -->
     <spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
     <addedPartProps>
       <solid>true</solid>

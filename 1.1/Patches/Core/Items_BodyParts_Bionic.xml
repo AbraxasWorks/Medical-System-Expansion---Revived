@@ -25,9 +25,6 @@
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationRemove">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-  </Operation>
 
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]</xpath>
@@ -45,6 +42,20 @@
   </Operation>
 
   <!-- copy melee verbs -->
+
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]</xpath>
+    <value>
+      <comps/>
+    </value>
+  </Operation>
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]/comps</xpath>
+    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+  </Operation>
 
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
     <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
