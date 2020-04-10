@@ -365,7 +365,57 @@
               <addsHediff>AdvancedBionicShoulder</addsHediff>
             </RecipeDef>
 
+            <!-- power claw -->
+
+            <HediffDef ParentName="MSE_ModuleAddedBionic">
+              <defName>AdvancedPowerClaw</defName>
+              <label>advanced power claw</label>
+              <labelNoun>an advanced power claw</labelNoun>
+              <description>An installed advanced power claw.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedPowerClaw</ThingDef>
+              </descriptionHyperlinks>
+              <!-- verbs copied from the original def -->
+              <spawnThingOnRemoved>AdvancedPowerClaw</spawnThingOnRemoved>
+            </HediffDef>
+
+            <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+              <defName>InstallAdvancedPowerClaw</defName>
+              <label>install advanced power claw module</label>
+              <description>Installs advanced power claw.</description>
+              <descriptionHyperlinks>
+                <ThingDef>PowerClaw</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing advanced power claw.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AdvancedPowerClaw</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AdvancedPowerClaw</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Hand</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>AdvancedPowerClaw</addsHediff>
+            </RecipeDef>
+
           </value>
+        </li>
+
+        <!-- copy verbs -->
+        
+        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+          <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/comps</fromxpath>
         </li>
 
       </operations>
