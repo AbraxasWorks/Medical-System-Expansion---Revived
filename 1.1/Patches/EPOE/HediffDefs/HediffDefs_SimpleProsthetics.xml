@@ -8,11 +8,6 @@
     <match Class="PatchOperationSequence">
       <operations>
 
-        <!-- remove verbs -->
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-        </li>
-
         <!-- Simple arm -->
 
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
@@ -293,6 +288,12 @@
             </RecipeDef>
 
           </value>
+        </li>
+
+        <!-- remove verbs -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+          <success>Always</success> <!-- CE does this as well -->
         </li>
 
       </operations>

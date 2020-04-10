@@ -11,6 +11,7 @@
         <!-- remove verbs -->
         <li Class="PatchOperationRemove">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+          <success>Always</success> <!-- CE does this as well -->
         </li>
 
         <!-- steel arm -->
