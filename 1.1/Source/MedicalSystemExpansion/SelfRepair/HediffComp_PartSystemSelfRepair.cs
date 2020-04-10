@@ -16,7 +16,7 @@ namespace OrenoMSE
         {
             get
             {
-                if (MSE_VanillaExtender.PartHasInjury(base.Pawn, base.parent.Part, true))
+                if ( MSE_VanillaExtender.PartHasInjury( base.Pawn, base.parent.Part, true ) )
                 {
                     return true;
                 }
@@ -28,7 +28,7 @@ namespace OrenoMSE
         {
             get
             {
-                if (this.HasInjury)
+                if ( this.HasInjury )
                 {
                     return this.Props.repairLabel;
                 }
@@ -40,7 +40,7 @@ namespace OrenoMSE
         {
             get
             {
-                if (this.HasInjury)
+                if ( this.HasInjury )
                 {
                     return MedicalSystemExpansion.IconPartSystemDamaged;
                 }

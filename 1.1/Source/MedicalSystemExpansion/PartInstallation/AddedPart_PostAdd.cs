@@ -1,18 +1,12 @@
-﻿using System;
+﻿using HarmonyLib;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HarmonyLib;
-using RimWorld;
 using Verse;
 
 namespace OrenoMSE.PartInstallation
 {
-
     [HarmonyPatch( typeof( Hediff_AddedPart ) )]
     [HarmonyPatch( "PostAdd" )]
-    class AddedPart_PostAdd
+    internal class AddedPart_PostAdd
     {
         // swap calls to base.postAdd and restorepart
         // this allows to add hediffs in comppostpostadd
@@ -27,7 +21,6 @@ namespace OrenoMSE.PartInstallation
             List<CodeInstruction> baseCall = instructionList.GetRange( 0, baseCallLength );
             instructionList.RemoveRange( 0, baseCallLength );
 
-
             // insert after restore part
 
             int indexOfRestorePart = instructionList.FindIndex( i => i.Calls( typeof( Pawn_HealthTracker ).GetMethod( nameof( Pawn_HealthTracker.RestorePart ) ) ) ) + 1;
@@ -36,7 +29,6 @@ namespace OrenoMSE.PartInstallation
             // return
 
             return instructionList;
-
         }
     }
 }

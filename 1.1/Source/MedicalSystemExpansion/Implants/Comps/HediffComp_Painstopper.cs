@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using RimWorld;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace OrenoMSE
@@ -22,12 +22,12 @@ namespace OrenoMSE
             }
             set
             {
-                if (value == painstopperActive)
+                if ( value == painstopperActive )
                 {
                     return;
                 }
                 this.painstopperActive = value;
-                if (value)
+                if ( value )
                 {
                     this.parent.Severity = 0.5f;
                 }
@@ -38,7 +38,7 @@ namespace OrenoMSE
             }
         }
 
-        public override IEnumerable<Gizmo> CompGetGizmos()
+        public override IEnumerable<Gizmo> CompGetGizmos ()
         {
             Command_Toggle painstopper = new Command_Toggle
             {
@@ -49,29 +49,29 @@ namespace OrenoMSE
                 },
                 defaultLabel = this.Props.label,
                 defaultDesc = this.Props.description.CapitalizeFirst(),
-                icon = MSE_VanillaExtender.GetIcon(base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID(), this.Props.uiIconPath)
+                icon = MSE_VanillaExtender.GetIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID(), this.Props.uiIconPath )
             };
-            if (base.Pawn.Faction != Faction.OfPlayer)
+            if ( base.Pawn.Faction != Faction.OfPlayer )
             {
-                painstopper.Disable("CannotOrderNonControlled".Translate());
+                painstopper.Disable( "CannotOrderNonControlled".Translate() );
             }
-            if (base.Pawn.Downed)
+            if ( base.Pawn.Downed )
             {
-                painstopper.Disable("IsIncapped".Translate(base.Pawn.LabelShort, base.Pawn));
+                painstopper.Disable( "IsIncapped".Translate( base.Pawn.LabelShort, base.Pawn ) );
             }
             yield return painstopper;
         }
 
-        public override void CompExposeData()
+        public override void CompExposeData ()
         {
             base.CompExposeData();
-            Scribe_Values.Look<bool>(ref this.painstopperActive, "painstopperActive", true, false);
+            Scribe_Values.Look<bool>( ref this.painstopperActive, "painstopperActive", true, false );
         }
 
-        public override void CompPostPostRemoved()
+        public override void CompPostPostRemoved ()
         {
             base.CompPostPostRemoved();
-            MSE_VanillaExtender.ClearIcon(base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID());
+            MSE_VanillaExtender.ClearIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID() );
         }
 
         private bool painstopperActive = true;

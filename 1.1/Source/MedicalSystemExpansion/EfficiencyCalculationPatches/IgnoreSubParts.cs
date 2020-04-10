@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Verse;
-using RimWorld;
 
 namespace OrenoMSE.EfficiencyCalculationPatches
 {
-    class IgnoreSubParts : DefModExtension
+    internal class IgnoreSubParts : DefModExtension
     {
         // DefModExtension to add to hediffs of addedparts when they don't support certain child parts (i.e. peglegs have no foot or bones)
 
-
         public List<BodyPartDef> ignoredSubParts;
-
 
         public override IEnumerable<string> ConfigErrors ()
         {
@@ -30,8 +24,7 @@ namespace OrenoMSE.EfficiencyCalculationPatches
         }
     }
 
-    
-    static class Utilities
+    internal static class Utilities
     {
         public static bool PartShouldBeIgnored ( this HediffSet set, BodyPartRecord bodyPart )
         {
@@ -41,9 +34,9 @@ namespace OrenoMSE.EfficiencyCalculationPatches
                     .FirstOrDefault( ( Hediff_AddedPart h ) => h.Part == bodyPart.parent )? // added part on parent bodypartrecord
                     .def.GetModExtension<IgnoreSubParts>();
 
-                //bool res = 
+                //bool res =
                 return
-                    ( modExt != null && modExt.ignoredSubParts.Contains( bodyPart.def ) )
+                    (modExt != null && modExt.ignoredSubParts.Contains( bodyPart.def ))
                     || set.PartShouldBeIgnored( bodyPart.parent );
 
                 //if ( res )
@@ -54,5 +47,4 @@ namespace OrenoMSE.EfficiencyCalculationPatches
             return false;
         }
     }
-
 }

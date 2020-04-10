@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace OrenoMSE.HarmonyPatches
@@ -15,7 +15,7 @@ namespace OrenoMSE.HarmonyPatches
             [HarmonyPostfix]
             public static void PostFix ( ref Thing __result, Pawn pawn, BodyPartRecord part, IntVec3 pos, Map map )
             {
-                // if it created a Thing check the children for Things to add 
+                // if it created a Thing check the children for Things to add
                 if ( __result != null && __result is ThingWithComps resWithComps )
                 {
                     AddSubparts( ref resWithComps, pawn, part );
@@ -37,7 +37,7 @@ namespace OrenoMSE.HarmonyPatches
             foreach ( BodyPartRecord subPart in from x in part.GetDirectChildParts()
                                                 where pawn.health.hediffSet.GetNotMissingParts().Contains( x ) // subpart is missing: skip it
                                                 select x )
-            {                
+            {
                 Thing childThing = MakeNaturalPartIfClean( pawn, subPart );
 
                 if ( childThing != null )
@@ -67,12 +67,12 @@ namespace OrenoMSE.HarmonyPatches
         /// <param name="pawn">The pawn from which to check if the parts are ok</param>
         /// <param name="part">The part to drop as item</param>
         /// <returns>The Thing corresponding to the part if it is clean, with eventual subparts</returns>
-        public static Thing MakeNaturalPartIfClean( Pawn pawn, BodyPartRecord part )
+        public static Thing MakeNaturalPartIfClean ( Pawn pawn, BodyPartRecord part )
         {
             if ( MedicalRecipesUtility.IsCleanAndDroppable( pawn, part ) )
             {
                 Thing item = ThingMaker.MakeThing( part.def.spawnThingOnRemoved );
-                
+
                 if ( item is ThingWithComps itemWithComps )
                 {
                     AddSubparts( ref itemWithComps, pawn, part );

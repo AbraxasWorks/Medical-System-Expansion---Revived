@@ -19,8 +19,8 @@
 //                if ( check1 || check2 )
 //                {
 //                    yield return part;
-//                }   
-//            }         
+//                }
+//            }
 //            yield break;
 //        }
 
@@ -74,7 +74,7 @@
 //        {
 //            var check1 = pawn.health.hediffSet.hediffs.Any((Hediff d) => d.def.HasComp(typeof(HediffComp_PartSystem)) && d.Part == part);
 //            if (check1)
-//            {               
+//            {
 //                return "RemovePartSystem".Translate();
 //            }
 

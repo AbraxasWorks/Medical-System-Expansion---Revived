@@ -1,16 +1,13 @@
-﻿using System;
+﻿using HarmonyLib;
+using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using HarmonyLib;
-using RimWorld;
 using Verse;
 
 namespace OrenoMSE.HarmonyPatches
 {
     public class MedicalRecipesUtility_SpawnThingsFromHediffs_Patch
     {
-        
         [HarmonyPatch( typeof( MedicalRecipesUtility ) )]
         [HarmonyPatch( "SpawnThingsFromHediffs" )]
         internal class SpawnThingsFromHediffs
@@ -28,7 +25,6 @@ namespace OrenoMSE.HarmonyPatches
                 return false;
             }
         }
-
 
         /// <summary>
         /// Generates a list of all Things that can be dropped from a part and its subparts
@@ -58,28 +54,27 @@ namespace OrenoMSE.HarmonyPatches
 
                 // add each thing coming from the child hediffs
                 subThings.AddRange( MakeThingsFromHediffs( pawn, subPart, pos, map ) );
-
             }
 
             // for every thing makeable from hediffs on this part: add subparts if possible then return it
-            foreach ( Hediff hediff in from x in pawn.health.hediffSet.hediffs 
+            foreach ( Hediff hediff in from x in pawn.health.hediffSet.hediffs
                                        where x.Part == part
                                        select x ) // for every hediff on the part
             {
                 if ( hediff.def.spawnThingOnRemoved != null ) // if it spawns an item
                 {
                     Thing item = ThingMaker.MakeThing( hediff.def.spawnThingOnRemoved );
-                    
+
                     if ( item is ThingWithComps itemWithComps ) // compose if possible
                     {
                         AddSubparts( ref itemWithComps, ref subThings );
                     }
-                    
+
                     yield return item;
                 }
             }
 
-            // return other unclaimed subthings 
+            // return other unclaimed subthings
             foreach ( Thing item in subThings )
             {
                 yield return item;
@@ -97,7 +92,7 @@ namespace OrenoMSE.HarmonyPatches
         public static void AddSubparts ( ref ThingWithComps item, ref List<Thing> available, bool reset = true )
         {
             CompIncludedChildParts comp = item.TryGetComp<CompIncludedChildParts>();
-            
+
             if ( comp != null )
             {
                 if ( reset || comp.childPartsIncluded == null )
@@ -110,7 +105,7 @@ namespace OrenoMSE.HarmonyPatches
                 foreach ( Thing potential in available )
                 {
                     Thing match = available.Find( delegate ( Thing x ) { return comp.MissingParts.Contains( x.def ); } );
-                    
+
                     if ( match != null )
                     {
                         available.Remove( match );
@@ -124,6 +119,5 @@ namespace OrenoMSE.HarmonyPatches
                 comp.DirtyCache();
             }
         }
-
     }
 }

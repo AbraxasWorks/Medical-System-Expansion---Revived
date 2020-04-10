@@ -1,19 +1,14 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace OrenoMSE
 {
-
-    class CompProperties_CompIncludedChildParts : CompProperties
+    internal class CompProperties_CompIncludedChildParts : CompProperties
     {
         public CompProperties_CompIncludedChildParts ()
         {
             this.compClass = typeof( CompIncludedChildParts );
         }
-
 
         public override void ResolveReferences ( ThingDef parentDef )
         {
@@ -72,12 +67,9 @@ namespace OrenoMSE
                             this.standardChildren.Add( def );
                         }
                     }
-
-
                 }
                 catch { }
             }
-
         }
 
         public override IEnumerable<string> ConfigErrors ( ThingDef parentDef )
@@ -91,7 +83,6 @@ namespace OrenoMSE
                 yield return "[MSE] CompIncludedChildParts on " + parentDef.defName + " has no children";
             }
         }
-
 
         public List<ThingDef> standardChildren = new List<ThingDef>();
 

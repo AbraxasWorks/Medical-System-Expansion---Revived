@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
+using System.Linq;
 using Verse;
-
 
 namespace OrenoMSE.PartRemoval
 {
-
     // makes it so parts with implants are considered clean
 
-    [HarmonyPatch(typeof(MedicalRecipesUtility))]
+    [HarmonyPatch( typeof( MedicalRecipesUtility ) )]
     [HarmonyPatch( "IsClean" )]
     public static class IsClean_Patch
     {

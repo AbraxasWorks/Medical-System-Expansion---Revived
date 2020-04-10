@@ -1,16 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-
-using HarmonyLib;
-using UnityEngine;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace OrenoMSE.ApplyExtraHediffs
 {
-    static class Utilities
+    internal static class Utilities
     {
-
         public static void RecipeApplyExtraHediffs ( Recipe_Surgery surgery, Pawn pawn, BodyPartRecord bodyPart )
         {
             MSE_AdditionalHediff additionalHediffs = surgery.recipe.GetModExtension<MSE_AdditionalHediff>();
@@ -37,6 +31,5 @@ namespace OrenoMSE.ApplyExtraHediffs
             }
             return;
         }
-
     }
 }

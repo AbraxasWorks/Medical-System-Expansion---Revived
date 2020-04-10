@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 using Verse;
 
@@ -10,11 +6,9 @@ namespace OrenoMSE.Modules
 {
     public abstract class Hediff_ModuleAbstract : HediffWithComps
     {
-
         public override void PostAdd ( DamageInfo? dinfo )
         {
             base.PostAdd( dinfo );
-
 
             this.moduleHolderDiff =
                 (from c in this.pawn.health.hediffSet.GetAllComps()
@@ -24,7 +18,6 @@ namespace OrenoMSE.Modules
                  where mh.currentModules < mh.Props.maxModules
                  select mh.parent)
                 .First();
-
 
             // find a module holder comp in the same bodypart
             this.moduleHolderComp =
@@ -45,8 +38,6 @@ namespace OrenoMSE.Modules
             }
         }
 
-        
-
         public HediffComp_ModuleHolder ModuleHolder
         {
             get
@@ -60,13 +51,12 @@ namespace OrenoMSE.Modules
                 // if still null call error
                 if ( moduleHolderComp == null )
                 {
-                    Log.Error("[MSE] Null ModuleHolder for module " + this.Label );
+                    Log.Error( "[MSE] Null ModuleHolder for module " + this.Label );
                 }
 
                 return moduleHolderComp;
             }
         }
-
 
         public override void ExposeData ()
         {
@@ -77,6 +67,5 @@ namespace OrenoMSE.Modules
 
         private HediffWithComps moduleHolderDiff = null;
         private HediffComp_ModuleHolder moduleHolderComp = null;
-
     }
 }

@@ -8,17 +8,17 @@ namespace OrenoMSE
         {
             get
             {
-                return MSE_VanillaExtender.PrettyLabel(this);
+                return MSE_VanillaExtender.PrettyLabel( this );
             }
         }
 
-        public override void ExposeData()
+        public override void ExposeData ()
         {
             base.ExposeData();
-            if (Scribe.mode == LoadSaveMode.PostLoadInit && base.Part == null)
+            if ( Scribe.mode == LoadSaveMode.PostLoadInit && base.Part == null )
             {
-                Log.Error("Hediff_SurgerySupport has null part after loading.", false);
-                this.pawn.health.hediffSet.hediffs.Remove(this);
+                Log.Error( "Hediff_SurgerySupport has null part after loading.", false );
+                this.pawn.health.hediffSet.hediffs.Remove( this );
                 return;
             }
         }

@@ -1,24 +1,17 @@
-﻿using System;
+﻿using HarmonyLib;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
-
-using HarmonyLib;
-using OrenoMSE.HarmonyPatches;
 using Verse;
 
 namespace OrenoMSE.EfficiencyCalculationPatches
 {
-    class CalculateImmediatePartEfficiencyAndRecord_Patch
+    internal class CalculateImmediatePartEfficiencyAndRecord_Patch
     {
-        [HarmonyPatch( typeof(PawnCapacityUtility) )]
+        [HarmonyPatch( typeof( PawnCapacityUtility ) )]
         [HarmonyPatch( "CalculateImmediatePartEfficiencyAndRecord" )]
         internal class Patch
         {
-
             // short circuit to return 0 efficency if the part is missing
 
             [HarmonyPrefix]
@@ -29,10 +22,9 @@ namespace OrenoMSE.EfficiencyCalculationPatches
                 {
                     __result = 0f; // it has 0 efficiency
 
-                    // if possible add it to the list of things affecting the stat 
+                    // if possible add it to the list of things affecting the stat
                     if ( impactors != null )
                     {
-
                         if ( part.parent == null || diffSet.GetNotMissingParts().Contains( part.parent ) )
                         {
                             var imp = new PawnCapacityUtility.CapacityImpactorBodyPartHealth { bodyPart = part };
@@ -46,26 +38,21 @@ namespace OrenoMSE.EfficiencyCalculationPatches
                 return true;
             }
 
-
-
             // don't say it has some efficiency just because it is child of added part
 
-
             [HarmonyTranspiler]
-            static IEnumerable<CodeInstruction> Transpiler ( IEnumerable<CodeInstruction> instructions )
+            private static IEnumerable<CodeInstruction> Transpiler ( IEnumerable<CodeInstruction> instructions )
             {
                 var l = new List<CodeInstruction>( instructions );
 
                 return instructions.Skip( l.FindLastIndex( ( CodeInstruction i ) => i.opcode == OpCodes.Ldarg_0 ) ); // skip instructions before last loadarg0
             }
 
-
             // -- original function:
 
             /*
             public static float CalculateImmediatePartEfficiencyAndRecord ( HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors = null )
             {
-
                 if ( diffSet.AncestorHasDirectlyAddedParts( part ) )
                 {
                     return 1f;

@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Verse;
-using RimWorld;
-
 
 namespace OrenoMSE.PartInstallation
 {
     public class InstallationRestrictions : DefModExtension
     {
-        List<HediffDef> whitelist;
+        private List<HediffDef> whitelist;
 
         public bool CompatibleWithPart ( BodyPartRecord part, HediffSet hediffSet )
         {
             return this.whitelist == null
                 || (from h in hediffSet.hediffs
-                    where h.Part == part 
+                    where h.Part == part
                     where this.whitelist.Contains( h.def )
                     select h).Any();
         }
@@ -32,7 +27,5 @@ namespace OrenoMSE.PartInstallation
 
             yield break;
         }
-
     }
-    
 }

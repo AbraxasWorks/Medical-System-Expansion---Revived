@@ -7,17 +7,14 @@ namespace OrenoMSE.XpathPatches
 {
     internal class PatchOperationAddOrMerge : PatchOperationPathed
     {
-
         private readonly XmlContainer value;
 
         protected override bool ApplyWorker ( XmlDocument xml )
         {
             bool result = false;
 
-
             foreach ( var parentNode in xml.SelectNodes( xpath ).Cast<XmlNode>() )
             {
-
                 foreach ( var valNode in value.node.ChildNodes.Cast<XmlNode>() )
                 {
                     result = true;
@@ -64,15 +61,11 @@ namespace OrenoMSE.XpathPatches
                             }
                         }
                     }
-
                 }
             }
 
             return result;
         }
-
-
-
 
         private readonly Order order = Order.Append;
 
@@ -81,6 +74,5 @@ namespace OrenoMSE.XpathPatches
             Append,
             Prepend
         }
-
     }
 }

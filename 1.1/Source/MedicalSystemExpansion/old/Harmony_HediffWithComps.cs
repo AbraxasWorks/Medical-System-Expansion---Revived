@@ -1,7 +1,4 @@
-﻿using HarmonyLib;
-using Verse;
-
-namespace OrenoMSE.HarmonyPatches
+﻿namespace OrenoMSE.HarmonyPatches
 {
     //public class Harmony_HediffWithComps
     //{

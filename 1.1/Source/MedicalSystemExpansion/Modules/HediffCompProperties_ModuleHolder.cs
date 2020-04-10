@@ -1,23 +1,20 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Verse;
 
 namespace OrenoMSE.Modules
 {
     public class HediffCompProperties_ModuleHolder : HediffCompProperties
     {
-        
-        public HediffCompProperties_ModuleHolder()
+        public HediffCompProperties_ModuleHolder ()
         {
             this.compClass = typeof( HediffComp_ModuleHolder );
         }
-
 
         public override IEnumerable<string> ConfigErrors ( HediffDef parentDef )
         {
             foreach ( var ce in base.ConfigErrors( parentDef ) ) yield return ce;
 
-            if (this.maxModules <= 0)
+            if ( this.maxModules <= 0 )
             {
                 yield return "Comp has negative or no module slots";
             }
@@ -25,10 +22,6 @@ namespace OrenoMSE.Modules
             yield break;
         }
 
-
-
-
         public int maxModules = 1;
-
     }
 }

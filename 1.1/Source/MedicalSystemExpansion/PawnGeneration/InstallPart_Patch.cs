@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-using Verse;
+﻿using HarmonyLib;
 using RimWorld;
-using HarmonyLib;
+using System.Collections.Generic;
+using System.Reflection;
 using System.Reflection.Emit;
+using Verse;
 
 namespace OrenoMSE.PawnGeneration
 {
-    [HarmonyPatch(typeof( PawnTechHediffsGenerator ) )]
+    [HarmonyPatch( typeof( PawnTechHediffsGenerator ) )]
     [HarmonyPatch( "InstallPart" )]
     public static class InstallPart_Patch
     {
@@ -21,17 +16,16 @@ namespace OrenoMSE.PawnGeneration
         {
             foreach ( var instr in instructions )
             {
-                if ( instr.opcode == OpCodes.Ldsfld && instr.OperandIs( typeof(PawnTechHediffsGenerator).GetField("emptyIngredientsList", BindingFlags.NonPublic | BindingFlags.Static ) ) )
+                if ( instr.opcode == OpCodes.Ldsfld && instr.OperandIs( typeof( PawnTechHediffsGenerator ).GetField( "emptyIngredientsList", BindingFlags.NonPublic | BindingFlags.Static ) ) )
                 {
                     yield return new CodeInstruction( OpCodes.Ldarg_1 );
-                    yield return new CodeInstruction( OpCodes.Call, typeof( InstallPart_Patch ).GetMethod(nameof(SingletonFromDef)) );
+                    yield return new CodeInstruction( OpCodes.Call, typeof( InstallPart_Patch ).GetMethod( nameof( SingletonFromDef ) ) );
                 }
                 else
                     yield return instr;
             }
             yield break;
         }
-
 
         public static List<Thing> SingletonFromDef ( ThingDef partDef )
         {
@@ -46,19 +40,15 @@ namespace OrenoMSE.PawnGeneration
             return new List<Thing>();
         }
 
-
         //    public static void Postfix ( Pawn pawn, ThingDef partDef )
         //{
         //    var compProp = partDef.GetCompProperties<CompProperties_CompIncludedChildParts>();
         //    if ( compProp != null )
         //    {
-
-
         //        foreach ( var childpart in compProp.standardChildren )
         //        {
         //            if ( Rand.Chance(0.9f) )
         //            {
-
         //            }
         //        }
         //    }
@@ -78,6 +68,5 @@ namespace OrenoMSE.PawnGeneration
         //        }
         //    }
         //}
-
     }
 }

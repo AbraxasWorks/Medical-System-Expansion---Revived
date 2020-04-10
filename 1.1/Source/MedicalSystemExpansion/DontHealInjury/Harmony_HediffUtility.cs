@@ -15,7 +15,6 @@
 //            [HarmonyPostfix]
 //            public static void DontHealInjury(ref bool __result, Hediff hd)
 //            {
-
 //                // makes it so injuries on hediff_addedpart are permanent (they also cannot bleed)
 
 //                __result = __result ||
@@ -23,7 +22,7 @@
 //                     where h.Part == hd.Part
 //                     where h is Hediff_AddedPart
 //                     select h).Any();
-                
+
 //            }
 //        }
 //    }

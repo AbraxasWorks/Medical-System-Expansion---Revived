@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Verse;
-using RimWorld;
+﻿using OrenoMSE.Modules.Actual;
 using OrenoMSE.Modules.Slots;
-using OrenoMSE.Modules.Actual;
+using System.Linq;
+using Verse;
 
 namespace OrenoMSE.Modules
 {
@@ -20,14 +14,13 @@ namespace OrenoMSE.Modules
                       where h.Part == part
                       select h;
 
-
             // try to extract a slot or just get a module
 
             return (from h in set
-                        where h is Hediff_ModuleSlot
-                        select (Hediff_ModuleSlot)h) // from the slots in the set
+                    where h is Hediff_ModuleSlot
+                    select (Hediff_ModuleSlot)h) // from the slots in the set
                         .FirstOrFallback( // get the first or else get the first of the set
-                            set.FirstOrDefault());
+                            set.FirstOrDefault() );
         }
 
         public static void RemoveAndSpawnModule ( Hediff_ModuleAdded module )
@@ -51,11 +44,9 @@ namespace OrenoMSE.Modules
         {
             Hediff_ModuleAbstract m = GetModuleToReplace( pawn, part );
 
-
             // remove old hediff
             if ( m is Hediff_ModuleAdded ma )
                 RemoveAndSpawnModule( ma );
-
 
             pawn.health.AddHediff( def, part, null, null );
         }

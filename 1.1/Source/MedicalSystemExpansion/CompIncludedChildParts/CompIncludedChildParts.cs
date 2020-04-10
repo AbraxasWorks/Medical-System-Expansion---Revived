@@ -1,13 +1,12 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 using Verse;
 
 namespace OrenoMSE
 {
-    class CompIncludedChildParts : ThingComp
+    internal class CompIncludedChildParts : ThingComp
     {
         public CompProperties_CompIncludedChildParts Props
         {
@@ -18,7 +17,6 @@ namespace OrenoMSE
         }
 
         public List<Thing> childPartsIncluded = new List<Thing>();
-
 
         // Creation / Deletion
 
@@ -51,7 +49,6 @@ namespace OrenoMSE
             }
         }
 
-
         // Stats display
 
         public override string CompInspectStringExtra ()
@@ -65,7 +62,6 @@ namespace OrenoMSE
             }
             return null;
         }
-
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats ()
         {
@@ -101,11 +97,9 @@ namespace OrenoMSE
                         missingPartLinks,
                         false );
                 }
-
             }
             yield break;
         }
-
 
         // Save / Load
 
@@ -115,7 +109,6 @@ namespace OrenoMSE
             Scribe_Collections.Look<Thing>( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
         }
 
-
         // Missing Parts
 
         private List<ThingDef> cachedMissingParts;
@@ -124,16 +117,16 @@ namespace OrenoMSE
         {
             get
             {
-                if (cachedMissingParts == null)
+                if ( cachedMissingParts == null )
                 {
                     this.UpdateMissingParts();
                 }
-                
+
                 return cachedMissingParts;
             }
         }
 
-        protected void UpdateMissingParts()
+        protected void UpdateMissingParts ()
         {
             if ( cachedMissingParts == null )
             {
@@ -144,11 +137,10 @@ namespace OrenoMSE
                 cachedMissingParts.Clear();
             }
 
-
             if ( this.Props != null )
             {
                 List<ThingDef> defsIncluded = new List<ThingDef>( from x in this.childPartsIncluded select x.def );
-            
+
                 foreach ( ThingDef expectedDef in this.Props.standardChildren )
                 {
                     if ( defsIncluded.Contains( expectedDef ) )
@@ -157,7 +149,7 @@ namespace OrenoMSE
                     }
                     else
                     {
-                        cachedMissingParts.Add(expectedDef);
+                        cachedMissingParts.Add( expectedDef );
                     }
                 }
             }
@@ -180,15 +172,15 @@ namespace OrenoMSE
             }
         }
 
-        protected float UpdateMissingValue()
+        protected float UpdateMissingValue ()
         {
             cachedMissingValue = 0f;
 
             foreach ( var missingPart in this.MissingParts )
-            {                
+            {
                 cachedMissingValue += missingPart.BaseMarketValue * 0.8f;
             }
-            
+
             foreach ( var subPart in this.childPartsIncluded )
             {
                 var sComp = subPart.TryGetComp<CompIncludedChildParts>();
@@ -202,14 +194,10 @@ namespace OrenoMSE
             return Mathf.Clamp( cachedMissingValue, 0f, this.parent.def.BaseMarketValue * 0.8f );
         }
 
-
-
-        public void DirtyCache()
+        public void DirtyCache ()
         {
             cachedMissingParts = null;
             cachedMissingValue = -1f;
         }
-
     }
-
 }

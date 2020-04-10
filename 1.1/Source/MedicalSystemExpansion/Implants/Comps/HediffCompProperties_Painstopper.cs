@@ -4,9 +4,9 @@ namespace OrenoMSE
 {
     public class HediffCompProperties_Painstopper : HediffCompProperties
     {
-        public HediffCompProperties_Painstopper()
+        public HediffCompProperties_Painstopper ()
         {
-            this.compClass = typeof(HediffComp_Painstopper);
+            this.compClass = typeof( HediffComp_Painstopper );
         }
 
         public string label;

@@ -7,23 +7,19 @@ namespace OrenoMSE.XpathPatches
 {
     internal class PatchOperationAddOrMergeCopy : PatchOperationPathed
     {
-
         protected string fromxpath;
 
         protected override bool ApplyWorker ( XmlDocument xml )
         {
-
             XmlNode fromNode = xml.SelectSingleNode( fromxpath );
             if ( fromNode == null ) return false;
-
 
             bool result = false;
             foreach ( XmlNode parentNode in xml.SelectNodes( xpath ) )
             {
-
                 var valNode = fromNode.Clone();
 
-                var potentialMerge = ( from XmlNode x in parentNode.ChildNodes where x.Name == valNode.Name select x ).FirstOrDefault() ;
+                var potentialMerge = (from XmlNode x in parentNode.ChildNodes where x.Name == valNode.Name select x).FirstOrDefault();
                 if ( potentialMerge == null )
                 {
                     result = true;
@@ -44,7 +40,6 @@ namespace OrenoMSE.XpathPatches
                 }
                 else if ( this.mergeIfExisting )
                 {
-
                     result = true;
                     // do the merge
                     switch ( order )
@@ -72,7 +67,6 @@ namespace OrenoMSE.XpathPatches
             return result;
         }
 
-
         private readonly bool mergeIfExisting = true;
 
         private readonly Order order = Order.Append;
@@ -82,6 +76,5 @@ namespace OrenoMSE.XpathPatches
             Append,
             Prepend
         }
-
     }
 }
