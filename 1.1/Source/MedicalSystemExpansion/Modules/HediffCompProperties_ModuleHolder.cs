@@ -15,13 +15,14 @@ namespace OrenoMSE.Modules
 
         public override IEnumerable<string> ConfigErrors ( HediffDef parentDef )
         {
-            IEnumerable<string> baseCE = base.ConfigErrors( parentDef );
-            if (this.maxModules < 0)
+            foreach ( var ce in base.ConfigErrors( parentDef ) ) yield return ce;
+
+            if (this.maxModules <= 0)
             {
-                baseCE.Concat( "Comp has negative module slots" );
+                yield return "Comp has negative or no module slots";
             }
 
-            return baseCE;
+            yield break;
         }
 
 
