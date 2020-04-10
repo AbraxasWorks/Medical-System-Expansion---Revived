@@ -367,10 +367,6 @@
     <Compile Include="XpathPatches\PatchOperationAddOrMerge.cs" />
     <Compile Include="XpathPatches\PatchOperationOffsetField.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include=".editorconfig" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
