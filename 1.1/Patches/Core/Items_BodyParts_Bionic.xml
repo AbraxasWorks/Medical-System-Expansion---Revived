@@ -48,11 +48,7 @@
 
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
     <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
-    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/comps</fromxpath>
-  </Operation>
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
-    <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
-    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/stages</fromxpath>
+    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
   </Operation>
 
 

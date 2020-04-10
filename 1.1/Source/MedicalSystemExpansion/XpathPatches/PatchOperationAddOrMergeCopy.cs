@@ -11,54 +11,55 @@ namespace OrenoMSE.XpathPatches
 
         protected override bool ApplyWorker ( XmlDocument xml )
         {
-            XmlNode fromNode = xml.SelectSingleNode( fromxpath );
-            if ( fromNode == null ) return false;
-
             bool result = false;
-            foreach ( XmlNode parentNode in xml.SelectNodes( xpath ) )
-            {
-                var valNode = fromNode.Clone();
 
-                var potentialMerge = (from XmlNode x in parentNode.ChildNodes where x.Name == valNode.Name select x).FirstOrDefault();
-                if ( potentialMerge == null )
+            foreach ( XmlNode fromNode in xml.SelectNodes( fromxpath ) )
+            {
+                foreach ( XmlNode parentNode in xml.SelectNodes( xpath ) )
                 {
-                    result = true;
-                    // add the node normally
-                    switch ( order )
+                    var valNode = fromNode.Clone();
+
+                    var potentialMerge = (from XmlNode x in parentNode.ChildNodes where x.Name == valNode.Name select x).FirstOrDefault();
+                    if ( potentialMerge == null )
                     {
-                        case Order.Append:
+                        result = true;
+                        // add the node normally
+                        switch ( order )
                         {
-                            parentNode.AppendChild( parentNode.OwnerDocument.ImportNode( valNode, true ) );
-                            break;
-                        }
-                        case Order.Prepend:
-                        {
-                            parentNode.PrependChild( parentNode.OwnerDocument.ImportNode( valNode, true ) );
-                            break;
+                            case Order.Append:
+                            {
+                                parentNode.AppendChild( parentNode.OwnerDocument.ImportNode( valNode, true ) );
+                                break;
+                            }
+                            case Order.Prepend:
+                            {
+                                parentNode.PrependChild( parentNode.OwnerDocument.ImportNode( valNode, true ) );
+                                break;
+                            }
                         }
                     }
-                }
-                else if ( this.mergeIfExisting )
-                {
-                    result = true;
-                    // do the merge
-                    switch ( order )
+                    else if ( this.mergeIfExisting )
                     {
-                        case Order.Append:
+                        result = true;
+                        // do the merge
+                        switch ( order )
                         {
-                            foreach ( XmlNode node in valNode.ChildNodes )
+                            case Order.Append:
                             {
-                                potentialMerge.AppendChild( parentNode.OwnerDocument.ImportNode( node, true ) );
+                                foreach ( XmlNode node in valNode.ChildNodes )
+                                {
+                                    potentialMerge.AppendChild( parentNode.OwnerDocument.ImportNode( node, true ) );
+                                }
+                                break;
                             }
-                            break;
-                        }
-                        case Order.Prepend:
-                        {
-                            foreach ( XmlNode node in valNode.ChildNodes.Cast<XmlNode>().Reverse() )
+                            case Order.Prepend:
                             {
-                                potentialMerge.PrependChild( parentNode.OwnerDocument.ImportNode( node, true ) );
+                                foreach ( XmlNode node in valNode.ChildNodes.Cast<XmlNode>().Reverse() )
+                                {
+                                    potentialMerge.PrependChild( parentNode.OwnerDocument.ImportNode( node, true ) );
+                                }
+                                break;
                             }
-                            break;
                         }
                     }
                 }

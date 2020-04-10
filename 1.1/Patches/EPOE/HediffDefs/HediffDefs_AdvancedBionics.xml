@@ -415,7 +415,7 @@
         
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
-          <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/comps</fromxpath>
+          <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
 
       </operations>
