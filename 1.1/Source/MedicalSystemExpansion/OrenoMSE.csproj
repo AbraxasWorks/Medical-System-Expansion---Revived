@@ -318,7 +318,6 @@
     <Compile Include="Modules\Actual\Recipe_RemoveModules.cs" />
     <Compile Include="Modules\Hediff_ModuleAbstract.cs" />
     <Compile Include="Modules\ModuleUtilities.cs" />
-    <Compile Include="Modules\Slots\HarmonyHooks.cs" />
     <Compile Include="Modules\HediffComp_ModuleHolder.cs" />
     <Compile Include="Modules\HediffCompProperties_ModuleHolder.cs" />
     <Compile Include="old\HediffAddedPart_Patch.cs" />

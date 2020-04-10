@@ -11,8 +11,6 @@ namespace OrenoMSE.Modules
 {
     public class HediffComp_ModuleHolder : HediffComp
     {
-        
-        
         public HediffCompProperties_ModuleHolder Props
         {
             get
@@ -36,14 +34,13 @@ namespace OrenoMSE.Modules
             // has slots available
             if ( this.Props.maxModules - currentModules > 0 )
             {
-                if ( moduleSlot == null  )
+                if ( moduleSlot == null )
                 {
                     //Log.Message( "Adding slot " + this.parent.pawn.Name + " " + this.parent.Part.Label );
 
                     // create the slot
 
                     moduleSlot = (Hediff_ModuleSlot)HediffMaker.MakeHediff( MSE_HediffDefOf.MSE_ModuleSlot, this.parent.pawn, this.parent.Part );
-                    
 
                     this.parent.pawn.health.AddHediff( moduleSlot );
                 }
@@ -62,7 +59,7 @@ namespace OrenoMSE.Modules
 
             //Log.Message( "Added module to " + this.parent.Label );
 
-            if (currentModules > this.Props.maxModules )
+            if ( currentModules > this.Props.maxModules )
             {
                 Log.Error( "[MSE] Added too many modules to part " + this.parent.Label );
             }
@@ -79,12 +76,10 @@ namespace OrenoMSE.Modules
             UpdateSlotHediff();
         }
 
-
         public override void CompPostPostRemoved ()
         {
             base.CompPostPostRemoved();
         }
-
 
         public override void CompExposeData ()
         {
@@ -93,7 +88,6 @@ namespace OrenoMSE.Modules
             Scribe_Values.Look( ref currentModules, "currentModules" );
 
             Scribe_References.Look( ref moduleSlot, "moduleSlot" );
-
         }
 
         public int currentModules;
