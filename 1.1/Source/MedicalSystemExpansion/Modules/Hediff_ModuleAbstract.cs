@@ -4,20 +4,11 @@ using Verse;
 
 namespace OrenoMSE.Modules
 {
-    public abstract class Hediff_ModuleAbstract : HediffWithComps
+    public abstract class Hediff_ModuleAbstract : Hediff_Implant
     {
         public override void PostAdd ( DamageInfo? dinfo )
         {
             base.PostAdd( dinfo );
-
-            this.moduleHolderDiff =
-                (from c in this.pawn.health.hediffSet.GetAllComps()
-                 where c is HediffComp_ModuleHolder
-                 where c.parent.Part == this.Part
-                 let mh = (HediffComp_ModuleHolder)c
-                 where mh.currentModules < mh.Props.maxModules
-                 select mh.parent)
-                .First();
 
             // find a module holder comp in the same bodypart
             this.moduleHolderComp =
@@ -28,14 +19,8 @@ namespace OrenoMSE.Modules
                  where mh.currentModules < mh.Props.maxModules
                  select mh)
                 .First();
-        }
 
-        public override bool ShouldRemove
-        {
-            get
-            {
-                return false;
-            }
+            this.moduleHolderDiff = this.moduleHolderComp.parent; // store hediff as you can't save the comp
         }
 
         public HediffComp_ModuleHolder ModuleHolder
@@ -46,12 +31,11 @@ namespace OrenoMSE.Modules
                 if ( moduleHolderComp == null )
                 {
                     moduleHolderComp = moduleHolderDiff.TryGetComp<HediffComp_ModuleHolder>();
-                }
-
-                // if still null call error
-                if ( moduleHolderComp == null )
-                {
-                    Log.Error( "[MSE] Null ModuleHolder for module " + this.Label );
+                    // if still null call error
+                    if ( moduleHolderComp == null )
+                    {
+                        Log.Error( "[MSE] Null ModuleHolder for module " + this.Label );
+                    }
                 }
 
                 return moduleHolderComp;
@@ -62,7 +46,7 @@ namespace OrenoMSE.Modules
         {
             base.ExposeData();
 
-            Scribe_References.Look( ref moduleHolderDiff, "moduleHolder" );
+            Scribe_References.Look( ref moduleHolderDiff, "moduleHolder" ); // need to save the diff as the comp is not referenceable for some reason
         }
 
         private HediffWithComps moduleHolderDiff = null;

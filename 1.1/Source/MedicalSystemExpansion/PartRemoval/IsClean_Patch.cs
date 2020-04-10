@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using OrenoMSE.Modules;
 using RimWorld;
 using System.Linq;
 using Verse;
@@ -19,7 +20,7 @@ namespace OrenoMSE.PartRemoval
                 __result ||
                 !pawn.Dead && !(from x in pawn.health.hediffSet.hediffs
                                 where x.Part == part
-                                where !(x is Hediff_Implant) || x is Hediff_AddedPart
+                                where !(x is Hediff_Implant) || x is Hediff_AddedPart || x is Hediff_ModuleAbstract
                                 select x).Any();
         }
     }
