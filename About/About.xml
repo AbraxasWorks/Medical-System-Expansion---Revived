@@ -2,7 +2,7 @@
 <ModMetaData>
 
 	<name>Medical System Expansion 2 - Core Module</name>
-	<author>MSE Team</author>
+	<author>JonM0</author>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
@@ -10,7 +10,7 @@
 	<packageId>MSE2.Core</packageId>
 
 	<url>https://github.com/AbraxasWorks/Medical-System-Expansion---Revived</url>
-	<description>Version: 1.1.2.0
+	<description>Version: 2.0.0 [BETA]
 
 Improves how the game handles prosthetics by not discarding the subparts of added prostheses.
 
