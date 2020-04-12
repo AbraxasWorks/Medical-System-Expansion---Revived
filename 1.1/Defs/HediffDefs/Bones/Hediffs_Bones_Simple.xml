@@ -59,6 +59,11 @@
       <li>Clavicle</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticClavicle</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <onlyOnNatural>true</onlyOnNatural>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
   <!-- humerus -->
@@ -119,6 +124,11 @@
       <li>Humerus</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticHumerus</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <onlyOnNatural>true</onlyOnNatural>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
   <!-- radius -->
@@ -179,6 +189,11 @@
       <li>Radius</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticRadius</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <onlyOnNatural>true</onlyOnNatural>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
   <!-- femur -->
@@ -239,6 +254,11 @@
       <li>Femur</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticFemur</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <onlyOnNatural>true</onlyOnNatural>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
   <!-- tibia -->
@@ -299,6 +319,11 @@
       <li>Tibia</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticTibia</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <onlyOnNatural>true</onlyOnNatural>
+      </li>
+    </modExtensions>
   </RecipeDef>
 
 

@@ -25,7 +25,9 @@ namespace OrenoMSE.HediffHiding
             if ( !___showAllHediffs )
             {
                 __result = from h in __result
-                           where !(h is Hediff_AddedPart)
+                           where
+                            !(h is Hediff_AddedPart)
+                            || h.Part.parent == null
                             || !pawn.health.hediffSet.HasDirectlyAddedPartFor( h.Part.parent )
                             || pawn.health.hediffSet.GetInjuredParts().Contains( h.Part )
                            select h;

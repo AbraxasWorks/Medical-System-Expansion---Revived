@@ -1,6 +1,153 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- internal support -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechInternalSupport</defName>
+    <label>archotech internal support</label>
+    <labelNoun>a archotech internal support</labelNoun>
+    <description>An installed archotech internal support.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechInternalSupport</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>ArchotechInternalSupport</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+      <partEfficiency>1.20</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechInternalSupport</defName>
+    <label>archotech internal support</label>
+    <description>An artificial internal support built by an archotech. Useful replacement to have on hand for when a archotech arm or leg breaks.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallArchotechInternalSupport</RecipeDef>
+    </descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechInternalSupport</defName>
+    <label>install archotech internal support</label>
+    <description>Install a archotech internal support.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechInternalSupport</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech internal support.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechInternalSupport</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechInternalSupport</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Clavicle</li>
+      <li>Humerus</li>
+      <li>Radius</li>
+      <li>Femur</li>
+      <li>Tibia</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechInternalSupport</addsHediff>
+    <modExtensions>
+      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+        <whitelist>
+          <li>ArchotechArm</li>
+          <li>ArchotechLeg</li>
+        </whitelist>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <!-- archotech forearm -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechForearm</defName>
+    <label>archotech forearm</label>
+    <labelNoun>a archotech forearm</labelNoun>
+    <description>An installed bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechForearm</ThingDef>
+    </descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechForearm</defName>
+    <label>archotech forearm</label>
+    <description>One of the most sophisticated shoulder replacements.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallArchotechForearm</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <standardChildren>
+          <li>ArchotechHand</li>
+          <li>ArchotechInternalSupport</li>
+          <li>ArchotechInternalSupport</li>
+        </standardChildren>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechForearm</defName>
+    <label>install archotech forearm</label>
+    <description>Installs a archotech forearm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechForearm</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech forearm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechForearm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechForearm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechForearm</addsHediff>
+  </RecipeDef>
+
   <!-- foot -->
 
   <HediffDef ParentName="AddedBodyPartBase">

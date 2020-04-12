@@ -9,21 +9,11 @@
       <comps>
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
-            <li>BionicHand</li>
-            <li>PlasteelHumerus</li>
-            <li>PlasteelRadius</li>
+            <li>BionicForearm</li>
+            <li>BionicInternalSupport</li>
           </standardChildren>
         </li>
       </comps>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallBionicArm"]/appliedOnFixedBodyParts</xpath>
-    <value>
-      <appliedOnFixedBodyParts>
-        <li>Arm</li>
-      </appliedOnFixedBodyParts>
     </value>
   </Operation>
 
@@ -36,8 +26,8 @@
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>BionicFoot</li>
-            <li>PlasteelFemur</li>
-            <li>PlasteelTibia</li>
+            <li>BionicInternalSupport</li>
+            <li>BionicInternalSupport</li>
           </standardChildren>
         </li>
       </comps>

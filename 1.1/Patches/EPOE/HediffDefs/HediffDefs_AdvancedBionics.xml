@@ -27,36 +27,15 @@
             <comps>
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
-                  <li>AdvancedBionicHand</li>
-                  <li>PlasteelHumerus</li>
-                  <li>PlasteelRadius</li>
+                  <li>AdvancedPowerForearm</li>
+                  <li>AdvancedBionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
           </value>
         </li>
 
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallAdvancedPowerArm"]/appliedOnFixedBodyParts</xpath>
-          <value>
-            <appliedOnFixedBodyParts>
-              <li>Arm</li>
-            </appliedOnFixedBodyParts>
-          </value>
-        </li>
-
         <!-- adv bionic arm -->
-
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicArm"]</xpath>
-          <value>
-            <comps>
-              <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
-                <maxModules>1</maxModules>
-              </li>
-            </comps>
-          </value>
-        </li>
 
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
@@ -64,21 +43,11 @@
             <comps>
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
-                  <li>AdvancedBionicHand</li>
-                  <li>PlasteelHumerus</li>
-                  <li>PlasteelRadius</li>
+                  <li>AdvancedBionicForearm</li>
+                  <li>AdvancedBionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
-          </value>
-        </li>
-
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallAdvancedBionicArm"]/appliedOnFixedBodyParts</xpath>
-          <value>
-            <appliedOnFixedBodyParts>
-              <li>Arm</li>
-            </appliedOnFixedBodyParts>
           </value>
         </li>
 
@@ -102,8 +71,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFoot</li>
-                  <li>PlasteelFemur</li>
-                  <li>PlasteelTibia</li>
+                  <li>AdvancedBionicInternalSupport</li>
+                  <li>AdvancedBionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -165,6 +134,81 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
+
+            <!-- internal support -->
+
+            <HediffDef ParentName="addedPartAdvanced">
+              <defName>AdvancedBionicInternalSupport</defName>
+              <label>advanced bionic internal support</label>
+              <labelNoun>an advanced bionic internal support</labelNoun>
+              <description>An installed advanced bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedBionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <spawnThingOnRemoved>AdvancedBionicInternalSupport</spawnThingOnRemoved>
+              <addedPartProps>
+                <solid>true</solid>
+                <betterThanNatural>true</betterThanNatural>
+                <partEfficiency>1.15</partEfficiency>
+              </addedPartProps>
+            </HediffDef>
+
+            <ThingDef ParentName="Advanced">
+              <defName>AdvancedBionicInternalSupport</defName>
+              <label>advanced bionic internal support</label>
+              <description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallAdvancedBionicInternalSupport</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <Plasteel>8</Plasteel>
+              </costList>
+              <statBases>
+                <Mass>0.3</Mass>
+              </statBases>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryAdvanced">
+              <defName>InstallAdvancedBionicInternalSupport</defName>
+              <label>install advanced bionic internal support</label>
+              <description>Install an advanced bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedBionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing advanced bionic internal support.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AdvancedBionicInternalSupport</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AdvancedBionicInternalSupport</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Clavicle</li>
+                <li>Humerus</li>
+                <li>Radius</li>
+                <li>Femur</li>
+                <li>Tibia</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>AdvancedBionicInternalSupport</addsHediff>
+              <modExtensions>
+                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                  <whitelist>
+                    <li>AdvancedBionicArm</li>
+                    <li>AdvancedBionicLeg</li>
+                  </whitelist>
+                </li>
+              </modExtensions>
+            </RecipeDef>
+
 
             <!-- bionic finger -->
 
@@ -291,32 +335,37 @@
               <addsHediff>AdvancedBionicToe</addsHediff>
             </RecipeDef>
 
-            <!-- adv bionic shoulder -->
+            <!-- adv bionic forearm -->
 
             <HediffDef ParentName="addedPartAdvanced">
-              <defName>AdvancedBionicShoulder</defName>
-              <label>advanced bionic shoulder</label>
-              <labelNoun>an advanced bionic shoulder</labelNoun>
+              <defName>AdvancedBionicForearm</defName>
+              <label>advanced bionic forearm</label>
+              <labelNoun>an advanced bionic forearm</labelNoun>
               <description>An installed advanced bionic arm.</description>
               <descriptionHyperlinks>
-                <ThingDef>AdvancedBionicShoulder</ThingDef>
+                <ThingDef>AdvancedBionicForearm</ThingDef>
               </descriptionHyperlinks>
               <addedPartProps>
                 <partEfficiency>1.35</partEfficiency>
               </addedPartProps>
-              <spawnThingOnRemoved>AdvancedBionicShoulder</spawnThingOnRemoved>
+              <spawnThingOnRemoved>AdvancedBionicForearm</spawnThingOnRemoved>
+              <comps>
+                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                  <maxModules>1</maxModules>
+                </li>
+              </comps>
             </HediffDef>
 
             <ThingDef ParentName="Advanced">
-              <defName>AdvancedBionicShoulder</defName>
-              <label>advanced bionic shoulder</label>
+              <defName>AdvancedBionicForearm</defName>
+              <label>advanced bionic forearm</label>
               <description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
               <descriptionHyperlinks>
-                <RecipeDef>InstallAdvancedBionicShoulder</RecipeDef>
+                <RecipeDef>InstallAdvancedBionicForearm</RecipeDef>
               </descriptionHyperlinks>
               <costList>
-                <BionicShoulder>1</BionicShoulder>
-                <ComponentSpacer>5</ComponentSpacer>
+                <BionicForearm>1</BionicForearm>
+                <ComponentSpacer>3</ComponentSpacer>
               </costList>
               <statBases>
                 <Mass>7</Mass>
@@ -324,26 +373,27 @@
               <comps>
                 <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                   <standardChildren>
-                    <li>AdvancedBionicArm</li>
-                    <li>PlasteelClavicle</li>
+                    <li>AdvancedBionicHand</li>
+                    <li>AdvancedBionicInternalSupport</li>
+                    <li>AdvancedBionicInternalSupport</li>
                   </standardChildren>
                 </li>
               </comps>
             </ThingDef>
 
             <RecipeDef ParentName="SurgeryAdvanced">
-              <defName>InstallAdvancedBionicShoulder</defName>
-              <label>install advanced bionic shoulder</label>
-              <description>Installs advanced bionic shoulder.</description>
+              <defName>InstallAdvancedBionicForearm</defName>
+              <label>install advanced bionic forearm</label>
+              <description>Installs advanced bionic forearm.</description>
               <descriptionHyperlinks>
-                <ThingDef>AdvancedBionicShoulder</ThingDef>
+                <ThingDef>AdvancedBionicForearm</ThingDef>
               </descriptionHyperlinks>
-              <jobString>Installing advanced bionic shoulder.</jobString>
+              <jobString>Installing advanced bionic forearm.</jobString>
               <ingredients>
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>AdvancedBionicShoulder</li>
+                      <li>AdvancedBionicForearm</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -351,13 +401,167 @@
               </ingredients>
               <fixedIngredientFilter>
                 <thingDefs>
-                  <li>AdvancedBionicShoulder</li>
+                  <li>AdvancedBionicForearm</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <appliedOnFixedBodyParts>
-                <li>Shoulder</li>
+                <li>Arm</li>
               </appliedOnFixedBodyParts>
-              <addsHediff>AdvancedBionicShoulder</addsHediff>
+              <addsHediff>AdvancedBionicForearm</addsHediff>
+            </RecipeDef>
+
+            <!-- advanced power forearm -->
+
+            <HediffDef ParentName="addedPartAdvanced">
+              <defName>AdvancedPowerForearm</defName>
+              <label>advanced power forearm</label>
+              <labelNoun>an advanced power forearm</labelNoun>
+              <description>An installed advanced power forearm.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedPowerForearm</ThingDef>
+              </descriptionHyperlinks>
+              <addedPartProps>
+                <partEfficiency>1.25</partEfficiency>
+              </addedPartProps>
+              <spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
+              <comps>
+                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                  <maxModules>2</maxModules>
+                </li>
+              </comps>
+            </HediffDef>
+
+            <ThingDef ParentName="Advanced">
+              <defName>AdvancedPowerForearm</defName>
+              <label>advanced power forearm</label>
+              <description>One of the most sophisticated forearm replacements.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallAdvancedPowerForearm</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <PowerForearm>1</PowerForearm>
+                <ComponentSpacer>4</ComponentSpacer>
+              </costList>
+              <statBases>
+                <Mass>4.5</Mass>
+              </statBases>
+              <comps>
+                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                  <standardChildren>
+                    <li>AdvancedPowerHand</li>
+                    <li>AdvancedBionicInternalSupport</li>
+                    <li>AdvancedBionicInternalSupport</li>
+                  </standardChildren>
+                </li>
+              </comps>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryAdvanced">
+              <defName>InstallAdvancedPowerForearm</defName>
+              <label>install advanced power forearm</label>
+              <description>Installs an advanced power forearm.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedPowerForearm</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing advanced power forearm.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AdvancedPowerForearm</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AdvancedPowerForearm</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Arm</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>AdvancedPowerForearm</addsHediff>
+            </RecipeDef>
+
+            <!-- advanced power hand -->
+
+            <HediffDef ParentName="addedPartAdvanced">
+              <defName>AdvancedPowerHand</defName>
+              <label>advanced power hand</label>
+              <labelNoun>a advanced power hand</labelNoun>
+              <description>An installed advanced power hand.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedPowerHand</ThingDef>
+              </descriptionHyperlinks>
+              <addedPartProps>
+                <partEfficiency>1.30</partEfficiency>
+              </addedPartProps>
+              <spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
+              <comps>
+                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                  <maxModules>2</maxModules>
+                </li>
+              </comps>
+            </HediffDef>
+
+            <ThingDef ParentName="Advanced">
+              <defName>AdvancedPowerHand</defName>
+              <label>advanced power hand</label>
+              <description>One of the most sophisticated hand replacements.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallAdvancedPowerHand</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <PowerHand>1</PowerHand>
+                <ComponentSpacer>3</ComponentSpacer>
+              </costList>
+              <statBases>
+                <Mass>3.5</Mass>
+              </statBases>
+              <comps>
+                <!-- verbs added via patch -->
+                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                  <standardChildren>
+                    <li>AdvancedPowerClaw</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                  </standardChildren>
+                </li>
+              </comps>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryAdvanced">
+              <defName>InstallAdvancedPowerHand</defName>
+              <label>install advanced power hand</label>
+              <description>Installs a advanced power hand.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedPowerHand</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing advanced power hand.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AdvancedPowerHand</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AdvancedPowerHand</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Hand</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>AdvancedPowerHand</addsHediff>
             </RecipeDef>
 
             <!-- power claw -->
@@ -406,8 +610,55 @@
           </value>
         </li>
 
+        <!-- melee verbs on power hand -->
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Combat Extended</li>
+          </mods>
+          <match Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li Class="CombatExtended.ToolCE">
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>9</power>
+                      <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                      <cooldownTime>0.83</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </match>
+          <nomatch Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li>
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>16</power>
+                      <cooldownTime>1.65</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
         <!-- copy verbs -->
-        
+
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
