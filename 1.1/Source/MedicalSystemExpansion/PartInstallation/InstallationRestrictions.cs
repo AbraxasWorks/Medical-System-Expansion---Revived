@@ -12,11 +12,11 @@ namespace OrenoMSE.PartInstallation
 
         public bool CompatibleWithPart ( BodyPartRecord part, HediffSet hediffSet )
         {
-            return (this.whitelist == null || (from h in hediffSet.hediffs
+            return (this.whitelist == null || (from h in hediffSet.hediffs // no white list or there is a whitelisted hediff
                                                where h.Part == part
                                                where this.whitelist.Contains( h.def )
                                                select h).Any())
-                && (!onlyOnNatural || hediffSet.HasDirectlyAddedPartFor(part));
+                && !(this.whitelist == null && onlyOnNatural && hediffSet.HasDirectlyAddedPartFor( part ));
         }
 
         public override IEnumerable<string> ConfigErrors ()
