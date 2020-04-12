@@ -76,6 +76,78 @@
     </modExtensions>
   </RecipeDef>
 
+  <!-- archotech forearm -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ArchotechForearm</defName>
+    <label>archotech forearm</label>
+    <labelNoun>a archotech forearm</labelNoun>
+    <description>An installed bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechForearm</ThingDef>
+    </descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.50</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>ArchotechForearm</defName>
+    <label>archotech forearm</label>
+    <description>One of the most sophisticated shoulder replacements.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallArchotechForearm</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <standardChildren>
+          <li>ArchotechHand</li>
+          <li>ArchotechInternalSupport</li>
+          <li>ArchotechInternalSupport</li>
+        </standardChildren>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallArchotechForearm</defName>
+    <label>install archotech forearm</label>
+    <description>Installs a archotech forearm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechForearm</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech forearm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechForearm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechForearm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechForearm</addsHediff>
+  </RecipeDef>
+
   <!-- foot -->
 
   <HediffDef ParentName="AddedBodyPartBase">

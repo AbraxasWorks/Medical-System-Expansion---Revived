@@ -78,6 +78,78 @@
     </modExtensions>
   </RecipeDef>
 
+  <!-- bionic forearm -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicForearm</defName>
+    <label>bionic forearm</label>
+    <labelNoun>a bionic forearm</labelNoun>
+    <description>An installed bionic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicForearm</ThingDef>
+    </descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved>BionicForearm</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicForearm</defName>
+    <label>bionic forearm</label>
+    <description>One of the most sophisticated shoulder replacements.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallBionicForearm</RecipeDef>
+    </descriptionHyperlinks>
+    <costList>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <standardChildren>
+          <li>BionicHand</li>
+          <li>BionicInternalSupport</li>
+          <li>BionicInternalSupport</li>
+        </standardChildren>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicForearm</defName>
+    <label>install bionic forearm</label>
+    <description>Installs a bionic forearm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicForearm</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic forearm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicForearm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicForearm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicForearm</addsHediff>
+  </RecipeDef>
+
   <!-- foot -->
 
   <HediffDef ParentName="AddedBodyPartBase">
