@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+  <!-- arm -->
+
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
@@ -8,11 +10,23 @@
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticHand</li>
-            <li>SimpleProstheticHumerus</li>
-            <li>SimpleProstheticRadius</li>
+            <!-- <li>SimpleProstheticHumerus</li>
+            <li>SimpleProstheticRadius</li> -->
           </standardChildren>
         </li>
       </comps>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]</xpath>
+    <value>
+      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+        <ignoredSubParts>
+          <li>Humerus</li>
+          <li>Radius</li>
+        </ignoredSubParts>
+      </li>
     </value>
   </Operation>
 
@@ -25,6 +39,8 @@
     </value>
   </Operation>
 
+  <!-- leg -->
+
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
     <value>
@@ -32,14 +48,28 @@
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticFoot</li>
-            <li>SimpleProstheticFemur</li>
-            <li>SimpleProstheticTibia</li>
+            <!-- <li>SimpleProstheticFemur</li>
+            <li>SimpleProstheticTibia</li> -->
           </standardChildren>
         </li>
       </comps>
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticLeg"]</xpath>
+    <value>
+      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+        <ignoredSubParts>
+          <li>Femur</li>
+          <li>Tibia</li>
+        </ignoredSubParts>
+      </li>
+    </value>
+  </Operation>
+
+
+  <!-- arm verbs (CE removes them so i can only copy them when there is no CE) -->
 
   <Operation Class="PatchOperationFindMod">
     <mods>

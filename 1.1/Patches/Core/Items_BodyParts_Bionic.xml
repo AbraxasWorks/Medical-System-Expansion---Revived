@@ -10,8 +10,8 @@
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>BionicHand</li>
-            <li>PlasteelHumerus</li>
-            <li>PlasteelRadius</li>
+            <li>BionicInternalSupport</li>
+            <li>BionicInternalSupport</li>
           </standardChildren>
         </li>
       </comps>
@@ -36,8 +36,8 @@
         <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>BionicFoot</li>
-            <li>PlasteelFemur</li>
-            <li>PlasteelTibia</li>
+            <li>BionicInternalSupport</li>
+            <li>BionicInternalSupport</li>
           </standardChildren>
         </li>
       </comps>
