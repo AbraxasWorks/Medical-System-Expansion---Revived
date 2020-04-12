@@ -33,7 +33,7 @@
             <comps>
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
-                  <li>BionicForearm</li>
+                  <li>PowerForearm</li>
                   <li>BionicInternalSupport</li>
                 </standardChildren>
               </li>
@@ -350,7 +350,7 @@
                 <ComponentIndustrial>5</ComponentIndustrial>
               </costList>
               <statBases>
-                <Mass>7</Mass>
+                <Mass>4</Mass>
               </statBases>
               <comps>
                 <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
@@ -390,6 +390,160 @@
                 <li>Arm</li>
               </appliedOnFixedBodyParts>
               <addsHediff>BionicForearm</addsHediff>
+            </RecipeDef>
+
+            <!-- power forearm -->
+
+            <HediffDef ParentName="addedPartBionics">
+              <defName>PowerForearm</defName>
+              <label>power forearm</label>
+              <labelNoun>a power forearm</labelNoun>
+              <description>An installed power forearm.</description>
+              <descriptionHyperlinks>
+                <ThingDef>PowerForearm</ThingDef>
+              </descriptionHyperlinks>
+              <addedPartProps>
+                <partEfficiency>1.15</partEfficiency>
+              </addedPartProps>
+              <spawnThingOnRemoved>PowerForearm</spawnThingOnRemoved>
+              <comps>
+                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                  <maxModules>1</maxModules>
+                </li>
+              </comps>
+            </HediffDef>
+
+            <ThingDef ParentName="Bionic">
+              <defName>PowerForearm</defName>
+              <label>power forearm</label>
+              <description>One of the most sophisticated shoulder replacements.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallPowerForearm</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <BionicForearm>1</BionicForearm>
+                <PowerClaw>1</PowerClaw>
+                <Plasteel>25</Plasteel>
+              </costList>
+              <statBases>
+                <Mass>4.5</Mass>
+              </statBases>
+              <comps>
+                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                  <standardChildren>
+                    <li>PowerHand</li>
+                    <li>BionicInternalSupport</li>
+                    <li>BionicInternalSupport</li>
+                  </standardChildren>
+                </li>
+              </comps>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryBionic">
+              <defName>InstallPowerForearm</defName>
+              <label>install power forearm</label>
+              <description>Installs a power forearm.</description>
+              <descriptionHyperlinks>
+                <ThingDef>PowerForearm</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing power forearm.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>PowerForearm</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>PowerForearm</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Arm</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>PowerForearm</addsHediff>
+            </RecipeDef>
+
+            <!-- power hand -->
+
+            <HediffDef ParentName="addedPartBionics">
+              <defName>PowerHand</defName>
+              <label>power hand</label>
+              <labelNoun>a power hand</labelNoun>
+              <description>An installed power hand.</description>
+              <descriptionHyperlinks>
+                <ThingDef>PowerHand</ThingDef>
+              </descriptionHyperlinks>
+              <addedPartProps>
+                <partEfficiency>1.20</partEfficiency>
+              </addedPartProps>
+              <spawnThingOnRemoved>PowerHand</spawnThingOnRemoved>
+              <comps>
+                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                  <maxModules>1</maxModules>
+                </li>
+              </comps>
+            </HediffDef>
+
+            <ThingDef ParentName="Bionic">
+              <defName>PowerHand</defName>
+              <label>power hand</label>
+              <description>One of the most sophisticated shoulder replacements.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallPowerHand</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <BionicHand>1</BionicHand>
+                <PowerClaw>1</PowerClaw>
+                <Plasteel>12</Plasteel>
+              </costList>
+              <statBases>
+                <Mass>3.5</Mass>
+              </statBases>
+              <comps>
+                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                  <standardChildren>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                    <li>BionicFinger</li>
+                  </standardChildren>
+                </li>
+              </comps>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryBionic">
+              <defName>InstallPowerHand</defName>
+              <label>install power hand</label>
+              <description>Installs a power hand.</description>
+              <descriptionHyperlinks>
+                <ThingDef>PowerHand</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing power hand.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>PowerHand</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>PowerHand</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Hand</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>PowerHand</addsHediff>
             </RecipeDef>
 
             <!-- power claw -->
