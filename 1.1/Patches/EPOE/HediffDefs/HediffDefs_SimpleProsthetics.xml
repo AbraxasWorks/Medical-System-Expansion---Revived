@@ -17,11 +17,21 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticHand</li>
-                  <li>SimpleProstheticHumerus</li>
-                  <li>SimpleProstheticRadius</li>
                 </standardChildren>
               </li>
             </comps>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
+          <value>
+            <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+              <ignoredSubParts>
+                <li>Humerus</li>
+                <li>Radius</li>
+              </ignoredSubParts>
+            </li>
           </value>
         </li>
 
@@ -48,6 +58,18 @@
                 </standardChildren>
               </li>
             </comps>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticLeg"]</xpath>
+          <value>
+            <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+              <ignoredSubParts>
+                <li>Femur</li>
+                <li>Tibia</li>
+              </ignoredSubParts>
+            </li>
           </value>
         </li>
 
@@ -293,7 +315,8 @@
         <!-- remove verbs -->
         <li Class="PatchOperationRemove">
           <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-          <success>Always</success> <!-- CE does this as well -->
+          <success>Always</success>
+          <!-- CE does this as well -->
         </li>
 
       </operations>

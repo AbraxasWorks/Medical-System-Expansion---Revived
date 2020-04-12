@@ -60,8 +60,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>BionicHand</li>
-                  <li>PlasteelHumerus</li>
-                  <li>PlasteelRadius</li>
+                  <li>BionicInternalSupport</li>
+                  <li>BionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -86,8 +86,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>BionicFoot</li>
-                  <li>PlasteelFemur</li>
-                  <li>PlasteelTibia</li>
+                  <li>BionicInternalSupport</li>
+                  <li>BionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -138,6 +138,82 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
+
+            <!-- internal support -->
+
+            <HediffDef ParentName="addedPartBionics">
+              <defName>BionicInternalSupport</defName>
+              <label>bionic internal support</label>
+              <labelNoun>a bionic internal support</labelNoun>
+              <description>An installed bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>BionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <spawnThingOnRemoved>BionicInternalSupport</spawnThingOnRemoved>
+              <addedPartProps>
+                <solid>true</solid>
+                <betterThanNatural>true</betterThanNatural>
+                <partEfficiency>1.10</partEfficiency>
+              </addedPartProps>
+            </HediffDef>
+
+            <ThingDef ParentName="Bionic">
+              <defName>BionicInternalSupport</defName>
+              <label>bionic internal support</label>
+              <description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallBionicInternalSupport</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <Plasteel>6</Plasteel>
+              </costList>
+              <thingSetMakerTags>
+                <li>RewardStandardMidFreq</li>
+              </thingSetMakerTags>
+              <statBases>
+                <Mass>0.3</Mass>
+              </statBases>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryBionic">
+              <defName>InstallBionicInternalSupport</defName>
+              <label>install bionic internal support</label>
+              <description>Install a bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>BionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing bionic internal support.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>BionicInternalSupport</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>BionicInternalSupport</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Humerus</li>
+                <li>Radius</li>
+                <li>Femur</li>
+                <li>Tibia</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>BionicInternalSupport</addsHediff>
+              <modExtensions>
+                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                  <whitelist>
+                    <li>BionicArm</li>
+                    <li>BionicLeg</li>
+                  </whitelist>
+                </li>
+              </modExtensions>
+            </RecipeDef>
 
             <!-- bionic finger -->
 

@@ -65,8 +65,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicHand</li>
-                  <li>PlasteelHumerus</li>
-                  <li>PlasteelRadius</li>
+                  <li>AdvancedBionicInternalSupport</li>
+                  <li>AdvancedBionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -102,8 +102,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFoot</li>
-                  <li>PlasteelFemur</li>
-                  <li>PlasteelTibia</li>
+                  <li>AdvancedBionicInternalSupport</li>
+                  <li>AdvancedBionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -165,6 +165,80 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
+
+            <!-- internal support -->
+
+            <HediffDef ParentName="addedPartAdvanced">
+              <defName>AdvancedBionicInternalSupport</defName>
+              <label>advanced bionic internal support</label>
+              <labelNoun>an advanced bionic internal support</labelNoun>
+              <description>An installed advanced bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedBionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <spawnThingOnRemoved>AdvancedBionicInternalSupport</spawnThingOnRemoved>
+              <addedPartProps>
+                <solid>true</solid>
+                <betterThanNatural>true</betterThanNatural>
+                <partEfficiency>1.15</partEfficiency>
+              </addedPartProps>
+            </HediffDef>
+
+            <ThingDef ParentName="Advanced">
+              <defName>AdvancedBionicInternalSupport</defName>
+              <label>advanced bionic internal support</label>
+              <description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+              <descriptionHyperlinks>
+                <RecipeDef>InstallAdvancedBionicInternalSupport</RecipeDef>
+              </descriptionHyperlinks>
+              <costList>
+                <Plasteel>8</Plasteel>
+              </costList>
+              <statBases>
+                <Mass>0.3</Mass>
+              </statBases>
+            </ThingDef>
+
+            <RecipeDef ParentName="SurgeryAdvanced">
+              <defName>InstallAdvancedBionicInternalSupport</defName>
+              <label>install advanced bionic internal support</label>
+              <description>Install an advanced bionic internal support.</description>
+              <descriptionHyperlinks>
+                <ThingDef>AdvancedBionicInternalSupport</ThingDef>
+              </descriptionHyperlinks>
+              <jobString>Installing advanced bionic internal support.</jobString>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>AdvancedBionicInternalSupport</li>
+                    </thingDefs>
+                  </filter>
+                  <count>1</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>AdvancedBionicInternalSupport</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <appliedOnFixedBodyParts>
+                <li>Humerus</li>
+                <li>Radius</li>
+                <li>Femur</li>
+                <li>Tibia</li>
+              </appliedOnFixedBodyParts>
+              <addsHediff>AdvancedBionicInternalSupport</addsHediff>
+              <modExtensions>
+                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                  <whitelist>
+                    <li>AdvancedBionicArm</li>
+                    <li>AdvancedBionicLeg</li>
+                  </whitelist>
+                </li>
+              </modExtensions>
+            </RecipeDef>
+
 
             <!-- bionic finger -->
 
@@ -407,7 +481,7 @@
         </li>
 
         <!-- copy verbs -->
-        
+
         <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
