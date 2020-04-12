@@ -33,21 +33,11 @@
             <comps>
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
-                  <li>BionicHand</li>
-                  <li>PlasteelHumerus</li>
-                  <li>PlasteelRadius</li>
+                  <li>BionicForearm</li>
+                  <li>BionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
-          </value>
-        </li>
-
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallPowerArm"]/appliedOnFixedBodyParts</xpath>
-          <value>
-            <appliedOnFixedBodyParts>
-              <li>Arm</li>
-            </appliedOnFixedBodyParts>
           </value>
         </li>
 
@@ -59,21 +49,11 @@
             <comps>
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
-                  <li>BionicHand</li>
-                  <li>BionicInternalSupport</li>
+                  <li>BionicForearm</li>
                   <li>BionicInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
-          </value>
-        </li>
-
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallBionicArm"]/appliedOnFixedBodyParts</xpath>
-          <value>
-            <appliedOnFixedBodyParts>
-              <li>Arm</li>
-            </appliedOnFixedBodyParts>
           </value>
         </li>
 
@@ -341,28 +321,28 @@
               <addsHediff>BionicToe</addsHediff>
             </RecipeDef>
 
-            <!-- bionic shoulder -->
+            <!-- bionic forearm -->
 
             <HediffDef ParentName="addedPartBionics">
-              <defName>BionicShoulder</defName>
-              <label>bionic shoulder</label>
-              <labelNoun>a bionic shoulder</labelNoun>
+              <defName>BionicForearm</defName>
+              <label>bionic forearm</label>
+              <labelNoun>a bionic forearm</labelNoun>
               <description>An installed bionic arm.</description>
               <descriptionHyperlinks>
-                <ThingDef>BionicShoulder</ThingDef>
+                <ThingDef>BionicForearm</ThingDef>
               </descriptionHyperlinks>
               <addedPartProps>
                 <partEfficiency>1.25</partEfficiency>
               </addedPartProps>
-              <spawnThingOnRemoved>BionicShoulder</spawnThingOnRemoved>
+              <spawnThingOnRemoved>BionicForearm</spawnThingOnRemoved>
             </HediffDef>
 
             <ThingDef ParentName="Bionic">
-              <defName>BionicShoulder</defName>
-              <label>bionic shoulder</label>
+              <defName>BionicForearm</defName>
+              <label>bionic forearm</label>
               <description>One of the most sophisticated shoulder replacements.</description>
               <descriptionHyperlinks>
-                <RecipeDef>InstallBionicShoulder</RecipeDef>
+                <RecipeDef>InstallBionicForearm</RecipeDef>
               </descriptionHyperlinks>
               <costList>
                 <SimpleProstheticShoulder>1</SimpleProstheticShoulder>
@@ -375,26 +355,27 @@
               <comps>
                 <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                   <standardChildren>
-                    <li>BionicArm</li>
-                    <li>PlasteelClavicle</li>
+                    <li>BionicHand</li>
+                    <li>BionicInternalSupport</li>
+                    <li>BionicInternalSupport</li>
                   </standardChildren>
                 </li>
               </comps>
             </ThingDef>
 
             <RecipeDef ParentName="SurgeryBionic">
-              <defName>InstallBionicShoulder</defName>
-              <label>install bionic shoulder</label>
-              <description>Installs a bionic shoulder.</description>
+              <defName>InstallBionicForearm</defName>
+              <label>install bionic forearm</label>
+              <description>Installs a bionic forearm.</description>
               <descriptionHyperlinks>
-                <ThingDef>BionicShoulder</ThingDef>
+                <ThingDef>BionicForearm</ThingDef>
               </descriptionHyperlinks>
-              <jobString>Installing bionic shoulder.</jobString>
+              <jobString>Installing bionic forearm.</jobString>
               <ingredients>
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>BionicShoulder</li>
+                      <li>BionicForearm</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -402,13 +383,13 @@
               </ingredients>
               <fixedIngredientFilter>
                 <thingDefs>
-                  <li>BionicShoulder</li>
+                  <li>BionicForearm</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <appliedOnFixedBodyParts>
-                <li>Shoulder</li>
+                <li>Arm</li>
               </appliedOnFixedBodyParts>
-              <addsHediff>BionicShoulder</addsHediff>
+              <addsHediff>BionicForearm</addsHediff>
             </RecipeDef>
 
             <!-- power claw -->
