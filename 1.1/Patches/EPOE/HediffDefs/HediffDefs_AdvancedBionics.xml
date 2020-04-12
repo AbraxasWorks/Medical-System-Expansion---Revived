@@ -523,6 +523,7 @@
               <comps>
                 <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                   <standardChildren>
+                    <li>AdvancedPowerClaw</li>
                     <li>BionicFinger</li>
                     <li>BionicFinger</li>
                     <li>BionicFinger</li>
