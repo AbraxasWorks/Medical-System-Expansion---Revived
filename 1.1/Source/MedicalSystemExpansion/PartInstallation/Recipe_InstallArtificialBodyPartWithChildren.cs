@@ -69,6 +69,7 @@ namespace OrenoMSE.PartInstallation
             // END VANILLA CODE
 
             List<BodyPartRecord> directChildren = new List<BodyPartRecord>( part.GetDirectChildParts() );
+            directChildren.Add( part );
 
             // iterate over non null CompIncludedChildParts
             foreach ( CompIncludedChildParts compChildParts in
@@ -87,7 +88,7 @@ namespace OrenoMSE.PartInstallation
                     foreach ( RecipeDef anyrec in DefDatabase<RecipeDef>.AllDefs )
                     {
                         // each recipe that includes it
-                        if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_InstallArtificialBodyPartWithChildren recursiveRecipe )
+                        if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_Surgery recursiveRecipe )
                         {
                             // recursiveRecipe is the RecipeWorker
 
