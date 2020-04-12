@@ -521,6 +521,7 @@
                 <Mass>3.5</Mass>
               </statBases>
               <comps>
+                <!-- verbs added via patch -->
                 <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>AdvancedPowerClaw</li>
@@ -607,6 +608,53 @@
             </RecipeDef>
 
           </value>
+        </li>
+
+        <!-- melee verbs on power hand -->
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Combat Extended</li>
+          </mods>
+          <match Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li Class="CombatExtended.ToolCE">
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>9</power>
+                      <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                      <cooldownTime>0.83</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </match>
+          <nomatch Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li>
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>16</power>
+                      <cooldownTime>1.65</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
         </li>
 
         <!-- copy verbs -->

@@ -581,6 +581,53 @@
           </value>
         </li>
 
+        <!-- melee verbs on power hand -->
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Combat Extended</li>
+          </mods>
+          <match Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li Class="CombatExtended.ToolCE">
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>7</power>
+                      <armorPenetrationBlunt>2.2</armorPenetrationBlunt>
+                      <cooldownTime>1.20</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </match>
+          <nomatch Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li>
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>13</power>
+                      <cooldownTime>1.85</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
+
       </operations>
     </match>
   </Operation>
