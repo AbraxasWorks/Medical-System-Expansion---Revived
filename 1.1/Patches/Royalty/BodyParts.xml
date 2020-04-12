@@ -17,8 +17,8 @@
               <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>MechanicalManipulator</li>
-                  <li>MechanicalSupport</li>
-                  <li>MechanicalSupport</li>
+                  <li>MechanicalInternalSupport</li>
+                  <li>MechanicalInternalSupport</li>
                 </standardChildren>
               </li>
             </comps>
@@ -456,14 +456,14 @@
             <!-- replacement internal support -->
 
             <HediffDef ParentName="AddedBodyPartBase">
-              <defName>MechanicalSupport</defName>
-              <label>mechanical support</label>
-              <labelNoun>a mechanical support</labelNoun>
-              <description>An internal mechanical support.</description>
+              <defName>MechanicalInternalSupport</defName>
+              <label>mechanical internal support</label>
+              <labelNoun>a mechanical internal support</labelNoun>
+              <description>An internal mechanical internal support.</description>
               <descriptionHyperlinks>
-                <ThingDef>MechanicalSupport</ThingDef>
+                <ThingDef>MechanicalInternalSupport</ThingDef>
               </descriptionHyperlinks>
-              <spawnThingOnRemoved>MechanicalSupport</spawnThingOnRemoved>
+              <spawnThingOnRemoved>MechanicalInternalSupport</spawnThingOnRemoved>
               <addedPartProps>
                 <solid>true</solid>
                 <betterThanNatural>true</betterThanNatural>
@@ -471,11 +471,11 @@
             </HediffDef>
 
             <ThingDef ParentName="BodyPartProstheticImperialBase">
-              <defName>MechanicalSupport</defName>
-              <label>mechanical support</label>
-              <description>A mechanical support.</description>
+              <defName>MechanicalInternalSupport</defName>
+              <label>mechanical internal support</label>
+              <description>A mechanical internal support. Useful replacement part to have when a drill arm gets damaged.</description>
               <descriptionHyperlinks>
-                <RecipeDef>InstallMechanicalSupport</RecipeDef>
+                <RecipeDef>InstallMechanicalInternalSupport</RecipeDef>
               </descriptionHyperlinks>
               <costList>
                 <Steel>10</Steel>
@@ -490,18 +490,18 @@
             </ThingDef>
 
             <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-              <defName>InstallMechanicalSupport</defName>
-              <label>install mechanical support</label>
-              <description>Install a mechanical support.</description>
+              <defName>InstallMechanicalInternalSupport</defName>
+              <label>install mechanical internal support</label>
+              <description>Install a mechanical internal support.</description>
               <descriptionHyperlinks>
-                <ThingDef>MechanicalSupport</ThingDef>
+                <ThingDef>MechanicalInternalSupport</ThingDef>
               </descriptionHyperlinks>
-              <jobString>Installing replacement mechanical support.</jobString>
+              <jobString>Installing replacement mechanical internal support.</jobString>
               <ingredients>
                 <li>
                   <filter>
                     <thingDefs>
-                      <li>MechanicalSupport</li>
+                      <li>MechanicalInternalSupport</li>
                     </thingDefs>
                   </filter>
                   <count>1</count>
@@ -509,14 +509,14 @@
               </ingredients>
               <fixedIngredientFilter>
                 <thingDefs>
-                  <li>MechanicalSupport</li>
+                  <li>MechanicalInternalSupport</li>
                 </thingDefs>
               </fixedIngredientFilter>
               <appliedOnFixedBodyParts>
                 <li>Humerus</li>
                 <li>Radius</li>
               </appliedOnFixedBodyParts>
-              <addsHediff>MechanicalSupport</addsHediff>
+              <addsHediff>MechanicalInternalSupport</addsHediff>
               <modExtensions>
                 <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
                   <whitelist>
