@@ -59,6 +59,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
+      <li>Clavicle</li>
       <li>Humerus</li>
       <li>Radius</li>
       <li>Femur</li>
