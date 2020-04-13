@@ -100,7 +100,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>BionicForearm</defName>
     <label>bionic forearm</label>
-    <description>One of the most sophisticated shoulder replacements.</description>
+    <description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological foot in almost every way.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallBionicForearm</RecipeDef>
     </descriptionHyperlinks>
@@ -386,6 +386,7 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
