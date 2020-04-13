@@ -28,7 +28,7 @@
     <defName>MSE_RangedPlatformModule</defName>
     <label>ranged platform module</label>
     <labelNoun>a ranged platform module</labelNoun>
-    <description>Test. Fix Later</description>
+    <description>An installed ranged platform module.</description>
     <descriptionHyperlinks>
       <ThingDef>MSE_RangedPlatformModule</ThingDef>
     </descriptionHyperlinks>
@@ -46,7 +46,7 @@
   <ThingDef ParentName="MSE_ModuleBionic">
     <defName>MSE_RangedPlatformModule</defName>
     <label>ranged platform module</label>
-    <description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and turn your pawn to specialized for ranged combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+    <description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and improve your pawn's ranged combat ability.</description>
     <descriptionHyperlinks>
       <RecipeDef>MSE_InstallRangedPlatformModule</RecipeDef>
     </descriptionHyperlinks>
@@ -55,7 +55,6 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
-      <MarketValue>1200</MarketValue>
       <WorkToMake>30000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
@@ -96,7 +95,7 @@
     <defName>MSE_MeleePlatformModule</defName>
     <label>melee platform module</label>
     <labelNoun>a melee platform module</labelNoun>
-    <description>Test. Fix Later</description>
+    <description>An installed melee platform module.</description>
     <descriptionHyperlinks>
       <ThingDef>MSE_MeleePlatformModule</ThingDef>
     </descriptionHyperlinks>
@@ -114,7 +113,7 @@
   <ThingDef ParentName="MSE_ModuleBionic">
     <defName>MSE_MeleePlatformModule</defName>
     <label>melee platform module</label>
-    <description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and turn your pawn to specialized for melee combat. You can install it to clavicle module slot. Requires modules surgery research to install it.</description>
+    <description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and improve your pawn's melee combat ability.</description>
     <descriptionHyperlinks>
       <RecipeDef>MSE_InstallMeleePlatformModule</RecipeDef>
     </descriptionHyperlinks>
@@ -123,7 +122,6 @@
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
-      <MarketValue>1200</MarketValue>
       <WorkToMake>30000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
