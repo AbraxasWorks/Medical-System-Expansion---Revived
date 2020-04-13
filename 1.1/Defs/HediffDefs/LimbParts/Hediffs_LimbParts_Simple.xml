@@ -15,13 +15,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.85</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticFoot</defName>
     <label>prosthetic foot</label>
-    <description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot. Requires prosthetics research to install it.</description>
+    <description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
     </descriptionHyperlinks>
@@ -91,13 +92,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.80</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticToe</defName>
     <label>prosthetic toe</label>
-    <description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe. Requires prosthetics research to install it.</description>
+    <description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticToe</RecipeDef>
     </descriptionHyperlinks>
@@ -153,13 +155,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.50</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticHand</defName>
     <label>prosthetic hand</label>
-    <description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand. Requires prosthetics research to install it.</description>
+    <description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticHand</RecipeDef>
     </descriptionHyperlinks>
@@ -226,13 +229,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.50</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticFinger</defName>
     <label>prosthetic finger</label>
-    <description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger. Requires prosthetics research to install it.</description>
+    <description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticFinger</RecipeDef>
     </descriptionHyperlinks>
