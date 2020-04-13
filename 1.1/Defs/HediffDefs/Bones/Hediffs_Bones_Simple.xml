@@ -14,13 +14,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.75</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticClavicle</defName>
     <label>prosthetic clavicle</label>
-    <description>A clavicle prosthesis. It is inferior to a real clavicle. Requires bone replacement research to install it.</description>
+    <description>A clavicle prosthesis. It is inferior to a real clavicle.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticClavicle</RecipeDef>
     </descriptionHyperlinks>
@@ -79,13 +80,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.75</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticHumerus</defName>
     <label>prosthetic humerus</label>
-    <description>A humerus prosthesis. It is inferior to a real humerus. Requires bone replacement research to install it.</description>
+    <description>A humerus prosthesis. It is inferior to a real humerus.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticHumerus</RecipeDef>
     </descriptionHyperlinks>
@@ -144,13 +146,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.75</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticRadius</defName>
     <label>prosthetic radius</label>
-    <description>A radius prosthesis. It is inferior to a real radius. Requires bone replacement research to install it.</description>
+    <description>A radius prosthesis. It is inferior to a real radius.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticRadius</RecipeDef>
     </descriptionHyperlinks>
@@ -209,13 +212,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.75</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticFemur</defName>
     <label>prosthetic femur</label>
-    <description>A femur prosthesis. It is inferior to a real femur. Requires bone replacement research to install it.</description>
+    <description>A femur prosthesis. It is inferior to a real femur.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticFemur</RecipeDef>
     </descriptionHyperlinks>
@@ -274,13 +278,14 @@
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>0.75</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
     </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticMakeableBase">
     <defName>SimpleProstheticTibia</defName>
     <label>prosthetic tibia</label>
-    <description>A tibia prosthesis. It is inferior to a real tibia. Requires bone replacement research to install it.</description>
+    <description>A tibia prosthesis. It is inferior to a real tibia.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallSimpleProstheticTibia</RecipeDef>
     </descriptionHyperlinks>
