@@ -203,6 +203,7 @@
                 <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>AdvancedBionicArm</li>
+                    <li>AdvancedBionicForearm</li>
                     <li>AdvancedBionicLeg</li>
                   </whitelist>
                 </li>

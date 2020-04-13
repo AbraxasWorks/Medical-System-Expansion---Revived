@@ -70,6 +70,7 @@
       <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
         <whitelist>
           <li>ArchotechArm</li>
+          <li>ArchotechForearm</li>
           <li>ArchotechLeg</li>
         </whitelist>
       </li>

@@ -190,6 +190,7 @@
                 <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>BionicArm</li>
+                    <li>BionicForearm</li>
                     <li>BionicLeg</li>
                   </whitelist>
                 </li>
