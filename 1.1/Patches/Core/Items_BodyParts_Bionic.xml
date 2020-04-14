@@ -34,6 +34,17 @@
     </value>
   </Operation>
 
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicLeg"]</xpath>
+    <value>
+      <comps>
+        <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+          <maxModules>1</maxModules>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+
   <!-- copy melee verbs -->
 
   <!-- hand -->
@@ -43,7 +54,7 @@
       <comps/>
     </value>
   </Operation>
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>

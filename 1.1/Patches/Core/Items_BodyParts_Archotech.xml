@@ -44,6 +44,17 @@
     </value>
   </Operation>
 
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechLeg"]</xpath>
+    <value>
+      <comps>
+        <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+          <maxModules>1</maxModules>
+        </li>
+      </comps>
+    </value>
+  </Operation>
+
   <!-- copy melee verbs -->
 
   <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
@@ -52,7 +63,7 @@
       <comps/>
     </value>
   </Operation>
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>
