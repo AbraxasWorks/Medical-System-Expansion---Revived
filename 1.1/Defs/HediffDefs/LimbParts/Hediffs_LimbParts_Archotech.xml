@@ -93,6 +93,11 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
+    <comps>
+      <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+        <maxModules>1</maxModules>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartArchotechBase">
@@ -297,6 +302,11 @@
       <partEfficiency>1.50</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+    <comps>
+      <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+        <maxModules>1</maxModules>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartArchotechBase">

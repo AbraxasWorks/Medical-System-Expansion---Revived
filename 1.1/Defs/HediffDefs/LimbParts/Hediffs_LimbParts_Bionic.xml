@@ -311,6 +311,11 @@
       <partEfficiency>1.25</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
+    <comps>
+      <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+        <maxModules>1</maxModules>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartBionicBase">
