@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using Verse;
 
 namespace OrenoMSE.PartInstallation
@@ -21,12 +22,12 @@ namespace OrenoMSE.PartInstallation
             List<CodeInstruction> baseCall = instructionList.GetRange( 0, baseCallLength );
             instructionList.RemoveRange( 0, baseCallLength );
 
-            // insert after restore part
+            // insert it before return statement
 
-            int indexOfRestorePart = instructionList.FindIndex( i => i.Calls( typeof( Pawn_HealthTracker ).GetMethod( nameof( Pawn_HealthTracker.RestorePart ) ) ) ) + 1;
-            instructionList.InsertRange( indexOfRestorePart, baseCall );
+            int indexOfReturn = instructionList.FindIndex( i => i.opcode == OpCodes.Ret );
+            instructionList.InsertRange( indexOfReturn, baseCall );
 
-            // return
+            // return new list
 
             return instructionList;
         }
