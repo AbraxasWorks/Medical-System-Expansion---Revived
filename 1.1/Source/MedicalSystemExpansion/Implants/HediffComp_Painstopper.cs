@@ -49,7 +49,7 @@ namespace OrenoMSE
                 },
                 defaultLabel = this.Props.label,
                 defaultDesc = this.Props.description.CapitalizeFirst(),
-                icon = MSE_VanillaExtender.GetIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID(), this.Props.uiIconPath )
+                icon = MedicalSystemExpansion.GetIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID(), this.Props.uiIconPath )
             };
             if ( base.Pawn.Faction != Faction.OfPlayer )
             {
@@ -71,7 +71,7 @@ namespace OrenoMSE
         public override void CompPostPostRemoved ()
         {
             base.CompPostPostRemoved();
-            MSE_VanillaExtender.ClearIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID() );
+            MedicalSystemExpansion.ClearIcon( base.Pawn.GetUniqueLoadID() + "_" + this.parent.GetUniqueLoadID() );
         }
 
         private bool painstopperActive = true;

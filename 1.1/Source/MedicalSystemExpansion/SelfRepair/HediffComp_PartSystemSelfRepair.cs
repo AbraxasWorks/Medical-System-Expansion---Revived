@@ -16,7 +16,7 @@ namespace OrenoMSE
         {
             get
             {
-                if ( MSE_VanillaExtender.PartHasInjury( base.Pawn, base.parent.Part, true ) )
+                if ( MedicalSystemExpansion.PartHasInjury( base.Pawn, base.parent.Part, true ) )
                 {
                     return true;
                 }

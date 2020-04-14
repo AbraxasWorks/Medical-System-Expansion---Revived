@@ -8,7 +8,7 @@ namespace OrenoMSE.Modules.Slots
         {
             get
             {
-                return MSE_VanillaExtender.PrettyLabel( this ) + (AvailableSlots != 1 ? (" (" + AvailableSlots + " available)") : "");
+                return MedicalSystemExpansion.PrettyLabel( this ) + (AvailableSlots != 1 ? (" (" + AvailableSlots + " available)") : "");
             }
         }
 

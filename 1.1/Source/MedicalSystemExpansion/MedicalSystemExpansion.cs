@@ -7,7 +7,7 @@ using Verse;
 namespace OrenoMSE
 {
     [StaticConstructorOnStartup]
-    public class MedicalSystemExpansion
+    public static class MedicalSystemExpansion
     {
         static MedicalSystemExpansion ()
         {
@@ -20,10 +20,7 @@ namespace OrenoMSE
         public static readonly Texture2D IconPartSystem = ContentFinder<Texture2D>.Get( "UI/Icons/Medical/IconPartSystem", true );
 
         public static readonly Texture2D IconPartSystemDamaged = ContentFinder<Texture2D>.Get( "UI/Icons/Medical/IconPartSystemDamaged", true );
-    }
 
-    public static class MSE_VanillaExtender
-    {
         public static bool PartHasInjury ( Pawn pawn, BodyPartRecord bodyPart, bool mustBeVisible = false )
         {
             List<Hediff> hediffs = pawn.health.hediffSet.hediffs;

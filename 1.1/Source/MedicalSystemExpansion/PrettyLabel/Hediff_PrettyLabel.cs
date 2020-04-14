@@ -15,7 +15,7 @@ namespace OrenoMSE.HarmonyPatches
             {
                 if ( __instance is Hediff_AddedPart || __instance is Hediff_Implant )
                 {
-                    __result = MSE_VanillaExtender.PrettyLabel( __instance );
+                    __result = MedicalSystemExpansion.PrettyLabel( __instance );
                 }
             }
         }
