@@ -20,15 +20,16 @@ namespace OrenoMSE.HediffHiding
         }
 
         [HarmonyPostfix]
-        private static void PostFix ( ref IEnumerable<Hediff> __result, Pawn pawn, bool ___showAllHediffs )
+        private static void Postfix ( ref IEnumerable<Hediff> __result, Pawn pawn, bool ___showAllHediffs )
         {
             if ( !___showAllHediffs )
             {
                 __result = from h in __result
                            where
                             !(h is Hediff_AddedPart)
-                            || h.Part.parent == null
-                            || !pawn.health.hediffSet.HasDirectlyAddedPartFor( h.Part.parent )
+                            //|| h.Part.parent == null
+                            //|| !pawn.health.hediffSet.HasDirectlyAddedPartFor( h.Part.parent )
+                            || !h.IsParentStandard()
                             || pawn.health.hediffSet.GetInjuredParts().Contains( h.Part )
                            select h;
             }

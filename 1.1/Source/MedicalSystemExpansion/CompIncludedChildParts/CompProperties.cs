@@ -28,13 +28,13 @@ namespace OrenoMSE
                     if ( name.Contains( "Shoulder" ) )
                     {
                         temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Shoulder", "Arm" ) ) );
-                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Shoulder", "Clavicle" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Shoulder", "InternalSupport" ) ) );
                     }
                     if ( name.Contains( "Arm" ) )
                     {
                         temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Hand" ) ) );
-                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Humerus" ) ) );
-                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "Radius" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "InternalSupport" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Arm", "InternalSupport" ) ) );
                     }
                     if ( name.Contains( "Hand" ) )
                     {
@@ -48,8 +48,8 @@ namespace OrenoMSE
                     if ( name.Contains( "Leg" ) )
                     {
                         temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Foot" ) ) );
-                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Femur" ) ) );
-                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "Tibia" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "InternalSupport" ) ) );
+                        temp.Add( DefDatabase<ThingDef>.GetNamedSilentFail( name.Replace( "Leg", "InternalSupport" ) ) );
                     }
                     if ( name.Contains( "Foot" ) )
                     {

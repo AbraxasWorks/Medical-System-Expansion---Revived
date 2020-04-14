@@ -13,6 +13,8 @@ namespace OrenoMSE
         {
             Harmony harmony = new Harmony( "OrenoMSE" );
             harmony.PatchAll( Assembly.GetExecutingAssembly() );
+
+            IncludedPartsUtilities.CacheAllStandardParents();
         }
 
         public static readonly Texture2D IconPartSystem = ContentFinder<Texture2D>.Get( "UI/Icons/Medical/IconPartSystem", true );
