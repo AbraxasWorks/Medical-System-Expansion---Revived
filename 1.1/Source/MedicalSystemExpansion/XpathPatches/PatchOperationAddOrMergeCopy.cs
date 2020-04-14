@@ -38,7 +38,7 @@ namespace OrenoMSE.XpathPatches
                             }
                         }
                     }
-                    else if ( this.mergeIfExisting )
+                    else
                     {
                         result = true;
                         // do the merge
@@ -67,8 +67,6 @@ namespace OrenoMSE.XpathPatches
 
             return result;
         }
-
-        private readonly bool mergeIfExisting = true;
 
         private readonly Order order = Order.Append;
 
