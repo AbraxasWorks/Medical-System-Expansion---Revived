@@ -6,7 +6,7 @@ using Verse;
 
 namespace OrenoMSE
 {
-    internal class CompIncludedChildParts : ThingComp
+    public class CompIncludedChildParts : ThingComp
     {
         public CompProperties_CompIncludedChildParts Props
         {

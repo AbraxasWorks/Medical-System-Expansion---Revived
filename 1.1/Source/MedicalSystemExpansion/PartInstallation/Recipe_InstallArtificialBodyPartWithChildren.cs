@@ -68,10 +68,7 @@ namespace OrenoMSE.PartInstallation
 
             // END VANILLA CODE
 
-            List<BodyPartRecord> directChildren = new List<BodyPartRecord>( part.GetDirectChildParts() );
-            directChildren.Add( part );
-
-            // iterate over non null CompIncludedChildParts
+            // iterate over non null CompIncludedChildParts in ingredients
             foreach ( CompIncludedChildParts compChildParts in
                 from x in ingredients
                 where x is ThingWithComps  // out of every thingwithcomps ingredient
@@ -79,52 +76,7 @@ namespace OrenoMSE.PartInstallation
                 where comp != null && comp.childPartsIncluded != null
                 select comp )
             {
-                // iterate over included child things
-                foreach ( Thing childThing in compChildParts.childPartsIncluded )
-                {
-                    bool hasFoundARec = false;
-
-                    // iterate over recipes
-                    foreach ( RecipeDef anyrec in DefDatabase<RecipeDef>.AllDefs )
-                    {
-                        // each recipe that includes it
-                        if ( anyrec.IsSurgery && anyrec.IsIngredient( childThing.def ) && anyrec.Worker is Recipe_Surgery recursiveRecipe )
-                        {
-                            // recursiveRecipe is the RecipeWorker
-
-                            BodyPartRecord validBP =
-                                MedicalRecipesUtility.GetFixedPartsToApplyOn( anyrec, pawn, // out of all the possible places to install this on the pawn
-                                        delegate ( BodyPartRecord bp )
-                                        { return directChildren.Contains( bp ); } ) // choose between children of the current part
-                                    .FirstOrFallback(); // take the first
-
-                            if ( validBP != null ) // it actually found something
-                            {
-                                // apply the recipe
-                                recursiveRecipe.ApplyOnPawn( pawn, validBP, null, new List<Thing> { childThing }, null );
-
-                                directChildren.Remove( validBP );
-                                hasFoundARec = true;
-
-                                break; // only need the first recipe
-                            }
-                        }
-                    }
-                    if ( !hasFoundARec )
-                    {
-                        if ( pawn.Map != null && pawn.Position != null )
-                        {
-                            GenPlace.TryPlaceThing( childThing, pawn.Position, pawn.Map, ThingPlaceMode.Near );
-                        }
-                        else
-                        {
-                            childThing.Destroy();
-                        }
-
-                        Log.Warning( "[MSE] Couldn't install " + childThing.Label );
-                    }
-                }
-                break; // after the first ingredient with children stop (it's the part that has just been installed before recursion)
+                compChildParts.RecursiveInstallation( pawn, part );
             }
         }
     }

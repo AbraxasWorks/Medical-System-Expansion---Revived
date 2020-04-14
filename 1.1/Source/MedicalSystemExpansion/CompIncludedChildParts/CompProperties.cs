@@ -3,7 +3,7 @@ using Verse;
 
 namespace OrenoMSE
 {
-    internal class CompProperties_CompIncludedChildParts : CompProperties
+    public class CompProperties_CompIncludedChildParts : CompProperties
     {
         public CompProperties_CompIncludedChildParts ()
         {

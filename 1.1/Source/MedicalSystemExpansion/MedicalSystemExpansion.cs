@@ -37,7 +37,6 @@ namespace OrenoMSE
             return false;
         }
 
-
         /// <summary>
         /// If the Hediff has a DefModExtension of MSE_HediffPrettyLabel create the label using it.
         /// Puts like "artificial" and then the body part label.
