@@ -1,10 +1,10 @@
 ﻿using HarmonyLib;
-using OrenoMSE.Modules;
+using MSE2.Modules;
 using RimWorld;
 using System.Linq;
 using Verse;
 
-namespace OrenoMSE.PartRemoval
+namespace MSE2.PartRemoval
 {
     // makes it so parts with implants are considered clean
 

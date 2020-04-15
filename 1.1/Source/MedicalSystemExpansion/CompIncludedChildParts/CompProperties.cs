@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     public class CompProperties_CompIncludedChildParts : CompProperties
     {

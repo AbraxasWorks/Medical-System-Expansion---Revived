@@ -1,8 +1,8 @@
-﻿using OrenoMSE.Modules.Slots;
+﻿using MSE2.Modules.Slots;
 
 using Verse;
 
-namespace OrenoMSE.Modules
+namespace MSE2.Modules
 {
     public class HediffComp_ModuleHolder : HediffComp
     {

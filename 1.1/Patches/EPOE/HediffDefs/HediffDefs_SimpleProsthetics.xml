@@ -10,11 +10,11 @@
 
         <!-- Simple arm -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticHand</li>
                 </standardChildren>
@@ -26,7 +26,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
           <value>
-            <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Humerus</li>
                 <li>Radius</li>
@@ -46,11 +46,11 @@
 
         <!-- Simple leg -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticLeg"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticFoot</li>
                   <li>SimpleProstheticFemur</li>
@@ -64,7 +64,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticLeg"]</xpath>
           <value>
-            <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Femur</li>
                 <li>Tibia</li>
@@ -75,11 +75,11 @@
 
         <!-- Simple hand -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticFinger</li>
                   <li>SimpleProstheticFinger</li>
@@ -94,11 +94,11 @@
 
         <!-- Simple foot -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticToe</li>
                   <li>SimpleProstheticToe</li>
@@ -271,7 +271,7 @@
                 <Mass>8</Mass>
               </statBases>
               <comps>
-                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>SimpleProstheticArm</li>
                     <li>SimpleProstheticClavicle</li>

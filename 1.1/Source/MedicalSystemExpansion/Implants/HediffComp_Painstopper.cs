@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     public class HediffComp_Painstopper : HediffComp_HediffGizmo
     {

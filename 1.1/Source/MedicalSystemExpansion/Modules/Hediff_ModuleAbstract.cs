@@ -2,7 +2,7 @@
 
 using Verse;
 
-namespace OrenoMSE.Modules
+namespace MSE2.Modules
 {
     public abstract class Hediff_ModuleAbstract : Hediff_Implant
     {

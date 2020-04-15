@@ -6,14 +6,14 @@
 
   <!--============ Module Base ============-->
   <HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
-    <hediffClass>OrenoMSE.Modules.Actual.Hediff_ModuleAdded</hediffClass>
+    <hediffClass>MSE2.Modules.Actual.Hediff_ModuleAdded</hediffClass>
   </HediffDef>
   <!--===================== END ======================-->
 
   <!-- module surgery -->
 
   <RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
-    <workerClass>OrenoMSE.Modules.Actual.Recipe_InstallModule</workerClass>
+    <workerClass>MSE2.Modules.Actual.Recipe_InstallModule</workerClass>
     <workAmount>1500</workAmount>
     <skillRequirements>
       <Medicine>5</Medicine>
@@ -57,7 +57,7 @@
     <defName>MSE_RemoveModules</defName>
     <label>remove modules</label>
     <description>Remove a modules from a bodypart.</description>
-    <workerClass>OrenoMSE.Modules.Actual.Recipe_RemoveModules</workerClass>
+    <workerClass>MSE2.Modules.Actual.Recipe_RemoveModules</workerClass>
     <jobString>Removing modules.</jobString>
     <workAmount>1500</workAmount>
     <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
@@ -84,7 +84,7 @@
   <!-- module slot -->
 
   <HediffDef>
-    <hediffClass>OrenoMSE.Modules.Slots.Hediff_ModuleSlot</hediffClass>
+    <hediffClass>MSE2.Modules.Slots.Hediff_ModuleSlot</hediffClass>
     <defName>MSE_ModuleSlot</defName>
     <label>module slot</label>
     <labelNoun>a module slot</labelNoun>
@@ -92,7 +92,7 @@
     <defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <modExtensions>
-      <li Class="OrenoMSE.MSE_HediffPrettyLabel">
+      <li Class="MSE2.MSE_HediffPrettyLabel">
         <labelPretty>{0} module slot</labelPretty>
       </li>
     </modExtensions>

@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     public class HediffComp_PartSystemSelfRepair : HediffComp
     {

@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace OrenoMSE.HarmonyPatches
+namespace MSE2.HarmonyPatches
 {
     public class Hediff_PrettyLabel
     {

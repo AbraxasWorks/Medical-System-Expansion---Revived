@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     public static class IncludedPartsUtilities
     {

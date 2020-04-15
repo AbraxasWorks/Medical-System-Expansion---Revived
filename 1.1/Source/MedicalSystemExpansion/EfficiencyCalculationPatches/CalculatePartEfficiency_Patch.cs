@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using Verse;
 
-namespace OrenoMSE.EfficiencyCalculationPatches
+namespace MSE2.EfficiencyCalculationPatches
 {
     [HarmonyPatch( typeof( PawnCapacityUtility ) )]
     [HarmonyPatch( "CalculatePartEfficiency" )]

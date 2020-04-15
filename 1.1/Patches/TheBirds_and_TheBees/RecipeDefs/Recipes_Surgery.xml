@@ -58,7 +58,7 @@
 										<li>ReproductiveOrgans</li>
 									</appliedOnFixedBodyParts>
 									<modExtensions>
-										<li Class="OrenoMSE.MSE_AdditionalHediff">
+										<li Class="MSE2.MSE_AdditionalHediff">
 											<hediffsToAdd>
 												<li>ReproductiveOrgans</li>
 											</hediffsToAdd>

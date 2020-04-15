@@ -3,7 +3,7 @@ using RimWorld;
 using System.Collections.Generic;
 using Verse;
 
-namespace OrenoMSE.HarmonyPatches
+namespace MSE2.HarmonyPatches
 {
     public class PawnDraftController
     {

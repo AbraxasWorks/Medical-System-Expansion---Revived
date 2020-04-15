@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace OrenoMSE.ApplyExtraHediffs
+namespace MSE2.ApplyExtraHediffs
 {
     internal static class HarmonyHooks
     {

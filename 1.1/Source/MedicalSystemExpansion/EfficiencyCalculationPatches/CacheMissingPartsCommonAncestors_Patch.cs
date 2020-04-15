@@ -1,11 +1,11 @@
 ﻿using HarmonyLib;
-using OrenoMSE.HarmonyPatches;
+using MSE2.HarmonyPatches;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 using Verse;
 
-namespace OrenoMSE.EfficiencyCalculationPatches
+namespace MSE2.EfficiencyCalculationPatches
 {
     [HarmonyPatch]
     internal class CacheMissingPartsCommonAncestors_Patch

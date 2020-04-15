@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace OrenoMSE.Modules.Actual
+namespace MSE2.Modules.Actual
 {
     public class Recipe_RemoveModules : Recipe_Surgery
     {

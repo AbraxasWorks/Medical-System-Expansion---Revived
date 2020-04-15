@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+    <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
         <xpath>/Defs/StatDef[defName="MarketValue"]</xpath>
         <value>
             <parts>
-                <li Class="OrenoMSE.StatPart_MissingSubParts" />
+                <li Class="MSE2.StatPart_MissingSubParts" />
             </parts>
         </value>
         <order>Prepend</order>

@@ -3,7 +3,7 @@ using System.Xml;
 
 using Verse;
 
-namespace OrenoMSE.XpathPatches
+namespace MSE2.XpathPatches
 {
     internal class PatchOperationOffsetField : PatchOperationPathed
     {

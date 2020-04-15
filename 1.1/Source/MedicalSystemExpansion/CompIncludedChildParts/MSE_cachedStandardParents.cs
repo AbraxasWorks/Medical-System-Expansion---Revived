@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     /// <summary>
     /// Automatically added to hediffs at load time, takes info from the thingcomp

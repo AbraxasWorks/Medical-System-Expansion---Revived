@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace OrenoMSE.Modules.Actual
+namespace MSE2.Modules.Actual
 {
     public class Hediff_ModuleAdded : Hediff_ModuleAbstract
     {

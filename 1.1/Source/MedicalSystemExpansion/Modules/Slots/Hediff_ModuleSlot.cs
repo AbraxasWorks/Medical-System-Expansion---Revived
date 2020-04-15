@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace OrenoMSE.Modules.Slots
+namespace MSE2.Modules.Slots
 {
     public class Hediff_ModuleSlot : Hediff_ModuleAbstract
     {

@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     internal class StatPart_MissingSubParts : StatPart
     {

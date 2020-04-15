@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     [DefOf]
     public static class MSE_HediffDefOf

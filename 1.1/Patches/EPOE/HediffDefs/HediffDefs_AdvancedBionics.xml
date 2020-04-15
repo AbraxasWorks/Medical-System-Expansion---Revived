@@ -10,22 +10,22 @@
 
         <!-- adv power arm -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                 <maxModules>2</maxModules>
               </li>
             </comps>
           </value>
         </li>
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedPowerForearm</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -37,11 +37,11 @@
 
         <!-- adv bionic arm -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicForearm</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -53,22 +53,22 @@
 
         <!-- adv bionic leg -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                 <maxModules>1</maxModules>
               </li>
             </comps>
           </value>
         </li>
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFoot</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -81,22 +81,22 @@
 
         <!-- adv bionic hand -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                 <maxModules>1</maxModules>
               </li>
             </comps>
           </value>
         </li>
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFinger</li>
                   <li>AdvancedBionicFinger</li>
@@ -111,11 +111,11 @@
 
         <!-- adv bionic foot -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicToe</li>
                   <li>AdvancedBionicToe</li>
@@ -200,7 +200,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>AdvancedBionicInternalSupport</addsHediff>
               <modExtensions>
-                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>AdvancedPowerArm</li>
                     <li>AdvancedPowerForearm</li>
@@ -353,7 +353,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedBionicForearm</spawnThingOnRemoved>
               <comps>
-                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                   <maxModules>1</maxModules>
                 </li>
               </comps>
@@ -374,7 +374,7 @@
                 <Mass>7</Mass>
               </statBases>
               <comps>
-                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>AdvancedBionicHand</li>
                     <li>AdvancedBionicInternalSupport</li>
@@ -428,7 +428,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
               <comps>
-                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                   <maxModules>2</maxModules>
                 </li>
               </comps>
@@ -449,7 +449,7 @@
                 <Mass>4.5</Mass>
               </statBases>
               <comps>
-                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>AdvancedPowerHand</li>
                     <li>AdvancedBionicInternalSupport</li>
@@ -503,7 +503,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
               <comps>
-                <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
                   <maxModules>2</maxModules>
                 </li>
               </comps>
@@ -525,7 +525,7 @@
               </statBases>
               <comps>
                 <!-- verbs added via patch -->
-                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>AdvancedPowerClaw</li>
                     <li>BionicFinger</li>
@@ -619,7 +619,7 @@
           <mods>
             <li>Combat Extended</li>
           </mods>
-          <match Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+          <match Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
             <value>
               <comps>
@@ -639,7 +639,7 @@
               </comps>
             </value>
           </match>
-          <nomatch Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+          <nomatch Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
             <value>
               <comps>
@@ -662,7 +662,7 @@
 
         <!-- copy verbs -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>

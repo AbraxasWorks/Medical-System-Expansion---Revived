@@ -4,7 +4,7 @@
 //using HarmonyLib;
 //using Verse;
 
-//namespace OrenoMSE.HarmonyPatches
+//namespace MSE2.HarmonyPatches
 //{
 //    public class Harmony_HediffUtility
 //    {

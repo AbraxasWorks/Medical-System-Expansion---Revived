@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 
-namespace OrenoMSE
+namespace MSE2
 {
     public class CompIncludedChildParts : ThingComp
     {

@@ -3,11 +3,11 @@
 
   <!-- arm -->
 
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
       <comps>
-        <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticHand</li>
             <!-- <li>SimpleProstheticHumerus</li>
@@ -21,7 +21,7 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
-      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+      <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
         <ignoredSubParts>
           <li>Humerus</li>
           <li>Radius</li>
@@ -41,11 +41,11 @@
 
   <!-- leg -->
 
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
     <value>
       <comps>
-        <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticFoot</li>
             <!-- <li>SimpleProstheticFemur</li>
@@ -59,7 +59,7 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticLeg"]</xpath>
     <value>
-      <li Class="OrenoMSE.EfficiencyCalculationPatches.IgnoreSubParts">
+      <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
         <ignoredSubParts>
           <li>Femur</li>
           <li>Tibia</li>
@@ -79,13 +79,13 @@
       <operations>
         <!-- copy melee verbs -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]</xpath>
           <value>
             <comps/>
           </value>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]/comps</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
         </li>

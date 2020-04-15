@@ -3,11 +3,11 @@
 
   <!-- arm -->
 
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]</xpath>
     <value>
       <comps>
-        <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>BionicForearm</li>
             <li>BionicInternalSupport</li>
@@ -19,11 +19,11 @@
 
   <!-- leg -->
 
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
-        <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_CompIncludedChildParts">
           <standardChildren>
             <li>BionicFoot</li>
             <li>BionicInternalSupport</li>
@@ -34,11 +34,11 @@
     </value>
   </Operation>
 
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
-        <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+        <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
           <maxModules>1</maxModules>
         </li>
       </comps>
@@ -48,13 +48,13 @@
   <!-- copy melee verbs -->
 
   <!-- hand -->
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]</xpath>
     <value>
       <comps/>
     </value>
   </Operation>
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddCopy">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddCopy">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>
@@ -63,7 +63,7 @@
   </Operation>
 
   <!-- powerclaw -->
-  <Operation Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
     <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
   </Operation>

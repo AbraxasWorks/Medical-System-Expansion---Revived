@@ -1,9 +1,9 @@
-﻿using OrenoMSE.Modules.Actual;
-using OrenoMSE.Modules.Slots;
+﻿using MSE2.Modules.Actual;
+using MSE2.Modules.Slots;
 using System.Linq;
 using Verse;
 
-namespace OrenoMSE.Modules
+namespace MSE2.Modules
 {
     public static class ModuleUtilities
     {

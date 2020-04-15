@@ -1,8 +1,8 @@
 ﻿using HarmonyLib;
-using OrenoMSE.EfficiencyCalculationPatches;
+using MSE2.EfficiencyCalculationPatches;
 using Verse;
 
-namespace OrenoMSE.PartInstallation
+namespace MSE2.PartInstallation
 {
     public class Hediff_AddDirect
     {

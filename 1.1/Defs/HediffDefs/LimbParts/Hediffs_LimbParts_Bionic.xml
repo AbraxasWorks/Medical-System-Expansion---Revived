@@ -69,7 +69,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>BionicInternalSupport</addsHediff>
     <modExtensions>
-      <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.PartInstallation.InstallationRestrictions">
         <whitelist>
           <li>BionicArm</li>
           <li>BionicForearm</li>
@@ -112,7 +112,7 @@
       <Mass>4</Mass>
     </statBases>
     <comps>
-      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_CompIncludedChildParts">
         <standardChildren>
           <li>BionicHand</li>
           <li>BionicInternalSupport</li>
@@ -187,7 +187,7 @@
       <Mass>2</Mass>
     </statBases>
     <comps>
-      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_CompIncludedChildParts">
         <standardChildren>
           <li>BionicToe</li>
           <li>BionicToe</li>
@@ -312,7 +312,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
-      <li Class="OrenoMSE.Modules.HediffCompProperties_ModuleHolder">
+      <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
         <maxModules>1</maxModules>
       </li>
     </comps>
@@ -336,7 +336,7 @@
       <Mass>1</Mass>
     </statBases>
     <comps>
-      <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_CompIncludedChildParts">
         <standardChildren>
           <li>BionicFinger</li>
           <li>BionicFinger</li>

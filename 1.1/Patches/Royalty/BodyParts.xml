@@ -10,11 +10,11 @@
 
         <!-- Drill Arm -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="DrillArm"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>MechanicalManipulator</li>
                   <li>MechanicalInternalSupport</li>
@@ -27,11 +27,11 @@
 
         <!-- Field Hand -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="FieldHand"]</xpath>
           <value>
             <comps>
-              <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_CompIncludedChildParts">
                 <standardChildren>
                   <li>FieldFinger</li>
                   <li>FieldFinger</li>
@@ -87,7 +87,7 @@
                 <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
               </recipeMaker>
               <comps>
-                <li Class="OrenoMSE.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_CompIncludedChildParts">
                   <standardChildren>
                     <li>MechanicalFinger</li>
                     <li>MechanicalFinger</li>
@@ -127,7 +127,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalManipulator</addsHediff>
               <modExtensions>
-                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>DrillArm</li>
                   </whitelist>
@@ -196,7 +196,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalFinger</addsHediff>
               <modExtensions>
-                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>MechanicalManipulator</li>
                   </whitelist>
@@ -271,7 +271,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>FieldFinger</addsHediff>
               <modExtensions>
-                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>FieldHand</li>
                   </whitelist>
@@ -518,7 +518,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalInternalSupport</addsHediff>
               <modExtensions>
-                <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.PartInstallation.InstallationRestrictions">
                   <whitelist>
                     <li>DrillArm</li>
                   </whitelist>
@@ -531,19 +531,19 @@
         </li>
 
         <!-- copy melee verbs from basegame -->
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="HandTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="HandTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="ElbowBladeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="ElbowBlade"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="KneeSpikeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="KneeSpike"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="VenomTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="VenomTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
@@ -551,7 +551,7 @@
 
         <!-- Add module recipe hyperlinks to thingdefs -->
 
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="HandTalon"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -559,7 +559,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="ElbowBlade"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -567,7 +567,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="KneeSpike"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -575,7 +575,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="OrenoMSE.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="VenomTalon"]</xpath>
           <value>
             <descriptionHyperlinks>
