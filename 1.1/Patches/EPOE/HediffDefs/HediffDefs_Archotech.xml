@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Prosthetics and Organ Engineering</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/HediffDef[defName="ArchotechInternalSupport" or defName="ArchotechForearm" or defName="ArchotechFoot" or defName="" or defName="ArchotechToe" or defName="ArchotechHand" or defName="ArchotechFinger"]</xpath>
+          <value>
+            <defaultLabelColor>(225,237,114)</defaultLabelColor>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>
