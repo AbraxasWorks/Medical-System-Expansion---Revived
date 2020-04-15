@@ -10,7 +10,7 @@
 
         <!-- Simple arm -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
           <value>
             <comps>
@@ -46,7 +46,7 @@
 
         <!-- Simple leg -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticLeg"]</xpath>
           <value>
             <comps>
@@ -75,7 +75,7 @@
 
         <!-- Simple hand -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
           <value>
             <comps>
@@ -94,7 +94,7 @@
 
         <!-- Simple foot -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
           <value>
             <comps>

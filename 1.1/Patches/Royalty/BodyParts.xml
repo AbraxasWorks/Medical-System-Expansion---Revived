@@ -10,7 +10,7 @@
 
         <!-- Drill Arm -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="DrillArm"]</xpath>
           <value>
             <comps>
@@ -27,7 +27,7 @@
 
         <!-- Field Hand -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="FieldHand"]</xpath>
           <value>
             <comps>
@@ -531,19 +531,19 @@
         </li>
 
         <!-- copy melee verbs from basegame -->
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="HandTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="HandTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="ElbowBladeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="ElbowBlade"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="KneeSpikeModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="KneeSpike"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="VenomTalonModule"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="VenomTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>
@@ -551,7 +551,7 @@
 
         <!-- Add module recipe hyperlinks to thingdefs -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="HandTalon"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -559,7 +559,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="ElbowBlade"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -567,7 +567,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="KneeSpike"]</xpath>
           <value>
             <descriptionHyperlinks>
@@ -575,7 +575,7 @@
             </descriptionHyperlinks>
           </value>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[defName="VenomTalon"]</xpath>
           <value>
             <descriptionHyperlinks>

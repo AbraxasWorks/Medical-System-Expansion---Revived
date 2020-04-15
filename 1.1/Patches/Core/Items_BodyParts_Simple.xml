@@ -3,7 +3,7 @@
 
   <!-- arm -->
 
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
       <comps>
@@ -41,7 +41,7 @@
 
   <!-- leg -->
 
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
     <value>
       <comps>
@@ -79,13 +79,13 @@
       <operations>
         <!-- copy melee verbs -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]</xpath>
           <value>
             <comps/>
           </value>
         </li>
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]/comps</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
         </li>

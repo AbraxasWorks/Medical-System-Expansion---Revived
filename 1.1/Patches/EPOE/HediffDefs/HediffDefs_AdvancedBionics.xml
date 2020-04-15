@@ -10,7 +10,7 @@
 
         <!-- adv power arm -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
@@ -21,7 +21,7 @@
           </value>
         </li>
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
@@ -37,7 +37,7 @@
 
         <!-- adv bionic arm -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
           <value>
             <comps>
@@ -53,7 +53,7 @@
 
         <!-- adv bionic leg -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
@@ -64,7 +64,7 @@
           </value>
         </li>
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
@@ -81,7 +81,7 @@
 
         <!-- adv bionic hand -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
@@ -92,7 +92,7 @@
           </value>
         </li>
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
@@ -111,7 +111,7 @@
 
         <!-- adv bionic foot -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+        <li Class="MSE2.PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
           <value>
             <comps>
@@ -619,7 +619,7 @@
           <mods>
             <li>Combat Extended</li>
           </mods>
-          <match Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+          <match Class="MSE2.PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
             <value>
               <comps>
@@ -639,7 +639,7 @@
               </comps>
             </value>
           </match>
-          <nomatch Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+          <nomatch Class="MSE2.PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
             <value>
               <comps>
@@ -662,7 +662,7 @@
 
         <!-- copy verbs -->
 
-        <li Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+        <li Class="MSE2.PatchOperationAddOrMergeCopy">
           <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="AdvancedPowerClaw"]</xpath>
           <fromxpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
         </li>

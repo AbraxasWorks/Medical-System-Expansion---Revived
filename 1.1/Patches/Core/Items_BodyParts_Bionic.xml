@@ -3,7 +3,7 @@
 
   <!-- arm -->
 
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]</xpath>
     <value>
       <comps>
@@ -19,7 +19,7 @@
 
   <!-- leg -->
 
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
@@ -34,7 +34,7 @@
     </value>
   </Operation>
 
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
@@ -48,13 +48,13 @@
   <!-- copy melee verbs -->
 
   <!-- hand -->
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+  <Operation Class="MSE2.PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]</xpath>
     <value>
       <comps/>
     </value>
   </Operation>
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddCopy">
+  <Operation Class="MSE2.PatchOperationAddCopy">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>
@@ -63,7 +63,7 @@
   </Operation>
 
   <!-- powerclaw -->
-  <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMergeCopy">
+  <Operation Class="MSE2.PatchOperationAddOrMergeCopy">
     <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
   </Operation>

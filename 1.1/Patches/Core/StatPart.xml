@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="MSE2.XpathPatches.PatchOperationAddOrMerge">
+    <Operation Class="MSE2.PatchOperationAddOrMerge">
         <xpath>/Defs/StatDef[defName="MarketValue"]</xpath>
         <value>
             <parts>

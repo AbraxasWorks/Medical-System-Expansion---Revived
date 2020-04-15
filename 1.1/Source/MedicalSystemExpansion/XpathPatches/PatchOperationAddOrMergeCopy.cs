@@ -3,7 +3,7 @@ using System.Xml;
 
 using Verse;
 
-namespace MSE2.XpathPatches
+namespace MSE2
 {
     internal class PatchOperationAddOrMergeCopy : PatchOperationPathed
     {
