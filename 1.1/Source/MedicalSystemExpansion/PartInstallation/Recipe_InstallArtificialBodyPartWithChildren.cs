@@ -68,15 +68,24 @@ namespace OrenoMSE.PartInstallation
 
             // END VANILLA CODE
 
-            // iterate over non null CompIncludedChildParts in ingredients
-            foreach ( CompIncludedChildParts compChildParts in
-                from x in ingredients
-                where x is ThingWithComps  // out of every thingwithcomps ingredient
-                let comp = (x as ThingWithComps).GetComp<CompIncludedChildParts>() // take the comp
-                where comp != null && comp.childPartsIncluded != null
-                select comp )
+            if ( !ingredients.NullOrEmpty() )
             {
-                compChildParts.RecursiveInstallation( pawn, part );
+                // iterate over non null CompIncludedChildParts in ingredients
+                foreach ( CompIncludedChildParts compChildParts in
+                    from x in ingredients
+                    where x is ThingWithComps  // out of every thingwithcomps ingredient
+                    let comp = (x as ThingWithComps).GetComp<CompIncludedChildParts>() // take the comp
+                    where comp != null && comp.childPartsIncluded != null
+                    select comp )
+                {
+                    compChildParts.RecursiveInstallation( pawn, part );
+                }
+            }
+            else
+            {
+                var compProp = this.recipe.addsHediff.spawnThingOnRemoved.GetCompProperties<CompProperties_CompIncludedChildParts>();
+                if ( compProp != null )
+                    compProp.RecursiveDefInstallation( pawn, part );
             }
         }
     }

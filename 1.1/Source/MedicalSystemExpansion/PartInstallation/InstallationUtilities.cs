@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -14,6 +15,29 @@ namespace OrenoMSE.PartInstallation
             return modExt != null && part.parent != null && !modExt.CompatibleWithPart( part.parent, hediffSet );
         }
 
+        /// <summary>
+        /// Looks for a recipe and a compatible bodypart that can be applied to the pawn
+        /// </summary>
+        /// <returns>If it was successfull or not</returns>
+        public static bool TryGetRecipeAndPart ( Pawn pawn, ThingDef thingDef, Predicate<BodyPartRecord> predicate, out RecipeDef recipeDef, out BodyPartRecord bodyPartRecord )
+        {
+            (recipeDef, bodyPartRecord) =
+                (from r in DefDatabase<RecipeDef>.AllDefs
+                 where r.IsSurgery
+                 where r.IsIngredient( thingDef )
+                 where r.Worker is Recipe_Surgery
+                 from p in r.Worker.GetPartsToApplyOn( pawn, r ) // out of all the possible places to install this on the pawn
+                 where predicate == null || predicate.Invoke( p ) // choose using the predicate
+                 select (r, p))
+                 .FirstOrDefault();
+
+            return recipeDef != null && bodyPartRecord != null;
+        }
+
+        /// <summary>
+        /// Recursively installs the included parts, or drops them when possible
+        /// </summary>
+        /// <param name="compChildParts">Where to get the parts to install</param>
         public static void RecursiveInstallation ( this CompIncludedChildParts compChildParts, Pawn pawn, BodyPartRecord part )
         {
             List<BodyPartRecord> partsToConsider = new List<BodyPartRecord>( part.GetDirectChildParts().Append( part ) );
@@ -21,27 +45,14 @@ namespace OrenoMSE.PartInstallation
             // iterate over included child things
             foreach ( Thing childThing in compChildParts.childPartsIncluded )
             {
-                bool hasFoundARec = false;
-
-                // iterate over recipes that include it
-                foreach ( (RecipeDef recipe, BodyPartRecord bpr)
-                    in from r in DefDatabase<RecipeDef>.AllDefs
-                       where r.IsSurgery
-                       where r.IsIngredient( childThing.def )
-                       where r.Worker is Recipe_Surgery
-                       from p in r.Worker.GetPartsToApplyOn( pawn, r ) // out of all the possible places to install this on the pawn
-                       where partsToConsider.Contains( p ) // choose between children of the current part
-                       select (r, p) )
+                if ( TryGetRecipeAndPart( pawn, childThing.def, partsToConsider.Contains, out RecipeDef recipe, out BodyPartRecord bpr ) )
                 {
                     // apply the recipe
                     recipe.Worker.ApplyOnPawn( pawn, bpr, null, new List<Thing> { childThing }, null );
 
                     partsToConsider.Remove( bpr );
-
-                    hasFoundARec = true;
-                    break; // only need the first recipe
                 }
-                if ( !hasFoundARec )
+                else
                 {
                     if ( pawn.Map != null && pawn.Position != null )
                     {
@@ -53,6 +64,29 @@ namespace OrenoMSE.PartInstallation
                     }
 
                     Log.Warning( "[MSE] Couldn't install " + childThing.Label + " on " + part.Label + " of " + pawn.Name );
+                }
+            }
+        }
+
+        /// <summary>
+        /// Called when applying a recipe without ingredients, adds all the standardChildren
+        /// </summary>
+        /// <param name="compProp">Where to get the standard children from</param>
+        /// <param name="pawn">What pawn to add the diffs to</param>
+        /// <param name="part">The parent part of the parts to consider</param>
+        public static void RecursiveDefInstallation ( this CompProperties_CompIncludedChildParts compProp, Pawn pawn, BodyPartRecord part )
+        {
+            List<BodyPartRecord> partsToConsider = new List<BodyPartRecord>( part.GetDirectChildParts().Append( part ) );
+
+            // iterate over included child things
+            foreach ( ThingDef childThingDef in compProp.standardChildren )
+            {
+                if ( TryGetRecipeAndPart( pawn, childThingDef, partsToConsider.Contains, out RecipeDef recipe, out BodyPartRecord bpr ) )
+                {
+                    // apply the recipe (with no ingredients)
+                    recipe.Worker.ApplyOnPawn( pawn, bpr, null, null, null );
+
+                    partsToConsider.Remove( bpr );
                 }
             }
         }
