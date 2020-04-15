@@ -584,6 +584,18 @@
           </value>
         </li>
 
+        <!-- replace icon -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="HandTalon" or defName="ElbowBlade" or defName="KneeSpike" or defName="VenomTalon"]</xpath>
+          <value>
+            <graphicData>
+              <texPath>Things/Item/Health/HealthItemBionic3</texPath>
+              <graphicClass>Graphic_Single</graphicClass>
+              <drawSize>0.80</drawSize>
+            </graphicData>
+          </value>
+        </li>
 
       </operations>
     </match>
