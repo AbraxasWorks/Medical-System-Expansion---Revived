@@ -7,7 +7,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>BionicForearm</li>
             <li>BionicInternalSupport</li>
@@ -23,7 +23,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>BionicFoot</li>
             <li>BionicInternalSupport</li>

@@ -14,7 +14,7 @@
           <xpath>/Defs/ThingDef[defName="DrillArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>MechanicalManipulator</li>
                   <li>MechanicalInternalSupport</li>
@@ -31,7 +31,7 @@
           <xpath>/Defs/ThingDef[defName="FieldHand"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>FieldFinger</li>
                   <li>FieldFinger</li>
@@ -87,7 +87,7 @@
                 <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
               </recipeMaker>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>MechanicalFinger</li>
                     <li>MechanicalFinger</li>

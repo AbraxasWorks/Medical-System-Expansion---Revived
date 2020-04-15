@@ -7,7 +7,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>ArchotechHand</li>
             <li>ArchotechInternalSupport</li>
@@ -33,7 +33,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>ArchotechFoot</li>
             <li>ArchotechInternalSupport</li>

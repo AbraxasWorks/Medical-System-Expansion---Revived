@@ -74,7 +74,7 @@ namespace MSE2
         /// <param name="compProp">Where to get the standard children from</param>
         /// <param name="pawn">What pawn to add the diffs to</param>
         /// <param name="part">The parent part of the parts to consider</param>
-        public static void RecursiveDefInstallation ( this CompProperties_CompIncludedChildParts compProp, Pawn pawn, BodyPartRecord part )
+        public static void RecursiveDefInstallation ( this CompProperties_IncludedChildParts compProp, Pawn pawn, BodyPartRecord part )
         {
             List<BodyPartRecord> partsToConsider = new List<BodyPartRecord>( part.GetDirectChildParts().Append( part ) );
 

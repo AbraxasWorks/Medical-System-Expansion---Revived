@@ -8,11 +8,11 @@ namespace MSE2
 {
     public class CompIncludedChildParts : ThingComp
     {
-        public CompProperties_CompIncludedChildParts Props
+        public CompProperties_IncludedChildParts Props
         {
             get
             {
-                return (CompProperties_CompIncludedChildParts)this.props;
+                return (CompProperties_IncludedChildParts)this.props;
             }
         }
 

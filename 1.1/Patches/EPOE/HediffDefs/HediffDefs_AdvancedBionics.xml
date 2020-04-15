@@ -25,7 +25,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>AdvancedPowerForearm</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -41,7 +41,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicForearm</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -68,7 +68,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFoot</li>
                   <li>AdvancedBionicInternalSupport</li>
@@ -96,7 +96,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicFinger</li>
                   <li>AdvancedBionicFinger</li>
@@ -115,7 +115,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>AdvancedBionicToe</li>
                   <li>AdvancedBionicToe</li>
@@ -374,7 +374,7 @@
                 <Mass>7</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>AdvancedBionicHand</li>
                     <li>AdvancedBionicInternalSupport</li>
@@ -449,7 +449,7 @@
                 <Mass>4.5</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>AdvancedPowerHand</li>
                     <li>AdvancedBionicInternalSupport</li>
@@ -525,7 +525,7 @@
               </statBases>
               <comps>
                 <!-- verbs added via patch -->
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>AdvancedPowerClaw</li>
                     <li>BionicFinger</li>

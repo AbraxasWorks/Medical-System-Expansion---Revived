@@ -112,7 +112,7 @@
       <Mass>4</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>BionicHand</li>
           <li>BionicInternalSupport</li>
@@ -187,7 +187,7 @@
       <Mass>2</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>BionicToe</li>
           <li>BionicToe</li>
@@ -336,7 +336,7 @@
       <Mass>1</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>BionicFinger</li>
           <li>BionicFinger</li>

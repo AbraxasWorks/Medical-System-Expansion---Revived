@@ -82,7 +82,7 @@ namespace MSE2
             }
             else
             {
-                var compProp = this.recipe.addsHediff.spawnThingOnRemoved.GetCompProperties<CompProperties_CompIncludedChildParts>();
+                var compProp = this.recipe.addsHediff.spawnThingOnRemoved.GetCompProperties<CompProperties_IncludedChildParts>();
                 if ( compProp != null )
                     compProp.RecursiveDefInstallation( pawn, part );
             }

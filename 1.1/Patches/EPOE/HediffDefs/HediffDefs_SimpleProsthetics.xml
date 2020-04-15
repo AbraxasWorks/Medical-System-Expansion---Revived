@@ -14,7 +14,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticHand</li>
                 </standardChildren>
@@ -50,7 +50,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticLeg"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticFoot</li>
                   <li>SimpleProstheticFemur</li>
@@ -79,7 +79,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticFinger</li>
                   <li>SimpleProstheticFinger</li>
@@ -98,7 +98,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticToe</li>
                   <li>SimpleProstheticToe</li>
@@ -271,7 +271,7 @@
                 <Mass>8</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>SimpleProstheticArm</li>
                     <li>SimpleProstheticClavicle</li>

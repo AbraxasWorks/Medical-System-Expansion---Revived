@@ -32,7 +32,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>HookHand</li>
                 </standardChildren>

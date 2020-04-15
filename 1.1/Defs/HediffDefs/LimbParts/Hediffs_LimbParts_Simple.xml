@@ -37,7 +37,7 @@
       <li>Simple</li>
     </techHediffsTags>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>SimpleProstheticToe</li>
           <li>SimpleProstheticToe</li>
@@ -174,7 +174,7 @@
       <Mass>1</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>SimpleProstheticFinger</li>
           <li>SimpleProstheticFinger</li>

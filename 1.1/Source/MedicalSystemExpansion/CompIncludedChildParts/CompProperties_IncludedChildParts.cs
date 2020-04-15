@@ -3,9 +3,9 @@ using Verse;
 
 namespace MSE2
 {
-    public class CompProperties_CompIncludedChildParts : CompProperties
+    public class CompProperties_IncludedChildParts : CompProperties
     {
-        public CompProperties_CompIncludedChildParts ()
+        public CompProperties_IncludedChildParts ()
         {
             this.compClass = typeof( CompIncludedChildParts );
         }

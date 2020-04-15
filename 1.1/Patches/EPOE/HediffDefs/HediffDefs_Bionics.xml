@@ -31,7 +31,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="PowerArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>PowerForearm</li>
                   <li>BionicInternalSupport</li>
@@ -47,7 +47,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>BionicForearm</li>
                   <li>BionicInternalSupport</li>
@@ -63,7 +63,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicLeg"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>BionicFoot</li>
                   <li>BionicInternalSupport</li>
@@ -80,7 +80,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicHand"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>BionicFinger</li>
                   <li>BionicFinger</li>
@@ -99,7 +99,7 @@
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicFoot"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.CompProperties_CompIncludedChildParts">
+              <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>BionicToe</li>
                   <li>BionicToe</li>
@@ -356,7 +356,7 @@
                 <Mass>4</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>BionicHand</li>
                     <li>BionicInternalSupport</li>
@@ -432,7 +432,7 @@
                 <Mass>4.5</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>PowerHand</li>
                     <li>BionicInternalSupport</li>
@@ -508,7 +508,7 @@
                 <Mass>3.5</Mass>
               </statBases>
               <comps>
-                <li Class="MSE2.CompProperties_CompIncludedChildParts">
+                <li Class="MSE2.CompProperties_IncludedChildParts">
                   <standardChildren>
                     <li>PowerClaw</li>
                     <li>BionicFinger</li>

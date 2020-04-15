@@ -7,7 +7,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticHand</li>
             <!-- <li>SimpleProstheticHumerus</li>
@@ -45,7 +45,7 @@
     <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.CompProperties_CompIncludedChildParts">
+        <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticFoot</li>
             <!-- <li>SimpleProstheticFemur</li>

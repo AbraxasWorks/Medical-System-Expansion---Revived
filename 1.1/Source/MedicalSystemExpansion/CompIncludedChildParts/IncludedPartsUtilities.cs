@@ -10,7 +10,7 @@ namespace MSE2
     public static class IncludedPartsUtilities
     {
         /// <summary>
-        /// For each of the hediffs in the game, adds it to its children's standard parents cache (as mapped by CompProperties_CompIncludedChildParts of the thingdef)
+        /// For each of the hediffs in the game, adds it to its children's standard parents cache (as mapped by CompProperties_IncludedChildParts of the thingdef)
         /// </summary>
         public static void CacheAllStandardParents ()
         {
@@ -22,7 +22,7 @@ namespace MSE2
 
         private static void CacheParentOfChildren ( this HediffDef parent )
         {
-            var comp = parent.spawnThingOnRemoved?.GetCompProperties<CompProperties_CompIncludedChildParts>(); // comp on the corresponding ThingDef
+            var comp = parent.spawnThingOnRemoved?.GetCompProperties<CompProperties_IncludedChildParts>(); // comp on the corresponding ThingDef
             if ( comp != null && !comp.standardChildren.NullOrEmpty() ) // if it has standard children
             {
                 foreach ( var def in from d in DefDatabase<HediffDef>.AllDefs

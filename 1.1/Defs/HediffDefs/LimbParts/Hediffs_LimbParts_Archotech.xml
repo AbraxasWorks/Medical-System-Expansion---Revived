@@ -115,7 +115,7 @@
       <Mass>4</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>ArchotechHand</li>
           <li>ArchotechInternalSupport</li>
@@ -184,7 +184,7 @@
       <Mass>1.5</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>ArchotechToe</li>
           <li>ArchotechToe</li>
@@ -321,7 +321,7 @@
       <Mass>1</Mass>
     </statBases>
     <comps>
-      <li Class="MSE2.CompProperties_CompIncludedChildParts">
+      <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>ArchotechFinger</li>
           <li>ArchotechFinger</li>
