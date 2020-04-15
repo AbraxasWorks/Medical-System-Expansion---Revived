@@ -53,8 +53,6 @@
               <li Class="MSE2.CompProperties_IncludedChildParts">
                 <standardChildren>
                   <li>SimpleProstheticFoot</li>
-                  <li>SimpleProstheticFemur</li>
-                  <li>SimpleProstheticTibia</li>
                 </standardChildren>
               </li>
             </comps>

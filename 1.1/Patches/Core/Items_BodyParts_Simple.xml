@@ -10,8 +10,6 @@
         <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticHand</li>
-            <!-- <li>SimpleProstheticHumerus</li>
-            <li>SimpleProstheticRadius</li> -->
           </standardChildren>
         </li>
       </comps>
@@ -48,8 +46,6 @@
         <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
             <li>SimpleProstheticFoot</li>
-            <!-- <li>SimpleProstheticFemur</li>
-            <li>SimpleProstheticTibia</li> -->
           </standardChildren>
         </li>
       </comps>
