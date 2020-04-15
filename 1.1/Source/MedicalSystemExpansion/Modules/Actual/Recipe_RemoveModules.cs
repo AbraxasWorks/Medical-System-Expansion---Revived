@@ -9,17 +9,9 @@ namespace MSE2
     {
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn ( Pawn pawn, RecipeDef recipe )
         {
-            foreach ( var hediff in from x in pawn.health.hediffSet.GetHediffs<Hediff>()
-                                    where x is Hediff_ModuleAdded
-                                    select x )
-            {
-                //Log.Message( "Remove module " + hediff.Label );
-                yield return hediff.Part;
-            }
-
-            //Log.Message( "Stopped looking for modules" );
-
-            yield break;
+            return from m in pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>()
+                   group m by m.Part into g
+                   select g.Key;
         }
 
         public override void ApplyOnPawn ( Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill )
