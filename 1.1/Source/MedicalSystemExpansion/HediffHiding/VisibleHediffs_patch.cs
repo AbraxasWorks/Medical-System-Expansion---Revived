@@ -30,7 +30,7 @@ namespace MSE2.HarmonyPatches
                             //|| h.Part.parent == null
                             //|| !pawn.health.hediffSet.HasDirectlyAddedPartFor( h.Part.parent )
                             || !h.IsParentStandard()
-                            || pawn.health.hediffSet.GetInjuredParts().Contains( h.Part )
+                            || pawn.health.hediffSet.hediffs.Where( x => x.Part == h.Part && x.Visible ).Except( h ).Any()
                            select h;
             }
         }
