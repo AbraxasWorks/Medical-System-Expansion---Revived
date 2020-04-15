@@ -91,11 +91,6 @@
     <description>A slot for upgrading</description>
     <defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
     <isBad>false</isBad>
-    <modExtensions>
-      <li Class="MSE2.MSE_HediffPrettyLabel">
-        <labelPretty>{0} module slot</labelPretty>
-      </li>
-    </modExtensions>
   </HediffDef>
 
 
