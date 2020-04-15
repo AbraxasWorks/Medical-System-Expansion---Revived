@@ -19,7 +19,7 @@ namespace OrenoMSE.HarmonyPatches
                 // Spawn every thing that can be made from the heddiffs on this part and childparts
                 foreach ( Thing item in MakeThingsFromHediffs( pawn, part, pos, map ) )
                 {
-                    GenSpawn.Spawn( item, pos, map );
+                    if ( map != null ) GenSpawn.Spawn( item, pos, map );
                 }
 
                 return false;

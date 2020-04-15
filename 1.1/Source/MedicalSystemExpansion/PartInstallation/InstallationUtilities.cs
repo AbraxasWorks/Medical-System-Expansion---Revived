@@ -52,7 +52,7 @@ namespace OrenoMSE.PartInstallation
                         childThing.Destroy();
                     }
 
-                    Log.Warning( "[MSE] Couldn't install " + childThing.Label );
+                    Log.Warning( "[MSE] Couldn't install " + childThing.Label + " on " + part.Label + " of " + pawn.Name );
                 }
             }
         }
