@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using Verse;
 
-namespace MSE2.EfficiencyCalculationPatches
+namespace MSE2.HarmonyPatches
 {
     [HarmonyPatch]
     internal class CacheMissingPartsCommonAncestors_Patch

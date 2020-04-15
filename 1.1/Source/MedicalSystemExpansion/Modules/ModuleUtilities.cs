@@ -1,9 +1,7 @@
-﻿using MSE2.Modules.Actual;
-using MSE2.Modules.Slots;
-using System.Linq;
+﻿using System.Linq;
 using Verse;
 
-namespace MSE2.Modules
+namespace MSE2
 {
     public static class ModuleUtilities
     {

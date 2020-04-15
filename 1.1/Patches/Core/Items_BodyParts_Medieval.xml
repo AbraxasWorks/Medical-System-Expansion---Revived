@@ -4,7 +4,7 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PegLeg"]</xpath>
     <value>
-      <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+      <li Class="MSE2.IgnoreSubParts">
         <ignoredSubParts>
           <li>Foot</li>
           <li>Femur</li>
@@ -18,7 +18,7 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="WoodenFoot"]</xpath>
     <value>
-      <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+      <li Class="MSE2.IgnoreSubParts">
         <ignoredSubParts>
           <li>Toe</li>
         </ignoredSubParts>
@@ -29,7 +29,7 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="WoodenHand"]</xpath>
     <value>
-      <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+      <li Class="MSE2.IgnoreSubParts">
         <ignoredSubParts>
           <li>Finger</li>
         </ignoredSubParts>

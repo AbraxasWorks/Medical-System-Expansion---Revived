@@ -19,7 +19,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Humerus</li>
                 <li>Radius</li>
@@ -46,7 +46,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Finger</li>
               </ignoredSubParts>
@@ -59,7 +59,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="PegLeg"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Foot</li>
                 <li>Femur</li>
@@ -75,7 +75,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenFoot"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Toe</li>
               </ignoredSubParts>

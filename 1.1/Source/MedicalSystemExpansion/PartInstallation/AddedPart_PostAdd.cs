@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2.HarmonyPatches
 {
     [HarmonyPatch( typeof( Hediff_AddedPart ) )]
     [HarmonyPatch( "PostAdd" )]

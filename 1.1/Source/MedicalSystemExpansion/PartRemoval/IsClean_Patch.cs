@@ -1,10 +1,9 @@
 ﻿using HarmonyLib;
-using MSE2.Modules;
 using RimWorld;
 using System.Linq;
 using Verse;
 
-namespace MSE2.PartRemoval
+namespace MSE2.HarmonyPatches
 {
     // makes it so parts with implants are considered clean
 

@@ -1,8 +1,6 @@
-﻿using MSE2.Modules.Slots;
+﻿using Verse;
 
-using Verse;
-
-namespace MSE2.Modules
+namespace MSE2
 {
     public class HediffComp_ModuleHolder : HediffComp
     {

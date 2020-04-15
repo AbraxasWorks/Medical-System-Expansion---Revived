@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace MSE2.Modules.Actual
+namespace MSE2
 {
     public class Recipe_InstallModule : Recipe_Surgery
     {

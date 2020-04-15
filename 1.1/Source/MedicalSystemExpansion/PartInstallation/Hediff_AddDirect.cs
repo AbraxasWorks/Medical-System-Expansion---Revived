@@ -1,8 +1,7 @@
 ﻿using HarmonyLib;
-using MSE2.EfficiencyCalculationPatches;
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2.HarmonyPatches
 {
     public class Hediff_AddDirect
     {

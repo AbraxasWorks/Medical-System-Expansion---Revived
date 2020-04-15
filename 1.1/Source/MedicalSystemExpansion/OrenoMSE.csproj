@@ -325,7 +325,7 @@
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
-    <Compile Include="Modules\MSE_DefOf\MSE_HediffDefOf.cs" />
+    <Compile Include="MSE_HediffDefOf.cs" />
     <Compile Include="HediffCompGizmo\HediffComp_HediffGizmo.cs" />
     <Compile Include="Implants\HediffComp_Painstopper.cs" />
     <Compile Include="SelfRepair\HediffComp_PartSystemSelfRepair.cs" />

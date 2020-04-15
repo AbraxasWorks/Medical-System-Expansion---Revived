@@ -38,7 +38,7 @@
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
-        <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+        <li Class="MSE2.HediffCompProperties_ModuleHolder">
           <maxModules>1</maxModules>
         </li>
       </comps>

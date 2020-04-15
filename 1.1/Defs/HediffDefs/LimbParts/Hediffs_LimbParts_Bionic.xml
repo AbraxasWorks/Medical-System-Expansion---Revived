@@ -69,7 +69,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>BionicInternalSupport</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <whitelist>
           <li>BionicArm</li>
           <li>BionicForearm</li>
@@ -312,7 +312,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
-      <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+      <li Class="MSE2.HediffCompProperties_ModuleHolder">
         <maxModules>1</maxModules>
       </li>
     </comps>

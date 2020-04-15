@@ -9,7 +9,7 @@ using RimWorld;
 using HarmonyLib;
 using System.Reflection;
 
-namespace MSE2.HediffHiding
+namespace MSE2.HarmonyPatches
 {
     [HarmonyPatch]
     internal static class VisibleHediffs_patch

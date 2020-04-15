@@ -26,7 +26,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Humerus</li>
                 <li>Radius</li>
@@ -64,7 +64,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticLeg"]</xpath>
           <value>
-            <li Class="MSE2.EfficiencyCalculationPatches.IgnoreSubParts">
+            <li Class="MSE2.IgnoreSubParts">
               <ignoredSubParts>
                 <li>Femur</li>
                 <li>Tibia</li>

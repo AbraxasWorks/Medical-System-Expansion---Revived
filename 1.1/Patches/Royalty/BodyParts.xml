@@ -127,7 +127,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalManipulator</addsHediff>
               <modExtensions>
-                <li Class="MSE2.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.InstallationRestrictions">
                   <whitelist>
                     <li>DrillArm</li>
                   </whitelist>
@@ -196,7 +196,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalFinger</addsHediff>
               <modExtensions>
-                <li Class="MSE2.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.InstallationRestrictions">
                   <whitelist>
                     <li>MechanicalManipulator</li>
                   </whitelist>
@@ -271,7 +271,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>FieldFinger</addsHediff>
               <modExtensions>
-                <li Class="MSE2.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.InstallationRestrictions">
                   <whitelist>
                     <li>FieldHand</li>
                   </whitelist>
@@ -518,7 +518,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>MechanicalInternalSupport</addsHediff>
               <modExtensions>
-                <li Class="MSE2.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.InstallationRestrictions">
                   <whitelist>
                     <li>DrillArm</li>
                   </whitelist>

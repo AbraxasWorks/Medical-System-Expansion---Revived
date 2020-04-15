@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2
 {
     public static class InstallationUtilities
     {

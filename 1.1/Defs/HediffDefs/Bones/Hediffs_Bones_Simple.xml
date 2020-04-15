@@ -61,7 +61,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticClavicle</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -127,7 +127,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticHumerus</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -193,7 +193,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticRadius</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -259,7 +259,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticFemur</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -325,7 +325,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>SimpleProstheticTibia</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>

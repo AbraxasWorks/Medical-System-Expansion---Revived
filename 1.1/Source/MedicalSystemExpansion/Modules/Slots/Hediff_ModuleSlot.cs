@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace MSE2.Modules.Slots
+namespace MSE2
 {
     public class Hediff_ModuleSlot : Hediff_ModuleAbstract
     {

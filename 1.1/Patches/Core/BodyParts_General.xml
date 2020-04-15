@@ -5,14 +5,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
 		<value>
-			<workerClass>MSE2.PartInstallation.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
+			<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 		</value>
 	</Operation> 
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
 		<value>
-			<workerClass>MSE2.PartInstallation.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
+			<workerClass>MSE2.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
 		</value>
 	</Operation> 
 

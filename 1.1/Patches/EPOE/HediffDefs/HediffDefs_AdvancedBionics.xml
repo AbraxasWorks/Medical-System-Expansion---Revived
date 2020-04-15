@@ -14,7 +14,7 @@
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.HediffCompProperties_ModuleHolder">
                 <maxModules>2</maxModules>
               </li>
             </comps>
@@ -57,7 +57,7 @@
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.HediffCompProperties_ModuleHolder">
                 <maxModules>1</maxModules>
               </li>
             </comps>
@@ -85,7 +85,7 @@
           <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicHand"]</xpath>
           <value>
             <comps>
-              <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+              <li Class="MSE2.HediffCompProperties_ModuleHolder">
                 <maxModules>1</maxModules>
               </li>
             </comps>
@@ -200,7 +200,7 @@
               </appliedOnFixedBodyParts>
               <addsHediff>AdvancedBionicInternalSupport</addsHediff>
               <modExtensions>
-                <li Class="MSE2.PartInstallation.InstallationRestrictions">
+                <li Class="MSE2.InstallationRestrictions">
                   <whitelist>
                     <li>AdvancedPowerArm</li>
                     <li>AdvancedPowerForearm</li>
@@ -353,7 +353,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedBionicForearm</spawnThingOnRemoved>
               <comps>
-                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.HediffCompProperties_ModuleHolder">
                   <maxModules>1</maxModules>
                 </li>
               </comps>
@@ -428,7 +428,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
               <comps>
-                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.HediffCompProperties_ModuleHolder">
                   <maxModules>2</maxModules>
                 </li>
               </comps>
@@ -503,7 +503,7 @@
               </addedPartProps>
               <spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
               <comps>
-                <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+                <li Class="MSE2.HediffCompProperties_ModuleHolder">
                   <maxModules>2</maxModules>
                 </li>
               </comps>

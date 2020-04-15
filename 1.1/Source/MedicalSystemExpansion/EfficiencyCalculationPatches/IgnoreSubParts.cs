@@ -3,7 +3,7 @@ using System.Linq;
 
 using Verse;
 
-namespace MSE2.EfficiencyCalculationPatches
+namespace MSE2
 {
     internal class IgnoreSubParts : DefModExtension
     {

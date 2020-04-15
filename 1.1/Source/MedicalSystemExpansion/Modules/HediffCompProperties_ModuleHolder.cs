@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Verse;
 
-namespace MSE2.Modules
+namespace MSE2
 {
     public class HediffCompProperties_ModuleHolder : HediffCompProperties
     {

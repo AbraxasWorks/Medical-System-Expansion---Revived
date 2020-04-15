@@ -64,7 +64,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>PlasteelClavicle</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -134,7 +134,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>PlasteelHumerus</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -204,7 +204,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>PlasteelRadius</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -274,7 +274,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>PlasteelFemur</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>
@@ -344,7 +344,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>PlasteelTibia</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <onlyOnNatural>true</onlyOnNatural>
       </li>
     </modExtensions>

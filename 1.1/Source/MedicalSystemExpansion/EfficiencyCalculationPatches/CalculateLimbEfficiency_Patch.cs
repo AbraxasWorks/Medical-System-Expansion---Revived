@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 
-namespace MSE2.EfficiencyCalculationPatches
+namespace MSE2.HarmonyPatches
 {
     [HarmonyPatch( typeof( PawnCapacityUtility ) )]
     [HarmonyPatch( "CalculateLimbEfficiency" )]

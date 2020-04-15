@@ -3,7 +3,7 @@ using System.Linq;
 
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2
 {
     public class InstallationRestrictions : DefModExtension
     {

@@ -67,7 +67,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ArchotechInternalSupport</addsHediff>
     <modExtensions>
-      <li Class="MSE2.PartInstallation.InstallationRestrictions">
+      <li Class="MSE2.InstallationRestrictions">
         <whitelist>
           <li>ArchotechArm</li>
           <li>ArchotechForearm</li>
@@ -94,7 +94,7 @@
     </addedPartProps>
     <spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
     <comps>
-      <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+      <li Class="MSE2.HediffCompProperties_ModuleHolder">
         <maxModules>1</maxModules>
       </li>
     </comps>
@@ -303,7 +303,7 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
-      <li Class="MSE2.Modules.HediffCompProperties_ModuleHolder">
+      <li Class="MSE2.HediffCompProperties_ModuleHolder">
         <maxModules>1</maxModules>
       </li>
     </comps>

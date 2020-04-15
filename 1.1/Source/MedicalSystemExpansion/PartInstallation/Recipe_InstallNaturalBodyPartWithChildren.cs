@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2
 {
     // This class gets patched into Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass
 

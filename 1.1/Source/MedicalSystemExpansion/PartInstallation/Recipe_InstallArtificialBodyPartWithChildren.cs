@@ -1,10 +1,9 @@
-﻿using MSE2.EfficiencyCalculationPatches;
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
-namespace MSE2.PartInstallation
+namespace MSE2
 {
     // This class gets patched into Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass
 
