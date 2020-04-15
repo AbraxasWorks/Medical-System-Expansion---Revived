@@ -189,6 +189,8 @@
               <modExtensions>
                 <li Class="OrenoMSE.PartInstallation.InstallationRestrictions">
                   <whitelist>
+                    <li>PowerArm</li>
+                    <li>PowerForearm</li>
                     <li>BionicArm</li>
                     <li>BionicForearm</li>
                     <li>BionicLeg</li>
