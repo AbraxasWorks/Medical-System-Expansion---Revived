@@ -10,24 +10,13 @@ namespace MSE2
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn ( Pawn pawn, RecipeDef recipe )
         {
             return
-                // in the parts that the recipe can be applied to and that the pawn has
+                // in the parts that the recipe can be applied to and that the pawn has a slot in
                 from BodyPartRecord bodyPart in
                     from rbpd in recipe.appliedOnFixedBodyParts
-                    from abpr in pawn.health.hediffSet.GetNotMissingParts()
-                    where rbpd == abpr.def
-                    select abpr
-                where
-                    pawn.health.hediffSet.GetHediffs<Hediff_ModuleAbstract>().Any(
-                            delegate ( Hediff_ModuleAbstract hediff_Module )
-                            {
-                                return hediff_Module.Part == bodyPart;   // in that part there is any module or slot
-                            } )
-                where
-                    !pawn.health.hediffSet.GetHediffs<Hediff_ModuleAbstract>().Any(
-                            delegate ( Hediff_ModuleAbstract hediff_Module )
-                            {
-                                return hediff_Module.def == recipe.addsHediff;   // part doesn't have the module i'm trying to add
-                            } )
+                    from slot in pawn.health.hediffSet.GetHediffs<Hediff_ModuleSlot>()
+                    where rbpd == slot.Part.def
+                    select slot.Part
+                where !pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>().Any( m => m.def == recipe.addsHediff )   // part doesn't have the module i'm trying to add
                 select bodyPart;
         }
 
