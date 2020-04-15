@@ -342,7 +342,7 @@
 
             <HediffDef ParentName="addedPartAdvanced">
               <defName>AdvancedBionicForearm</defName>
-              <label>advanced bionic forearm</label>
+              <label>advanced bionic arm</label>
               <labelNoun>an advanced bionic forearm</labelNoun>
               <description>An installed advanced bionic arm.</description>
               <descriptionHyperlinks>
@@ -417,7 +417,7 @@
 
             <HediffDef ParentName="addedPartAdvanced">
               <defName>AdvancedPowerForearm</defName>
-              <label>advanced power forearm</label>
+              <label>advanced power arm</label>
               <labelNoun>an advanced power forearm</labelNoun>
               <description>An installed advanced power forearm.</description>
               <descriptionHyperlinks>

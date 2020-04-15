@@ -328,7 +328,7 @@
 
             <HediffDef ParentName="addedPartBionics">
               <defName>BionicForearm</defName>
-              <label>bionic forearm</label>
+              <label>bionic arm</label>
               <labelNoun>a bionic forearm</labelNoun>
               <description>An installed bionic arm.</description>
               <descriptionHyperlinks>
@@ -399,7 +399,7 @@
 
             <HediffDef ParentName="addedPartBionics">
               <defName>PowerForearm</defName>
-              <label>power forearm</label>
+              <label>power arm</label>
               <labelNoun>a power forearm</labelNoun>
               <description>An installed power forearm.</description>
               <descriptionHyperlinks>

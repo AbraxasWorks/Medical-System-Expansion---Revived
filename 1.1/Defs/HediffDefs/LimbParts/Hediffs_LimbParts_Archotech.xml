@@ -81,7 +81,7 @@
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>ArchotechForearm</defName>
-    <label>archotech forearm</label>
+    <label>archotech arm</label>
     <labelNoun>an archotech forearm</labelNoun>
     <description>An installed bionic arm.</description>
     <descriptionHyperlinks>
