@@ -8,7 +8,7 @@ namespace MSE2.Modules.Actual
         {
             base.PostAdd( dinfo );
 
-            ApplyExtraHediffs.Utilities.HediffApplyExtraHediffs( this, this.pawn, base.Part );
+            //ApplyExtraHediffs.Utilities.HediffApplyExtraHediffs( this, this.pawn, base.Part );
 
             this.ModuleHolder.Notify_ModuleAdded();
         }
