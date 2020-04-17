@@ -115,8 +115,6 @@ namespace MSE2
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra ()
         {
-            Log.Message( "test" );
-
             yield return command_AddExistingSubpart;
             yield return command_SplitOffSubpart;
 
