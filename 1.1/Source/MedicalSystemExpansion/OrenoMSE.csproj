@@ -296,7 +296,9 @@
   <ItemGroup>
     <Compile Include="ApplyExtraHediffs\ApplyExtraHediffsUtilities.cs" />
     <Compile Include="ApplyExtraHediffs\HarmonyHooks.cs" />
+    <Compile Include="CompIncludedChildParts\Command_SplitOffSubpart.cs" />
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
+    <Compile Include="CompIncludedChildParts\Command_AddExistingSubpart.cs" />
     <Compile Include="CompIncludedChildParts\IncludedPartsUtilities.cs" />
     <Compile Include="CompIncludedChildParts\MSE_cachedStandardParents.cs" />
     <Compile Include="CompIncludedChildParts\StatPart_MissingSubParts.cs" />

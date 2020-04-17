@@ -6,7 +6,7 @@ using Verse;
 
 namespace MSE2
 {
-    public class CompIncludedChildParts : ThingComp
+    public partial class CompIncludedChildParts : ThingComp
     {
         public CompProperties_IncludedChildParts Props
         {
@@ -99,6 +99,48 @@ namespace MSE2
                 }
             }
             yield break;
+        }
+
+        // merging
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra ()
+        {
+            yield return new Command_AddExistingSubpart( this );
+            yield return new Command_SplitOffSubpart( this );
+
+            foreach ( var g in base.CompGetGizmosExtra() ) yield return g;
+
+            yield break;
+        }
+
+        public void AddPart ( Thing part )
+        {
+            if ( !Props.standardChildren.Contains( part.def ) )
+            {
+                Log.Warning( part.Label + " is not a valid subpart for " + this.parent.Label );
+            }
+
+            this.childPartsIncluded.Add( part );
+            this.DirtyCache();
+
+            if ( part.Spawned )
+            {
+                part.DeSpawn();
+            }
+        }
+
+        public void RemoveAndSpawnPart ( Thing part )
+        {
+            if ( !this.childPartsIncluded.Contains( part ) )
+            {
+                Log.Error( "Tried to remove " + part.Label + " from " + this.parent.Label + " while it wasn't actually included." );
+                return;
+            }
+
+            this.childPartsIncluded.Remove( part );
+            this.DirtyCache();
+
+            GenPlace.TryPlaceThing( part, this.parent.Position, this.parent.Map, ThingPlaceMode.Near );
         }
 
         // Save / Load
