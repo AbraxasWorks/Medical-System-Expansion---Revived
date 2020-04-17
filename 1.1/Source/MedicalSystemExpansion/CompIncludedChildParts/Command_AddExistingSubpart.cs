@@ -17,7 +17,7 @@ namespace MSE2
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
-                this.defaultLabel = "Add part";
+                this.defaultLabel = "Add sub-part";
                 this.defaultDesc = "Chose a part to add to this one's subparts.";
             }
 
@@ -37,7 +37,7 @@ namespace MSE2
 
                 foreach ( Thing thing in PossibleThings )
                 {
-                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.AddPart( thing ) ) );
+                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.AddPart( thing ), thing.def ) );
                 }
 
                 Find.WindowStack.Add( new FloatMenu( list ) );
@@ -49,6 +49,18 @@ namespace MSE2
                 {
                     return comp.parent.Map.listerThings.AllThings.Where( t => comp.MissingParts.Contains( t.def ) );
                 }
+            }
+
+            public override GizmoResult GizmoOnGUI ( Vector2 loc, float maxWidth )
+            {
+                GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
+                if ( MedicalSystemExpansion.WidgetPlusSign != null )
+                {
+                    Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
+                    Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
+                    GUI.DrawTexture( position, MedicalSystemExpansion.WidgetPlusSign );
+                }
+                return result;
             }
         }
     }

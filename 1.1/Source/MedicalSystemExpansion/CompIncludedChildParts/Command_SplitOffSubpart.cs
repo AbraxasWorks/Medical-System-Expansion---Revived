@@ -17,7 +17,7 @@ namespace MSE2
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
-                this.defaultLabel = "Remove part";
+                this.defaultLabel = "Remove sub-part";
                 this.defaultDesc = "Chose a part to remove from this one's subparts.";
             }
 
@@ -37,10 +37,22 @@ namespace MSE2
 
                 foreach ( Thing thing in comp.childPartsIncluded )
                 {
-                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.RemoveAndSpawnPart( thing ) ) );
+                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.RemoveAndSpawnPart( thing ), thing.def ) );
                 }
 
                 Find.WindowStack.Add( new FloatMenu( list ) );
+            }
+
+            public override GizmoResult GizmoOnGUI ( Vector2 loc, float maxWidth )
+            {
+                GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
+                if ( MedicalSystemExpansion.WidgetMinusSign != null )
+                {
+                    Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
+                    Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
+                    GUI.DrawTexture( position, MedicalSystemExpansion.WidgetMinusSign );
+                }
+                return result;
             }
         }
     }

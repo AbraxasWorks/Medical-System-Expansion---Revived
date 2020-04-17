@@ -8,6 +8,13 @@ namespace MSE2
 {
     public partial class CompIncludedChildParts : ThingComp
     {
+        public override void PostSpawnSetup ( bool respawningAfterLoad )
+        {
+            base.PostSpawnSetup( respawningAfterLoad );
+            command_AddExistingSubpart = new Command_AddExistingSubpart( this );
+            command_SplitOffSubpart = new Command_SplitOffSubpart( this );
+        }
+
         public CompProperties_IncludedChildParts Props
         {
             get
@@ -103,10 +110,15 @@ namespace MSE2
 
         // merging
 
+        private Command_AddExistingSubpart command_AddExistingSubpart;
+        private Command_SplitOffSubpart command_SplitOffSubpart;
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra ()
         {
-            yield return new Command_AddExistingSubpart( this );
-            yield return new Command_SplitOffSubpart( this );
+            Log.Message( "test" );
+
+            yield return command_AddExistingSubpart;
+            yield return command_SplitOffSubpart;
 
             foreach ( var g in base.CompGetGizmosExtra() ) yield return g;
 

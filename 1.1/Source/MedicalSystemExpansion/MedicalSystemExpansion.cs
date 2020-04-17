@@ -17,6 +17,10 @@ namespace MSE2
             IncludedPartsUtilities.CacheAllStandardParents();
         }
 
+        public static readonly Texture2D WidgetMinusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/MinusSign", true );
+
+        public static readonly Texture2D WidgetPlusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/PlusSign", true );
+
         public static readonly Texture2D IconPartSystem = ContentFinder<Texture2D>.Get( "UI/Icons/Medical/IconPartSystem", true );
 
         public static readonly Texture2D IconPartSystemDamaged = ContentFinder<Texture2D>.Get( "UI/Icons/Medical/IconPartSystemDamaged", true );
