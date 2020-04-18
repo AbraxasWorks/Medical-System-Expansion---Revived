@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>EPOE-Forked: Royalty DLC expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- weapons -->
+
+				<li Class="PatchOperationAttributeSet">
+					<xpath>/Defs/HediffDef[defName="EPOE_ScytherHandTalon" or defName="EPOE_ScytherElbowBlade" or defName="EPOE_ScytherKneeSpike"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>MSE_ModuleAddedArchotech</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[defName="EPOE_ScytherHandTalon" or defName="EPOE_ScytherElbowBlade" or defName="EPOE_ScytherKneeSpike"]/addedPartProps</xpath>
+				</li>
+				<li Class="PatchOperationAttributeSet">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_ScytherHandTalon" or defName="InstallEPOE_ScytherElbowBlade" or defName="InstallEPOE_ScytherKneeSpike"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>MSE_SurgeryInstallModuleBase</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="EPOE_ScytherHandTalon" or defName="EPOE_ScytherElbowBlade" or defName="EPOE_ScytherKneeSpike"]</xpath>
+					<value>
+						<graphicData Inherit="False">
+							<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>0.80</drawSize>
+						</graphicData>
+					</value>
+				</li>
+
+				<!-- weapon labels -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_ScytherHandTalon"]/label</xpath>
+					<value>
+						<label>bionic hand talon module</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_ScytherHandTalon"]/label</xpath>
+					<value>
+						<label>install bionic hand talon module</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_ScytherElbowBlade"]/label</xpath>
+					<value>
+						<label>bionic elbow blade module</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_ScytherElbowBlade"]/label</xpath>
+					<value>
+						<label>install bionic elbow blade module</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_ScytherKneeSpike"]/label</xpath>
+					<value>
+						<label>bionic knee spike module</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_ScytherKneeSpike"]/label</xpath>
+					<value>
+						<label>install bionic knee spike module</label>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
