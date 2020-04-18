@@ -371,7 +371,7 @@
                 <ComponentSpacer>3</ComponentSpacer>
               </costList>
               <statBases>
-                <Mass>7</Mass>
+                <Mass>4</Mass>
               </statBases>
               <comps>
                 <li Class="MSE2.CompProperties_IncludedChildParts">
