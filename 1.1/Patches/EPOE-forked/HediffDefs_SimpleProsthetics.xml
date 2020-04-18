@@ -56,6 +56,20 @@
 					</value>
 				</li>
 
+				<!-- scyther blade -->
+				
+        <li Class="PatchOperationAddModExtension">
+          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="EPOE_ScytherBlade"]</xpath>
+          <value>
+            <li Class="MSE2.IgnoreSubParts">
+              <ignoredSubParts>
+                <li>Finger</li>
+              </ignoredSubParts>
+            </li>
+          </value>
+        </li>
+
+
 				<!-- adding new parts -->
 
 				<li Class="PatchOperationAdd">
