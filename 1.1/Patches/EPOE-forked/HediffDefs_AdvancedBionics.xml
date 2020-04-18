@@ -118,16 +118,16 @@
 					</value>
 				</li>
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
-          <value>
-            <comps>
-              <li Class="MSE2.HediffCompProperties_ModuleHolder">
-                <maxModules>2</maxModules>
-              </li>
-            </comps>
-          </value>
-        </li>
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>2</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
 
 
 				<!-- adding new parts -->
@@ -562,8 +562,55 @@
 
 				<!-- remove verbs -->
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicArm" or defName="AdvancedPowerArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 				</li>
+
+        <!-- melee verbs on power hand -->
+
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Combat Extended</li>
+          </mods>
+          <match Class="MSE2.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li Class="CombatExtended.ToolCE">
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>9</power>
+                      <armorPenetrationBlunt>3</armorPenetrationBlunt>
+                      <cooldownTime>0.83</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </match>
+          <nomatch Class="MSE2.PatchOperationAddOrMerge">
+            <xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+            <value>
+              <comps>
+                <li Class="HediffCompProperties_VerbGiver">
+                  <tools>
+                    <li>
+                      <label>bionic fist</label>
+                      <capacities>
+                        <li>Blunt</li>
+                      </capacities>
+                      <power>16</power>
+                      <cooldownTime>1.65</cooldownTime>
+                    </li>
+                  </tools>
+                </li>
+              </comps>
+            </value>
+          </nomatch>
+        </li>
 
 			</operations>
 		</match>
