@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>EPOE-Forked: Royalty DLC expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+        <!-- Drill Arm -->
+
+        <li Class="MSE2.PatchOperationAddOrMerge">
+          <xpath>/Defs/ThingDef[defName="EPOE_AdvancedDrillArm"]</xpath>
+          <value>
+            <comps>
+              <li Class="MSE2.CompProperties_IncludedChildParts">
+                <standardChildren>
+                  <li>MechanicalManipulator</li>
+                  <li>MechanicalInternalSupport</li>
+                  <li>MechanicalInternalSupport</li>
+                </standardChildren>
+              </li>
+            </comps>
+          </value>
+        </li>
+
+        <!-- Field Hand -->
+
+        <li Class="MSE2.PatchOperationAddOrMerge">
+          <xpath>/Defs/ThingDef[defName="EPOE_AdvancedFieldHand"]</xpath>
+          <value>
+            <comps>
+              <li Class="MSE2.CompProperties_IncludedChildParts">
+                <standardChildren>
+                  <li>FieldFinger</li>
+                  <li>FieldFinger</li>
+                  <li>FieldFinger</li>
+                  <li>FieldFinger</li>
+                  <li>FieldFinger</li>
+                </standardChildren>
+              </li>
+            </comps>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/HediffDef[defName="EPOE_AdvancedFieldHand"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
+          <value>
+            <PlantWorkSpeed>0.10</PlantWorkSpeed>
+          </value>
+        </li>
+
+				<!-- weapons -->
+
+				<li Class="PatchOperationAttributeSet">
+					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedHandTalon" or defName="EPOE_AdvancedElbowBlade" or defName="EPOE_AdvancedKneeSpike"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>MSE_ModuleAddedArchotech</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedHandTalon" or defName="EPOE_AdvancedElbowBlade" or defName="EPOE_AdvancedKneeSpike"]/addedPartProps</xpath>
+				</li>
+				<li Class="PatchOperationAttributeSet">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_AdvancedHandTalon" or defName="InstallEPOE_AdvancedElbowBlade" or defName="InstallEPOE_AdvancedKneeSpike"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>MSE_SurgeryInstallModuleBase</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="EPOE_AdvancedHandTalon" or defName="EPOE_AdvancedElbowBlade" or defName="EPOE_AdvancedKneeSpike"]</xpath>
+					<value>
+						<graphicData Inherit="False">
+							<texPath>Things/Item/Health/HealthItemArchotech3</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>0.80</drawSize>
+						</graphicData>
+					</value>
+				</li>
+
+				<!-- weapon labels -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedHandTalon"]/label</xpath>
+					<value><label>advanced bionic hand talon module</label></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_AdvancedHandTalon"]/label</xpath>
+					<value><label>install advanced bionic hand talon module</label></value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedElbowBlade"]/label</xpath>
+					<value><label>advanced bionic elbow blade module</label></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_AdvancedElbowBlade"]/label</xpath>
+					<value><label>install advanced bionic elbow blade module</label></value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedKneeSpike"]/label</xpath>
+					<value><label>advanced bionic knee spike module</label></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallEPOE_AdvancedKneeSpike"]/label</xpath>
+					<value><label>install advanced bionic knee spike module</label></value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
