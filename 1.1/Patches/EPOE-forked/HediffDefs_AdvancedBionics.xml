@@ -236,13 +236,13 @@
 							</comps>
 						</ThingDef>
 
-						<!-- <RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
-							<AdvancedBionicForearm>CreateAdvancedBionicForearm</AdvancedBionicForearm>
+						<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+							<defName>CreateAdvancedBionicForearm</defName>
 							<label>assemble advanced bionic forearm</label>
 							<description>Upgrade bionic forearm into advanced bionic forearm.</description>
 							<jobString>Upgrading bionic forearm.</jobString>
 							<products>
-								<AdvancedBionicForerm>1</AdvancedBionicForerm>
+								<AdvancedBionicForearm>1</AdvancedBionicForearm>
 							</products>
 							<ingredients>
 								<li>
@@ -268,7 +268,7 @@
 									<li>ComponentSpacer</li>
 								</thingDefs>
 							</fixedIngredientFilter>
-						</RecipeDef> -->
+						</RecipeDef>
 
 						<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
 							<defName>InstallAdvancedBionicForearm</defName>
