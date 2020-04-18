@@ -118,7 +118,7 @@
 
 						<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
 							<defName>BionicInternalSupport</defName>
-							<label> bionic internal support</label>
+							<label>bionic internal support</label>
 							<description>An  artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
 							<descriptionHyperlinks>
 								<RecipeDef>InstallBionicInternalSupport</RecipeDef>
@@ -219,10 +219,10 @@
 							</comps>
 						</ThingDef>
 
-						<!-- <RecipeDef ParentName="EPIA_RecipeUpgrade">
-							<BionicForearm>CreateBionicForearm</BionicForearm>
-							<label>assemble  bionic forearm</label>
-							<description>Upgrade bionic forearm into  bionic forearm.</description>
+						<RecipeDef ParentName="EPIA_RecipeUpgradeBionic">
+							<defName>CreateBionicForearm</defName>
+							<label>assemble bionic forearm</label>
+							<description>Upgrade prosthetic forearm into bionic forearm.</description>
 							<jobString>Upgrading bionic forearm.</jobString>
 							<products>
 								<BionicForearm>1</BionicForearm>
@@ -244,14 +244,23 @@
 									</filter>
 									<count>40</count>
 								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentIndustrial</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
 							</ingredients>
 							<fixedIngredientFilter>
 								<thingDefs>
 									<li>SimpleProstheticForearm</li>
 									<li>Plasteel</li>
+									<li>ComponentIndustrial</li>
 								</thingDefs>
 							</fixedIngredientFilter>
-						</RecipeDef> -->
+						</RecipeDef>
 
 						<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 							<defName>InstallBionicForearm</defName>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Simple leg -->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticLeg"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Femur</li>
+								<li>Tibia</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>SimpleProstheticFoot</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- Simple arm -->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Clavicle</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>SimpleProstheticForearm</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- Simple hand -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>SimpleProstheticFinger</li>
+									<li>SimpleProstheticFinger</li>
+									<li>SimpleProstheticFinger</li>
+									<li>SimpleProstheticFinger</li>
+									<li>SimpleProstheticFinger</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- Simple foot -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticFoot"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>SimpleProstheticToe</li>
+									<li>SimpleProstheticToe</li>
+									<li>SimpleProstheticToe</li>
+									<li>SimpleProstheticToe</li>
+									<li>SimpleProstheticToe</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- adding new parts -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<!-- prosthetic forearm -->
+
+						<HediffDef ParentName="addedPartSimple">
+							<defName>SimpleProstheticForearm</defName>
+							<label>prosthetic arm</label>
+							<labelNoun>a prosthetic forearm</labelNoun>
+							<description>An installed prosthetic forearm.</description>
+							<descriptionHyperlinks>
+								<ThingDef>SimpleProstheticForearm</ThingDef>
+							</descriptionHyperlinks>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>0.8</partEfficiency>
+							</addedPartProps>
+							<spawnThingOnRemoved>SimpleProstheticForearm</spawnThingOnRemoved>
+							<modExtensions>
+								<li Class="MSE2.IgnoreSubParts">
+									<ignoredSubParts>
+										<li>Humerus</li>
+										<li>Radius</li>
+									</ignoredSubParts>
+								</li>
+							</modExtensions>
+						</HediffDef>
+
+						<ThingDef ParentName="BodyPartProstheticMakeableBase">
+							<defName>SimpleProstheticForearm</defName>
+							<label>prosthetic forearm</label>
+							<description>One of the most sophisticated forearm replacements. Gives extreme strength to its user.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>InstallSimpleProstheticForearm</RecipeDef>
+							</descriptionHyperlinks>
+							<costList>
+								<Steel>35</Steel>
+								<ComponentIndustrial>2</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<Mass>4</Mass>
+							</statBases>
+							<comps>
+								<li Class="MSE2.CompProperties_IncludedChildParts">
+									<standardChildren>
+										<li>SimpleProstheticHand</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+							<defName>InstallSimpleProstheticForearm</defName>
+							<label>install prosthetic forearm</label>
+							<description>Installs prosthetic forearm.</description>
+							<descriptionHyperlinks>
+								<ThingDef>SimpleProstheticForearm</ThingDef>
+							</descriptionHyperlinks>
+							<jobString>Installing prosthetic forearm.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>SimpleProstheticForearm</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>SimpleProstheticForearm</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Arm</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>SimpleProstheticForearm</addsHediff>
+						</RecipeDef>
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
