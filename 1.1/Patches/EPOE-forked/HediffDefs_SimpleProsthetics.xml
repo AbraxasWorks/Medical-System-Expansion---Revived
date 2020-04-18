@@ -9,56 +9,12 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<!-- Simple leg -->
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticLeg"]</xpath>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartProstheticBase"][defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
 					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts>
-								<li>Femur</li>
-								<li>Tibia</li>
-							</ignoredSubParts>
-						</li>
-					</value>
-				</li>
-
-				<li Class="MSE2.PatchOperationAddOrMerge">
-					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
-					<value>
-						<comps>
-							<li Class="MSE2.CompProperties_IncludedChildParts">
-								<standardChildren>
-									<li>SimpleProstheticFoot</li>
-								</standardChildren>
-							</li>
-						</comps>
-					</value>
-				</li>
-
-				<!-- Simple arm -->
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
-					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts>
-								<li>Clavicle</li>
-							</ignoredSubParts>
-						</li>
-					</value>
-				</li>
-
-				<li Class="MSE2.PatchOperationAddOrMerge">
-					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
-					<value>
-						<comps>
-							<li Class="MSE2.CompProperties_IncludedChildParts">
-								<standardChildren>
-									<li>SimpleProstheticForearm</li>
-								</standardChildren>
-							</li>
-						</comps>
+						<appliedOnFixedBodyParts>
+							<li>Shoulder</li>
+						</appliedOnFixedBodyParts>
 					</value>
 				</li>
 
