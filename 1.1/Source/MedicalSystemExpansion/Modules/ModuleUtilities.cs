@@ -32,7 +32,7 @@ namespace MSE2
             // spawn thing if possible
             if ( module.def.spawnThingOnRemoved != null )
             {
-                GenSpawn.Spawn( ThingMaker.MakeThing( module.def.spawnThingOnRemoved ), module.pawn.Position, module.pawn.Map );
+                GenPlace.TryPlaceThing( ThingMaker.MakeThing( module.def.spawnThingOnRemoved ), module.pawn.Position, module.pawn.Map, ThingPlaceMode.Near );
             }
             // remove hediff
             module.pawn.health.RemoveHediff( module );
