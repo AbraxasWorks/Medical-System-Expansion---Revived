@@ -100,8 +100,6 @@ namespace MSE2.HarmonyPatches
         /// <param name="reset">Should it reset the list of subparts in the item</param>
         public static void AddSubparts ( ThingWithComps item, List<Thing> available, bool reset = true )
         {
-            Log.Message( "adding subparts to " + item.Label + ": " + String.Join( ", ", available ) );
-
             CompIncludedChildParts comp = item.TryGetComp<CompIncludedChildParts>();
 
             if ( comp != null )
