@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -57,6 +58,7 @@ namespace MSE2.HarmonyPatches
             }
 
             // for every thing makeable from hediffs on this part: add subparts if possible then return it
+            List<Thing> items = new List<Thing>();
             foreach ( Hediff hediff in from x in pawn.health.hediffSet.hediffs
                                        where x.Part == part
                                        select x ) // for every hediff on the part
@@ -67,15 +69,22 @@ namespace MSE2.HarmonyPatches
 
                     if ( item is ThingWithComps itemWithComps ) // compose if possible
                     {
-                        AddSubparts( ref itemWithComps, ref subThings );
+                        AddSubparts( itemWithComps, subThings );
                     }
 
-                    yield return item;
+                    items.Add( item );
                 }
             }
 
-            // return other unclaimed subthings
-            foreach ( Thing item in subThings )
+            // merge siblings
+            for ( int i = items.Count - 1; i >= 0; i-- )
+            {
+                if ( items[i] is ThingWithComps )
+                    AddSubparts( items[i] as ThingWithComps, items, false );
+            }
+
+            // return all
+            foreach ( Thing item in items.Concat( subThings ) )
             {
                 yield return item;
             }
@@ -89,8 +98,10 @@ namespace MSE2.HarmonyPatches
         /// <param name="item">The item to add the subparts to</param>
         /// <param name="available">The available things to add</param>
         /// <param name="reset">Should it reset the list of subparts in the item</param>
-        public static void AddSubparts ( ref ThingWithComps item, ref List<Thing> available, bool reset = true )
+        public static void AddSubparts ( ThingWithComps item, List<Thing> available, bool reset = true )
         {
+            Log.Message( "adding subparts to " + item.Label + ": " + String.Join( ", ", available ) );
+
             CompIncludedChildParts comp = item.TryGetComp<CompIncludedChildParts>();
 
             if ( comp != null )
@@ -100,23 +111,16 @@ namespace MSE2.HarmonyPatches
                     comp.childPartsIncluded = new List<Thing>();
                 }
 
-                List<Thing> childThings = new List<Thing>();
-
-                foreach ( Thing potential in available )
+                foreach ( ThingDef missing in comp.MissingParts )
                 {
-                    Thing match = available.Find( delegate ( Thing x ) { return comp.MissingParts.Contains( x.def ); } );
+                    Thing match = available.Find( x => x.def == missing );
 
                     if ( match != null )
                     {
                         available.Remove( match );
-                        comp.childPartsIncluded.Add( match );
-
-                        AddSubparts( ref item, ref available, false );
-                        return;
+                        comp.AddPart( match );
                     }
                 }
-
-                comp.DirtyCache();
             }
         }
     }
