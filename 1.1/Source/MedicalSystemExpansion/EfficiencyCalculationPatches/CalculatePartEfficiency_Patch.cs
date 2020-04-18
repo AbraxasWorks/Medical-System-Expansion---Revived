@@ -13,6 +13,7 @@ namespace MSE2.HarmonyPatches
         // remove the copying of the efficiency of a parent added part
 
         [HarmonyTranspiler]
+        [HarmonyPriority( Priority.Low )]
         public static IEnumerable<CodeInstruction> Transpiler ( IEnumerable<CodeInstruction> instructions )
         {
             // determine all instructions belonging to the first for
