@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- adv bionic arm -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>AdvancedBionicForearm</li>
+									<li>AdvancedBionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- adv bionic leg -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>AdvancedBionicFoot</li>
+									<li>AdvancedBionicInternalSupport</li>
+									<li>AdvancedBionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- adv bionic hand -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>AdvancedBionicFinger</li>
+									<li>AdvancedBionicFinger</li>
+									<li>AdvancedBionicFinger</li>
+									<li>AdvancedBionicFinger</li>
+									<li>AdvancedBionicFinger</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- adv bionic foot -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicFoot"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>AdvancedBionicToe</li>
+									<li>AdvancedBionicToe</li>
+									<li>AdvancedBionicToe</li>
+									<li>AdvancedBionicToe</li>
+									<li>AdvancedBionicToe</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+
+				<!-- adding new parts -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!-- internal support -->
+
+						<HediffDef ParentName="addedPartAdvanced">
+							<defName>AdvancedBionicInternalSupport</defName>
+							<label>advanced bionic internal support</label>
+							<labelNoun>an advanced bionic internal support</labelNoun>
+							<description>An installed advanced bionic internal support.</description>
+							<descriptionHyperlinks>
+								<ThingDef>AdvancedBionicInternalSupport</ThingDef>
+							</descriptionHyperlinks>
+							<spawnThingOnRemoved>AdvancedBionicInternalSupport</spawnThingOnRemoved>
+							<addedPartProps>
+								<solid>true</solid>
+								<betterThanNatural>true</betterThanNatural>
+								<partEfficiency>1.15</partEfficiency>
+							</addedPartProps>
+						</HediffDef>
+
+						<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+							<defName>AdvancedBionicInternalSupport</defName>
+							<label>advanced bionic internal support</label>
+							<description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>InstallAdvancedBionicInternalSupport</RecipeDef>
+							</descriptionHyperlinks>
+							<costList>
+								<Plasteel>8</Plasteel>
+							</costList>
+							<statBases>
+								<Mass>0.3</Mass>
+							</statBases>
+						</ThingDef>
+
+						<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
+							<defName>InstallAdvancedBionicInternalSupport</defName>
+							<label>install advanced bionic internal support</label>
+							<description>Install an advanced bionic internal support.</description>
+							<descriptionHyperlinks>
+								<ThingDef>AdvancedBionicInternalSupport</ThingDef>
+							</descriptionHyperlinks>
+							<jobString>Installing advanced bionic internal support.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>AdvancedBionicInternalSupport</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>AdvancedBionicInternalSupport</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Clavicle</li>
+								<li>Humerus</li>
+								<li>Radius</li>
+								<li>Femur</li>
+								<li>Tibia</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>AdvancedBionicInternalSupport</addsHediff>
+							<modExtensions>
+								<li Class="MSE2.InstallationRestrictions">
+									<whitelist>
+										<li>AdvancedPowerArm</li>
+										<!-- <li>AdvancedPowerForearm</li> -->
+										<li>AdvancedBionicArm</li>
+										<li>AdvancedBionicForearm</li>
+										<li>AdvancedBionicLeg</li>
+									</whitelist>
+								</li>
+							</modExtensions>
+						</RecipeDef>
+
+						<!-- adv bionic forearm -->
+
+						<HediffDef ParentName="addedPartAdvanced">
+							<defName>AdvancedBionicForearm</defName>
+							<label>advanced bionic arm</label>
+							<labelNoun>an advanced bionic forearm</labelNoun>
+							<description>An installed advanced bionic arm.</description>
+							<descriptionHyperlinks>
+								<ThingDef>AdvancedBionicForearm</ThingDef>
+							</descriptionHyperlinks>
+							<addedPartProps>
+								<solid>true</solid>
+								<partEfficiency>1.35</partEfficiency>
+								<betterThanNatural>true</betterThanNatural>
+							</addedPartProps>
+							<spawnThingOnRemoved>AdvancedBionicForearm</spawnThingOnRemoved>
+							<comps>
+								<li Class="MSE2.HediffCompProperties_ModuleHolder">
+									<maxModules>1</maxModules>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+							<defName>AdvancedBionicForearm</defName>
+							<label>advanced bionic forearm</label>
+							<description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>InstallAdvancedBionicForearm</RecipeDef>
+							</descriptionHyperlinks>
+							<costList>
+								<Steel>35</Steel>
+								<Plasteel>40</Plasteel>
+								<ComponentIndustrial>6</ComponentIndustrial>
+								<ComponentSpacer>4</ComponentSpacer>
+							</costList>
+							<statBases>
+								<Mass>4</Mass>
+							</statBases>
+							<comps>
+								<li Class="MSE2.CompProperties_IncludedChildParts">
+									<standardChildren>
+										<li>AdvancedBionicHand</li>
+										<li>AdvancedBionicInternalSupport</li>
+										<li>AdvancedBionicInternalSupport</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<!-- <RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+							<AdvancedBionicForearm>CreateAdvancedBionicForearm</AdvancedBionicForearm>
+							<label>assemble advanced bionic forearm</label>
+							<description>Upgrade bionic forearm into advanced bionic forearm.</description>
+							<jobString>Upgrading bionic forearm.</jobString>
+							<products>
+								<AdvancedBionicForerm>1</AdvancedBionicForerm>
+							</products>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>BionicForearm</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>BionicForearm</li>
+									<li>ComponentSpacer</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+						</RecipeDef> -->
+
+						<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
+							<defName>InstallAdvancedBionicForearm</defName>
+							<label>install advanced bionic forearm</label>
+							<description>Installs advanced bionic forearm.</description>
+							<descriptionHyperlinks>
+								<ThingDef>AdvancedBionicForearm</ThingDef>
+							</descriptionHyperlinks>
+							<jobString>Installing advanced bionic forearm.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>AdvancedBionicForearm</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>AdvancedBionicForearm</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Arm</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>AdvancedBionicForearm</addsHediff>
+						</RecipeDef>
+
+					</value>
+				</li>
+
+				<!-- remove verbs -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
