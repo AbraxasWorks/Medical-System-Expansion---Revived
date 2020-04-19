@@ -104,9 +104,9 @@ namespace MSE2.HarmonyPatches
 
             if ( comp != null )
             {
-                if ( reset || comp.childPartsIncluded == null )
+                if ( reset )
                 {
-                    comp.childPartsIncluded = new List<Thing>();
+                    comp.IncludedParts.Clear();
                 }
 
                 foreach ( ThingDef missing in comp.MissingParts )

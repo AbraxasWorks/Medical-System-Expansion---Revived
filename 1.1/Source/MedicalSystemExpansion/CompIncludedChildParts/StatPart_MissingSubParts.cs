@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace MSE2
@@ -30,7 +31,8 @@ namespace MSE2
 
                 if ( comp != null )
                 {
-                    val -= comp.MissingValue;
+                    // can't go below 20%
+                    val = Mathf.Max( val * 0.2f, val - comp.MissingValue );
                 }
             }
         }

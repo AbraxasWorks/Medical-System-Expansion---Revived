@@ -14,6 +14,8 @@ namespace MSE2
             public Command_SplitOffSubpart ( CompIncludedChildParts comp )
             {
                 this.comp = comp;
+
+                // use same icon as thing it belongs to
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
@@ -25,7 +27,7 @@ namespace MSE2
             {
                 get
                 {
-                    return this.comp.childPartsIncluded.Count > 0;
+                    return this.comp.AllIncludedParts.Any();
                 }
             }
 
@@ -35,9 +37,18 @@ namespace MSE2
 
                 List<FloatMenuOption> list = new List<FloatMenuOption>();
 
-                foreach ( Thing thing in comp.childPartsIncluded )
+                foreach ( (Thing lthing, CompIncludedChildParts lcomp) in comp.AllIncludedParts )
                 {
-                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.RemoveAndSpawnPart( thing ), thing.def ) );
+                    list.Add( new FloatMenuOption(
+                        // name
+                        lthing.Label.CapitalizeFirst() + (lcomp != comp ? " (from " + lcomp.parent.Label + ")" : ""),
+                        () => // click action
+                        {
+                            lcomp.RemoveAndSpawnPart( lthing, comp.parent.Position, comp.parent.Map );
+                            comp.DirtyCacheDeep( lcomp );
+                        },
+                        // icon
+                        lthing.def ) );
                 }
 
                 Find.WindowStack.Add( new FloatMenu( list ) );
@@ -46,12 +57,15 @@ namespace MSE2
             public override GizmoResult GizmoOnGUI ( Vector2 loc, float maxWidth )
             {
                 GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
+
+                // add minus sign in the top right of the gizmo texture
                 if ( MedicalSystemExpansion.WidgetMinusSign != null )
                 {
                     Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
                     Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
                     GUI.DrawTexture( position, MedicalSystemExpansion.WidgetMinusSign );
                 }
+
                 return result;
             }
         }

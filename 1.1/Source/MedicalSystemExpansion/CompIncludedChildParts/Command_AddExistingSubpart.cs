@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
@@ -14,18 +16,20 @@ namespace MSE2
             public Command_AddExistingSubpart ( CompIncludedChildParts comp )
             {
                 this.comp = comp;
+
+                // use same icon as thing it belongs to
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
                 this.defaultLabel = "Add sub-part";
-                this.defaultDesc = "Chose a part to add to this one's subparts.";
+                this.defaultDesc = "Chose a part to add to this one's sub-parts.";
             }
 
             public override bool Visible
             {
                 get
                 {
-                    return this.comp.MissingParts.Count > 0;
+                    return this.comp.AllMissingParts.Any();
                 }
             }
 
@@ -33,33 +37,70 @@ namespace MSE2
             {
                 base.ProcessInput( ev );
 
+                bool none = true;
+
                 List<FloatMenuOption> list = new List<FloatMenuOption>();
 
-                foreach ( Thing thing in PossibleThings )
+                foreach ( (Thing thingCandidate, CompIncludedChildParts compDestination) in this.PossibleThings )
                 {
-                    list.Add( new FloatMenuOption( thing.Label.CapitalizeFirst(), () => comp.AddPart( thing ), thing.def ) );
+                    none = false;
+                    list.Add( new FloatMenuOption(
+                        // name
+                        thingCandidate.Label.CapitalizeFirst() + (compDestination != this.comp ? " (to " + compDestination.parent.Label + ")" : ""),
+                        () => // click action
+                        {
+                            compDestination.AddPart( thingCandidate );
+                            this.comp.DirtyCacheDeep( compDestination );
+                        },
+                        // icon
+                        thingCandidate.def,
+                        MenuOptionPriority.DisabledOption,
+                        () => // mouse over action
+                        {
+                            if ( Current.ProgramState == ProgramState.Playing )
+                            {
+                                // draw arrow pointing to item
+                                TargetHighlighter.Highlight( new GlobalTargetInfo( thingCandidate ) );
+                            }
+                        }
+                    ) );
                 }
 
-                Find.WindowStack.Add( new FloatMenu( list ) );
+                // only draw the menu if there are things it can add
+                if ( none )
+                {
+                    Messages.Message( "Could not find a compatible part to add.", MessageTypeDefOf.RejectInput );
+                }
+                else
+                {
+                    Find.WindowStack.Add( new FloatMenu( list ) );
+                }
             }
 
-            private IEnumerable<Thing> PossibleThings
+            /// <summary>
+            /// Returns all things on the map that could be added to this part, and the comp that can accept them
+            /// </summary>
+            private IEnumerable<(Thing, CompIncludedChildParts)> PossibleThings
             {
-                get
-                {
-                    return comp.parent.Map.listerThings.AllThings.Where( t => comp.MissingParts.Contains( t.def ) );
-                }
+                get =>
+                    from t in this.comp.parent.Map.listerThings.AllThings
+                    from u in this.comp.AllMissingParts.GroupBy( x => x ).Select( Enumerable.First )
+                    where u.Item1 == t.def
+                    select (t, u.Item2);
             }
 
             public override GizmoResult GizmoOnGUI ( Vector2 loc, float maxWidth )
             {
                 GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
+
+                // add plus sign in the top right of the gizmo texture
                 if ( MedicalSystemExpansion.WidgetPlusSign != null )
                 {
                     Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
                     Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
                     GUI.DrawTexture( position, MedicalSystemExpansion.WidgetPlusSign );
                 }
+
                 return result;
             }
         }

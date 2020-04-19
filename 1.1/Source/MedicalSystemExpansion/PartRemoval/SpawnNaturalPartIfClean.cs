@@ -54,10 +54,12 @@ namespace MSE2.HarmonyPatches
                 if ( comp == null ) // if it doesn't have the comp, make it
                 {
                     comp = new CompIncludedChildParts();
+                    comp.parent = item;
+                    comp.props = new CompProperties_IncludedChildParts();
                     item.AllComps.Add( comp );
                 }
 
-                comp.childPartsIncluded = childThings; // replace child part list
+                comp.IncludedParts = childThings; // replace child part list
             }
         }
 

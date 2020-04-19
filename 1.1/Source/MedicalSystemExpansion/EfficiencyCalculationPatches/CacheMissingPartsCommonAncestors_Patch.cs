@@ -12,8 +12,7 @@ namespace MSE2.HarmonyPatches
     {
         private static MethodBase TargetMethod ()
         {
-            var type = "Verse.HediffSet".ToType();
-            return type.MethodNamed( "CacheMissingPartsCommonAncestors" );
+            return typeof( HediffSet ).GetMethod( "CacheMissingPartsCommonAncestors", BindingFlags.NonPublic | BindingFlags.Instance );
         }
 
         // Patch to show that child parts of prosthetics are missing in the health tab and to hide ignored parts

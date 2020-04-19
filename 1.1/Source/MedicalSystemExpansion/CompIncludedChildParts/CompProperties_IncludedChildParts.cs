@@ -78,7 +78,7 @@ namespace MSE2
                 yield return entry;
 
             // warning for empy comp
-            if ( standardChildren == null || standardChildren.Count == 0 )
+            if ( standardChildren.NullOrEmpty() )
             {
                 yield return "[MSE] CompIncludedChildParts on " + parentDef.defName + " has no children";
             }

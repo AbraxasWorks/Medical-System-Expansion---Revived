@@ -43,7 +43,7 @@ namespace MSE2
             List<BodyPartRecord> partsToConsider = new List<BodyPartRecord>( part.GetDirectChildParts().Append( part ) );
 
             // iterate over included child things
-            foreach ( Thing childThing in compChildParts.childPartsIncluded )
+            foreach ( Thing childThing in compChildParts.IncludedParts )
             {
                 if ( TryGetRecipeAndPart( pawn, childThing.def, partsToConsider.Contains, out RecipeDef recipe, out BodyPartRecord bpr ) )
                 {
