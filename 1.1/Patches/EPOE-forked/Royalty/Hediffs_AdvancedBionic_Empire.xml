@@ -25,6 +25,13 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallMechanicalManipulator" or defName="InstallMechanicalInternalSupport"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
+					<value>
+						<li>EPOE_AdvancedDrillArm</li>
+					</value>
+				</li>
+
 				<!-- Field Hand -->
 
 				<li Class="MSE2.PatchOperationAddOrMerge">
@@ -47,7 +54,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/HediffDef[defName="EPOE_AdvancedFieldHand"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
 					<value>
-						<PlantWorkSpeed>0.10</PlantWorkSpeed>
+						<PlantWorkSpeed>0.20</PlantWorkSpeed>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallMechanicalFinger"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
+					<value>
+						<li>EPOE_AdvancedFieldHand</li>
 					</value>
 				</li>
 
