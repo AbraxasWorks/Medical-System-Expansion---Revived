@@ -3,7 +3,7 @@
 
 	<!-- Base class replacing -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartArtificialBase"]/workerClass</xpath>
+		<xpath>/Defs/RecipeDef[workerClass="Recipe_InstallArtificialBodyPart"]/workerClass</xpath>
 		<value>
 			<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 		</value>

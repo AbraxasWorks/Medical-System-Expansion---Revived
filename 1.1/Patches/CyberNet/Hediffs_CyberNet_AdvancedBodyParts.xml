@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>CyberNet</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- cnn arm -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>CNAdvancedNetworkedForearm</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedArm"]/costList</xpath>
+					<value>
+							<costList>
+								<Plasteel>20</Plasteel>
+								<ComponentIndustrial>6</ComponentIndustrial>
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="CyberNet.HediffCompPropertiesCyberNetImplant"]/BandwidthUsage</xpath>
+					<value>
+						<BandwidthUsage>0.3</BandwidthUsage>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="CyberNet.HediffCompPropertiesCyberNetImplant"]/ProcessorUsage</xpath>
+					<value>
+						<ProcessorUsage>0.15</ProcessorUsage>
+					</value>
+				</li>
+
+				<!-- cnn leg -->
+
+				<li Class="MSE2.PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>CNAdvancedNetworkedFoot</li>
+									<li>BionicInternalSupport</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedLeg"]/costList</xpath>
+					<value>
+							<costList>
+								<Plasteel>20</Plasteel>
+								<ComponentIndustrial>6</ComponentIndustrial>
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedLeg"]/comps/li[@Class="CyberNet.HediffCompPropertiesCyberNetImplant"]/BandwidthUsage</xpath>
+					<value>
+						<BandwidthUsage>0.25</BandwidthUsage>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedLeg"]/comps/li[@Class="CyberNet.HediffCompPropertiesCyberNetImplant"]/ProcessorUsage</xpath>
+					<value>
+						<ProcessorUsage>0.25</ProcessorUsage>
+					</value>
+				</li>
+
+				<!-- int support -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallBionicInternalSupport"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
+					<value>
+						<li>CNAdvancedNetworkedArm</li>
+						<li>CNAdvancedNetworkedForearm</li>
+						<li>CNAdvancedNetworkedLeg</li>
+					</value>
+				</li>
+
+				<!-- adding new parts -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!-- cnn forearm -->
+
+						<HediffDef ParentName="CNHediffProsthetic">
+							<defName>CNAdvancedNetworkedForearm</defName>
+							<label>advanced networked arm</label>
+							<labelNoun>a advanced networked forearm</labelNoun>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic forearms, and more efficient, but requires infrastructure to function.</description>
+							<spawnThingOnRemoved>CNAdvancedNetworkedForearm</spawnThingOnRemoved>
+							<comps>
+								<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+									<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+									<DefaultSeverity>1</DefaultSeverity>
+									<BandwidthUsage>0.3</BandwidthUsage>
+									<ProcessorUsage>0.15</ProcessorUsage>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="CyberNetProsthetic">
+							<defName>CNAdvancedNetworkedForearm</defName>
+							<label>advanced networked forearm</label>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic arms, and more efficient, but requires infrastructure to function.</description>
+							<statBases>
+								<WorkToMake>50000</WorkToMake>
+								<Mass>3.5</Mass>
+							</statBases>
+							<costList>
+								<Plasteel>14</Plasteel>
+								<ComponentIndustrial>5</ComponentIndustrial>
+								<ComponentSpacer>2</ComponentSpacer>
+							</costList>
+							<recipeMaker>
+								<skillRequirements>
+									<Crafting>12</Crafting>
+								</skillRequirements>
+								<researchPrerequisite>CNAdvancedNetworkedProsthetics</researchPrerequisite>
+							</recipeMaker>
+							<comps>
+								<li Class="MSE2.CompProperties_IncludedChildParts">
+									<standardChildren>
+										<li>CNAdvancedNetworkedHand</li>
+										<li>BionicInternalSupport</li>
+										<li>BionicInternalSupport</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<RecipeDef ParentName="CyberNetSurgery">
+							<defName>CNInstallAdvancedNetworkedForearm</defName>
+							<label>Install advanced networked forearm</label>
+							<description>Install a advanced networked forearm</description>
+							<jobString>Installing advanced networked forearm</jobString>
+							<workAmount>2500</workAmount>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>CNAdvancedNetworkedForearm</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>CNAdvancedNetworkedForearm</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Arm</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>CNAdvancedNetworkedForearm</addsHediff>
+						</RecipeDef>
+
+						<!-- cnn hand -->
+
+						<HediffDef ParentName="CNHediffProsthetic">
+							<defName>CNAdvancedNetworkedHand</defName>
+							<label>advanced networked hand</label>
+							<labelNoun>a advanced networked hand</labelNoun>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
+							<spawnThingOnRemoved>CNAdvancedNetworkedHand</spawnThingOnRemoved>
+							<comps>
+								<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+									<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+									<DefaultSeverity>1</DefaultSeverity>
+									<BandwidthUsage>0.3</BandwidthUsage>
+									<ProcessorUsage>0.15</ProcessorUsage>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="CyberNetProsthetic">
+							<defName>CNAdvancedNetworkedHand</defName>
+							<label>advanced networked hand</label>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
+							<statBases>
+								<WorkToMake>40000</WorkToMake>
+								<Mass>2</Mass>
+							</statBases>
+							<costList>
+								<Plasteel>8</Plasteel>
+								<ComponentIndustrial>4</ComponentIndustrial>
+								<ComponentSpacer>1</ComponentSpacer>
+							</costList>
+							<recipeMaker>
+								<skillRequirements>
+									<Crafting>12</Crafting>
+								</skillRequirements>
+								<researchPrerequisite>CNAdvancedNetworkedProsthetics</researchPrerequisite>
+							</recipeMaker>
+							<comps>
+								<li Class="MSE2.CompProperties_IncludedChildParts">
+									<standardChildren>
+										<li>CNAdvancedNetworkedFinger</li>
+										<li>CNAdvancedNetworkedFinger</li>
+										<li>CNAdvancedNetworkedFinger</li>
+										<li>CNAdvancedNetworkedFinger</li>
+										<li>CNAdvancedNetworkedFinger</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<RecipeDef ParentName="CyberNetSurgery">
+							<defName>CNInstallAdvancedNetworkedHand</defName>
+							<label>Install advanced networked hand</label>
+							<description>Install a advanced networked hand</description>
+							<jobString>Installing advanced networked hand</jobString>
+							<workAmount>2500</workAmount>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>CNAdvancedNetworkedHand</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>CNAdvancedNetworkedHand</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Hand</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>CNAdvancedNetworkedHand</addsHediff>
+						</RecipeDef>
+
+
+						<!-- cnn finger -->
+
+						<HediffDef ParentName="CNHediffProsthetic">
+							<defName>CNAdvancedNetworkedFinger</defName>
+							<label>advanced networked finger</label>
+							<labelNoun>a advanced networked finger</labelNoun>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic fingers, and more efficient, but requires infrastructure to function.</description>
+							<spawnThingOnRemoved>CNAdvancedNetworkedFinger</spawnThingOnRemoved>
+							<comps>
+								<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+									<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+									<DefaultSeverity>1</DefaultSeverity>
+									<BandwidthUsage>0.12</BandwidthUsage>
+									<ProcessorUsage>0.06</ProcessorUsage>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="CyberNetProsthetic">
+							<defName>CNAdvancedNetworkedFinger</defName>
+							<label>advanced networked finger</label>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic fingers, and more efficient, but requires infrastructure to function.</description>
+							<statBases>
+								<WorkToMake>6000</WorkToMake>
+								<Mass>0.2</Mass>
+							</statBases>
+							<costList>
+								<Plasteel>3</Plasteel>
+								<ComponentIndustrial>1</ComponentIndustrial>
+							</costList>
+							<recipeMaker>
+								<skillRequirements>
+									<Crafting>12</Crafting>
+								</skillRequirements>
+								<researchPrerequisite>CNAdvancedNetworkedProsthetics</researchPrerequisite>
+							</recipeMaker>
+						</ThingDef>
+
+						<RecipeDef ParentName="CyberNetSurgery">
+							<defName>CNInstallAdvancedNetworkedFinger</defName>
+							<label>Install advanced networked finger</label>
+							<description>Install a advanced networked finger</description>
+							<jobString>Installing advanced networked finger</jobString>
+							<workAmount>2500</workAmount>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>CNAdvancedNetworkedFinger</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>CNAdvancedNetworkedFinger</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Finger</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>CNAdvancedNetworkedFinger</addsHediff>
+						</RecipeDef>
+
+
+						<!-- cnn foot -->
+
+						<HediffDef ParentName="CNHediffProsthetic">
+							<defName>CNAdvancedNetworkedFoot</defName>
+							<label>advanced networked foot</label>
+							<labelNoun>a advanced networked foot</labelNoun>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic feet, and more efficient, but requires infrastructure to function.</description>
+							<spawnThingOnRemoved>CNAdvancedNetworkedFoot</spawnThingOnRemoved>
+							<comps>
+								<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+									<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+									<DefaultSeverity>1</DefaultSeverity>
+									<BandwidthUsage>0.1</BandwidthUsage>
+									<ProcessorUsage>0.1</ProcessorUsage>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="CyberNetProsthetic">
+							<defName>CNAdvancedNetworkedFoot</defName>
+							<label>advanced networked foot</label>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic feet, and more efficient, but requires infrastructure to function.</description>
+							<statBases>
+								<WorkToMake>30000</WorkToMake>
+								<Mass>2</Mass>
+							</statBases>
+							<costList>
+								<Plasteel>10</Plasteel>
+								<ComponentIndustrial>4</ComponentIndustrial>
+								<ComponentSpacer>1</ComponentSpacer>
+							</costList>
+							<recipeMaker>
+								<skillRequirements>
+									<Crafting>12</Crafting>
+								</skillRequirements>
+								<researchPrerequisite>CNAdvancedNetworkedProsthetics</researchPrerequisite>
+							</recipeMaker>
+							<comps>
+								<li Class="MSE2.CompProperties_IncludedChildParts">
+									<standardChildren>
+										<li>CNAdvancedNetworkedToe</li>
+										<li>CNAdvancedNetworkedToe</li>
+										<li>CNAdvancedNetworkedToe</li>
+										<li>CNAdvancedNetworkedToe</li>
+										<li>CNAdvancedNetworkedToe</li>
+									</standardChildren>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<RecipeDef ParentName="CyberNetSurgery">
+							<defName>CNInstallAdvancedNetworkedFoot</defName>
+							<label>Install advanced networked foot</label>
+							<description>Install a advanced networked foot</description>
+							<jobString>Installing advanced networked foot</jobString>
+							<workAmount>2500</workAmount>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>CNAdvancedNetworkedFoot</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>CNAdvancedNetworkedFoot</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Foot</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>CNAdvancedNetworkedFoot</addsHediff>
+						</RecipeDef>
+
+
+						<!-- cnn toe -->
+
+						<HediffDef ParentName="CNHediffProsthetic">
+							<defName>CNAdvancedNetworkedToe</defName>
+							<label>advanced networked toe</label>
+							<labelNoun>a advanced networked toe</labelNoun>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic toes, and more efficient, but requires infrastructure to function.</description>
+							<spawnThingOnRemoved>CNAdvancedNetworkedToe</spawnThingOnRemoved>
+							<comps>
+								<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+									<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+									<DefaultSeverity>1</DefaultSeverity>
+									<BandwidthUsage>0.03</BandwidthUsage>
+									<ProcessorUsage>0.03</ProcessorUsage>
+								</li>
+							</comps>
+						</HediffDef>
+
+						<ThingDef ParentName="CyberNetProsthetic">
+							<defName>CNAdvancedNetworkedToe</defName>
+							<label>advanced networked toe</label>
+							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic toes, and more efficient, but requires infrastructure to function.</description>
+							<statBases>
+								<WorkToMake>4000</WorkToMake>
+								<Mass>0.15</Mass>
+							</statBases>
+							<costList>
+								<Plasteel>3</Plasteel>
+								<ComponentIndustrial>1</ComponentIndustrial>
+							</costList>
+							<recipeMaker>
+								<skillRequirements>
+									<Crafting>12</Crafting>
+								</skillRequirements>
+								<researchPrerequisite>CNAdvancedNetworkedProsthetics</researchPrerequisite>
+							</recipeMaker>
+						</ThingDef>
+
+						<RecipeDef ParentName="CyberNetSurgery">
+							<defName>CNInstallAdvancedNetworkedToe</defName>
+							<label>Install advanced networked toe</label>
+							<description>Install a advanced networked toe</description>
+							<jobString>Installing advanced networked toe</jobString>
+							<workAmount>2500</workAmount>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Medicine</li>
+										</categories>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>CNAdvancedNetworkedToe</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+								<thingDefs>
+									<li>CNAdvancedNetworkedToe</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Toe</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>CNAdvancedNetworkedToe</addsHediff>
+						</RecipeDef>
+
+
+
+					</value>
+				</li>
+
+				<!-- copy stages to subparts -->
+
+				<li Class="MSE2.PatchOperationAddCopy">
+					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/stages</fromxpath>
+					<xpath>
+						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]
+						[defName="CNAdvancedNetworkedForearm" or defName="CNAdvancedNetworkedHand" or defName="CNAdvancedNetworkedFinger"]
+					</xpath>
+				</li>
+				<li Class="MSE2.PatchOperationAddCopy">
+					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedLeg"]/stages</fromxpath>
+					<xpath>
+						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]
+						[defName="CNAdvancedNetworkedFoot" or defName="CNAdvancedNetworkedToe"]
+					</xpath>
+				</li>
+
+				<!-- move verb from arm to hand -->
+
+				<li Class="MSE2.PatchOperationAddCopy">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedHand"]/comps</xpath>
+					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
