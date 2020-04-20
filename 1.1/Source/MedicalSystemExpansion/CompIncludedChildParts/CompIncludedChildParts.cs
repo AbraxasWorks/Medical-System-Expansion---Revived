@@ -48,8 +48,15 @@ namespace MSE2
         {
             base.PostPostMake();
 
-            // initialize IncludedParts to standard children
             // (if you want it incomplete replace the list after creating the thing)
+            this.InitializeIncludedParts();
+        }
+
+        /// <summary>
+        /// Initialize IncludedParts to standard children
+        /// </summary>
+        protected void InitializeIncludedParts ()
+        {
             if ( this.StandardParts != null )
             {
                 foreach ( ThingDef sChild in this.StandardParts )
@@ -200,7 +207,13 @@ namespace MSE2
         public override void PostExposeData ()
         {
             base.PostExposeData();
-            Scribe_Collections.Look<Thing>( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
+            Scribe_Collections.Look( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
+
+            if ( this.IncludedParts == null )
+            {
+                this.IncludedParts = new List<Thing>();
+                InitializeIncludedParts();
+            }
         }
 
         // Missing Parts

@@ -302,6 +302,8 @@
     <Compile Include="CompIncludedChildParts\IncludedPartsUtilities.cs" />
     <Compile Include="CompIncludedChildParts\MSE_cachedStandardParents.cs" />
     <Compile Include="CompIncludedChildParts\StatPart_MissingSubParts.cs" />
+    <Compile Include="DebugTools\ApplySurgery.cs" />
+    <Compile Include="DebugTools\GlobalProthesisFix.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculateImmediatePartEfficiencyAndRecord_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CacheMissingPartsCommonAncestors_Patch.cs" />
     <Compile Include="EfficiencyCalculationPatches\CalculateLimbEfficiency_Patch.cs" />
