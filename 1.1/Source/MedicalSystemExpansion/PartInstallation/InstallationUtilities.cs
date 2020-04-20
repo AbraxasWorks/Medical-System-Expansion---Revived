@@ -56,6 +56,8 @@ namespace MSE2
                 {
                     if ( pawn.Map != null && pawn.Position != null )
                     {
+                        childThing.ForceSetStateToUnspawned();
+                        childThing.stackCount = 1;
                         GenPlace.TryPlaceThing( childThing, pawn.Position, pawn.Map, ThingPlaceMode.Near );
                     }
                     else
