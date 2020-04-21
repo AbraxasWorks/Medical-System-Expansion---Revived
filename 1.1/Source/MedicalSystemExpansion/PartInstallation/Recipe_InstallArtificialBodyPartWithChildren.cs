@@ -72,8 +72,7 @@ namespace MSE2
                 // iterate over non null CompIncludedChildParts in ingredients
                 foreach ( CompIncludedChildParts compChildParts in
                     from x in ingredients
-                    where x is ThingWithComps  // out of every thingwithcomps ingredient
-                    let comp = (x as ThingWithComps).GetComp<CompIncludedChildParts>() // take the comp
+                    let comp = x.TryGetComp<CompIncludedChildParts>() // take the comp
                     where comp?.IncludedParts != null
                     select comp )
                 {
