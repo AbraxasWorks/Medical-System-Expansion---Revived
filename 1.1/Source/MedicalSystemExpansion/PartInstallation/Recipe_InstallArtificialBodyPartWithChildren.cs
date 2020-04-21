@@ -74,7 +74,7 @@ namespace MSE2
                     from x in ingredients
                     where x is ThingWithComps  // out of every thingwithcomps ingredient
                     let comp = (x as ThingWithComps).GetComp<CompIncludedChildParts>() // take the comp
-                    where comp != null && comp.IncludedParts != null
+                    where comp?.IncludedParts != null
                     select comp )
                 {
                     compChildParts.RecursiveInstallation( pawn, part );
@@ -82,7 +82,7 @@ namespace MSE2
             }
             else
             {
-                var compProp = this.recipe.addsHediff.spawnThingOnRemoved.GetCompProperties<CompProperties_IncludedChildParts>();
+                var compProp = this.recipe?.addsHediff?.spawnThingOnRemoved?.GetCompProperties<CompProperties_IncludedChildParts>();
                 if ( compProp != null )
                     compProp.RecursiveDefInstallation( pawn, part );
             }
