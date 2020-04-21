@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- humerus -->
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Humerus</defName>
+		<label>humerus</label>
+		<description>A biological human humerus.</description>
+    <descriptionHyperlinks><RecipeDef>InstallNaturalHumerus</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalHumerus</defName>
+		<label>install humerus</label>
+		<description>Install a biological humerus.</description>
+    <descriptionHyperlinks><ThingDef>Humerus</ThingDef></descriptionHyperlinks>
+		<jobString>Installing humerus.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Humerus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Humerus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!-- radius -->
+	
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Radius</defName>
+		<label>radius</label>
+		<description>A biological human radius.</description>
+    <descriptionHyperlinks><RecipeDef>InstallNaturalRadius</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalRadius</defName>
+		<label>install radius</label>
+		<description>Install a biological radius.</description>
+    <descriptionHyperlinks><ThingDef>Radius</ThingDef></descriptionHyperlinks>
+		<jobString>Installing radius.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Radius</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Radius</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!-- femur -->
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Femur</defName>
+		<label>femur</label>
+		<description>A biological human femur.</description>
+    <descriptionHyperlinks><RecipeDef>InstallNaturalFemur</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalFemur</defName>
+		<label>install femur</label>
+		<description>Install a biological femur.</description>
+    <descriptionHyperlinks><ThingDef>Femur</ThingDef></descriptionHyperlinks>
+		<jobString>Installing femur.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Femur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Femur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Femur</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<!-- tibia -->
+	
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Tibia</defName>
+		<label>tibia</label>
+		<description>A biological human tibia.</description>
+    <descriptionHyperlinks><RecipeDef>InstallNaturalTibia</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalTibia</defName>
+		<label>install tibia</label>
+		<description>Install a biological tibia.</description>
+    <descriptionHyperlinks><ThingDef>Tibia</ThingDef></descriptionHyperlinks>
+		<jobString>Installing tibia.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tibia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Tibia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+</Defs>
