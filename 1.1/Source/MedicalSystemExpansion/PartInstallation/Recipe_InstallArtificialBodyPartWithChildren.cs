@@ -81,9 +81,13 @@ namespace MSE2
             }
             else
             {
-                var compProp = this.recipe?.addsHediff?.spawnThingOnRemoved?.GetCompProperties<CompProperties_IncludedChildParts>();
-                if ( compProp != null )
+                foreach ( CompProperties_IncludedChildParts compProp in
+                    (this.recipe.fixedIngredientFilter?.AllowedThingDefs ?? Enumerable.Empty<ThingDef>())
+                    .Select( td => td.GetCompProperties<CompProperties_IncludedChildParts>() )
+                    .Where( c => c != null ) )
+                {
                     compProp.RecursiveDefInstallation( pawn, part );
+                }
             }
         }
     }
