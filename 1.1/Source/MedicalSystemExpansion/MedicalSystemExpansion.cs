@@ -12,6 +12,10 @@ namespace MSE2
         static MedicalSystemExpansion ()
         {
             Harmony harmony = new Harmony( "MSE2" );
+
+            if ( ModLister.HasActiveModWithName( "EdB Prepare Carefully" ) )
+                PrepareCarefullyPatches.ApplyPC( harmony );
+
             harmony.PatchAll( Assembly.GetExecutingAssembly() );
 
             IncludedPartsUtilities.CacheAllStandardParents();
