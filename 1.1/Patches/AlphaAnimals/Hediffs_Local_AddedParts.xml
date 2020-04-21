@@ -282,6 +282,8 @@
 								<partEfficiency>1</partEfficiency>
 								<betterThanNatural>false</betterThanNatural>
 							</addedPartProps>
+							<!-- verb moved via patch -->
+							<comps/> 
 						</HediffDef>
 
 						<ThingDef ParentName="AA_BodyPartMutantBase">
@@ -461,6 +463,16 @@
 					</value>
 				</li>
 
+
+				<!-- move verb from arm to hand -->
+
+				<li Class="MSE2.PatchOperationAddCopy">
+					<xpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantHand"]/comps</xpath>
+					<fromxpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
 
 
 			</operations>
