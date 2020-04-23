@@ -42,6 +42,9 @@
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\735106432\1.1\Assemblies\EdBPrepareCarefully.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="JPatchOperation">
+      <HintPath>D:\Coding\Rimworld\JPatchOperation\bin\Release\JPatchOperation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml.Linq" />
@@ -342,10 +345,6 @@
     <Compile Include="CompIncludedChildParts\CompIncludedChildParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />
-    <Compile Include="XpathPatches\PatchOperationAddCopy.cs" />
-    <Compile Include="XpathPatches\PatchOperationAddOrMergeCopy.cs" />
-    <Compile Include="XpathPatches\PatchOperationAddOrMerge.cs" />
-    <Compile Include="XpathPatches\PatchOperationOffsetField.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
