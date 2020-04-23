@@ -11,7 +11,7 @@
 
 				<!-- bionic arm -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicArm"]</xpath>
 					<value>
 						<comps>
@@ -27,7 +27,7 @@
 
 				<!-- bionic leg -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicLeg"]</xpath>
 					<value>
 						<comps>
@@ -44,7 +44,7 @@
 
 				<!-- bionic hand -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="BionicHand"]</xpath>
 					<value>
 						<comps>
@@ -55,7 +55,7 @@
 					</value>
 				</li>
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicHand"]</xpath>
 					<value>
 						<comps>
@@ -74,7 +74,7 @@
 
 				<!-- bionic foot -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFoot"]</xpath>
 					<value>
 						<comps>
@@ -93,7 +93,7 @@
 
 				<!-- power arm -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerArm"]</xpath>
 					<value>
 						<comps>
@@ -571,7 +571,7 @@
 					<mods>
 						<li>Combat Extended</li>
 					</mods>
-					<match Class="MSE2.PatchOperationAddOrMerge">
+					<match Class="PatchOperationAddOrMerge">
 						<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
 						<value>
 							<comps>
@@ -591,7 +591,7 @@
 							</comps>
 						</value>
 					</match>
-					<nomatch Class="MSE2.PatchOperationAddOrMerge">
+					<nomatch Class="PatchOperationAddOrMerge">
 						<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
 						<value>
 							<comps>

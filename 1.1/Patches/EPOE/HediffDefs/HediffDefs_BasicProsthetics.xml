@@ -28,7 +28,7 @@
           </value>
         </li>
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
           <value>
             <comps>

@@ -3,7 +3,7 @@
 
   <!-- arm -->
 
-  <Operation Class="MSE2.PatchOperationAddOrMerge">
+  <Operation Class="PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]</xpath>
     <value>
       <comps>
@@ -29,7 +29,7 @@
 
   <!-- leg -->
 
-  <Operation Class="MSE2.PatchOperationAddOrMerge">
+  <Operation Class="PatchOperationAddOrMerge">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
     <value>
       <comps>
@@ -44,7 +44,7 @@
     </value>
   </Operation>
 
-  <Operation Class="MSE2.PatchOperationAddOrMerge">
+  <Operation Class="PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechLeg"]</xpath>
     <value>
       <comps>
@@ -57,13 +57,13 @@
 
   <!-- copy melee verbs -->
 
-  <Operation Class="MSE2.PatchOperationAddOrMerge">
+  <Operation Class="PatchOperationAddOrMerge">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
     <value>
       <comps/>
     </value>
   </Operation>
-  <Operation Class="MSE2.PatchOperationAddCopy">
+  <Operation Class="PatchOperationAddCopy">
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>

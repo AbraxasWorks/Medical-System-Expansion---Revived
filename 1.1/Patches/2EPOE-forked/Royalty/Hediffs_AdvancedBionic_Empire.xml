@@ -10,7 +10,7 @@
 
 				<!-- Drill Arm -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[defName="EPOE_AdvancedDrillArm"]</xpath>
 					<value>
 						<comps>
@@ -34,7 +34,7 @@
 
 				<!-- Field Hand -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[defName="EPOE_AdvancedFieldHand"]</xpath>
 					<value>
 						<comps>

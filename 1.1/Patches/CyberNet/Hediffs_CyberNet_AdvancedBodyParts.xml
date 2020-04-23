@@ -11,7 +11,7 @@
 
 				<!-- cnn arm -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedArm"]</xpath>
 					<value>
 						<comps>
@@ -51,7 +51,7 @@
 
 				<!-- cnn leg -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="CyberNetProsthetic"][defName="CNAdvancedNetworkedLeg"]</xpath>
 					<value>
 						<comps>
@@ -531,14 +531,14 @@
 
 				<!-- copy stages to subparts -->
 
-				<li Class="MSE2.PatchOperationAddCopy">
+				<li Class="PatchOperationAddCopy">
 					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/stages</fromxpath>
 					<xpath>
 						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]
 						[defName="CNAdvancedNetworkedForearm" or defName="CNAdvancedNetworkedHand" or defName="CNAdvancedNetworkedFinger"]
 					</xpath>
 				</li>
-				<li Class="MSE2.PatchOperationAddCopy">
+				<li Class="PatchOperationAddCopy">
 					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedLeg"]/stages</fromxpath>
 					<xpath>
 						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]
@@ -548,7 +548,7 @@
 
 				<!-- move verb from arm to hand -->
 
-				<li Class="MSE2.PatchOperationAddCopy">
+				<li Class="PatchOperationAddCopy">
 					<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedHand"]/comps</xpath>
 					<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 				</li>

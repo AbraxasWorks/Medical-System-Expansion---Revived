@@ -11,7 +11,7 @@
 
 				<!-- mutant leg -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]</xpath>
 					<value>
 						<comps>
@@ -28,7 +28,7 @@
 
 				<!-- mutant arm -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantArm"]</xpath>
 					<value>
 						<comps>
@@ -466,7 +466,7 @@
 
 				<!-- move verb from arm to hand -->
 
-				<li Class="MSE2.PatchOperationAddCopy">
+				<li Class="PatchOperationAddCopy">
 					<xpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantHand"]/comps</xpath>
 					<fromxpath>/Defs/HediffDef[@ParentName="AA_MutantAddedBodyPartBase"][defName="AA_MutantArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 				</li>

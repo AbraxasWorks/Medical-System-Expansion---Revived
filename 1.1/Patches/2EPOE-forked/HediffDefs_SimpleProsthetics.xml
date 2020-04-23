@@ -20,7 +20,7 @@
 
 				<!-- Simple hand -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticHand"]</xpath>
 					<value>
 						<comps>
@@ -39,7 +39,7 @@
 
 				<!-- Simple foot -->
 
-				<li Class="MSE2.PatchOperationAddOrMerge">
+				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticFoot"]</xpath>
 					<value>
 						<comps>

@@ -16,7 +16,7 @@
         <!-- power arm -->
         <!-- TODO: add power hand? -->
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerArm"]</xpath>
           <value>
             <comps>
@@ -27,7 +27,7 @@
           </value>
         </li>
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="PowerArm"]</xpath>
           <value>
             <comps>
@@ -43,7 +43,7 @@
 
         <!-- bionic arm -->
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicArm"]</xpath>
           <value>
             <comps>
@@ -59,7 +59,7 @@
 
         <!-- bionic leg -->
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicLeg"]</xpath>
           <value>
             <comps>
@@ -76,7 +76,7 @@
 
         <!-- bionic hand -->
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicHand"]</xpath>
           <value>
             <comps>
@@ -95,7 +95,7 @@
 
         <!-- bionic foot -->
 
-        <li Class="MSE2.PatchOperationAddOrMerge">
+        <li Class="PatchOperationAddOrMerge">
           <xpath>/Defs/ThingDef[@ParentName="Bionic"][defName="BionicFoot"]</xpath>
           <value>
             <comps>
@@ -590,7 +590,7 @@
           <mods>
             <li>Combat Extended</li>
           </mods>
-          <match Class="MSE2.PatchOperationAddOrMerge">
+          <match Class="PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
             <value>
               <comps>
@@ -610,7 +610,7 @@
               </comps>
             </value>
           </match>
-          <nomatch Class="MSE2.PatchOperationAddOrMerge">
+          <nomatch Class="PatchOperationAddOrMerge">
             <xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
             <value>
               <comps>
