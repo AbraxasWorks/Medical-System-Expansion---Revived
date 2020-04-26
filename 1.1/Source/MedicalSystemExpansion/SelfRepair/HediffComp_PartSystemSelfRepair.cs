@@ -14,14 +14,7 @@ namespace MSE2
 
         public bool HasInjury
         {
-            get
-            {
-                if ( MedicalSystemExpansion.PartHasInjury( base.Pawn, base.parent.Part, true ) )
-                {
-                    return true;
-                }
-                return false;
-            }
+            get => MedicalSystemExpansion.PartHasInjury( base.Pawn, base.parent.Part, true );
         }
 
         public override string CompLabelInBracketsExtra

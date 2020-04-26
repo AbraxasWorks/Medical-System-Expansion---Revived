@@ -13,7 +13,7 @@ namespace MSE2
             if ( bodyPart != null && bodyPart.parent != null )
             {
                 var modExt = set.GetHediffs<Hediff_AddedPart>()
-                    .FirstOrDefault( ( Hediff_AddedPart h ) => h.Part == bodyPart.parent )? // added part on parent bodypartrecord
+                    .FirstOrDefault( h => h.Part == bodyPart.parent )? // added part on parent bodypartrecord
                     .def.GetModExtension<IgnoreSubParts>();
 
                 return
@@ -34,7 +34,7 @@ namespace MSE2
             yield break;
         }
 
-        private static List<BodyPartDef> AllChildDefs ( this BodyPartDef bodyPartDef )
+        private static List<BodyPartDef> AllChildPartDefs ( this BodyPartDef bodyPartDef )
         {
             List<BodyPartDef> list = new List<BodyPartDef>();
 
@@ -86,7 +86,7 @@ namespace MSE2
                     if ( modExt.ignoredSubParts == null )
                         modExt.ignoredSubParts = new List<BodyPartDef>();
 
-                    modExt.ignoredSubParts.AddRange( partDef.AllChildDefs() );
+                    modExt.ignoredSubParts.AddRange( partDef.AllChildPartDefs() );
                 }
 
                 // found any

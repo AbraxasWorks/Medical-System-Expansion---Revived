@@ -21,7 +21,6 @@ namespace MSE2
             IncludedPartsUtilities.CacheAllStandardParents();
 
             IgnoreSubPartsUtilities.IgnoreAllNonCompedSubparts();
-            
         }
 
         public static readonly Texture2D WidgetMinusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/MinusSign", true );
@@ -79,30 +78,5 @@ namespace MSE2
             }
             return hediff.def.label;
         }
-
-        public static Texture2D GetIcon ( string loadID, string iconPath )
-        {
-            if ( iconsCache.ContainsKey( loadID ) )
-            {
-                return iconsCache[loadID];
-            }
-            else
-            {
-                Texture2D icon = BaseContent.BadTex;
-                if ( !iconPath.NullOrEmpty() )
-                {
-                    icon = ContentFinder<Texture2D>.Get( iconPath, true );
-                    iconsCache.Add( loadID, icon );
-                }
-                return icon;
-            }
-        }
-
-        public static void ClearIcon ( string loadID )
-        {
-            iconsCache.Remove( loadID );
-        }
-
-        public static readonly Dictionary<string, Texture2D> iconsCache = new Dictionary<string, Texture2D>();
     }
 }
