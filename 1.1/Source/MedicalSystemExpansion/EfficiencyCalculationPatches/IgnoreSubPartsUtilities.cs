@@ -92,7 +92,8 @@ namespace MSE2
                 // found any
                 if ( !modExt.ignoredSubParts.NullOrEmpty() )
                 {
-                    Log.Message( "[MSE2] Part " + recipeDef.addsHediff.label + " from " + recipeDef.modContentPack.Name + ", has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) );
+                    if ( Prefs.LogVerbose )
+                        Log.Message( "[MSE2] Part <" + recipeDef.addsHediff.defName + "> from \"" + recipeDef.modContentPack.Name + "\", has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) + "." );
 
                     if ( recipeDef.addsHediff.modExtensions == null )
                         recipeDef.addsHediff.modExtensions = new List<DefModExtension>();
@@ -106,7 +107,7 @@ namespace MSE2
 
             if ( brokenMods.Count > 0 )
             {
-                Log.Warning( "[MSE2] Some prostheses that have not been patched were detected in mods " + string.Join( ", ", brokenMods ) + ". They will default to vanilla behaviour." );
+                Log.Warning( "[MSE2] Some prostheses that have not been patched were detected in mods: " + string.Join( ", ", brokenMods ) + ". They will default to vanilla behaviour." );
             }
         }
     }
