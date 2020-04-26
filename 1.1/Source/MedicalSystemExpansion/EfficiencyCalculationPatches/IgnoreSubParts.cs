@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 using Verse;
 
@@ -21,30 +20,6 @@ namespace MSE2
             }
 
             yield break;
-        }
-    }
-
-    internal static class Utilities
-    {
-        public static bool PartShouldBeIgnored ( this HediffSet set, BodyPartRecord bodyPart )
-        {
-            if ( bodyPart != null && bodyPart.parent != null )
-            {
-                var modExt = set.GetHediffs<Hediff_AddedPart>()
-                    .FirstOrDefault( ( Hediff_AddedPart h ) => h.Part == bodyPart.parent )? // added part on parent bodypartrecord
-                    .def.GetModExtension<IgnoreSubParts>();
-
-                //bool res =
-                return
-                    (modExt != null && modExt.ignoredSubParts.Contains( bodyPart.def ))
-                    || set.PartShouldBeIgnored( bodyPart.parent );
-
-                //if ( res )
-                //    Log.Message( "Part to ignore " + bodyPart.Label + " of " + set.pawn.Name );
-
-                //return res;
-            }
-            return false;
         }
     }
 }

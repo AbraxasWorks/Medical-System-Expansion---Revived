@@ -19,6 +19,9 @@ namespace MSE2
             harmony.PatchAll( Assembly.GetExecutingAssembly() );
 
             IncludedPartsUtilities.CacheAllStandardParents();
+
+            IgnoreSubPartsUtilities.IgnoreAllNonCompedSubparts();
+            
         }
 
         public static readonly Texture2D WidgetMinusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/MinusSign", true );
