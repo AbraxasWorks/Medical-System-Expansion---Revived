@@ -44,7 +44,7 @@ namespace MSE2
                 {
                     if ( partRecord.def == bodyPartDef )
                     {
-                        list.AddRange( 
+                        list.AddRange(
                             partRecord.AllChildParts()
                             .Select( r => r.def )
                             .Where( d => !list.Contains( d ) ) );
@@ -57,7 +57,7 @@ namespace MSE2
 
         public static void IgnoreAllNonCompedSubparts ()
         {
-            bool missingAny = false;
+            List<string> brokenMods = new List<string>();
 
             foreach ( RecipeDef recipeDef in
                 from r in DefDatabase<RecipeDef>.AllDefs
@@ -92,7 +92,7 @@ namespace MSE2
                 // found any
                 if ( !modExt.ignoredSubParts.NullOrEmpty() )
                 {
-                    Log.Message( "[MSE2] Part " + recipeDef.addsHediff.label + " has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) );
+                    Log.Message( "[MSE2] Part " + recipeDef.addsHediff.label + " from " + recipeDef.modContentPack.Name + ", has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) );
 
                     if ( recipeDef.addsHediff.modExtensions == null )
                         recipeDef.addsHediff.modExtensions = new List<DefModExtension>();
@@ -100,13 +100,13 @@ namespace MSE2
                     // add the modextension
                     recipeDef.addsHediff.modExtensions.Add( modExt );
 
-                    missingAny = true;
+                    if ( !brokenMods.Contains( recipeDef.modContentPack.Name ) ) brokenMods.Add( recipeDef.modContentPack.Name );
                 }
             }
 
-            if ( missingAny )
+            if ( brokenMods.Count > 0 )
             {
-                Log.Warning( "[MSE2] Some prostheses that have not been patched were detected. They will default to vanilla behaviour." );
+                Log.Warning( "[MSE2] Some prostheses that have not been patched were detected in mods " + string.Join( ", ", brokenMods ) + ". They will default to vanilla behaviour." );
             }
         }
     }
