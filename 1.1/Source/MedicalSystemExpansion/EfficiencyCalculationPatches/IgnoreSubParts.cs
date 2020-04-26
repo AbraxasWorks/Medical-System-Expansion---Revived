@@ -14,9 +14,9 @@ namespace MSE2
         {
             foreach ( var ce in base.ConfigErrors() ) yield return ce;
 
-            if ( this.ignoredSubParts.NullOrEmpty() )
+            if ( this.ignoredSubParts == null )
             {
-                yield return "[MSE] ignoredSubPart is null or empty";
+                yield return "[MSE2] ignoredSubPart is null";
             }
 
             yield break;
