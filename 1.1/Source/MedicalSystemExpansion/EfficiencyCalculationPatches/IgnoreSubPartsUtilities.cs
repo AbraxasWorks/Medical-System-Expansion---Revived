@@ -61,6 +61,7 @@ namespace MSE2
 
             foreach ( RecipeDef recipeDef in
                 from r in DefDatabase<RecipeDef>.AllDefs
+                where r != null
                 where r.IsSurgery
                 where
                     // has ingredients
@@ -81,19 +82,20 @@ namespace MSE2
                 var modExt = new IgnoreSubParts();
 
                 // add all the subparts this prosthesis could have
-                foreach ( BodyPartDef partDef in recipeDef.appliedOnFixedBodyParts ?? Enumerable.Empty<BodyPartDef>() )
-                {
-                    if ( modExt.ignoredSubParts == null )
-                        modExt.ignoredSubParts = new List<BodyPartDef>();
+                if ( recipeDef.appliedOnFixedBodyParts != null )
+                    foreach ( BodyPartDef partDef in recipeDef.appliedOnFixedBodyParts )
+                    {
+                        if ( modExt.ignoredSubParts == null )
+                            modExt.ignoredSubParts = new List<BodyPartDef>();
 
-                    modExt.ignoredSubParts.AddRange( partDef.AllChildPartDefs() );
-                }
+                        modExt.ignoredSubParts.AddRange( partDef.AllChildPartDefs() );
+                    }
 
                 // found any
                 if ( !modExt.ignoredSubParts.NullOrEmpty() )
                 {
                     if ( Prefs.LogVerbose )
-                        Log.Message( "[MSE2] Part <" + recipeDef.addsHediff.defName + "> from \"" + recipeDef.modContentPack.Name + "\", has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) + "." );
+                        Log.Message( "[MSE2] Part <" + recipeDef.addsHediff.defName + "> from \"" + (recipeDef.modContentPack?.Name ?? "???") + "\", has no standard subparts. Automatically ignoring: " + string.Join( ", ", modExt.ignoredSubParts.Select( p => p.label ) ) + "." );
 
                     if ( recipeDef.addsHediff.modExtensions == null )
                         recipeDef.addsHediff.modExtensions = new List<DefModExtension>();
@@ -101,7 +103,8 @@ namespace MSE2
                     // add the modextension
                     recipeDef.addsHediff.modExtensions.Add( modExt );
 
-                    if ( !brokenMods.Contains( recipeDef.modContentPack.Name ) ) brokenMods.Add( recipeDef.modContentPack.Name );
+                    if ( !brokenMods.Contains( recipeDef.modContentPack?.Name ) )
+                        brokenMods.Add( recipeDef.modContentPack?.Name );
                 }
             }
 
