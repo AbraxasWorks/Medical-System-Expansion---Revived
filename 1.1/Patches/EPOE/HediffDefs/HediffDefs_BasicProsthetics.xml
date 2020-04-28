@@ -1,90 +1,100 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Expanded Prosthetics and Organ Engineering</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
 
-        <!-- remove verbs -->
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-          <success>Always</success> <!-- CE does this as well -->
-        </li>
+				<!-- remove verbs -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+					<success>Always</success>
+					<!-- CE does this as well -->
+				</li>
 
-        <!-- steel arm -->
+				<!-- steel arm -->
 
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Humerus</li>
-                <li>Radius</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Humerus</li>
+								<li>Radius</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
 
-        <li Class="PatchOperationAddOrMerge">
-          <xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
-          <value>
-            <comps>
-              <li Class="MSE2.CompProperties_IncludedChildParts">
-                <standardChildren>
-                  <li>HookHand</li>
-                </standardChildren>
-              </li>
-            </comps>
-          </value>
-        </li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>HookHand</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
 
-        <!-- hook hand -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="InstallSteelArm"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<appliedOnFixedBodyParts>
+							<li>Arm</li>
+						</appliedOnFixedBodyParts>
+					</value>
+				</li>
 
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Finger</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
+				<!-- hook hand -->
 
-        <!-- pegleg -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Finger</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
 
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="PegLeg"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Foot</li>
-                <li>Femur</li>
-                <li>Tibia</li>
-                <li>Toe</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
+				<!-- pegleg -->
 
-        <!-- wooden foot -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="PegLeg"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Foot</li>
+								<li>Femur</li>
+								<li>Tibia</li>
+								<li>Toe</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
 
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenFoot"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Toe</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
+				<!-- wooden foot -->
 
-      </operations>
-    </match>
-  </Operation>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenFoot"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Toe</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
 
 </Patch>

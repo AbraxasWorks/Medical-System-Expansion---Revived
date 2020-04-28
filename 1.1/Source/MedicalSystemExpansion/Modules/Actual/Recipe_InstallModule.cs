@@ -16,7 +16,7 @@ namespace MSE2
                     from slot in pawn.health.hediffSet.GetHediffs<Hediff_ModuleSlot>()
                     where rbpd == slot.Part.def
                     select slot.Part
-                where !pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>().Any( m => m.def == recipe.addsHediff )   // part doesn't have the module i'm trying to add
+                where !pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>().Any( m => m.Part == bodyPart && m.def == recipe.addsHediff )   // part doesn't have the module i'm trying to add
                 select bodyPart;
         }
 
