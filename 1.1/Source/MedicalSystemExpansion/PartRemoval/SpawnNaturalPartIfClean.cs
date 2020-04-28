@@ -56,6 +56,7 @@ namespace MSE2.HarmonyPatches
                     comp = new CompIncludedChildParts();
                     comp.parent = item;
                     comp.props = new CompProperties_IncludedChildParts();
+                    comp.PostSpawnSetup( false );
                     item.AllComps.Add( comp );
                 }
 
