@@ -8,41 +8,6 @@
     <match Class="PatchOperationSequence">
       <operations>
 
-        <!-- Simple arm -->
-
-        <li Class="PatchOperationAddOrMerge">
-          <xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
-          <value>
-            <comps>
-              <li Class="MSE2.CompProperties_IncludedChildParts">
-                <standardChildren>
-                  <li>SimpleProstheticHand</li>
-                </standardChildren>
-              </li>
-            </comps>
-          </value>
-        </li>
-
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="SimpleProstheticArm"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Humerus</li>
-                <li>Radius</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
-
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
-          <value>
-            <appliedOnFixedBodyParts>
-              <li>Arm</li>
-            </appliedOnFixedBodyParts>
-          </value>
-        </li>
 
         <!-- Simple leg -->
 
@@ -236,76 +201,6 @@
               <addsHediff>SimpleProstheticToe</addsHediff>
             </RecipeDef>
 
-
-            <!-- Simple shoulder -->
-
-            <HediffDef ParentName="addedPartSimple">
-              <defName>SimpleProstheticShoulder</defName>
-              <label>simple prosthetic shoulder</label>
-              <labelNoun>a simple prosthetic shoulder</labelNoun>
-              <description>An installed simple prosthetic arm.</description>
-              <descriptionHyperlinks>
-                <ThingDef>SimpleProstheticShoulder</ThingDef>
-              </descriptionHyperlinks>
-              <addedPartProps>
-                <partEfficiency>0.8</partEfficiency>
-              </addedPartProps>
-              <spawnThingOnRemoved>SimpleProstheticShoulder</spawnThingOnRemoved>
-            </HediffDef>
-
-            <ThingDef ParentName="Simple">
-              <defName>SimpleProstheticShoulder</defName>
-              <label>simple prosthetic shoulder</label>
-              <description>Replaces missing shoulders.</description>
-              <descriptionHyperlinks>
-                <RecipeDef>InstallSimpleProstheticShoulder</RecipeDef>
-              </descriptionHyperlinks>
-              <costList>
-                <Steel>15</Steel>
-                <Plasteel>15</Plasteel>
-                <ComponentIndustrial>2</ComponentIndustrial>
-              </costList>
-              <statBases>
-                <Mass>8</Mass>
-              </statBases>
-              <comps>
-                <li Class="MSE2.CompProperties_IncludedChildParts">
-                  <standardChildren>
-                    <li>SimpleProstheticArm</li>
-                    <li>SimpleProstheticClavicle</li>
-                  </standardChildren>
-                </li>
-              </comps>
-            </ThingDef>
-
-            <RecipeDef ParentName="SurgerySimple">
-              <defName>InstallSimpleProstheticShoulder</defName>
-              <label>install simple prosthetic shoulder</label>
-              <description>Installs a simple prosthetic shoulder.</description>
-              <descriptionHyperlinks>
-                <ThingDef>SimpleProstheticShoulder</ThingDef>
-              </descriptionHyperlinks>
-              <jobString>Installing simple prosthetic shoulder.</jobString>
-              <ingredients>
-                <li>
-                  <filter>
-                    <thingDefs>
-                      <li>SimpleProstheticShoulder</li>
-                    </thingDefs>
-                  </filter>
-                  <count>1</count>
-                </li>
-              </ingredients>
-              <fixedIngredientFilter>
-                <thingDefs>
-                  <li>SimpleProstheticShoulder</li>
-                </thingDefs>
-              </fixedIngredientFilter>
-              <appliedOnFixedBodyParts>
-                <li>Shoulder</li>
-              </appliedOnFixedBodyParts>
-              <addsHediff>SimpleProstheticShoulder</addsHediff>
-            </RecipeDef>
 
           </value>
         </li>

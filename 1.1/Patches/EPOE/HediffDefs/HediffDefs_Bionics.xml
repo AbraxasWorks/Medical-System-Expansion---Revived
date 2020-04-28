@@ -348,7 +348,7 @@
                 <RecipeDef>InstallBionicForearm</RecipeDef>
               </descriptionHyperlinks>
               <costList>
-                <SimpleProstheticShoulder>1</SimpleProstheticShoulder>
+                <SimpleProstheticArm>1</SimpleProstheticArm>
                 <Plasteel>45</Plasteel>
                 <ComponentIndustrial>5</ComponentIndustrial>
               </costList>

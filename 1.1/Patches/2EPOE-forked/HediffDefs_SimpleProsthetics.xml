@@ -9,15 +9,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartProstheticBase"][defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
-					<value>
-						<appliedOnFixedBodyParts>
-							<li>Shoulder</li>
-						</appliedOnFixedBodyParts>
-					</value>
-				</li>
-
 				<!-- Simple hand -->
 
 				<li Class="PatchOperationAddOrMerge">
@@ -68,94 +59,6 @@
             </li>
           </value>
         </li>
-
-
-				<!-- adding new parts -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-
-
-						<!-- prosthetic forearm -->
-
-						<HediffDef ParentName="addedPartSimple">
-							<defName>SimpleProstheticForearm</defName>
-							<label>prosthetic arm</label>
-							<labelNoun>a prosthetic forearm</labelNoun>
-							<description>An installed prosthetic forearm.</description>
-							<descriptionHyperlinks>
-								<ThingDef>SimpleProstheticForearm</ThingDef>
-							</descriptionHyperlinks>
-							<addedPartProps>
-								<solid>true</solid>
-								<partEfficiency>0.8</partEfficiency>
-							</addedPartProps>
-							<spawnThingOnRemoved>SimpleProstheticForearm</spawnThingOnRemoved>
-							<modExtensions>
-								<li Class="MSE2.IgnoreSubParts">
-									<ignoredSubParts>
-										<li>Humerus</li>
-										<li>Radius</li>
-									</ignoredSubParts>
-								</li>
-							</modExtensions>
-						</HediffDef>
-
-						<ThingDef ParentName="BodyPartProstheticMakeableBase">
-							<defName>SimpleProstheticForearm</defName>
-							<label>prosthetic forearm</label>
-							<description>One of the most sophisticated forearm replacements. Gives extreme strength to its user.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>InstallSimpleProstheticForearm</RecipeDef>
-							</descriptionHyperlinks>
-							<costList>
-								<Steel>35</Steel>
-								<ComponentIndustrial>2</ComponentIndustrial>
-							</costList>
-							<statBases>
-								<Mass>4</Mass>
-							</statBases>
-							<comps>
-								<li Class="MSE2.CompProperties_IncludedChildParts">
-									<standardChildren>
-										<li>SimpleProstheticHand</li>
-									</standardChildren>
-								</li>
-							</comps>
-						</ThingDef>
-
-						<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-							<defName>InstallSimpleProstheticForearm</defName>
-							<label>install prosthetic forearm</label>
-							<description>Installs prosthetic forearm.</description>
-							<descriptionHyperlinks>
-								<ThingDef>SimpleProstheticForearm</ThingDef>
-							</descriptionHyperlinks>
-							<jobString>Installing prosthetic forearm.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>SimpleProstheticForearm</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>SimpleProstheticForearm</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Arm</li>
-							</appliedOnFixedBodyParts>
-							<addsHediff>SimpleProstheticForearm</addsHediff>
-						</RecipeDef>
-
-					</value>
-				</li>
 
 
 

@@ -247,7 +247,7 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>SimpleProstheticForearm</li>
+											<li>SimpleProstheticArm</li>
 										</thingDefs>
 									</filter>
 									<count>1</count>
@@ -271,7 +271,7 @@
 							</ingredients>
 							<fixedIngredientFilter>
 								<thingDefs>
-									<li>SimpleProstheticForearm</li>
+									<li>SimpleProstheticArm</li>
 									<li>Plasteel</li>
 									<li>ComponentIndustrial</li>
 								</thingDefs>
