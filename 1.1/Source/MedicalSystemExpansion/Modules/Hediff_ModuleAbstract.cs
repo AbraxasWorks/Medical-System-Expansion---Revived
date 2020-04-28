@@ -30,7 +30,7 @@ namespace MSE2
                 // try to cache it
                 if ( moduleHolderComp == null )
                 {
-                    moduleHolderComp = moduleHolderDiff.TryGetComp<HediffComp_ModuleHolder>();
+                    moduleHolderComp = moduleHolderDiff?.TryGetComp<HediffComp_ModuleHolder>();
                     // if still null call error
                     if ( moduleHolderComp == null )
                     {
@@ -47,6 +47,13 @@ namespace MSE2
             base.ExposeData();
 
             Scribe_References.Look( ref moduleHolderDiff, "moduleHolder" ); // need to save the diff as the comp is not referenceable for some reason
+
+            if ( Scribe.mode == LoadSaveMode.PostLoadInit && this.moduleHolderDiff == null )
+            {
+                Log.Error( "[MSE2] " + this.Label + " has null holder after loading, removing.", false );
+                this.pawn.health.hediffSet.hediffs.Remove( this );
+                return;
+            }
         }
 
         private HediffWithComps moduleHolderDiff = null;

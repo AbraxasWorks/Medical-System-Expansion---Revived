@@ -35,11 +35,18 @@ namespace MSE2
                 }
             }
 
-            foreach ( var hediff in from x in pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>()
-                                    where x.Part == part
-                                    select x )
+            foreach ( Hediff_ModuleAdded module in from x in pawn.health.hediffSet.GetHediffs<Hediff_ModuleAdded>()
+                                                   where x.Part == part
+                                                   select x )
             {
-                ModuleUtilities.RemoveAndSpawnModule( hediff );
+                // spawn thing if possible
+                if ( module.def.spawnThingOnRemoved != null && pawn?.Map != null )
+                {
+                    GenPlace.TryPlaceThing( ThingMaker.MakeThing( module.def.spawnThingOnRemoved ), pawn.Position, pawn.Map, ThingPlaceMode.Near );
+                }
+
+                // remove hediff
+                pawn.health.RemoveHediff( module );
             }
         }
     }

@@ -21,7 +21,6 @@ namespace MSE2
             UpdateSlotHediff();
         }
 
-        // overriding comppostpostadd doesn't seem to work properly
         public void UpdateSlotHediff ()
         {
             // has slots available
@@ -29,13 +28,8 @@ namespace MSE2
             {
                 if ( moduleSlot == null )
                 {
-                    //Log.Message( "Adding slot " + this.parent.pawn.Name + " " + this.parent.Part.Label );
-
                     // create the slot
-
-                    moduleSlot = (Hediff_ModuleSlot)HediffMaker.MakeHediff( MSE_HediffDefOf.MSE_ModuleSlot, this.parent.pawn, this.parent.Part );
-
-                    this.parent.pawn.health.AddHediff( moduleSlot );
+                    this.parent.pawn.health.AddHediff( MSE_HediffDefOf.MSE_ModuleSlot, this.parent.Part );
                 }
             }
             // else remove eventual slot
@@ -50,11 +44,9 @@ namespace MSE2
         {
             currentModules++;
 
-            //Log.Message( "Added module to " + this.parent.Label );
-
             if ( currentModules > this.Props.maxModules )
             {
-                Log.Error( "[MSE] Added too many modules to part " + this.parent.Label );
+                Log.Error( "[MSE2] Added too many modules to part " + this.parent.Label );
             }
 
             UpdateSlotHediff();
@@ -64,14 +56,18 @@ namespace MSE2
         {
             currentModules--;
 
-            //Log.Message( "Removed module from " + this.parent.Label );
-
             UpdateSlotHediff();
         }
 
         public override void CompPostPostRemoved ()
         {
             base.CompPostPostRemoved();
+
+            if ( moduleSlot != null )
+            {
+                parent.pawn.health.RemoveHediff( moduleSlot );
+                moduleSlot = null;
+            }
         }
 
         public override void CompExposeData ()
@@ -85,6 +81,6 @@ namespace MSE2
 
         public int currentModules;
 
-        private Hediff_ModuleSlot moduleSlot;
+        public Hediff_ModuleSlot moduleSlot;
     }
 }

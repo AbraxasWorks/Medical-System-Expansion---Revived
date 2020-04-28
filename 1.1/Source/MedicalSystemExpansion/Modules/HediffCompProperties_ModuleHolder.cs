@@ -16,7 +16,7 @@ namespace MSE2
 
             if ( this.maxModules <= 0 )
             {
-                yield return "Comp has negative or no module slots";
+                yield return "Part has negative or no module slots";
             }
 
             yield break;

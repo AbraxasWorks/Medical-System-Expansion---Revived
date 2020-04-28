@@ -320,7 +320,6 @@
     <Compile Include="HediffHiding\VisibleHediffs_patch.cs" />
     <Compile Include="Modules\Actual\Recipe_RemoveModules.cs" />
     <Compile Include="Modules\Hediff_ModuleAbstract.cs" />
-    <Compile Include="Modules\ModuleUtilities.cs" />
     <Compile Include="Modules\HediffComp_ModuleHolder.cs" />
     <Compile Include="Modules\HediffCompProperties_ModuleHolder.cs" />
     <Compile Include="PartInstallation\AddedPart_PostAdd.cs" />

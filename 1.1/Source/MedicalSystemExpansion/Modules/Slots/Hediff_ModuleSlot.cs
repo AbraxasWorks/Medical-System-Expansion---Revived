@@ -8,20 +8,15 @@ namespace MSE2
         {
             get
             {
-                return MedicalSystemExpansion.PrettyLabel( this ) + (AvailableSlots != 1 ? (" (" + AvailableSlots + " available)") : "");
+                return base.LabelBase + (AvailableSlots != 1 ? (" (" + AvailableSlots + " available)") : "");
             }
         }
 
-        public override void ExposeData ()
+        public override void PostAdd ( DamageInfo? dinfo )
         {
-            base.ExposeData();
+            base.PostAdd( dinfo );
 
-            if ( Scribe.mode == LoadSaveMode.PostLoadInit && base.Part == null )
-            {
-                Log.Error( "Hediff_BodyPartModule has null part after loading.", false );
-                this.pawn.health.hediffSet.hediffs.Remove( this );
-                return;
-            }
+            base.ModuleHolder.moduleSlot = this;
         }
 
         public int AvailableSlots

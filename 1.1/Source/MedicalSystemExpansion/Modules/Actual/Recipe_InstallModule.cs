@@ -41,7 +41,7 @@ namespace MSE2
                 }
             }
 
-            ModuleUtilities.InstallModule( pawn, this.recipe.addsHediff, part );
+            pawn.health.AddHediff( this.recipe.addsHediff, part, null, null );
         }
     }
 }
