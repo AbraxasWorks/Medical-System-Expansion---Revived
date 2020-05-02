@@ -9,21 +9,11 @@
       <comps>
         <li Class="MSE2.CompProperties_IncludedChildParts">
           <standardChildren>
-            <li>ArchotechHand</li>
-            <li>ArchotechInternalSupport</li>
+            <li>ArchotechForearm</li>
             <li>ArchotechInternalSupport</li>
           </standardChildren>
         </li>
       </comps>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechArm"]/appliedOnFixedBodyParts</xpath>
-    <value>
-      <appliedOnFixedBodyParts>
-        <li>Arm</li>
-      </appliedOnFixedBodyParts>
     </value>
   </Operation>
 
