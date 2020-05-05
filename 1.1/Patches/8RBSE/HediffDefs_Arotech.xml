@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rah's Bionics and Surgery Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!-- arotech leg -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="ArchotechLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
