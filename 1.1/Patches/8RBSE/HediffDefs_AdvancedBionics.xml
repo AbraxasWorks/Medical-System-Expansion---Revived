@@ -60,7 +60,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- adv bionic arm -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicArm"]</xpath>
@@ -75,7 +75,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- adv bionic leg -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedBionicLeg"]</xpath>
@@ -102,7 +102,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- adv bionic foot -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="Advanced"][defName="AdvancedBionicFoot"]</xpath>
@@ -120,7 +120,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- adding new parts -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
@@ -166,6 +166,7 @@
 								<ThingDef>AdvancedBionicInternalSupport</ThingDef>
 							</descriptionHyperlinks>
 							<jobString>Installing advanced bionic internal support.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 							<ingredients>
 								<li>
 									<filter>
@@ -299,6 +300,7 @@
 								<ThingDef>AdvancedBionicForearm</ThingDef>
 							</descriptionHyperlinks>
 							<jobString>Installing advanced bionic forearm.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 							<ingredients>
 								<li>
 									<filter>
@@ -417,6 +419,7 @@
 								<ThingDef>AdvancedPowerForearm</ThingDef>
 							</descriptionHyperlinks>
 							<jobString>Installing advanced power forearm.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 							<ingredients>
 								<li>
 									<filter>
@@ -537,6 +540,7 @@
 								<ThingDef>AdvancedPowerHand</ThingDef>
 							</descriptionHyperlinks>
 							<jobString>Installing advanced power hand.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 							<ingredients>
 								<li>
 									<filter>
@@ -600,6 +604,7 @@
 								<ThingDef>AdvancedBionicToe</ThingDef>
 							</descriptionHyperlinks>
 							<jobString>Installing advanced bionic toe.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
 							<ingredients>
 								<li>
 									<filter>
@@ -621,65 +626,66 @@
 							<addsHediff>AdvancedBionicToe</addsHediff>
 						</RecipeDef>
 
-				
+
 						<!-- bionic finger -->
 						<HediffDef ParentName="addedPartAdvanced">
-						  <defName>AdvancedBionicFinger</defName>
-						  <label>advanced bionic finger</label>
-						  <labelNoun>an advanced bionic finger</labelNoun>
-						  <description>An installed advanced bionic finger.</description>
-						  <descriptionHyperlinks>
-							<ThingDef>AdvancedBionicFinger</ThingDef>
-						  </descriptionHyperlinks>
-						  <addedPartProps>
-							<partEfficiency>1.35</partEfficiency>
-						  </addedPartProps>
-						  <spawnThingOnRemoved>AdvancedBionicFinger</spawnThingOnRemoved>
+							<defName>AdvancedBionicFinger</defName>
+							<label>advanced bionic finger</label>
+							<labelNoun>an advanced bionic finger</labelNoun>
+							<description>An installed advanced bionic finger.</description>
+							<descriptionHyperlinks>
+								<ThingDef>AdvancedBionicFinger</ThingDef>
+							</descriptionHyperlinks>
+							<addedPartProps>
+								<partEfficiency>1.35</partEfficiency>
+							</addedPartProps>
+							<spawnThingOnRemoved>AdvancedBionicFinger</spawnThingOnRemoved>
 						</HediffDef>
 
 						<ThingDef ParentName="Advanced">
-						  <defName>AdvancedBionicFinger</defName>
-						  <label>advanced bionic finger</label>
-						  <description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
-						  <descriptionHyperlinks>
-							<RecipeDef>InstallAdvancedBionicFinger</RecipeDef>
-						  </descriptionHyperlinks>
-						  <costList>
-							<Plasteel>2</Plasteel>
-							<ComponentIndustrial>1</ComponentIndustrial>
-						  </costList>
-						  <statBases>
-							<Mass>0.1</Mass>
-						  </statBases>
+							<defName>AdvancedBionicFinger</defName>
+							<label>advanced bionic finger</label>
+							<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
+							<descriptionHyperlinks>
+								<RecipeDef>InstallAdvancedBionicFinger</RecipeDef>
+							</descriptionHyperlinks>
+							<costList>
+								<Plasteel>2</Plasteel>
+								<ComponentIndustrial>1</ComponentIndustrial>
+							</costList>
+							<statBases>
+								<Mass>0.1</Mass>
+							</statBases>
 						</ThingDef>
 
 						<RecipeDef ParentName="SurgeryAdvanced">
-						  <defName>InstallAdvancedBionicFinger</defName>
-						  <label>install advanced bionic finger</label>
-						  <description>Install an advanced bionic finger.</description>
-						  <descriptionHyperlinks>
-							<ThingDef>BionicFinger</ThingDef>
-						  </descriptionHyperlinks>
-						  <jobString>Installing advanced bionic finger.</jobString>
-						  <ingredients>
-							<li>
-							  <filter>
+							<defName>InstallAdvancedBionicFinger</defName>
+							<label>install advanced bionic finger</label>
+							<description>Install an advanced bionic finger.</description>
+							<descriptionHyperlinks>
+								<ThingDef>BionicFinger</ThingDef>
+							</descriptionHyperlinks>
+							<jobString>Installing advanced bionic finger.</jobString>
+							<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>AdvancedBionicFinger</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
 								<thingDefs>
-								  <li>AdvancedBionicFinger</li>
+									<li>AdvancedBionicFinger</li>
 								</thingDefs>
-							  </filter>
-							  <count>1</count>
-							</li>
-						  </ingredients>
-						  <fixedIngredientFilter>
-							<thingDefs>
-							  <li>AdvancedBionicFinger</li>
-							</thingDefs>
-						  </fixedIngredientFilter>
-						  <appliedOnFixedBodyParts>
-							<li>Finger</li>
-						  </appliedOnFixedBodyParts>
-						  <addsHediff>AdvancedBionicFinger</addsHediff>
+							</fixedIngredientFilter>
+							<appliedOnFixedBodyParts>
+								<li>Finger</li>
+							</appliedOnFixedBodyParts>
+							<addsHediff>AdvancedBionicFinger</addsHediff>
 						</RecipeDef>
 					</value>
 				</li>
@@ -691,50 +697,49 @@
 				<!-- melee verbs on power hand -->
 
 				<li Class="PatchOperationFindMod">
-				  <mods>
-					<li>Combat Extended</li>
-				  </mods>
-				  <match Class="PatchOperationAddOrMerge">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
-					<value>
-					  <comps>
-						<li Class="HediffCompProperties_VerbGiver">
-						  <tools>
-							<li Class="CombatExtended.ToolCE">
-							  <label>bionic fist</label>
-							  <capacities>
-								<li>Blunt</li>
-							  </capacities>
-							  <power>9</power>
-							  <armorPenetrationBlunt>3</armorPenetrationBlunt>
-							  <cooldownTime>0.83</cooldownTime>
-							</li>
-						  </tools>
-						</li>
-					  </comps>
-					</value>
-				  </match>
-				  <nomatch Class="PatchOperationAddOrMerge">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
-					<value>
-					  <comps>
-						<li Class="HediffCompProperties_VerbGiver">
-						  <tools>
-							<li>
-							  <label>bionic fist</label>
-							  <capacities>
-								<li>Blunt</li>
-							  </capacities>
-							  <power>16</power>
-							  <cooldownTime>1.65</cooldownTime>
-							</li>
-						  </tools>
-						</li>
-					  </comps>
-					</value>
-				  </nomatch>
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddOrMerge">
+						<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+						<value>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<label>bionic fist</label>
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>9</power>
+											<armorPenetrationBlunt>3</armorPenetrationBlunt>
+											<cooldownTime>0.83</cooldownTime>
+										</li>
+									</tools>
+								</li>
+							</comps>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddOrMerge">
+						<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerHand"]</xpath>
+						<value>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li>
+											<label>bionic fist</label>
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>16</power>
+											<cooldownTime>1.65</cooldownTime>
+										</li>
+									</tools>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
 				</li>
-				
 			</operations>
 		</match>
 	</Operation>

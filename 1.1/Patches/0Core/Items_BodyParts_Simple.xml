@@ -53,7 +53,7 @@
   </Operation>
 
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticLeg"]</xpath>
+    <xpath>/Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
     <value>
       <li Class="MSE2.IgnoreSubParts">
         <ignoredSubParts>

@@ -19,7 +19,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- Simple arm -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticArm"]</xpath>
@@ -33,7 +33,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- hook hand -->
 				<li Class="PatchOperationAddModExtension">
 					<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="HookHand"]</xpath>
@@ -45,7 +45,7 @@
 						</li>
 					</value>
 				</li>
-				
+
 				<!-- Simple hand -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticHand"]</xpath>
@@ -63,7 +63,7 @@
 						</comps>
 					</value>
 				</li>
-				
+
 				<!-- Simple foot -->
 				<li Class="PatchOperationAddOrMerge">
 					<xpath>/Defs/ThingDef[@ParentName="Simple"][defName="SimpleProstheticFoot"]</xpath>
