@@ -10,12 +10,13 @@
 	<packageId>MSE2.Core</packageId>
 
 	<url>https://github.com/AbraxasWorks/Medical-System-Expansion---Revived</url>
-	<description>Version: 2.3.11 [BETA]
+	<description>
+Version: 2.3.12 [BETA]
 
 Improves how the game handles prosthetics by not discarding the subparts of added prostheses.
 
 This is a rewrite of Medical System Expansion by Oreno.
-</description>
+	</description>
 
 	<modDependencies>
 		<li>
@@ -28,8 +29,9 @@ This is a rewrite of Medical System Expansion by Oreno.
 	<loadBefore>
 		<li>Ykara.EPOE</li>
 		<li>vat.epoeforked</li>
+		<li>Rah.RBSE</li>
 	</loadBefore>
-	<loadAfter>	
+	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
