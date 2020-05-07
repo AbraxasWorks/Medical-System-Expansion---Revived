@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace MSE2
@@ -56,6 +57,28 @@ namespace MSE2
 
             return modExt != null && hediff.Part != null && hediff.Part.parent != null
                 && hediff.pawn.health.hediffSet.hediffs.Any( h => h.Part == hediff.Part.parent && modExt.Contains( h.def ) );
+        }
+
+        // hediff price offset
+
+        public static void FixHediffPriceOffset ()
+        {
+            foreach ( (HediffDef hediffDef, ThingDef thingDef, var comp) in
+                from hd in DefDatabase<HediffDef>.AllDefs
+                let td = hd.spawnThingOnRemoved
+                where td != null
+                let cpcicp = td.GetCompProperties<CompProperties_IncludedChildParts>()
+                where cpcicp != null
+                select (hd, td, cpcicp) )
+            {
+                float childValue = comp.standardChildren.Select( c => c.BaseMarketValue ).Aggregate( ( a, b ) => a + b );
+
+                childValue = Mathf.Min( childValue, thingDef.BaseMarketValue * 0.9f );
+
+                hediffDef.priceOffset += thingDef.BaseMarketValue - childValue;
+
+                Log.Message( "Reduced value of " + hediffDef.defName + " by " + childValue + ". New value: " + hediffDef.priceOffset );
+            }
         }
     }
 }

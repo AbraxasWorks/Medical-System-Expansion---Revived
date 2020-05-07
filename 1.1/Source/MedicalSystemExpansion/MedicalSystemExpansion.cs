@@ -21,6 +21,8 @@ namespace MSE2
             IncludedPartsUtilities.CacheAllStandardParents();
 
             IgnoreSubPartsUtilities.IgnoreAllNonCompedSubparts();
+
+            IncludedPartsUtilities.FixHediffPriceOffset();
         }
 
         public static readonly Texture2D WidgetMinusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/MinusSign", true );
