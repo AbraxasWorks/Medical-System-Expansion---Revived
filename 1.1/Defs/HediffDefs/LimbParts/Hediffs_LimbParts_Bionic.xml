@@ -27,7 +27,7 @@
       <RecipeDef>InstallBionicInternalSupport</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>6</Plasteel>
+      <Plasteel>3</Plasteel>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
@@ -177,7 +177,7 @@
       <RecipeDef>InstallBionicFoot</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>9</Plasteel>
+      <Plasteel>7</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
@@ -254,12 +254,8 @@
       <RecipeDef>InstallBionicToe</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>2</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <Plasteel>1</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>0.05</Mass>
     </statBases>
@@ -403,7 +399,7 @@
       <RecipeDef>InstallBionicFinger</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>2</Plasteel>
+      <Plasteel>1</Plasteel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <statBases>
