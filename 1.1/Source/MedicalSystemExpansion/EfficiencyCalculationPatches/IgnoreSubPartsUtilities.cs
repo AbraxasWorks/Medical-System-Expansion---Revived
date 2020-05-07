@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -80,9 +81,18 @@ namespace MSE2
                 select r )
             {
                 var modExt = new IgnoreSubParts();
-
+                // Check for humans only (for the time)
+                bool isHuman = false;
+                foreach (ThingDef current in recipeDef.AllRecipeUsers)
+                {
+                    //Log.Message("[MSE Test]: " + recipeDef.addsHediff.defName + "> from \"" + (recipeDef.modContentPack?.Name ?? "???") + "\" has following users" + current.defName);
+                    if (current.defName == "Human")
+                    {
+                        isHuman = true;
+                    }
+                }
                 // add all the subparts this prosthesis could have
-                if ( recipeDef.appliedOnFixedBodyParts != null )
+                if ( recipeDef.appliedOnFixedBodyParts != null && isHuman)
                     foreach ( BodyPartDef partDef in recipeDef.appliedOnFixedBodyParts )
                     {
                         if ( modExt.ignoredSubParts == null )
