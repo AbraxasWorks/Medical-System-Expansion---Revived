@@ -30,7 +30,7 @@
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
     <statBases>
-      <MarketValue>400</MarketValue>
+      <MarketValue>350</MarketValue>
       <Mass>0.3</Mass>
     </statBases>
   </ThingDef>
@@ -107,11 +107,8 @@
     <descriptionHyperlinks>
       <RecipeDef>InstallArchotechForearm</RecipeDef>
     </descriptionHyperlinks>
-    <costList>
-      <Plasteel>12</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
-    </costList>
     <statBases>
+      <MarketValue>2100</MarketValue>
       <Mass>4</Mass>
     </statBases>
     <comps>
@@ -317,7 +314,7 @@
       <RecipeDef>InstallArchotechHand</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>1</Mass>
     </statBases>
     <comps>
@@ -388,7 +385,7 @@
       <RecipeDef>InstallArchotechFinger</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>380</MarketValue>
+      <MarketValue>300</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
   </ThingDef>
