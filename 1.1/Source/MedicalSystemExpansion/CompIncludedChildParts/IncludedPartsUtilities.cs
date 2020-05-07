@@ -63,7 +63,7 @@ namespace MSE2
 
         public static void FixHediffPriceOffset ()
         {
-            foreach ( (HediffDef hediffDef, ThingDef thingDef, var comp) in
+            foreach ( (HediffDef hediffDef, ThingDef thingDef, CompProperties_IncludedChildParts comp) in
                 from hd in DefDatabase<HediffDef>.AllDefs
                 let td = hd.spawnThingOnRemoved
                 where td != null
