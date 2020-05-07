@@ -31,6 +31,7 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
+      <WorkToMake>7000</WorkToMake>
       <Mass>1.5</Mass>
     </statBases>
     <techHediffsTags>
@@ -104,9 +105,10 @@
       <RecipeDef>InstallSimpleProstheticToe</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Steel>2</Steel>
+      <Steel>1</Steel>
     </costList>
     <statBases>
+      <WorkToMake>1000</WorkToMake>
       <Mass>0.05</Mass>
     </statBases>
   </ThingDef>
@@ -171,6 +173,7 @@
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <statBases>
+      <WorkToMake>9000</WorkToMake>
       <Mass>1</Mass>
     </statBases>
     <comps>
@@ -244,6 +247,7 @@
       <Steel>2</Steel>
     </costList>
     <statBases>
+      <WorkToMake>1200</WorkToMake>
       <Mass>0.1</Mass>
     </statBases>
   </ThingDef>
