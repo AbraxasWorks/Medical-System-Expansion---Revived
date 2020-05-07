@@ -22,7 +22,7 @@
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>BionicInternalSupport</defName>
     <label>bionic internal support</label>
-    <description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+    <description>An advanced artificial internal support. Useful replacement to have on hand for when an internal component of a bionic prosthesis breaks.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallBionicInternalSupport</RecipeDef>
     </descriptionHyperlinks>
@@ -33,6 +33,7 @@
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
     <statBases>
+      <WorkToMake>5000</WorkToMake>
       <Mass>0.3</Mass>
     </statBases>
   </ThingDef>
@@ -109,6 +110,7 @@
       <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <statBases>
+      <WorkToMake>20000</WorkToMake>
       <Mass>4</Mass>
     </statBases>
     <comps>
@@ -184,6 +186,7 @@
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
     <statBases>
+      <WorkToMake>15000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
     <comps>
@@ -253,10 +256,11 @@
     <descriptionHyperlinks>
       <RecipeDef>InstallBionicToe</RecipeDef>
     </descriptionHyperlinks>
-    <costList>
+    <costList>		
       <Plasteel>1</Plasteel>
     </costList>
     <statBases>
+      <WorkToMake>1500</WorkToMake>
       <Mass>0.05</Mass>
     </statBases>
   </ThingDef>
@@ -329,6 +333,7 @@
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
     <statBases>
+      <WorkToMake>16500</WorkToMake>
       <Mass>1</Mass>
     </statBases>
     <comps>
@@ -403,6 +408,7 @@
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <statBases>
+      <WorkToMake>2000</WorkToMake>
       <Mass>0.1</Mass>
     </statBases>
   </ThingDef>

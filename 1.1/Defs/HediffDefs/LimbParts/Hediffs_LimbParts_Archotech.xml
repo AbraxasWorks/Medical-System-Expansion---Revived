@@ -22,12 +22,12 @@
   <ThingDef ParentName="BodyPartArchotechBase">
     <defName>ArchotechInternalSupport</defName>
     <label>archotech internal support</label>
-    <description>An artificial internal support built by an archotech. Useful replacement to have on hand for when an archotech arm or leg breaks.</description>
+    <description>An artificial internal support built by an archotech. Useful replacement to have on hand for when an internal component of an archotech prosthesis breaks.</description>
     <descriptionHyperlinks>
       <RecipeDef>InstallArchotechInternalSupport</RecipeDef>
     </descriptionHyperlinks>
     <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardLowFreq</li>
     </thingSetMakerTags>
     <statBases>
       <MarketValue>350</MarketValue>

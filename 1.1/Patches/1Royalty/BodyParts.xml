@@ -75,14 +75,18 @@
 						<ThingDef ParentName="BodyPartProstheticImperialBase">
 							<defName>MechanicalManipulator</defName>
 							<label>mechanical manipulator</label>
-							<description>A general-purpose manipulator, not as good as normal hand but better than nothing.</description>
+							<description>A general-purpose manipulator, not as good as normal hand but better than nothing. Can only be installed on a drill arm.</description>
 							<descriptionHyperlinks>
+								<ThingDef>DrillArm</ThingDef>
 								<RecipeDef>InstallMechanicalManipulator</RecipeDef>
 							</descriptionHyperlinks>
 							<costList>
-								<Steel>30</Steel>
-								<ComponentIndustrial>6</ComponentIndustrial>
+								<Steel>20</Steel>
+								<ComponentIndustrial>2</ComponentIndustrial>
 							</costList>
+							<statBases>
+								<WorkToMake>7000</WorkToMake>
+							</statBases>
 							<recipeMaker>
 								<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
 							</recipeMaker>
@@ -155,14 +159,18 @@
 						<ThingDef ParentName="BodyPartProstheticImperialBase">
 							<defName>MechanicalFinger</defName>
 							<label>mechanical finger</label>
-							<description>A general purpose mechanical finger.</description>
+							<description>A general purpose mechanical finger. Can only be installed on a mechanical manipulator.</description>
 							<descriptionHyperlinks>
+								<ThingDef>MechanicalManipulator</ThingDef>
 								<RecipeDef>InstallMechanicalFinger</RecipeDef>
 							</descriptionHyperlinks>
 							<costList>
-								<Steel>4</Steel>
+								<Steel>3</Steel>
 								<ComponentIndustrial>1</ComponentIndustrial>
 							</costList>
+							<statBases>
+								<WorkToMake>1000</WorkToMake>
+							</statBases>
 							<recipeMaker>
 								<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
 							</recipeMaker>
@@ -230,14 +238,18 @@
 						<ThingDef ParentName="BodyPartProstheticImperialBase">
 							<defName>FieldFinger</defName>
 							<label>field finger</label>
-							<description>This mechanical finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once.</description>
+							<description>This mechanical finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once. Can only be installed on a field hand.</description>
 							<descriptionHyperlinks>
+								<ThingDef>FieldHand</ThingDef>
 								<RecipeDef>InstallFieldFinger</RecipeDef>
 							</descriptionHyperlinks>
 							<costList>
 								<Steel>8</Steel>
 								<ComponentIndustrial>1</ComponentIndustrial>
 							</costList>
+							<statBases>
+								<WorkToMake>2200</WorkToMake>
+							</statBases>
 							<recipeMaker>
 								<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
 							</recipeMaker>
@@ -473,7 +485,7 @@
 						<ThingDef ParentName="BodyPartProstheticImperialBase">
 							<defName>MechanicalInternalSupport</defName>
 							<label>mechanical internal support</label>
-							<description>A mechanical internal support. Useful replacement part to have when a drill arm gets damaged.</description>
+							<description>A mechanical internal support. Useful replacement part to have when some internal component of a drill arm is broken.</description>
 							<descriptionHyperlinks>
 								<RecipeDef>InstallMechanicalInternalSupport</RecipeDef>
 							</descriptionHyperlinks>
