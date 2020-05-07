@@ -177,7 +177,7 @@
       <RecipeDef>InstallArchotechFoot</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>1600</MarketValue>
+      <MarketValue>1350</MarketValue>
       <Mass>1.5</Mass>
     </statBases>
     <comps>
@@ -248,7 +248,7 @@
       <RecipeDef>InstallArchotechToe</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>200</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
   </ThingDef>
