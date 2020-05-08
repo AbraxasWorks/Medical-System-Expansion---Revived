@@ -464,7 +464,7 @@
 							<costList>
 								<ScytherBlade>3</ScytherBlade>
 								<Steel>35</Steel>
-								<Plasteel>75</Plasteel>
+								<Plasteel>70</Plasteel>
 								<ComponentIndustrial>5</ComponentIndustrial>
 								<ComponentSpacer>1</ComponentSpacer>
 							</costList>
@@ -519,7 +519,7 @@
 											<li>Plasteel</li>
 										</thingDefs>
 									</filter>
-									<count>15</count>
+									<count>10</count>
 								</li>
 							</ingredients>
 							<fixedIngredientFilter>
