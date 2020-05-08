@@ -216,7 +216,7 @@
 							<label>Networked hand</label>
 							<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
 							<statBases>
-								<WorkToMake>20000</WorkToMake>
+								<WorkToMake>16000</WorkToMake>
 								<Mass>2</Mass>
 							</statBases>
 							<costList>

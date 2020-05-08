@@ -216,7 +216,7 @@
 							<label>advanced networked hand</label>
 							<description>A advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
 							<statBases>
-								<WorkToMake>40000</WorkToMake>
+								<WorkToMake>32000</WorkToMake>
 								<Mass>2</Mass>
 							</statBases>
 							<costList>
