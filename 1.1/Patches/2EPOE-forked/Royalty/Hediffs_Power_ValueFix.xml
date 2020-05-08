@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Reverts some stuff to Royalty's material costs -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>Defs/ThingDef[@Name="BodyPartProstheticImperialBase"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerForearm"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>75</Steel>
+							<Plasteel>65</Plasteel>
+							<ComponentIndustrial>14</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerHand"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>75</Steel>
+							<Plasteel>45</Plasteel>
+							<ComponentIndustrial>13</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedPowerForearm"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>75</Steel>
+							<Plasteel>65</Plasteel>
+							<ComponentIndustrial>14</ComponentIndustrial>
+							<ComponentSpacer>4</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedPowerHand"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>75</Steel>
+							<Plasteel>45</Plasteel>
+							<ComponentIndustrial>13</ComponentIndustrial>
+							<ComponentSpacer>2</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
