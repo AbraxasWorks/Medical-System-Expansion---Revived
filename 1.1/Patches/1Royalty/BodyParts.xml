@@ -610,16 +610,6 @@
 				</li>
 
 
-				<!-- aesthetic nose (so it does not complain) -->
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[defName="AestheticNose"]</xpath>
-					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts/>
-						</li>
-					</value>
-				</li>
-
 			</operations>
 		</match>
 	</Operation>

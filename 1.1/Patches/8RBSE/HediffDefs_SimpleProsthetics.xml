@@ -81,15 +81,7 @@
 						</comps>
 					</value>
 				</li>
-				<!-- artificial nose (so it does not complain) -->
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[defName="ArtificialNose"]</xpath>
-					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts/>
-						</li>
-					</value>
-				</li>
+				
 			</operations>
 		</match>
 	</Operation>
