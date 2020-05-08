@@ -41,16 +41,18 @@ namespace MSE2.DebugTools
             }
             List<DebugMenuOption> list = new List<DebugMenuOption>();
 
-            foreach ( BodyPartRecord bpr in recipe.Worker.GetPartsToApplyOn( pawn, recipe ) )
+            if ( recipe.AllRecipeUsers.Select( ru => ru.race.body ).Contains( pawn.RaceProps.body ) )
             {
-                list.Add( new DebugMenuOption( bpr.Label, DebugMenuOptionMode.Action, delegate ()
+                foreach ( BodyPartRecord bpr in recipe.Worker.GetPartsToApplyOn( pawn, recipe ) )
                 {
-                    recipe.Worker.ApplyOnPawn( pawn, bpr, null, null, null );
-                } ) );
+                    list.Add( new DebugMenuOption( bpr.Label, DebugMenuOptionMode.Action, delegate ()
+                    {
+                        recipe.Worker.ApplyOnPawn( pawn, bpr, null, null, null );
+                    } ) );
+                }
             }
 
             return list;
         }
-
     }
 }
