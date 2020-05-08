@@ -366,6 +366,9 @@
 							<statBases>
 								<Mass>4</Mass>
 							</statBases>
+							<techHediffsTags>
+								<li>AdvancedWeapon</li>
+							</techHediffsTags>
 							<comps>
 								<li Class="MSE2.CompProperties_IncludedChildParts">
 									<standardChildren>
@@ -478,6 +481,9 @@
 							<statBases>
 								<Mass>3.5</Mass>
 							</statBases>
+							<techHediffsTags>
+								<li>AdvancedWeapon</li>
+							</techHediffsTags>
 							<comps>
 								<li Class="MSE2.CompProperties_IncludedChildParts">
 									<standardChildren>
