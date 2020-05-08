@@ -77,7 +77,7 @@ namespace MSE2
 
                 hediffDef.priceOffset += thingDef.BaseMarketValue - childValue;
 
-                Log.Message( "Reduced value of " + hediffDef.defName + " by " + childValue + ". New value: " + hediffDef.priceOffset );
+                //Log.Message( "Reduced value of " + hediffDef.defName + " by " + childValue + ". New value: " + hediffDef.priceOffset );
             }
         }
     }
