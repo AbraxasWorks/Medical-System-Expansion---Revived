@@ -56,6 +56,9 @@ namespace MSE2
             return list;
         }
 
+        /// <summary>
+        /// Makes limb prostheses without a CompProperties_IncludedChildParts behave like they would in vanilla
+        /// </summary>
         public static void IgnoreAllNonCompedSubparts ()
         {
             List<string> brokenMods = new List<string>();

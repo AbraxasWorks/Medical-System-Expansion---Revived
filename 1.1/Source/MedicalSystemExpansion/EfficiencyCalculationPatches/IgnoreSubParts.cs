@@ -4,10 +4,11 @@ using Verse;
 
 namespace MSE2
 {
+    /// <summary>
+    /// DefModExtension to add to hediffs of addedparts when they don't support certain child parts (i.e. peglegs have no foot or bones)
+    /// </summary>
     internal class IgnoreSubParts : DefModExtension
     {
-        // DefModExtension to add to hediffs of addedparts when they don't support certain child parts (i.e. peglegs have no foot or bones)
-
         public List<BodyPartDef> ignoredSubParts;
 
         public override IEnumerable<string> ConfigErrors ()
