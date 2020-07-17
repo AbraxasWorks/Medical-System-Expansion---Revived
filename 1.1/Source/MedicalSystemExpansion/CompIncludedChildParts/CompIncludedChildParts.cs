@@ -9,13 +9,22 @@ namespace MSE2
 {
     public partial class CompIncludedChildParts : ThingComp
     {
-        public override void PostSpawnSetup ( bool respawningAfterLoad )
+        public CompIncludedChildParts ()
         {
-            base.PostSpawnSetup( respawningAfterLoad );
-
             // Create the needed command gizmos
-            this.command_AddExistingSubpart = new Command_AddExistingSubpart( this );
-            this.command_SplitOffSubpart = new Command_SplitOffSubpart( this );
+            //this.command_AddExistingSubpart = new Command_AddExistingSubpart( this );
+            //this.command_SplitOffSubpart = new Command_SplitOffSubpart( this );
+
+            // Error checking
+            if ( this.BodyPartDef == null )
+            {
+                Log.Error( "[MSE2] " + this.parent.def.LabelCap + " cannot be installed on any bodypart." );
+            }
+
+            if ( !this.CompatibleBodies.Any() )
+            {
+                Log.Error( "[MSE2] " + this.parent.def.LabelCap + " cannot be installed on any body." );
+            }
         }
 
         public CompProperties_IncludedChildParts Props
@@ -41,6 +50,43 @@ namespace MSE2
         {
             get => this.Props?.standardChildren;
         }
+
+        //
+
+        private List<BodyDef> cachedCompatibleBodies;
+
+        public IEnumerable<BodyDef> CompatibleBodies
+        {
+            get
+            {
+                if ( this.cachedCompatibleBodies == null )
+                {
+                    this.cachedCompatibleBodies = MedicalSystemExpansion.SurgeryToInstall( this.parent.def )?.SelectMany( s => s.AllRecipeUsers.Select( u => u.race?.body ) ).ToList();
+                    Log.Message( "Compatible bodies for " + this.parent.Label + ": " + string.Join( ", ", this.cachedCompatibleBodies ) );
+                }
+                return this.cachedCompatibleBodies;
+            }
+        }
+
+        private BodyPartDef cachedBodyPartDef;
+
+        public BodyPartDef BodyPartDef
+        {
+            get
+            {
+                if ( this.cachedBodyPartDef == null )
+                {
+                    this.cachedBodyPartDef = MedicalSystemExpansion.SurgeryToInstall( this.parent.def ).SelectMany( s => s?.appliedOnFixedBodyParts ).Single();
+                    Log.Message( "Compatible part for " + this.parent.Label + ": " + this.cachedBodyPartDef?.label );
+                }
+                return this.cachedBodyPartDef;
+            }
+        }
+
+        //public IEnumerable<ThingDef> StandardPartsForBody ( BodyDef bodyDef )
+        //{
+        //    RecipeDef surgery = MedicalSystemExpansion.SurgeryToInstall( this.parent.def ).Where( s => s.AllRecipeUsers.Any( u => u.race.body == bodyDef ) ).First();
+        //}
 
         // Creation / Deletion
 
