@@ -30,6 +30,7 @@ This is a rewrite of Medical System Expansion by Oreno.
 		<li>Ykara.EPOE</li>
 		<li>vat.epoeforked</li>
 		<li>Rah.RBSE</li>
+		<li>skyarkhangel.HSK</li>
 	</loadBefore>
 	<loadAfter>
 		<li>brrainz.harmony</li>
