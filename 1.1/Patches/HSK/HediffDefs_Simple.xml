@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Simple -->
+			<!-- Arm -->	
+<li Class="PatchOperationAddOrMerge">
+	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Simple"][defName="SimpleProstheticArm"]</xpath>
+	<value>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticHand</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</value>
+</li>
+<li Class="PatchOperationAddModExtension">
+	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticArm"]</xpath>
+	<value>
+		<li Class="MSE2.IgnoreSubParts">
+			<ignoredSubParts>
+				<li>Humerus</li>
+				<li>Radius</li>
+			</ignoredSubParts>
+		</li>
+	</value>
+</li>
+<li Class="PatchOperationReplace">
+	<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
+	<value>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+	</value>
+</li>
+		<!-- Hand -->
+<li Class="PatchOperationAddOrMerge">
+	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Simple"][defName="SimpleProstheticHand"]</xpath>
+	<value>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+					<li>SimpleProstheticFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</value>
+</li>
+			<!-- Leg -->
+<li Class="PatchOperationAddOrMerge">
+	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Simple"][defName="SimpleProstheticLeg"]</xpath>
+	<value>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticFoot</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</value>
+</li>
+<li Class="PatchOperationAddModExtension">
+	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticLeg"]</xpath>
+	<value>
+		<li Class="MSE2.IgnoreSubParts">
+			<ignoredSubParts>
+				<li>Femur</li>
+				<li>Tibia</li>
+			</ignoredSubParts>
+		</li>
+	</value>
+</li>
+		<!-- Foot -->
+<li Class="PatchOperationAddOrMerge">
+	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Simple"][defName="SimpleProstheticFoot"]</xpath>
+	<value>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</value>
+</li>
+
+
+<!-- copy melee verbs -->
+<li Class="PatchOperationAddOrMerge">
+	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticHand"]</xpath>
+	<value>
+		<comps/>
+	</value>
+</li>
+<li Class="PatchOperationAddOrMergeCopy">
+	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticHand"]/comps</xpath>
+	<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+</li>
+<li Class="PatchOperationRemove">
+	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Simple"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
