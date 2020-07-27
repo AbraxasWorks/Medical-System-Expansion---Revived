@@ -9,155 +9,155 @@
 			<operations>
 
 				<!-- Bionics -->
-			<!-- Arm -->	
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicArm"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>BionicForearm</li>
-					<li>BionicInternalSupport</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
-		<!-- Hand -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
-			</li>
-      </comps>
-	</value>
-</li>		
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicHand"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>	
-			<!-- Leg -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicLeg"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>BionicFoot</li>
-					<li>BionicInternalSupport</li>
-					<li>BionicInternalSupport</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicLeg"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
-			</li>
-      </comps>
-	</value>
-</li>
-		<!-- Foot -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicFoot"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>BionicToe</li>
-					<li>BionicToe</li>
-					<li>BionicToe</li>
-					<li>BionicToe</li>
-					<li>BionicToe</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
+				<!-- Arm -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicForearm</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Hand -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+									<li>BionicFinger</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Leg -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicFoot</li>
+									<li>BionicInternalSupport</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Foot -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Bionic"][defName="BionicFoot"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicToe</li>
+									<li>BionicToe</li>
+									<li>BionicToe</li>
+									<li>BionicToe</li>
+									<li>BionicToe</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
 
-		<!-- copy melee verbs -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]</xpath>
-	<value>
-		<comps/>
-	</value>
-</li>
-<li Class="PatchOperationAddCopy">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]/comps</xpath>
-	<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-</li>
-  
-	<!-- powerclaw -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[defName="PowerClaw"]/label</xpath>
-	<value>
-		 <label>power claw module</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[defName="PowerClaw"]/description</xpath>
-	<value>
-		 <description>Powerful hand augmentation consisting of three deadly claws.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]/description</xpath>
-	<value>
-		 <description>An installed powerful hand augmentation consisting of three deadly claws.</description>
-	</value>
-</li>
-<li Class="PatchOperationAdd">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]</xpath>
-	<value>
-		 <hediffClass>MSE2.Hediff_ModuleAdded</hediffClass>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/label</xpath>
-	<value>
-		 <label>install power claw module</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/description</xpath>
-	<value>
-		 <description>Install a power claw module.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/workerClass</xpath>
-	<value>
-		 <workerClass>MSE2.Recipe_InstallModule</workerClass>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/jobString</xpath>
-	<value>
-		 <jobString>Installing power claw module.</jobString>
-	</value>
-</li>
-<!--
+				<!-- copy melee verbs -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]</xpath>
+					<value>
+						<comps/>
+					</value>
+				</li>
+				<li Class="PatchOperationAddCopy">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicHand"]/comps</xpath>
+					<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Bionic"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+				<!-- powerclaw -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PowerClaw"]/label</xpath>
+					<value>
+						<label>power claw module</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PowerClaw"]/description</xpath>
+					<value>
+						<description>Powerful hand augmentation consisting of three deadly claws.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]/description</xpath>
+					<value>
+						<description>An installed powerful hand augmentation consisting of three deadly claws.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]</xpath>
+					<value>
+						<hediffClass>MSE2.Hediff_ModuleAdded</hediffClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/label</xpath>
+					<value>
+						<label>install power claw module</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/description</xpath>
+					<value>
+						<description>Install a power claw module.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/workerClass</xpath>
+					<value>
+						<workerClass>MSE2.Recipe_InstallModule</workerClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SK_SurgeryFlesh"][defName="InstallPowerClaw"]/jobString</xpath>
+					<value>
+						<jobString>Installing power claw module.</jobString>
+					</value>
+				</li>
+				<!--
 <li Class="PatchOperationAddOrMergeCopy">
 	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]</xpath>
 	<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_MechanoidSpecial"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>

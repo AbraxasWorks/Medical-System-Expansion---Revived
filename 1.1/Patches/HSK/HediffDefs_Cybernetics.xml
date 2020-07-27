@@ -9,334 +9,334 @@
 			<operations>
 
 				<!-- Cybernetic -->
-		<!-- Arm -->
-	<!-- Arm -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="ArchotechArm"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>ArchotechForearm</li>
-					<li>ArchotechInternalSupport</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
-	<!-- InternalSupport -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic internal support</label>
-	</value>
-</li> 
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/labelNoun</xpath>
-	<value>
-		 <labelNoun>a cybernetic bionic internal support</labelNoun>
-	</value>
-</li>
-<li Class="PatchOperationReplace"> 
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/description</xpath>
-	<value>
-		 <description>An installed cybernetic bionic internal support.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechInternalSupport"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic internal support</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace"> 
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechInternalSupport"]/description</xpath>
-	<value>
-		 <description>An artificial cybernetic bionic internal support ready to be installed.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/label</xpath>
-	<value>
-		 <label>install cybernetic bionic internal support</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/description</xpath>
-	<value>
-		 <description>Install a cybernetic bionic internal support.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/jobString</xpath>
-	<value>
-		 <jobString>Installing cybernetic bionic internal support.</jobString>
-	</value>
-</li>
-		
-	<!-- Forearm -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic forearm</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/labelNoun</xpath>
-	<value>
-		 <labelNoun>a cybernetic bionic forearm</labelNoun>
-	</value>
-</li>
-<li Class="PatchOperationReplace"> 
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/description</xpath>
-	<value>
-		 <description>An installed cybernetic bionic forearm.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic forearm</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace"> 
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/description</xpath>
-	<value>
-		 <description>An artificial cybernetic bionic forearm ready to be installed.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/comps/li[1]/standardChildren/li[text()="ArchotechHand"]</xpath>
-	<value>
-		 <li>GTHand</li>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/label</xpath>
-	<value>
-		 <label>install cybernetic bionic forearm</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/description</xpath>
-	<value>
-		 <description>install a cybernetic bionic forearm</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/jobString</xpath>
-	<value>
-		 <jobString>installing cybernetic bionic forearm</jobString>
-	</value>
-</li>
-		<!-- Hand -->
-<li Class="PatchOperationRemove"> 
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechHand"]</xpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechHand"]</xpath>
-</li>
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
-			</li>
-		</comps>
-	</value>
-</li>
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>ArchotechFinger</li>
-					<li>ArchotechFinger</li>
-					<li>ArchotechFinger</li>
-					<li>ArchotechFinger</li>
-					<li>ArchotechFinger</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>		
-	<!-- Finger -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic finger</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/labelNoun</xpath>
-	<value>
-		 <labelNoun>A cybernetic bionic finger</labelNoun>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/description</xpath>
-	<value>
-		 <description>A cybernetic bionic finger.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFinger"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic finger</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFinger"]/description</xpath>
-	<value>
-		 <description>A cybernetic bionic finger ready to be installed.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/label</xpath>
-	<value>
-		 <label>install cybernetic bionic finger</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/description</xpath>
-	<value>
-		 <description>Install a cybernetic bionic finger.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/jobString</xpath>
-	<value>
-		 <jobString>installing cybernetic bionic finger</jobString>
-	</value>
-</li>
-	
-			<!-- leg -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]/comps/li[1]/standardChildren/li[text()="ArchotechFoot"]</xpath>
-	<value>
-		 <li>GTFoot</li>
-	</value>
-</li>
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="ArchotechLeg"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>GTFoot</li>
-					<li>ArchotechInternalSupport</li>
-					<li>ArchotechInternalSupport</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
+				<!-- Arm -->
+				<!-- Arm -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="ArchotechArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>ArchotechForearm</li>
+									<li>ArchotechInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- InternalSupport -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/label</xpath>
+					<value>
+						<label>cybernetic bionic internal support</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/labelNoun</xpath>
+					<value>
+						<labelNoun>a cybernetic bionic internal support</labelNoun>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechInternalSupport"]/description</xpath>
+					<value>
+						<description>An installed cybernetic bionic internal support.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechInternalSupport"]/label</xpath>
+					<value>
+						<label>cybernetic bionic internal support</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechInternalSupport"]/description</xpath>
+					<value>
+						<description>An artificial cybernetic bionic internal support ready to be installed.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/label</xpath>
+					<value>
+						<label>install cybernetic bionic internal support</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/description</xpath>
+					<value>
+						<description>Install a cybernetic bionic internal support.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechInternalSupport"]/jobString</xpath>
+					<value>
+						<jobString>Installing cybernetic bionic internal support.</jobString>
+					</value>
+				</li>
 
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechLeg"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
-			</li>
-		</comps>
-	</value>
-</li>
-		<!-- Foot -->
-<li Class="PatchOperationRemove"> 
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFoot"]</xpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFoot"]</xpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFoot"]</xpath>
-</li>
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="GTFoot"]</xpath>
-	<value>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>ArchotechToe</li>
-					<li>ArchotechToe</li>
-					<li>ArchotechToe</li>
-					<li>ArchotechToe</li>
-					<li>ArchotechToe</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</value>
-</li>
-	<!-- Toe -->
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic toe</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/labelNoun</xpath>
-	<value>
-		 <labelNoun>A cybernetic bionic toe</labelNoun>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/description</xpath>
-	<value>
-		 <description>A cybernetic bionic toe.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechToe"]/label</xpath>
-	<value>
-		 <label>cybernetic bionic toe</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechToe"]/description</xpath>
-	<value>
-		 <description>A cybernetic bionic toe ready to be installed.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/label</xpath>
-	<value>
-		 <label>install cybernetic bionic toe</label>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/description</xpath>
-	<value>
-		 <description>Install a cybernetic bionic toe.</description>
-	</value>
-</li>
-<li Class="PatchOperationReplace">
-	<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/jobString</xpath>
-	<value>
-		 <jobString>installing cybernetic bionic toe</jobString>
-	</value>
-</li>
-		
-		<!-- copy melee verbs -->
-<li Class="PatchOperationAddOrMerge">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
-	<value>
-		<comps/>
-	</value>
-</li>
-<li Class="PatchOperationAddCopy">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]/comps</xpath>
-	<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
-</li>
-<li Class="PatchOperationRemove">
-	<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-</li>
+				<!-- Forearm -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/label</xpath>
+					<value>
+						<label>cybernetic bionic forearm</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/labelNoun</xpath>
+					<value>
+						<labelNoun>a cybernetic bionic forearm</labelNoun>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechForearm"]/description</xpath>
+					<value>
+						<description>An installed cybernetic bionic forearm.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/label</xpath>
+					<value>
+						<label>cybernetic bionic forearm</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/description</xpath>
+					<value>
+						<description>An artificial cybernetic bionic forearm ready to be installed.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechForearm"]/comps/li[1]/standardChildren/li[text()="ArchotechHand"]</xpath>
+					<value>
+						<li>GTHand</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/label</xpath>
+					<value>
+						<label>install cybernetic bionic forearm</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/description</xpath>
+					<value>
+						<description>install a cybernetic bionic forearm</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechForearm"]/jobString</xpath>
+					<value>
+						<jobString>installing cybernetic bionic forearm</jobString>
+					</value>
+				</li>
+				<!-- Hand -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechHand"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechHand"]</xpath>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>ArchotechFinger</li>
+									<li>ArchotechFinger</li>
+									<li>ArchotechFinger</li>
+									<li>ArchotechFinger</li>
+									<li>ArchotechFinger</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Finger -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/label</xpath>
+					<value>
+						<label>cybernetic bionic finger</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/labelNoun</xpath>
+					<value>
+						<labelNoun>A cybernetic bionic finger</labelNoun>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFinger"]/description</xpath>
+					<value>
+						<description>A cybernetic bionic finger.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFinger"]/label</xpath>
+					<value>
+						<label>cybernetic bionic finger</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFinger"]/description</xpath>
+					<value>
+						<description>A cybernetic bionic finger ready to be installed.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/label</xpath>
+					<value>
+						<label>install cybernetic bionic finger</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/description</xpath>
+					<value>
+						<description>Install a cybernetic bionic finger.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFinger"]/jobString</xpath>
+					<value>
+						<jobString>installing cybernetic bionic finger</jobString>
+					</value>
+				</li>
+
+				<!-- leg -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]/comps/li[1]/standardChildren/li[text()="ArchotechFoot"]</xpath>
+					<value>
+						<li>GTFoot</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="ArchotechLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>GTFoot</li>
+									<li>ArchotechInternalSupport</li>
+									<li>ArchotechInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Foot -->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechFoot"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechFoot"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechFoot"]</xpath>
+				</li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartBase_Cybernetic"][defName="GTFoot"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>ArchotechToe</li>
+									<li>ArchotechToe</li>
+									<li>ArchotechToe</li>
+									<li>ArchotechToe</li>
+									<li>ArchotechToe</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+				<!-- Toe -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/label</xpath>
+					<value>
+						<label>cybernetic bionic toe</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/labelNoun</xpath>
+					<value>
+						<labelNoun>A cybernetic bionic toe</labelNoun>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechToe"]/description</xpath>
+					<value>
+						<description>A cybernetic bionic toe.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechToe"]/label</xpath>
+					<value>
+						<label>cybernetic bionic toe</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechToe"]/description</xpath>
+					<value>
+						<description>A cybernetic bionic toe ready to be installed.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/label</xpath>
+					<value>
+						<label>install cybernetic bionic toe</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/description</xpath>
+					<value>
+						<description>Install a cybernetic bionic toe.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"][defName="InstallArchotechToe"]/jobString</xpath>
+					<value>
+						<jobString>installing cybernetic bionic toe</jobString>
+					</value>
+				</li>
+
+				<!-- copy melee verbs -->
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]</xpath>
+					<value>
+						<comps/>
+					</value>
+				</li>
+				<li Class="PatchOperationAddCopy">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="GTHand"]/comps</xpath>
+					<fromxpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="HediffBodyPartBase_Cybernetic"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
 
 			</operations>
 		</match>
