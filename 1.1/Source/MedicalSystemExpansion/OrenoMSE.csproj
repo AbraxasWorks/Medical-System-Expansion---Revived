@@ -307,6 +307,7 @@
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
     <Compile Include="CompIncludedChildParts\Command_AddExistingSubpart.cs" />
     <Compile Include="CompIncludedChildParts\IncludedPartsUtilities.cs" />
+    <Compile Include="CompIncludedChildParts\LimbDef.cs" />
     <Compile Include="CompIncludedChildParts\MSE_cachedStandardParents.cs" />
     <Compile Include="CompIncludedChildParts\StatPart_MissingSubParts.cs" />
     <Compile Include="DebugTools\ApplySurgery.cs" />
@@ -336,6 +337,9 @@
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
     <Compile Include="MSE_HediffDefOf.cs" />
+    <Compile Include="RecipeGeneration\LimbProsthesisCreation.cs" />
+    <Compile Include="RecipeGeneration\LimbRecipeDefGenerator.cs" />
+    <Compile Include="RecipeGeneration\DefGenerator_ImpliedLimbProstheses.cs" />
     <Compile Include="SelfRepair\HediffComp_PartSystemSelfRepair.cs" />
     <Compile Include="SelfRepair\HediffCompProperties_PartSystemSelfRepair.cs" />
     <Compile Include="Modules\Actual\Hediff_ModuleAdded.cs" />

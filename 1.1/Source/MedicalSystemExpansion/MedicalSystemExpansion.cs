@@ -82,10 +82,5 @@ namespace MSE2
             }
             return hediff.def.label;
         }
-
-        public static IEnumerable<RecipeDef> SurgeryToInstall(ThingDef thing)
-        {
-            return DefDatabase<RecipeDef>.AllDefs.Where( d => d.IsSurgery && d.fixedIngredientFilter.Allows( thing ) );
-        }
     }
 }

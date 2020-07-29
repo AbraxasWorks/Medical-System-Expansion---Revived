@@ -9,22 +9,13 @@ namespace MSE2
 {
     public partial class CompIncludedChildParts : ThingComp
     {
-        public CompIncludedChildParts ()
+        public override void Initialize ( CompProperties props )
         {
+            base.Initialize( props );
+
             // Create the needed command gizmos
-            //this.command_AddExistingSubpart = new Command_AddExistingSubpart( this );
-            //this.command_SplitOffSubpart = new Command_SplitOffSubpart( this );
-
-            // Error checking
-            if ( this.BodyPartDef == null )
-            {
-                Log.Error( "[MSE2] " + this.parent.def.LabelCap + " cannot be installed on any bodypart." );
-            }
-
-            if ( !this.CompatibleBodies.Any() )
-            {
-                Log.Error( "[MSE2] " + this.parent.def.LabelCap + " cannot be installed on any body." );
-            }
+            this.command_AddExistingSubpart = new Command_AddExistingSubpart( this );
+            this.command_SplitOffSubpart = new Command_SplitOffSubpart( this );
         }
 
         public CompProperties_IncludedChildParts Props
@@ -53,50 +44,32 @@ namespace MSE2
 
         //
 
-        private List<BodyDef> cachedCompatibleBodies;
+        private List<BodyPartRecord> cachedCompatibleParts;
 
-        public IEnumerable<BodyDef> CompatibleBodies
+        public IEnumerable<BodyPartRecord> CompatibleParts
         {
             get
             {
-                if ( this.cachedCompatibleBodies == null )
+                if ( this.cachedCompatibleParts == null )
                 {
-                    this.cachedCompatibleBodies = MedicalSystemExpansion.SurgeryToInstall( this.parent.def )?.SelectMany( s => s.AllRecipeUsers.Select( u => u.race?.body ) ).ToList();
-                    Log.Message( "Compatible bodies for " + this.parent.Label + ": " + string.Join( ", ", this.cachedCompatibleBodies ) );
+                    this.cachedCompatibleParts = (from b_bpd in this.Props.installationDestinations
+                                                  from bpr in b_bpd.Item1.AllParts
+                                                  where bpr.def == b_bpd.Item2
+                                                  where this.IsCompatibleWith( bpr )
+                                                  select bpr
+                                                  ).ToList();
                 }
-                return this.cachedCompatibleBodies;
+                return this.cachedCompatibleParts;
             }
         }
 
-        private BodyPartDef cachedBodyPartDef;
-
-        public BodyPartDef BodyPartDef
+        private bool IsCompatibleWith ( BodyPartRecord bodyPartRecord )
         {
-            get
-            {
-                if ( this.cachedBodyPartDef == null )
-                {
-                    this.cachedBodyPartDef = MedicalSystemExpansion.SurgeryToInstall( this.parent.def ).SelectMany( s => s?.appliedOnFixedBodyParts ).Single();
-                    Log.Message( "Compatible part for " + this.parent.Label + ": " + this.cachedBodyPartDef?.label );
-                }
-                return this.cachedBodyPartDef;
-            }
+            return this.Props.EverInstallableOn( bodyPartRecord )
+                && IncludedPartsUtilities.InstallationCompatibility( this.childPartsIncluded, bodyPartRecord.GetDirectChildParts() );
         }
-
-        //public IEnumerable<ThingDef> StandardPartsForBody ( BodyDef bodyDef )
-        //{
-        //    RecipeDef surgery = MedicalSystemExpansion.SurgeryToInstall( this.parent.def ).Where( s => s.AllRecipeUsers.Any( u => u.race.body == bodyDef ) ).First();
-        //}
 
         // Creation / Deletion
-
-        public override void PostPostMake ()
-        {
-            base.PostPostMake();
-
-            // (if you want it incomplete replace the list after creating the thing)
-            this.InitializeIncludedParts();
-        }
 
         /// <summary>
         /// Initialize IncludedParts to standard children
@@ -109,6 +82,22 @@ namespace MSE2
                 {
                     this.IncludedParts.Add( ThingMaker.MakeThing( sChild ) );
                 }
+            }
+        }
+
+        public void InitializeForPart ( BodyPartRecord bodyPartRecord )
+        {
+            if ( !this.Props.EverInstallableOn( bodyPartRecord ) )
+            {
+                Log.Error( "[MSE2] Tried to initialize " + this.parent.Label + " for part where it cannot be installed (" + bodyPartRecord + " " + bodyPartRecord.body + ")" );
+                return;
+            }
+
+            foreach ( (ThingDef childDef, BodyPartRecord bpr) in this.Props.StandardPartsForBodyPartRecord( bodyPartRecord ) )
+            {
+                Thing child = ThingMaker.MakeThing( childDef );
+                child.TryGetComp<CompIncludedChildParts>()?.InitializeForPart( bpr );
+                this.AddPart( child );
             }
         }
 
@@ -139,14 +128,19 @@ namespace MSE2
                     this.cachedInspectString = "Includes "
                         + this.IncludedParts.Count + (this.IncludedParts.Count != 1 ? " direct subparts" : " direct subpart");
 
-                    if ( this.MissingParts.Any() )
+                    if ( this.CompatibleParts.Any() )
                     {
-                        this.cachedInspectString += " (incomplete)";
+                        this.cachedInspectString += " (" + String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct() ) + ")";
                     }
-                    else if ( this.AllMissingParts.Any() )
-                    {
-                        this.cachedInspectString += " (sub-part incomplete)";
-                    }
+
+                    //if ( this.MissingParts.Any() )
+                    //{
+                    //    this.cachedInspectString += " (incomplete)";
+                    //}
+                    //else if ( this.AllMissingParts.Any() )
+                    //{
+                    //    this.cachedInspectString += " (sub-part incomplete)";
+                    //}
 
                     this.cachedInspectString += ".";
                 }
@@ -358,6 +352,7 @@ namespace MSE2
             this.cachedMissingParts = null;
             this.cachedMissingValue = -1f;
             this.cachedInspectString = null;
+            this.cachedCompatibleParts = null;
         }
 
         /// <summary>
@@ -421,6 +416,24 @@ namespace MSE2
                 let comp = i.TryGetComp<CompIncludedChildParts>()
                 where comp != null
                 from couple in comp.AllIncludedParts
+                select couple );
+        }
+
+        /// <summary>
+        /// Recursively searches for StandardParts in all of the sub-parts
+        /// </summary>
+        public IEnumerable<(ThingDef, CompIncludedChildParts)> AllStandardParts
+        {
+            get => Enumerable.Concat(
+
+                // the standard sub-parts included in this part
+                this.StandardParts.Select( p => (p, this) ),
+
+                // the standard sub-parts of the children with CompIncludedChildParts
+                from i in this.IncludedParts
+                let comp = i.TryGetComp<CompIncludedChildParts>()
+                where comp != null
+                from couple in comp.AllStandardParts
                 select couple );
         }
     }

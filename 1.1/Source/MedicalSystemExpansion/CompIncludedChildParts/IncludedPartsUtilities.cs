@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -79,6 +80,60 @@ namespace MSE2
 
                 //Log.Message( "Reduced value of " + hediffDef.defName + " by " + childValue + ". New value: " + hediffDef.priceOffset );
             }
+        }
+
+        public static IEnumerable<RecipeDef> SurgeryToInstall ( ThingDef thing )
+        {
+            return DefDatabase<RecipeDef>.AllDefs.Where( d => d.IsSurgery && d.fixedIngredientFilter.Allows( thing ) );
+        }
+
+        private static Dictionary<ThingDef, List<(BodyDef, BodyPartDef)>> cachedInstallationDestinations = new Dictionary<ThingDef, List<(BodyDef, BodyPartDef)>>();
+
+        public static IEnumerable<(BodyDef, BodyPartDef)> InstallationDestinations ( ThingDef parentDef )
+        {
+            if ( cachedInstallationDestinations.TryGetValue( parentDef, out List<(BodyDef, BodyPartDef)> val ) )
+            {
+                return val;
+            }
+            else
+            {
+                List<(BodyDef, BodyPartDef)> newVal =
+                    (from s in SurgeryToInstall( parentDef )
+                     from u in s.AllRecipeUsers
+                     let b = u.race.body
+                     from bpd in s.appliedOnFixedBodyParts
+                     where b.AllParts.Any( bpr => bpr.def == bpd )
+                     select (b, bpd))
+                    .ToList();
+
+                cachedInstallationDestinations.Add( parentDef, newVal );
+                return newVal;
+            }
+        }
+
+        public static bool InstallationCompatibility ( IEnumerable<Thing> thingDefs, IEnumerable<BodyPartRecord> bodyPartRecords )
+        {
+            Log.Message( "compat: " + thingDefs.Count() + " " + bodyPartRecords.Count() );
+
+            foreach ( var bpr in bodyPartRecords )
+            {
+                foreach ( var thing in thingDefs )
+                {
+                    CompIncludedChildParts comp = thing.TryGetComp<CompIncludedChildParts>();
+                    if ( thing.TryGetComp<CompIncludedChildParts>()?.CompatibleParts.Contains( bpr ) ?? // subparts are compatible
+                        InstallationDestinations( thing.def ).Any( b_bpd => bpr.body == b_bpd.Item1 && bpr.def == b_bpd.Item2 ) // has no subparts and is compatible
+                        && InstallationCompatibility( thingDefs.Except( thing ), bodyPartRecords.Except( bpr ) ) ) // all other things check out
+                    {
+                        return true;
+                    }
+                }
+            }
+            return !bodyPartRecords.Any();
+        }
+
+        public static bool EverInstallableOn ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
+        {
+            return InstallationDestinations( thingDef ).Any( bd_bpd => bd_bpd.Item1 == bodyPartRecord.body && bd_bpd.Item2 == bodyPartRecord.def );
         }
     }
 }

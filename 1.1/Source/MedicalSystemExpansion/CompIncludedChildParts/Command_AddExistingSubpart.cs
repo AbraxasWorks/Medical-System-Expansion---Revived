@@ -84,7 +84,7 @@ namespace MSE2
             {
                 get =>
                     from t in this.comp.parent.Map.listerThings.AllThings
-                    from u in this.comp.AllMissingParts.GroupBy( x => x ).Select( Enumerable.First )
+                    from u in this.comp.AllStandardParts.Distinct()
                     where u.Item1 == t.def
                     select (t, u.Item2);
             }
