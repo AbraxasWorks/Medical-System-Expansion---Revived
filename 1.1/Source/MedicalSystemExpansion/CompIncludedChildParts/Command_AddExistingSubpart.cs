@@ -94,11 +94,11 @@ namespace MSE2
                 GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
 
                 // add plus sign in the top right of the gizmo texture
-                if ( MedicalSystemExpansion.WidgetPlusSign != null )
+                if ( Assets.WidgetPlusSign != null )
                 {
                     Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
                     Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
-                    GUI.DrawTexture( position, MedicalSystemExpansion.WidgetPlusSign );
+                    GUI.DrawTexture( position, Assets.WidgetPlusSign );
                 }
 
                 return result;

@@ -25,9 +25,18 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>CS0649</NoWarn>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <NoWarn>CS0649</NoWarn>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>portable</DebugType>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
@@ -42,8 +51,13 @@
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\735106432\1.1\Assemblies\EdBPrepareCarefully.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="JPatchOperation">
       <HintPath>D:\Coding\Rimworld\JPatchOperation\bin\Release\JPatchOperation.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -303,6 +317,7 @@
   <ItemGroup>
     <Compile Include="ApplyExtraHediffs\ApplyExtraHediffsUtilities.cs" />
     <Compile Include="ApplyExtraHediffs\HarmonyHooks.cs" />
+    <Compile Include="Assets.cs" />
     <Compile Include="CompIncludedChildParts\Command_SplitOffSubpart.cs" />
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
     <Compile Include="CompIncludedChildParts\Command_AddExistingSubpart.cs" />
@@ -337,9 +352,9 @@
     <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
     <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
     <Compile Include="MSE_HediffDefOf.cs" />
+    <Compile Include="RecipeGeneration\AddSubpartsAfterCreation.cs" />
     <Compile Include="RecipeGeneration\LimbProsthesisCreation.cs" />
     <Compile Include="RecipeGeneration\LimbRecipeDefGenerator.cs" />
-    <Compile Include="RecipeGeneration\DefGenerator_ImpliedLimbProstheses.cs" />
     <Compile Include="SelfRepair\HediffComp_PartSystemSelfRepair.cs" />
     <Compile Include="SelfRepair\HediffCompProperties_PartSystemSelfRepair.cs" />
     <Compile Include="Modules\Actual\Hediff_ModuleAdded.cs" />
@@ -350,6 +365,5 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

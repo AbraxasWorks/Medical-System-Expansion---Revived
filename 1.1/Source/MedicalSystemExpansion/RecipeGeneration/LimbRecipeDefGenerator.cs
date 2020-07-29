@@ -29,6 +29,8 @@ namespace MSE2
 
         public static (List<IngredientCount>, float) AllIngredientsWorkForLimb ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
         {
+            //Log.Message( "Calculating ingredients of " + thingDef.defName );
+
             if ( thingDef.costList == null )
             {
                 Log.Error( "[MSE2] Tried to create list of ingredients for " + thingDef.label + ", which can not be crafted" );
@@ -83,13 +85,20 @@ namespace MSE2
 
         public static IEnumerable<RecipeDef> LimbCreationDef ( ThingDef def )
         {
+            //Log.Message( "creating limb recipes for " + def.defName );
+
             int tot = 0;
-            foreach ( (BodyDef body, BodyPartDef part) in def.GetCompProperties<CompProperties_IncludedChildParts>().installationDestinations )
+
+            def.GetCompProperties<CompProperties_IncludedChildParts>().ResolveReferences( def );
+
+            foreach ( (BodyDef body, BodyPartDef part) in IncludedPartsUtilities.InstallationDestinations( def ) )
             {
+                //Log.Message( "At " + part.defName );
+
                 RecipeMakerProperties recipeMaker = def.recipeMaker;
                 RecipeDef recipeDef = new RecipeDef();
 
-                recipeDef.defName = "Make_" + def.defName + "_" + body.defName + "_" + part.defName + "_" + tot++;
+                recipeDef.defName = "Make_" + def.defName + "_" + body.defName + "_" + part.defName;/* + "_" +*/ tot++;
                 recipeDef.label = "Make " + def.label + " for " + body.label + " " + part.label;
                 recipeDef.jobString = "RecipeMakeJobString".Translate( def.label );
                 recipeDef.modContentPack = def.modContentPack;
@@ -128,6 +137,8 @@ namespace MSE2
 
                 yield return recipeDef;
             }
+
+            //Log.Message( "Created " + tot + " recipes for " + def.defName );
         }
     }
 }

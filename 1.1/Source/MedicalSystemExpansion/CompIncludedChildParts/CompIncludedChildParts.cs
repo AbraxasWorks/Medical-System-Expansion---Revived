@@ -117,6 +117,7 @@ namespace MSE2
 
         // Stats display
 
+        // Inspect string
         protected String cachedInspectString = null;
 
         public override string CompInspectStringExtra ()
@@ -128,10 +129,10 @@ namespace MSE2
                     this.cachedInspectString = "Includes "
                         + this.IncludedParts.Count + (this.IncludedParts.Count != 1 ? " direct subparts" : " direct subpart");
 
-                    if ( this.CompatibleParts.Any() )
-                    {
-                        this.cachedInspectString += " (" + String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct() ) + ")";
-                    }
+                    //if ( this.CompatibleParts.Any() )
+                    //{
+                    //    this.cachedInspectString += " (" + String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct() ) + ")";
+                    //}
 
                     //if ( this.MissingParts.Any() )
                     //{
@@ -150,41 +151,52 @@ namespace MSE2
             return null;
         }
 
+        // Label
+
+        protected String cachedTransformLabelString = null;
+
+        public override string TransformLabel ( string label )
+        {
+            if ( this.IncludedParts != null )
+            {
+                if ( this.cachedTransformLabelString == null )
+                {
+                    this.cachedTransformLabelString = " (";
+
+                    if ( this.CompatibleParts.Any() )
+                    {
+                        this.cachedTransformLabelString += String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct().Select( b => b.label ) );
+                    }
+                    else
+                    {
+                        this.cachedTransformLabelString += "incomplete";
+                    }
+
+                    this.cachedTransformLabelString += ")";
+                }
+
+                return label + this.cachedTransformLabelString;
+            }
+            return null;
+        }
+
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats ()
         {
             // hyperlink lists
-            var includedPartLinks = new List<Dialog_InfoCard.Hyperlink>(
+            var includedPartLinks =
                 from x in this.IncludedParts
-                select new Dialog_InfoCard.Hyperlink( x ) );
-
-            var missingPartLinks = new List<Dialog_InfoCard.Hyperlink>(
-                from x in this.MissingParts
-                select new Dialog_InfoCard.Hyperlink( x ) );
+                select new Dialog_InfoCard.Hyperlink( x );
 
             // always return the included parts entry
             yield return new StatDrawEntry(
                 StatCategoryDefOf.Basics,
                 "Included subparts:", // Translate
-                includedPartLinks.Count.ToString(),
+                this.IncludedParts.Count.ToString(),
                 "When implanted it will also install theese:",
                 2500,
                 null,
                 includedPartLinks,
                 false );
-
-            // if some parts are missing also return missing parts entry
-            if ( missingPartLinks.Count > 0 )
-            {
-                yield return new StatDrawEntry(
-                    StatCategoryDefOf.Basics,
-                    "Missing subparts:", // Translate
-                    missingPartLinks.Count.ToString(),
-                    "These parts are missing:",
-                    2500,
-                    null,
-                    missingPartLinks,
-                    false );
-            }
 
             yield break;
         }
@@ -352,6 +364,7 @@ namespace MSE2
             this.cachedMissingParts = null;
             this.cachedMissingValue = -1f;
             this.cachedInspectString = null;
+            this.cachedTransformLabelString = null;
             this.cachedCompatibleParts = null;
         }
 
