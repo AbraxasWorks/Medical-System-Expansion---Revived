@@ -34,7 +34,11 @@ namespace MSE2
         public List<Thing> IncludedParts
         {
             get => this.childPartsIncluded;
-            set => this.childPartsIncluded = value;
+            set
+            {
+                this.childPartsIncluded = value;
+                this.DirtyCache();
+            }
         }
 
         public List<ThingDef> StandardParts
@@ -126,24 +130,7 @@ namespace MSE2
             {
                 if ( this.cachedInspectString == null )
                 {
-                    this.cachedInspectString = "Includes "
-                        + this.IncludedParts.Count + (this.IncludedParts.Count != 1 ? " direct subparts" : " direct subpart");
-
-                    //if ( this.CompatibleParts.Any() )
-                    //{
-                    //    this.cachedInspectString += " (" + String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct() ) + ")";
-                    //}
-
-                    //if ( this.MissingParts.Any() )
-                    //{
-                    //    this.cachedInspectString += " (incomplete)";
-                    //}
-                    //else if ( this.AllMissingParts.Any() )
-                    //{
-                    //    this.cachedInspectString += " (sub-part incomplete)";
-                    //}
-
-                    this.cachedInspectString += ".";
+                    this.cachedInspectString = "CompIncludedChildParts_InspectString".Translate( this.IncludedParts.Count );
                 }
 
                 return this.cachedInspectString;
@@ -190,9 +177,9 @@ namespace MSE2
             // always return the included parts entry
             yield return new StatDrawEntry(
                 StatCategoryDefOf.Basics,
-                "Included subparts:", // Translate
+                "CompIncludedChildParts_StatIncludedParts_Label".Translate(),
                 this.IncludedParts.Count.ToString(),
-                "When implanted it will also install theese:",
+                "CompIncludedChildParts_StatIncludedParts_Description".Translate(),
                 2500,
                 null,
                 includedPartLinks,
@@ -268,101 +255,11 @@ namespace MSE2
             }
         }
 
-        // Missing Parts
-
-        //private List<ThingDef> cachedMissingParts;
-
-        //public IEnumerable<ThingDef> MissingParts
-        //{
-        //    get
-        //    {
-        //        if ( this.cachedMissingParts == null )
-        //        {
-        //            this.UpdateMissingParts();
-        //        }
-
-        //        return this.cachedMissingParts;
-        //    }
-        //}
-
-        //protected void UpdateMissingParts ()
-        //{
-        //    if ( this.cachedMissingParts == null )
-        //    {
-        //        this.cachedMissingParts = new List<ThingDef>();
-        //    }
-        //    else
-        //    {
-        //        this.cachedMissingParts.Clear();
-        //    }
-
-        //    if ( !this.StandardParts.NullOrEmpty() )
-        //    {
-        //        List<ThingDef> defsIncluded = new List<ThingDef>( this.IncludedParts.Select( t => t.def ) );
-
-        //        foreach ( ThingDef expectedDef in this.StandardParts )
-        //        {
-        //            if ( defsIncluded.Contains( expectedDef ) )
-        //            {
-        //                defsIncluded.Remove( expectedDef );
-        //            }
-        //            else
-        //            {
-        //                this.cachedMissingParts.Add( expectedDef );
-        //            }
-        //        }
-        //    }
-        //}
-
-        // Missing parts value $$$
-
-        //private float cachedMissingValue = -1f;
-
-        //public float MissingValue
-        //{
-        //    get
-        //    {
-        //        if ( this.cachedMissingValue == -1f )
-        //        {
-        //            this.UpdateMissingValue();
-        //        }
-
-        //        return this.cachedMissingValue;
-        //    }
-        //}
-
-        //protected float UpdateMissingValue ()
-        //{
-        //    this.cachedMissingValue = 0f;
-
-        //    // add 80% of the value of missing parts
-        //    foreach ( var missingPart in this.MissingParts )
-        //    {
-        //        this.cachedMissingValue += missingPart.BaseMarketValue * 0.8f;
-        //    }
-
-        //    // add the missing value of all subparts
-        //    foreach ( var subPart in this.IncludedParts )
-        //    {
-        //        var sComp = subPart.TryGetComp<CompIncludedChildParts>();
-
-        //        if ( sComp != null )
-        //        {
-        //            this.cachedMissingValue += sComp.MissingValue;
-        //        }
-        //    }
-
-        //    // can't have more than 80% of the normal value as missing value
-        //    return Mathf.Clamp( this.cachedMissingValue, 0f, this.parent.def.BaseMarketValue * 0.8f );
-        //}
-
         /// <summary>
         /// Resets the cache for MissingParts, MissingValue and inspectString
         /// </summary>
         public void DirtyCache ()
         {
-            //this.cachedMissingParts = null;
-            //this.cachedMissingValue = -1f;
             this.cachedInspectString = null;
             this.cachedTransformLabelString = null;
             this.cachedCompatibleParts = null;
@@ -397,25 +294,6 @@ namespace MSE2
         // From children
         public float ValueOfChildParts =>
             this.IncludedParts.Select( p => p.MarketValue ).Aggregate( 0f, ( a, b ) => a + b );
-
-
-        /// <summary>
-        /// Recursively searched for MissingParts in all of the sub-parts
-        /// </summary>
-        //public IEnumerable<(ThingDef, CompIncludedChildParts)> AllMissingParts
-        //{
-        //    get => Enumerable.Concat(
-
-        //        // the missing parts of this part
-        //        this.MissingParts.Select( p => (p, this) ),
-
-        //        // the missing parts of the children with CompIncludedChildParts
-        //        from i in this.IncludedParts
-        //        let comp = i.TryGetComp<CompIncludedChildParts>()
-        //        where comp != null
-        //        from couple in comp.AllMissingParts
-        //        select couple );
-        //}
 
         /// <summary>
         /// Recursively searches for IncludedParts in all of the sub-parts

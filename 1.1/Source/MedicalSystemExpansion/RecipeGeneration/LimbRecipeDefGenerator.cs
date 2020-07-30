@@ -98,7 +98,7 @@ namespace MSE2
                 RecipeMakerProperties recipeMaker = def.recipeMaker;
                 RecipeDef recipeDef = new RecipeDef();
 
-                recipeDef.defName = "Make_" + def.defName + "_" + body.defName + "_" + part.defName;/* + "_" +*/ tot++;
+                recipeDef.defName = "Make_" + def.defName + "_" + body.defName + "_" + part.defName;
                 recipeDef.label = "Make " + def.label + " for " + body.label + " " + part.label;
                 recipeDef.jobString = "RecipeMakeJobString".Translate( def.label );
                 recipeDef.modContentPack = def.modContentPack;
@@ -136,6 +136,8 @@ namespace MSE2
                 recipeDef.modExtensions.Add( new LimbProsthesisCreation() { targetLimb = body.AllParts.First( p => p.def == part ) } );
 
                 yield return recipeDef;
+
+                tot++;
             }
 
             //Log.Message( "Created " + tot + " recipes for " + def.defName );
