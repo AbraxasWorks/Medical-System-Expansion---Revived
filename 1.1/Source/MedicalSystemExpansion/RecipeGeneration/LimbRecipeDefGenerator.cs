@@ -54,6 +54,7 @@ namespace MSE2
             foreach ( var partCount in allParts )
             {
                 work += partCount.thingDef.recipeMaker.workAmount * partCount.count;
+
                 if ( partCount.thingDef.costList != null )
                 {
                     foreach ( var intIngredientCount in partCount.thingDef.costList )

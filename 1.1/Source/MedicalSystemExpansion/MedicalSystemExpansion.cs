@@ -21,8 +21,6 @@ namespace MSE2
 
             IgnoreSubPartsUtilities.IgnoreAllNonCompedSubparts();
 
-            IncludedPartsUtilities.FixHediffPriceOffset();
-
             foreach ( RecipeDef def in LimbRecipeDefGenerator.ImpliedLimbRecipeDefs() )
             {
                 def.ResolveReferences();

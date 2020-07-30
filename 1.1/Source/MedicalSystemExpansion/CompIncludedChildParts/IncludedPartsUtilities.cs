@@ -60,28 +60,6 @@ namespace MSE2
                 && hediff.pawn.health.hediffSet.hediffs.Any( h => h.Part == hediff.Part.parent && modExt.Contains( h.def ) );
         }
 
-        // hediff price offset
-
-        public static void FixHediffPriceOffset ()
-        {
-            foreach ( (HediffDef hediffDef, ThingDef thingDef, CompProperties_IncludedChildParts comp) in
-                from hd in DefDatabase<HediffDef>.AllDefs
-                let td = hd.spawnThingOnRemoved
-                where td != null
-                let cpcicp = td.GetCompProperties<CompProperties_IncludedChildParts>()
-                where cpcicp != null
-                select (hd, td, cpcicp) )
-            {
-                float childValue = comp.standardChildren.Select( c => c.BaseMarketValue ).Aggregate( ( a, b ) => a + b );
-
-                childValue = Mathf.Min( childValue, thingDef.BaseMarketValue * 0.9f );
-
-                hediffDef.priceOffset += thingDef.BaseMarketValue - childValue;
-
-                //Log.Message( "Reduced value of " + hediffDef.defName + " by " + childValue + ". New value: " + hediffDef.priceOffset );
-            }
-        }
-
         public static IEnumerable<RecipeDef> SurgeryToInstall ( ThingDef thing )
         {
             return DefDatabase<RecipeDef>.AllDefs.Where( d => d.IsSurgery && d.fixedIngredientFilter.Allows( thing ) );
@@ -130,7 +108,7 @@ namespace MSE2
             }
             return !bodyPartRecords.Any();
         }
-
+        
         public static bool EverInstallableOn ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
         {
             return InstallationDestinations( thingDef ).Any( bd_bpd => bd_bpd.Item1 == bodyPartRecord.body && bd_bpd.Item2 == bodyPartRecord.def );

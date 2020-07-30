@@ -315,8 +315,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplyExtraHediffs\ApplyExtraHediffsUtilities.cs" />
-    <Compile Include="ApplyExtraHediffs\HarmonyHooks.cs" />
     <Compile Include="Assets.cs" />
     <Compile Include="CompIncludedChildParts\Command_SplitOffSubpart.cs" />
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
@@ -342,21 +340,14 @@
     <Compile Include="PartInstallation\Hediff_AddDirect.cs" />
     <Compile Include="PartInstallation\InstallationRestrictions.cs" />
     <Compile Include="PartRemoval\IsClean_Patch.cs" />
-    <Compile Include="ModSpecificHarmony\PrepareCarefullyPatches\PrepareCarefullyPatches.cs" />
-    <Compile Include="PrettyLabel\Hediff_PrettyLabel.cs" />
-    <Compile Include="DontHealInjury\Harmony_HediffUtility.cs" />
     <Compile Include="PartInstallation\InstallationUtilities.cs" />
     <Compile Include="PartRemoval\SpawnNaturalPartIfClean.cs" />
     <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
-    <Compile Include="ApplyExtraHediffs\MSE_AdditionalHediff.cs" />
-    <Compile Include="PrettyLabel\MSE_HediffPrettyLabel.cs" />
     <Compile Include="MSE_HediffDefOf.cs" />
     <Compile Include="RecipeGeneration\AddSubpartsAfterCreation.cs" />
     <Compile Include="RecipeGeneration\LimbProsthesisCreation.cs" />
     <Compile Include="RecipeGeneration\LimbRecipeDefGenerator.cs" />
-    <Compile Include="SelfRepair\HediffComp_PartSystemSelfRepair.cs" />
-    <Compile Include="SelfRepair\HediffCompProperties_PartSystemSelfRepair.cs" />
     <Compile Include="Modules\Actual\Hediff_ModuleAdded.cs" />
     <Compile Include="Modules\Slots\Hediff_ModuleSlot.cs" />
     <Compile Include="PartInstallation\Recipe_InstallArtificialBodyPartWithChildren.cs" />
