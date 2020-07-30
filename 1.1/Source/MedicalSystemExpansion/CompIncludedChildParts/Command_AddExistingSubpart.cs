@@ -21,15 +21,15 @@ namespace MSE2
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
-                this.defaultLabel = "Add sub-part";
-                this.defaultDesc = "Chose a part to add to this one's sub-parts.";
+                this.defaultLabel = "CommandAddExistingSubpart_Label".Translate();
+                this.defaultDesc = "CommandAddExistingSubpart_Description".Translate();
             }
 
             public override bool Visible
             {
                 get
                 {
-                    return this.comp.AllMissingParts.Any();
+                    return true;
                 }
             }
 
@@ -46,7 +46,8 @@ namespace MSE2
                     none = false;
                     list.Add( new FloatMenuOption(
                         // name
-                        thingCandidate.Label.CapitalizeFirst() + (compDestination != this.comp ? " (to " + compDestination.parent.Label + ")" : ""),
+                        thingCandidate.Label.CapitalizeFirst()
+                            + (compDestination != this.comp ? "CommandAddExistingSubpart_AddTo".Translate( compDestination.parent.Label ).ToString() : ""), // if added to other subpart specify it
                         () => // click action
                         {
                             compDestination.AddPart( thingCandidate );
@@ -69,7 +70,7 @@ namespace MSE2
                 // only draw the menu if there are things it can add
                 if ( none )
                 {
-                    Messages.Message( "Could not find a compatible part to add.", MessageTypeDefOf.RejectInput );
+                    Messages.Message( "CommandAddExistingSubpart_CouldNotFindPart".Translate(), MessageTypeDefOf.RejectInput );
                 }
                 else
                 {

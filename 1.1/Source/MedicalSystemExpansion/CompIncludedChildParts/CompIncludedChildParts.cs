@@ -270,99 +270,99 @@ namespace MSE2
 
         // Missing Parts
 
-        private List<ThingDef> cachedMissingParts;
+        //private List<ThingDef> cachedMissingParts;
 
-        public IEnumerable<ThingDef> MissingParts
-        {
-            get
-            {
-                if ( this.cachedMissingParts == null )
-                {
-                    this.UpdateMissingParts();
-                }
+        //public IEnumerable<ThingDef> MissingParts
+        //{
+        //    get
+        //    {
+        //        if ( this.cachedMissingParts == null )
+        //        {
+        //            this.UpdateMissingParts();
+        //        }
 
-                return this.cachedMissingParts;
-            }
-        }
+        //        return this.cachedMissingParts;
+        //    }
+        //}
 
-        protected void UpdateMissingParts ()
-        {
-            if ( this.cachedMissingParts == null )
-            {
-                this.cachedMissingParts = new List<ThingDef>();
-            }
-            else
-            {
-                this.cachedMissingParts.Clear();
-            }
+        //protected void UpdateMissingParts ()
+        //{
+        //    if ( this.cachedMissingParts == null )
+        //    {
+        //        this.cachedMissingParts = new List<ThingDef>();
+        //    }
+        //    else
+        //    {
+        //        this.cachedMissingParts.Clear();
+        //    }
 
-            if ( !this.StandardParts.NullOrEmpty() )
-            {
-                List<ThingDef> defsIncluded = new List<ThingDef>( this.IncludedParts.Select( t => t.def ) );
+        //    if ( !this.StandardParts.NullOrEmpty() )
+        //    {
+        //        List<ThingDef> defsIncluded = new List<ThingDef>( this.IncludedParts.Select( t => t.def ) );
 
-                foreach ( ThingDef expectedDef in this.StandardParts )
-                {
-                    if ( defsIncluded.Contains( expectedDef ) )
-                    {
-                        defsIncluded.Remove( expectedDef );
-                    }
-                    else
-                    {
-                        this.cachedMissingParts.Add( expectedDef );
-                    }
-                }
-            }
-        }
+        //        foreach ( ThingDef expectedDef in this.StandardParts )
+        //        {
+        //            if ( defsIncluded.Contains( expectedDef ) )
+        //            {
+        //                defsIncluded.Remove( expectedDef );
+        //            }
+        //            else
+        //            {
+        //                this.cachedMissingParts.Add( expectedDef );
+        //            }
+        //        }
+        //    }
+        //}
 
         // Missing parts value $$$
 
-        private float cachedMissingValue = -1f;
+        //private float cachedMissingValue = -1f;
 
-        public float MissingValue
-        {
-            get
-            {
-                if ( this.cachedMissingValue == -1f )
-                {
-                    this.UpdateMissingValue();
-                }
+        //public float MissingValue
+        //{
+        //    get
+        //    {
+        //        if ( this.cachedMissingValue == -1f )
+        //        {
+        //            this.UpdateMissingValue();
+        //        }
 
-                return this.cachedMissingValue;
-            }
-        }
+        //        return this.cachedMissingValue;
+        //    }
+        //}
 
-        protected float UpdateMissingValue ()
-        {
-            this.cachedMissingValue = 0f;
+        //protected float UpdateMissingValue ()
+        //{
+        //    this.cachedMissingValue = 0f;
 
-            // add 80% of the value of missing parts
-            foreach ( var missingPart in this.MissingParts )
-            {
-                this.cachedMissingValue += missingPart.BaseMarketValue * 0.8f;
-            }
+        //    // add 80% of the value of missing parts
+        //    foreach ( var missingPart in this.MissingParts )
+        //    {
+        //        this.cachedMissingValue += missingPart.BaseMarketValue * 0.8f;
+        //    }
 
-            // add the missing value of all subparts
-            foreach ( var subPart in this.IncludedParts )
-            {
-                var sComp = subPart.TryGetComp<CompIncludedChildParts>();
+        //    // add the missing value of all subparts
+        //    foreach ( var subPart in this.IncludedParts )
+        //    {
+        //        var sComp = subPart.TryGetComp<CompIncludedChildParts>();
 
-                if ( sComp != null )
-                {
-                    this.cachedMissingValue += sComp.MissingValue;
-                }
-            }
+        //        if ( sComp != null )
+        //        {
+        //            this.cachedMissingValue += sComp.MissingValue;
+        //        }
+        //    }
 
-            // can't have more than 80% of the normal value as missing value
-            return Mathf.Clamp( this.cachedMissingValue, 0f, this.parent.def.BaseMarketValue * 0.8f );
-        }
+        //    // can't have more than 80% of the normal value as missing value
+        //    return Mathf.Clamp( this.cachedMissingValue, 0f, this.parent.def.BaseMarketValue * 0.8f );
+        //}
 
         /// <summary>
         /// Resets the cache for MissingParts, MissingValue and inspectString
         /// </summary>
         public void DirtyCache ()
         {
-            this.cachedMissingParts = null;
-            this.cachedMissingValue = -1f;
+            //this.cachedMissingParts = null;
+            //this.cachedMissingValue = -1f;
             this.cachedInspectString = null;
             this.cachedTransformLabelString = null;
             this.cachedCompatibleParts = null;
@@ -395,24 +395,27 @@ namespace MSE2
         }
 
         // From children
+        public float ValueOfChildParts =>
+            this.IncludedParts.Select( p => p.MarketValue ).Aggregate( 0f, ( a, b ) => a + b );
+
 
         /// <summary>
         /// Recursively searched for MissingParts in all of the sub-parts
         /// </summary>
-        public IEnumerable<(ThingDef, CompIncludedChildParts)> AllMissingParts
-        {
-            get => Enumerable.Concat(
+        //public IEnumerable<(ThingDef, CompIncludedChildParts)> AllMissingParts
+        //{
+        //    get => Enumerable.Concat(
 
-                // the missing parts of this part
-                this.MissingParts.Select( p => (p, this) ),
+        //        // the missing parts of this part
+        //        this.MissingParts.Select( p => (p, this) ),
 
-                // the missing parts of the children with CompIncludedChildParts
-                from i in this.IncludedParts
-                let comp = i.TryGetComp<CompIncludedChildParts>()
-                where comp != null
-                from couple in comp.AllMissingParts
-                select couple );
-        }
+        //        // the missing parts of the children with CompIncludedChildParts
+        //        from i in this.IncludedParts
+        //        let comp = i.TryGetComp<CompIncludedChildParts>()
+        //        where comp != null
+        //        from couple in comp.AllMissingParts
+        //        select couple );
+        //}
 
         /// <summary>
         /// Recursively searches for IncludedParts in all of the sub-parts

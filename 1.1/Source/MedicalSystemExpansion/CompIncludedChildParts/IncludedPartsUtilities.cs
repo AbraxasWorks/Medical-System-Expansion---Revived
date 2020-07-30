@@ -113,15 +113,15 @@ namespace MSE2
 
         public static bool InstallationCompatibility ( IEnumerable<Thing> thingDefs, IEnumerable<BodyPartRecord> bodyPartRecords )
         {
-            Log.Message( "compat: " + thingDefs.Count() + " " + bodyPartRecords.Count() );
+            //Log.Message( "compat: " + thingDefs.Count() + " " + bodyPartRecords.Count() );
 
             foreach ( var bpr in bodyPartRecords )
             {
                 foreach ( var thing in thingDefs )
                 {
                     CompIncludedChildParts comp = thing.TryGetComp<CompIncludedChildParts>();
-                    if ( thing.TryGetComp<CompIncludedChildParts>()?.CompatibleParts.Contains( bpr ) ?? // subparts are compatible
-                        InstallationDestinations( thing.def ).Any( b_bpd => bpr.body == b_bpd.Item1 && bpr.def == b_bpd.Item2 ) // has no subparts and is compatible
+                    if ( (thing.TryGetComp<CompIncludedChildParts>()?.CompatibleParts.Contains( bpr ) ?? // subparts are compatible
+                        InstallationDestinations( thing.def ).Any( b_bpd => bpr.body == b_bpd.Item1 && bpr.def == b_bpd.Item2 )) // has no subparts and is compatible
                         && InstallationCompatibility( thingDefs.Except( thing ), bodyPartRecords.Except( bpr ) ) ) // all other things check out
                     {
                         return true;

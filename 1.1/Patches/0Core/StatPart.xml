@@ -5,7 +5,7 @@
         <xpath>/Defs/StatDef[defName="MarketValue"]</xpath>
         <value>
             <parts>
-                <li Class="MSE2.StatPart_MissingSubParts" />
+                <li Class="MSE2.StatPart_IncludedSubParts" />
             </parts>
         </value>
         <order>Prepend</order>

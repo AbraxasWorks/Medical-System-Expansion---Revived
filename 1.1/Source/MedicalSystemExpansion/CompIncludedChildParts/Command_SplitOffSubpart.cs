@@ -19,8 +19,8 @@ namespace MSE2
                 this.icon = comp.parent.def.uiIcon;
                 this.iconAngle = comp.parent.def.uiIconAngle;
 
-                this.defaultLabel = "Remove sub-part";
-                this.defaultDesc = "Chose a part to remove from this one's subparts.";
+                this.defaultLabel = "CommandSplitOffSubpart_Label".Translate();
+                this.defaultDesc = "CommandSplitOffSubpart_Description".Translate();
             }
 
             public override bool Visible
@@ -41,7 +41,7 @@ namespace MSE2
                 {
                     list.Add( new FloatMenuOption(
                         // name
-                        lthing.Label.CapitalizeFirst() + (lcomp != comp ? " (from " + lcomp.parent.Label + ")" : ""),
+                        lthing.Label.CapitalizeFirst() + (lcomp != comp ? "CommandSplitOffSubpart_RemoveFrom".Translate(lcomp.parent.Label).ToString() : ""),
                         () => // click action
                         {
                             lcomp.RemoveAndSpawnPart( lthing, comp.parent.Position, comp.parent.Map );

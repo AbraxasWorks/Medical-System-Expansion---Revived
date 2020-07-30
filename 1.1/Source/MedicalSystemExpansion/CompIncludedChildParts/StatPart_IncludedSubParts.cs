@@ -4,7 +4,7 @@ using Verse;
 
 namespace MSE2
 {
-    internal class StatPart_MissingSubParts : StatPart
+    internal class StatPart_IncludedSubParts : StatPart
     {
         // This stat part impacts market value subtracting the value of missing subparts
 
@@ -14,9 +14,9 @@ namespace MSE2
             {
                 var comp = req.Thing.TryGetComp<CompIncludedChildParts>();
 
-                if ( comp != null && comp.MissingValue != 0f )
+                if ( comp != null && comp.ValueOfChildParts != 0f )
                 {
-                    return "Some parts are missing: -$" + comp.MissingValue;
+                    return "StatsReport_IncludedSubParts".Translate( comp.ValueOfChildParts.ToStringMoneyOffset() );
                 }
             }
 
@@ -31,8 +31,7 @@ namespace MSE2
 
                 if ( comp != null )
                 {
-                    // can't go below 20%
-                    val = Mathf.Max( val * 0.2f, val - comp.MissingValue );
+                    val += comp.ValueOfChildParts;
                 }
             }
         }

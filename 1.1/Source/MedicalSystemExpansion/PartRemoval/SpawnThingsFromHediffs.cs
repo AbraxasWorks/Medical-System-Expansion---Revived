@@ -109,9 +109,10 @@ namespace MSE2.HarmonyPatches
                     comp.IncludedParts.Clear();
                 }
 
-                foreach ( ThingDef missing in comp.MissingParts )
+                foreach ( ThingDef compatible in comp.StandardParts )
                 {
-                    Thing match = available.Find( x => x.def == missing );
+                    // TODO can prob simplify it
+                    Thing match = available.Find( x => x.def == compatible );
 
                     if ( match != null )
                     {
