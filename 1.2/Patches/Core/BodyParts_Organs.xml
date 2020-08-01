@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/BodyPartDef[defName="Stomach"]/spawnThingOnRemoved</xpath>
+				<success>Invert</success>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyPartDef[defName="Stomach"]</xpath>
+				<order>Append</order>
+				<value>
+					<spawnThingOnRemoved>Stomach</spawnThingOnRemoved>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/BodyPartDef[defName="Brain"]/spawnThingOnRemoved</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyPartDef[defName="Brain"]</xpath>
+				<order>Append</order>
+				<value>
+					<spawnThingOnRemoved>Brain</spawnThingOnRemoved>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

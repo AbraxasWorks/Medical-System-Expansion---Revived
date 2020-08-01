@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>MSE_RemoveBodyPartSystem</defName>
+		<label>remove part system</label>
+		<description>Remove a body part system.</description>
+		<workerClass>OrenoMSE.Recipe_RemoveBodyPartSystem</workerClass>
+		<jobString>Removing body part system.</jobString>
+		<workAmount>2500</workAmount>
+		<surgerySuccessChanceFactor>1.5</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</Defs>

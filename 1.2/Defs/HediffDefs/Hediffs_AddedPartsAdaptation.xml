@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========== Added Part Adaptation Base ==========-->
+	<HediffDef Name="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<hediffClass>OrenoMSE.Hediff_SurgerySupport</hediffClass>
+		<initialSeverity>1.00</initialSeverity>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_SpawnInitialSeverity" />
+		</modExtensions>
+	</HediffDef>
+	<!--===================== END ======================-->
+
+
+	<!--==================== Basic =====================-->
+	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationBasic</defName>
+		<label>artificial ABS</label>
+		<description>Adaptation to basic body part</description>
+		<defaultLabelColor>(141, 110, 99)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.18</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>getting used to</label>
+				<minSeverity>0.0002</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>not accustomed</label>
+				<minSeverity>0.35</minSeverity>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.80</minSeverity>
+				<partEfficiencyOffset>-0.80</partEfficiencyOffset>
+				<painOffset>0.30</painOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>artificial {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<!--=================== Simple =====================-->
+	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationSimple</defName>
+		<label>prosthetic ASP</label>
+		<description>Adaptation to simple mechanical body part</description>
+		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.24</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>getting used to</label>
+				<minSeverity>0.0002</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>not accustomed</label>
+				<minSeverity>0.35</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.85</minSeverity>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<painOffset>0.30</painOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>prosthetic {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationSimple_Organ</defName>
+		<label>prosthetic ASPO</label>
+		<description>Adaptation to simple mechanical organ</description>
+		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
+		<chanceToCauseNoPain>0.15</chanceToCauseNoPain>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.20</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>adapting</label>
+				<minSeverity>0.0002</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>begin to adapt</label>
+				<minSeverity>0.60</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.85</minSeverity>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<painOffset>0.30</painOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.90</minSeverity>
+				<partEfficiencyOffset>-0.50</partEfficiencyOffset>
+				<painOffset>0.30</painOffset>
+				<vomitMtbDays>0.3</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.85</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>prosthetic {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<!--=================== Bionic =====================-->
+	<HediffDef Name="MSE_AddedBodyPartBionicAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Adaptation to bionic body part</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.78</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>getting used to</label>
+				<minSeverity>0.0002</minSeverity>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>not accustomed</label>
+				<minSeverity>0.50</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.10</painOffset>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.90</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>bionic {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationBionic</defName>
+		<label>bionic ABN</label>
+		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationBionicSpecial</defName>
+		<label>bionic ABNS</label>
+		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartBionicOrganAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Adaptation to bionic organ</description>
+		<chanceToCauseNoPain>0.30</chanceToCauseNoPain>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.62</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>adapting</label>
+				<minSeverity>0.0002</minSeverity>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>begin to adapt</label>
+				<minSeverity>0.60</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.10</painOffset>
+				<vomitMtbDays>1.0</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.85</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>newly installed</label>
+				<minSeverity>0.95</minSeverity>
+				<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+				<painOffset>0.15</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.85</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>bionic {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicOrganAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationBionic_Organ</defName>
+		<label>bionic ABNO</label>
+		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartBionicOrganAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationBionicSpecial_Organ</defName>
+		<label>bionic ABNSO</label>
+		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
+	</HediffDef>
+
+	<!--================== Archotech ===================-->
+	<HediffDef Name="MSE_AddedBodyPartArchotechAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<description>Calibration of archotech body part</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.42</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>calibrating system</label>
+				<minSeverity>0.0002</minSeverity>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>preparing system</label>
+				<minSeverity>0.95</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.10</painOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>archotech {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationArchotech</defName>
+		<label>archotech AAT</label>
+		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationArchotechSpecial</defName>
+		<label>archotech AATS</label>
+		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="MSE_AddedBodyPartArchotechOrganAdaptationBase" ParentName="MSE_AddedBodyPartAdaptationBase" Abstract="True">
+		<chanceToCauseNoPain>1.38</chanceToCauseNoPain>
+		<description>Calibration of archotech organ</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.30</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<becomeVisible>false</becomeVisible>
+			</li>
+			<li>
+				<label>calibrating system</label>
+				<minSeverity>0.0002</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+				<painOffset>0.05</painOffset>
+			</li>
+			<li>
+				<label>preparing system</label>
+				<minSeverity>0.95</minSeverity>
+				<partEfficiencyOffset>-0.15</partEfficiencyOffset>
+				<painOffset>0.10</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.85</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_HediffPrettyLabel">
+				<labelPretty>archotech {0}</labelPretty>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechOrganAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationArchotech_Organ</defName>
+		<label>archotech AATO</label>
+		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_AddedBodyPartArchotechOrganAdaptationBase">
+		<defName>MSE_AddedBodyPartAdaptationArchotechSpecial_Organ</defName>
+		<label>archotech AATSO</label>
+		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
+	</HediffDef>
+
+</Defs>

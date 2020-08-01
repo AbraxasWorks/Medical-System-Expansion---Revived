@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============ Added Part Module Base ============-->
+	<HediffDef Name="MSE_AddedModule" Abstract="True">
+		<description>A module</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="OrenoMSE.HediffCompProperties_PartModule" />
+		</comps>
+	</HediffDef>
+	<!--===================== END ======================-->
+
+
+	<!--=================== Bionic =====================-->
+	<HediffDef Name="MSE_AddedModuleBionic" ParentName="MSE_AddedModule" Abstract="True">
+		<description>A bionic module</description>
+		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+	<!--================== Archotech ===================-->
+	<HediffDef Name="MSE_AddedModuleArchotech" ParentName="MSE_AddedModule" Abstract="True">
+		<description>An archotech module</description>
+		<defaultLabelColor>(255, 110, 64)</defaultLabelColor>
+		<comps /> <!-- Makes patching easier -->
+	</HediffDef>
+
+</Defs>

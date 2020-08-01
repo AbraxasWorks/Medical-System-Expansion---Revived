@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticLeg</defName>
+		<label>install prosthetic leg</label>
+		<description>Install a prosthetic leg.</description>
+		<jobString>Installing prosthetic leg.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticLeg</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticArm</defName>
+		<label>install prosthetic arm</label>
+		<description>Install a prosthetic arm.</description>
+		<jobString>Installing prosthetic arm.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticArm</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Organ">
+		<defName>InstallSimpleProstheticHeart</defName>
+		<label>install prosthetic heart</label>
+		<description>Install a prosthetic heart.</description>
+		<jobString>Installing prosthetic heart.</jobString>
+		<workAmount>2400</workAmount>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHeart</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallCochlearImplant</defName>
+		<label>install cochlear implant</label>
+		<description>Install a cochlear implant.</description>
+		<jobString>Installing cochlear implant.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CochlearImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CochlearImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CochlearImplant</addsHediff>
+	</RecipeDef>
+
+	<!--=========== Simple Prosthetic Limbs ============-->
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticFoot</defName>
+		<label>install prosthetic foot</label>
+		<description>Install a prosthetic foot.</description>
+		<jobString>Installing prosthetic foot.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFoot</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticToe</defName>
+		<label>install prosthetic toe</label>
+		<description>Install a prosthetic toe.</description>
+		<jobString>Installing prosthetic toe.</jobString>
+		<workAmount>900</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticToe</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticHand</defName>
+		<label>install prosthetic hand</label>
+		<description>Install a prosthetic hand.</description>
+		<jobString>Installing prosthetic hand.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHand</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticFinger</defName>
+		<label>install prosthetic finger</label>
+		<description>Install a prosthetic finger.</description>
+		<jobString>Installing prosthetic finger.</jobString>
+		<workAmount>900</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFinger</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple">
+		<defName>InstallSimpleProstheticJaw</defName>
+		<label>install prosthetic jaw</label>
+		<description>Install a prosthetic jaw.</description>
+		<jobString>Installing prosthetic jaw.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticJaw</addsHediff>
+	</RecipeDef>
+
+	<!--=========== Simple Prosthetic Bones ============-->
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticClavicle</defName>
+		<label>install prosthetic clavicle</label>
+		<description>Install a prosthetic clavicle.</description>
+		<jobString>Installing prosthetic clavicle.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticClavicle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticClavicle</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticSternum</defName>
+		<label>install prosthetic sternum</label>
+		<description>Install a prosthetic sternum.</description>
+		<jobString>Installing prosthetic sternum.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticSternum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticSternum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Sternum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticSternum</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticRib</defName>
+		<label>install prosthetic rib</label>
+		<description>Install a prosthetic rib.</description>
+		<jobString>Installing prosthetic rib.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRib</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticRib</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRib</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticPelvis</defName>
+		<label>install prosthetic pelvis</label>
+		<description>Install a prosthetic pelvis.</description>
+		<jobString>Installing prosthetic pelvis.</jobString>
+		<workAmount>1500</workAmount>
+		<deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticPelvis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticPelvis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pelvis</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticPelvis</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticHumerus</defName>
+		<label>install prosthetic humerus</label>
+		<description>Install a prosthetic humerus.</description>
+		<jobString>Installing prosthetic humerus.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHumerus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticHumerus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHumerus</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticRadius</defName>
+		<label>install prosthetic radius</label>
+		<description>Install a prosthetic radius.</description>
+		<jobString>Installing prosthetic radius.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRadius</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticRadius</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRadius</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticFemur</defName>
+		<label>install prosthetic femur</label>
+		<description>Install a prosthetic femur.</description>
+		<jobString>Installing prosthetic femur.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFemur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticFemur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Femur</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFemur</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgerySimple_Bone">
+		<defName>InstallSimpleProstheticTibia</defName>
+		<label>install prosthetic tibia</label>
+		<description>Install a prosthetic tibia.</description>
+		<jobString>Installing prosthetic tibia.</jobString>
+		<workAmount>1000</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticTibia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticTibia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticTibia</addsHediff>
+	</RecipeDef>
+
+</Defs>
