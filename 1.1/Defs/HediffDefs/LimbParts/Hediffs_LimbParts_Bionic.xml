@@ -27,7 +27,8 @@
       <RecipeDef>InstallBionicInternalSupport</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>3</Plasteel>
+      <Plasteel>6</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
@@ -106,8 +107,8 @@
       <RecipeDef>InstallBionicForearm</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>12</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>8</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToMake>20000</WorkToMake>
@@ -117,7 +118,6 @@
       <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
           <li>BionicHand</li>
-          <li>BionicInternalSupport</li>
           <li>BionicInternalSupport</li>
         </standardChildren>
       </li>
@@ -179,8 +179,8 @@
       <RecipeDef>InstallBionicFoot</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>7</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>4</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
@@ -192,10 +192,6 @@
     <comps>
       <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
-          <li>BionicToe</li>
-          <li>BionicToe</li>
-          <li>BionicToe</li>
-          <li>BionicToe</li>
           <li>BionicToe</li>
         </standardChildren>
       </li>
@@ -256,9 +252,14 @@
     <descriptionHyperlinks>
       <RecipeDef>InstallBionicToe</RecipeDef>
     </descriptionHyperlinks>
-    <costList>		
-      <Plasteel>1</Plasteel>
+    <costList>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>1</ComponentIndustrial>
     </costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
     <statBases>
       <WorkToMake>1500</WorkToMake>
       <Mass>0.05</Mass>
@@ -326,8 +327,8 @@
       <RecipeDef>InstallBionicHand</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>7</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
@@ -339,11 +340,6 @@
     <comps>
       <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
-          <li>BionicFinger</li>
-          <li>BionicFinger</li>
-          <li>BionicFinger</li>
-          <li>BionicFinger</li>
-          <li>BionicFinger</li>
           <li>BionicFinger</li>
         </standardChildren>
       </li>
@@ -405,9 +401,13 @@
       <RecipeDef>InstallBionicFinger</RecipeDef>
     </descriptionHyperlinks>
     <costList>
-      <Plasteel>1</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <Plasteel>3</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>2</ComponentIndustrial>
     </costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.1</Mass>

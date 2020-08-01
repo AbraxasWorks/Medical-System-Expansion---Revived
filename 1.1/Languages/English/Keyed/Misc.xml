@@ -8,7 +8,7 @@
 
 	<!-- CompIncludedChildParts -->
 	<CompIncludedChildParts_InspectString>Includes {0} direct subparts.</CompIncludedChildParts_InspectString>
-	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts:</CompIncludedChildParts_StatIncludedParts_Label>
+	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
 	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>
 
 
