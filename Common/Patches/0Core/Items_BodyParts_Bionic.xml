@@ -3,7 +3,7 @@
 
   <!-- arm -->
 
-  <Operation Class="PatchOperationAddOrMerge">
+  <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]</xpath>
     <value>
       <comps>
