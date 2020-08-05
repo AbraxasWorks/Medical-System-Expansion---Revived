@@ -9,8 +9,22 @@ using RimWorld;
 
 namespace MSE2
 {
-    class LimbProsthesisCreation : DefModExtension
+    internal class LimbProsthesisCreation : DefModExtension
     {
-        public BodyPartRecord targetLimb;
+        public LimbConfiguration targetLimb;
+
+        public override IEnumerable<string> ConfigErrors ()
+        {
+            foreach ( string error in base.ConfigErrors() ) yield return error;
+
+            if ( targetLimb == null )
+            {
+                yield return "targetLimb is null";
+            }
+            else if ( targetLimb.RecordExample == null )
+            {
+                yield return "targetLimb contains no records";
+            }
+        }
     }
 }

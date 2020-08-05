@@ -27,7 +27,7 @@ namespace MSE2
             return DefDatabase<RecipeDef>.AllDefs.FirstOrDefault( r => r.defName == targetName );
         }
 
-        public static (List<IngredientCount>, float) AllIngredientsWorkForLimb ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
+        public static (List<IngredientCount>, float) AllIngredientsWorkForLimb ( ThingDef thingDef, LimbConfiguration limb )
         {
             //Log.Message( "Calculating ingredients of " + thingDef.defName );
 
@@ -46,7 +46,7 @@ namespace MSE2
             if ( comp != null )
             {
                 // add the rest grouped by thingdef
-                allParts.AddRange( comp.AllPartsForBodyPartRecord( bodyPartRecord ).GroupBy( t => t ).Select( g => new ThingDefCountClass( g.Key, g.Count() ) ) );
+                allParts.AddRange( comp.AllPartsForLimb( limb ).GroupBy( t => t ).Select( g => new ThingDefCountClass( g.Key, g.Count() ) ) );
             }
 
             // the ingredients to make the segments, not grouped by thingdef
@@ -92,15 +92,15 @@ namespace MSE2
 
             def.GetCompProperties<CompProperties_IncludedChildParts>().ResolveReferences( def );
 
-            foreach ( (BodyDef body, BodyPartDef part) in IncludedPartsUtilities.InstallationDestinations( def ) )
+            foreach ( LimbConfiguration limb in IncludedPartsUtilities.CachedInstallationDestinations( def ) )
             {
                 //Log.Message( "At " + part.defName );
 
                 RecipeMakerProperties recipeMaker = def.recipeMaker;
                 RecipeDef recipeDef = new RecipeDef();
 
-                recipeDef.defName = "Make_" + def.defName + "_" + body.defName + "_" + part.defName;
-                recipeDef.label = "Make " + def.label + " for " + body.label + " " + part.label;
+                recipeDef.defName = "Make_" + def.defName + "_" + limb.UniqueName;
+                recipeDef.label = "Make " + def.label + " for " + limb.Label;
                 recipeDef.jobString = "RecipeMakeJobString".Translate( def.label );
                 recipeDef.modContentPack = def.modContentPack;
                 recipeDef.workSpeedStat = recipeMaker.workSpeedStat;
@@ -131,10 +131,10 @@ namespace MSE2
                 recipeDef.descriptionHyperlinks = (from p in recipeDef.products
                                                    select new DefHyperlink( p.thingDef )).ToList<DefHyperlink>();
 
-                (recipeDef.ingredients, recipeDef.workAmount) = AllIngredientsWorkForLimb( def, body.AllParts.First( p => p.def == part ) );
+                (recipeDef.ingredients, recipeDef.workAmount) = AllIngredientsWorkForLimb( def, limb );
 
                 if ( recipeDef.modExtensions == null ) recipeDef.modExtensions = new List<DefModExtension>();
-                recipeDef.modExtensions.Add( new LimbProsthesisCreation() { targetLimb = body.AllParts.First( p => p.def == part ) } );
+                recipeDef.modExtensions.Add( new LimbProsthesisCreation() { targetLimb = limb } );
 
                 yield return recipeDef;
 

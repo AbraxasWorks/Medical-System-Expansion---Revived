@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RimWorld;
+using RimWorld.QuestGen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -65,23 +67,66 @@ namespace MSE2
             return DefDatabase<RecipeDef>.AllDefs.Where( d => d.IsSurgery && d.fixedIngredientFilter.Allows( thing ) );
         }
 
-        private static Dictionary<ThingDef, List<(BodyDef, BodyPartDef)>> cachedInstallationDestinations = new Dictionary<ThingDef, List<(BodyDef, BodyPartDef)>>();
-
-        public static IEnumerable<(BodyDef, BodyPartDef)> InstallationDestinations ( ThingDef parentDef )
+        public static bool HasSameStructure ( this BodyPartRecord a, BodyPartRecord b )
         {
-            if ( cachedInstallationDestinations.TryGetValue( parentDef, out List<(BodyDef, BodyPartDef)> val ) )
+            if ( a == b )
+            {
+                return true;
+            }
+            else
+            {
+                return a.def == b.def && EnumerableEqualsUnsorted( a.parts, b.parts, HasSameStructure );
+            }
+        }
+
+        public static bool EnumerableEqualsUnsorted<A, B> ( IEnumerable<A> aEnu, IEnumerable<B> bEnu, Func<A, B, bool> equalityComparer )
+            where A : class
+            where B : class
+        {
+            if ( aEnu == bEnu )
+            {
+                return true;
+            }
+            if ( aEnu.EnumerableNullOrEmpty() && bEnu.EnumerableNullOrEmpty() )
+            {
+                return true;
+            }
+            if ( aEnu.EnumerableNullOrEmpty() || bEnu.EnumerableNullOrEmpty() )
+            {
+                return false;
+            }
+
+            foreach ( A a in aEnu )
+            {
+                foreach ( B b in bEnu )
+                {
+                    if ( equalityComparer( a, b ) && EnumerableEqualsUnsorted( aEnu.Except( a ), bEnu.Except( b ), equalityComparer ) )
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private static Dictionary<ThingDef, List<LimbConfiguration>> cachedInstallationDestinations = new Dictionary<ThingDef, List<LimbConfiguration>>();
+
+        public static IEnumerable<LimbConfiguration> CachedInstallationDestinations ( ThingDef parentDef )
+        {
+            if ( cachedInstallationDestinations.TryGetValue( parentDef, out List<LimbConfiguration> val ) )
             {
                 return val;
             }
             else
             {
-                List<(BodyDef, BodyPartDef)> newVal =
+                List<LimbConfiguration> newVal =
                     (from s in SurgeryToInstall( parentDef )
                      from u in s.AllRecipeUsers
                      let b = u.race.body
                      from bpd in s.appliedOnFixedBodyParts
                      where b.AllParts.Any( bpr => bpr.def == bpd )
-                     select (b, bpd))
+                     from lc in LimbConfiguration.LimbConfigsMatchingBodyAndPart( b, bpd )
+                     select lc)
                     .ToList();
 
                 cachedInstallationDestinations.Add( parentDef, newVal );
@@ -89,29 +134,29 @@ namespace MSE2
             }
         }
 
-        public static bool InstallationCompatibility ( IEnumerable<Thing> thingDefs, IEnumerable<BodyPartRecord> bodyPartRecords )
+        public static bool InstallationCompatibility ( IEnumerable<Thing> thingDefs, IEnumerable<LimbConfiguration> limbs )
         {
             //Log.Message( "compat: " + thingDefs.Count() + " " + bodyPartRecords.Count() );
 
-            foreach ( var bpr in bodyPartRecords )
+            foreach ( var limb in limbs )
             {
                 foreach ( var thing in thingDefs )
                 {
                     CompIncludedChildParts comp = thing.TryGetComp<CompIncludedChildParts>();
-                    if ( (thing.TryGetComp<CompIncludedChildParts>()?.CompatibleParts.Contains( bpr ) ?? // subparts are compatible
-                        InstallationDestinations( thing.def ).Any( b_bpd => bpr.body == b_bpd.Item1 && bpr.def == b_bpd.Item2 )) // has no subparts and is compatible
-                        && InstallationCompatibility( thingDefs.Except( thing ), bodyPartRecords.Except( bpr ) ) ) // all other things check out
+                    if ( (thing.TryGetComp<CompIncludedChildParts>()?.CompatibleLimbs.Contains( limb ) ?? // subparts are compatible
+                        CachedInstallationDestinations( thing.def ).Contains( limb )) // has no subparts and is compatible
+                        && InstallationCompatibility( thingDefs.Except( thing ), limbs.Except( limb ) ) ) // all other things check out
                     {
                         return true;
                     }
                 }
             }
-            return !bodyPartRecords.Any();
+            return !limbs.Any();
         }
-        
-        public static bool EverInstallableOn ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
-        {
-            return InstallationDestinations( thingDef ).Any( bd_bpd => bd_bpd.Item1 == bodyPartRecord.body && bd_bpd.Item2 == bodyPartRecord.def );
-        }
+
+        //public static bool EverInstallableOn ( ThingDef thingDef, BodyPartRecord bodyPartRecord )
+        //{
+        //    return CachedInstallationDestinations( thingDef ).Any( bd_bpd => bd_bpd.Item1 == bodyPartRecord.body && bd_bpd.Item2 == bodyPartRecord.def );
+        //}
     }
 }

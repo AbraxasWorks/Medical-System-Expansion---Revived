@@ -6,7 +6,7 @@ namespace MSE2
 {
     internal class StatPart_IncludedSubParts : StatPart
     {
-        // This stat part impacts market value subtracting the value of missing subparts
+        // This stat part impacts market value adding the value of included subparts
 
         public override string ExplanationPart ( StatRequest req )
         {

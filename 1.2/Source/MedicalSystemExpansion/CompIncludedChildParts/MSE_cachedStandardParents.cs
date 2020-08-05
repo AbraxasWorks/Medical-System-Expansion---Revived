@@ -23,8 +23,7 @@ namespace MSE2
 
         public void Add ( HediffDef parent )
         {
-            if ( !this.standardParents.Contains( parent ) )
-                this.standardParents.Add( parent );
+            this.standardParents.AddDistinct( parent );
         }
 
         public bool Contains ( HediffDef parent )

@@ -47,10 +47,6 @@
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="EdBPrepareCarefully">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\735106432\1.1\Assemblies\EdBPrepareCarefully.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="HugsLib">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HintPath>
       <Private>False</Private>
@@ -320,7 +316,7 @@
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
     <Compile Include="CompIncludedChildParts\Command_AddExistingSubpart.cs" />
     <Compile Include="CompIncludedChildParts\IncludedPartsUtilities.cs" />
-    <Compile Include="CompIncludedChildParts\LimbDef.cs" />
+    <Compile Include="CompIncludedChildParts\LimbConfiguration.cs" />
     <Compile Include="CompIncludedChildParts\MSE_cachedStandardParents.cs" />
     <Compile Include="CompIncludedChildParts\StatPart_IncludedSubParts.cs" />
     <Compile Include="DebugTools\ApplySurgery.cs" />

@@ -26,166 +26,29 @@ namespace MSE2
             }
         }
 
-        private List<Thing> childPartsIncluded = new List<Thing>();
+        // Save / Load
+
+        public override void PostExposeData ()
+        {
+            base.PostExposeData();
+            Scribe_Collections.Look( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
+
+            if ( this.IncludedParts == null )
+            {
+                this.IncludedParts = new List<Thing>();
+                Log.Warning( "[MSE2] Included parts null while serializing or deserializing data." );
+                //InitializeIncludedParts();
+            }
+        }
 
         /// <summary>
-        /// The list constaining the direct child parts of this part
+        /// Resets the cache for MissingParts, MissingValue and inspectString
         /// </summary>
-        public List<Thing> IncludedParts
+        public void DirtyCache ()
         {
-            get => this.childPartsIncluded;
-            set
-            {
-                this.childPartsIncluded = value;
-                this.DirtyCache();
-            }
-        }
-
-        public List<ThingDef> StandardParts
-        {
-            get => this.Props?.standardChildren;
-        }
-
-        //
-
-        private List<BodyPartRecord> cachedCompatibleParts;
-
-        public IEnumerable<BodyPartRecord> CompatibleParts
-        {
-            get
-            {
-                if ( this.cachedCompatibleParts == null )
-                {
-                    this.cachedCompatibleParts = (from b_bpd in this.Props.installationDestinations
-                                                  from bpr in b_bpd.Item1.AllParts
-                                                  where bpr.def == b_bpd.Item2
-                                                  where this.IsCompatibleWith( bpr )
-                                                  select bpr
-                                                  ).ToList();
-                }
-                return this.cachedCompatibleParts;
-            }
-        }
-
-        private bool IsCompatibleWith ( BodyPartRecord bodyPartRecord )
-        {
-            return this.Props.EverInstallableOn( bodyPartRecord )
-                && IncludedPartsUtilities.InstallationCompatibility( this.childPartsIncluded, bodyPartRecord.GetDirectChildParts() );
-        }
-
-        // Creation / Deletion
-
-        /// <summary>
-        /// Initialize IncludedParts to standard children
-        /// </summary>
-        protected void InitializeIncludedParts ()
-        {
-            if ( this.StandardParts != null )
-            {
-                foreach ( ThingDef sChild in this.StandardParts )
-                {
-                    this.IncludedParts.Add( ThingMaker.MakeThing( sChild ) );
-                }
-            }
-        }
-
-        public void InitializeForPart ( BodyPartRecord bodyPartRecord )
-        {
-            if ( !this.Props.EverInstallableOn( bodyPartRecord ) )
-            {
-                Log.Error( "[MSE2] Tried to initialize " + this.parent.Label + " for part where it cannot be installed (" + bodyPartRecord + " " + bodyPartRecord.body + ")" );
-                return;
-            }
-
-            foreach ( (ThingDef childDef, BodyPartRecord bpr) in this.Props.StandardPartsForBodyPartRecord( bodyPartRecord ) )
-            {
-                Thing child = ThingMaker.MakeThing( childDef );
-                child.TryGetComp<CompIncludedChildParts>()?.InitializeForPart( bpr );
-                this.AddPart( child );
-            }
-        }
-
-        public override void PostDestroy ( DestroyMode mode, Map previousMap )
-        {
-            base.PostDestroy( mode, previousMap );
-
-            // destroy included child items (idk if it does anything as they aren't spawned)
-            if ( this.IncludedParts != null )
-            {
-                foreach ( Thing childPart in this.IncludedParts )
-                {
-                    childPart.Destroy( DestroyMode.Vanish );
-                }
-            }
-        }
-
-        // Stats display
-
-        // Inspect string
-        protected String cachedInspectString = null;
-
-        public override string CompInspectStringExtra ()
-        {
-            if ( this.IncludedParts != null )
-            {
-                if ( this.cachedInspectString == null )
-                {
-                    this.cachedInspectString = "CompIncludedChildParts_InspectString".Translate( this.IncludedParts.Count );
-                }
-
-                return this.cachedInspectString;
-            }
-            return null;
-        }
-
-        // Label
-
-        protected String cachedTransformLabelString = null;
-
-        public override string TransformLabel ( string label )
-        {
-            if ( this.IncludedParts != null )
-            {
-                if ( this.cachedTransformLabelString == null )
-                {
-                    this.cachedTransformLabelString = " (";
-
-                    if ( this.CompatibleParts.Any() )
-                    {
-                        this.cachedTransformLabelString += String.Join( ", ", this.CompatibleParts.Select( bpr => bpr.body ).Distinct().Select( b => b.label ) );
-                    }
-                    else
-                    {
-                        this.cachedTransformLabelString += "incomplete";
-                    }
-
-                    this.cachedTransformLabelString += ")";
-                }
-
-                return label + this.cachedTransformLabelString;
-            }
-            return null;
-        }
-
-        public override IEnumerable<StatDrawEntry> SpecialDisplayStats ()
-        {
-            // hyperlink lists
-            var includedPartLinks =
-                from x in this.IncludedParts
-                select new Dialog_InfoCard.Hyperlink( x );
-
-            // always return the included parts entry
-            yield return new StatDrawEntry(
-                StatCategoryDefOf.Basics,
-                "CompIncludedChildParts_StatIncludedParts_Label".Translate(),
-                this.IncludedParts.Count.ToString(),
-                "CompIncludedChildParts_StatIncludedParts_Description".Translate(),
-                2500,
-                null,
-                includedPartLinks,
-                false );
-
-            yield break;
+            this.cachedCompatibleLimbs = null;
+            this.cachedTransformLabelString = null;
+            this.cachedInspectString = null;
         }
 
         // gizmos for merging and splitting
@@ -201,6 +64,22 @@ namespace MSE2
             foreach ( var g in base.CompGetGizmosExtra() ) yield return g;
 
             yield break;
+        }
+
+        #region PartHandling
+
+        // Included parts
+
+        private List<Thing> childPartsIncluded = new List<Thing>();
+
+        public List<Thing> IncludedParts
+        {
+            get => this.childPartsIncluded;
+            set
+            {
+                this.childPartsIncluded = value;
+                this.DirtyCache();
+            }
         }
 
         public void AddPart ( Thing part )
@@ -241,29 +120,140 @@ namespace MSE2
             GenPlace.TryPlaceThing( part, position, map, ThingPlaceMode.Near );
         }
 
-        // Save / Load
+        // Standard parts
 
-        public override void PostExposeData ()
+        public List<ThingDef> StandardParts
         {
-            base.PostExposeData();
-            Scribe_Collections.Look( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
+            get => this.Props?.standardChildren;
+        }
 
-            if ( this.IncludedParts == null )
+        // Compatible limbs
+
+        private List<LimbConfiguration> cachedCompatibleLimbs;
+
+        public IEnumerable<LimbConfiguration> CompatibleLimbs
+        {
+            get
             {
-                this.IncludedParts = new List<Thing>();
-                InitializeIncludedParts();
+                if ( this.cachedCompatibleLimbs == null )
+                {
+                    this.cachedCompatibleLimbs = (from lc in this.Props.installationDestinations
+                                                  where this.IsCompatibleWith( lc )
+                                                  select lc
+                                                  ).ToList();
+                }
+                return this.cachedCompatibleLimbs;
             }
         }
 
-        /// <summary>
-        /// Resets the cache for MissingParts, MissingValue and inspectString
-        /// </summary>
-        public void DirtyCache ()
+        private bool IsCompatibleWith ( LimbConfiguration limb )
         {
-            this.cachedInspectString = null;
-            this.cachedTransformLabelString = null;
-            this.cachedCompatibleParts = null;
+            return this.Props.EverInstallableOn( limb )
+                && IncludedPartsUtilities.InstallationCompatibility( this.childPartsIncluded, limb.ChildLimbs );
         }
+
+        // Creation / Deletion
+
+        public void InitializeForLimb ( LimbConfiguration limb )
+        {
+            if ( !this.Props.EverInstallableOn( limb ) )
+            {
+                Log.Error( "[MSE2] Tried to initialize " + this.parent.Label + " for part where it cannot be installed (" + limb.PartDef + ")" );
+                return;
+            }
+
+            foreach ( (ThingDef childDef, LimbConfiguration bpr) in this.Props.StandardPartsForLimb( limb ) )
+            {
+                Thing child = ThingMaker.MakeThing( childDef );
+                child.TryGetComp<CompIncludedChildParts>()?.InitializeForLimb( bpr );
+                this.AddPart( child );
+            }
+        }
+
+        public override void PostDestroy ( DestroyMode mode, Map previousMap )
+        {
+            base.PostDestroy( mode, previousMap );
+
+            // destroy included child items (idk if it does anything as they aren't spawned)
+            if ( this.IncludedParts != null )
+            {
+                foreach ( Thing childPart in this.IncludedParts )
+                {
+                    childPart.Destroy( DestroyMode.Vanish );
+                }
+            }
+        }
+
+        #endregion PartHandling
+
+        #region StatsDisplay
+
+        // Label
+
+        protected String cachedTransformLabelString = null;
+
+        public override string TransformLabel ( string label )
+        {
+            if ( this.IncludedParts != null )
+            {
+                if ( this.cachedTransformLabelString == null )
+                {
+                    this.cachedTransformLabelString = " (";
+
+                    if ( this.CompatibleLimbs.Any() )
+                    {
+                        this.cachedTransformLabelString += String.Join( "; ", this.CompatibleLimbs.Select( lc => lc.Label ) );
+                    }
+                    else
+                    {
+                        this.cachedTransformLabelString += "incomplete";
+                    }
+
+                    this.cachedTransformLabelString += ")";
+                }
+
+                return label + this.cachedTransformLabelString;
+            }
+            return null;
+        }
+
+        // Inspect string
+
+        protected String cachedInspectString = null;
+
+        public override string CompInspectStringExtra ()
+        {
+            if ( this.IncludedParts != null )
+            {
+                if ( this.cachedInspectString == null )
+                {
+                    this.cachedInspectString = "CompIncludedChildParts_InspectString".Translate( this.IncludedParts.Count );
+                }
+
+                return this.cachedInspectString;
+            }
+            return null;
+        }
+
+        // Stat entries
+
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats ()
+        {
+            // Included parts
+            yield return new StatDrawEntry(
+                StatCategoryDefOf.Basics,
+                "CompIncludedChildParts_StatIncludedParts_Label".Translate(),
+                this.IncludedParts.Count.ToString(),
+                "CompIncludedChildParts_StatIncludedParts_Description".Translate(),
+                2500,
+                null,
+                this.IncludedParts.Select( p => new Dialog_InfoCard.Hyperlink( p ) ),
+                false );
+        }
+
+        #endregion StatsDisplay
+
+        #region RecursiveData
 
         /// <summary>
         /// Calls DirtyCache for all the ancestors of recursionEnd (excluded) up to the calling comp
@@ -292,8 +282,11 @@ namespace MSE2
         }
 
         // From children
-        public float ValueOfChildParts =>
-            this.IncludedParts.Select( p => p.MarketValue ).Aggregate( 0f, ( a, b ) => a + b );
+        public float ValueOfChildParts
+        {
+            get =>
+                this.IncludedParts.Select( p => p.MarketValue ).Aggregate( 0f, ( a, b ) => a + b );
+        }
 
         /// <summary>
         /// Recursively searches for IncludedParts in all of the sub-parts
@@ -330,5 +323,7 @@ namespace MSE2
                 from couple in comp.AllStandardParts
                 select couple );
         }
+
+        #endregion RecursiveData
     }
 }

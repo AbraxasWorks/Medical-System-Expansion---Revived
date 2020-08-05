@@ -19,7 +19,7 @@ namespace MSE2
 
             this.parentDef = parentDef;
 
-            installationDestinations = IncludedPartsUtilities.InstallationDestinations( parentDef ).ToList();
+            installationDestinations = IncludedPartsUtilities.CachedInstallationDestinations( parentDef ).ToList();
         }
 
         public override IEnumerable<string> ConfigErrors ( ThingDef parentDef )
@@ -45,16 +45,16 @@ namespace MSE2
             }
         }
 
-        public bool EverInstallableOn ( BodyPartRecord bodyPartRecord )
+        public bool EverInstallableOn ( LimbConfiguration limb )
         {
-            return installationDestinations.Contains( (bodyPartRecord.body, bodyPartRecord.def) );
+            return installationDestinations.Contains( limb );
         }
 
-        public IEnumerable<(ThingDef, BodyPartRecord)> StandardPartsForBodyPartRecord ( BodyPartRecord bodyPartRecord )
+        public IEnumerable<(ThingDef, LimbConfiguration)> StandardPartsForLimb ( LimbConfiguration limb )
         {
-            if ( !this.EverInstallableOn( bodyPartRecord ) )
+            if ( !this.EverInstallableOn( limb ) )
             {
-                Log.Error( "[MSE2] Tried to get standard parts of " + parentDef.defName + " for an incompatible part record (" + bodyPartRecord + ")" );
+                Log.Error( "[MSE2] Tried to get standard parts of " + parentDef.defName + " for an incompatible part record (" + limb + ")" );
                 yield break;
             }
 
@@ -62,23 +62,23 @@ namespace MSE2
                 DefDatabase<HediffDef>.AllDefs.First( h => h.spawnThingOnRemoved == this.parentDef ).GetModExtension<IgnoreSubParts>()?.ignoredSubParts
                 ?? Enumerable.Empty<BodyPartDef>() );
 
-            foreach ( var bpr in bodyPartRecord.GetDirectChildParts().Where( p => !ignoredParts.Contains( p.def ) ) )
+            foreach ( var lc in limb.ChildLimbs.Where( p => !ignoredParts.Contains( p.PartDef ) ) )
             {
-                var thingDef = standardChildren.Where( td => IncludedPartsUtilities.InstallationDestinations( td ).Contains( (bpr.body, bpr.def) ) ).FirstOrDefault();
+                var thingDef = standardChildren.Where( td => IncludedPartsUtilities.CachedInstallationDestinations( td ).Contains( lc ) ).FirstOrDefault();
                 if ( thingDef != null )
                 {
-                    yield return (thingDef, bpr);
+                    yield return (thingDef, lc);
                 }
                 else
                 {
-                    Log.Error( "[MSE2] Could not find a standard child of " + parentDef.defName + " compatible with body part record " + bpr );
+                    Log.Error( "[MSE2] Could not find a standard child of " + parentDef.defName + " compatible with body part record " + lc );
                 }
             }
         }
 
-        public IEnumerable<ThingDef> AllPartsForBodyPartRecord ( BodyPartRecord bodyPartRecord )
+        public IEnumerable<ThingDef> AllPartsForLimb ( LimbConfiguration limb )
         {
-            foreach ( (ThingDef thingDef, BodyPartRecord part) in this.StandardPartsForBodyPartRecord( bodyPartRecord ) )
+            foreach ( (ThingDef thingDef, LimbConfiguration childLimb) in this.StandardPartsForLimb( limb ) )
             {
                 yield return thingDef;
 
@@ -86,7 +86,7 @@ namespace MSE2
 
                 if ( comp != null )
                 {
-                    foreach ( var item in comp.AllPartsForBodyPartRecord( part ) )
+                    foreach ( var item in comp.AllPartsForLimb( childLimb ) )
                     {
                         yield return item;
                     }
@@ -96,7 +96,7 @@ namespace MSE2
 
         public ThingDef parentDef;
 
-        public List<(BodyDef, BodyPartDef)> installationDestinations;
+        public List<LimbConfiguration> installationDestinations;
 
         public List<ThingDef> standardChildren = new List<ThingDef>();
 

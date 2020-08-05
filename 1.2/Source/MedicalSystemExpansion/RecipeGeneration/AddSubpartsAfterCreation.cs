@@ -23,7 +23,7 @@ namespace MSE2.HarmonyPatches
         {
             if ( recipeDef.HasModExtension<LimbProsthesisCreation>() && __result.TryGetComp<CompIncludedChildParts>() != null )
             {
-                __result.TryGetComp<CompIncludedChildParts>().InitializeForPart( recipeDef.GetModExtension<LimbProsthesisCreation>().targetLimb );
+                __result.TryGetComp<CompIncludedChildParts>().InitializeForLimb( recipeDef.GetModExtension<LimbProsthesisCreation>().targetLimb );
             }
         }
     }

@@ -81,7 +81,7 @@ namespace MSE2
             List<BodyPartRecord> partsToConsider = new List<BodyPartRecord>( part.GetDirectChildParts().Append( part ) );
 
             // iterate over included child things
-            foreach ( (ThingDef childThingDef, _) in compProp.StandardPartsForBodyPartRecord( part ) )
+            foreach ( (ThingDef childThingDef, _) in compProp.StandardPartsForLimb( LimbConfiguration.GenerateOrGetLimbConfigForBodyPartRecord( part ) ) )
             {
                 if ( TryGetRecipeAndPart( pawn, childThingDef, partsToConsider.Contains, out RecipeDef recipe, out BodyPartRecord bpr ) )
                 {
