@@ -23,14 +23,12 @@ namespace MSE2
                 this.defaultDesc = "Command_SetTargetLimb_Description".Translate();
             }
 
-            public override bool Visible => base.Visible;
-
             public override void ProcessInput ( Event ev )
             {
                 base.ProcessInput( ev );
                 List<FloatMenuOption> options = new List<FloatMenuOption>();
 
-                foreach ( LimbConfiguration possibleTarget in this.comp.Props.installationDestinations )
+                foreach ( LimbConfiguration possibleTarget in this.comp.Props.installationDestinations.Where( t => t != comp.TargetLimb ) )
                 {
                     options.Add( new FloatMenuOption(
                         possibleTarget.Label,
@@ -42,13 +40,14 @@ namespace MSE2
                 }
 
                 // Option to set to no target
-                options.Add( new FloatMenuOption(
-                    "None",
-                    () => // click action
-                    {
-                        this.comp.TargetLimb = null;
-                    }
-                    ) );
+                if ( comp.targetLimb != null )
+                    options.Add( new FloatMenuOption(
+                        "Command_SetTargetLimb_NoTarget".Translate(),
+                        () => // click action
+                        {
+                            this.comp.TargetLimb = null;
+                        }
+                        ) );
 
                 Find.WindowStack.Add( new FloatMenu( options ) );
             }

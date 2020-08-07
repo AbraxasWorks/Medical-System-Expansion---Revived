@@ -41,7 +41,9 @@ namespace MSE2
                 {
                     list.Add( new FloatMenuOption(
                         // name
-                        lthing.Label.CapitalizeFirst() + (lcomp != comp ? "CommandSplitOffSubpart_RemoveFrom".Translate(lcomp.parent.Label).ToString() : ""),
+                        lcomp != this.comp ?  // if added to other subpart specify it
+                            "CommandSplitOffSubpart_RemoveFrom".Translate( lthing.Label.CapitalizeFirst(), lcomp.parent.Label ).ToString()
+                            : lthing.Label.CapitalizeFirst(),
                         () => // click action
                         {
                             lcomp.RemoveAndSpawnPart( lthing, comp.parent.Position, comp.parent.Map );

@@ -29,7 +29,7 @@ namespace MSE2
             {
                 get
                 {
-                    return true;
+                    return comp.AllMissingParts.Any();
                 }
             }
 
@@ -43,8 +43,9 @@ namespace MSE2
                 {
                     options.Add( new FloatMenuOption(
                         // name
-                        thingCandidate.Label.CapitalizeFirst()
-                            + (compDestination != this.comp ? "CommandAddExistingSubpart_AddTo".Translate( compDestination.parent.Label ).ToString() : ""), // if added to other subpart specify it
+                        compDestination != this.comp ?  // if added to other subpart specify it
+                            "CommandAddExistingSubpart_AddTo".Translate( thingCandidate.Label.CapitalizeFirst(), compDestination.parent.Label ).ToString()
+                            : thingCandidate.Label.CapitalizeFirst(),
                         () => // click action
                         {
                             compDestination.AddPart( thingCandidate );
@@ -82,9 +83,9 @@ namespace MSE2
             {
                 get =>
                     from t in this.comp.parent.Map.listerThings.AllThings
-                    from u in this.comp.AllStandardParts.Distinct()
+                    from u in this.comp.AllMissingParts.Distinct()
                     where u.Item1 == t.def
-                    select (t, u.Item2);
+                    select (t, u.Item3);
             }
 
             public override GizmoResult GizmoOnGUI ( Vector2 loc, float maxWidth )

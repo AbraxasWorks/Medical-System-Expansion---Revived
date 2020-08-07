@@ -4,13 +4,18 @@
 
 	<!-- Command_AddExistingSubpart -->
 	<CommandAddExistingSubpart_Label>Add sub-part</CommandAddExistingSubpart_Label>
-	<CommandAddExistingSubpart_Description>Chose a part to add to this one's sub-parts.</CommandAddExistingSubpart_Description>
-	<CommandAddExistingSubpart_AddTo>(to {0})</CommandAddExistingSubpart_AddTo>
+	<CommandAddExistingSubpart_Description>Choose a part to add to this one's sub-parts.</CommandAddExistingSubpart_Description>
+	<CommandAddExistingSubpart_AddTo>{0} (to {1})</CommandAddExistingSubpart_AddTo>
 	<CommandAddExistingSubpart_CouldNotFindPart>Could not find a compatible part to add.</CommandAddExistingSubpart_CouldNotFindPart>
+
+	<!-- Command_SetTargetLimb -->
+	<Command_SetTargetLimb_Label>Set target limb</Command_SetTargetLimb_Label>
+	<Command_SetTargetLimb_Description>Choose what limb this will replace</Command_SetTargetLimb_Description>
+	<Command_SetTargetLimb_NoTarget>None</Command_SetTargetLimb_NoTarget>
 
 	<!-- Command_SplitOffSubpart -->
 	<CommandSplitOffSubpart_Label>Remove sub-part</CommandSplitOffSubpart_Label>
-	<CommandSplitOffSubpart_Description>Chose a part to remove from this one's subparts.</CommandSplitOffSubpart_Description>
-	<CommandSplitOffSubpart_RemoveFrom>(from {0})</CommandSplitOffSubpart_RemoveFrom>
+	<CommandSplitOffSubpart_Description>Choose a part to remove from this one's subparts.</CommandSplitOffSubpart_Description>
+	<CommandSplitOffSubpart_RemoveFrom>{0} (from {1})</CommandSplitOffSubpart_RemoveFrom>
 
 </LanguageData>
