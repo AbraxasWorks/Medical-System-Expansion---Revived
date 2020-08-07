@@ -312,6 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets.cs" />
+    <Compile Include="CompIncludedChildParts\Command_SetTargetLimb.cs" />
     <Compile Include="CompIncludedChildParts\Command_SplitOffSubpart.cs" />
     <Compile Include="CompIncludedChildParts\CompProperties_IncludedChildParts.cs" />
     <Compile Include="CompIncludedChildParts\Command_AddExistingSubpart.cs" />

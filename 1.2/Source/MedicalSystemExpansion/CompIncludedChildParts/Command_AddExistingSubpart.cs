@@ -37,14 +37,11 @@ namespace MSE2
             {
                 base.ProcessInput( ev );
 
-                bool none = true;
-
-                List<FloatMenuOption> list = new List<FloatMenuOption>();
+                List<FloatMenuOption> options = new List<FloatMenuOption>();
 
                 foreach ( (Thing thingCandidate, CompIncludedChildParts compDestination) in this.PossibleThings )
                 {
-                    none = false;
-                    list.Add( new FloatMenuOption(
+                    options.Add( new FloatMenuOption(
                         // name
                         thingCandidate.Label.CapitalizeFirst()
                             + (compDestination != this.comp ? "CommandAddExistingSubpart_AddTo".Translate( compDestination.parent.Label ).ToString() : ""), // if added to other subpart specify it
@@ -68,13 +65,13 @@ namespace MSE2
                 }
 
                 // only draw the menu if there are things it can add
-                if ( none )
+                if ( options.Any() )
                 {
-                    Messages.Message( "CommandAddExistingSubpart_CouldNotFindPart".Translate(), MessageTypeDefOf.RejectInput );
+                    Find.WindowStack.Add( new FloatMenu( options ) );
                 }
                 else
                 {
-                    Find.WindowStack.Add( new FloatMenu( list ) );
+                    Messages.Message( "CommandAddExistingSubpart_CouldNotFindPart".Translate(), MessageTypeDefOf.RejectInput );
                 }
             }
 

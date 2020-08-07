@@ -14,6 +14,7 @@ namespace MSE2
             base.Initialize( props );
 
             // Create the needed command gizmos
+            this.command_SetTargetLimb = new Command_SetTargetLimb( this );
             this.command_AddExistingSubpart = new Command_AddExistingSubpart( this );
             this.command_SplitOffSubpart = new Command_SplitOffSubpart( this );
         }
@@ -31,7 +32,15 @@ namespace MSE2
         public override void PostExposeData ()
         {
             base.PostExposeData();
+
+            // Deep save the included Things
             Scribe_Collections.Look( ref this.childPartsIncluded, "childPartsIncluded", LookMode.Deep );
+
+            // Save an example of record in the limbTarget
+            BodyPartRecord limbPartExample = this.TargetLimb?.RecordExample;
+            Scribe_BodyParts.Look( ref limbPartExample, "targetLimb" );
+            if ( Scribe.mode == LoadSaveMode.LoadingVars )
+                this.TargetLimb = LimbConfiguration.GenerateOrGetLimbConfigForBodyPartRecord( limbPartExample );
 
             if ( this.IncludedParts == null )
             {
@@ -53,11 +62,13 @@ namespace MSE2
 
         // gizmos for merging and splitting
 
+        private Command_SetTargetLimb command_SetTargetLimb;
         private Command_AddExistingSubpart command_AddExistingSubpart;
         private Command_SplitOffSubpart command_SplitOffSubpart;
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra ()
         {
+            yield return this.command_SetTargetLimb;
             yield return this.command_AddExistingSubpart;
             yield return this.command_SplitOffSubpart;
 
@@ -81,6 +92,9 @@ namespace MSE2
                 this.DirtyCache();
             }
         }
+
+        public IEnumerable<CompIncludedChildParts> IncludedPartComps =>
+            this.IncludedParts.Select( p => p.TryGetComp<CompIncludedChildParts>() ).Where( c => c != null );
 
         public void AddPart ( Thing part )
         {
@@ -118,6 +132,54 @@ namespace MSE2
             this.DirtyCache();
 
             GenPlace.TryPlaceThing( part, position, map, ThingPlaceMode.Near );
+        }
+
+        // Target Limb
+
+        private LimbConfiguration targetLimb;
+
+        public LimbConfiguration TargetLimb
+        {
+            get
+            {
+                return targetLimb;
+            }
+            set
+            {
+                if ( value != null && !this.Props.EverInstallableOn( value ) )
+                {
+                    Log.Error( string.Format( "Tried to set invalid target limb ({0}) on {1}", value.Label, this.parent.Label ) );
+                }
+
+                this.targetLimb = value;
+                this.UpdateChildTargetLimb();
+
+                this.DirtyCache();
+            }
+        }
+
+        private void UpdateChildTargetLimb ()
+        {
+            if ( this.targetLimb == null )
+            {
+                foreach ( var comp in this.IncludedPartComps )
+                {
+                    comp.TargetLimb = null;
+                }
+            }
+            else
+            {
+                List<LimbConfiguration> remainingLimbParts = new List<LimbConfiguration>( this.targetLimb.ChildLimbs );
+
+                foreach ( var comp in this.IncludedPartComps )
+                {
+                    var suitableTarget = comp.Props.installationDestinations.FirstOrDefault( l => remainingLimbParts.Contains( l ) );
+
+                    comp.TargetLimb = suitableTarget;
+
+                    remainingLimbParts.Remove( suitableTarget );
+                }
+            }
         }
 
         // Standard parts
@@ -228,6 +290,11 @@ namespace MSE2
                 if ( this.cachedInspectString == null )
                 {
                     this.cachedInspectString = "CompIncludedChildParts_InspectString".Translate( this.IncludedParts.Count );
+
+                    if ( this.TargetLimb != null )
+                    {
+                        this.cachedInspectString += "\nTarget: " + this.targetLimb.Label;
+                    }
                 }
 
                 return this.cachedInspectString;
