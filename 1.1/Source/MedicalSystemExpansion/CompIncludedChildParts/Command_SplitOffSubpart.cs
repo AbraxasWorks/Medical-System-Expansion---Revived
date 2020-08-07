@@ -59,11 +59,11 @@ namespace MSE2
                 GizmoResult result = base.GizmoOnGUI( loc, maxWidth );
 
                 // add minus sign in the top right of the gizmo texture
-                if ( MedicalSystemExpansion.WidgetMinusSign != null )
+                if ( Assets.WidgetMinusSign != null )
                 {
                     Rect rect = new Rect( loc.x, loc.y, this.GetWidth( maxWidth ), 75f );
                     Rect position = new Rect( rect.x + rect.width - 24f, rect.y, 24f, 24f );
-                    GUI.DrawTexture( position, MedicalSystemExpansion.WidgetMinusSign );
+                    GUI.DrawTexture( position, Assets.WidgetMinusSign );
                 }
 
                 return result;
