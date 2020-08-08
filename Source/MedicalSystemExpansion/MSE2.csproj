@@ -114,9 +114,9 @@
     <Compile Include="PartRemoval\SpawnThingsFromHediffs.cs" />
     <Compile Include="MedicalSystemExpansion.cs" />
     <Compile Include="MSE_HediffDefOf.cs" />
-    <Compile Include="RecipeGeneration\AddSubpartsAfterCreation.cs" />
-    <Compile Include="RecipeGeneration\LimbProsthesisCreation.cs" />
-    <Compile Include="RecipeGeneration\LimbRecipeDefGenerator.cs" />
+    <Compile Include="RecipeGeneration\Crafting\AddSubpartsAfterCreation.cs" />
+    <Compile Include="RecipeGeneration\Crafting\LimbProsthesisCreation.cs" />
+    <Compile Include="RecipeGeneration\Crafting\LimbRecipeDefGenerator.cs" />
     <Compile Include="Modules\Actual\Hediff_ModuleAdded.cs" />
     <Compile Include="Modules\Slots\Hediff_ModuleSlot.cs" />
     <Compile Include="PartInstallation\Recipe_InstallArtificialBodyPartWithChildren.cs" />
@@ -124,6 +124,7 @@
     <Compile Include="CompIncludedChildParts\CompIncludedChildParts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modules\Actual\Recipe_InstallModule.cs" />
+    <Compile Include="RecipeGeneration\Installing\RestrictTargetLimb.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
