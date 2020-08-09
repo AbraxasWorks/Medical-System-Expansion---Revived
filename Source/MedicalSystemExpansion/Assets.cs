@@ -8,7 +8,8 @@ using Verse;
 
 namespace MSE2
 {
-    class Assets
+    [StaticConstructorOnStartup]
+    internal class Assets
     {
         public static readonly Texture2D WidgetMinusSign = ContentFinder<Texture2D>.Get( "UI/Widgets/MinusSign", true );
 
