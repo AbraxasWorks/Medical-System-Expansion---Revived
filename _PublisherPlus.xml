@@ -3,11 +3,7 @@
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\.git</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\.vs</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\1.1\Patches\AndroidTiers</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\1.1\Patches\EliteBionicsFramework</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\1.1\Patches\NightVision</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\1.1\Patches\TheBirds_and_TheBees</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\1.1\Source</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\README.md</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Medical-System-Expansion---Revived\Source</exclude>
   </Excluded>
 </Configuration>
