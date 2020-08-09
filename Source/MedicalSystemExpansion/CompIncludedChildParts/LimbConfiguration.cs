@@ -34,7 +34,7 @@ namespace MSE2
 
             id = this.CountSimilar();
 
-            Log.Message( "limb config created with " + this.allRecords.Count + " compatible records: " + string.Join( ", ", this.allRecords.Select( bpr => bpr.Label + "(" + bpr.body.defName + ")" ) ) );
+            //Log.Message( "limb config created with " + this.allRecords.Count + " compatible records: " + string.Join( ", ", this.allRecords.Select( bpr => bpr.Label + "(" + bpr.body.defName + ")" ) ) );
         }
 
         protected bool HasCompatibleStructure ( BodyPartRecord bodyPartRecord )

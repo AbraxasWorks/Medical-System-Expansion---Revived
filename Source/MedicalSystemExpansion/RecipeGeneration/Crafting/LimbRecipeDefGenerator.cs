@@ -143,5 +143,22 @@ namespace MSE2
 
             //Log.Message( "Created " + tot + " recipes for " + def.defName );
         }
+
+        /// <summary>
+        /// Creates a shallow clone using Reflection
+        /// </summary>
+        /// <param name="recipe"></param>
+        /// <returns></returns>
+        public static RecipeDef ShallowClone ( this RecipeDef recipe )
+        {
+            RecipeDef newRecipe = new RecipeDef();
+
+            foreach ( var field in typeof( RecipeDef ).GetFields() )
+            {
+                field.SetValue( newRecipe, field.GetValue( recipe ) );
+            }
+
+            return newRecipe;
+        }
     }
 }

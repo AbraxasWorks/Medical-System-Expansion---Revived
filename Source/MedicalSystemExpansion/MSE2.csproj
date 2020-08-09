@@ -22,7 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>CS0649</NoWarn>
     <DebugSymbols>false</DebugSymbols>
@@ -31,9 +31,9 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.2\Assemblies\</OutputPath>
     <NoWarn>CS0649</NoWarn>
     <ErrorReport>prompt</ErrorReport>
     <DebugType>portable</DebugType>
