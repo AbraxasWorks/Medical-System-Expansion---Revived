@@ -8,19 +8,19 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				
-        <!-- hook hand -->
 
-        <li Class="PatchOperationAddModExtension">
-          <xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="HookHand"]</xpath>
-          <value>
-            <li Class="MSE2.IgnoreSubParts">
-              <ignoredSubParts>
-                <li>Finger</li>
-              </ignoredSubParts>
-            </li>
-          </value>
-        </li>
+				<!-- hook hand -->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="HookHand"]</xpath>
+					<value>
+						<li Class="MSE2.IgnoreSubParts">
+							<ignoredSubParts>
+								<li>Finger</li>
+							</ignoredSubParts>
+						</li>
+					</value>
+				</li>
 
 				<!-- steel arm -->
 

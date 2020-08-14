@@ -27,9 +27,6 @@ This is a rewrite of Medical System Expansion by Oreno.
 	</modDependencies>
 
 	<loadBefore>
-		<li>Ykara.EPOE</li>
-		<li>vat.epoeforked</li>
-		<li>Rah.RBSE</li>
 	</loadBefore>
 	<loadAfter>
 		<li>brrainz.harmony</li>
@@ -37,6 +34,10 @@ This is a rewrite of Medical System Expansion by Oreno.
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>UnlimitedHugs.HugsLib</li>
 		<li>CETeam.CombatExtended</li>
+		<!-- prosthetic mods -->
+		<li>Ykara.EPOE</li>
+		<li>vat.epoeforked</li>
+		<li>Rah.RBSE</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>Abraxas.MSERevived</li>

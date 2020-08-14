@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering - Forked</li>
+			<li>Expanded Prosthetics, Implants and Augmentations</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- bionic arm -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicForearm</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- bionic leg -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicLeg"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicFoot</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- bionic hand -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="BionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.HediffCompProperties_ModuleHolder">
+								<maxModules>1</maxModules>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicHand"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicFinger</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- bionic foot -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFoot"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>BionicToe</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!-- power arm -->
+
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerArm"]</xpath>
+					<value>
+						<comps>
+							<li Class="MSE2.CompProperties_IncludedChildParts">
+								<standardChildren>
+									<li>PowerForearm</li>
+									<li>BionicInternalSupport</li>
+								</standardChildren>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+
+				<!-- verbs -->
+
+				<!-- melee verbs on power hand -->
+
+				<li Class="PatchOperationRemove">
+					<!-- <success>Always</success> -->
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Combat Extended</li>
+					</mods>
+					<match Class="PatchOperationAddOrMerge">
+						<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
+						<value>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li Class="CombatExtended.ToolCE">
+											<label>bionic fist</label>
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>7</power>
+											<armorPenetrationBlunt>2.2</armorPenetrationBlunt>
+											<cooldownTime>1.20</cooldownTime>
+										</li>
+									</tools>
+								</li>
+							</comps>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddOrMerge">
+						<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerHand"]</xpath>
+						<value>
+							<comps>
+								<li Class="HediffCompProperties_VerbGiver">
+									<tools>
+										<li>
+											<label>bionic fist</label>
+											<capacities>
+												<li>Blunt</li>
+											</capacities>
+											<power>13</power>
+											<cooldownTime>1.85</cooldownTime>
+										</li>
+									</tools>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
