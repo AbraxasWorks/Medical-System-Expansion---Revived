@@ -1,65 +1,82 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!-- arm -->
+	<!-- arm -->
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.CompProperties_IncludedChildParts">
-          <standardChildren>
-            <li>ArchotechForearm</li>
-            <li>ArchotechInternalSupport</li>
-          </standardChildren>
-        </li>
-      </comps>
-    </value>
-  </Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.CompProperties_IncludedChildParts">
+					<standardChildren>
+						<li>ArchotechForearm</li>
+						<li>ArchotechInternalSupport</li>
+					</standardChildren>
+				</li>
+			</comps>
+		</value>
+	</Operation>
 
-  <!-- leg -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]/statBases/MarketValue</xpath>
+		<value><MarketValue>350</MarketValue></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechArm"]/statBases/Mass</xpath>
+		<value><Mass>0.6</Mass></value>
+	</Operation>
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.CompProperties_IncludedChildParts">
-          <standardChildren>
-            <li>ArchotechFoot</li>
-            <li>ArchotechInternalSupport</li>
-            <li>ArchotechInternalSupport</li>
-          </standardChildren>
-        </li>
-      </comps>
-    </value>
-  </Operation>
+	<!-- leg -->
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechLeg"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.HediffCompProperties_ModuleHolder">
-          <maxModules>1</maxModules>
-        </li>
-      </comps>
-    </value>
-  </Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.CompProperties_IncludedChildParts">
+					<standardChildren>
+						<li>ArchotechFoot</li>
+						<li>ArchotechInternalSupport</li>
+					</standardChildren>
+				</li>
+			</comps>
+		</value>
+	</Operation>
 
-  <!-- copy melee verbs -->
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechLeg"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.HediffCompProperties_ModuleHolder">
+					<maxModules>1</maxModules>
+				</li>
+			</comps>
+		</value>
+	</Operation>
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
-    <value>
-      <comps/>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddCopy">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
-    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
-  </Operation>
-  <Operation Class="PatchOperationRemove">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-  </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]/statBases/MarketValue</xpath>
+		<value><MarketValue>950</MarketValue></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartArchotechBase"][defName="ArchotechLeg"]/statBases/Mass</xpath>
+		<value><Mass>4.75</Mass></value>
+	</Operation>
+
+	<!-- copy melee verbs -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
+		<value>
+			<comps/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+	</Operation>
 
 
 </Patch>

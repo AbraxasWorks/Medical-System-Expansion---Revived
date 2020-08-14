@@ -26,12 +26,9 @@
     <descriptionHyperlinks>
       <RecipeDef>InstallArchotechInternalSupport</RecipeDef>
     </descriptionHyperlinks>
-    <thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
     <statBases>
-      <MarketValue>350</MarketValue>
-      <Mass>0.3</Mass>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
     </statBases>
   </ThingDef>
 
@@ -108,8 +105,8 @@
       <RecipeDef>InstallArchotechForearm</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>2100</MarketValue>
-      <Mass>4</Mass>
+      <MarketValue>350</MarketValue>
+      <Mass>0.7</Mass>
     </statBases>
     <comps>
       <li Class="MSE2.CompProperties_IncludedChildParts">
@@ -177,16 +174,12 @@
       <RecipeDef>InstallArchotechFoot</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>1350</MarketValue>
-      <Mass>1.5</Mass>
+      <MarketValue>450</MarketValue>
+      <Mass>0.8</Mass>
     </statBases>
     <comps>
       <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
-          <li>ArchotechToe</li>
-          <li>ArchotechToe</li>
-          <li>ArchotechToe</li>
-          <li>ArchotechToe</li>
           <li>ArchotechToe</li>
         </standardChildren>
       </li>
@@ -314,16 +307,12 @@
       <RecipeDef>InstallArchotechHand</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>1200</MarketValue>
-      <Mass>1</Mass>
+      <MarketValue>300</MarketValue>
+      <Mass>0.4</Mass>
     </statBases>
     <comps>
       <li Class="MSE2.CompProperties_IncludedChildParts">
         <standardChildren>
-          <li>ArchotechFinger</li>
-          <li>ArchotechFinger</li>
-          <li>ArchotechFinger</li>
-          <li>ArchotechFinger</li>
           <li>ArchotechFinger</li>
         </standardChildren>
       </li>
@@ -385,7 +374,7 @@
       <RecipeDef>InstallArchotechFinger</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
-      <MarketValue>300</MarketValue>
+      <MarketValue>250</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
   </ThingDef>
