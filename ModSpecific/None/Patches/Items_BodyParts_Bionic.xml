@@ -16,6 +16,22 @@
       </comps>
     </value>
   </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]/statBases</xpath>
+		<value><WorkToMake>2000</WorkToMake></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]/statBases/Mass</xpath>
+		<value><Mass>0.65</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicArm"]/costList</xpath>
+		<value><costList>
+			<Plasteel>2</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList></value>
+	</Operation>
 
   <!-- leg -->
 
@@ -44,6 +60,23 @@
       </comps>
     </value>
   </Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/statBases</xpath>
+		<value><WorkToMake>12000</WorkToMake></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/statBases/Mass</xpath>
+		<value><Mass>5.3</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/costList</xpath>
+		<value><costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList></value>
+	</Operation>
+
 
   <!-- copy melee verbs -->
 
