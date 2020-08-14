@@ -27,12 +27,12 @@
 			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>16</Steel>
+			<Steel>7</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
-			<Mass>1.5</Mass>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.4</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -101,11 +101,14 @@
 			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>1</Steel>
+			<Steel>5</Steel>
 		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
 		<statBases>
-			<WorkToMake>1000</WorkToMake>
-			<Mass>0.05</Mass>
+			<WorkToMake>600</WorkToMake>
+			<Mass>0.12</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -165,12 +168,12 @@
 			<RecipeDef>InstallSimpleProstheticHand</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>16</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>4</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<Mass>1</Mass>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.25</Mass>
 		</statBases>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
@@ -236,11 +239,15 @@
 			<RecipeDef>InstallSimpleProstheticFinger</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>2</Steel>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
 		<statBases>
-			<WorkToMake>1200</WorkToMake>
-			<Mass>0.1</Mass>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.15</Mass>
 		</statBases>
 	</ThingDef>
 

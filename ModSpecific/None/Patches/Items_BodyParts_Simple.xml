@@ -4,7 +4,7 @@
   <!-- arm -->
 
   <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/ThingDef[defName="SimpleProstheticArm"]</xpath>
+    <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
     <value>
       <comps>
         <li Class="MSE2.CompProperties_IncludedChildParts">
@@ -36,6 +36,22 @@
       </appliedOnFixedBodyParts>
     </value>
   </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/statBases</xpath>
+		<value><WorkToMake>5000</WorkToMake></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/statBases/Mass</xpath>
+		<value><Mass>3</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/costList</xpath>
+		<value><costList>
+			<Steel>21</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList></value>
+	</Operation>
 
   <!-- leg -->
 
@@ -63,6 +79,22 @@
       </li>
     </value>
   </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/statBases</xpath>
+		<value><WorkToMake>6000</WorkToMake></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/statBases/Mass</xpath>
+		<value><Mass>6</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/costList</xpath>
+		<value><costList>
+			<Steel>28</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList></value>
+	</Operation>
 
 
   <!-- arm verbs (CE removes them so i can only copy them when there is no CE) -->
