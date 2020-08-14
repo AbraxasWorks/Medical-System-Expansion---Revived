@@ -6,7 +6,8 @@
 
 	<!-- Dialog StatsReports -->
 
-	<StatsReport_IncludedSubParts>Added sub-parts value: {0}</StatsReport_IncludedSubParts>
+	<StatsReport_ValueOfSubParts>Includes {0}: {1}</StatsReport_ValueOfSubParts>
+	<StatsReport_MassOfSubParts>Contains {0}: {1}</StatsReport_MassOfSubParts>
 
 
 	<!-- CompIncludedChildParts -->
