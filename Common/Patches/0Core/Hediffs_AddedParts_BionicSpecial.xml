@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- powerclaw -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+
+</Patch>

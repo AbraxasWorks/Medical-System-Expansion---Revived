@@ -95,11 +95,6 @@
     <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
   </Operation>
 
-  <!-- powerclaw -->
-  <Operation Class="PatchOperationAddOrMergeCopy">
-    <xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="PowerClaw"]</xpath>
-    <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="PowerClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
-  </Operation>
 
 
 </Patch>
