@@ -2,7 +2,7 @@
 <LanguageData>
 
 	<!-- Recipe Generation -->	
-  <RecipeMakeForLimb>make {0} for {1}</RecipeMakeForLimb>
+  <RecipeMakeForLimb>make {1} {0}</RecipeMakeForLimb>
 
 	<!-- Dialog StatsReports -->
 
@@ -12,7 +12,7 @@
 
 	<!-- CompIncludedChildParts -->
 	<CompIncludedChildParts_InspectStringIncludes>Includes {0} direct subparts.</CompIncludedChildParts_InspectStringIncludes>
-	<CompIncludedChildParts_InspectStringTarget>Target: {0}</CompIncludedChildParts_InspectStringTarget>
+	<CompIncludedChildParts_InspectStringTarget>Limb version: {0}</CompIncludedChildParts_InspectStringTarget>
 	<CompIncludedChildParts_InspectStringMissing> ({0} missing parts)</CompIncludedChildParts_InspectStringMissing>
 	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
 	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>

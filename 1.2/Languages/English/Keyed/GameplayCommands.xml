@@ -9,9 +9,9 @@
 	<CommandAddExistingSubpart_CouldNotFindPart>Could not find a compatible part to add.</CommandAddExistingSubpart_CouldNotFindPart>
 
 	<!-- Command_SetTargetLimb -->
-	<Command_SetTargetLimb_Label>Set target limb</Command_SetTargetLimb_Label>
+	<Command_SetTargetLimb_Label>Select version</Command_SetTargetLimb_Label>
 	<Command_SetTargetLimb_Description>Choose what limb this will replace</Command_SetTargetLimb_Description>
-	<Command_SetTargetLimb_NoTarget>None</Command_SetTargetLimb_NoTarget>
+	<Command_SetTargetLimb_NoTarget>Segment</Command_SetTargetLimb_NoTarget>
 
 	<!-- Command_SplitOffSubpart -->
 	<CommandSplitOffSubpart_Label>Remove sub-part</CommandSplitOffSubpart_Label>
