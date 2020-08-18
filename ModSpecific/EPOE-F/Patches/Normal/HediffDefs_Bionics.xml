@@ -16,6 +16,29 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicArm"]/statBases</xpath>
+		<value>
+			<WorkToMake>2000</WorkToMake>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicArm"]/statBases/Mass</xpath>
+		<value>
+			<Mass>0.75</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicArm"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>10</Steel>
+				<Plasteel>10</Plasteel>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+
 	<!-- bionic leg -->
 
 	<Operation Class="PatchOperationAddOrMerge">
@@ -29,6 +52,29 @@
 					</standardChildren>
 				</li>
 			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicLeg"]/statBases</xpath>
+		<value>
+			<WorkToMake>12000</WorkToMake>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicLeg"]/statBases/Mass</xpath>
+		<value>
+			<Mass>5.3</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicLeg"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>25</Steel>
+				<Plasteel>30</Plasteel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+			</costList>
 		</value>
 	</Operation>
 
@@ -58,28 +104,52 @@
 		</value>
 	</Operation>
 
-
-	<!-- <Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/statBases</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicHand"]/statBases</xpath>
 		<value>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>4000</WorkToMake>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/statBases/Mass</xpath>
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicHand"]/statBases/Mass</xpath>
 		<value>
-			<Mass>5.3</Mass>
+			<Mass>0.6</Mass>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartBionicBase"][defName="BionicLeg"]/costList</xpath>
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicHand"]/costList</xpath>
 		<value>
 			<costList>
-				<Plasteel>8</Plasteel>
-				<ComponentSpacer>3</ComponentSpacer>
+				<Steel>7</Steel>
+				<Plasteel>7</Plasteel>
 			</costList>
 		</value>
-	</Operation> -->
+	</Operation>
+
+	<!-- bionic finger -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFinger"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToMake>1200</WorkToMake>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFinger"]/statBases/Mass</xpath>
+		<value>
+			<Mass>0.12</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFinger"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>2</Steel>
+				<Plasteel>2</Plasteel>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
 
 	<!-- bionic foot -->
 
@@ -93,6 +163,53 @@
 					</standardChildren>
 				</li>
 			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFoot"]/statBases</xpath>
+		<value>
+			<WorkToMake>4000</WorkToMake>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFoot"]/statBases/Mass</xpath>
+		<value>
+			<Mass>0.85</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicFoot"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>8</Steel>
+				<Plasteel>6</Plasteel>
+			</costList>
+		</value>
+	</Operation>
+	
+	<!-- bionic toe -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicToe"]/statBases/WorkToMake</xpath>
+		<value>
+			<WorkToMake>800</WorkToMake>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicToe"]/statBases/Mass</xpath>
+		<value>
+			<Mass>0.05</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="BionicToe"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>2</Steel>
+				<Plasteel>2</Plasteel>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</costList>
 		</value>
 	</Operation>
 

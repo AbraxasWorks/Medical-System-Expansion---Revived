@@ -22,15 +22,17 @@
 	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
 		<defName>BionicInternalSupport</defName>
 		<label>bionic internal support</label>
-		<description>An  artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+		<description>An artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicInternalSupport</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>6</Plasteel>
+			<Steel>6</Steel>
+			<Plasteel>7</Plasteel>
 		</costList>
 		<statBases>
-			<Mass>0.3</Mass>
+		<WorkToMake>3000</WorkToMake>
+			<Mass>0.8</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -104,18 +106,18 @@
 			<RecipeDef>InstallBionicForearm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>35</Steel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>10</Steel>
+			<Plasteel>12</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
+			<WorkToMake>5000</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>BionicHand</li>
-					<li>BionicInternalSupport</li>
 					<li>BionicInternalSupport</li>
 				</standardChildren>
 			</li>
@@ -242,7 +244,6 @@
 				<standardChildren>
 					<li>PowerHand</li>
 					<li>BionicInternalSupport</li>
-					<li>BionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -364,13 +365,11 @@
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>PowerClaw</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
 					<li>BionicFinger</li>
 				</standardChildren>
+				<alwaysInclude>
+					<li>PowerClaw</li>
+				</alwaysInclude>
 			</li>
 		</comps>
 	</ThingDef>
