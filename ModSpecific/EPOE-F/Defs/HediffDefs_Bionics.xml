@@ -239,6 +239,7 @@
 		<costList>
 			<Steel>7</Steel>
 			<Plasteel>7</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
@@ -263,10 +264,13 @@
 			<RecipeDef>InstallBionicFinger</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>2</Steel>
-			<Plasteel>2</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
 		<statBases>
 			<WorkToMake>1200</WorkToMake>
 			<Mass>0.12</Mass>
@@ -316,6 +320,7 @@
 		<costList>
 			<Steel>8</Steel>
 			<Plasteel>6</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
@@ -340,10 +345,13 @@
 			<RecipeDef>InstallBionicToe</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>2</Steel>
-			<Plasteel>2</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
 		<statBases>
 			<WorkToMake>800</WorkToMake>
 			<Mass>0.05</Mass>

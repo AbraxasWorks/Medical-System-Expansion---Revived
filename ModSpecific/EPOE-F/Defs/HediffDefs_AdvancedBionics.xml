@@ -77,6 +77,27 @@
 		</modExtensions>
 	</RecipeDef>
 
+	<!-- adv bionic arm -->
+	
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedBionicArm</defName>
+		<label>advanced bionic arm</label>
+		<description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+		<descriptionHyperlinks><RecipeDef>InstallAdvancedBionicArm</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>55</Steel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
 	<!-- adv bionic forearm -->
 
 	<HediffDef ParentName="addedPartAdvanced">

@@ -187,6 +187,7 @@
 		<costList>
 			<Steel>7</Steel>
 			<Plasteel>17</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>4600</WorkToMake>
