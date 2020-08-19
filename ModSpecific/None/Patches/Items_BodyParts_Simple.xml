@@ -1,129 +1,71 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!-- arm -->
+	<!-- arm -->
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.CompProperties_IncludedChildParts">
-          <standardChildren>
-            <li>SimpleProstheticHand</li>
-          </standardChildren>
-        </li>
-      </comps>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
-    <value>
-      <li Class="MSE2.IgnoreSubParts">
-        <ignoredSubParts>
-          <li>Humerus</li>
-          <li>Radius</li>
-        </ignoredSubParts>
-      </li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
-    <value>
-      <appliedOnFixedBodyParts>
-        <li>Arm</li>
-      </appliedOnFixedBodyParts>
-    </value>
-  </Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/statBases</xpath>
-		<value><WorkToMake>5000</WorkToMake></value>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
+		<value>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Humerus</li>
+					<li>Radius</li>
+				</ignoredSubParts>
+			</li>
+		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/statBases/Mass</xpath>
-		<value><Mass>3</Mass></value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticArm"]/costList</xpath>
-		<value><costList>
-			<Steel>21</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList></value>
+		<xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<appliedOnFixedBodyParts>
+				<li>Arm</li>
+			</appliedOnFixedBodyParts>
+		</value>
 	</Operation>
 
-  <!-- leg -->
+	<!-- leg -->
 
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.CompProperties_IncludedChildParts">
-          <standardChildren>
-            <li>SimpleProstheticFoot</li>
-          </standardChildren>
-        </li>
-      </comps>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>/Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
-    <value>
-      <li Class="MSE2.IgnoreSubParts">
-        <ignoredSubParts>
-          <li>Femur</li>
-          <li>Tibia</li>
-        </ignoredSubParts>
-      </li>
-    </value>
-  </Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/statBases</xpath>
-		<value><WorkToMake>6000</WorkToMake></value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/statBases/Mass</xpath>
-		<value><Mass>6</Mass></value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]/costList</xpath>
-		<value><costList>
-			<Steel>28</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList></value>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
+		<value>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Femur</li>
+					<li>Tibia</li>
+				</ignoredSubParts>
+			</li>
+		</value>
 	</Operation>
 
 
-  <!-- arm verbs (CE removes them so i can only copy them when there is no CE) -->
+	<!-- arm verbs (CE removes them so i can only copy them when there is no CE) -->
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Combat Extended</li>
-    </mods>
-    <nomatch Class="PatchOperationSequence">
-      <operations>
-        <!-- copy melee verbs -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- copy melee verbs -->
 
-        <li Class="PatchOperationAddOrMerge">
-          <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]</xpath>
-          <value>
-            <comps/>
-          </value>
-        </li>
-        <li Class="PatchOperationAddOrMergeCopy">
-          <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]/comps</xpath>
-          <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
-        </li>
+				<li Class="PatchOperationAddOrMerge">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]</xpath>
+					<value>
+						<comps/>
+					</value>
+				</li>
+				<li Class="PatchOperationAddOrMergeCopy">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]/comps</xpath>
+					<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+				</li>
 
-      </operations>
-    </nomatch>
-  </Operation>
+			</operations>
+		</nomatch>
+	</Operation>
 
 
 </Patch>

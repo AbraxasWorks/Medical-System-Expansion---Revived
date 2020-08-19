@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- foot -->
-
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>SimpleProstheticFoot</defName>
-		<label>prosthetic foot</label>
-		<labelNoun>a prosthetic foot</labelNoun>
-		<description>An installed prosthetic foot.</description>
-		<descriptionHyperlinks>
-			<ThingDef>SimpleProstheticFoot</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>0.85</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
+	<!-- arm -->
 
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>SimpleProstheticFoot</defName>
-		<label>prosthetic foot</label>
-		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
+		<defName>SimpleProstheticArm</defName>
+		<label>prosthetic arm</label>
+		<description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
+			<RecipeDef>InstallSimpleProstheticArm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>7</Steel>
+			<Steel>21</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>1.4</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>3</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -40,106 +24,11 @@
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>SimpleProstheticToe</li>
+					<li>SimpleProstheticHand</li>
 				</standardChildren>
 			</li>
 		</comps>
 	</ThingDef>
-
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-		<defName>InstallSimpleProstheticFoot</defName>
-		<label>install prosthetic foot</label>
-		<description>Install a prosthetic foot.</description>
-		<descriptionHyperlinks>
-			<ThingDef>SimpleProstheticFoot</ThingDef>
-		</descriptionHyperlinks>
-		<jobString>Installing prosthetic foot.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SimpleProstheticFoot</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SimpleProstheticFoot</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Foot</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>SimpleProstheticFoot</addsHediff>
-	</RecipeDef>
-
-	<!-- toe -->
-
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>SimpleProstheticToe</defName>
-		<label>prosthetic toe</label>
-		<labelNoun>a prosthetic toe</labelNoun>
-		<description>An installed prosthetic toe.</description>
-		<descriptionHyperlinks>
-			<ThingDef>SimpleProstheticToe</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>SimpleProstheticToe</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>0.80</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
-		<defName>SimpleProstheticToe</defName>
-		<label>prosthetic toe</label>
-		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<Steel>5</Steel>
-		</costList>
-		<recipeMaker>
-			<productCount>5</productCount>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>600</WorkToMake>
-			<Mass>0.12</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-		<defName>InstallSimpleProstheticToe</defName>
-		<label>install prosthetic toe</label>
-		<description>Install a prosthetic toe.</description>
-		<descriptionHyperlinks>
-			<ThingDef>SimpleProstheticToe</ThingDef>
-		</descriptionHyperlinks>
-		<jobString>Installing prosthetic toe.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SimpleProstheticToe</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SimpleProstheticToe</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Toe</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>SimpleProstheticToe</addsHediff>
-	</RecipeDef>
 
 	<!-- hand -->
 
@@ -278,6 +167,175 @@
 			<li>Finger</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticFinger</addsHediff>
+	</RecipeDef>
+
+	<!-- leg -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticLeg</defName>
+		<label>prosthetic leg</label>
+		<description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>28</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>6</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticFoot</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- foot -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticFoot</defName>
+		<label>prosthetic foot</label>
+		<labelNoun>a prosthetic foot</labelNoun>
+		<description>An installed prosthetic foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFoot</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticFoot</defName>
+		<label>prosthetic foot</label>
+		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticFoot</defName>
+		<label>install prosthetic foot</label>
+		<description>Install a prosthetic foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFoot</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFoot</addsHediff>
+	</RecipeDef>
+
+	<!-- toe -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticToe</defName>
+		<label>prosthetic toe</label>
+		<labelNoun>a prosthetic toe</labelNoun>
+		<description>An installed prosthetic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticToe</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticToe</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.80</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticToe</defName>
+		<label>prosthetic toe</label>
+		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<Mass>0.12</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticToe</defName>
+		<label>install prosthetic toe</label>
+		<description>Install a prosthetic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticToe</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic toe.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticToe</addsHediff>
 	</RecipeDef>
 
 </Defs>
