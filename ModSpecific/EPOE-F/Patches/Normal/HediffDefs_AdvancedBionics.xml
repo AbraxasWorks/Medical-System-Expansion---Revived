@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- adv bionic arm -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicArm"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>AdvancedBionicForearm</li>
-						<li>AdvancedBionicInternalSupport</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
 	<!-- adv bionic leg -->
 
 	<Operation Class="PatchOperationAddOrMerge">
@@ -25,20 +9,6 @@
 			<comps>
 				<li Class="MSE2.HediffCompProperties_ModuleHolder">
 					<maxModules>1</maxModules>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicLeg"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>AdvancedBionicFoot</li>
-						<li>AdvancedBionicInternalSupport</li>
-					</standardChildren>
 				</li>
 			</comps>
 		</value>
@@ -57,34 +27,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicHand"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>AdvancedBionicFinger</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-	<!-- adv bionic foot -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedBionicFoot"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>AdvancedBionicToe</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
 	<!-- adv power arm -->
 
 	<Operation Class="PatchOperationAddOrMerge">
@@ -94,7 +36,7 @@
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
 						<li>AdvancedPowerForearm</li>
-						<li>AdvancedBionicInternalSupport</li>
+						<li>BionicInternalSupport</li>
 					</standardChildren>
 				</li>
 			</comps>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- adv power forearm -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedPowerForearm</defName>
+		<label>advanced power arm</label>
+		<labelNoun>an advanced power forearm</labelNoun>
+		<description>An installed advanced power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedPowerForearm</defName>
+		<label>advanced power forearm</label>
+		<description>Even more unparalleled strength and dexterity, and with a sharp, retractable claws. Now it's the ultimate arm upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedPowerForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ScytherBlade>3</ScytherBlade>
+			<Steel>35</Steel>
+			<Plasteel>90</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedPowerHand</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+		<defName>CreateAdvancedPowerForearm</defName>
+		<label>assemble advanced power forearm</label>
+		<description>Upgrade power claw into power forearm.</description>
+		<jobString>Upgrading power claw.</jobString>
+		<products>
+			<AdvancedPowerForearm>1</AdvancedPowerForearm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PowerForearm</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
+		<defName>InstallAdvancedPowerForearm</defName>
+		<label>install advanced power forearm</label>
+		<description>Installs an advanced power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPowerForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerForearm</addsHediff>
+	</RecipeDef>
+
+	<!-- adv power hand -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedPowerHand</defName>
+		<label>advanced power hand</label>
+		<labelNoun>an advanced power hand</labelNoun>
+		<description>An installed advanced power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedPowerHand</defName>
+		<label>advanced power hand</label>
+		<description>Even more unparalleled strength and dexterity, and with a sharp, retractable claws. Now it's the ultimate hand upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedPowerHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<ScytherBlade>3</ScytherBlade>
+			<Steel>35</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3.5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedBionicFinger</li>
+				</standardChildren>
+				<alwaysInclude>
+					<li>PowerClaw</li>
+				</alwaysInclude>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+		<defName>CreateAdvancedPowerHand</defName>
+		<label>assemble advanced power hand</label>
+		<description>Upgrade power claw into advanced power hand.</description>
+		<jobString>Upgrading power claw.</jobString>
+		<products>
+			<AdvancedPowerHand>1</AdvancedPowerHand>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicHand</li>
+				<li>PowerClaw</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
+		<defName>InstallAdvancedPowerHand</defName>
+		<label>install advanced power hand</label>
+		<description>Installs an advanced power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPowerHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerHand</addsHediff>
+	</RecipeDef>
+
+</Defs>

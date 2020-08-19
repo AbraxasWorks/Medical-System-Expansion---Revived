@@ -1,101 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- internal support -->
-
-	<HediffDef ParentName="addedPartAdvanced">
-		<defName>AdvancedBionicInternalSupport</defName>
-		<label>advanced bionic internal support</label>
-		<labelNoun>an advanced bionic internal support</labelNoun>
-		<description>An installed advanced bionic internal support.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AdvancedBionicInternalSupport</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AdvancedBionicInternalSupport</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-			<partEfficiency>1.15</partEfficiency>
-		</addedPartProps>
-	</HediffDef>
-
-	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
-		<defName>AdvancedBionicInternalSupport</defName>
-		<label>advanced bionic internal support</label>
-		<description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>InstallAdvancedBionicInternalSupport</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<Plasteel>8</Plasteel>
-		</costList>
-		<statBases>
-			<Mass>0.3</Mass>
-		</statBases>
-	</ThingDef>
-
-	<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
-		<defName>InstallAdvancedBionicInternalSupport</defName>
-		<label>install advanced bionic internal support</label>
-		<description>Install an advanced bionic internal support.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AdvancedBionicInternalSupport</ThingDef>
-		</descriptionHyperlinks>
-		<jobString>Installing advanced bionic internal support.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AdvancedBionicInternalSupport</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AdvancedBionicInternalSupport</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Clavicle</li>
-			<li>Humerus</li>
-			<li>Radius</li>
-			<li>Femur</li>
-			<li>Tibia</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AdvancedBionicInternalSupport</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<whitelist>
-					<li>AdvancedPowerArm</li>
-					<li>AdvancedPowerForearm</li>
-					<li>AdvancedBionicArm</li>
-					<li>AdvancedBionicForearm</li>
-					<li>AdvancedBionicLeg</li>
-				</whitelist>
-			</li>
-		</modExtensions>
-	</RecipeDef>
 
 	<!-- adv bionic arm -->
-	
+
 	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
 		<defName>AdvancedBionicArm</defName>
 		<label>advanced bionic arm</label>
 		<description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
-		<descriptionHyperlinks><RecipeDef>InstallAdvancedBionicArm</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicArm</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
-			<Steel>55</Steel>
-			<Plasteel>60</Plasteel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<ComponentSpacer>5</ComponentSpacer>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<statBases>
-			<Mass>5</Mass>
+			<WorkToMake>3600</WorkToMake>
+			<Mass>0.75</Mass>
 		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedBionicForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- adv bionic forearm -->
@@ -129,19 +64,20 @@
 			<RecipeDef>InstallAdvancedBionicForearm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>35</Steel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<ComponentSpacer>4</ComponentSpacer>
+			<Steel>10</Steel>
+			<Plasteel>12</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<Mass>4</Mass>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.75</Mass>
 		</statBases>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>AdvancedBionicHand</li>
-					<li>AdvancedBionicInternalSupport</li>
+					<li>BionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -210,237 +146,140 @@
 		<addsHediff>AdvancedBionicForearm</addsHediff>
 	</RecipeDef>
 
-	<!-- adv power forearm -->
-
-	<HediffDef ParentName="addedPartAdvanced">
-		<defName>AdvancedPowerForearm</defName>
-		<label>advanced power arm</label>
-		<labelNoun>an advanced power forearm</labelNoun>
-		<description>An installed advanced power forearm.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AdvancedPowerForearm</ThingDef>
-		</descriptionHyperlinks>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-		<spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>2</maxModules>
-			</li>
-		</comps>
-	</HediffDef>
+	<!-- adv bionic hand -->
 
 	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
-		<defName>AdvancedPowerForearm</defName>
-		<label>advanced power forearm</label>
-		<description>Even more unparalleled strength and dexterity, and with a sharp, retractable claws. Now it's the ultimate arm upgrade!</description>
+		<defName>AdvancedBionicHand</defName>
+		<label>advanced bionic hand</label>
+		<description>Some people would chop their own hands off just to get this gorgeous piece of tech.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallAdvancedPowerForearm</RecipeDef>
+			<RecipeDef>InstallAdvancedBionicHand</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<ScytherBlade>3</ScytherBlade>
-			<Steel>35</Steel>
-			<Plasteel>90</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>5</ComponentSpacer>
+			<Steel>7</Steel>
+			<Plasteel>7</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<Mass>4</Mass>
+			<WorkToMake>7200</WorkToMake>
+			<Mass>0.6</Mass>
 		</statBases>
-		<techHediffsTags>
-			<li>AdvancedWeapon</li>
-		</techHediffsTags>
-		<comps>
-			<li Class="MSE2.CompProperties_IncludedChildParts">
-				<standardChildren>
-					<li>AdvancedPowerHand</li>
-					<li>AdvancedBionicInternalSupport</li>
-				</standardChildren>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
-		<defName>CreateAdvancedPowerForearm</defName>
-		<label>assemble advanced power forearm</label>
-		<description>Upgrade power claw into power forearm.</description>
-		<jobString>Upgrading power claw.</jobString>
-		<products>
-			<AdvancedPowerForearm>1</AdvancedPowerForearm>
-		</products>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>PowerForearm</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentSpacer</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>PowerForearm</li>
-				<li>ComponentSpacer</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
-		<defName>InstallAdvancedPowerForearm</defName>
-		<label>install advanced power forearm</label>
-		<description>Installs an advanced power forearm.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AdvancedPowerForearm</ThingDef>
-		</descriptionHyperlinks>
-		<jobString>Installing advanced power forearm.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AdvancedPowerForearm</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AdvancedPowerForearm</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Arm</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AdvancedPowerForearm</addsHediff>
-	</RecipeDef>
-
-	<!-- adv power hand -->
-
-	<HediffDef ParentName="addedPartAdvanced">
-		<defName>AdvancedPowerHand</defName>
-		<label>advanced power hand</label>
-		<labelNoun>an advanced power hand</labelNoun>
-		<description>An installed advanced power hand.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AdvancedPowerHand</ThingDef>
-		</descriptionHyperlinks>
-		<addedPartProps>
-			<partEfficiency>1.25</partEfficiency>
-		</addedPartProps>
-		<spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
-		<comps>
-			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
-		<defName>AdvancedPowerHand</defName>
-		<label>advanced power hand</label>
-		<description>Even more unparalleled strength and dexterity, and with a sharp, retractable claws. Now it's the ultimate hand upgrade!</description>
-		<descriptionHyperlinks>
-			<RecipeDef>InstallAdvancedPowerHand</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<ScytherBlade>3</ScytherBlade>
-			<Steel>35</Steel>
-			<Plasteel>70</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
-		<statBases>
-			<Mass>3.5</Mass>
-		</statBases>
-		<techHediffsTags>
-			<li>AdvancedWeapon</li>
-		</techHediffsTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>AdvancedBionicFinger</li>
 				</standardChildren>
-				<alwaysInclude>
-					<li>PowerClaw</li>
-				</alwaysInclude>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
-		<defName>CreateAdvancedPowerHand</defName>
-		<label>assemble advanced power hand</label>
-		<description>Upgrade power claw into advanced power hand.</description>
-		<jobString>Upgrading power claw.</jobString>
-		<products>
-			<AdvancedPowerHand>1</AdvancedPowerHand>
-		</products>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>BionicHand</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentSpacer</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>BionicHand</li>
-				<li>PowerClaw</li>
-				<li>Plasteel</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
+	<!-- adv bionic finger -->
 
-	<RecipeDef ParentName="EPIASurgeryAdvancedBionic">
-		<defName>InstallAdvancedPowerHand</defName>
-		<label>install advanced power hand</label>
-		<description>Installs an advanced power hand.</description>
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedBionicFinger</defName>
+		<label>advanced bionic finger</label>
+		<description>Advanced bionic finger. Delicate glitterworld sensors and high-speed wireless transmitters running through the thick, yet lightweight plasteel casing ensure the best precision and grip, far surpassing that of a natural or bionic finger. Powerful enough to crush rocks like ripe tomatoes.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AdvancedPowerHand</ThingDef>
+			<RecipeDef>InstallAdvancedBionicFinger</RecipeDef>
 		</descriptionHyperlinks>
-		<jobString>Installing advanced power hand.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AdvancedPowerHand</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.12</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- adv bionic leg -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedBionicLeg</defName>
+		<label>advanced bionic leg</label>
+		<description>Gotta go fast!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>25</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>21600</WorkToMake>
+			<Mass>5.3</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedBionicFoot</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
 			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AdvancedPowerHand</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Hand</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>AdvancedPowerHand</addsHediff>
-	</RecipeDef>
+		</comps>
+	</ThingDef>
+
+	<!-- adv bionic foot -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedBionicFoot</defName>
+		<label>advanced bionic foot</label>
+		<description>Dozens of servomotors grant faster movement and ultimate comfort.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>8</Steel>
+			<Plasteel>6</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>7200</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedBionicToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- adv bionic toe -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedBionicToe</defName>
+		<label>advanced bionic toe</label>
+		<description>Advanced bionic toe. Delicate glitterworld sensors and high-speed wireless transmitters running through the thick, yet lightweight plasteel casing make these toes unrivalled when it comes to movement and control, far surpassing that of natural or bionic toes. Glitterworld mechanite-traction technology ensures extreme speeds even on normally unfavourable terrain, such as water.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>1440</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
 
 </Defs>

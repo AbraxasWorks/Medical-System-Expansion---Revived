@@ -70,11 +70,18 @@
 		<modExtensions>
 			<li Class="MSE2.InstallationRestrictions">
 				<whitelist>
+					<!-- normal -->
 					<li>PowerArm</li>
 					<li>PowerForearm</li>
 					<li>BionicArm</li>
 					<li>BionicForearm</li>
 					<li>BionicLeg</li>
+					<!-- advanced -->
+					<li>AdvancedPowerArm</li>
+					<li>AdvancedPowerForearm</li>
+					<li>AdvancedBionicArm</li>
+					<li>AdvancedBionicForearm</li>
+					<li>AdvancedBionicLeg</li>
 				</whitelist>
 			</li>
 		</modExtensions>
