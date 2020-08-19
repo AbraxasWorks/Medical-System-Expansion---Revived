@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- adv power arm -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
+		<defName>AdvancedPowerArm</defName>
+		<label>advanced power arm</label>
+		<description>Even more unparalleled strength and dexterity, and with a sharp, retractable claws. Now it's the ultimate arm upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedPowerArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<!-- needs to be the same as in Hediffs_Power_ValueFix.xml -->
+			<Steel>10</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>4800</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedPowerForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
 	<!-- adv power forearm -->
 
 	<HediffDef ParentName="addedPartAdvanced">
@@ -32,14 +65,14 @@
 			<RecipeDef>InstallAdvancedPowerForearm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<ScytherBlade>3</ScytherBlade>
-			<Steel>35</Steel>
-			<Plasteel>90</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>5</ComponentSpacer>
+			<Steel>10</Steel>
+			<Plasteel>27</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
-			<Mass>4</Mass>
+			<WorkToMake>11200</WorkToMake>
+			<Mass>0.75</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>AdvancedWeapon</li>
@@ -146,14 +179,14 @@
 			<RecipeDef>InstallAdvancedPowerHand</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<ScytherBlade>3</ScytherBlade>
-			<Steel>35</Steel>
-			<Plasteel>70</Plasteel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Steel>7</Steel>
+			<Plasteel>17</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<Mass>3.5</Mass>
+			<WorkToMake>8400</WorkToMake>
+			<Mass>0.6</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>AdvancedWeapon</li>

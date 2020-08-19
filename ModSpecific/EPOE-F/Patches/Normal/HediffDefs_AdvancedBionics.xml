@@ -30,20 +30,6 @@
 	<!-- adv power arm -->
 
 	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedPowerArm"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>AdvancedPowerForearm</li>
-						<li>BionicInternalSupport</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddOrMerge">
 		<xpath>/Defs/HediffDef[@ParentName="addedPartAdvanced"][defName="AdvancedPowerArm"]</xpath>
 		<value>
 			<comps>

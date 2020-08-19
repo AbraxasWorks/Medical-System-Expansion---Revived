@@ -11,6 +11,7 @@
 			<RecipeDef>InstallPowerArm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
+			<!-- needs to be the same as in Hediffs_Power_ValueFix.xml -->
 			<Steel>10</Steel>
 			<Plasteel>20</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>

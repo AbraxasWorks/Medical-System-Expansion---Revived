@@ -25,24 +25,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedPowerForearm"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="AdvancedPowerArm"]/costList</xpath>
 					<value>
 						<costList>
-							<Steel>75</Steel>
-							<Plasteel>65</Plasteel>
-							<ComponentIndustrial>14</ComponentIndustrial>
-							<ComponentSpacer>4</ComponentSpacer>
-						</costList>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"][defName="AdvancedPowerHand"]/costList</xpath>
-					<value>
-						<costList>
-							<Steel>75</Steel>
-							<Plasteel>45</Plasteel>
-							<ComponentIndustrial>13</ComponentIndustrial>
-							<ComponentSpacer>2</ComponentSpacer>
+							<Steel>10</Steel>
+							<Plasteel>20</Plasteel>
+							<ComponentIndustrial>1</ComponentIndustrial>
+							<ComponentSpacer>1</ComponentSpacer>
 						</costList>
 					</value>
 				</li>
