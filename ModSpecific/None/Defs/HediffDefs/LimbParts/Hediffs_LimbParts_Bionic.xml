@@ -1,448 +1,508 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- internal support -->
+	<!-- internal support -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicInternalSupport</defName>
-    <label>bionic internal support</label>
-    <labelNoun>a bionic internal support</labelNoun>
-    <description>An installed bionic internal support.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicInternalSupport</ThingDef>
-    </descriptionHyperlinks>
-    <spawnThingOnRemoved>BionicInternalSupport</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <betterThanNatural>true</betterThanNatural>
-      <partEfficiency>1.10</partEfficiency>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicInternalSupport</defName>
+		<label>bionic internal support</label>
+		<labelNoun>a bionic internal support</labelNoun>
+		<description>An installed bionic internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicInternalSupport</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.10</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicInternalSupport</defName>
-    <label>bionic internal support</label>
-    <description>An advanced artificial internal support. Useful replacement to have on hand for when an internal component of a bionic prosthesis breaks.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicInternalSupport</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>2</Plasteel>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicInternalSupport</defName>
+		<label>bionic internal support</label>
+		<description>An advanced artificial internal support. Useful replacement to have on hand for when an internal component of a bionic prosthesis breaks.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicInternalSupport</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
-    <statBases>
-      <WorkToMake>3000</WorkToMake>
-      <Mass>0.8</Mass>
-    </statBases>
-  </ThingDef>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.8</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicInternalSupport</defName>
-    <label>install bionic internal support</label>
-    <description>Install a bionic internal support.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicInternalSupport</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic internal support.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicInternalSupport</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicInternalSupport</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Clavicle</li>
-      <li>Humerus</li>
-      <li>Radius</li>
-      <li>Femur</li>
-      <li>Tibia</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicInternalSupport</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <whitelist>
-          <li>BionicArm</li>
-          <li>BionicForearm</li>
-          <li>BionicLeg</li>
-        </whitelist>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicInternalSupport</defName>
+		<label>install bionic internal support</label>
+		<description>Install a bionic internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic internal support.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicInternalSupport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicInternalSupport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicInternalSupport</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>BionicArm</li>
+					<li>BionicForearm</li>
+					<li>BionicLeg</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
-  <!-- bionic forearm -->
+	<!-- bionic arm -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicForearm</defName>
-    <label>bionic arm</label>
-    <labelNoun>a bionic forearm</labelNoun>
-    <description>An installed bionic arm.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicForearm</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-    <spawnThingOnRemoved>BionicForearm</spawnThingOnRemoved>
-  </HediffDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicArm</defName>
+		<label>bionic arm</label>
+		<description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.65</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicForearm</defName>
-    <label>bionic forearm</label>
-    <description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicForearm</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>3</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.75</Mass>
-    </statBases>
-    <comps>
-      <li Class="MSE2.CompProperties_IncludedChildParts">
-        <standardChildren>
-          <li>BionicHand</li>
-          <li>BionicInternalSupport</li>
-        </standardChildren>
-      </li>
-    </comps>
-  </ThingDef>
+	<!-- bionic forearm -->
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicForearm</defName>
-    <label>install bionic forearm</label>
-    <description>Installs a bionic forearm.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicForearm</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic forearm.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicForearm</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicForearm</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Arm</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicForearm</addsHediff>
-  </RecipeDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicForearm</defName>
+		<label>bionic arm</label>
+		<labelNoun>a bionic forearm</labelNoun>
+		<description>An installed bionic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>BionicForearm</spawnThingOnRemoved>
+	</HediffDef>
 
-  <!-- foot -->
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicForearm</defName>
+		<label>bionic forearm</label>
+		<description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>3</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicHand</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicFoot</defName>
-    <label>bionic foot</label>
-    <labelNoun>a bionic foot</labelNoun>
-    <description>An installed bionic foot.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicFoot</ThingDef>
-    </descriptionHyperlinks>
-    <spawnThingOnRemoved>BionicFoot</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicForearm</defName>
+		<label>install bionic forearm</label>
+		<description>Installs a bionic forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicForearm</addsHediff>
+	</RecipeDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicFoot</defName>
-    <label>bionic foot</label>
-    <description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicFoot</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>2</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+	<!-- hand -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<labelNoun>a bionic hand</labelNoun>
+		<description>An installed bionic hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicHand</ThingDef>
+		</descriptionHyperlinks>
+		<!-- verbs added with patch -->
+		<spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 			<ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
-    <statBases>
-      <WorkToMake>4000</WorkToMake>
-      <Mass>0.85</Mass>
-    </statBases>
-    <comps>
-      <li Class="MSE2.CompProperties_IncludedChildParts">
-        <standardChildren>
-          <li>BionicToe</li>
-        </standardChildren>
-      </li>
-    </comps>
-  </ThingDef>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicFoot</defName>
-    <label>install bionic foot</label>
-    <description>Install a bionic foot.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicFoot</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic foot.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicFoot</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicFoot</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Foot</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicFoot</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicHand</defName>
+		<label>install bionic hand</label>
+		<description>Install a bionic hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicHand</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHand</addsHediff>
+	</RecipeDef>
 
-  <!-- toe -->
+	<!-- finger -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicToe</defName>
-    <label>bionic toe</label>
-    <labelNoun>a bionic toe</labelNoun>
-    <description>An installed bionic toe.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicToe</ThingDef>
-    </descriptionHyperlinks>
-    <spawnThingOnRemoved>BionicToe</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<labelNoun>a bionic finger</labelNoun>
+		<description>An installed bionic finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFinger</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicToe</defName>
-    <label>bionic toe</label>
-    <description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicToe</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>1</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
 		<recipeMaker>
 			<productCount>5</productCount>
 		</recipeMaker>
-    <statBases>
-      <WorkToMake>800</WorkToMake>
-      <Mass>0.05</Mass>
-    </statBases>
-  </ThingDef>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.12</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicToe</defName>
-    <label>install bionic toe</label>
-    <description>Install a bionic toe.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicToe</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic toe.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicToe</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicToe</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Toe</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicToe</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicFinger</defName>
+		<label>install bionic finger</label>
+		<description>Install a bionic finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFinger</addsHediff>
+	</RecipeDef>
 
-  <!-- hand -->
+	<!-- leg -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicHand</defName>
-    <label>bionic hand</label>
-    <labelNoun>a bionic hand</labelNoun>
-    <description>An installed bionic hand.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicHand</ThingDef>
-    </descriptionHyperlinks>
-    <!-- verbs added with patch -->
-    <spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-    <comps>
-      <li Class="MSE2.HediffCompProperties_ModuleHolder">
-        <maxModules>1</maxModules>
-      </li>
-    </comps>
-  </HediffDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicLeg</defName>
+		<label>bionic leg</label>
+		<description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>5.3</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFoot</li>
+					<li>BionicInternalSupport</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicHand</defName>
-    <label>bionic hand</label>
-    <description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicHand</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>2</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+	<!-- foot -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<labelNoun>a bionic foot</labelNoun>
+		<description>An installed bionic foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFoot</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicFoot</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>2</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
 			<ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
-    <statBases>
-      <WorkToMake>4000</WorkToMake>
-      <Mass>0.6</Mass>
-    </statBases>
-    <comps>
-      <li Class="MSE2.CompProperties_IncludedChildParts">
-        <standardChildren>
-          <li>BionicFinger</li>
-        </standardChildren>
-      </li>
-    </comps>
-  </ThingDef>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicHand</defName>
-    <label>install bionic hand</label>
-    <description>Install a bionic hand.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicHand</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic hand.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicHand</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicHand</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Hand</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicHand</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicFoot</defName>
+		<label>install bionic foot</label>
+		<description>Install a bionic foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFoot</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicFoot</addsHediff>
+	</RecipeDef>
 
-  <!-- finger -->
+	<!-- toe -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicFinger</defName>
-    <label>bionic finger</label>
-    <labelNoun>a bionic finger</labelNoun>
-    <description>An installed bionic finger.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicFinger</ThingDef>
-    </descriptionHyperlinks>
-    <spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1.25</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<labelNoun>a bionic toe</labelNoun>
+		<description>An installed bionic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicToe</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicToe</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicFinger</defName>
-    <label>bionic finger</label>
-    <description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallBionicFinger</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>2</Plasteel>
-      <ComponentSpacer>1</ComponentSpacer>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>1</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
+		</costList>
 		<recipeMaker>
 			<productCount>5</productCount>
 		</recipeMaker>
-    <statBases>
-      <WorkToMake>1200</WorkToMake>
-      <Mass>0.12</Mass>
-    </statBases>
-  </ThingDef>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-    <defName>InstallBionicFinger</defName>
-    <label>install bionic finger</label>
-    <description>Install a bionic finger.</description>
-    <descriptionHyperlinks>
-      <ThingDef>BionicFinger</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing bionic finger.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicFinger</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>BionicFinger</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Finger</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicFinger</addsHediff>
-  </RecipeDef>
-
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicToe</defName>
+		<label>install bionic toe</label>
+		<description>Install a bionic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicToe</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic toe.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicToe</addsHediff>
+	</RecipeDef>
 
 </Defs>
