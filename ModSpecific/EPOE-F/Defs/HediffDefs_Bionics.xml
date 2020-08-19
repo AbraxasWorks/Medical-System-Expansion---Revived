@@ -31,7 +31,7 @@
 			<Plasteel>7</Plasteel>
 		</costList>
 		<statBases>
-		<WorkToMake>3000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>0.8</Mass>
 		</statBases>
 	</ThingDef>
@@ -79,6 +79,37 @@
 			</li>
 		</modExtensions>
 	</RecipeDef>
+
+	<!-- bionic arm -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicArm</defName>
+		<label>bionic arm</label>
+		<description>One of the most sophisticated arm replacements. Gives extreme strength to its user.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<!-- bionic forearm -->
 
@@ -195,6 +226,129 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicForearm</addsHediff>
 	</RecipeDef>
+
+	<!-- bionic hand -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicHand</defName>
+		<label>bionic hand</label>
+		<description>Allows the user to perform tasks even faster than with regular hands.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<Plasteel>7</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- bionic finger -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicFinger</defName>
+		<label>bionic finger</label>
+		<description>A replacement finger allowing for slightly faster and more precise movement.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>2</Steel>
+			<Plasteel>2</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.12</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!-- bionic leg -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicLeg</defName>
+		<label>bionic leg</label>
+		<description>Bionic leg uses cutting-edge technology to give its owner extreme walking comfort and strength.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>25</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>5.3</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFoot</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- bionic foot -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicFoot</defName>
+		<label>bionic foot</label>
+		<description>This prosthesis grants faster walking without stumbling all the time.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>8</Steel>
+			<Plasteel>6</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- bionic toe -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>BionicToe</defName>
+		<label>bionic toe</label>
+		<description>A replacement toe which lets the wearer grip the ground slightly better.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>2</Steel>
+			<Plasteel>2</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
 
 	<!-- power forearm -->
 
