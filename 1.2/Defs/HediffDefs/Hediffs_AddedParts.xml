@@ -5,11 +5,12 @@
 	<HediffDef Name="MSE_AddedBodyPartBase" Abstract="True">
 		<hediffClass>Hediff_AddedPart</hediffClass>
 		<isBad>false</isBad>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_DontHealInjury" />
-		</modExtensions>		
-    		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		</modExtensions>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 	</HediffDef>
 	<!--===================== END ======================-->
 
@@ -26,6 +27,7 @@
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_ImplantSystem" />
 		</modExtensions>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 	</HediffDef>
 	<!--===================== END ======================-->
 
@@ -33,7 +35,8 @@
 	<!--==================== Basic =====================-->
 	<HediffDef Name="MSE_AddedBodyPartBasic" ParentName="MSE_AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(141, 110, 99)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -47,7 +50,8 @@
 	<!--=================== Simple =====================-->
 	<HediffDef Name="MSE_AddedBodyPartSimpleBase" ParentName="MSE_AddedBodyPartBase" Abstract="True">
 		<defaultLabelColor>(64, 196, 255)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
@@ -61,7 +65,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartSimple" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -72,7 +77,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartSimple_Organ" ParentName="MSE_AddedBodyPartSimpleBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -86,7 +92,8 @@
 	<!--=================== Bionic =====================-->
 	<HediffDef Name="MSE_AddedBodyPartBionicBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(83, 109, 254)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
@@ -99,7 +106,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionic" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -111,7 +119,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionic_Organ" ParentName="MSE_AddedBodyPartBionicBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -124,7 +133,8 @@
 
 	<HediffDef Name="MSE_AddedBodyPartBionicSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(48, 79, 254)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
@@ -137,7 +147,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionicSpecial" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -149,7 +160,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartBionicSpecial_Organ" ParentName="MSE_AddedBodyPartBionicSpecialBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -163,7 +175,8 @@
 	<!--================== Archotech ===================-->
 	<HediffDef Name="MSE_AddedBodyPartArchotechBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(224, 64, 251)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
@@ -176,7 +189,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotech" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -188,7 +202,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotech_Organ" ParentName="MSE_AddedBodyPartArchotechBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -201,7 +216,8 @@
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecialBase" ParentName="MSE_AddedBodyPartSystemBase" Abstract="True">
 		<defaultLabelColor>(170, 0, 255)</defaultLabelColor>
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<stages>
 			<li>
 				<statOffsets>
@@ -214,7 +230,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
@@ -226,7 +243,8 @@
 	</HediffDef>
 
 	<HediffDef Name="MSE_AddedBodyPartArchotechSpecial_Organ" ParentName="MSE_AddedBodyPartArchotechSpecialBase" Abstract="True">
-		<comps /> <!-- Makes patching easier -->
+		<comps />
+		<!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_AdditionalHediff">
 				<hediffsToAdd>
