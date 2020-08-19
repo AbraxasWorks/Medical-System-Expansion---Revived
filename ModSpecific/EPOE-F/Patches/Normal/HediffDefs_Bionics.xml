@@ -14,23 +14,6 @@
 		</value>
 	</Operation>
 
-	<!-- power arm -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerArm"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>PowerForearm</li>
-						<li>BionicInternalSupport</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-
 	<!-- verbs -->
 
 	<!-- melee verbs on power hand -->

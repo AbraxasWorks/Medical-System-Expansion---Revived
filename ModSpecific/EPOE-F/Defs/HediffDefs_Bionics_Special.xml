@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- power arm -->
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>PowerArm</defName>
+		<label>power arm</label>
+		<description>Unparalleled strength and dexterity, and with retractable claws. This is the ultimate arm upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPowerArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>PowerForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- power forearm -->
+
+	<HediffDef ParentName="addedPartBionics">
+		<defName>PowerForearm</defName>
+		<label>power arm</label>
+		<labelNoun>a power forearm</labelNoun>
+		<description>An installed power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.1</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>PowerForearm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>PowerForearm</defName>
+		<label>power forearm</label>
+		<description>Unparalleled strength and dexterity, and with retractable claws. This is the ultimate forearm upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPowerForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>27</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>6200</WorkToMake>
+			<Mass>0.75</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>PowerHand</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="EPIA_RecipeUpgradeBionic">
+		<defName>CreatePowerForearm</defName>
+		<label>assemble power forearm</label>
+		<description>Upgrade power claw into power forearm.</description>
+		<jobString>Upgrading power claw.</jobString>
+		<products>
+			<PowerForearm>1</PowerForearm>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicForearm</li>
+				<li>PowerClaw</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallPowerForearm</defName>
+		<label>install power forearm</label>
+		<description>Installs a power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing power forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PowerForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerForearm</addsHediff>
+	</RecipeDef>
+
+	<!-- power hand -->
+
+	<HediffDef ParentName="addedPartBionics">
+		<defName>PowerHand</defName>
+		<label>power hand</label>
+		<labelNoun>a power hand</labelNoun>
+		<description>An installed power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.10</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>PowerHand</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
+		<defName>PowerHand</defName>
+		<label>power hand</label>
+		<description>Unparalleled strength and dexterity, and with retractable claws. This is the ultimate hand upgrade!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPowerHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<Plasteel>17</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>4600</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>BionicFinger</li>
+				</standardChildren>
+				<alwaysInclude>
+					<li>PowerClaw</li>
+				</alwaysInclude>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="EPIA_RecipeUpgradeBionic">
+		<defName>CreatePowerHand</defName>
+		<label>assemble power hand</label>
+		<description>Upgrade power claw into power hand.</description>
+		<jobString>Upgrading power claw.</jobString>
+		<products>
+			<PowerHand>1</PowerHand>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicHand</li>
+				<li>PowerClaw</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallPowerHand</defName>
+		<label>install power hand</label>
+		<description>Installs a power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing power hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PowerHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerHand</addsHediff>
+	</RecipeDef>
+
+</Defs>

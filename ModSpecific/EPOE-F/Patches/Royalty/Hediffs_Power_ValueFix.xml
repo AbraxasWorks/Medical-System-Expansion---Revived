@@ -15,22 +15,12 @@
 					<xpath>Defs/ThingDef[@Name="BodyPartProstheticImperialBase"]</xpath>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerForearm"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="PowerArm"]/costList</xpath>
 					<value>
 						<costList>
-							<Steel>75</Steel>
-							<Plasteel>65</Plasteel>
-							<ComponentIndustrial>14</ComponentIndustrial>
-						</costList>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"][defName="PowerHand"]/costList</xpath>
-					<value>
-						<costList>
-							<Steel>75</Steel>
-							<Plasteel>45</Plasteel>
-							<ComponentIndustrial>13</ComponentIndustrial>
+							<Steel>10</Steel>
+							<Plasteel>20</Plasteel>
+							<ComponentIndustrial>1</ComponentIndustrial>
 						</costList>
 					</value>
 				</li>
