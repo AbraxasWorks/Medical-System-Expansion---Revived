@@ -6,6 +6,7 @@
 		<hediffClass>Hediff_Implant</hediffClass>
 		<isBad>false</isBad>
 		<comps /> <!-- Makes patching easier -->
+    		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 	</HediffDef>
 	<!--===================== END ======================-->
 
