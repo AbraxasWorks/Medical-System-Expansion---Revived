@@ -8,7 +8,8 @@
 		<comps /> <!-- Makes patching easier -->
 		<modExtensions>
 			<li Class="OrenoMSE.MSE_DontHealInjury" />
-		</modExtensions>
+		</modExtensions>		
+    		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
 	</HediffDef>
 	<!--===================== END ======================-->
 
