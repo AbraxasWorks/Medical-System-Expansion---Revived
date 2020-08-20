@@ -215,7 +215,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>BionicHand</li>
+						<li>PowerHand</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
