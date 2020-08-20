@@ -3,19 +3,6 @@
 
 	<!-- arm -->
 
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[defName="SimpleProstheticArm"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>SimpleProstheticHand</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
 		<value>
@@ -42,19 +29,6 @@
 	</Operation>
 
 	<!-- leg -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticLeg"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>SimpleProstheticFoot</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
@@ -96,36 +70,6 @@
 						</operations>
 					</nomatch>
 				</li> -->
-
-	<!-- Simple hand -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticHand"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>SimpleProstheticFinger</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-	<!-- Simple foot -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase"][defName="SimpleProstheticFoot"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>SimpleProstheticToe</li>
-					</standardChildren>
-				</li>
-			</comps>
-		</value>
-	</Operation>
 
 	<!-- scyther blade -->
 

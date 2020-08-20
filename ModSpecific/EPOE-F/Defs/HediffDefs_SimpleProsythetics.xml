@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- arm -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticArm</defName>
+		<label>prosthetic arm</label>
+		<description>Simple but durable arm prosthesis.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>38</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticHand</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- hand -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticHand</defName>
+		<label>prosthetic hand</label>
+		<description>Replaces missing hands. Way more comfortable and less frightening than the hook hand.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- finger -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticFinger</defName>
+		<label>prosthetic finger</label>
+		<description>Archaic and crude replacement for lost fingers. Not terribly efficient and certainly not comfortable, but gets the job done.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!-- leg -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticLeg</defName>
+		<label>prosthetic leg</label>
+		<description>Simple prosthesis made to replace a missing leg. Not very comfortable but quite efficient.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticFoot</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- foot -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticFoot</defName>
+		<label>prosthetic foot</label>
+		<description>Replaces missing feet. Not as cheap as a wood log.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>8</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- toe -->
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticToe</defName>
+		<label>prosthetic toe</label>
+		<description>Archaic and crude replacement for lost toes. Inefficient and uncomfortable, they generate a lot of noise while walking, but they get the job done.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+
+</Defs>
