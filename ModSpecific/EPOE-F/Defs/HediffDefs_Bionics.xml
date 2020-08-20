@@ -185,7 +185,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>40</count>
+				<count>43</count>
 			</li>
 			<li>
 				<filter>
@@ -284,6 +284,50 @@
 		</statBases>
 	</ThingDef>
 
+	<RecipeDef ParentName="EPIA_RecipeUpgradeBionic">
+		<defName>EPIA_UpgradeBionicFinger</defName>
+		<label>assemble bionic finger</label>
+		<description>Upgrade prosthetic finger into bionic finger.</description>
+		<jobString>Upgrading prosthetic finger.</jobString>
+		<workAmount>10000</workAmount>
+		<products>
+			<BionicFinger>5</BionicFinger>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFinger</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticFinger</li>
+				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
 	<!-- bionic leg -->
 
 	<ThingDef ParentName="EPIA_UpgradeBodyPartBionicBase">
@@ -364,5 +408,49 @@
 			<Mass>0.05</Mass>
 		</statBases>
 	</ThingDef>
+	
+	<RecipeDef ParentName="EPIA_RecipeUpgradeBionic">
+		<defName>EPIA_UpgradeBionicToe</defName>
+		<label>assemble bionic toe</label>
+		<description>Upgrade prosthetic toe into bionic toe.</description>
+		<jobString>Upgrading prosthetic toe.</jobString>
+		<workAmount>10000</workAmount>
+		<products>
+			<BionicToe>5</BionicToe>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticToe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticToe</li>
+				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
 
 </Defs>

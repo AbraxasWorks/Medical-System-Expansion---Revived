@@ -198,6 +198,41 @@
 		</statBases>
 	</ThingDef>
 
+	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+		<defName>EPIA_UpgradeAdvancedBionicFinger</defName>
+		<label>assemble advanced bionic finger</label>
+		<description>Upgrade bionic finger into advanced bionic finger.</description>
+		<jobString>Upgrading bionic finger.</jobString>
+		<workAmount>10000</workAmount>
+		<products>
+			<AdvancedBionicFinger>5</AdvancedBionicFinger>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicFinger</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
 	<!-- adv bionic leg -->
 
 	<ThingDef ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase">
@@ -281,5 +316,40 @@
 			<Mass>0.05</Mass>
 		</statBases>
 	</ThingDef>
+
+	<RecipeDef ParentName="EPIA_RecipeUpgradeAdvanced">
+		<defName>EPIA_UpgradeAdvancedBionicToe</defName>
+		<label>assemble advanced bionic toe</label>
+		<description>Upgrade bionic toe into advanced bionic toe.</description>
+		<jobString>Upgrading bionic toe.</jobString>
+		<workAmount>10000</workAmount>
+		<products>
+			<AdvancedBionicToe>5</AdvancedBionicToe>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicToe</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicToe</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
 
 </Defs>

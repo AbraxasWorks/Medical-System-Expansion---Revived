@@ -27,6 +27,22 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeAdvanced"][defName="CreateAdvancedBionicHand"]/ingredients/li[filter/thingDefs/li="ComponentSpacer"]/count</xpath>
+		<value>
+			<count>2</count>
+		</value>
+	</Operation>
+
+	<!-- adv bionic foot -->	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeAdvanced"][defName="CreateAdvancedBionicFoot"]/ingredients/li[filter/thingDefs/li="ComponentSpacer"]/count</xpath>
+		<value>
+			<count>2</count>
+		</value>
+	</Operation>
+
 	<!-- adv power arm -->
 
 	<Operation Class="PatchOperationAddOrMerge">

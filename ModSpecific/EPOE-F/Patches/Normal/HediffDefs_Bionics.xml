@@ -14,6 +14,23 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeBionic"][defName="CreateBionicHand"]/ingredients/li[filter/thingDefs/li="Plasteel"]/count</xpath>
+		<value>
+			<count>17</count>
+		</value>
+	</Operation>
+
+	<!-- bionic foot -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeBionic"][defName="CreateBionicFoot"]/ingredients/li[filter/thingDefs/li="Plasteel"]/count</xpath>
+		<value>
+			<count>16</count>
+		</value>
+	</Operation>
+
+
 	<!-- verbs -->
 
 	<!-- melee verbs on power hand -->
