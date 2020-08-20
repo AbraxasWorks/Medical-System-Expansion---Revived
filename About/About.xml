@@ -37,6 +37,7 @@ This is a rewrite of Medical System Expansion by Oreno.
 		<!-- prosthetic mods -->
 		<li>Ykara.EPOE</li>
 		<li>vat.epoeforked</li>
+		<li>vat.epoeforkedroyalty</li>
 		<li>Rah.RBSE</li>
 	</loadAfter>
 	<incompatibleWith>
