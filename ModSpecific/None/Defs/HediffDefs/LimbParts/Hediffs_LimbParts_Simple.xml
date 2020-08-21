@@ -135,7 +135,7 @@
 			<productCount>5</productCount>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>800</WorkToMake>
+			<WorkToMake>3800</WorkToMake>
 			<Mass>0.15</Mass>
 		</statBases>
 	</ThingDef>
@@ -304,7 +304,7 @@
 			<productCount>5</productCount>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>600</WorkToMake>
+			<WorkToMake>2800</WorkToMake>
 			<Mass>0.12</Mass>
 		</statBases>
 	</ThingDef>

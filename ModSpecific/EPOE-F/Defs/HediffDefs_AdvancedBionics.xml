@@ -193,7 +193,7 @@
 			<productCount>5</productCount>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>2200</WorkToMake>
+			<WorkToMake>10000</WorkToMake>
 			<Mass>0.12</Mass>
 		</statBases>
 	</ThingDef>
@@ -203,7 +203,7 @@
 		<label>assemble advanced bionic finger</label>
 		<description>Upgrade bionic finger into advanced bionic finger.</description>
 		<jobString>Upgrading bionic finger.</jobString>
-		<workAmount>10000</workAmount>
+		<workAmount>7000</workAmount>
 		<products>
 			<AdvancedBionicFinger>5</AdvancedBionicFinger>
 		</products>
@@ -312,7 +312,7 @@
 			<productCount>5</productCount>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>1440</WorkToMake>
+			<WorkToMake>7000</WorkToMake>
 			<Mass>0.05</Mass>
 		</statBases>
 	</ThingDef>
@@ -322,7 +322,7 @@
 		<label>assemble advanced bionic toe</label>
 		<description>Upgrade bionic toe into advanced bionic toe.</description>
 		<jobString>Upgrading bionic toe.</jobString>
-		<workAmount>10000</workAmount>
+		<workAmount>5000</workAmount>
 		<products>
 			<AdvancedBionicToe>5</AdvancedBionicToe>
 		</products>

@@ -15,7 +15,8 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<Mass>5</Mass>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>4</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -43,7 +44,8 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<Mass>3</Mass>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -70,8 +72,8 @@
 			<Steel>2</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
-			<Mass>0.6</Mass>
+			<WorkToMake>600</WorkToMake>
+			<Mass>0.25</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -92,7 +94,8 @@
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<Mass>8</Mass>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>5.5</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -120,7 +123,8 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<Mass>3</Mass>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1.5</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
@@ -147,8 +151,8 @@
 			<Steel>2</Steel>
 		</costList>
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
-			<Mass>0.6</Mass>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.2</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
