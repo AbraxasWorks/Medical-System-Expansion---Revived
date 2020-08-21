@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
-  <v1.1>
-    <li>Common</li>
-    <li>1.1</li>
-  </v1.1>
-  <v1.2>
-    <li>Common</li>
+	<v1.1>
+		<li>Common</li>
+		<li>1.1</li>
+	</v1.1>
+	<v1.2>
+		<li>Common</li>
+
 		<li IfModNotActive="vat.epoeforked">ModSpecific\None</li>
 		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
-    <li>1.2</li>
-  </v1.2>
+
+		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
+
+		<li>1.2</li>
+	</v1.2>
 </loadFolders>

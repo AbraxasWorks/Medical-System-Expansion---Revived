@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- drill -->
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>DrillArm</defName>
+		<label>drill arm</label>
+		<description>A mechanical arm replacement for speeding up mining. It has a built-in snake drill, which allows the miner to rapidly find and exploit weak lines in the rock. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDrillArm</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>32</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>MechanicalManipulator</li>
+					<li>MechanicalInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- replacement internal support -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>MechanicalInternalSupport</defName>
+		<label>mechanical internal support</label>
+		<labelNoun>a mechanical internal support</labelNoun>
+		<description>An internal mechanical internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>MechanicalInternalSupport</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>MechanicalInternalSupport</defName>
+		<label>mechanical internal support</label>
+		<description>A mechanical internal support. Useful replacement part to have when some internal component of a drill arm is broken.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallMechanicalInternalSupport</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>8</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallMechanicalInternalSupport</defName>
+		<label>install mechanical internal support</label>
+		<description>Install a mechanical internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing replacement mechanical internal support.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalInternalSupport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalInternalSupport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalInternalSupport</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>DrillArm</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Mechanical Manipulator -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>MechanicalManipulator</defName>
+		<label>mechanical manipulator</label>
+		<labelNoun>a mechanical manipulator</labelNoun>
+		<description>An installed mechanical manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalManipulator</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.90</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>MechanicalManipulator</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>MechanicalManipulator</defName>
+		<label>mechanical manipulator</label>
+		<description>A general-purpose manipulator, not as good as normal hand but better than nothing. Can only be installed on a drill arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DrillArm</ThingDef>
+			<RecipeDef>InstallMechanicalManipulator</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>MechanicalFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallMechanicalManipulator</defName>
+		<label>install mechanical manipulator</label>
+		<description>Install a mechanical manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalManipulator</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mechanical manipulator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalManipulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalManipulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalManipulator</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>DrillArm</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Mechanical Finger -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>MechanicalFinger</defName>
+		<label>mechanical finger</label>
+		<labelNoun>a mechanical finger</labelNoun>
+		<description>An installed mechanical finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalFinger</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.90</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>MechanicalFinger</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>MechanicalFinger</defName>
+		<label>mechanical finger</label>
+		<description>A general purpose mechanical finger. Can only be installed on a mechanical manipulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalManipulator</ThingDef>
+			<RecipeDef>InstallMechanicalFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<productCount>5</productCount>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallMechanicalFinger</defName>
+		<label>install mechanical finger</label>
+		<description>Install a mechanical finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mechanical finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalFinger</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>MechanicalManipulator</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- field hand -->
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>FieldHand</defName>
+		<label>field hand</label>
+		<description>This mechanical hand replacement is made to speed up the sowing and harvesting tasks of a farmer. Multiple telescoping finger-like protrusions can simultaneously harvest from several points on the same plant, or precisely sow several holes at once. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallFieldHand</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>FieldFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Field Fingers -->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>FieldFinger</defName>
+		<label>field finger</label>
+		<labelNoun>a field finger</labelNoun>
+		<description>An installed field finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FieldFinger</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PlantWorkSpeed>0.15</PlantWorkSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>FieldFinger</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticImperialBase">
+		<defName>FieldFinger</defName>
+		<label>field finger</label>
+		<description>This mechanical finger replacement is made to speed up the sowing and harvesting tasks of a farmer, it can harvest from several points on the same plant, or precisely sow several holes at once. Can only be installed on a field hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FieldHand</ThingDef>
+			<RecipeDef>InstallFieldFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>8</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallFieldFinger</defName>
+		<label>install field finger</label>
+		<description>Install a field finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>FieldFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing field finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FieldFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>FieldFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>FieldFinger</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>FieldHand</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

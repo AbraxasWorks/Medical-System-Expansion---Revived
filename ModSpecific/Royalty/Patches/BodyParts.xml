@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Field Hand -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName="FieldHand"]/stages/li/statOffsets/PlantWorkSpeed</xpath>
+		<value>
+			<PlantWorkSpeed>1.1</PlantWorkSpeed>
+		</value>
+	</Operation>
+
+
+	<!-- copy melee verbs from basegame -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="HandTalonModule"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="HandTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="ElbowBladeModule"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="ElbowBlade"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="KneeSpikeModule"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="KneeSpike"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="VenomTalonModule"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="VenomTalon"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+
+
+	<!-- Add module recipe hyperlinks to thingdefs -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[defName="HandTalon"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<RecipeDef>InstallHandTalonModule</RecipeDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[defName="ElbowBlade"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<RecipeDef>InstallElbowBladeModule</RecipeDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[defName="KneeSpike"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<RecipeDef>InstallKneeSpikeModule</RecipeDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[defName="VenomTalon"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<RecipeDef>InstallVenomTalonModule</RecipeDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+
+	<!-- replace icon -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="HandTalon" or defName="ElbowBlade" or defName="KneeSpike" or defName="VenomTalon"]</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.80</drawSize>
+			</graphicData>
+		</value>
+	</Operation>
+
+
+</Patch>
+
