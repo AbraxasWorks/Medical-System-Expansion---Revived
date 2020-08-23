@@ -30,9 +30,6 @@
 			<Plasteel>2</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
-		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.8</Mass>

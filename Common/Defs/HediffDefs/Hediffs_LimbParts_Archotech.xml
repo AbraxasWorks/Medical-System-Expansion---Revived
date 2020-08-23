@@ -88,7 +88,7 @@
 			<Mass>0.6</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
@@ -321,7 +321,7 @@
 			<Mass>4.75</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">

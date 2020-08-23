@@ -28,9 +28,6 @@
     <costList>
       <Plasteel>5</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>0.3</Mass>
     </statBases>
@@ -98,9 +95,6 @@
     <costList>
       <Plasteel>15</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>2</Mass>
     </statBases>
@@ -168,9 +162,6 @@
     <costList>
       <Plasteel>15</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>2</Mass>
     </statBases>
@@ -238,9 +229,6 @@
     <costList>
       <Plasteel>15</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>3</Mass>
     </statBases>
@@ -308,9 +296,6 @@
     <costList>
       <Plasteel>15</Plasteel>
     </costList>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
     <statBases>
       <Mass>3</Mass>
     </statBases>
