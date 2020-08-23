@@ -90,7 +90,7 @@
 			<RecipeDef>InstallSimpleProstheticLeg</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>55</Steel>
+			<Steel>37</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
