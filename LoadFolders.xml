@@ -11,6 +11,8 @@
 		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
 
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
+		
+		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific\ADS</li>
 
 		<li>1.2</li>
 	</v1.2>

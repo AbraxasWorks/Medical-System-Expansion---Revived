@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- leg -->
+
+	<!-- total:
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	 -->
+
+	<ThingDef ParentName="BodyPartProstheticBaseADS">
+		<defName>SimpleProstheticLegAnimal</defName>
+		<label>simple prosthetic animal leg</label>
+		<description>Simple prosthetic animal leg. Fits all animals.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>13</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticPawAnimal</li>
+					<li>SimpleProstheticHoofAnimal</li>
+					<li>SimpleProstheticFootAnimal</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- paw -->
+
+	<ThingDef ParentName="BodyPartProstheticBaseADS">
+		<defName>SimpleProstheticPawAnimal</defName>
+		<label>simple prosthetic animal paw</label>
+		<description>Simple prosthetic animal paw. Fits all animals.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<HediffDef ParentName="addedPartAnimal">
+		<defName>SimpleProstheticPawAnimal</defName>
+		<label>simple prosthetic animal paw</label>
+		<description>aa</description>
+		<defaultLabelColor>(233,129,69)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prothetic animal paw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.8</cooldownTime>
+						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticPawAnimal</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.85</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFleshAnimal">
+		<defName>InstallSimpleProstheticPawAnimal</defName>
+		<label>install animal simple prosthetic paw</label>
+		<description>Installs animal simple prosthetic paw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic animal paw.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticPawAnimal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticPawAnimal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Paw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticPawAnimal</addsHediff>
+		<recipeUsers>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- hoof -->
+
+	<ThingDef ParentName="BodyPartProstheticBaseADS">
+		<defName>SimpleProstheticHoofAnimal</defName>
+		<label>simple prosthetic animal hoof</label>
+		<description>Simple prosthetic animal hoof. Fits all animals.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<HediffDef ParentName="addedPartAnimal">
+		<defName>SimpleProstheticHoofAnimal</defName>
+		<label>simple prosthetic animal hoof</label>
+		<description>aa</description>
+		<defaultLabelColor>(233,129,69)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prothetic animal hoof</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.8</cooldownTime>
+						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticHoofAnimal</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.85</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFleshAnimal">
+		<defName>InstallSimpleProstheticHoofAnimal</defName>
+		<label>install animal simple prosthetic hoof</label>
+		<description>Installs animal simple prosthetic hoof.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic animal hoof.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHoofAnimal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticHoofAnimal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hoof</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHoofAnimal</addsHediff>
+		<recipeUsers>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- foot -->
+
+	<ThingDef ParentName="BodyPartProstheticBaseADS">
+		<defName>SimpleProstheticFootAnimal</defName>
+		<label>simple prosthetic animal foot</label>
+		<description>Simple prosthetic animal foot. Fits all animals.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>2</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticToeAnimal</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef ParentName="addedPartAnimal">
+		<defName>SimpleProstheticFootAnimal</defName>
+		<label>simple prosthetic animal foot</label>
+		<description>aa</description>
+		<defaultLabelColor>(233,129,69)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prothetic animal foot</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.8</cooldownTime>
+						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticFootAnimal</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.85</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFleshAnimal">
+		<defName>InstallSimpleProstheticFootAnimal</defName>
+		<label>install animal simple prosthetic foot</label>
+		<description>Installs animal simple prosthetic foot.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic animal foot.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFootAnimal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticFootAnimal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFootAnimal</addsHediff>
+		<recipeUsers>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- toe -->
+
+	<ThingDef ParentName="BodyPartProstheticBaseADS">
+		<defName>SimpleProstheticToeAnimal</defName>
+		<label>simple prosthetic animal toe</label>
+		<description>Simple prosthetic animal toe. Fits all animals.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+			<Mass>0.2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<HediffDef ParentName="addedPartAnimal">
+		<defName>SimpleProstheticToeAnimal</defName>
+		<label>simple prosthetic animal toe</label>
+		<description>aa</description>
+		<defaultLabelColor>(233,129,69)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prothetic animal toe</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8</power>
+						<cooldownTime>1.8</cooldownTime>
+						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>SimpleProstheticToeAnimal</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.85</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFleshAnimal">
+		<defName>InstallSimpleProstheticToeAnimal</defName>
+		<label>install animal simple prosthetic toe</label>
+		<description>Installs animal simple prosthetic toe.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic animal toe.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticToeAnimal</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SimpleProstheticToeAnimal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticToeAnimal</addsHediff>
+		<recipeUsers>
+		</recipeUsers>
+	</RecipeDef>
+
+
+	
+
+
+</Defs>

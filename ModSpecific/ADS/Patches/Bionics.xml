@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+  <Operation Class="PatchOperationAddOrMergeCopy">
+    <xpath>/Defs/RecipeDef[@ParentName="SurgeryFleshAnimal"][defName="InstallBionicPawAnimal" or defName="InstallBionicHoofAnimal"]</xpath>
+    <fromxpath>/Defs/RecipeDef[@ParentName="BionicLegBaseAnimal"][defName="InstallBionicLegAnimal"]/recipeUsers</fromxpath>
+  </Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/HediffDef[defName="JawAnimalBionic"]</xpath>
+		<value>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoreAll>true</ignoreAll>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
