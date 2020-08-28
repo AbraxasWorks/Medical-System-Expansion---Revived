@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<!-- limb labeller -->
+	<!-- limb labeler -->
 	<LimbComplete>complete</LimbComplete>
 	<LimbSegment>segment</LimbSegment>
+	<LimbVersion>version</LimbVersion>
+	<LimbCompatible>compatible</LimbCompatible>
+	<LimbIncompatible>not compatible</LimbIncompatible>
 
 	<!-- Recipe Generation -->	
 	<RecipeMakeSegment>make {0} segment</RecipeMakeSegment>
@@ -25,6 +28,8 @@
 	<CompIncludedChildParts_InspectStringMissing> ({0} missing parts)</CompIncludedChildParts_InspectStringMissing>
 	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
 	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>
+	<CompIncludedChildParts_StatCompatibility_Label>Compatibile with</CompIncludedChildParts_StatCompatibility_Label>
+	<CompIncludedChildParts_StatCompatibility_Value>{0} of {1}</CompIncludedChildParts_StatCompatibility_Value>
 
 
 </LanguageData>
