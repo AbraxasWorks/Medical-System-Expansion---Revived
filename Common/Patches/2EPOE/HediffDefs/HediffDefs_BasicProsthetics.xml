@@ -51,44 +51,13 @@
 					</value>
 				</li>
 
-				<!-- hook hand -->
+				<!-- hook hand pegleg, wooden foot -->
 
 				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand"]</xpath>
+					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand" or defName="PegLeg" or defName="WoodenFoot"]</xpath>
 					<value>
 						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts>
-								<li>Finger</li>
-							</ignoredSubParts>
-						</li>
-					</value>
-				</li>
-
-				<!-- pegleg -->
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="PegLeg"]</xpath>
-					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts>
-								<li>Foot</li>
-								<li>Femur</li>
-								<li>Tibia</li>
-								<li>Toe</li>
-							</ignoredSubParts>
-						</li>
-					</value>
-				</li>
-
-				<!-- wooden foot -->
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenFoot"]</xpath>
-					<value>
-						<li Class="MSE2.IgnoreSubParts">
-							<ignoredSubParts>
-								<li>Toe</li>
-							</ignoredSubParts>
+							<ignoreAll>true</ignoreAll>
 						</li>
 					</value>
 				</li>

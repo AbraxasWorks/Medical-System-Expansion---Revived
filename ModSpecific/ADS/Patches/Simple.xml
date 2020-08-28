@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	
-  <Operation Class="PatchOperationAddOrMergeCopy">
-    <xpath>/Defs/RecipeDef[@ParentName="SurgeryFleshAnimal"]
-		[defName="InstallSimpleProstheticPawAnimal" or defName="InstallSimpleProstheticHoofAnimal" or defName="InstallSimpleProstheticFootAnimal" or defName="InstallSimpleProstheticToeAnimal"]</xpath>
-    <fromxpath>/Defs/RecipeDef[@ParentName="SimpleLegBaseAnimal"][defName="InstallSimpleProstheticLegAnimal"]/recipeUsers</fromxpath>
-  </Operation>
-	
+
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryFleshAnimal"]
+			[defName="InstallSimpleProstheticPawAnimal" or defName="InstallSimpleProstheticHoofAnimal" or defName="InstallSimpleProstheticFootAnimal" or defName="InstallSimpleProstheticToeAnimal"]
+		</xpath>
+		<fromxpath>/Defs/RecipeDef[@ParentName="SimpleLegBaseAnimal"][defName="InstallSimpleProstheticLegAnimal"]/recipeUsers</fromxpath>
+	</Operation>
+
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="SimpleProstheticLegAnimal"]</xpath>
 		<value>
@@ -27,7 +29,7 @@
 			</li>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="JawAnimalSimple"]</xpath>
 		<value>

@@ -7,9 +7,7 @@
 		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="HookHand"]</xpath>
 		<value>
 			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Finger</li>
-				</ignoredSubParts>
+				<ignoreAll>true</ignoreAll>
 			</li>
 		</value>
 	</Operation>
@@ -20,14 +18,7 @@
 		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
 		<value>
 			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Arm</li>
-					<li>Clavicle</li>
-					<li>Humerus</li>
-					<li>Radius</li>
-					<li>Hand</li>
-					<li>Finger</li>
-				</ignoredSubParts>
+				<ignoreAll>true</ignoreAll>
 			</li>
 		</value>
 	</Operation>

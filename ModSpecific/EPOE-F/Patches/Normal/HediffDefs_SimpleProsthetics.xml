@@ -77,9 +77,7 @@
 		<xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="EPOE_ScytherBlade"]</xpath>
 		<value>
 			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Finger</li>
-				</ignoredSubParts>
+				<ignoreAll>true</ignoreAll>
 			</li>
 		</value>
 	</Operation>
