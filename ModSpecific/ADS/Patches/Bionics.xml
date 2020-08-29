@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- set recipe users -->
+
 	<Operation Class="PatchOperationAddOrMergeCopy">
 		<xpath>/Defs/RecipeDef[@ParentName="SurgeryFleshAnimal"][defName="InstallBionicPawAnimal" or defName="InstallBionicHoofAnimal"]</xpath>
 		<fromxpath>/Defs/RecipeDef[@ParentName="BionicLegBaseAnimal"][defName="InstallBionicLegAnimal"]/recipeUsers</fromxpath>
 	</Operation>
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/RecipeDef[@ParentName="MSE_SurgeryInstallModuleBase"][defName="InstallPowerClawAnimal"]</xpath>
+		<fromxpath>/Defs/RecipeDef[@ParentName="BionicLegBaseAnimal"][defName="InstallBionicLegAnimal"]/recipeUsers</fromxpath>
+	</Operation>
+
+	<!-- module slots -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="addedPartAnimal"][defName="BionicLegAnimal" or defName="BionicArmAnimal"]</xpath>
+		<value>
+			<comps>
+				<li Class="MSE2.HediffCompProperties_ModuleHolder">
+					<maxModules>1</maxModules>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<!-- ignore parts -->
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="JawAnimalBionic"]</xpath>
@@ -13,6 +34,12 @@
 				<ignoreAll>true</ignoreAll>
 			</li>
 		</value>
+	</Operation>
+
+	<!-- remove verbs -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="addedPartAnimal"][defName="BionicLegAnimal"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
 </Patch>

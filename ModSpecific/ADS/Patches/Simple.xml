@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- recipe users -->
+
 	<Operation Class="PatchOperationAddOrMergeCopy">
 		<xpath>
 			/Defs/RecipeDef[@ParentName="SurgeryFleshAnimal"]
@@ -8,6 +10,8 @@
 		</xpath>
 		<fromxpath>/Defs/RecipeDef[@ParentName="SimpleLegBaseAnimal"][defName="InstallSimpleProstheticLegAnimal"]/recipeUsers</fromxpath>
 	</Operation>
+
+	<!-- ignore parts -->
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[defName="SimpleProstheticLegAnimal"]</xpath>
@@ -46,6 +50,12 @@
 				<ignoreAll>true</ignoreAll>
 			</li>
 		</value>
+	</Operation>
+
+	<!-- remove verbs -->
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="addedPartAnimal"][defName="SimpleProstheticLegAnimal"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
 </Patch>

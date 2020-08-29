@@ -64,7 +64,7 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>SimpleProstheticPawAnimal</defName>
 		<label>simple prosthetic animal paw</label>
-		<description>aa</description>
+		<description>Simple prosthetic animal paw.</description>
 		<defaultLabelColor>(233,129,69)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -75,7 +75,7 @@
 							<li>Scratch</li>
 						</capacities>
 						<power>8</power>
-						<cooldownTime>1.8</cooldownTime>
+						<cooldownTime>2.1</cooldownTime>
 						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
 					</li>
 				</tools>
@@ -87,15 +87,6 @@
 			<betterThanNatural>false</betterThanNatural>
 			<solid>true</solid>
 		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -165,7 +156,7 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>SimpleProstheticHoofAnimal</defName>
 		<label>simple prosthetic animal hoof</label>
-		<description>aa</description>
+		<description>Simple prosthetic animal hoof.</description>
 		<defaultLabelColor>(233,129,69)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -173,10 +164,11 @@
 					<li>
 						<label>prothetic animal hoof</label>
 						<capacities>
-							<li>Scratch</li>
+							<li>Blunt</li>
+							<li>Poke</li>
 						</capacities>
-						<power>8</power>
-						<cooldownTime>1.8</cooldownTime>
+						<power>10</power>
+						<cooldownTime>2</cooldownTime>
 						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
 					</li>
 				</tools>
@@ -188,15 +180,6 @@
 			<betterThanNatural>false</betterThanNatural>
 			<solid>true</solid>
 		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -273,38 +256,14 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>SimpleProstheticFootAnimal</defName>
 		<label>simple prosthetic animal foot</label>
-		<description>aa</description>
+		<description>Simple prosthetic animal foot.</description>
 		<defaultLabelColor>(233,129,69)</defaultLabelColor>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>prothetic animal foot</label>
-						<capacities>
-							<li>Scratch</li>
-						</capacities>
-						<power>8</power>
-						<cooldownTime>1.8</cooldownTime>
-						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-		</comps>
 		<spawnThingOnRemoved>SimpleProstheticFootAnimal</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.85</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 			<solid>true</solid>
 		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -373,38 +332,14 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>SimpleProstheticToeAnimal</defName>
 		<label>simple prosthetic animal toe</label>
-		<description>aa</description>
+		<description>Simple prosthetic animal toe.</description>
 		<defaultLabelColor>(233,129,69)</defaultLabelColor>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>prothetic animal toe</label>
-						<capacities>
-							<li>Scratch</li>
-						</capacities>
-						<power>8</power>
-						<cooldownTime>1.8</cooldownTime>
-						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-		</comps>
 		<spawnThingOnRemoved>SimpleProstheticToeAnimal</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.85</partEfficiency>
 			<betterThanNatural>false</betterThanNatural>
 			<solid>true</solid>
 		</addedPartProps>
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.01</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -452,7 +387,7 @@
 	</RecipeDef>
 
 
-	
+
 
 
 </Defs>

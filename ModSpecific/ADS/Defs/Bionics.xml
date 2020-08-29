@@ -58,7 +58,7 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>BionicPawAnimal</defName>
 		<label>bionic animal paw</label>
-		<description>aa</description>
+		<description>Bionic animal paw.</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -67,11 +67,14 @@
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>20</power>
-						<cooldownTime>1.4</cooldownTime>
+						<power>18</power>
+						<cooldownTime>1.9</cooldownTime>
 						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
 					</li>
 				</tools>
+			</li>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
 			</li>
 		</comps>
 		<spawnThingOnRemoved>BionicPawAnimal</spawnThingOnRemoved>
@@ -79,21 +82,6 @@
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.025</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.03</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -163,17 +151,18 @@
 	<HediffDef ParentName="addedPartAnimal">
 		<defName>BionicHoofAnimal</defName>
 		<label>bionic animal hoof</label>
-		<description>aa</description>
+		<description>Bionic animal hoof.</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
 						<label>bionic animal hoof</label>
 						<capacities>
-							<li>Scratch</li>
+							<li>Blunt</li>
+							<li>Poke</li>
 						</capacities>
-						<power>20</power>
-						<cooldownTime>1.4</cooldownTime>
+						<power>13</power>
+						<cooldownTime>1.8</cooldownTime>
 						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
 					</li>
 				</tools>
@@ -184,21 +173,6 @@
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
-		<stages>
-			<li>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.025</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.03</ArmorRating_Heat>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<RecipeDef ParentName="SurgeryFleshAnimal">
@@ -270,5 +244,37 @@
 			</li>
 		</comps>
 	</ThingDef> -->
+
+	<!-- power claw -->
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallPowerClawAnimal</defName>
+		<label>install power claw module</label>
+		<description>Install a power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing power claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Paw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerClaw</addsHediff>
+		<recipeUsers Inherit="False"/>
+	</RecipeDef>
 
 </Defs>
