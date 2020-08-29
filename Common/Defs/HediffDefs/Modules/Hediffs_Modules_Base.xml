@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-
-
   <!--============ Module Base ============-->
   <HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
     <hediffClass>MSE2.Hediff_ModuleAdded</hediffClass>
@@ -30,24 +27,24 @@
         </filter>
         <count>1</count>
       </li>
-      <li>
+      <!-- <li>
         <filter>
           <categories>
             <li>Medicine</li>
           </categories>
         </filter>
         <count>1</count>
-      </li>
+      </li> -->
     </ingredients>
     <fixedIngredientFilter>
-      <categories>
+      <!-- <categories>
         <li>Medicine</li>
-      </categories>
+      </categories> -->
       <thingDefs>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
-    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+		
   </RecipeDef>
 
 
@@ -60,7 +57,7 @@
     <workerClass>MSE2.Recipe_RemoveModules</workerClass>
     <jobString>Removing modules.</jobString>
     <workAmount>1500</workAmount>
-    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <!-- <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
     <ingredients>
       <li>
         <filter>
@@ -75,7 +72,7 @@
       <categories>
         <li>Medicine</li>
       </categories>
-    </fixedIngredientFilter>
+    </fixedIngredientFilter> -->
     <recipeUsers>
       <li>Human</li>
     </recipeUsers>
