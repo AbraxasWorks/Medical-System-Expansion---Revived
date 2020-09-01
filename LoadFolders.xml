@@ -9,6 +9,7 @@
 
 		<li IfModNotActive="vat.epoeforked">ModSpecific\None</li>
 		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
+		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>
 
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
 		
