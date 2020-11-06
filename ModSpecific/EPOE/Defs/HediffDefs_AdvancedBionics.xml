@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- internal support -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedBionicInternalSupport</defName>
+		<label>advanced bionic internal support</label>
+		<labelNoun>an advanced bionic internal support</labelNoun>
+		<description>An installed advanced bionic internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedBionicInternalSupport</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.15</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedBionicInternalSupport</defName>
+		<label>advanced bionic internal support</label>
+		<description>An advanced artificial internal support. Useful replacement to have on hand for when a bionic arm or leg breaks.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicInternalSupport</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedBionicInternalSupport</defName>
+		<label>install advanced bionic internal support</label>
+		<description>Install an advanced bionic internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced bionic internal support.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedBionicInternalSupport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedBionicInternalSupport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedBionicInternalSupport</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>AdvancedPowerArm</li>
+					<li>AdvancedPowerForearm</li>
+					<li>AdvancedBionicArm</li>
+					<li>AdvancedBionicForearm</li>
+					<li>AdvancedBionicLeg</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+	<!-- bionic finger -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedBionicFinger</defName>
+		<label>advanced bionic finger</label>
+		<labelNoun>an advanced bionic finger</labelNoun>
+		<description>An installed advanced bionic finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicFinger</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.35</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedBionicFinger</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedBionicFinger</defName>
+		<label>advanced bionic finger</label>
+		<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<BionicFinger>1</BionicFinger>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>700</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedBionicFinger</defName>
+		<label>install advanced bionic finger</label>
+		<description>Install an advanced bionic finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicFinger</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced bionic finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedBionicFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedBionicFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedBionicFinger</addsHediff>
+	</RecipeDef>
+
+	<!-- toes -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedBionicToe</defName>
+		<label>advanced bionic toe</label>
+		<labelNoun>an advanced bionic toe</labelNoun>
+		<description>An installed advanced bionic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicToe</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedBionicToe</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>1.35</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedBionicToe</defName>
+		<label>advanced bionic toe</label>
+		<description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicToe</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<BionicToe>1</BionicToe>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedBionicToe</defName>
+		<label>install advanced bionic toe</label>
+		<description>Install an advanced bionic toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicToe</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced bionic toe.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedBionicToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedBionicToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedBionicToe</addsHediff>
+	</RecipeDef>
+
+	<!-- adv bionic forearm -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedBionicForearm</defName>
+		<label>advanced bionic arm</label>
+		<labelNoun>an advanced bionic forearm</labelNoun>
+		<description>An installed advanced bionic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.35</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedBionicForearm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedBionicForearm</defName>
+		<label>advanced bionic forearm</label>
+		<description>Remember when you struggled with opening jars? Now you struggle with not breaking them instantly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedBionicForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<BionicForearm>1</BionicForearm>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedBionicHand</li>
+					<li>AdvancedBionicInternalSupport</li>
+					<li>AdvancedBionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedBionicForearm</defName>
+		<label>install advanced bionic forearm</label>
+		<description>Installs advanced bionic forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedBionicForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced bionic forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedBionicForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedBionicForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedBionicForearm</addsHediff>
+	</RecipeDef>
+
+	<!-- advanced power forearm -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedPowerForearm</defName>
+		<label>advanced power arm</label>
+		<labelNoun>an advanced power forearm</labelNoun>
+		<description>An installed advanced power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedPowerForearm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedPowerForearm</defName>
+		<label>advanced power forearm</label>
+		<description>One of the most sophisticated forearm replacements.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedPowerForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<PowerForearm>1</PowerForearm>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>4.5</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedPowerHand</li>
+					<li>AdvancedBionicInternalSupport</li>
+					<li>AdvancedBionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedPowerForearm</defName>
+		<label>install advanced power forearm</label>
+		<description>Installs an advanced power forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPowerForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerForearm</addsHediff>
+	</RecipeDef>
+
+	<!-- advanced power hand -->
+
+	<HediffDef ParentName="addedPartAdvanced">
+		<defName>AdvancedPowerHand</defName>
+		<label>advanced power hand</label>
+		<labelNoun>a advanced power hand</labelNoun>
+		<description>An installed advanced power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1.30</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AdvancedPowerHand</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Advanced">
+		<defName>AdvancedPowerHand</defName>
+		<label>advanced power hand</label>
+		<description>One of the most sophisticated hand replacements.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedPowerHand</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<PowerHand>1</PowerHand>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>3.5</Mass>
+		</statBases>
+		<comps>
+			<!-- verbs added via patch -->
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedPowerClaw</li>
+					<li>AdvancedBionicFinger</li>
+					<li>AdvancedBionicFinger</li>
+					<li>AdvancedBionicFinger</li>
+					<li>AdvancedBionicFinger</li>
+					<li>AdvancedBionicFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryAdvanced">
+		<defName>InstallAdvancedPowerHand</defName>
+		<label>install advanced power hand</label>
+		<description>Installs a advanced power hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerHand</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPowerHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerHand</addsHediff>
+	</RecipeDef>
+
+	<!-- power claw -->
+
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>AdvancedPowerClaw</defName>
+		<label>advanced power claw</label>
+		<labelNoun>an advanced power claw</labelNoun>
+		<description>An installed advanced power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedPowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<!-- verbs copied from the original def -->
+		<spawnThingOnRemoved>AdvancedPowerClaw</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallAdvancedPowerClaw</defName>
+		<label>install advanced power claw module</label>
+		<description>Installs advanced power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedPowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedPowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedPowerClaw</addsHediff>
+	</RecipeDef>
+
+</Defs>
