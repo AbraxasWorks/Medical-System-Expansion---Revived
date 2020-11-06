@@ -29,9 +29,6 @@
 		<costList>
 			<Plasteel>6</Plasteel>
 		</costList>
-		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
-		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>1500</WorkToMake>
 			<Mass>0.3</Mass>
@@ -243,7 +240,6 @@
 				<standardChildren>
 					<li>BionicHand</li>
 					<li>BionicInternalSupport</li>
-					<li>BionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -320,7 +316,6 @@
 				<standardChildren>
 					<li>PowerHand</li>
 					<li>BionicInternalSupport</li>
-					<li>BionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -395,13 +390,11 @@
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>PowerClaw</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
-					<li>BionicFinger</li>
 					<li>BionicFinger</li>
 				</standardChildren>
+				<alwaysInclude>
+					<li>PowerClaw</li>
+				</alwaysInclude>
 			</li>
 		</comps>
 	</ThingDef>

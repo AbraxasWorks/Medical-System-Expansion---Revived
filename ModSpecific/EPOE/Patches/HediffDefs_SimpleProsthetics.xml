@@ -45,10 +45,6 @@
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
 						<li>SimpleProstheticFinger</li>
-						<li>SimpleProstheticFinger</li>
-						<li>SimpleProstheticFinger</li>
-						<li>SimpleProstheticFinger</li>
-						<li>SimpleProstheticFinger</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -71,10 +67,6 @@
 			<comps>
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
-						<li>SimpleProstheticToe</li>
-						<li>SimpleProstheticToe</li>
-						<li>SimpleProstheticToe</li>
-						<li>SimpleProstheticToe</li>
 						<li>SimpleProstheticToe</li>
 					</standardChildren>
 				</li>

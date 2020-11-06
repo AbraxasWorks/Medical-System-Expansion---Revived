@@ -73,7 +73,6 @@
 					<standardChildren>
 						<li>AdvancedBionicFoot</li>
 						<li>AdvancedBionicInternalSupport</li>
-						<li>AdvancedBionicInternalSupport</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -100,10 +99,6 @@
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
 						<li>AdvancedBionicFinger</li>
-						<li>AdvancedBionicFinger</li>
-						<li>AdvancedBionicFinger</li>
-						<li>AdvancedBionicFinger</li>
-						<li>AdvancedBionicFinger</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -125,10 +120,6 @@
 			<comps>
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
-						<li>AdvancedBionicToe</li>
-						<li>AdvancedBionicToe</li>
-						<li>AdvancedBionicToe</li>
-						<li>AdvancedBionicToe</li>
 						<li>AdvancedBionicToe</li>
 					</standardChildren>
 				</li>

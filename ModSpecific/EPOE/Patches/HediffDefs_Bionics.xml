@@ -65,7 +65,6 @@
 					<standardChildren>
 						<li>BionicFoot</li>
 						<li>BionicInternalSupport</li>
-						<li>BionicInternalSupport</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -80,10 +79,6 @@
 			<comps>
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
-						<li>BionicFinger</li>
-						<li>BionicFinger</li>
-						<li>BionicFinger</li>
-						<li>BionicFinger</li>
 						<li>BionicFinger</li>
 					</standardChildren>
 				</li>
@@ -106,10 +101,6 @@
 			<comps>
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
-						<li>BionicToe</li>
-						<li>BionicToe</li>
-						<li>BionicToe</li>
-						<li>BionicToe</li>
 						<li>BionicToe</li>
 					</standardChildren>
 				</li>

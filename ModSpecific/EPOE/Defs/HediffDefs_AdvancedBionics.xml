@@ -250,7 +250,6 @@
 				<standardChildren>
 					<li>AdvancedBionicHand</li>
 					<li>AdvancedBionicInternalSupport</li>
-					<li>AdvancedBionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -326,7 +325,6 @@
 				<standardChildren>
 					<li>AdvancedPowerHand</li>
 					<li>AdvancedBionicInternalSupport</li>
-					<li>AdvancedBionicInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -401,13 +399,11 @@
 			<!-- verbs added via patch -->
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>AdvancedPowerClaw</li>
-					<li>AdvancedBionicFinger</li>
-					<li>AdvancedBionicFinger</li>
-					<li>AdvancedBionicFinger</li>
-					<li>AdvancedBionicFinger</li>
 					<li>AdvancedBionicFinger</li>
 				</standardChildren>
+				<alwaysInclude>
+					<li>AdvancedPowerClaw</li>
+				</alwaysInclude>
 			</li>
 		</comps>
 	</ThingDef>
