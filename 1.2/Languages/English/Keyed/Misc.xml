@@ -11,6 +11,8 @@
 	<!-- Recipe Generation -->	
 	<RecipeMakeSegment>make {0} segment</RecipeMakeSegment>
 
+	<RecipeMakeUpgrade>assemble {0}</RecipeMakeUpgrade>
+
   <RecipeMakeForLimb>make complete {0} ({1})</RecipeMakeForLimb>
   <RecipeMakeForLimbNoComparison>make complete {0}</RecipeMakeForLimbNoComparison>
 	<RecipeMakeForLimbDescription>Make {0} with {1}.</RecipeMakeForLimbDescription>
