@@ -7,7 +7,8 @@
 	<v1.2>
 		<li>Common</li>
 
-		<li IfModNotActive="vat.epoeforked">ModSpecific\None</li>
+		<li IfModNotActive="vat.epoeforked, Ykara.EPOE">ModSpecific\None</li>
+		<li IfModActive="Ykara.EPOE">ModSpecific\EPOE</li>
 		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>
 
