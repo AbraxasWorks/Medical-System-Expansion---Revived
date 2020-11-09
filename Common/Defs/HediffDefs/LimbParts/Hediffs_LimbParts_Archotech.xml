@@ -11,7 +11,11 @@
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef Abstract="True" Name="BodyPartAchotech_Limb" ParentName="BodyPartArchotechBase"/>
+	<ThingDef Abstract="True" Name="BodyPartAchotech_Limb" ParentName="BodyPartArchotechBase">
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Archotech" ParentName="SurgeryInstallBodyPartArtificialBase"/>
 
