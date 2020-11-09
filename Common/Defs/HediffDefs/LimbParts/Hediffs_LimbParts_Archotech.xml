@@ -100,6 +100,11 @@
 		<addedPartProps>
 			<partEfficiency>1.50</partEfficiency>
 		</addedPartProps>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartAchotech_Limb">
@@ -172,7 +177,7 @@
 		<spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
+				<maxModules>2</maxModules>
 			</li>
 		</comps>
 	</HediffDef>
@@ -192,7 +197,6 @@
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>ArchotechHand</li>
-					<li>ArchotechInternalSupport</li>
 					<li>ArchotechInternalSupport</li>
 				</standardChildren>
 			</li>
@@ -245,7 +249,7 @@
 		</addedPartProps>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
+				<maxModules>2</maxModules>
 			</li>
 		</comps>
 	</HediffDef>
@@ -372,7 +376,7 @@
 		</addedPartProps>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
-				<maxModules>1</maxModules>
+				<maxModules>2</maxModules>
 			</li>
 		</comps>
 	</HediffDef>
@@ -446,6 +450,11 @@
 		<addedPartProps>
 			<partEfficiency>1.50</partEfficiency>
 		</addedPartProps>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartAchotech_Limb">
