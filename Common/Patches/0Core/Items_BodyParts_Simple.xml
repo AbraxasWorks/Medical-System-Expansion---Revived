@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- arm -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/HediffDef[defName="SimpleProstheticArm"]</xpath>
-		<value>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Humerus</li>
-					<li>Radius</li>
-				</ignoredSubParts>
-			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticArm"]/appliedOnFixedBodyParts</xpath>
-		<value>
-			<appliedOnFixedBodyParts>
-				<li>Arm</li>
-			</appliedOnFixedBodyParts>
-		</value>
-	</Operation>
-
-	<!-- leg -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
-		<value>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Femur</li>
-					<li>Tibia</li>
-				</ignoredSubParts>
-			</li>
-		</value>
-	</Operation>
-
-
 	<!-- arm verbs (CE removes them so i can only copy them when there is no CE) -->
 
 	<Operation Class="PatchOperationFindMod">

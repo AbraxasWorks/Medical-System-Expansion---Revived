@@ -3,6 +3,29 @@
 
 	<!-- arm -->
 
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticArm</defName>
+		<label>prosthetic arm</label>
+		<labelNoun>a prosthetic arm</labelNoun>
+		<description>An installed prosthetic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.50</partEfficiency>
+		</addedPartProps>
+		<modExtensions>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Humerus</li>
+					<li>Radius</li>
+				</ignoredSubParts>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
 		<defName>SimpleProstheticArm</defName>
 		<label>prosthetic arm</label>
@@ -29,6 +52,36 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticArm</defName>
+		<label>install prosthetic arm</label>
+		<description>Install a prosthetic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticArm</ThingDef>
+			<HediffDef>SimpleProstheticArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticArm</addsHediff>
+	</RecipeDef>
 
 	<!-- hand -->
 
@@ -171,6 +224,29 @@
 
 	<!-- leg -->
 
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticLeg</defName>
+		<label>prosthetic leg</label>
+		<labelNoun>a prosthetic leg</labelNoun>
+		<description>An installed prosthetic leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+		<modExtensions>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Femur</li>
+					<li>Tibia</li>
+				</ignoredSubParts>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
 		<defName>SimpleProstheticLeg</defName>
 		<label>prosthetic leg</label>
@@ -197,6 +273,36 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticLeg</defName>
+		<label>install prosthetic leg</label>
+		<description>Install a prosthetic leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticLeg</ThingDef>
+			<HediffDef>SimpleProstheticLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticLeg</addsHediff>
+	</RecipeDef>
 
 	<!-- foot -->
 
