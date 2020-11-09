@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- debug recipes -->
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef
+			[@ParentName="RecipeAdvancedProsthesis" or 
+			@ParentName="RecipeBasicProsthesis" or 
+			@ParentName="RecipeBionicProsthesis" or
+			@ParentName="RecipeSimpleProsthesis" or 
+			@ParentName="RecipeSurrogateOrgan" or 
+			@ParentName="RecipeSyntheticOrgan"
+			]
+		</xpath>
+	</Operation>
+
+	<!-- medieval -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Basic"]
+			[defName="HookHand" or
+			defName="PegLeg" or
+			defName="WoodenFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartBasic"]
+			[defName="WoodenHand" or
+			defName="PegLeg" or
+			defName="WoodenFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryBasic"]
+			[defName="InstallWoodenHand" or
+			defName="InstallPegLeg" or
+			defName="InstallWoodenFoot"]
+		</xpath>
+	</Operation>
+
+
+	<!-- advanced -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Advanced"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedPowerClaw" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartAdvanced"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedPowerClaw" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryAdvanced"]
+			[defName="InstallAdvancedPowerArm" or
+			defName="InstallAdvancedPowerClaw" or
+			defName="InstallAdvancedBionicArm" or
+			defName="InstallAdvancedBionicHand" or
+			defName="InstallAdvancedBionicLeg" or
+			defName="InstallAdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+
+
+</Patch>

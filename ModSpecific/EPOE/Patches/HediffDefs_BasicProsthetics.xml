@@ -14,31 +14,8 @@
 		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
 		<value>
 			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Humerus</li>
-					<li>Radius</li>
-				</ignoredSubParts>
+				<ignoreAll>true</ignoreAll>
 			</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@ParentName="Basic"][defName="SteelArm"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.CompProperties_IncludedChildParts">
-					<standardChildren>
-						<li>HookHand</li>
-					</standardChildren>
-				</li>
-			</comps>
-			<modExtensions>
-				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
-					<partsInCost>
-						<HookHand>1</HookHand>
-					</partsInCost>
-				</li>
-			</modExtensions>
 		</value>
 	</Operation>
 
@@ -50,28 +27,5 @@
 			</appliedOnFixedBodyParts>
 		</value>
 	</Operation>
-
-	<!-- hookhand -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/ThingDef[@ParentName="Basic"][defName="HookHand"]</xpath>
-		<value>
-			<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
-				<baseWorkFactor>0.4</baseWorkFactor>
-			</li>
-		</value>
-	</Operation>
-
-	<!-- hook hand (hediff is called woodenhand), pegleg, wooden foot -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand" or defName="PegLeg" or defName="WoodenFoot"]</xpath>
-		<value>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoreAll>true</ignoreAll>
-			</li>
-		</value>
-	</Operation>
-
 
 </Patch>
