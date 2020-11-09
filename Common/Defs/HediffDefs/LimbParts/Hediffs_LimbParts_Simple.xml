@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- base -->
+
+	<HediffDef Abstract="True" Name="AddedBodyPart_Limb_Simple" ParentName="AddedBodyPartBase">
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef Abstract="True" Name="BodyPartProsthetic_Limb" ParentName="BodyPartProstheticMakeableBase"/>
+
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Simple" ParentName="SurgeryInstallBodyPartProstheticBase"/>
+
+
 	<!-- arm -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticArm</defName>
 		<label>prosthetic arm</label>
 		<labelNoun>a prosthetic arm</labelNoun>
@@ -13,7 +27,6 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>0.50</partEfficiency>
 		</addedPartProps>
 		<modExtensions>
@@ -26,7 +39,7 @@
 		</modExtensions>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticArm</defName>
 		<label>prosthetic arm</label>
 		<description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
@@ -53,7 +66,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticArm</defName>
 		<label>install prosthetic arm</label>
 		<description>Install a prosthetic arm.</description>
@@ -85,7 +98,7 @@
 
 	<!-- hand -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticHand</defName>
 		<label>prosthetic hand</label>
 		<labelNoun>a prosthetic hand</labelNoun>
@@ -96,13 +109,11 @@
 		<!-- verbs added via patch -->
 		<spawnThingOnRemoved>SimpleProstheticHand</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>0.50</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticHand</defName>
 		<label>prosthetic hand</label>
 		<description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand.</description>
@@ -126,7 +137,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticHand</defName>
 		<label>install prosthetic hand</label>
 		<description>Install a prosthetic hand.</description>
@@ -157,7 +168,7 @@
 
 	<!-- finger -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticFinger</defName>
 		<label>prosthetic finger</label>
 		<labelNoun>a prosthetic finger</labelNoun>
@@ -167,13 +178,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticFinger</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>0.50</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticFinger</defName>
 		<label>prosthetic finger</label>
 		<description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger.</description>
@@ -193,7 +202,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticFinger</defName>
 		<label>install prosthetic finger</label>
 		<description>Install a prosthetic finger.</description>
@@ -224,7 +233,7 @@
 
 	<!-- leg -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticLeg</defName>
 		<label>prosthetic leg</label>
 		<labelNoun>a prosthetic leg</labelNoun>
@@ -234,7 +243,6 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticLeg</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
 		</addedPartProps>
 		<modExtensions>
@@ -247,7 +255,7 @@
 		</modExtensions>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticLeg</defName>
 		<label>prosthetic leg</label>
 		<description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
@@ -274,7 +282,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticLeg</defName>
 		<label>install prosthetic leg</label>
 		<description>Install a prosthetic leg.</description>
@@ -306,7 +314,7 @@
 
 	<!-- foot -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticFoot</defName>
 		<label>prosthetic foot</label>
 		<labelNoun>a prosthetic foot</labelNoun>
@@ -316,13 +324,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticFoot</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticFoot</defName>
 		<label>prosthetic foot</label>
 		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
@@ -349,7 +355,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticFoot</defName>
 		<label>install prosthetic foot</label>
 		<description>Install a prosthetic foot.</description>
@@ -380,7 +386,7 @@
 
 	<!-- toe -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticToe</defName>
 		<label>prosthetic toe</label>
 		<labelNoun>a prosthetic toe</labelNoun>
@@ -390,13 +396,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticToe</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>0.80</partEfficiency>
-			<betterThanNatural>false</betterThanNatural>
+			<partEfficiency>0.70</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticToe</defName>
 		<label>prosthetic toe</label>
 		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</description>
@@ -415,7 +419,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticToe</defName>
 		<label>install prosthetic toe</label>
 		<description>Install a prosthetic toe.</description>
