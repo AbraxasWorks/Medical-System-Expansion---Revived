@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+	<!-- base -->
+
+	<HediffDef Abstract="True" Name="AddedBodyPart_Limb_Archotech" ParentName="AddedBodyPartBase">
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef Abstract="True" Name="BodyPartAchotech_Limb" ParentName="BodyPartArchotechBase"/>
+
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Archotech" ParentName="SurgeryInstallBodyPartArtificialBase"/>
+
 	<!-- internal support -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechInternalSupport</defName>
 		<label>archotech internal support</label>
 		<labelNoun>an archotech internal support</labelNoun>
@@ -13,13 +27,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechInternalSupport</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
 			<partEfficiency>1.20</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechInternalSupport</defName>
 		<label>archotech internal support</label>
 		<description>An artificial internal support built by an archotech. Useful replacement to have on hand for when an internal component of an archotech prosthesis breaks.</description>
@@ -76,7 +88,21 @@
 
 	<!-- arm -->
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
+		<defName>ArchotechArm</defName>
+		<label>archotech arm</label>
+		<labelNoun>an archotech arm</labelNoun>
+		<description>An installed archotech arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechArm</defName>
 		<label>archotech arm</label>
 		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
@@ -100,9 +126,39 @@
 		</comps>
 	</ThingDef>
 
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallArchotechArm</defName>
+		<label>install archotech arm</label>
+		<description>Install an archotech arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArm</ThingDef>
+			<HediffDef>ArchotechArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechArm</addsHediff>
+	</RecipeDef>
+
 	<!-- archotech forearm -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechForearm</defName>
 		<label>archotech arm</label>
 		<labelNoun>an archotech forearm</labelNoun>
@@ -111,9 +167,7 @@
 			<ThingDef>ArchotechForearm</ThingDef>
 		</descriptionHyperlinks>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 		<spawnThingOnRemoved>ArchotechForearm</spawnThingOnRemoved>
 		<comps>
@@ -123,7 +177,7 @@
 		</comps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechForearm</defName>
 		<label>archotech forearm</label>
 		<description>An artifical forearm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
@@ -176,7 +230,7 @@
 
 	<!-- hand -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechHand</defName>
 		<label>archotech hand</label>
 		<labelNoun>an archotech hand</labelNoun>
@@ -187,9 +241,7 @@
 		<!-- verbs added via patch -->
 		<spawnThingOnRemoved>ArchotechHand</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
@@ -198,7 +250,7 @@
 		</comps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechHand</defName>
 		<label>archotech hand</label>
 		<description>An artifical hand built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
@@ -249,7 +301,7 @@
 
 	<!-- finger -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechFinger</defName>
 		<label>archotech finger</label>
 		<labelNoun>an archotech finger</labelNoun>
@@ -259,13 +311,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechFinger</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechFinger</defName>
 		<label>archotech finger</label>
 		<description>An artifical finger built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
@@ -308,8 +358,26 @@
 	</RecipeDef>
 
 	<!-- leg -->
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
+		<defName>ArchotechLeg</defName>
+		<label>archotech leg</label>
+		<labelNoun>an archotech leg</labelNoun>
+		<description>An installed archotech leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechLeg</defName>
 		<label>archotech leg</label>
 		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
@@ -333,10 +401,40 @@
 		</comps>
 	</ThingDef>
 
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallArchotechLeg</defName>
+		<label>install archotech leg</label>
+		<description>Install an archotech leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechLeg</ThingDef>
+			<HediffDef>ArchotechLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechLeg</addsHediff>
+	</RecipeDef>
+
 
 	<!-- foot -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechFoot</defName>
 		<label>archotech foot</label>
 		<labelNoun>an archotech foot</labelNoun>
@@ -346,13 +444,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechFoot</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechFoot</defName>
 		<label>archotech foot</label>
 		<description>An artifical foot built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
@@ -403,7 +499,7 @@
 
 	<!-- toe -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechToe</defName>
 		<label>archotech toe</label>
 		<labelNoun>an archotech toe</labelNoun>
@@ -413,13 +509,11 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechToe</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
-	<ThingDef ParentName="BodyPartArchotechBase">
+	<ThingDef ParentName="BodyPartAchotech_Limb">
 		<defName>ArchotechToe</defName>
 		<label>archotech toe</label>
 		<description>An artifical toe built by an archotech. It looks and feels like a natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- fix hediff color -->
+	<!-- copy thing parameters excepr stats and categories -->
 
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Bionic"]</xpath>
-		<fromxpath>/Defs/HediffDef[@Name="addedPartBionics"]/defaultLabelColor</fromxpath>
+		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="Bionic"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
 	</Operation>
 
 </Patch>

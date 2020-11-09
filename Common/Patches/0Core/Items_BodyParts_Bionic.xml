@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!-- leg -->
-
-  <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Bionic"][defName="BionicLeg"]</xpath>
-    <value>
-      <comps>
-        <li Class="MSE2.HediffCompProperties_ModuleHolder">
-          <maxModules>1</maxModules>
-        </li>
-      </comps>
-    </value>
-  </Operation>
-
   <!-- copy melee verbs -->
 
   <!-- hand -->

@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- leg -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechLeg"]</xpath>
-		<value>
-			<comps>
-				<li Class="MSE2.HediffCompProperties_ModuleHolder">
-					<maxModules>1</maxModules>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
 	<!-- copy melee verbs -->
 
 	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]</xpath>
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Archotech"][defName="ArchotechHand"]</xpath>
 		<value>
 			<comps/>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechHand"]/comps</xpath>
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Archotech"][defName="ArchotechHand"]/comps</xpath>
 		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
