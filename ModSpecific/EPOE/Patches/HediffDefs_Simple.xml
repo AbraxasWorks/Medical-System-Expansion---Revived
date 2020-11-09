@@ -4,14 +4,14 @@
 	<!-- fix hediff color -->
 
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Simple"]</xpath>
+		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Simple" or @Name="AddedBodyPart_Bone_Prosthetic"]</xpath>
 		<fromxpath>/Defs/HediffDef[@Name="addedPartSimple"]/defaultLabelColor</fromxpath>
 	</Operation>
 
 	<!-- copy thing parameters excepr stats and categories -->
 
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Limb"]</xpath>
+		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Limb" or @Name="BodyPartProsthetic_Bone"]</xpath>
 		<fromxpath>/Defs/ThingDef[@Name="Simple"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
 	</Operation>
 
