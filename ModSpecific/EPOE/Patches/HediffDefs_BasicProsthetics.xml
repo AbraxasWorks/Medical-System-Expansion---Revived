@@ -32,6 +32,13 @@
 					</standardChildren>
 				</li>
 			</comps>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<HookHand>1</HookHand>
+					</partsInCost>
+				</li>
+			</modExtensions>
 		</value>
 	</Operation>
 
@@ -44,7 +51,18 @@
 		</value>
 	</Operation>
 
-	<!-- hook hand pegleg, wooden foot -->
+	<!-- hookhand -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/ThingDef[@ParentName="Basic"][defName="HookHand"]</xpath>
+		<value>
+			<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+				<baseWorkFactor>0.4</baseWorkFactor>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- hook hand (hediff is called woodenhand), pegleg, wooden foot -->
 
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="WoodenHand" or defName="PegLeg" or defName="WoodenFoot"]</xpath>

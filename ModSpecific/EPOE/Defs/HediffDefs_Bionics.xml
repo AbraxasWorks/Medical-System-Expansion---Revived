@@ -30,7 +30,7 @@
 			<Plasteel>6</Plasteel>
 		</costList>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>800</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
 	</ThingDef>
@@ -107,7 +107,7 @@
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>525</WorkToMake>
+			<WorkToMake>420</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
 	</ThingDef>
@@ -241,8 +241,19 @@
 					<li>BionicHand</li>
 					<li>BionicInternalSupport</li>
 				</standardChildren>
+				<costListType>Upgrade</costListType>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+				<partsInCost>
+					<BionicInternalSupport>2</BionicInternalSupport>
+					<BionicHand>1</BionicHand>
+					<BionicFinger>5</BionicFinger>
+				</partsInCost>
+				<fixMode>MarketValue</fixMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryBionic">
@@ -308,7 +319,7 @@
 			<Plasteel>25</Plasteel>
 		</costList>
 		<statBases>
-			<WorkToMake>5250</WorkToMake>
+			<WorkToMake>5750</WorkToMake>
 			<Mass>4.5</Mass>
 		</statBases>
 		<comps>
@@ -317,8 +328,20 @@
 					<li>PowerHand</li>
 					<li>BionicInternalSupport</li>
 				</standardChildren>
+				<costListType>Upgrade</costListType>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+				<partsInCost>
+					<BionicInternalSupport>2</BionicInternalSupport>
+					<PowerHand>1</PowerHand>
+					<BionicFinger>5</BionicFinger>
+					<PowerClaw>1</PowerClaw>
+				</partsInCost>
+				<fixMode>MarketValue</fixMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryBionic">
@@ -395,8 +418,18 @@
 				<alwaysInclude>
 					<li>PowerClaw</li>
 				</alwaysInclude>
+				<costListType>Upgrade</costListType>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+				<partsInCost>
+					<BionicFinger>5</BionicFinger>
+					<PowerClaw>1</PowerClaw>
+				</partsInCost>
+				<fixMode>MarketValue</fixMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryBionic">

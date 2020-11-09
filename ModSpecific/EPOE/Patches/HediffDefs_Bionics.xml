@@ -12,6 +12,23 @@
 		<xpath>/Defs/HediffDef[@ParentName="addedPartBionics"][defName="PowerArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
+	<!-- power claw -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[defName="PowerClaw"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<BionicHand>1</BionicHand>
+					</partsInCost>
+					<baseWorkFactor>0.1</baseWorkFactor>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
+
 	<!-- power arm -->
 
 	<Operation Class="PatchOperationAddOrMerge">
@@ -34,8 +51,21 @@
 						<li>PowerForearm</li>
 						<li>BionicInternalSupport</li>
 					</standardChildren>
+					<costListType>Upgrade</costListType>
 				</li>
 			</comps>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<BionicInternalSupport>3</BionicInternalSupport>
+						<PowerForearm>1</PowerForearm>
+						<PowerHand>1</PowerHand>
+						<BionicFinger>5</BionicFinger>
+						<PowerClaw>1</PowerClaw>
+					</partsInCost>
+					<fixMode>MarketValue</fixMode>
+				</li>
+			</modExtensions>
 		</value>
 	</Operation>
 
@@ -50,8 +80,20 @@
 						<li>BionicForearm</li>
 						<li>BionicInternalSupport</li>
 					</standardChildren>
+					<costListType>Upgrade</costListType>
 				</li>
 			</comps>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<BionicInternalSupport>3</BionicInternalSupport>
+						<BionicForearm>1</BionicForearm>
+						<BionicHand>1</BionicHand>
+						<BionicFinger>5</BionicFinger>
+					</partsInCost>
+					<fixMode>MarketValue</fixMode>
+				</li>
+			</modExtensions>
 		</value>
 	</Operation>
 
@@ -81,8 +123,17 @@
 					<standardChildren>
 						<li>BionicFinger</li>
 					</standardChildren>
+					<costListType>Upgrade</costListType>
 				</li>
 			</comps>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<BionicFinger>5</BionicFinger>
+					</partsInCost>
+					<fixMode>MarketValue</fixMode>
+				</li>
+			</modExtensions>
 		</value>
 	</Operation>
 
@@ -103,8 +154,17 @@
 					<standardChildren>
 						<li>BionicToe</li>
 					</standardChildren>
+					<costListType>Upgrade</costListType>
 				</li>
 			</comps>
+			<modExtensions>
+				<li Class="MSE2.RecipeFixer.PartsIncludedInCost">
+					<partsInCost>
+						<BionicToe>5</BionicToe>
+					</partsInCost>
+					<fixMode>MarketValue</fixMode>
+				</li>
+			</modExtensions>
 		</value>
 	</Operation>
 
