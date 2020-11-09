@@ -17,7 +17,13 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Bone" ParentName="SurgeryInstallBodyPartArtificialBase"/>
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Bone" ParentName="SurgeryInstallBodyPartArtificialBase">
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<onlyOnNatural>true</onlyOnNatural>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
 	<!-- clavicle -->
 
@@ -74,11 +80,6 @@
 			<li>Clavicle</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PlasteelClavicle</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
-			</li>
-		</modExtensions>
 	</RecipeDef>
 
 	<!-- humerus -->
@@ -136,11 +137,6 @@
 			<li>Humerus</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PlasteelHumerus</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
-			</li>
-		</modExtensions>
 	</RecipeDef>
 
 	<!-- radius -->
@@ -198,11 +194,6 @@
 			<li>Radius</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PlasteelRadius</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
-			</li>
-		</modExtensions>
 	</RecipeDef>
 
 	<!-- femur -->
@@ -260,11 +251,6 @@
 			<li>Femur</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PlasteelFemur</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
-			</li>
-		</modExtensions>
 	</RecipeDef>
 
 	<!-- tibia -->
@@ -322,11 +308,6 @@
 			<li>Tibia</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PlasteelTibia</addsHediff>
-		<modExtensions>
-			<li Class="MSE2.InstallationRestrictions">
-				<onlyOnNatural>true</onlyOnNatural>
-			</li>
-		</modExtensions>
 	</RecipeDef>
 
 
