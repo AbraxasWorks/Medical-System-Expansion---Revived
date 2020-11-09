@@ -12,13 +12,13 @@
 				<!-- copy melee verbs -->
 
 				<li Class="PatchOperationAddOrMerge">
-					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]</xpath>
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Simple"][defName="SimpleProstheticHand"]</xpath>
 					<value>
 						<comps/>
 					</value>
 				</li>
 				<li Class="PatchOperationAddOrMergeCopy">
-					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticHand"]/comps</xpath>
+					<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Simple"][defName="SimpleProstheticHand"]/comps</xpath>
 					<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="SimpleProstheticArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 				</li>
 				<li Class="PatchOperationRemove">
