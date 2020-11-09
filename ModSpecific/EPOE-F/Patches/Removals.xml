@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- bionic -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeBionic"]
+			[defName="CreatePowerArm" or
+			defName="CreatePowerClaw" or
+			defName="CreateBionicArm" or
+			defName="CreateBionicHand" or
+			defName="EPIA_UpgradeBionicFinger" or
+			defName="CreateBionicLeg" or
+			defName="CreateBionicFoot" or
+			defName="EPIA_UpgradeBionicToe"]
+		</xpath>
+	</Operation>
+
+	<!-- advanced -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartAdvanced"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedPowerClaw" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicFinger" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot" or
+			defName="AdvancedBionicToe"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedPowerClaw" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicFinger" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot" or
+			defName="AdvancedBionicToe"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeAdvanced"]
+			[defName="CreateAdvancedPowerArm" or
+			defName="CreateAdvancedPowerClaw" or
+			defName="CreateAdvancedBionicArm" or
+			defName="CreateAdvancedBionicHand" or
+			defName="EPIA_UpgradeAdvancedBionicFinger" or
+			defName="CreateAdvancedBionicLeg" or
+			defName="CreateAdvancedBionicFoot" or
+			defName="EPIA_UpgradeAdvancedBionicToe"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="EPIASurgeryAdvancedBionic"]
+			[defName="InstallAdvancedPowerArm" or
+			defName="InstallAdvancedPowerClaw" or
+			defName="InstallAdvancedBionicArm" or
+			defName="InstallAdvancedBionicHand" or
+			defName="InstallAdvancedBionicFinger" or
+			defName="InstallAdvancedBionicLeg" or
+			defName="InstallAdvancedBionicFoot" or
+			defName="InstallAdvancedBionicToe"]
+		</xpath>
+	</Operation>
+
+
+</Patch>

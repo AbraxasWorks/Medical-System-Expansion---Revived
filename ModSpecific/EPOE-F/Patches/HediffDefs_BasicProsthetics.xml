@@ -4,18 +4,7 @@
 	<!-- hook hand -->
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="HookHand"]</xpath>
-		<value>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoreAll>true</ignoreAll>
-			</li>
-		</value>
-	</Operation>
-
-	<!-- steel arm -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]</xpath>
+		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="HookHand" or defName="SteelArm"]</xpath>
 		<value>
 			<li Class="MSE2.IgnoreSubParts">
 				<ignoreAll>true</ignoreAll>
