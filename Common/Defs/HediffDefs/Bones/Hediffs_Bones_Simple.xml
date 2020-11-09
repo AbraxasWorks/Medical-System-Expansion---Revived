@@ -1,335 +1,314 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- clavicle -->
+	<!-- base -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>SimpleProstheticClavicle</defName>
-    <label>prosthetic clavicle</label>
-    <labelNoun>a prosthetic clavicle</labelNoun>
-    <description>An installed prosthetic clavicle.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticClavicle</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.75</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef Abstract="True" Name="AddedBodyPart_Bone_Prosthetic" ParentName="AddedBodyPartBase">
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>false</betterThanNatural>
+			<partEfficiency>0.75</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>SimpleProstheticClavicle</defName>
-    <label>prosthetic clavicle</label>
-    <description>A clavicle prosthesis. It is inferior to a real clavicle.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallSimpleProstheticClavicle</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Steel>10</Steel>
-    </costList>
-    <statBases>
-      <Mass>0.3</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef Abstract="True" Name="BodyPartProsthetic_Bone" ParentName="BodyPartProstheticMakeableBase">
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallSimpleProstheticClavicle</defName>
-    <label>install prosthetic clavicle</label>
-    <description>Install a prosthetic clavicle.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticClavicle</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic clavicle.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SimpleProstheticClavicle</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SimpleProstheticClavicle</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Clavicle</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>SimpleProstheticClavicle</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <onlyOnNatural>true</onlyOnNatural>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Prosthetic" ParentName="SurgeryInstallBodyPartProstheticBase">
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<onlyOnNatural>true</onlyOnNatural>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
-  <!-- humerus -->
+	<!-- clavicle -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>SimpleProstheticHumerus</defName>
-    <label>prosthetic humerus</label>
-    <labelNoun>a prosthetic humerus</labelNoun>
-    <description>An installed prosthetic humerus.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticHumerus</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.75</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<labelNoun>a prosthetic clavicle</labelNoun>
+		<description>An installed prosthetic clavicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticClavicle</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticClavicle</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>SimpleProstheticHumerus</defName>
-    <label>prosthetic humerus</label>
-    <description>A humerus prosthesis. It is inferior to a real humerus.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallSimpleProstheticHumerus</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <statBases>
-      <Mass>1.5</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticClavicle</defName>
+		<label>prosthetic clavicle</label>
+		<description>A clavicle prosthesis. It is inferior to a real clavicle.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticClavicle</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallSimpleProstheticHumerus</defName>
-    <label>install prosthetic humerus</label>
-    <description>Install a prosthetic humerus.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticHumerus</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic humerus.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SimpleProstheticHumerus</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SimpleProstheticHumerus</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Humerus</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>SimpleProstheticHumerus</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <onlyOnNatural>true</onlyOnNatural>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticClavicle</defName>
+		<label>install prosthetic clavicle</label>
+		<description>Install a prosthetic clavicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticClavicle</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic clavicle.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticClavicle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticClavicle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticClavicle</addsHediff>
+	</RecipeDef>
 
-  <!-- radius -->
+	<!-- humerus -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>SimpleProstheticRadius</defName>
-    <label>prosthetic radius</label>
-    <labelNoun>a prosthetic radius</labelNoun>
-    <description>An installed prosthetic radius.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticRadius</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.75</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticHumerus</defName>
+		<label>prosthetic humerus</label>
+		<labelNoun>a prosthetic humerus</labelNoun>
+		<description>An installed prosthetic humerus.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHumerus</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticHumerus</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>SimpleProstheticRadius</defName>
-    <label>prosthetic radius</label>
-    <description>A radius prosthesis. It is inferior to a real radius.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallSimpleProstheticRadius</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <statBases>
-      <Mass>1.5</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticHumerus</defName>
+		<label>prosthetic humerus</label>
+		<description>A humerus prosthesis. It is inferior to a real humerus.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticHumerus</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallSimpleProstheticRadius</defName>
-    <label>install prosthetic radius</label>
-    <description>Install a prosthetic radius.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticRadius</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic radius.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SimpleProstheticRadius</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SimpleProstheticRadius</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Radius</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>SimpleProstheticRadius</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <onlyOnNatural>true</onlyOnNatural>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticHumerus</defName>
+		<label>install prosthetic humerus</label>
+		<description>Install a prosthetic humerus.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHumerus</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic humerus.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHumerus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticHumerus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHumerus</addsHediff>
+	</RecipeDef>
 
-  <!-- femur -->
+	<!-- radius -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>SimpleProstheticFemur</defName>
-    <label>prosthetic femur</label>
-    <labelNoun>a prosthetic femur</labelNoun>
-    <description>An installed prosthetic femur.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticFemur</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.75</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticRadius</defName>
+		<label>prosthetic radius</label>
+		<labelNoun>a prosthetic radius</labelNoun>
+		<description>An installed prosthetic radius.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticRadius</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticRadius</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>SimpleProstheticFemur</defName>
-    <label>prosthetic femur</label>
-    <description>A femur prosthesis. It is inferior to a real femur.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallSimpleProstheticFemur</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <statBases>
-      <Mass>2</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticRadius</defName>
+		<label>prosthetic radius</label>
+		<description>A radius prosthesis. It is inferior to a real radius.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticRadius</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallSimpleProstheticFemur</defName>
-    <label>install prosthetic femur</label>
-    <description>Install a prosthetic femur.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticFemur</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic femur.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SimpleProstheticFemur</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SimpleProstheticFemur</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Femur</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>SimpleProstheticFemur</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <onlyOnNatural>true</onlyOnNatural>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticRadius</defName>
+		<label>install prosthetic radius</label>
+		<description>Install a prosthetic radius.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticRadius</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic radius.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRadius</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticRadius</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Radius</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRadius</addsHediff>
+	</RecipeDef>
 
-  <!-- tibia -->
+	<!-- femur -->
 
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>SimpleProstheticTibia</defName>
-    <label>prosthetic tibia</label>
-    <labelNoun>a prosthetic tibia</labelNoun>
-    <description>An installed prosthetic tibia.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticTibia</ThingDef>
-    </descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.75</partEfficiency>
-      <betterThanNatural>false</betterThanNatural>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticFemur</defName>
+		<label>prosthetic femur</label>
+		<labelNoun>a prosthetic femur</labelNoun>
+		<description>An installed prosthetic femur.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFemur</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticFemur</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>SimpleProstheticTibia</defName>
-    <label>prosthetic tibia</label>
-    <description>A tibia prosthesis. It is inferior to a real tibia.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>InstallSimpleProstheticTibia</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <statBases>
-      <Mass>2</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticFemur</defName>
+		<label>prosthetic femur</label>
+		<description>A femur prosthesis. It is inferior to a real femur.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticFemur</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallSimpleProstheticTibia</defName>
-    <label>install prosthetic tibia</label>
-    <description>Install a prosthetic tibia.</description>
-    <descriptionHyperlinks>
-      <ThingDef>SimpleProstheticTibia</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic tibia.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>SimpleProstheticTibia</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>SimpleProstheticTibia</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Tibia</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>SimpleProstheticTibia</addsHediff>
-    <modExtensions>
-      <li Class="MSE2.InstallationRestrictions">
-        <onlyOnNatural>true</onlyOnNatural>
-      </li>
-    </modExtensions>
-  </RecipeDef>
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticFemur</defName>
+		<label>install prosthetic femur</label>
+		<description>Install a prosthetic femur.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticFemur</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic femur.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticFemur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticFemur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Femur</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticFemur</addsHediff>
+	</RecipeDef>
+
+	<!-- tibia -->
+
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticTibia</defName>
+		<label>prosthetic tibia</label>
+		<labelNoun>a prosthetic tibia</labelNoun>
+		<description>An installed prosthetic tibia.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticTibia</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticTibia</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticTibia</defName>
+		<label>prosthetic tibia</label>
+		<description>A tibia prosthesis. It is inferior to a real tibia.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticTibia</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticTibia</defName>
+		<label>install prosthetic tibia</label>
+		<description>Install a prosthetic tibia.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticTibia</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic tibia.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticTibia</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticTibia</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticTibia</addsHediff>
+	</RecipeDef>
 
 
 
