@@ -4,7 +4,7 @@
   <!-- leg -->
 
   <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicLeg"]</xpath>
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Bionic"][defName="BionicLeg"]</xpath>
     <value>
       <comps>
         <li Class="MSE2.HediffCompProperties_ModuleHolder">
@@ -18,13 +18,13 @@
 
   <!-- hand -->
   <Operation Class="PatchOperationAddOrMerge">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]</xpath>
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Bionic"][defName="BionicHand"]</xpath>
     <value>
       <comps/>
     </value>
   </Operation>
   <Operation Class="PatchOperationAddCopy">
-    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicHand"]/comps</xpath>
+    <xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Bionic"][defName="BionicHand"]/comps</xpath>
     <fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="BionicArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
   </Operation>
   <Operation Class="PatchOperationRemove">

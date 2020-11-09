@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	
+	<HediffDef Abstract="True" Name="AddedBodyPart_Limb_Bionic" ParentName="AddedBodyPartBase">
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
 	<!-- internal support -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicInternalSupport</defName>
 		<label>bionic internal support</label>
 		<labelNoun>a bionic internal support</labelNoun>
@@ -13,8 +21,6 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicInternalSupport</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
 			<partEfficiency>1.10</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
@@ -80,6 +86,18 @@
 
 	<!-- bionic arm -->
 
+  <HediffDef ParentName="AddedBodyPart_Limb_Bionic">
+    <defName>BionicArm</defName>
+    <label>bionic arm</label>
+    <labelNoun>a bionic arm</labelNoun>
+    <description>An installed bionic arm.</description>
+    <descriptionHyperlinks><ThingDef>BionicArm</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.25</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>BionicArm</defName>
 		<label>bionic arm</label>
@@ -110,7 +128,7 @@
 
 	<!-- bionic forearm -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicForearm</defName>
 		<label>bionic arm</label>
 		<labelNoun>a bionic forearm</labelNoun>
@@ -119,9 +137,7 @@
 			<ThingDef>BionicForearm</ThingDef>
 		</descriptionHyperlinks>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 		<spawnThingOnRemoved>BionicForearm</spawnThingOnRemoved>
 	</HediffDef>
@@ -182,7 +198,7 @@
 
 	<!-- hand -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicHand</defName>
 		<label>bionic hand</label>
 		<labelNoun>a bionic hand</labelNoun>
@@ -193,9 +209,7 @@
 		<!-- verbs added with patch -->
 		<spawnThingOnRemoved>BionicHand</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
@@ -263,7 +277,7 @@
 
 	<!-- finger -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicFinger</defName>
 		<label>bionic finger</label>
 		<labelNoun>a bionic finger</labelNoun>
@@ -273,9 +287,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
@@ -331,6 +343,18 @@
 
 	<!-- leg -->
 
+  <HediffDef ParentName="AddedBodyPart_Limb_Bionic">
+    <defName>BionicLeg</defName>
+    <label>bionic leg</label>
+    <labelNoun>a bionic leg</labelNoun>
+    <description>An installed bionic leg.</description>
+    <descriptionHyperlinks><ThingDef>BionicLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.25</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>BionicLeg</defName>
 		<label>bionic leg</label>
@@ -362,7 +386,7 @@
 
 	<!-- foot -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicFoot</defName>
 		<label>bionic foot</label>
 		<labelNoun>a bionic foot</labelNoun>
@@ -372,9 +396,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicFoot</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
@@ -437,7 +459,7 @@
 
 	<!-- toe -->
 
-	<HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicToe</defName>
 		<label>bionic toe</label>
 		<labelNoun>a bionic toe</labelNoun>
@@ -447,9 +469,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicToe</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
-			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 
