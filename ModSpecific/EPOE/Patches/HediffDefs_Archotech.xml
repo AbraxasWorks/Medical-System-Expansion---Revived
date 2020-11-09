@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="ArchotechInternalSupport" or defName="ArchotechForearm" or defName="ArchotechFoot" or defName="ArchotechToe" or defName="ArchotechHand" or defName="ArchotechFinger"]</xpath>
+		<xpath>Defs/HediffDef[@Name="AddedBodyPart_Limb_Archotech"]</xpath>
 		<value>
 			<defaultLabelColor>(225,237,114)</defaultLabelColor>
 		</value>
