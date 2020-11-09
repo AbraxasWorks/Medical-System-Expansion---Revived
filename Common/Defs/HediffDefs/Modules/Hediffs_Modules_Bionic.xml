@@ -20,6 +20,9 @@
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
   </ThingDef>
 
   <!-- Ranged platform module -->

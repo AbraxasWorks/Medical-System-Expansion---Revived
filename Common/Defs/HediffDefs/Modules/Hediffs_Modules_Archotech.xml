@@ -20,6 +20,9 @@
     <thingSetMakerTags>
       <li>RewardSpecial</li>
     </thingSetMakerTags>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
   </ThingDef>
 
   <!-- Advanced ranged platform module -->
