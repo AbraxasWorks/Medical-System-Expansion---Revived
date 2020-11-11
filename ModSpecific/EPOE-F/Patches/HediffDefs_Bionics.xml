@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- fix hediff color -->
 
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Bionic" or @Name="AddedBodyPart_Bone_Bionic"]</xpath>
+		<fromxpath>/Defs/HediffDef[@Name="addedPartBionics"]/defaultLabelColor</fromxpath>
+	</Operation>
 
 </Patch>

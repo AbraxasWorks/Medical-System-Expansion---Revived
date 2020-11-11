@@ -12,6 +12,11 @@
 		</value>
 	</Operation>
 
+	<!-- fix hediff color -->
 
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Simple" or @Name="AddedBodyPart_Bone_Prosthetic"]</xpath>
+		<fromxpath>/Defs/HediffDef[@Name="addedPartSimple"]/defaultLabelColor</fromxpath>
+	</Operation>
 
 </Patch>
