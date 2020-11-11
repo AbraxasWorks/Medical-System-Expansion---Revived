@@ -5,6 +5,18 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartBionics"]
+			[defName="PowerArm"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartBionicBase"]
+			[defName="PowerArm"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
 			/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeBionic"]
 			[defName="CreatePowerArm" or
 			defName="CreatePowerClaw" or
@@ -14,6 +26,12 @@
 			defName="CreateBionicLeg" or
 			defName="CreateBionicFoot" or
 			defName="EPIA_UpgradeBionicToe"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"]
+			[defName="InstallPowerArm"]
 		</xpath>
 	</Operation>
 
