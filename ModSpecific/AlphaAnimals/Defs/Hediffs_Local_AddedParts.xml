@@ -51,10 +51,6 @@
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>AA_MutantToe</li>
-					<li>AA_MutantToe</li>
-					<li>AA_MutantToe</li>
-					<li>AA_MutantToe</li>
-					<li>AA_MutantToe</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -255,10 +251,6 @@
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>AA_MutantFinger</li>
-					<li>AA_MutantFinger</li>
-					<li>AA_MutantFinger</li>
-					<li>AA_MutantFinger</li>
 					<li>AA_MutantFinger</li>
 				</standardChildren>
 			</li>
