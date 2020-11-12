@@ -44,8 +44,8 @@
 		<label>mutant foot</label>
 		<description>This foot seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
 		<statBases>
-			<MarketValue>30</MarketValue>
-			<Mass>1</Mass>
+			<MarketValue>10</MarketValue>
+			<Mass>0.7</Mass>
 		</statBases>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
@@ -147,8 +147,8 @@
 		<label>mutant toe</label>
 		<description>This toe seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
 		<statBases>
-			<MarketValue>6</MarketValue>
-			<Mass>1</Mass>
+			<MarketValue>5</MarketValue>
+			<Mass>0.5</Mass>
 		</statBases>
 	</ThingDef>
 
@@ -245,8 +245,8 @@
 		<label>mutant hand</label>
 		<description>This hand seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
 		<statBases>
-			<MarketValue>30</MarketValue>
-			<Mass>1</Mass>
+			<MarketValue>10</MarketValue>
+			<Mass>0.7</Mass>
 		</statBases>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
@@ -348,8 +348,8 @@
 		<label>mutant finger</label>
 		<description>This finger  seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
 		<statBases>
-			<MarketValue>6</MarketValue>
-			<Mass>1</Mass>
+			<MarketValue>5</MarketValue>
+			<Mass>0.5</Mass>
 		</statBases>
 	</ThingDef>
 
