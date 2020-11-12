@@ -7,14 +7,20 @@
 	<v1.2>
 		<li>Common</li>
 
+		<!-- main prosthetics -->
 		<li IfModNotActive="vat.epoeforked, Ykara.EPOE">ModSpecific\None</li>
 		<li IfModActive="Ykara.EPOE">ModSpecific\EPOE</li>
 		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>
 
+		<!-- royalty -->
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
-		
-		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific\ADS</li>
+
+		<!-- other mods -->
+		<li IfModActive="sarg.alphaanimals">ModSpecific\AlphaAnimals</li>
+
+		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
+
 
 		<li>1.2</li>
 	</v1.2>
