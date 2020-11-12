@@ -18,7 +18,6 @@
 								<standardChildren>
 									<li>MechanicalManipulator</li>
 									<li>MechanicalInternalSupport</li>
-									<li>MechanicalInternalSupport</li>
 								</standardChildren>
 							</li>
 						</comps>
@@ -40,10 +39,6 @@
 						<comps>
 							<li Class="MSE2.CompProperties_IncludedChildParts">
 								<standardChildren>
-									<li>FieldFinger</li>
-									<li>FieldFinger</li>
-									<li>FieldFinger</li>
-									<li>FieldFinger</li>
 									<li>FieldFinger</li>
 								</standardChildren>
 							</li>
