@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- mutant leg -->
+
 	<Operation Class="PatchOperationAddOrMerge">
 		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]</xpath>
 		<value>
@@ -13,6 +15,16 @@
 					</standardChildren>
 				</li>
 			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MarketValue>65</MarketValue>
+				<Mass>2</Mass>
+			</statBases>
 		</value>
 	</Operation>
 
@@ -30,6 +42,16 @@
 					</standardChildren>
 				</li>
 			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantArm"]/statBases</xpath>
+		<value>
+			<statBases>
+				<MarketValue>65</MarketValue>
+				<Mass>2</Mass>
+			</statBases>
 		</value>
 	</Operation>
 
