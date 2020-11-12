@@ -10,8 +10,7 @@
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
 						<li>AA_MutantFoot</li>
-						<li>Femur</li>
-						<li>Tibia</li>
+						<li>AA_MutantBone</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -22,7 +21,7 @@
 		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantLeg"]/statBases</xpath>
 		<value>
 			<statBases>
-				<MarketValue>65</MarketValue>
+				<MarketValue>51</MarketValue>
 				<Mass>2</Mass>
 			</statBases>
 		</value>
@@ -37,8 +36,7 @@
 				<li Class="MSE2.CompProperties_IncludedChildParts">
 					<standardChildren>
 						<li>AA_MutantHand</li>
-						<li>Humerus</li>
-						<li>Radius</li>
+						<li>AA_MutantBone</li>
 					</standardChildren>
 				</li>
 			</comps>
@@ -49,7 +47,7 @@
 		<xpath>/Defs/ThingDef[@ParentName="AA_BodyPartMutantBase"][defName="AA_MutantArm"]/statBases</xpath>
 		<value>
 			<statBases>
-				<MarketValue>65</MarketValue>
+				<MarketValue>51</MarketValue>
 				<Mass>2</Mass>
 			</statBases>
 		</value>

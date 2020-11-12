@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- mutant bone -->
+
+	<HediffDef ParentName="AA_MutantAddedBodyPartBase">
+		<defName>AA_MutantBone</defName>
+		<description>This bone seems to be covered in a slick secretion. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+		<label>mutant bone</label>
+		<labelNoun>a mutant bone</labelNoun>
+		<spawnThingOnRemoved>AA_MutantBone</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>AA_MutantBone</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivity>0.01</PsychicSensitivity>
+					<ToxicSensitivity>0.01</ToxicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="AA_BodyPartMutantBase">
+		<defName>AA_MutantBone</defName>
+		<descriptionHyperlinks>
+			<RecipeDef>AA_InstallMutantBone</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_MutantLegImplant</texPath>
+		</graphicData>
+		<label>mutant bone</label>
+		<description>This bone seems to be covered in a slick secretion. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>AA_InstallMutantBone</defName>
+		<label>install mutant bone</label>
+		<description>Install a mutant bone.</description>
+		<workerClass>MSE2.Recipe_InstallArtificialBodyPartWithChildren</workerClass>
+		<jobString>Installing mutant bone.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>AA_MutantBone</ThingDef>
+		</descriptionHyperlinks>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_MutantBone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_MutantBone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_MutantBone</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<onlyOnNatural>true</onlyOnNatural>
+				<whitelist>
+					<li>AA_MutantLeg</li>
+					<li>AA_MutantArm</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
 	<!-- mutant foot -->
 
 	<HediffDef ParentName="AA_MutantAddedBodyPartBase">
