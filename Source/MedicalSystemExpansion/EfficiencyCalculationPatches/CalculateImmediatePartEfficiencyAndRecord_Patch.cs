@@ -14,32 +14,6 @@ namespace MSE2.HarmonyPatches
         [HarmonyPatch( nameof( PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord ) )]
         internal class Patch
         {
-            // short circuit to return 0 efficency if the part is missing
-
-            [HarmonyPrefix]
-            public static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors )
-            {
-                // if the part is missing
-                if ( diffSet.PartIsMissing( part ) && !diffSet.PartShouldBeIgnored( part ) )
-                {
-                    __result = 0f; // it has 0 efficiency
-
-                    // if possible add it to the list of things affecting the stat
-                    if ( impactors != null )
-                    {
-                        if ( part.parent == null || diffSet.GetNotMissingParts().Contains( part.parent ) )
-                        {
-                            var imp = new PawnCapacityUtility.CapacityImpactorBodyPartHealth { bodyPart = part };
-
-                            impactors.Add( imp );
-                        }
-                    }
-
-                    return false;
-                }
-                return true;
-            }
-
             // don't say it has some efficiency just because it is child of added part
 
             [HarmonyTranspiler]
