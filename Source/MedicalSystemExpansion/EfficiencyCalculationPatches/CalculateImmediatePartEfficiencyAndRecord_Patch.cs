@@ -1,7 +1,9 @@
 ﻿using HarmonyLib;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+
 using Verse;
 
 namespace MSE2.HarmonyPatches
@@ -9,7 +11,7 @@ namespace MSE2.HarmonyPatches
     internal class CalculateImmediatePartEfficiencyAndRecord_Patch
     {
         [HarmonyPatch( typeof( PawnCapacityUtility ) )]
-        [HarmonyPatch( "CalculateImmediatePartEfficiencyAndRecord" )]
+        [HarmonyPatch( nameof( PawnCapacityUtility.CalculateImmediatePartEfficiencyAndRecord ) )]
         internal class Patch
         {
             // short circuit to return 0 efficency if the part is missing
@@ -18,7 +20,7 @@ namespace MSE2.HarmonyPatches
             public static bool PreFix ( ref float __result, HediffSet diffSet, BodyPartRecord part, List<PawnCapacityUtility.CapacityImpactor> impactors )
             {
                 // if the part is missing
-                if ( !diffSet.GetNotMissingParts().Contains( part ) )
+                if ( diffSet.PartIsMissing( part ) && !diffSet.PartShouldBeIgnored( part ) )
                 {
                     __result = 0f; // it has 0 efficiency
 
