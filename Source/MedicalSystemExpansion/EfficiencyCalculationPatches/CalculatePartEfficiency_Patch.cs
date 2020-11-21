@@ -1,7 +1,9 @@
 ﻿using HarmonyLib;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+
 using Verse;
 
 namespace MSE2.HarmonyPatches
@@ -25,6 +27,26 @@ namespace MSE2.HarmonyPatches
 
             // skip them
             return instructions.Skip( firstBranchJump );
+        }
+
+        // return parent if part should be ignored
+
+        [HarmonyPrefix]
+        public static bool Prefix ( ref float __result, HediffSet diffSet, BodyPartRecord part, bool ignoreAddedParts, List<PawnCapacityUtility.CapacityImpactor> impactors )
+        {
+            if ( diffSet.PartShouldBeIgnored( part ) )
+            {
+                if ( part.parent == null )
+                {
+                    __result = 1f;
+                }
+                else
+                {
+                    __result = PawnCapacityUtility.CalculatePartEfficiency( diffSet, part.parent, ignoreAddedParts, impactors );
+                }
+                return false;
+            }
+            return true;
         }
     }
 }
