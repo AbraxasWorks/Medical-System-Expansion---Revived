@@ -2,152 +2,112 @@
 <Patch>
 
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>CyberNet</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+	<!-- change all stages to affect part performance instead of capacities directly -->
 
-				<!-- change all stages to affect part performance instead of capacities directly -->
-
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="-0.2"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>-0.4</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="-0.125"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>-0.25</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="-0.1"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>-0.2</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="-0.05"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>-0.1</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.015"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.03</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.05"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.1</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.075"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.15</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.1"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.2</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.15"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.3</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.175"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.35</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.2"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.4</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.225"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.45</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.25"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.5</partEfficiencyOffset>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>
-						/Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"]
-						[offset="0.275"]]
-					</xpath>
-					<value>
-						<partEfficiencyOffset>0.55</partEfficiencyOffset>
-					</value>
-				</li>
-				
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="-0.2"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>-0.4</partEfficiencyOffset>
+		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="-0.125"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="-0.1"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="-0.05"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.015"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.03</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.05"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.1</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.075"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.15</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.1"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.2</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.15"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.3</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.175"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.35</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.2"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.4</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.225"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.45</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.25"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.5</partEfficiencyOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"]/stages/li/capMods[li[capacity="Manipulation" or capacity="Moving"] [offset="0.275"]]
+		</xpath>
+		<value>
+			<partEfficiencyOffset>0.55</partEfficiencyOffset>
+		</value>
+	</Operation>
+
 </Patch>
