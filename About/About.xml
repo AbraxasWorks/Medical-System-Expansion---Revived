@@ -15,7 +15,7 @@ Version: 2.4.0 [BETA]
 
 Improves how the game handles prosthetics by not discarding the subparts of added prostheses.
 
-This is a rewrite of Medical System Expansion by Oreno.
+This is inspired by Medical System Expansion by Oreno.
 	</description>
 
 	<modDependencies>
@@ -33,8 +33,11 @@ This is a rewrite of Medical System Expansion by Oreno.
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>UnlimitedHugs.HugsLib</li>
+
 		<li>CETeam.CombatExtended</li>
 		<li>sarg.alphaanimals</li>
+		<li>K.CyberNet</li>
+
 		<!-- prosthetic mods -->
 		<li>Ykara.EPOE</li>
 		<li>vat.epoeforked</li>
