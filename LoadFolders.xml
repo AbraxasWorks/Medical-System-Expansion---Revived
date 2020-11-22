@@ -19,7 +19,7 @@
 		<!-- other mods -->
 		<li IfModActive="sarg.alphaanimals">ModSpecific\AlphaAnimals</li>
 
-		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
+		<li IfModActive="K.CyberNet">ModSpecific\CyberNet</li>
 
 
 		<li>1.2</li>
