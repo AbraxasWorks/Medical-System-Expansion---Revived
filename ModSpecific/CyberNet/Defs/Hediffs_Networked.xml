@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- cnn arm -->
+
+	<HediffDef ParentName="CNHediffProsthetic">
+		<defName>CNNetworkedArm</defName>
+		<label>Networked Arm</label>
+		<labelNoun>A Networked Arm</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic arms, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedArm</spawnThingOnRemoved>
+		<comps>
+			<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+				<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+				<DefaultSeverity>1</DefaultSeverity>
+				<BandwidthUsage>0.1</BandwidthUsage>
+				<ProcessorUsage>0.05</ProcessorUsage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic">
+		<defName>CNNetworkedArm</defName>
+		<label>Networked Arm</label>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic arms, and more efficient, but requires infrastructure to function.</description>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>12</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>CNNetworkedProsthetics</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedForearm</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedArm</defName>
+		<label>Install Networked Arm</label>
+		<description>Install a Networked Arm</description>
+		<jobString>Installing Networked Arm</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedArm</addsHediff>
+	</RecipeDef>
 
 	<!-- cnn forearm -->
 
@@ -251,6 +335,91 @@
 			<li>Finger</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>CNNetworkedFinger</addsHediff>
+	</RecipeDef>
+
+	<!-- cnn leg -->
+
+	<HediffDef ParentName="CNHediffProsthetic">
+		<defName>CNNetworkedLeg</defName>
+		<label>Networked Leg</label>
+		<labelNoun>A Networked Leg</labelNoun>
+		<spawnThingOnRemoved>CNNetworkedLeg</spawnThingOnRemoved>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic legs, and more efficient, but requires infrastructure to function.</description>
+		<comps>
+			<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+				<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+				<DefaultSeverity>1</DefaultSeverity>
+				<BandwidthUsage>0.25</BandwidthUsage>
+				<ProcessorUsage>0.125</ProcessorUsage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic">
+		<defName>CNNetworkedLeg</defName>
+		<label>Networked Leg</label>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic legs, and more efficient, but requires infrastructure to function.</description>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>7</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>12</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>CNNetworkedProsthetics</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedFoot</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedLeg</defName>
+		<label>Install Networked Leg</label>
+		<description>Install a Networked Leg</description>
+		<jobString>Installing Networked Leg</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedLeg</addsHediff>
 	</RecipeDef>
 
 
