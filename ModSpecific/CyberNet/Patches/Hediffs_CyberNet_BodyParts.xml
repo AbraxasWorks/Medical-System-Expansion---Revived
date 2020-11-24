@@ -6,35 +6,22 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/RecipeDef[defName="InstallBionicInternalSupport"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
 		<value>
+			<li>CNNetworkedForearmPart</li>
 			<li>CNNetworkedArm</li>
-			<li>CNNetworkedForearm</li>
 			<li>CNNetworkedLeg</li>
+			<li>CNAdvancedNetworkedArm</li>
+			<li>CNAdvancedNetworkedLeg</li>
 		</value>
-	</Operation>
-
-	<!-- copy stages to subparts -->
-
-	<Operation Class="PatchOperationAddCopy">
-		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/stages</fromxpath>
-		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"] [defName="CNNetworkedForearm" or defName="CNNetworkedHand" or defName="CNNetworkedFinger"]
-		</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAddCopy">
-		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedLeg"]/stages</fromxpath>
-		<xpath> /Defs/HediffDef[@ParentName="CNHediffProsthetic"] [defName="CNNetworkedFoot" or defName="CNNetworkedToe"]
-		</xpath>
 	</Operation>
 
 	<!-- move verb from arm to hand -->
 
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedHand"]/comps</xpath>
+		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic_Subsegment"][defName="CNNetworkedHandPart"]/comps</xpath>
 		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
-
-
 
 </Patch>

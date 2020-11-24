@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="CNHediffProsthetic_Subsegment" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<isBad>false</isBad>
+		<defaultLabelColor>(0.18, 0.75, 1)</defaultLabelColor>
+		<modExtensions>
+			<li Class="MSE2.MultiplyByParent" />
+		</modExtensions>
+	</HediffDef>
+
+	<ThingDef Name="CyberNetProsthetic_Subsegment" ParentName="CyberNetProsthetic" Abstract="True">
+		<description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</description>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>CNNetworkedProsthetics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<!-- cnn forearm -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedForearmPart</defName>
+		<label>networked arm part</label>
+		<labelNoun>a networked forearm part</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic forearms, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedForearmPart</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedForearmPart</defName>
+		<label>networked forearm part</label>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+		</costList>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedHandPart</li>
+					<li>BionicInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedForearmPart</defName>
+		<label>Install networked forearm part</label>
+		<description>Install a networked forearm part</description>
+		<jobString>Installing networked forearm part</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedForearmPart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedForearmPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedForearmPart</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNNetworkedArm</li>
+					<li>CNAdvancedNetworkedArm</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- cnn hand -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedHandPart</defName>
+		<label>networked hand part</label>
+		<labelNoun>a networked hand part</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedHandPart</spawnThingOnRemoved>
+		<!-- comp verb taken from arm -->
+		<comps />
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedHandPart</defName>
+		<label>Networked hand part</label>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedFingerPart</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedHandPart</defName>
+		<label>Install networked hand part</label>
+		<description>Install a networked hand part</description>
+		<jobString>Installing networked hand part</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedHandPart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedHandPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedHandPart</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNNetworkedForearmPart</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+	<!-- cnn finger -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedFingerPart</defName>
+		<label>networked finger part</label>
+		<labelNoun>a networked finger part</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic fingers, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedFingerPart</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedFingerPart</defName>
+		<label>Networked finger part</label>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedFingerPart</defName>
+		<label>Install networked finger part</label>
+		<description>Install a networked finger part</description>
+		<jobString>Installing networked finger part</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedFingerPart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedFingerPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedFingerPart</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNNetworkedHandPart</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- cnn foot -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedFootPart</defName>
+		<label>networked foot part</label>
+		<labelNoun>a networked foot part</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic feet, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedFootPart</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedFootPart</defName>
+		<label>Networked foot part</label>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedToePart</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedFootPart</defName>
+		<label>Install networked foot part</label>
+		<description>Install a networked foot part</description>
+		<jobString>Installing networked foot part</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedFootPart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedFootPart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedFootPart</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNAdvancedNetworkedLeg</li>
+					<li>CNNetworkedLeg</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+	<!-- cnn toe -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedToePart</defName>
+		<label>networked toe part</label>
+		<labelNoun>a networked toe part</labelNoun>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic toes, and more efficient, but requires infrastructure to function.</description>
+		<spawnThingOnRemoved>CNNetworkedToePart</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedToePart</defName>
+		<label>Networked toe part</label>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<productCount>5</productCount>
+		</recipeMaker>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery">
+		<defName>CNInstallNetworkedToePart</defName>
+		<label>Install networked toe part</label>
+		<description>Install a networked toe part</description>
+		<jobString>Installing networked toe part</jobString>
+		<workAmount>2500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedToePart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>CNNetworkedToePart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedToePart</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNNetworkedFootPart</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+
+
+</Defs>
