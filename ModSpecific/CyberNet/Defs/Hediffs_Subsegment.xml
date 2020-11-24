@@ -24,6 +24,99 @@
 		</recipeMaker>
 	</ThingDef>
 
+	<RecipeDef Name="CyberNetSurgery_Subsegment" ParentName="CyberNetSurgery" Abstract="True">
+		<workAmount>2000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	
+	<!-- internal support -->
+
+	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
+		<defName>CNNetworkedInternalSupport</defName>
+		<label>bionic internal support</label>
+		<labelNoun>a networked internal support</labelNoun>
+		<description>An installed networked internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CNNetworkedInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>CNNetworkedInternalSupport</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
+		<defName>CNNetworkedInternalSupport</defName>
+		<label>networked internal support</label>
+		<description Inherit="False">An internal support for a networked prosthetic. Useful replacement to have on hand for when an internal support of a networked prosthesis breaks.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCNNetworkedInternalSupport</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
+		<defName>InstallCNNetworkedInternalSupport</defName>
+		<label>install networked internal support</label>
+		<description>Install a networked internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CNNetworkedInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing networked internal support.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CNNetworkedInternalSupport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CNNetworkedInternalSupport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CNNetworkedInternalSupport</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>CNNetworkedForearmPart</li>
+					<li>CNNetworkedArm</li>
+					<li>CNNetworkedLeg</li>
+					<li>CNAdvancedNetworkedArm</li>
+					<li>CNAdvancedNetworkedLeg</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
 	<!-- cnn forearm -->
 
@@ -49,27 +142,18 @@
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>CNNetworkedHandPart</li>
-					<li>BionicInternalSupport</li>
+					<li>CNNetworkedInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="CyberNetSurgery">
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
 		<defName>CNInstallNetworkedForearmPart</defName>
 		<label>Install networked forearm part</label>
 		<description>Install a networked forearm part</description>
 		<jobString>Installing networked forearm part</jobString>
-		<workAmount>2500</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -80,9 +164,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>CNNetworkedForearmPart</li>
 			</thingDefs>
@@ -133,21 +214,12 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="CyberNetSurgery">
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
 		<defName>CNInstallNetworkedHandPart</defName>
 		<label>Install networked hand part</label>
 		<description>Install a networked hand part</description>
 		<jobString>Installing networked hand part</jobString>
-		<workAmount>2500</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -158,9 +230,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>CNNetworkedHandPart</li>
 			</thingDefs>
@@ -187,6 +256,7 @@
 		<labelNoun>a networked finger part</labelNoun>
 		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic fingers, and more efficient, but requires infrastructure to function.</description>
 		<spawnThingOnRemoved>CNNetworkedFingerPart</spawnThingOnRemoved>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
@@ -205,21 +275,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="CyberNetSurgery">
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
 		<defName>CNInstallNetworkedFingerPart</defName>
 		<label>Install networked finger part</label>
 		<description>Install a networked finger part</description>
 		<jobString>Installing networked finger part</jobString>
-		<workAmount>2500</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -230,9 +291,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>CNNetworkedFingerPart</li>
 			</thingDefs>
@@ -280,21 +338,12 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="CyberNetSurgery">
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
 		<defName>CNInstallNetworkedFootPart</defName>
 		<label>Install networked foot part</label>
 		<description>Install a networked foot part</description>
 		<jobString>Installing networked foot part</jobString>
-		<workAmount>2500</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -305,9 +354,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>CNNetworkedFootPart</li>
 			</thingDefs>
@@ -335,6 +381,7 @@
 		<labelNoun>a networked toe part</labelNoun>
 		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic toes, and more efficient, but requires infrastructure to function.</description>
 		<spawnThingOnRemoved>CNNetworkedToePart</spawnThingOnRemoved>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="CyberNetProsthetic_Subsegment">
@@ -353,21 +400,12 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<RecipeDef ParentName="CyberNetSurgery">
+	<RecipeDef ParentName="CyberNetSurgery_Subsegment">
 		<defName>CNInstallNetworkedToePart</defName>
 		<label>Install networked toe part</label>
 		<description>Install a networked toe part</description>
 		<jobString>Installing networked toe part</jobString>
-		<workAmount>2500</workAmount>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>2</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -378,9 +416,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>CNNetworkedToePart</li>
 			</thingDefs>

@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- int support -->
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="InstallBionicInternalSupport"]/modExtensions/li[@Class="MSE2.InstallationRestrictions"]/whitelist</xpath>
-		<value>
-			<li>CNNetworkedForearmPart</li>
-			<li>CNNetworkedArm</li>
-			<li>CNNetworkedLeg</li>
-			<li>CNAdvancedNetworkedArm</li>
-			<li>CNAdvancedNetworkedLeg</li>
-		</value>
-	</Operation>
-
 	<!-- move verb from arm to hand -->
 
 	<Operation Class="PatchOperationAddCopy">
@@ -23,5 +10,7 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
+
+	<!-- add price impact -->
 
 </Patch>

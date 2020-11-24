@@ -26,7 +26,7 @@
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>CNNetworkedForearmPart</li>
-					<li>BionicInternalSupport</li>
+					<li>CNNetworkedInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -43,7 +43,7 @@
 			<Mass>3</Mass>
 		</statBases>
 		<costList>
-			<Plasteel>8</Plasteel>
+			<Plasteel>7</Plasteel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
@@ -57,7 +57,7 @@
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
 					<li>CNNetworkedFootPart</li>
-					<li>BionicInternalSupport</li>
+					<li>CNNetworkedInternalSupport</li>
 				</standardChildren>
 			</li>
 		</comps>
