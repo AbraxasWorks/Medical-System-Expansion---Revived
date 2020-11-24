@@ -343,6 +343,7 @@
 		<addedPartProps>
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
@@ -558,6 +559,7 @@
 		<addedPartProps>
 			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartBionic_Limb">

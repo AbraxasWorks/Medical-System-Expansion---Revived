@@ -321,6 +321,7 @@
 		<addedPartProps>
 			<partEfficiency>1.50</partEfficiency>
 		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartAchotech_Limb">
@@ -524,6 +525,7 @@
 		<addedPartProps>
 			<partEfficiency>1.50</partEfficiency>
 		</addedPartProps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartAchotech_Limb">
