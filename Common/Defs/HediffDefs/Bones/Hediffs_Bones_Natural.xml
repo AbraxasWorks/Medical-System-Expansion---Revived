@@ -3,7 +3,7 @@
 
 	<!-- humerus -->
 
-	<ThingDef ParentName="BodyPartNaturalBase">
+	<!-- <ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Humerus</defName>
 		<label>humerus</label>
 		<description>A biological human humerus.</description>
@@ -38,11 +38,11 @@
 		<appliedOnFixedBodyParts>
 			<li>Humerus</li>
 		</appliedOnFixedBodyParts>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- radius -->
 	
-	<ThingDef ParentName="BodyPartNaturalBase">
+	<!-- <ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Radius</defName>
 		<label>radius</label>
 		<description>A biological human radius.</description>
@@ -77,10 +77,10 @@
 		<appliedOnFixedBodyParts>
 			<li>Radius</li>
 		</appliedOnFixedBodyParts>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- femur -->
-
+<!-- 
 	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Femur</defName>
 		<label>femur</label>
@@ -116,11 +116,11 @@
 		<appliedOnFixedBodyParts>
 			<li>Femur</li>
 		</appliedOnFixedBodyParts>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- tibia -->
 	
-	<ThingDef ParentName="BodyPartNaturalBase">
+	<!-- <ThingDef ParentName="BodyPartNaturalBase">
 		<defName>Tibia</defName>
 		<label>tibia</label>
 		<description>A biological human tibia.</description>
@@ -155,6 +155,6 @@
 		<appliedOnFixedBodyParts>
 			<li>Tibia</li>
 		</appliedOnFixedBodyParts>
-	</RecipeDef>
+	</RecipeDef> -->
 
 </Defs>
