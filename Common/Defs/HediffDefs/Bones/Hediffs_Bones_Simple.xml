@@ -12,9 +12,9 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartProsthetic_Bone" ParentName="BodyPartProstheticMakeableBase">
-		<statBases>
+		<!-- <statBases>
 			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
+		</statBases> -->
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Prosthetic" ParentName="SurgeryInstallBodyPartProstheticBase">
