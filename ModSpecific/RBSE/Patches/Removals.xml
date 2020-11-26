@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- bones -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartSimple"]
+			[defName="ArtificialHumerus" or
+			defName="ArtificialRadius" or
+			defName="ArtificialTibia" or
+			defName="ArtificialFemur" or
+			defName="ArtificialClavicle" or
+			defName="ArtificialRibcage" or
+			defName="ArtificialSternum" or
+			defName="SpinalFusion"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Simple"]
+			[defName="ArtificialBone"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryBone"]
+		</xpath>
+	</Operation>
+
+	<!-- simple -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartSimple"]
+			[defName="SimpleProstheticArm" or
+			defName="SimpleProstheticHand" or
+			defName="SimpleProstheticLeg" or
+			defName="SimpleProstheticFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Simple"]
+			[defName="SimpleProstheticArm" or
+			defName="SimpleProstheticHand" or
+			defName="SimpleProstheticLeg" or
+			defName="SimpleProstheticFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgerySimple"]
+			[defName="InstallSimpleProstheticArm" or
+			defName="InstallSimpleProstheticHand" or
+			defName="InstallSimpleProstheticLeg" or
+			defName="InstallSimpleProstheticFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef
+			[defName="MakeSimpleProstheticArm" or
+			defName="MakeSimpleProstheticHand" or
+			defName="MakeSimpleProstheticLeg" or
+			defName="MakeSimpleProstheticFoot" or
+			defName="MakeArtificialBone"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[defName="TableMachining"]/recipes/li
+			[text()="MakeSimpleProstheticArm" or
+			text()="MakeSimpleProstheticHand" or
+			text()="MakeSimpleProstheticLeg" or
+			text()="MakeSimpleProstheticFoot" or
+			text()="MakeArtificialBone"]
+		</xpath>
+	</Operation>
+
+
+	<!-- bionics -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartBionics"]
+			[defName="PowerArm" or
+			defName="BionicArm" or
+			defName="BionicHand" or
+			defName="BionicLeg" or
+			defName="BionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Bionic"]
+			[defName="PowerArm" or
+			defName="BionicArm" or
+			defName="BionicHand" or
+			defName="BionicLeg" or
+			defName="BionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryBionic"]
+			[defName="InstallPowerArm" or
+			defName="InstallBionicArm" or
+			defName="InstallBionicHand" or
+			defName="InstallBionicLeg" or
+			defName="InstallBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef
+			[defName="MakePowerArm" or
+			defName="MakeBionicArm" or
+			defName="MakeBionicHand" or
+			defName="MakeBionicLeg" or
+			defName="MakeBionicFoot" or
+			defName="MakePowerClaw"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[defName="BionicWorkbench"]/recipes/li
+			[text()="MakePowerArm" or
+			text()="MakeBionicArm" or
+			text()="MakeBionicHand" or
+			text()="MakeBionicLeg" or
+			text()="MakeBionicFoot" or
+			text()="MakePowerClaw"]
+		</xpath>
+	</Operation>
+
+
+	<!-- advanced -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartAdvanced"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot" or
+			defName="ArchotechArm" or
+			defName="ArchotechLeg"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Advanced"]
+			[defName="AdvancedPowerArm" or
+			defName="AdvancedBionicArm" or
+			defName="AdvancedBionicHand" or
+			defName="AdvancedBionicLeg" or
+			defName="AdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryAdvanced"]
+			[defName="InstallAdvancedPowerArm" or
+			defName="InstallAdvancedBionicArm" or
+			defName="InstallAdvancedBionicHand" or
+			defName="InstallAdvancedBionicLeg" or
+			defName="InstallAdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef
+			[defName="MakeAdvancedPowerArm" or
+			defName="MakeAdvancedBionicArm" or
+			defName="MakeAdvancedBionicHand" or
+			defName="MakeAdvancedBionicLeg" or
+			defName="MakeAdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[defName="AdvancedMedicalStation"]/recipes/li
+			[text()="MakeAdvancedPowerArm" or
+			text()="MakeAdvancedBionicArm" or
+			text()="MakeAdvancedBionicHand" or
+			text()="MakeAdvancedBionicLeg" or
+			text()="MakeAdvancedBionicFoot"]
+		</xpath>
+	</Operation>
+
+
+</Patch>

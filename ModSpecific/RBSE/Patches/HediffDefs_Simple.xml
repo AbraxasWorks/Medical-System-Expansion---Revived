@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- fix hediff color -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Simple" or @Name="AddedBodyPart_Bone_Prosthetic"]</xpath>
+		<fromxpath>/Defs/HediffDef[@Name="addedPartSimple"]/defaultLabelColor</fromxpath>
+	</Operation>
+
+	<!-- copy thing parameters excepr stats and categories -->
+
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Limb" or @Name="BodyPartProsthetic_Bone"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="Simple"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
+	</Operation>
+	
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/HediffDef[@ParentName="addedPartSimple"][defName="HookHand"]</xpath>
+    <value>
+      <li Class="MSE2.IgnoreSubParts">
+				<ignoreAll>true</ignoreAll>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

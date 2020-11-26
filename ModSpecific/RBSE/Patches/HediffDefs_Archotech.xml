@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[@Abstract="True" and @Name="BodyPartAchotech_Limb" and @ParentName="BodyPartArchotechBase"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>ArchotechBase</value>
+	</Operation>
+
+</Patch>

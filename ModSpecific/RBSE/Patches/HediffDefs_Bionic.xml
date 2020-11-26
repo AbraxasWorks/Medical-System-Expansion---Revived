@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- label color -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@Name="AddedBodyPart_Limb_Bionic" or @Name="AddedBodyPart_Bone_Bionic"]</xpath>
+		<fromxpath>/Defs/HediffDef[@Name="addedPartBionics"]/defaultLabelColor</fromxpath>
+	</Operation>
+
+	<!-- copy thing parameters excepr stats and categories -->
+
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb" or @Name="BodyPartBionic_Bone"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="Bionic"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
+	</Operation>
+
+	<!-- crafting -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb" or @Name="BodyPartBionic_Bone"]</xpath>
+		<value>
+			<recipeMaker>
+				<soundWorking>RBSESound</soundWorking>
+				<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+				<recipeUsers Inherit="False">
+					<li>BionicWorkbench</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+
+</Patch>
