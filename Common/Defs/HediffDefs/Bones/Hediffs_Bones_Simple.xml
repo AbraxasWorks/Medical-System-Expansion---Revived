@@ -12,17 +12,137 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartProsthetic_Bone" ParentName="BodyPartProstheticMakeableBase">
-		<!-- <statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases> -->
+		<recipeMaker>
+			<researchPrerequisite>BoneProstheticsSimple</researchPrerequisite>
+		</recipeMaker>
+    <!-- <smeltable>true</smeltable> -->
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Prosthetic" ParentName="SurgeryInstallBodyPartProstheticBase">
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
 		<modExtensions>
 			<li Class="MSE2.InstallationRestrictions">
 				<onlyOnNatural>true</onlyOnNatural>
 			</li>
 		</modExtensions>
+	</RecipeDef>
+
+	<!-- ribcage -->
+
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticRibcage</defName>
+		<label>prosthetic ribcage</label>
+		<labelNoun>a prosthetic ribcage</labelNoun>
+		<description>An installed prosthetic ribcage.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticRibcage</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticRibcage</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticRibcage</defName>
+		<label>prosthetic ribcage</label>
+		<description>A ribcage prosthesis. It is inferior to a real ribcage.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticRibcage</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticRibcage</defName>
+		<label>install prosthetic ribcage</label>
+		<description>Install a prosthetic ribcage.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticRibcage</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic ribcage.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticRibcage</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticRibcage</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticRibcage</addsHediff>
+	</RecipeDef>
+
+	<!-- sternum -->
+
+	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
+		<defName>SimpleProstheticSternum</defName>
+		<label>prosthetic sternum</label>
+		<labelNoun>a prosthetic sternum</labelNoun>
+		<description>An installed prosthetic sternum.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticSternum</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticSternum</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProsthetic_Bone">
+		<defName>SimpleProstheticSternum</defName>
+		<label>prosthetic sternum</label>
+		<description>A sternum prosthesis. It is inferior to a real sternum.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticSternum</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<statBases>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
+		<defName>InstallSimpleProstheticSternum</defName>
+		<label>install prosthetic sternum</label>
+		<description>Install a prosthetic sternum.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticSternum</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic sternum.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticSternum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticSternum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Sternum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticSternum</addsHediff>
 	</RecipeDef>
 
 	<!-- clavicle -->
@@ -46,7 +166,7 @@
 			<RecipeDef>InstallSimpleProstheticClavicle</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>10</Steel>
+			<Steel>8</Steel>
 		</costList>
 		<statBases>
 			<Mass>0.3</Mass>
@@ -160,10 +280,10 @@
 			<RecipeDef>InstallSimpleProstheticRadius</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>15</Steel>
+			<Steel>12</Steel>
 		</costList>
 		<statBases>
-			<Mass>1.5</Mass>
+			<Mass>1.2</Mass>
 		</statBases>
 	</ThingDef>
 

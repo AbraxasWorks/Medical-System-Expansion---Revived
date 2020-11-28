@@ -12,12 +12,20 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartBionic_Bone" ParentName="BodyPartBionicBase">
-		<!-- <statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases> -->
+		<recipeMaker>
+			<researchPrerequisite>BoneProstheticsPlasteel</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+		</recipeMaker>
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Bone" ParentName="SurgeryInstallBodyPartArtificialBase">
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
 		<modExtensions>
 			<li Class="MSE2.InstallationRestrictions">
 				<onlyOnNatural>true</onlyOnNatural>
@@ -25,6 +33,120 @@
 		</modExtensions>
 	</RecipeDef>
 
+	<!-- ribcage -->
+
+	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
+		<defName>PlasteelRibcage</defName>
+		<label>plasteel ribcage</label>
+		<labelNoun>a plasteel ribcage</labelNoun>
+		<description>An installed plasteel ribcage.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PlasteelRibcage</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>PlasteelRibcage</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionic_Bone">
+		<defName>PlasteelRibcage</defName>
+		<label>plasteel ribcage</label>
+		<description>An advanced artificial ribcage.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPlasteelRibcage</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
+		<defName>InstallPlasteelRibcage</defName>
+		<label>install plasteel ribcage</label>
+		<description>Install a plasteel ribcage.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PlasteelRibcage</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing plasteel ribcage.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelRibcage</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelRibcage</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ribcage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PlasteelRibcage</addsHediff>
+	</RecipeDef>
+
+	<!-- sternum -->
+
+	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
+		<defName>PlasteelSternum</defName>
+		<label>plasteel sternum</label>
+		<labelNoun>a plasteel sternum</labelNoun>
+		<description>An installed plasteel sternum.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PlasteelSternum</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>PlasteelSternum</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionic_Bone">
+		<defName>PlasteelSternum</defName>
+		<label>plasteel sternum</label>
+		<description>An advanced artificial sternum.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPlasteelSternum</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<statBases>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
+		<defName>InstallPlasteelSternum</defName>
+		<label>install plasteel sternum</label>
+		<description>Install a plasteel sternum.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PlasteelSternum</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing plasteel sternum.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlasteelSternum</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlasteelSternum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Sternum</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PlasteelSternum</addsHediff>
+	</RecipeDef>
+	
 	<!-- clavicle -->
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
@@ -41,12 +163,12 @@
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelClavicle</defName>
 		<label>plasteel clavicle</label>
-		<description>An advanced artificial clavicle. Requires plasteel bones research to install it.</description>
+		<description>An advanced artificial clavicle.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelClavicle</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>5</Plasteel>
+			<Plasteel>8</Plasteel>
 		</costList>
 		<statBases>
 			<Mass>0.3</Mass>
