@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--InstallPowerClaw-->
+  <InstallPowerClaw.label>install power claw module</InstallPowerClaw.label>
+  <InstallPowerClaw.description>Install a power claw.</InstallPowerClaw.description>
+  <InstallPowerClaw.jobString>Installing power claw.</InstallPowerClaw.jobString>
+</LanguageData>

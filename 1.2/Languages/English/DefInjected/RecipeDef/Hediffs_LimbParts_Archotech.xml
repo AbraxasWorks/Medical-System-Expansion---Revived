@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--InstallArchotechInternalSupport-->
+  <InstallArchotechInternalSupport.label>install archotech internal support</InstallArchotechInternalSupport.label>
+  <InstallArchotechInternalSupport.description>Install an archotech internal support.</InstallArchotechInternalSupport.description>
+  <InstallArchotechInternalSupport.jobString>Installing archotech internal support.</InstallArchotechInternalSupport.jobString>
+  <!--InstallArchotechArm-->
+  <InstallArchotechArm.label>install archotech arm</InstallArchotechArm.label>
+  <InstallArchotechArm.description>Install an archotech arm.</InstallArchotechArm.description>
+  <InstallArchotechArm.jobString>Installing archotech arm.</InstallArchotechArm.jobString>
+  <!--InstallArchotechForearm-->
+  <InstallArchotechForearm.label>install archotech forearm</InstallArchotechForearm.label>
+  <InstallArchotechForearm.description>Install an archotech forearm.</InstallArchotechForearm.description>
+  <InstallArchotechForearm.jobString>Installing archotech forearm.</InstallArchotechForearm.jobString>
+  <!--InstallArchotechHand-->
+  <InstallArchotechHand.label>install archotech hand</InstallArchotechHand.label>
+  <InstallArchotechHand.description>Install an archotech hand.</InstallArchotechHand.description>
+  <InstallArchotechHand.jobString>Installing archotech hand.</InstallArchotechHand.jobString>
+  <!--InstallArchotechFinger-->
+  <InstallArchotechFinger.label>install archotech finger</InstallArchotechFinger.label>
+  <InstallArchotechFinger.description>Install an archotech finger.</InstallArchotechFinger.description>
+  <InstallArchotechFinger.jobString>Installing archotech finger.</InstallArchotechFinger.jobString>
+  <!--InstallArchotechLeg-->
+  <InstallArchotechLeg.label>install archotech leg</InstallArchotechLeg.label>
+  <InstallArchotechLeg.description>Install an archotech leg.</InstallArchotechLeg.description>
+  <InstallArchotechLeg.jobString>Installing archotech leg.</InstallArchotechLeg.jobString>
+  <!--InstallArchotechFoot-->
+  <InstallArchotechFoot.label>install archotech foot</InstallArchotechFoot.label>
+  <InstallArchotechFoot.description>Install an archotech foot.</InstallArchotechFoot.description>
+  <InstallArchotechFoot.jobString>Installing archotech foot.</InstallArchotechFoot.jobString>
+  <!--InstallArchotechToe-->
+  <InstallArchotechToe.label>install archotech toe</InstallArchotechToe.label>
+  <InstallArchotechToe.description>Install an archotech toe.</InstallArchotechToe.description>
+  <InstallArchotechToe.jobString>Installing archotech toe.</InstallArchotechToe.jobString>
+</LanguageData>

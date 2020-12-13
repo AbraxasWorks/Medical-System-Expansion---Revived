@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- abstracts -->
@@ -29,9 +29,6 @@
 
 	<HediffDef ParentName="MSE_ModuleAddedArchotech">
 		<defName>MSE_AdvancedRangedPlatformModule</defName>
-		<label>advanced ranged platform module</label>
-		<labelNoun>an advanced ranged platform module</labelNoun>
-		<description>An installed advanced ranged platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef>
 		</descriptionHyperlinks>
@@ -54,8 +51,6 @@
 
 	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>MSE_AdvancedRangedPlatformModule</defName>
-		<label>advanced ranged platform module</label>
-		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and and greatly increase your pawn's' ranged combat ability.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>MSE_InstallAdvancedRangedPlatformModule</RecipeDef>
 		</descriptionHyperlinks>
@@ -75,12 +70,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallAdvancedRangedPlatformModule</defName>
-		<label>install advanced ranged platform module</label>
-		<description>Install an advanced ranged platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_AdvancedRangedPlatformModule</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing sdvanced ranged platform module.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -106,9 +98,6 @@
 
 	<HediffDef ParentName="MSE_ModuleAddedArchotech">
 		<defName>MSE_AdvancedMeleePlatformModule</defName>
-		<label>advanced melee platform module</label>
-		<labelNoun>an advanced melee platform module</labelNoun>
-		<description>An installed advanced melee platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef>
 		</descriptionHyperlinks>
@@ -131,8 +120,6 @@
 
 	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>MSE_AdvancedMeleePlatformModule</defName>
-		<label>advanced melee platform module</label>
-		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and greatly improve your pawn's melee combat ability.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>MSE_InstallAdvancedMeleePlatformModule</RecipeDef>
 		</descriptionHyperlinks>
@@ -152,12 +139,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallAdvancedMeleePlatformModule</defName>
-		<label>install advanced melee platform module</label>
-		<description>Install an advanced melee platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_AdvancedMeleePlatformModule</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing advanced melee platform module.</jobString>
 		<ingredients>
 			<li>
 				<filter>

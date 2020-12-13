@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- base -->
@@ -35,9 +35,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticRibcage</defName>
-		<label>prosthetic ribcage</label>
-		<labelNoun>a prosthetic ribcage</labelNoun>
-		<description>An installed prosthetic ribcage.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticRibcage</ThingDef>
 		</descriptionHyperlinks>
@@ -46,8 +43,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticRibcage</defName>
-		<label>prosthetic ribcage</label>
-		<description>A ribcage prosthesis. It is inferior to a real ribcage.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticRibcage</RecipeDef>
 		</descriptionHyperlinks>
@@ -61,12 +56,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticRibcage</defName>
-		<label>install prosthetic ribcage</label>
-		<description>Install a prosthetic ribcage.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticRibcage</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic ribcage.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -92,9 +84,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticSternum</defName>
-		<label>prosthetic sternum</label>
-		<labelNoun>a prosthetic sternum</labelNoun>
-		<description>An installed prosthetic sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticSternum</ThingDef>
 		</descriptionHyperlinks>
@@ -103,8 +92,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticSternum</defName>
-		<label>prosthetic sternum</label>
-		<description>A sternum prosthesis. It is inferior to a real sternum.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticSternum</RecipeDef>
 		</descriptionHyperlinks>
@@ -118,12 +105,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticSternum</defName>
-		<label>install prosthetic sternum</label>
-		<description>Install a prosthetic sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticSternum</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic sternum.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -149,9 +133,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticClavicle</defName>
-		<label>prosthetic clavicle</label>
-		<labelNoun>a prosthetic clavicle</labelNoun>
-		<description>An installed prosthetic clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticClavicle</ThingDef>
 		</descriptionHyperlinks>
@@ -160,8 +141,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticClavicle</defName>
-		<label>prosthetic clavicle</label>
-		<description>A clavicle prosthesis. It is inferior to a real clavicle.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticClavicle</RecipeDef>
 		</descriptionHyperlinks>
@@ -175,12 +154,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticClavicle</defName>
-		<label>install prosthetic clavicle</label>
-		<description>Install a prosthetic clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticClavicle</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic clavicle.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -206,9 +182,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticHumerus</defName>
-		<label>prosthetic humerus</label>
-		<labelNoun>a prosthetic humerus</labelNoun>
-		<description>An installed prosthetic humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHumerus</ThingDef>
 		</descriptionHyperlinks>
@@ -217,8 +190,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticHumerus</defName>
-		<label>prosthetic humerus</label>
-		<description>A humerus prosthesis. It is inferior to a real humerus.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticHumerus</RecipeDef>
 		</descriptionHyperlinks>
@@ -232,12 +203,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticHumerus</defName>
-		<label>install prosthetic humerus</label>
-		<description>Install a prosthetic humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHumerus</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic humerus.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -263,9 +231,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticRadius</defName>
-		<label>prosthetic radius</label>
-		<labelNoun>a prosthetic radius</labelNoun>
-		<description>An installed prosthetic radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticRadius</ThingDef>
 		</descriptionHyperlinks>
@@ -274,8 +239,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticRadius</defName>
-		<label>prosthetic radius</label>
-		<description>A radius prosthesis. It is inferior to a real radius.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticRadius</RecipeDef>
 		</descriptionHyperlinks>
@@ -289,12 +252,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticRadius</defName>
-		<label>install prosthetic radius</label>
-		<description>Install a prosthetic radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticRadius</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic radius.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -320,9 +280,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticFemur</defName>
-		<label>prosthetic femur</label>
-		<labelNoun>a prosthetic femur</labelNoun>
-		<description>An installed prosthetic femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFemur</ThingDef>
 		</descriptionHyperlinks>
@@ -331,8 +288,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticFemur</defName>
-		<label>prosthetic femur</label>
-		<description>A femur prosthesis. It is inferior to a real femur.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticFemur</RecipeDef>
 		</descriptionHyperlinks>
@@ -346,12 +301,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticFemur</defName>
-		<label>install prosthetic femur</label>
-		<description>Install a prosthetic femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFemur</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic femur.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -377,9 +329,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Prosthetic">
 		<defName>SimpleProstheticTibia</defName>
-		<label>prosthetic tibia</label>
-		<labelNoun>a prosthetic tibia</labelNoun>
-		<description>An installed prosthetic tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticTibia</ThingDef>
 		</descriptionHyperlinks>
@@ -388,8 +337,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Bone">
 		<defName>SimpleProstheticTibia</defName>
-		<label>prosthetic tibia</label>
-		<description>A tibia prosthesis. It is inferior to a real tibia.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticTibia</RecipeDef>
 		</descriptionHyperlinks>
@@ -403,12 +350,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Prosthetic">
 		<defName>InstallSimpleProstheticTibia</defName>
-		<label>install prosthetic tibia</label>
-		<description>Install a prosthetic tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticTibia</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic tibia.</jobString>
 		<ingredients>
 			<li>
 				<filter>

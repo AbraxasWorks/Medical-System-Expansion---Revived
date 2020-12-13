@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- power claw -->
 
 	<HediffDef ParentName="MSE_ModuleAddedBionic">
 		<defName>PowerClaw</defName>
-		<label>power claw module</label>
-		<labelNoun>a power claw</labelNoun>
-		<description>An installed power claw module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PowerClaw</ThingDef>
 		</descriptionHyperlinks>
@@ -17,12 +14,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>InstallPowerClaw</defName>
-		<label>install power claw module</label>
-		<description>Install a power claw.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PowerClaw</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing power claw.</jobString>
 		<ingredients>
 			<li>
 				<filter>

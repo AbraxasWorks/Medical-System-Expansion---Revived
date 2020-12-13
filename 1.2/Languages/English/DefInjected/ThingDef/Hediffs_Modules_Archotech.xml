@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--MSE_AdvancedRangedPlatformModule-->
+  <MSE_AdvancedRangedPlatformModule.label>advanced ranged platform module</MSE_AdvancedRangedPlatformModule.label>
+  <MSE_AdvancedRangedPlatformModule.description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and and greatly increase your pawn's' ranged combat ability.</MSE_AdvancedRangedPlatformModule.description>
+  <!--MSE_AdvancedMeleePlatformModule-->
+  <MSE_AdvancedMeleePlatformModule.label>advanced melee platform module</MSE_AdvancedMeleePlatformModule.label>
+  <MSE_AdvancedMeleePlatformModule.description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and greatly improve your pawn's melee combat ability.</MSE_AdvancedMeleePlatformModule.description>
+</LanguageData>

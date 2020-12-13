@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--InstallSimpleProstheticRibcage-->
+  <InstallSimpleProstheticRibcage.label>install prosthetic ribcage</InstallSimpleProstheticRibcage.label>
+  <InstallSimpleProstheticRibcage.description>Install a prosthetic ribcage.</InstallSimpleProstheticRibcage.description>
+  <InstallSimpleProstheticRibcage.jobString>Installing prosthetic ribcage.</InstallSimpleProstheticRibcage.jobString>
+  <!--InstallSimpleProstheticSternum-->
+  <InstallSimpleProstheticSternum.label>install prosthetic sternum</InstallSimpleProstheticSternum.label>
+  <InstallSimpleProstheticSternum.description>Install a prosthetic sternum.</InstallSimpleProstheticSternum.description>
+  <InstallSimpleProstheticSternum.jobString>Installing prosthetic sternum.</InstallSimpleProstheticSternum.jobString>
+  <!--InstallSimpleProstheticClavicle-->
+  <InstallSimpleProstheticClavicle.label>install prosthetic clavicle</InstallSimpleProstheticClavicle.label>
+  <InstallSimpleProstheticClavicle.description>Install a prosthetic clavicle.</InstallSimpleProstheticClavicle.description>
+  <InstallSimpleProstheticClavicle.jobString>Installing prosthetic clavicle.</InstallSimpleProstheticClavicle.jobString>
+  <!--InstallSimpleProstheticHumerus-->
+  <InstallSimpleProstheticHumerus.label>install prosthetic humerus</InstallSimpleProstheticHumerus.label>
+  <InstallSimpleProstheticHumerus.description>Install a prosthetic humerus.</InstallSimpleProstheticHumerus.description>
+  <InstallSimpleProstheticHumerus.jobString>Installing prosthetic humerus.</InstallSimpleProstheticHumerus.jobString>
+  <!--InstallSimpleProstheticRadius-->
+  <InstallSimpleProstheticRadius.label>install prosthetic radius</InstallSimpleProstheticRadius.label>
+  <InstallSimpleProstheticRadius.description>Install a prosthetic radius.</InstallSimpleProstheticRadius.description>
+  <InstallSimpleProstheticRadius.jobString>Installing prosthetic radius.</InstallSimpleProstheticRadius.jobString>
+  <!--InstallSimpleProstheticFemur-->
+  <InstallSimpleProstheticFemur.label>install prosthetic femur</InstallSimpleProstheticFemur.label>
+  <InstallSimpleProstheticFemur.description>Install a prosthetic femur.</InstallSimpleProstheticFemur.description>
+  <InstallSimpleProstheticFemur.jobString>Installing prosthetic femur.</InstallSimpleProstheticFemur.jobString>
+  <!--InstallSimpleProstheticTibia-->
+  <InstallSimpleProstheticTibia.label>install prosthetic tibia</InstallSimpleProstheticTibia.label>
+  <InstallSimpleProstheticTibia.description>Install a prosthetic tibia.</InstallSimpleProstheticTibia.description>
+  <InstallSimpleProstheticTibia.jobString>Installing prosthetic tibia.</InstallSimpleProstheticTibia.jobString>
+</LanguageData>

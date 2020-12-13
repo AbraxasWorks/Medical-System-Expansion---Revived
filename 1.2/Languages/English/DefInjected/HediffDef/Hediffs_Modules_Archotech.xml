@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--MSE_AdvancedRangedPlatformModule-->
+  <MSE_AdvancedRangedPlatformModule.label>advanced ranged platform module</MSE_AdvancedRangedPlatformModule.label>
+  <MSE_AdvancedRangedPlatformModule.labelNoun>an advanced ranged platform module</MSE_AdvancedRangedPlatformModule.labelNoun>
+  <MSE_AdvancedRangedPlatformModule.description>An installed advanced ranged platform module.</MSE_AdvancedRangedPlatformModule.description>
+  <!--MSE_AdvancedMeleePlatformModule-->
+  <MSE_AdvancedMeleePlatformModule.label>advanced melee platform module</MSE_AdvancedMeleePlatformModule.label>
+  <MSE_AdvancedMeleePlatformModule.labelNoun>an advanced melee platform module</MSE_AdvancedMeleePlatformModule.labelNoun>
+  <MSE_AdvancedMeleePlatformModule.description>An installed advanced melee platform module.</MSE_AdvancedMeleePlatformModule.description>
+</LanguageData>

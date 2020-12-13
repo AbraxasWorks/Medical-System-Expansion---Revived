@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--PlasteelRibcage-->
+  <PlasteelRibcage.label>plasteel ribcage</PlasteelRibcage.label>
+  <PlasteelRibcage.labelNoun>a plasteel ribcage</PlasteelRibcage.labelNoun>
+  <PlasteelRibcage.description>An installed plasteel ribcage.</PlasteelRibcage.description>
+  <!--PlasteelSternum-->
+  <PlasteelSternum.label>plasteel sternum</PlasteelSternum.label>
+  <PlasteelSternum.labelNoun>a plasteel sternum</PlasteelSternum.labelNoun>
+  <PlasteelSternum.description>An installed plasteel sternum.</PlasteelSternum.description>
+  <!--PlasteelClavicle-->
+  <PlasteelClavicle.label>plasteel clavicle</PlasteelClavicle.label>
+  <PlasteelClavicle.labelNoun>a plasteel clavicle</PlasteelClavicle.labelNoun>
+  <PlasteelClavicle.description>An installed plasteel clavicle.</PlasteelClavicle.description>
+  <!--PlasteelHumerus-->
+  <PlasteelHumerus.label>plasteel humerus</PlasteelHumerus.label>
+  <PlasteelHumerus.labelNoun>a plasteel humerus</PlasteelHumerus.labelNoun>
+  <PlasteelHumerus.description>An installed plasteel humerus.</PlasteelHumerus.description>
+  <!--PlasteelRadius-->
+  <PlasteelRadius.label>plasteel radius</PlasteelRadius.label>
+  <PlasteelRadius.labelNoun>a plasteel radius</PlasteelRadius.labelNoun>
+  <PlasteelRadius.description>An installed plasteel radius.</PlasteelRadius.description>
+  <!--PlasteelFemur-->
+  <PlasteelFemur.label>plasteel femur</PlasteelFemur.label>
+  <PlasteelFemur.labelNoun>a plasteel femur</PlasteelFemur.labelNoun>
+  <PlasteelFemur.description>An installed plasteel femur.</PlasteelFemur.description>
+  <!--PlasteelTibia-->
+  <PlasteelTibia.label>plasteel tibia</PlasteelTibia.label>
+  <PlasteelTibia.labelNoun>a plasteel tibia</PlasteelTibia.labelNoun>
+  <PlasteelTibia.description>An installed plasteel tibia.</PlasteelTibia.description>
+</LanguageData>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- base -->
@@ -25,9 +25,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicInternalSupport</defName>
-		<label>bionic internal support</label>
-		<labelNoun>a bionic internal support</labelNoun>
-		<description>An installed bionic internal support.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicInternalSupport</ThingDef>
 		</descriptionHyperlinks>
@@ -39,8 +36,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicInternalSupport</defName>
-		<label>bionic internal support</label>
-		<description>An advanced artificial internal support. Useful replacement to have on hand for when an internal component of a bionic prosthesis breaks.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicInternalSupport</RecipeDef>
 		</descriptionHyperlinks>
@@ -56,12 +51,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicInternalSupport</defName>
-		<label>install bionic internal support</label>
-		<description>Install a bionic internal support.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicInternalSupport</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic internal support.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -100,9 +92,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicArm</defName>
-		<label>bionic arm</label>
-		<labelNoun>a bionic arm</labelNoun>
-		<description>An installed bionic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicArm</ThingDef>
 		</descriptionHyperlinks>
@@ -119,8 +108,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicArm</defName>
-		<label>bionic arm</label>
-		<description>An advanced artificial arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicArm</RecipeDef>
 		</descriptionHyperlinks>
@@ -147,13 +134,10 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicArm</defName>
-		<label>install bionic arm</label>
-		<description>Install a bionic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicArm</ThingDef>
 			<HediffDef>BionicArm</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic arm.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -179,9 +163,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicForearm</defName>
-		<label>bionic arm</label>
-		<labelNoun>a bionic forearm</labelNoun>
-		<description>An installed bionic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicForearm</ThingDef>
 		</descriptionHyperlinks>
@@ -198,8 +179,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicForearm</defName>
-		<label>bionic forearm</label>
-		<description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicForearm</RecipeDef>
 		</descriptionHyperlinks>
@@ -223,12 +202,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicForearm</defName>
-		<label>install bionic forearm</label>
-		<description>Installs a bionic forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicForearm</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic forearm.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -254,9 +230,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicHand</defName>
-		<label>bionic hand</label>
-		<labelNoun>a bionic hand</labelNoun>
-		<description>An installed bionic hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicHand</ThingDef>
 		</descriptionHyperlinks>
@@ -274,8 +247,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicHand</defName>
-		<label>bionic hand</label>
-		<description>An advanced artificial hand. With its biogel nerve-link and lattice-dust healing system, it is better than a biological hand in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicHand</RecipeDef>
 		</descriptionHyperlinks>
@@ -302,12 +273,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicHand</defName>
-		<label>install bionic hand</label>
-		<description>Install a bionic hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicHand</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic hand.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -333,9 +301,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicFinger</defName>
-		<label>bionic finger</label>
-		<labelNoun>a bionic finger</labelNoun>
-		<description>An installed bionic finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicFinger</ThingDef>
 		</descriptionHyperlinks>
@@ -348,8 +313,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicFinger</defName>
-		<label>bionic finger</label>
-		<description>An advanced artificial finger. With its biogel nerve-link and lattice-dust healing system, it is better than a biological finger in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicFinger</RecipeDef>
 		</descriptionHyperlinks>
@@ -369,12 +332,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicFinger</defName>
-		<label>install bionic finger</label>
-		<description>Install a bionic finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicFinger</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic finger.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -400,9 +360,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicLeg</defName>
-		<label>bionic leg</label>
-		<labelNoun>a bionic leg</labelNoun>
-		<description>An installed bionic leg.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicLeg</ThingDef>
 		</descriptionHyperlinks>
@@ -419,8 +376,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicLeg</defName>
-		<label>bionic leg</label>
-		<description>An advanced artificial leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicLeg</RecipeDef>
 		</descriptionHyperlinks>
@@ -447,13 +402,10 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicLeg</defName>
-		<label>install bionic leg</label>
-		<description>Install a bionic leg.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicLeg</ThingDef>
 			<HediffDef>BionicLeg</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic leg.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -479,9 +431,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicFoot</defName>
-		<label>bionic foot</label>
-		<labelNoun>a bionic foot</labelNoun>
-		<description>An installed bionic foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicFoot</ThingDef>
 		</descriptionHyperlinks>
@@ -493,8 +442,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicFoot</defName>
-		<label>bionic foot</label>
-		<description>An advanced artificial foot. With its biogel nerve-link and lattice-dust healing system, it is better than a biological foot in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicFoot</RecipeDef>
 		</descriptionHyperlinks>
@@ -518,12 +465,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicFoot</defName>
-		<label>install bionic foot</label>
-		<description>Install a bionic foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicFoot</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic foot.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -549,9 +493,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicToe</defName>
-		<label>bionic toe</label>
-		<labelNoun>a bionic toe</labelNoun>
-		<description>An installed bionic toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicToe</ThingDef>
 		</descriptionHyperlinks>
@@ -564,8 +505,6 @@
 
 	<ThingDef ParentName="BodyPartBionic_Limb">
 		<defName>BionicToe</defName>
-		<label>bionic toe</label>
-		<description>An advanced artificial toe. With its biogel nerve-link and lattice-dust healing system, it is better than a biological toe in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallBionicToe</RecipeDef>
 		</descriptionHyperlinks>
@@ -584,12 +523,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bionic">
 		<defName>InstallBionicToe</defName>
-		<label>install bionic toe</label>
-		<description>Install a bionic toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicToe</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing bionic toe.</jobString>
 		<ingredients>
 			<li>
 				<filter>

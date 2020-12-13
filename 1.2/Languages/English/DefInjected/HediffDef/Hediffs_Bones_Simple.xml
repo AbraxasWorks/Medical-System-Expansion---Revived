@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--SimpleProstheticRibcage-->
+  <SimpleProstheticRibcage.label>prosthetic ribcage</SimpleProstheticRibcage.label>
+  <SimpleProstheticRibcage.labelNoun>a prosthetic ribcage</SimpleProstheticRibcage.labelNoun>
+  <SimpleProstheticRibcage.description>An installed prosthetic ribcage.</SimpleProstheticRibcage.description>
+  <!--SimpleProstheticSternum-->
+  <SimpleProstheticSternum.label>prosthetic sternum</SimpleProstheticSternum.label>
+  <SimpleProstheticSternum.labelNoun>a prosthetic sternum</SimpleProstheticSternum.labelNoun>
+  <SimpleProstheticSternum.description>An installed prosthetic sternum.</SimpleProstheticSternum.description>
+  <!--SimpleProstheticClavicle-->
+  <SimpleProstheticClavicle.label>prosthetic clavicle</SimpleProstheticClavicle.label>
+  <SimpleProstheticClavicle.labelNoun>a prosthetic clavicle</SimpleProstheticClavicle.labelNoun>
+  <SimpleProstheticClavicle.description>An installed prosthetic clavicle.</SimpleProstheticClavicle.description>
+  <!--SimpleProstheticHumerus-->
+  <SimpleProstheticHumerus.label>prosthetic humerus</SimpleProstheticHumerus.label>
+  <SimpleProstheticHumerus.labelNoun>a prosthetic humerus</SimpleProstheticHumerus.labelNoun>
+  <SimpleProstheticHumerus.description>An installed prosthetic humerus.</SimpleProstheticHumerus.description>
+  <!--SimpleProstheticRadius-->
+  <SimpleProstheticRadius.label>prosthetic radius</SimpleProstheticRadius.label>
+  <SimpleProstheticRadius.labelNoun>a prosthetic radius</SimpleProstheticRadius.labelNoun>
+  <SimpleProstheticRadius.description>An installed prosthetic radius.</SimpleProstheticRadius.description>
+  <!--SimpleProstheticFemur-->
+  <SimpleProstheticFemur.label>prosthetic femur</SimpleProstheticFemur.label>
+  <SimpleProstheticFemur.labelNoun>a prosthetic femur</SimpleProstheticFemur.labelNoun>
+  <SimpleProstheticFemur.description>An installed prosthetic femur.</SimpleProstheticFemur.description>
+  <!--SimpleProstheticTibia-->
+  <SimpleProstheticTibia.label>prosthetic tibia</SimpleProstheticTibia.label>
+  <SimpleProstheticTibia.labelNoun>a prosthetic tibia</SimpleProstheticTibia.labelNoun>
+  <SimpleProstheticTibia.description>An installed prosthetic tibia.</SimpleProstheticTibia.description>
+</LanguageData>

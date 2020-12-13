@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--MSE_InstallAdvancedRangedPlatformModule-->
+  <MSE_InstallAdvancedRangedPlatformModule.label>install advanced ranged platform module</MSE_InstallAdvancedRangedPlatformModule.label>
+  <MSE_InstallAdvancedRangedPlatformModule.description>Install an advanced ranged platform module.</MSE_InstallAdvancedRangedPlatformModule.description>
+  <MSE_InstallAdvancedRangedPlatformModule.jobString>Installing sdvanced ranged platform module.</MSE_InstallAdvancedRangedPlatformModule.jobString>
+  <!--MSE_InstallAdvancedMeleePlatformModule-->
+  <MSE_InstallAdvancedMeleePlatformModule.label>install advanced melee platform module</MSE_InstallAdvancedMeleePlatformModule.label>
+  <MSE_InstallAdvancedMeleePlatformModule.description>Install an advanced melee platform module.</MSE_InstallAdvancedMeleePlatformModule.description>
+  <MSE_InstallAdvancedMeleePlatformModule.jobString>Installing advanced melee platform module.</MSE_InstallAdvancedMeleePlatformModule.jobString>
+</LanguageData>

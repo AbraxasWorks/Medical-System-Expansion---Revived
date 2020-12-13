@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--ArchotechInternalSupport-->
+  <ArchotechInternalSupport.label>archotech internal support</ArchotechInternalSupport.label>
+  <ArchotechInternalSupport.labelNoun>an archotech internal support</ArchotechInternalSupport.labelNoun>
+  <ArchotechInternalSupport.description>An installed archotech internal support.</ArchotechInternalSupport.description>
+  <!--ArchotechArm-->
+  <ArchotechArm.label>archotech arm</ArchotechArm.label>
+  <ArchotechArm.labelNoun>an archotech arm</ArchotechArm.labelNoun>
+  <ArchotechArm.description>An installed archotech arm.</ArchotechArm.description>
+  <!--ArchotechForearm-->
+  <ArchotechForearm.label>archotech arm</ArchotechForearm.label>
+  <ArchotechForearm.labelNoun>an archotech forearm</ArchotechForearm.labelNoun>
+  <ArchotechForearm.description>An installed bionic arm.</ArchotechForearm.description>
+  <!--ArchotechHand-->
+  <ArchotechHand.label>archotech hand</ArchotechHand.label>
+  <ArchotechHand.labelNoun>an archotech hand</ArchotechHand.labelNoun>
+  <ArchotechHand.description>An installed archotech hand.</ArchotechHand.description>
+  <!--ArchotechFinger-->
+  <ArchotechFinger.label>archotech finger</ArchotechFinger.label>
+  <ArchotechFinger.labelNoun>an archotech finger</ArchotechFinger.labelNoun>
+  <ArchotechFinger.description>An installed archotech finger.</ArchotechFinger.description>
+  <!--ArchotechLeg-->
+  <ArchotechLeg.label>archotech leg</ArchotechLeg.label>
+  <ArchotechLeg.labelNoun>an archotech leg</ArchotechLeg.labelNoun>
+  <ArchotechLeg.description>An installed archotech leg.</ArchotechLeg.description>
+  <!--ArchotechFoot-->
+  <ArchotechFoot.label>archotech foot</ArchotechFoot.label>
+  <ArchotechFoot.labelNoun>an archotech foot</ArchotechFoot.labelNoun>
+  <ArchotechFoot.description>An installed archotech foot.</ArchotechFoot.description>
+  <!--ArchotechToe-->
+  <ArchotechToe.label>archotech toe</ArchotechToe.label>
+  <ArchotechToe.labelNoun>an archotech toe</ArchotechToe.labelNoun>
+  <ArchotechToe.description>An installed archotech toe.</ArchotechToe.description>
+</LanguageData>

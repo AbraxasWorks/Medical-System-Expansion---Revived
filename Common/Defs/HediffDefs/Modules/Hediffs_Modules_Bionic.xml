@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- abstracts -->
@@ -29,9 +29,6 @@
 
 	<HediffDef ParentName="MSE_ModuleAddedBionic">
 		<defName>MSE_RangedPlatformModule</defName>
-		<label>ranged platform module</label>
-		<labelNoun>a ranged platform module</labelNoun>
-		<description>An installed ranged platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_RangedPlatformModule</ThingDef>
 		</descriptionHyperlinks>
@@ -48,8 +45,6 @@
 
 	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>MSE_RangedPlatformModule</defName>
-		<label>ranged platform module</label>
-		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and improve your pawn's ranged combat ability.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>MSE_InstallRangedPlatformModule</RecipeDef>
 		</descriptionHyperlinks>
@@ -65,12 +60,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallRangedPlatformModule</defName>
-		<label>install ranged platform module</label>
-		<description>Install a ranged platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_RangedPlatformModule</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing ranged platform module.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -96,9 +88,6 @@
 
 	<HediffDef ParentName="MSE_ModuleAddedBionic">
 		<defName>MSE_MeleePlatformModule</defName>
-		<label>melee platform module</label>
-		<labelNoun>a melee platform module</labelNoun>
-		<description>An installed melee platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_MeleePlatformModule</ThingDef>
 		</descriptionHyperlinks>
@@ -115,8 +104,6 @@
 
 	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>MSE_MeleePlatformModule</defName>
-		<label>melee platform module</label>
-		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and improve your pawn's melee combat ability.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>MSE_InstallMeleePlatformModule</RecipeDef>
 		</descriptionHyperlinks>
@@ -132,12 +119,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>MSE_InstallMeleePlatformModule</defName>
-		<label>install melee platform module</label>
-		<description>Install a melee platform module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>MSE_MeleePlatformModule</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing melee platform module.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -164,9 +148,6 @@
 
 	<HediffDef ParentName="MSE_Effector">
 		<defName>ModuleEfficiency_Effector</defName>
-		<label>advanced processing module effector</label>
-		<labelNoun>an advanced processing module effector</labelNoun>
-		<description>An installed advanced processing module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ModuleEfficiency</ThingDef>
 		</descriptionHyperlinks>
@@ -179,9 +160,6 @@
 
 	<HediffDef ParentName="MSE_ModuleAddedBionic">
 		<defName>ModuleEfficiency</defName>
-		<label>advanced processing module</label>
-		<labelNoun>an advanced processing module</labelNoun>
-		<description>An installed advanced processing module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ModuleEfficiency</ThingDef>
 		</descriptionHyperlinks>
@@ -201,8 +179,6 @@
 
 	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>ModuleEfficiency</defName>
-		<label>advanced processing module</label>
-		<description>TODO</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallModuleEfficiency</RecipeDef>
 		</descriptionHyperlinks>
@@ -218,12 +194,9 @@
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>InstallModuleEfficiency</defName>
-		<label>install advanced processing module</label>
-		<description>Install a advanced processing module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ModuleEfficiency</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing advanced processing module.</jobString>
 		<ingredients>
 			<li>
 				<filter>

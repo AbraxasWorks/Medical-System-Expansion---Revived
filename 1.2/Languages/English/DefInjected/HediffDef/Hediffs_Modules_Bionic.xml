@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--MSE_RangedPlatformModule-->
+  <MSE_RangedPlatformModule.label>ranged platform module</MSE_RangedPlatformModule.label>
+  <MSE_RangedPlatformModule.labelNoun>a ranged platform module</MSE_RangedPlatformModule.labelNoun>
+  <MSE_RangedPlatformModule.description>An installed ranged platform module.</MSE_RangedPlatformModule.description>
+  <!--MSE_MeleePlatformModule-->
+  <MSE_MeleePlatformModule.label>melee platform module</MSE_MeleePlatformModule.label>
+  <MSE_MeleePlatformModule.labelNoun>a melee platform module</MSE_MeleePlatformModule.labelNoun>
+  <MSE_MeleePlatformModule.description>An installed melee platform module.</MSE_MeleePlatformModule.description>
+  <!--ModuleEfficiency_Effector-->
+  <ModuleEfficiency_Effector.label>advanced processing module effector</ModuleEfficiency_Effector.label>
+  <ModuleEfficiency_Effector.labelNoun>an advanced processing module effector</ModuleEfficiency_Effector.labelNoun>
+  <ModuleEfficiency_Effector.description>An installed advanced processing module.</ModuleEfficiency_Effector.description>
+  <!--ModuleEfficiency-->
+  <ModuleEfficiency.label>advanced processing module</ModuleEfficiency.label>
+  <ModuleEfficiency.labelNoun>an advanced processing module</ModuleEfficiency.labelNoun>
+  <ModuleEfficiency.description>An installed advanced processing module.</ModuleEfficiency.description>
+</LanguageData>

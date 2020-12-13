@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--BionicInternalSupport-->
+  <BionicInternalSupport.label>bionic internal support</BionicInternalSupport.label>
+  <BionicInternalSupport.labelNoun>a bionic internal support</BionicInternalSupport.labelNoun>
+  <BionicInternalSupport.description>An installed bionic internal support.</BionicInternalSupport.description>
+  <!--BionicArm-->
+  <BionicArm.label>bionic arm</BionicArm.label>
+  <BionicArm.labelNoun>a bionic arm</BionicArm.labelNoun>
+  <BionicArm.description>An installed bionic arm.</BionicArm.description>
+  <!--BionicForearm-->
+  <BionicForearm.label>bionic arm</BionicForearm.label>
+  <BionicForearm.labelNoun>a bionic forearm</BionicForearm.labelNoun>
+  <BionicForearm.description>An installed bionic arm.</BionicForearm.description>
+  <!--BionicHand-->
+  <BionicHand.label>bionic hand</BionicHand.label>
+  <BionicHand.labelNoun>a bionic hand</BionicHand.labelNoun>
+  <BionicHand.description>An installed bionic hand.</BionicHand.description>
+  <!--BionicFinger-->
+  <BionicFinger.label>bionic finger</BionicFinger.label>
+  <BionicFinger.labelNoun>a bionic finger</BionicFinger.labelNoun>
+  <BionicFinger.description>An installed bionic finger.</BionicFinger.description>
+  <!--BionicLeg-->
+  <BionicLeg.label>bionic leg</BionicLeg.label>
+  <BionicLeg.labelNoun>a bionic leg</BionicLeg.labelNoun>
+  <BionicLeg.description>An installed bionic leg.</BionicLeg.description>
+  <!--BionicFoot-->
+  <BionicFoot.label>bionic foot</BionicFoot.label>
+  <BionicFoot.labelNoun>a bionic foot</BionicFoot.labelNoun>
+  <BionicFoot.description>An installed bionic foot.</BionicFoot.description>
+  <!--BionicToe-->
+  <BionicToe.label>bionic toe</BionicToe.label>
+  <BionicToe.labelNoun>a bionic toe</BionicToe.labelNoun>
+  <BionicToe.description>An installed bionic toe.</BionicToe.description>
+</LanguageData>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--InstallPlasteelRibcage-->
+  <InstallPlasteelRibcage.label>install plasteel ribcage</InstallPlasteelRibcage.label>
+  <InstallPlasteelRibcage.description>Install a plasteel ribcage.</InstallPlasteelRibcage.description>
+  <InstallPlasteelRibcage.jobString>Installing plasteel ribcage.</InstallPlasteelRibcage.jobString>
+  <!--InstallPlasteelSternum-->
+  <InstallPlasteelSternum.label>install plasteel sternum</InstallPlasteelSternum.label>
+  <InstallPlasteelSternum.description>Install a plasteel sternum.</InstallPlasteelSternum.description>
+  <InstallPlasteelSternum.jobString>Installing plasteel sternum.</InstallPlasteelSternum.jobString>
+  <!--InstallPlasteelClavicle-->
+  <InstallPlasteelClavicle.label>install plasteel clavicle</InstallPlasteelClavicle.label>
+  <InstallPlasteelClavicle.description>Install a plasteel clavicle.</InstallPlasteelClavicle.description>
+  <InstallPlasteelClavicle.jobString>Installing plasteel clavicle.</InstallPlasteelClavicle.jobString>
+  <!--InstallPlasteelHumerus-->
+  <InstallPlasteelHumerus.label>install plasteel humerus</InstallPlasteelHumerus.label>
+  <InstallPlasteelHumerus.description>Install a plasteel humerus.</InstallPlasteelHumerus.description>
+  <InstallPlasteelHumerus.jobString>Installing plasteel humerus.</InstallPlasteelHumerus.jobString>
+  <!--InstallPlasteelRadius-->
+  <InstallPlasteelRadius.label>install plasteel radius</InstallPlasteelRadius.label>
+  <InstallPlasteelRadius.description>Install a plasteel radius.</InstallPlasteelRadius.description>
+  <InstallPlasteelRadius.jobString>Installing plasteel radius.</InstallPlasteelRadius.jobString>
+  <!--InstallPlasteelFemur-->
+  <InstallPlasteelFemur.label>install plasteel femur</InstallPlasteelFemur.label>
+  <InstallPlasteelFemur.description>Install a plasteel femur.</InstallPlasteelFemur.description>
+  <InstallPlasteelFemur.jobString>Installing plasteel femur.</InstallPlasteelFemur.jobString>
+  <!--InstallPlasteelTibia-->
+  <InstallPlasteelTibia.label>install plasteel tibia</InstallPlasteelTibia.label>
+  <InstallPlasteelTibia.description>Install a plasteel tibia.</InstallPlasteelTibia.description>
+  <InstallPlasteelTibia.jobString>Installing plasteel tibia.</InstallPlasteelTibia.jobString>
+</LanguageData>

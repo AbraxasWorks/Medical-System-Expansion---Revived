@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- base -->
@@ -16,16 +16,13 @@
 		</statBases> -->
 	</ThingDef>
 
-	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Simple" ParentName="SurgeryInstallBodyPartProstheticBase"/>
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Simple" ParentName="SurgeryInstallBodyPartProstheticBase" />
 
 
 	<!-- arm -->
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticArm</defName>
-		<label>prosthetic arm</label>
-		<labelNoun>a prosthetic arm</labelNoun>
-		<description>An installed prosthetic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticArm</ThingDef>
 		</descriptionHyperlinks>
@@ -45,8 +42,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticArm</defName>
-		<label>prosthetic arm</label>
-		<description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticArm</RecipeDef>
 		</descriptionHyperlinks>
@@ -72,13 +67,10 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticArm</defName>
-		<label>install prosthetic arm</label>
-		<description>Install a prosthetic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticArm</ThingDef>
 			<HediffDef>SimpleProstheticArm</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic arm.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -104,9 +96,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticHand</defName>
-		<label>prosthetic hand</label>
-		<labelNoun>a prosthetic hand</labelNoun>
-		<description>An installed prosthetic hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHand</ThingDef>
 		</descriptionHyperlinks>
@@ -119,8 +108,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticHand</defName>
-		<label>prosthetic hand</label>
-		<description>A hand prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real hand.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticHand</RecipeDef>
 		</descriptionHyperlinks>
@@ -143,12 +130,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticHand</defName>
-		<label>install prosthetic hand</label>
-		<description>Install a prosthetic hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHand</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic hand.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -174,9 +158,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticFinger</defName>
-		<label>prosthetic finger</label>
-		<labelNoun>a prosthetic finger</labelNoun>
-		<description>An installed prosthetic finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFinger</ThingDef>
 		</descriptionHyperlinks>
@@ -189,8 +170,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticFinger</defName>
-		<label>prosthetic finger</label>
-		<description>A finger prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real finger.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticFinger</RecipeDef>
 		</descriptionHyperlinks>
@@ -209,12 +188,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticFinger</defName>
-		<label>install prosthetic finger</label>
-		<description>Install a prosthetic finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFinger</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic finger.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -240,9 +216,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticLeg</defName>
-		<label>prosthetic leg</label>
-		<labelNoun>a prosthetic leg</labelNoun>
-		<description>An installed prosthetic leg.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticLeg</ThingDef>
 		</descriptionHyperlinks>
@@ -262,8 +235,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticLeg</defName>
-		<label>prosthetic leg</label>
-		<description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticLeg</RecipeDef>
 		</descriptionHyperlinks>
@@ -289,13 +260,10 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticLeg</defName>
-		<label>install prosthetic leg</label>
-		<description>Install a prosthetic leg.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticLeg</ThingDef>
 			<HediffDef>SimpleProstheticLeg</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic leg.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -321,9 +289,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticFoot</defName>
-		<label>prosthetic foot</label>
-		<labelNoun>a prosthetic foot</labelNoun>
-		<description>An installed prosthetic foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFoot</ThingDef>
 		</descriptionHyperlinks>
@@ -335,8 +300,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticFoot</defName>
-		<label>prosthetic foot</label>
-		<description>A foot prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real foot.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticFoot</RecipeDef>
 		</descriptionHyperlinks>
@@ -362,12 +325,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticFoot</defName>
-		<label>install prosthetic foot</label>
-		<description>Install a prosthetic foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFoot</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic foot.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -393,9 +353,6 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticToe</defName>
-		<label>prosthetic toe</label>
-		<labelNoun>a prosthetic toe</labelNoun>
-		<description>An installed prosthetic toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticToe</ThingDef>
 		</descriptionHyperlinks>
@@ -408,8 +365,6 @@
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticToe</defName>
-		<label>prosthetic toe</label>
-		<description>A toe prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real toe.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticToe</RecipeDef>
 		</descriptionHyperlinks>
@@ -427,12 +382,9 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
 		<defName>InstallSimpleProstheticToe</defName>
-		<label>install prosthetic toe</label>
-		<description>Install a prosthetic toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticToe</ThingDef>
 		</descriptionHyperlinks>
-		<jobString>Installing prosthetic toe.</jobString>
 		<ingredients>
 			<li>
 				<filter>
