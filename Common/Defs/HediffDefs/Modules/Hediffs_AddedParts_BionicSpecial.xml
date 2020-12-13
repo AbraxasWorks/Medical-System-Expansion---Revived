@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- power claw -->
+	<!-- power claw -->
 
-  <HediffDef ParentName="MSE_ModuleAddedBionic">
-    <defName>PowerClaw</defName>
-    <label>power claw module</label>
-    <labelNoun>a power claw</labelNoun>
-    <description>An installed power claw module.</description>
-    <descriptionHyperlinks>
-      <ThingDef>PowerClaw</ThingDef>
-    </descriptionHyperlinks>
-    <!-- comps and stages copied via patch -->
-    <spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
-  </HediffDef>
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>PowerClaw</defName>
+		<label>power claw module</label>
+		<labelNoun>a power claw</labelNoun>
+		<description>An installed power claw module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<!-- comps and stages copied via patch -->
+		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
+	</HediffDef>
 
-  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
-    <defName>InstallPowerClaw</defName>
-    <label>install power claw module</label>
-    <description>Install a power claw.</description>
-    <descriptionHyperlinks>
-      <ThingDef>PowerClaw</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing power claw.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>PowerClaw</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>PowerClaw</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Hand</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>PowerClaw</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallPowerClaw</defName>
+		<label>install power claw module</label>
+		<description>Install a power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing power claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PowerClaw</addsHediff>
+	</RecipeDef>
 
 </Defs>

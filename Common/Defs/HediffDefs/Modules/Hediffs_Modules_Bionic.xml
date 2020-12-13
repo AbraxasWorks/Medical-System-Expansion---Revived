@@ -1,163 +1,163 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- abstracts -->
+	<!-- abstracts -->
 
-  <HediffDef Name="MSE_ModuleAddedBionic" ParentName="MSE_ModuleAdded" Abstract="True">
-    <defaultLabelColor>(255, 171, 64)</defaultLabelColor>
-  </HediffDef>
+	<HediffDef Name="MSE_ModuleAddedBionic" ParentName="MSE_ModuleAdded" Abstract="True">
+		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
+	</HediffDef>
 
-  <ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartProstheticBase" Abstract="True">
-    <graphicData>
-      <texPath>Things/Item/Health/HealthItemBionic3</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-    </graphicData>
-    <techLevel>Spacer</techLevel>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-    <thingSetMakerTags>
-      <li>RewardStandardMidFreq</li>
-    </thingSetMakerTags>
+	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartProstheticBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-  </ThingDef>
+	</ThingDef>
 
-  <!-- Ranged platform module -->
+	<!-- Ranged platform module -->
 
-  <HediffDef ParentName="MSE_ModuleAddedBionic">
-    <defName>MSE_RangedPlatformModule</defName>
-    <label>ranged platform module</label>
-    <labelNoun>a ranged platform module</labelNoun>
-    <description>An installed ranged platform module.</description>
-    <descriptionHyperlinks>
-      <ThingDef>MSE_RangedPlatformModule</ThingDef>
-    </descriptionHyperlinks>
-    <stages>
-      <li>
-        <statOffsets>
-          <ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
-          <AimingDelayFactor>-0.15</AimingDelayFactor>
-        </statOffsets>
-      </li>
-    </stages>
-    <spawnThingOnRemoved>MSE_RangedPlatformModule</spawnThingOnRemoved>
-  </HediffDef>
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>MSE_RangedPlatformModule</defName>
+		<label>ranged platform module</label>
+		<labelNoun>a ranged platform module</labelNoun>
+		<description>An installed ranged platform module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MSE_RangedPlatformModule</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<ShootingAccuracyPawn>10.0</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_RangedPlatformModule</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="MSE_ModuleBionic">
-    <defName>MSE_RangedPlatformModule</defName>
-    <label>ranged platform module</label>
-    <description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and improve your pawn's ranged combat ability.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>MSE_InstallRangedPlatformModule</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>15</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>2</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>MSE_RangedPlatformModule</defName>
+		<label>ranged platform module</label>
+		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and improve your pawn's ranged combat ability.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>MSE_InstallRangedPlatformModule</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
-    <defName>MSE_InstallRangedPlatformModule</defName>
-    <label>install ranged platform module</label>
-    <description>Install a ranged platform module.</description>
-    <descriptionHyperlinks>
-      <ThingDef>MSE_RangedPlatformModule</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing ranged platform module.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>MSE_RangedPlatformModule</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>MSE_RangedPlatformModule</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Arm</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>MSE_RangedPlatformModule</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>MSE_InstallRangedPlatformModule</defName>
+		<label>install ranged platform module</label>
+		<description>Install a ranged platform module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MSE_RangedPlatformModule</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing ranged platform module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_RangedPlatformModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MSE_RangedPlatformModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_RangedPlatformModule</addsHediff>
+	</RecipeDef>
 
-  <!-- melee platform module -->
+	<!-- melee platform module -->
 
-  <HediffDef ParentName="MSE_ModuleAddedBionic">
-    <defName>MSE_MeleePlatformModule</defName>
-    <label>melee platform module</label>
-    <labelNoun>a melee platform module</labelNoun>
-    <description>An installed melee platform module.</description>
-    <descriptionHyperlinks>
-      <ThingDef>MSE_MeleePlatformModule</ThingDef>
-    </descriptionHyperlinks>
-    <stages>
-      <li>
-        <statOffsets>
-          <MeleeDodgeChance>10</MeleeDodgeChance>
-          <MeleeHitChance>15</MeleeHitChance>
-        </statOffsets>
-      </li>
-    </stages>
-    <spawnThingOnRemoved>MSE_MeleePlatformModule</spawnThingOnRemoved>
-  </HediffDef>
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>MSE_MeleePlatformModule</defName>
+		<label>melee platform module</label>
+		<labelNoun>a melee platform module</labelNoun>
+		<description>An installed melee platform module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MSE_MeleePlatformModule</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+					<MeleeHitChance>15</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>MSE_MeleePlatformModule</spawnThingOnRemoved>
+	</HediffDef>
 
-  <ThingDef ParentName="MSE_ModuleBionic">
-    <defName>MSE_MeleePlatformModule</defName>
-    <label>melee platform module</label>
-    <description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and improve your pawn's melee combat ability.</description>
-    <descriptionHyperlinks>
-      <RecipeDef>MSE_InstallMeleePlatformModule</RecipeDef>
-    </descriptionHyperlinks>
-    <costList>
-      <Plasteel>15</Plasteel>
-      <ComponentSpacer>2</ComponentSpacer>
-    </costList>
-    <statBases>
-      <WorkToMake>30000</WorkToMake>
-      <Mass>2</Mass>
-    </statBases>
-  </ThingDef>
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>MSE_MeleePlatformModule</defName>
+		<label>melee platform module</label>
+		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and improve your pawn's melee combat ability.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>MSE_InstallMeleePlatformModule</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
 
-  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
-    <defName>MSE_InstallMeleePlatformModule</defName>
-    <label>install melee platform module</label>
-    <description>Install a melee platform module.</description>
-    <descriptionHyperlinks>
-      <ThingDef>MSE_MeleePlatformModule</ThingDef>
-    </descriptionHyperlinks>
-    <jobString>Installing melee platform module.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>MSE_MeleePlatformModule</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>MSE_MeleePlatformModule</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Arm</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>MSE_MeleePlatformModule</addsHediff>
-  </RecipeDef>
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>MSE_InstallMeleePlatformModule</defName>
+		<label>install melee platform module</label>
+		<description>Install a melee platform module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MSE_MeleePlatformModule</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing melee platform module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MSE_MeleePlatformModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MSE_MeleePlatformModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MSE_MeleePlatformModule</addsHediff>
+	</RecipeDef>
 
 
 	<!-- eff mod -->
