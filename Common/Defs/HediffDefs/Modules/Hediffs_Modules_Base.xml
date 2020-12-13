@@ -65,6 +65,10 @@
     <isBad>false</isBad>
   </HediffDef>
 
+	<!-- effector -->
 
+  <HediffDef Name="MSE_Effector" Abstract="True">
+    <hediffClass>MSE2.HediffExtraDiff</hediffClass>
+  </HediffDef>
 
 </Defs>
