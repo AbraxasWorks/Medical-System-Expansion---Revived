@@ -160,4 +160,87 @@
   </RecipeDef>
 
 
+	<!-- eff mod -->
+
+	<HediffDef ParentName="MSE_Effector">
+		<defName>ModuleEfficiency_Effector</defName>
+		<label>advanced processing module effector</label>
+		<labelNoun>an advanced processing module effector</labelNoun>
+		<description>An installed advanced processing module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleEfficiency</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>ModuleEfficiency</defName>
+		<label>advanced processing module</label>
+		<labelNoun>an advanced processing module</labelNoun>
+		<description>An installed advanced processing module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleEfficiency</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>ModuleEfficiency</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ExtraDiffCreator">
+				<extraDiffDef>ModuleEfficiency_Effector</extraDiffDef>
+				<addToThisPart>false</addToThisPart>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>ModuleEfficiency</defName>
+		<label>advanced processing module</label>
+		<description>TODO</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallModuleEfficiency</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallModuleEfficiency</defName>
+		<label>install advanced processing module</label>
+		<description>Install a advanced processing module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleEfficiency</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced processing module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ModuleEfficiency</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ModuleEfficiency</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ModuleEfficiency</addsHediff>
+	</RecipeDef>
+
+
 </Defs>
