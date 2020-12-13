@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<InstallPowerForearm.label>동력 의수 이식</InstallPowerForearm.label>
+<InstallPowerForearm.description>동력 의수를 이식합니다.</InstallPowerForearm.description>
+<InstallPowerForearm.jobString>동력 의수 이식 중.</InstallPowerForearm.jobString>
+							
+<InstallPowerHand.label>동력 손 이식</InstallPowerHand.label>
+<InstallPowerHand.description>동력 손을 이식합니다.</InstallPowerHand.description>
+<InstallPowerHand.jobString>동력 손 이식 중.</InstallPowerHand.jobString>
+							
+</LanguageData>

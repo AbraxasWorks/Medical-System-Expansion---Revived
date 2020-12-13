@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+							<MechanicalManipulator.label>다목적 기계 손</MechanicalManipulator.label>
+							<MechanicalManipulator.labelNoun>다목적 기계 손</MechanicalManipulator.labelNoun>
+							<MechanicalManipulator.description>이식된 다목적 기계 손입니다.</MechanicalManipulator.description>
+						
+							<MechanicalFinger.label>기계 손가락</MechanicalFinger.label>
+							<MechanicalFinger.labelNoun>기계 손가락</MechanicalFinger.labelNoun>
+							<MechanicalFinger.description>이식된 기계 손가락입니다..</MechanicalFinger.description>
+						
+							<FieldFinger.label>농업용 기계 손가락</FieldFinger.label>
+							<FieldFinger.labelNoun>농업용 기계 손가락</FieldFinger.labelNoun>
+							<FieldFinger.description>이식된 농업용 기계 손가락입니다.</FieldFinger.description>
+						
+							<HandTalonModule.label>발톱손 모듈</HandTalonModule.label>
+							<HandTalonModule.labelNoun>발톱손 모듈</HandTalonModule.labelNoun>
+							<HandTalonModule.description>설치된 발톱손 모듈입니다.</HandTalonModule.description>
+							
+							<ElbowBladeModule.label>팔꿈치 칼날 모듈</ElbowBladeModule.label>
+							<ElbowBladeModule.labelNoun>팔꿈치 칼날 모듈</ElbowBladeModule.labelNoun>
+							<ElbowBladeModule.description>설치된 팔꿈치 칼날 모듈입니다.</ElbowBladeModule.description>
+						
+							<KneeSpikeModule.label>무릎 송곳 모듈</KneeSpikeModule.label>
+							<KneeSpikeModule.labelNoun>무릎 송곳 모듈</KneeSpikeModule.labelNoun>
+							<KneeSpikeModule.description>설치된 무릎 송곳 모듈입니다.</KneeSpikeModule.description>
+						
+							<VenomTalonModule.label>독 발톱 모듈</VenomTalonModule.label>
+							<VenomTalonModule.labelNoun>독 발톱 모듈</VenomTalonModule.labelNoun>
+							<VenomTalonModule.description>설치된 독 발톱 모듈입니다.</VenomTalonModule.description>
+							
+							<MechanicalInternalSupport.label>기계 내골격 보철물</MechanicalInternalSupport.label>
+							<MechanicalInternalSupport.labelNoun>기계 내골격 보철물</MechanicalInternalSupport.labelNoun>
+							<MechanicalInternalSupport.description>기계 내골격 보철물입니다.</MechanicalInternalSupport.description>
+						
+
+</LanguageData>
+

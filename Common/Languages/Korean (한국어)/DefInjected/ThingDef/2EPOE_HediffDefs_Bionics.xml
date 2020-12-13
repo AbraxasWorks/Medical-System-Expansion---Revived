@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+<PowerForearm.label>동력 의수</PowerForearm.label>
+<PowerForearm.description>가장 정교한 의수 중 하나. 팔과 손, 손가락을 모두 포함합니다.</PowerForearm.description>
+
+<PowerHand.label>동력 손</PowerHand.label>
+<PowerHand.description>가장 정교한 의수 중 하나.</PowerHand.description>
+	
+</LanguageData>

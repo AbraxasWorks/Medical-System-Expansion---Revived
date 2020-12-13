@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+							<MechanicalManipulator.label>다목적 기계 손</MechanicalManipulator.label>
+							<MechanicalManipulator.description>그렇게 좋진 않지만, 어쨌든 없는 것 보단 낫습니다. 드릴 팔과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</MechanicalManipulator.description>
+					
+							<MechanicalFinger.label>기계 손가락</MechanicalFinger.label>
+							<MechanicalFinger.description>다목적 기계 손가락. 다목적 기계 손과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</MechanicalFinger.description>
+						
+							<FieldFinger.label>농업용 기계 손가락</FieldFinger.label>
+							<FieldFinger.description>농사일을 더욱 효율적으로 수행하기 위해 만들어진 기계 손가락입니다. 같은 작물에서 여러 부위를 동시에 채집할 수도 있으며, 파종을 위한 구멍을 한 번에 대량으로 뚫기도 합니다. 농업용 기계손과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</FieldFinger.description>
+		
+							<MechanicalInternalSupport.label>기계 내골격 보철물</MechanicalInternalSupport.label>
+							<MechanicalInternalSupport.description>기계 내골격 보철물. 드릴 팔이 설치될 때 요골과 상완골을 대체합니다.</MechanicalInternalSupport.description>
+			
+</LanguageData>
+

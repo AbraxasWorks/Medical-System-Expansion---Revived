@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<PowerForearm.label>동력 팔</PowerForearm.label>
+<PowerForearm.labelNoun>동력 팔</PowerForearm.labelNoun>
+<PowerForearm.description>이식된 동력 팔입니다.</PowerForearm.description>
+
+<PowerHand.label>동력 손</PowerHand.label>
+<PowerHand.labelNoun>동력 손</PowerHand.labelNoun>
+<PowerHand.description>이식된 동력 손입니다.</PowerHand.description>
+							
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<PlasteelClavicle.label>플라스틸 쇄골</PlasteelClavicle.label>
+<PlasteelClavicle.description>발전된 인공 쇄골. 이식 수술을 하려면 먼저 연구가 필요합니다.</PlasteelClavicle.description>
+
+<PlasteelHumerus.label>플라스틸 상완골</PlasteelHumerus.label>
+<PlasteelHumerus.description>발전된 인공 위팔뼈. 이식 수술을 하려면 먼저연구가 필요합니다.</PlasteelHumerus.description>
+ 
+<PlasteelRadius.label>플라스틸 요골</PlasteelRadius.label>
+<PlasteelRadius.description>발전된 인공 요골. 이식 수술을 하려면 먼저 연구가 필요합니다.</PlasteelRadius.description>
+
+<PlasteelFemur.label>플라스틸 대퇴골</PlasteelFemur.label>
+<PlasteelFemur.description>발전된 인공 대퇴골. 이식 수술을 하려면 먼저연구가 필요합니다.</PlasteelFemur.description>
+  
+<PlasteelTibia.label>플라스틸 정강이뼈</PlasteelTibia.label>
+<PlasteelTibia.description>발전된 인공 정강이뼈. 이식 수술을 하려면 먼저 연구가 필요합니다.</PlasteelTibia.description>
+
+</LanguageData>

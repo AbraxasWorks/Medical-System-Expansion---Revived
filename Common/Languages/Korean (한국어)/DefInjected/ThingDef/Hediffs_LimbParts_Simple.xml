@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<SimpleProstheticFoot.label>인공 발</SimpleProstheticFoot.label>
+<SimpleProstheticFoot.description>인공 발. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticFoot.description>
+  
+
+<SimpleProstheticToe.label>인공 발가락</SimpleProstheticToe.label>
+<SimpleProstheticToe.description>인공 발가락. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticToe.description>
+    
+<SimpleProstheticHand.label>인공 손</SimpleProstheticHand.label>
+<SimpleProstheticHand.description>인공 손. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticHand.description>
+  
+<SimpleProstheticFinger.label>인공 손가락</SimpleProstheticFinger.label>
+<SimpleProstheticFinger.description>인공 손가락. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticFinger.description>
+
+</LanguageData>

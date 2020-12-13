@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+					
+							<AA_InstallMutantFoot.label>돌연변이 발 이식</AA_InstallMutantFoot.label>
+							<AA_InstallMutantFoot.description>돌연변이 발을 이식합니다.</AA_InstallMutantFoot.description>
+							<AA_InstallMutantFoot.jobString>돌연변이 발 이식 중.</AA_InstallMutantFoot.jobString>
+						
+							<AA_InstallMutantToe.label>돌연변이 발가락 이식</AA_InstallMutantToe.label>
+							<AA_InstallMutantToe.description>돌연변이 발가락을 이식합니다.</AA_InstallMutantToe.description>
+							<AA_InstallMutantToe.jobString>돌연변이 발가락 이식 중.</AA_InstallMutantToe.jobString>
+							
+							<AA_InstallMutantHand.label>돌연변이 손 이식</AA_InstallMutantHand.label>
+							<AA_InstallMutantHand.description>돌연변이 손을 이식합니다.</AA_InstallMutantHand.description>
+							<AA_InstallMutantHand.jobString>돌연변이 손 이식 중.</AA_InstallMutantHand.jobString>
+							
+
+							<AA_InstallMutantFinger.label>돌연변이 손가락 이식</AA_InstallMutantFinger.label>
+							<AA_InstallMutantFinger.description>돌연변이 손가락을 이식합니다.</AA_InstallMutantFinger.description>
+							<AA_InstallMutantFinger.jobString>돌연변이 손가락 이식 중.</AA_InstallMutantFinger.jobString>
+							
+</LanguageData>

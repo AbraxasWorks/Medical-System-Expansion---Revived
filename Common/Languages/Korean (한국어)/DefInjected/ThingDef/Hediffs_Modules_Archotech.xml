@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<MSE_AdvancedRangedPlatformModule.label>고급 원거리 플랫폼 모듈</MSE_AdvancedRangedPlatformModule.label>
+<MSE_AdvancedRangedPlatformModule.description>팔의 모듈 슬롯에 장착하는 전투 보조 장치. 조준 안정기와 표적 시스템으로 원거리 전투 능력을 크게 향상시킵니다.</MSE_AdvancedRangedPlatformModule.description>
+    
+<MSE_AdvancedMeleePlatformModule.label>고급 근접 플랫폼 모듈</MSE_AdvancedMeleePlatformModule.label>
+<MSE_AdvancedMeleePlatformModule.description>팔의 모듈 슬롯에 장착하는 전투 보조 장치. 고감도 모터와 표적 시스템으로 근접 전투 능력을 크게 향상시킵니다.</MSE_AdvancedMeleePlatformModule.description>
+
+</LanguageData>

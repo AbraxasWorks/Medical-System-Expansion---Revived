@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+					
+						
+							<defName>InstallAdvancedBionicInternalSupport</defName>
+							<InstallAdvancedBionicInternalSupport.label>고급 생체공학 내골격 보철물 이식</InstallAdvancedBionicInternalSupport.label>
+							<InstallAdvancedBionicInternalSupport.description>고급 생체공학 내골격 보철물을 이식합니다.</InstallAdvancedBionicInternalSupport.description>
+							<InstallAdvancedBionicInternalSupport.jobString>고급 생체공학 내골격 보철물 이식 중.</InstallAdvancedBionicInternalSupport.jobString>
+						
+						
+							<defName>InstallAdvancedBionicFinger</defName>
+							<InstallAdvancedBionicFinger.label>고급 생체공학 손가락</InstallAdvancedBionicFinger.label>
+							<InstallAdvancedBionicFinger.description>고급 생체공학 손가락을 이식합니다.</InstallAdvancedBionicFinger.description>
+							<InstallAdvancedBionicFinger.jobString>고급 생체공학 손가락 이식 중.</InstallAdvancedBionicFinger.jobString>
+					
+						
+							<defName>InstallAdvancedBionicToe</defName>
+							<InstallAdvancedBionicToe.label>고급 생체공학 발가락 이식</InstallAdvancedBionicToe.label>
+							<InstallAdvancedBionicToe.description>고급 생체공학 발가락을 이식합니다.</InstallAdvancedBionicToe.description>
+							<InstallAdvancedBionicToe.jobString>고급 생체공학 발가락 이식 중.</InstallAdvancedBionicToe.jobString>
+							
+
+						
+							<defName>InstallAdvancedBionicForearm</defName>
+							<InstallAdvancedBionicForearm.label>고급 생체공학 의수 이식</InstallAdvancedBionicForearm.label>
+							<InstallAdvancedBionicForearm.description>고급 생체공학 의수를 이식합니다.</InstallAdvancedBionicForearm.description>
+							<InstallAdvancedBionicForearm.jobString>고급 생체공학 의수 이식 중.</InstallAdvancedBionicForearm.jobString>
+							
+						
+							<defName>InstallAdvancedPowerForearm</defName>
+							<InstallAdvancedPowerForearm.label>고급 동력 의수 이식</InstallAdvancedPowerForearm.label>
+							<InstallAdvancedPowerForearm.description>고급 동력 의수를 이식합니다.</InstallAdvancedPowerForearm.description>
+							<InstallAdvancedPowerForearm.jobString>고급 동력 의수 이식 중.</InstallAdvancedPowerForearm.jobString>
+							
+						
+							<defName>InstallAdvancedPowerHand</defName>
+							<InstallAdvancedPowerHand.label>고급 동력 손 이식</InstallAdvancedPowerHand.label>
+							<InstallAdvancedPowerHand.description>고급 동력 손을 이식합니다.</InstallAdvancedPowerHand.description>
+							<InstallAdvancedPowerHand.jobString>고급 동력 손 이식 중.</InstallAdvancedPowerHand.jobString>
+							
+					
+</LanguageData>

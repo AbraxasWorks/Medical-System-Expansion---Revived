@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+    <PlasteelClavicle.label>플라스틸 쇄골</PlasteelClavicle.label>
+    <PlasteelClavicle.labelNoun>플라스틸 쇄골</PlasteelClavicle.labelNoun>
+    <PlasteelClavicle.description>이식된 플라스틸 쇄골입니다.</PlasteelClavicle.description>
+   
+
+    <PlasteelHumerus.label>플라스틸 상완골</PlasteelHumerus.label>
+    <PlasteelHumerus.labelNoun>플라스틸 상완골</PlasteelHumerus.labelNoun>
+    <PlasteelHumerus.description>이식된 플라스틸 상완골입니다.</PlasteelHumerus.description>
+   
+
+    <PlasteelRadius.label>플라스틸 요골</PlasteelRadius.label>
+    <PlasteelRadius.labelNoun>플라스틸 요골</PlasteelRadius.labelNoun>
+    <PlasteelRadius.description>이식된 플라스틸 요골입니다.</PlasteelRadius.description>
+   
+
+
+    <PlasteelFemur.label>플라스틸 대퇴골</PlasteelFemur.label>
+    <PlasteelFemur.labelNoun>플라스틸 대퇴골</PlasteelFemur.labelNoun>
+    <PlasteelFemur.description>이식된 플라스틸 대퇴골입니다.</PlasteelFemur.description>
+
+    <PlasteelTibia.label>플라스틸 정강이뼈</PlasteelTibia.label>
+    <PlasteelTibia.labelNoun>플라스틸 정강이뼈</PlasteelTibia.labelNoun>
+    <PlasteelTibia.description>이식된 플라스틸 정강이뼈입니다.</PlasteelTibia.description>
+  
+    <SimpleProstheticClavicle.label>인공 쇄골</SimpleProstheticClavicle.label>
+    <SimpleProstheticClavicle.labelNoun>인공 쇄골</SimpleProstheticClavicle.labelNoun>
+    <SimpleProstheticClavicle.description>이식된 인공 쇄골입니다.</SimpleProstheticClavicle.description>
+
+    <SimpleProstheticHumerus.label>인공 상완골</SimpleProstheticHumerus.label>
+    <SimpleProstheticHumerus.labelNoun>인공 상완골</SimpleProstheticHumerus.labelNoun>
+    <SimpleProstheticHumerus.description>이식된 인공 상완골입니다.</SimpleProstheticHumerus.description>
+
+
+    <SimpleProstheticRadius.label>인공 요골</SimpleProstheticRadius.label>
+    <SimpleProstheticRadius.labelNoun>인공 요골</SimpleProstheticRadius.labelNoun>
+    <SimpleProstheticRadius.description>이식된 인공 요골입니다.</SimpleProstheticRadius.description>
+  
+
+    <SimpleProstheticFemur.label>인공 대퇴골</SimpleProstheticFemur.label>
+    <SimpleProstheticFemur.labelNoun>인공 대퇴골</SimpleProstheticFemur.labelNoun>
+    <SimpleProstheticFemur.description>이식된 인공 대퇴골입니다.</SimpleProstheticFemur.description>
+  
+
+    <SimpleProstheticTibia.label>인공 정강이뼈</SimpleProstheticTibia.label>
+    <SimpleProstheticTibia.labelNoun>인공 정강이뼈</SimpleProstheticTibia.labelNoun>
+    <SimpleProstheticTibia.description>이식된 인공 정강이뼈입니다.</SimpleProstheticTibia.description>
+ 
+
+    <ArchotechInternalSupport.label>초월공학 내골격 보철물</ArchotechInternalSupport.label>
+    <ArchotechInternalSupport.labelNoun>초월공학 내골격 보철물</ArchotechInternalSupport.labelNoun>
+    <ArchotechInternalSupport.description>이식된 초월공학 내골격 보철물입니다.</ArchotechInternalSupport.description>
+
+    <ArchotechForearm.label>초월공학 팔</ArchotechForearm.label>
+    <ArchotechForearm.labelNoun>초월공학 팔</ArchotechForearm.labelNoun>
+    <ArchotechForearm.description>이식된 초월공학 팔입니다.</ArchotechForearm.description>
+
+
+    <ArchotechFoot.label>초월공학 발</ArchotechFoot.label>
+    <ArchotechFoot.labelNoun>초월공학 발</ArchotechFoot.labelNoun>
+    <ArchotechFoot.description>이식된 초월공학 발입니다.</ArchotechFoot.description>
+   
+
+    <ArchotechToe.label>초월공학 발가락</ArchotechToe.label>
+    <ArchotechToe.labelNoun>초월공학 발가락</ArchotechToe.labelNoun>
+    <ArchotechToe.description>이식된 초월공학 발가락입니다.</ArchotechToe.description>
+   
+
+    <ArchotechHand.label>초월공학 손</ArchotechHand.label>
+    <ArchotechHand.labelNoun>초월공학 손</ArchotechHand.labelNoun>
+    <ArchotechHand.description>이식된 초월공학 손입니다.</ArchotechHand.description>
+ 
+
+    <ArchotechFinger.label>초월공학 손가락</ArchotechFinger.label>
+    <ArchotechFinger.labelNoun>초월공학 손가락</ArchotechFinger.labelNoun>
+    <ArchotechFinger.description>이식된 초월공학 손가락입니다.</ArchotechFinger.description>
+ 
+
+		<BionicInternalSupport.label>생체공학 내골격 보철물</BionicInternalSupport.label>
+		<BionicInternalSupport.labelNoun>생체공학 내골격 보철물</BionicInternalSupport.labelNoun>
+		<BionicInternalSupport.description>이식된 생체공학 내골격 보철물입니다.</BionicInternalSupport.description>
+		
+
+		<BionicForearm.label>생체공학 팔</BionicForearm.label>
+		<BionicForearm.labelNoun>생체공학 팔</BionicForearm.labelNoun>
+		<BionicForearm.description>이식된 생체공학 팔입니다.</BionicForearm.description>
+	
+
+		<BionicFoot.label>생체공학 발</BionicFoot.label>
+		<BionicFoot.labelNoun>생체공학 발</BionicFoot.labelNoun>
+		<BionicFoot.description>이식된 생체공학 발입니다.</BionicFoot.description>
+	
+		<BionicToe.label>생체공학 발가락</BionicToe.label>
+		<BionicToe.labelNoun>생체공학 발가락</BionicToe.labelNoun>
+		<BionicToe.description>이식된 생체공학 발가락입니다.</BionicToe.description>
+
+		<BionicHand.label>생체공학 손</BionicHand.label>
+		<BionicHand.labelNoun>생체공학 손</BionicHand.labelNoun>
+		<BionicHand.description>이식된 생체공학 손입니다.</BionicHand.description>
+
+		<BionicFinger.label>생체공학 손가락r</BionicFinger.label>
+		<BionicFinger.labelNoun>생체공학 손가락</BionicFinger.labelNoun>
+		<BionicFinger.description>이식된 생체공학 손가락입니다.</BionicFinger.description>
+		
+
+    <SimpleProstheticFoot.label>인공 발</SimpleProstheticFoot.label>
+    <SimpleProstheticFoot.labelNoun>인공 발</SimpleProstheticFoot.labelNoun>
+    <SimpleProstheticFoot.description>이식된 인공 발입니다.</SimpleProstheticFoot.description>
+ 
+
+    <SimpleProstheticToe.label>인공 발가락</SimpleProstheticToe.label>
+    <SimpleProstheticToe.labelNoun>인공 발가락</SimpleProstheticToe.labelNoun>
+    <SimpleProstheticToe.description>이식된 인공 발가락.</SimpleProstheticToe.description>
+
+    <SimpleProstheticHand.label>인공 손</SimpleProstheticHand.label>
+    <SimpleProstheticHand.labelNoun>인공 손</SimpleProstheticHand.labelNoun>
+    <SimpleProstheticHand.description>이식된 인공 손입니다.</SimpleProstheticHand.description>
+ 
+    <SimpleProstheticFinger.label>인공 손가락</SimpleProstheticFinger.label>
+    <SimpleProstheticFinger.labelNoun>인공 손가락</SimpleProstheticFinger.labelNoun>
+    <SimpleProstheticFinger.description>이식된 인공 손가락.</SimpleProstheticFinger.description>
+
+    <MSE_AdvancedRangedPlatformModule.label>고급 원거리 플랫폼 모듈</MSE_AdvancedRangedPlatformModule.label>
+    <MSE_AdvancedRangedPlatformModule.labelNoun>고급 원거리 플랫폼 모듈</MSE_AdvancedRangedPlatformModule.labelNoun>
+    <MSE_AdvancedRangedPlatformModule.description>설치된 고급 원거리 플랫폼 모듈입니다.</MSE_AdvancedRangedPlatformModule.description>
+  
+
+    <MSE_AdvancedMeleePlatformModule.label>고급 근접 플랫폼 모듈</MSE_AdvancedMeleePlatformModule.label>
+    <MSE_AdvancedMeleePlatformModule.labelNoun>고급 근접 플랫폼 모듈</MSE_AdvancedMeleePlatformModule.labelNoun>
+    <MSE_AdvancedMeleePlatformModule.description>설치된 고급 근접 플랫폼 모듈입니다.</MSE_AdvancedMeleePlatformModule.description>
+
+    <MSE_ModuleSlot.label>모듈 슬롯</MSE_ModuleSlot.label>
+    <MSE_ModuleSlot.labelNoun>모듈 슬롯</MSE_ModuleSlot.labelNoun>
+    <MSE_ModuleSlot.description>업그레이드를 위한 슬롯입니다.</MSE_ModuleSlot.description>
+  
+  
+    <MSE_RangedPlatformModule.label>원거리 플랫폼 모듈</MSE_RangedPlatformModule.label>
+    <MSE_RangedPlatformModule.labelNoun>원거리 플랫폼 모듈</MSE_RangedPlatformModule.labelNoun>
+    <MSE_RangedPlatformModule.description>설치된 원거리 플랫폼 모듈입니다.</MSE_RangedPlatformModule.description>
+  
+    <MSE_MeleePlatformModule.label>근접 플랫폼 모듈</MSE_MeleePlatformModule.label>
+    <MSE_MeleePlatformModule.labelNoun>근접 플랫폼 모듈</MSE_MeleePlatformModule.labelNoun>
+    <MSE_MeleePlatformModule.description>설치된 근접 플랫폼 모듈입니다.</MSE_MeleePlatformModule.description>
+
+</LanguageData>

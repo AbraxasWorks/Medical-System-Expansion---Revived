@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+							<defName>AdvancedBionicInternalSupport</defName>
+							<AdvancedBionicInternalSupport.label>고급 생체공학 내골격 보철물</AdvancedBionicInternalSupport.label>
+							<AdvancedBionicInternalSupport.description>고급 생체공학 내골격 보철물. (어느 부위에 적용 가능한지 제보 부탁드립니다. 코드로 확인이 안되네요.)</AdvancedBionicInternalSupport.description>
+				
+
+							<defName>AdvancedBionicFinger</defName>
+							<AdvancedBionicFinger.label>고급 생체공학 손가락</AdvancedBionicFinger.label>
+							<AdvancedBionicFinger.description>발전된 인공 손가락. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</AdvancedBionicFinger.description>
+					
+
+							<defName>AdvancedBionicToe</defName>
+							<AdvancedBionicToe.label>고급 생체공학 발가락</AdvancedBionicToe.label>
+							<AdvancedBionicToe.description>발전된 인공 발가락. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</AdvancedBionicToe.description>
+					
+
+							<defName>AdvancedBionicForearm</defName>
+							<AdvancedBionicForearm.label>고급 생체공학 의수</AdvancedBionicForearm.label>
+							<AdvancedBionicForearm.description>뚜껑을 여는게 힘드신 적이 있나요? 이젠 부수지 않는게 힘드실 겁니다.</AdvancedBionicForearm.description>
+							
+
+							<defName>AdvancedPowerForearm</defName>
+							<AdvancedPowerForearm.label>고급 동력 의수</AdvancedPowerForearm.label>
+							<AdvancedPowerForearm.description>가장 정교한 의수 중 하나입니다.</AdvancedPowerForearm.description>
+							
+
+							<defName>AdvancedPowerHand</defName>
+							<AdvancedPowerHand.label>고급 동력 손</AdvancedPowerHand.label>
+							<AdvancedPowerHand.description>가장 정교한 의수 중 하나입니다.</AdvancedPowerHand.description>
+											
+</LanguageData>

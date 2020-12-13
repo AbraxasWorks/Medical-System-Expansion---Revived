@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+						
+							<InstallMechanicalManipulator.label>다목적 기계 손 이식</InstallMechanicalManipulator.label>
+							<InstallMechanicalManipulator.description>다목적 기계 손을 이식합니다.</InstallMechanicalManipulator.description>
+							<InstallMechanicalManipulator.jobString>다목적 기계 손 이식 중.</InstallMechanicalManipulator.jobString>
+							
+							
+							<InstallMechanicalFinger.label>기계 손가락 이식</InstallMechanicalFinger.label>
+							<InstallMechanicalFinger.description>기계 손가락을 이식합니다.</InstallMechanicalFinger.description>
+							<InstallMechanicalFinger.jobString>기계 손가락 이식 중.</InstallMechanicalFinger.jobString>
+						
+							<InstallFieldFinger.label>농업용 기계 손가락 이식</InstallFieldFinger.label>
+							<InstallFieldFinger.description>농업용 기계 손가락을 이식합니다.</InstallFieldFinger.description>
+							<InstallFieldFinger.jobString>농업용 기계 손가락 이식 중.</InstallFieldFinger.jobString>
+						
+							<InstallHandTalonModule.label>발톱손 모듈 설치</InstallHandTalonModule.label>
+							<InstallHandTalonModule.description>발톱손 모듈을 설치합니다.</InstallHandTalonModule.description>
+							<InstallHandTalonModule.jobString>발톱손 모듈 설치 중.</InstallHandTalonModule.jobString>
+						
+							<InstallElbowBladeModule.label>팔꿈치 칼날 모듈 설치</InstallElbowBladeModule.label>
+							<InstallElbowBladeModule.description>팔꿈치 칼날 모듈을 설치합니다.</InstallElbowBladeModule.description>
+							<InstallElbowBladeModule.jobString>팔꿈치 칼날 모듈 설치 중.</InstallElbowBladeModule.jobString>
+
+							<InstallKneeSpikeModule.label>무릎 송곳 모듈 설치</InstallKneeSpikeModule.label>
+							<InstallKneeSpikeModule.description>무릎 송곳 모듈을 설치합니다.</InstallKneeSpikeModule.description>
+							<InstallKneeSpikeModule.jobString>무릎 송곳 모듈 설치 중.</InstallKneeSpikeModule.jobString>
+						
+							<InstallVenomTalonModule.label>독 발톱 모듈 설치</InstallVenomTalonModule.label>
+							<InstallVenomTalonModule.description>독 발톱 모듈을 설치합니다.</InstallVenomTalonModule.description>
+							<InstallVenomTalonModule.jobString>독 발톱 모듈 설치 중.</InstallVenomTalonModule.jobString>
+						
+							<InstallMechanicalInternalSupport.label>기계 내골격 보철물 이식</InstallMechanicalInternalSupport.label>
+							<InstallMechanicalInternalSupport.description>기계 내골격 보철물을 이식합니다.</InstallMechanicalInternalSupport.description>
+							<InstallMechanicalInternalSupport.jobString>기계 내골격 보철물 이식 중.</InstallMechanicalInternalSupport.jobString>
+							
+
+</LanguageData>
+

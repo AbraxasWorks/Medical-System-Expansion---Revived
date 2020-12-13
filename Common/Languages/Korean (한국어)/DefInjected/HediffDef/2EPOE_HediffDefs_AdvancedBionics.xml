@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+
+
+							<defName>AdvancedBionicInternalSupport</defName>
+							<AdvancedBionicInternalSupport.label>고급 생체공학 내골격 보철물</AdvancedBionicInternalSupport.label>
+							<AdvancedBionicInternalSupport.labelNoun>고급 생체공학 내골격 보철물</AdvancedBionicInternalSupport.labelNoun>
+							<AdvancedBionicInternalSupport.description>이식된 고급 생체공학 내골격 보철물입니다.</AdvancedBionicInternalSupport.description>
+
+							<defName>AdvancedBionicFinger</defName>
+							<AdvancedBionicFinger.label>고급 생체공학 손가락</AdvancedBionicFinger.label>
+							<AdvancedBionicFinger.labelNoun>고급 생체공학 손가락</AdvancedBionicFinger.labelNoun>
+							<AdvancedBionicFinger.description>이식된 고급 생체공학 손가락.</AdvancedBionicFinger.description>
+							
+
+							<defName>고급 생체공학 발가락</defName>
+							<AdvancedBionicToe.label>고급 생체공학 발가락</AdvancedBionicToe.label>
+							<AdvancedBionicToe.labelNoun>고급 생체공학 발가락</AdvancedBionicToe.labelNoun>
+							<AdvancedBionicToe.description>이식된 고급 생체공학 발가락.</AdvancedBionicToe.description>
+							
+
+
+							<defName>AdvancedBionicForearm</defName>
+							<AdvancedBionicForearm.label>고급 생체공학 팔</AdvancedBionicForearm.label>
+							<AdvancedBionicForearm.labelNoun>고급 생체공학 팔</AdvancedBionicForearm.labelNoun>
+							<AdvancedBionicForearm.description>이식된 고급 생체공학 팔.</AdvancedBionicForearm.description>
+							
+
+
+							<defName>AdvancedPowerForearm</defName>
+							<AdvancedPowerForearm.label>고급 동력 팔</AdvancedPowerForearm.label>
+							<AdvancedPowerForearm.labelNoun>고급 동력 의수</AdvancedPowerForearm.labelNoun>
+							<AdvancedPowerForearm.description>이식된 고급 동력 의수.</AdvancedPowerForearm.description>
+							
+
+
+							<defName>AdvancedPowerHand</defName>
+							<AdvancedPowerHand.label>고급 동력 손</AdvancedPowerHand.label>
+							<AdvancedPowerHand.labelNoun>고급 동력 손</AdvancedPowerHand.labelNoun>
+							<AdvancedPowerHand.description>이식된 고급 동력 손.</AdvancedPowerHand.description>
+						
+					
+</LanguageData>

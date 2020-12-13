@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<BionicInternalSupport.label>생체공학 내골격 보철물</BionicInternalSupport.label>
+<BionicInternalSupport.description>발전된 인공 내골격 보철물. 쇄골, 상완골, 요골, 대퇴골, 정강이뼈를 대체할 수 있습니다.</BionicInternalSupport.description>
+
+<BionicForearm.label>생체공학 의수</BionicForearm.label>
+<BionicForearm.description>발전된 인공 의수. 팔과 손, 손가락을 모두 포함합니다. 뛰어난 출력을 지닌 무소음 모터와 정교한 제어가 가능한 바이오젤 신경으로 작동합니다. 손상을 입더라도 미세 치유입자 시스템으로 시간이 지남에 따라서 스스로 복구합니다. 본래의 생체기관보다 모든 면에서 좋습니다.</BionicForearm.description>
+		
+<BionicFoot.label>생체공학 발</BionicFoot.label>
+<BionicFoot.description>발전된 인공 발. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</BionicFoot.description>
+		
+<BionicToe.label>생체공학 발가락</BionicToe.label>
+<BionicToe.description>발전된 인공 발가락. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</BionicToe.description>
+		
+<BionicHand.label>생체공학 손</BionicHand.label>
+<BionicHand.description>발전된 인공 손. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</BionicHand.description>
+		
+<BionicFinger.label>생체공학 손가락</BionicFinger.label>
+<BionicFinger.description>발전된 인공 손가락. 바이오젤 신경망과 미세 치유입자 시스템 덕분에, 모든 면에서 본래의 생체기관보다 좋습니다.</BionicFinger.description>
+
+</LanguageData>

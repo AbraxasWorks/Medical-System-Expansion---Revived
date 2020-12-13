@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+		<Humerus.label>상완골</Humerus.label>
+		<Humerus.description>인간의 상완골.</Humerus.description>
+   
+		<Radius.label>요골</Radius.label>
+		<Radius.description>인간의 요골. 아래팔뼈 중 하나</Radius.description>
+  
+		<Femur.label>대퇴골</Femur.label>
+		<Femur.description>인간의 대퇴골.</Femur.description>
+    
+		<Tibia.label>정강이뼈</Tibia.label>
+		<Tibia.description>인간의 정강이뼈.</Tibia.description>
+  
+</LanguageData>
