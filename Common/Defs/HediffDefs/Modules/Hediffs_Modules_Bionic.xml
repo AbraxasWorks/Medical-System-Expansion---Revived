@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!-- abstracts -->
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="MSE_ModuleBionic">
 		<defName>ModuleEfficiency</defName>
 		<label>advanced processing module</label>
-		<description>TODO</description>
+		<description>Extra processing power to optimize and boost the performance of a bionic prosthesis. It will improve the efficiency of the part it is installed on and of any connected bionics.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallModuleEfficiency</RecipeDef>
 		</descriptionHyperlinks>
