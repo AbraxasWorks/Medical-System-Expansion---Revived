@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- steel -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@Abstract="True" and @Name="AddedBodyPart_Bone_Prosthetic"]</xpath>
+		<value>
+			<comps>
+				<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+					<scaleAdjustment>0.10</scaleAdjustment>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<!-- plasteel -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@Abstract="True" and @Name="AddedBodyPart_Bone_Bionic"]</xpath>
+		<value>
+			<comps>
+				<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+					<scaleAdjustment>0.25</scaleAdjustment>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+</Patch>
