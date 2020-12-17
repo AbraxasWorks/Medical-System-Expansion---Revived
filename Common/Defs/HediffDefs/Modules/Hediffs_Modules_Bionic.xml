@@ -153,7 +153,7 @@
 		</descriptionHyperlinks>
 		<stages>
 			<li>
-				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<partEfficiencyOffset>0.20</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>
@@ -165,7 +165,7 @@
 		</descriptionHyperlinks>
 		<stages>
 			<li>
-				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<partEfficiencyOffset>0.20</partEfficiencyOffset>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>ModuleEfficiency</spawnThingOnRemoved>
@@ -173,6 +173,7 @@
 			<li Class="MSE2.HediffCompProperties_ExtraDiffCreator">
 				<extraDiffDef>ModuleEfficiency_Effector</extraDiffDef>
 				<addToThisPart>false</addToThisPart>
+				<maxDistance>1</maxDistance>
 			</li>
 		</comps>
 	</HediffDef>
@@ -184,7 +185,7 @@
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>5</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
