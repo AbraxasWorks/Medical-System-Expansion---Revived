@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!--MSE_ModuleSlot-->
-  <MSE_ModuleSlot.label>module slot</MSE_ModuleSlot.label>
-  <MSE_ModuleSlot.labelNoun>a module slot</MSE_ModuleSlot.labelNoun>
-  <MSE_ModuleSlot.description>A slot for upgrading</MSE_ModuleSlot.description>
-</LanguageData>

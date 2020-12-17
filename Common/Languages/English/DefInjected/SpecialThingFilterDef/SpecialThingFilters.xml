@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!--AllowProsthesesIncomplete-->
-  <AllowProsthesesIncomplete.label>allow incomplete</AllowProsthesesIncomplete.label>
-  <AllowProsthesesIncomplete.description>Allow prostheses that are incomplete.</AllowProsthesesIncomplete.description>
-  <!--AllowProsthesesComplete-->
-  <AllowProsthesesComplete.label>allow complete</AllowProsthesesComplete.label>
-  <AllowProsthesesComplete.description>Allow prostheses that are complete.</AllowProsthesesComplete.description>
-</LanguageData>

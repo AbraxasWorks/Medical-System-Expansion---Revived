@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!--MSE_RemoveModules-->
-  <MSE_RemoveModules.label>remove modules</MSE_RemoveModules.label>
-  <MSE_RemoveModules.description>Remove a modules from a bodypart.</MSE_RemoveModules.description>
-  <MSE_RemoveModules.jobString>Removing modules.</MSE_RemoveModules.jobString>
-</LanguageData>
