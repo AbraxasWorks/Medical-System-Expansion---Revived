@@ -164,8 +164,8 @@
 
 	<HediffDef ParentName="MSE_Effector">
 		<defName>ModuleEfficiency_Effector</defName>
-		<label>advanced processing module effector</label>
-		<labelNoun>an advanced processing module effector</labelNoun>
+		<label>advanced processing module</label>
+		<labelNoun>an advanced processing module</labelNoun>
 		<description>An installed advanced processing module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ModuleEfficiency</ThingDef>
