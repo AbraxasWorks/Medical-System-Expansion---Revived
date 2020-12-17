@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
 	<ResearchProjectDef>
 		<defName>BoneProstheticsSimple</defName>
+		<label>bone replacements</label>
+		<description>Build steel prosthetic bone replacements.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -14,6 +16,8 @@
 
 	<ResearchProjectDef>
 		<defName>BoneProstheticsPlasteel</defName>
+		<label>advanced bone replacements</label>
+		<description>Build plasteel prosthetic bone replacements.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>

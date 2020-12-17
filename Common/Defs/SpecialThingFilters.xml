@@ -1,8 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <SpecialThingFilterDef>
     <defName>AllowProsthesesIncomplete</defName>
+    <label>allow incomplete</label>
+    <description>Allow prostheses that are incomplete.</description>
     <parentCategory>BodyParts</parentCategory>
     <allowedByDefault>true</allowedByDefault>
     <saveKey>allowProsthesesIncomplete</saveKey>
@@ -11,6 +13,8 @@
 
   <SpecialThingFilterDef>
     <defName>AllowProsthesesComplete</defName>
+    <label>allow complete</label>
+    <description>Allow prostheses that are complete.</description>
     <parentCategory>BodyParts</parentCategory>
     <allowedByDefault>true</allowedByDefault>
     <saveKey>allowProsthesesComplete</saveKey>

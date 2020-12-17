@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!-- base -->
@@ -37,6 +37,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelRibcage</defName>
+		<label>plasteel ribcage</label>
+		<labelNoun>a plasteel ribcage</labelNoun>
+		<description>An installed plasteel ribcage.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelRibcage</ThingDef>
 		</descriptionHyperlinks>
@@ -45,6 +48,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelRibcage</defName>
+		<label>plasteel ribcage</label>
+		<description>An advanced artificial ribcage.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelRibcage</RecipeDef>
 		</descriptionHyperlinks>
@@ -58,9 +63,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelRibcage</defName>
+		<label>install plasteel ribcage</label>
+		<description>Install a plasteel ribcage.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelRibcage</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel ribcage.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -86,6 +94,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelSternum</defName>
+		<label>plasteel sternum</label>
+		<labelNoun>a plasteel sternum</labelNoun>
+		<description>An installed plasteel sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelSternum</ThingDef>
 		</descriptionHyperlinks>
@@ -94,6 +105,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelSternum</defName>
+		<label>plasteel sternum</label>
+		<description>An advanced artificial sternum.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelSternum</RecipeDef>
 		</descriptionHyperlinks>
@@ -107,9 +120,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelSternum</defName>
+		<label>install plasteel sternum</label>
+		<description>Install a plasteel sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelSternum</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel sternum.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -135,6 +151,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelClavicle</defName>
+		<label>plasteel clavicle</label>
+		<labelNoun>a plasteel clavicle</labelNoun>
+		<description>An installed plasteel clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelClavicle</ThingDef>
 		</descriptionHyperlinks>
@@ -143,6 +162,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelClavicle</defName>
+		<label>plasteel clavicle</label>
+		<description>An advanced artificial clavicle.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelClavicle</RecipeDef>
 		</descriptionHyperlinks>
@@ -156,9 +177,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelClavicle</defName>
+		<label>install plasteel clavicle</label>
+		<description>Install a plasteel clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelClavicle</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel clavicle.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -184,6 +208,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelHumerus</defName>
+		<label>plasteel humerus</label>
+		<labelNoun>a plasteel humerus</labelNoun>
+		<description>An installed plasteel humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelHumerus</ThingDef>
 		</descriptionHyperlinks>
@@ -192,6 +219,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelHumerus</defName>
+		<label>plasteel humerus</label>
+		<description>An advanced artificial humerus.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelHumerus</RecipeDef>
 		</descriptionHyperlinks>
@@ -205,9 +234,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelHumerus</defName>
+		<label>install plasteel humerus</label>
+		<description>Install a plasteel humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelHumerus</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel humerus.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -233,6 +265,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelRadius</defName>
+		<label>plasteel radius</label>
+		<labelNoun>a plasteel radius</labelNoun>
+		<description>An installed plasteel radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelRadius</ThingDef>
 		</descriptionHyperlinks>
@@ -241,6 +276,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelRadius</defName>
+		<label>plasteel radius</label>
+		<description>An advanced artificial radius.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelRadius</RecipeDef>
 		</descriptionHyperlinks>
@@ -254,9 +291,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelRadius</defName>
+		<label>install plasteel radius</label>
+		<description>Install a plasteel radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelRadius</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel radius.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -282,6 +322,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelFemur</defName>
+		<label>plasteel femur</label>
+		<labelNoun>a plasteel femur</labelNoun>
+		<description>An installed plasteel femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelFemur</ThingDef>
 		</descriptionHyperlinks>
@@ -290,6 +333,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelFemur</defName>
+		<label>plasteel femur</label>
+		<description>An advanced artificial femur.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelFemur</RecipeDef>
 		</descriptionHyperlinks>
@@ -303,9 +348,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelFemur</defName>
+		<label>install plasteel femur</label>
+		<description>Install a plasteel femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelFemur</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel femur.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -331,6 +379,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Bone_Bionic">
 		<defName>PlasteelTibia</defName>
+		<label>plasteel tibia</label>
+		<labelNoun>a plasteel tibia</labelNoun>
+		<description>An installed plasteel tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelTibia</ThingDef>
 		</descriptionHyperlinks>
@@ -339,6 +390,8 @@
 
 	<ThingDef ParentName="BodyPartBionic_Bone">
 		<defName>PlasteelTibia</defName>
+		<label>plasteel tibia</label>
+		<description>An advanced artificial tibia.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallPlasteelTibia</RecipeDef>
 		</descriptionHyperlinks>
@@ -352,9 +405,12 @@
 
 	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Bone">
 		<defName>InstallPlasteelTibia</defName>
+		<label>install plasteel tibia</label>
+		<description>Install a plasteel tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelTibia</ThingDef>
 		</descriptionHyperlinks>
+		<jobString>Installing plasteel tibia.</jobString>
 		<ingredients>
 			<li>
 				<filter>
