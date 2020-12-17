@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- armor module -->
+
+	<HediffDef ParentName="MSE_Effector">
+		<defName>ModuleArmorEBF_Effector</defName>
+		<label>armor module</label>
+		<labelNoun>an armor module</labelNoun>
+		<description>An installed armor module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleArmorEBF</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+				<scaleAdjustment>0.20</scaleAdjustment>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>ModuleArmorEBF</defName>
+		<label>armor module</label>
+		<labelNoun>an armor module</labelNoun>
+		<description>An installed armor module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleArmorEBF</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>ModuleArmorEBF</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ExtraDiffCreator">
+				<extraDiffDef>ModuleArmorEBF_Effector</extraDiffDef>
+				<addToThisPart>false</addToThisPart>
+				<maxDistance>2</maxDistance>
+			</li>
+			<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+				<scaleAdjustment>0.20</scaleAdjustment>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>ModuleArmorEBF</defName>
+		<label>armor module</label>
+		<description>Extra plating to toughen up a bionic prosthesis. Makes the part harder to destroy, with the side effect of making it heavier, slightly reducing its efficiency. It will increase the health of the part it is installed on and of any connected bionics.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallModuleArmorEBF</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<Steel>12</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallModuleArmorEBF</defName>
+		<label>install armor module</label>
+		<description>Install a armor module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ModuleArmorEBF</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing armor module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ModuleArmorEBF</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ModuleArmorEBF</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>ModuleArmorEBF</addsHediff>
+	</RecipeDef>
+
+</Defs>
