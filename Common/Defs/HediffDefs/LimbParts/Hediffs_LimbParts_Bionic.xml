@@ -40,7 +40,7 @@
 			<RecipeDef>InstallBionicInternalSupport</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>2</Plasteel>
+			<Plasteel>8</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
@@ -97,7 +97,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicArm</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>1.25</partEfficiency>
+			<partEfficiency>1.20</partEfficiency>
 		</addedPartProps>
 		<comps>
 			<li Class="MSE2.HediffCompProperties_ModuleHolder">
@@ -112,8 +112,9 @@
 			<RecipeDef>InstallBionicArm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>2</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>7</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
@@ -183,8 +184,9 @@
 			<RecipeDef>InstallBionicForearm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>3</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>7</Steel>
+			<Plasteel>13</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
@@ -251,8 +253,8 @@
 			<RecipeDef>InstallBionicHand</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>2</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>4</Steel>
+			<Plasteel>8</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<thingSetMakerTags>
@@ -306,7 +308,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicFinger</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>1.25</partEfficiency>
+			<partEfficiency>1.20</partEfficiency>
 		</addedPartProps>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
@@ -317,9 +319,9 @@
 			<RecipeDef>InstallBionicFinger</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>2</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<productCount>5</productCount>
@@ -380,8 +382,9 @@
 			<RecipeDef>InstallBionicLeg</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>8</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Steel>15</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
@@ -446,9 +449,9 @@
 			<RecipeDef>InstallBionicFoot</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>2</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>5</Steel>
+			<Plasteel>9</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
@@ -509,8 +512,9 @@
 			<RecipeDef>InstallBionicToe</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Plasteel>1</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>8</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<productCount>5</productCount>
