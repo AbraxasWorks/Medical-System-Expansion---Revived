@@ -65,7 +65,6 @@
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
-			<WorkToMake>20000</WorkToMake>
 			<Mass>5</Mass>
 		</statBases>
 	</ThingDef>
