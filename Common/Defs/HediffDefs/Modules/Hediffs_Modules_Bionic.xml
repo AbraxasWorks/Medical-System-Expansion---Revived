@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!-- abstracts -->
@@ -25,7 +25,7 @@
 		</techHediffsTags>
     <statBases>
       <WorkToMake>20000</WorkToMake>
-			<Mass>2</Mass>
+			<Mass>3</Mass>
     </statBases>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
@@ -44,6 +44,15 @@
       </recipeUsers>
 			<researchPrerequisite>BionicModules</researchPrerequisite>
 		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="MSE_ModuleBionic_Combat" ParentName="MSE_ModuleBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>BionicModules</researchPrerequisite>
+		</recipeMaker>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
 	</ThingDef>
 
 	<!-- Ranged platform module -->
@@ -67,7 +76,7 @@
 		<spawnThingOnRemoved>RangedPlatformModule</spawnThingOnRemoved>
 	</HediffDef>
 
-	<ThingDef ParentName="MSE_ModuleBionic">
+	<ThingDef ParentName="MSE_ModuleBionic_Combat">
 		<defName>RangedPlatformModule</defName>
 		<label>ranged platform module</label>
 		<description>An advanced ranged platform module. With stabilizer and targeting system can give your pawn great accuracy and improve your pawn's ranged combat ability.</description>
@@ -131,7 +140,7 @@
 		<spawnThingOnRemoved>MeleePlatformModule</spawnThingOnRemoved>
 	</HediffDef>
 
-	<ThingDef ParentName="MSE_ModuleBionic">
+	<ThingDef ParentName="MSE_ModuleBionic_Combat">
 		<defName>MeleePlatformModule</defName>
 		<label>melee platform module</label>
 		<description>An advanced melee platform module. With sensory motor and targeting system can give your pawn great melee damage and improve your pawn's melee combat ability.</description>

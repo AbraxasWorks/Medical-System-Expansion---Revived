@@ -51,7 +51,7 @@
 		</comps>
 	</HediffDef>
 
-	<ThingDef ParentName="MSE_ModuleBionic">
+	<ThingDef ParentName="MSE_ModuleBionic_Combat">
 		<defName>ModuleArmorEBF</defName>
 		<label>armor module</label>
 		<description>Extra plating to toughen up a bionic prosthesis. Makes the part harder to destroy, with the side effect of making it heavier, slightly reducing its efficiency. It will increase the health of the part it is installed on and of any connected bionics.</description>
