@@ -3,9 +3,13 @@
 
 	<!-- copy thing parameters excepr stats and categories -->
 
-	<Operation Class="PatchOperationAddCopy">
+	<Operation Class="PatchOperationAddOrMergeCopy">
 		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb" or @Name="BodyPartBionic_Bone"]</xpath>
 		<fromxpath>/Defs/ThingDef[@Name="Bionic"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
+	</Operation>
+	<!-- remove wrong researchPrerequisite from bones -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Bone"]/recipeMaker/researchPrerequisite[text()="Bionics"]</xpath>
 	</Operation>
 
 </Patch>

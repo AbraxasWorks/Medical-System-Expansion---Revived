@@ -10,9 +10,13 @@
 
 	<!-- copy thing parameters excepr stats and categories -->
 
-	<Operation Class="PatchOperationAddCopy">
+	<Operation Class="PatchOperationAddOrMergeCopy">
 		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Limb" or @Name="BodyPartProsthetic_Bone"]</xpath>
 		<fromxpath>/Defs/ThingDef[@Name="Simple"]/*[name()!="statBases" and name()!="thingCategories"]</fromxpath>
+	</Operation>
+	<!-- remove wrong researchPrerequisite from bones -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[@Name="BodyPartProsthetic_Bone"]/recipeMaker/researchPrerequisite[text()="Prosthetics"]</xpath>
 	</Operation>
 
 </Patch>
