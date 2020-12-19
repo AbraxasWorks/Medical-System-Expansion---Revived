@@ -60,8 +60,9 @@
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>20</Plasteel>
-			<Steel>12</Steel>
+			<Uranium>8</Uranium>
 			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
