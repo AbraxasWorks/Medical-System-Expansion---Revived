@@ -13,13 +13,6 @@
 	<!-- bones -->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/hiddenPrerequisites/li[text()="Fabrication"]</xpath>
-		<value>
-			<li>Bionics</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple"]/researchViewX</xpath>
 		<value>
 			<researchViewX>1</researchViewX>
@@ -43,13 +36,13 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewX</xpath>
 		<value>
-			<researchViewX>2</researchViewX>
+			<researchViewX>3</researchViewX>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewY</xpath>
 		<value>
-			<researchViewY>3.5</researchViewY>
+			<researchViewY>2.5</researchViewY>
 		</value>
 	</Operation>
 
