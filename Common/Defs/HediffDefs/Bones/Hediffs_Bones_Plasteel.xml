@@ -17,9 +17,6 @@
     </thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>BoneProstheticsPlasteel</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
 		</recipeMaker>
 	</ThingDef>
 
