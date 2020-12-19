@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--============ Module Base ============-->
+	<!-- module base -->
+
   <HediffDef Name="MSE_ModuleAdded" ParentName="ImplantHediffBase" Abstract="True">
     <hediffClass>MSE2.Hediff_ModuleAdded</hediffClass>
   </HediffDef>
-  <!--===================== END ======================-->
 
   <!-- module surgery -->
 
