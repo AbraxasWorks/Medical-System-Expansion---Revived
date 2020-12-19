@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!-- abstracts -->
@@ -20,9 +20,9 @@
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
-		<statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BionicModules</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<!-- Ranged platform module -->
