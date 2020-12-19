@@ -22,4 +22,9 @@
 		</value>
 	</Operation>
 
+	<!-- power claw texture -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="PowerClaw"]/graphicData</xpath>
+	</Operation>
+
 </Patch>
