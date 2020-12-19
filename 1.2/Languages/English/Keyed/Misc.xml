@@ -30,8 +30,12 @@
 	<CompIncludedChildParts_InspectStringMissing> ({0} missing parts)</CompIncludedChildParts_InspectStringMissing>
 	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
 	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>
-	<CompIncludedChildParts_StatCompatibility_Label>Compatibile with</CompIncludedChildParts_StatCompatibility_Label>
+	<CompIncludedChildParts_StatCompatibility_Label>Compatibile versions</CompIncludedChildParts_StatCompatibility_Label>
 	<CompIncludedChildParts_StatCompatibility_Value>{0} of {1}</CompIncludedChildParts_StatCompatibility_Value>
+
+	<!-- ModuleHolder -->
+	<ModuleHolder_Compatible_Label>Compatible modules</ModuleHolder_Compatible_Label>
+	<ModuleHolder_Compatible_ReportText>The following modules can be installed in slots belonging to this bionic:</ModuleHolder_Compatible_ReportText>
 
 
 </LanguageData>
