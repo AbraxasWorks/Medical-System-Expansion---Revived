@@ -21,6 +21,7 @@
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific\CyberNet</li>
 		<li IfModActive="V1024.EBFramework">ModSpecific\EBF</li>
+		<li IfModActive="automatic.bionicicons">ModSpecific\BionicIcons</li>
 
 
 		<li>1.2</li>
