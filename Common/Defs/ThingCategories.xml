@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>MSE2Modules</defName>
+		<label>modules</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>BonePartsSteel</defName>
+		<label>prosthetic bones</label>
+		<parent>BodyPartsProsthetic</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>BonePartsPlasteel</defName>
+		<label>plasteel bones</label>
+		<parent>BodyPartsBionic</parent>
+	</ThingCategoryDef>
+
+</Defs>
