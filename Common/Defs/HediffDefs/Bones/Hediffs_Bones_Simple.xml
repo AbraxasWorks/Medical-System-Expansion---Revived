@@ -12,6 +12,9 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartProsthetic_Bone" ParentName="BodyPartProstheticMakeableBase">
+    <thingCategories Inherit="False">
+      <li>BonePartsSteel</li>
+    </thingCategories>
 		<recipeMaker>
 			<researchPrerequisite>BoneProstheticsSimple</researchPrerequisite>
 		</recipeMaker>
