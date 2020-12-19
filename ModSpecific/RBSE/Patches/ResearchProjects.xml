@@ -4,7 +4,7 @@
 	<!-- tab -->
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel" or defName="BionicModules"]</xpath>
 		<value>
 			<tab>RBSE</tab>
 		</value>
@@ -20,12 +20,6 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]/researchViewY</xpath>
-		<value>
-			<researchViewY>4.5</researchViewY>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple"]/researchViewX</xpath>
 		<value>
 			<researchViewX>1</researchViewX>
@@ -35,6 +29,27 @@
 		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/researchViewX</xpath>
 		<value>
 			<researchViewX>2</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]/researchViewY</xpath>
+		<value>
+			<researchViewY>4.5</researchViewY>
+		</value>
+	</Operation>
+
+	<!-- modules -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewX</xpath>
+		<value>
+			<researchViewX>2</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewY</xpath>
+		<value>
+			<researchViewY>3.5</researchViewY>
 		</value>
 	</Operation>
 
