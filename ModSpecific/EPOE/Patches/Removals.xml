@@ -43,6 +43,41 @@
 		</xpath>
 	</Operation>
 
+	<!-- bionic -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/ThingDef[@ParentName="Bionic"]
+			[defName="PowerArm" or
+			defName="PowerClaw" or
+			defName="BionicArm" or
+			defName="BionicHand" or
+			defName="BionicLeg" or
+			defName="BionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/HediffDef[@ParentName="addedPartBionics"]
+			[defName="PowerArm" or
+			defName="PowerClaw" or
+			defName="BionicArm" or
+			defName="BionicHand" or
+			defName="BionicLeg" or
+			defName="BionicFoot"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			/Defs/RecipeDef[@ParentName="SurgeryBionic"]
+			[defName="InstallPowerArm" or
+			defName="InstallPowerClaw" or
+			defName="InstallBionicArm" or
+			defName="InstallBionicHand" or
+			defName="InstallBionicLeg" or
+			defName="InstallBionicFoot"]
+		</xpath>
+	</Operation>
 
 	<!-- advanced -->
 
