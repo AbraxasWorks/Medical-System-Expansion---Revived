@@ -199,7 +199,7 @@
 	
   <ThingDef ParentName="MSE_ModuleBionic_Combat" MSE="True"> <!-- extra attribute for patch targeting -->
     <defName>PowerClaw</defName>
-    <label>power claw</label>
+    <label>power claw module</label>
     <description>A combat-oriented hand module that adds hooked claws on each of its fingers. It cuts deep, and it improves strength enough to crush a skull like a hand crushes an egg. The claws can be retracted, to not impede non-combat tasks, however its overall ungainlyness slows down movement slightly.</description>
     <descriptionHyperlinks><RecipeDef>InstallPowerClaw</RecipeDef></descriptionHyperlinks>
     <costList>
