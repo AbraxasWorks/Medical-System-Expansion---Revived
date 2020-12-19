@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- fix no part modules texture -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ModuleEfficiency" or defName="ModuleArmorEBF"]</xpath>
+		<value>
+			<graphicData Inherit="False">
+				<texPath>BionicIcons/Boxes/BionicModule</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+		</value>
+	</Operation>
+
+</Patch>
