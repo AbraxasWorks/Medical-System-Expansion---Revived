@@ -29,6 +29,16 @@
 			</recipeMaker>
 		</value>
 	</Operation>
+	
+	<!-- module crafting -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>AdvancedMedicalStation</li>
+			</recipeUsers>
+		</value>
+	</Operation>
 
 
 </Patch>
