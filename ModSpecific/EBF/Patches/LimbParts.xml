@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- bionic -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@Abstract="True" and @Name="AddedBodyPart_Limb_Bionic"]</xpath>
+		<value>
+			<comps>
+				<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+					<scaleAdjustment>0.15</scaleAdjustment>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+	<!-- bionic -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@Abstract="True" and @Name="AddedBodyPart_Limb_Archotech"]</xpath>
+		<value>
+			<comps>
+				<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+					<scaleAdjustment>0.25</scaleAdjustment>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+</Patch>
