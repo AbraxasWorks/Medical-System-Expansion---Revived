@@ -4,7 +4,7 @@
   <SpecialThingFilterDef>
     <defName>AllowProsthesesIncomplete</defName>
     <label>allow incomplete</label>
-    <description>Allow prostheses that are incomplete.</description>
+    <description>Allow prostheses that are missing some sub-parts for the selected version.</description>
     <parentCategory>BodyParts</parentCategory>
     <allowedByDefault>true</allowedByDefault>
     <saveKey>allowProsthesesIncomplete</saveKey>
@@ -14,7 +14,7 @@
   <SpecialThingFilterDef>
     <defName>AllowProsthesesComplete</defName>
     <label>allow complete</label>
-    <description>Allow prostheses that are complete.</description>
+    <description>Allow prostheses that are not missing any sub-part.</description>
     <parentCategory>BodyParts</parentCategory>
     <allowedByDefault>true</allowedByDefault>
     <saveKey>allowProsthesesComplete</saveKey>
