@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- tab -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]</xpath>
+		<value>
+			<tab>EPOE</tab>
+		</value>
+	</Operation>
+
+	<!-- bones -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]/researchViewX</xpath>
+		<value>
+			<researchViewX>2</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0.5</researchViewY>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/researchViewY</xpath>
+		<value>
+			<researchViewY>1.25</researchViewY>
+		</value>
+	</Operation>
+
+</Patch>

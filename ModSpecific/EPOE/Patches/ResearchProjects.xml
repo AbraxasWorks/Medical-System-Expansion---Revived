@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- drugged rib prerequisite -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="RibReplacements"]/prerequisites</xpath>
+		<value>
+			<li>BoneProstheticsSimple</li>
+		</value>
+	</Operation>
+
+	<!-- bionic spine prerequisite -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicSpine"]/prerequisites</xpath>
+		<value>
+			<li>BoneProstheticsPlasteel</li>
+		</value>
+	</Operation>
+
+	<!-- remove adv bionic warfare -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ResearchProjectDef[defName="AdvancedBionicWarfare"]</xpath>
+	</Operation>
+
+	<!-- remove module research -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]</xpath>
+	</Operation>
+	<!-- change research requirements for modules -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>AdvancedBionics</researchPrerequisite>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic_Combat"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>BionicWarfare</researchPrerequisite>
+		</value>
+	</Operation>
+
+
+</Patch>
