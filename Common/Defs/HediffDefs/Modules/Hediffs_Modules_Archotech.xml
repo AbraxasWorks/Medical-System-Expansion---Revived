@@ -8,18 +8,24 @@
 	</HediffDef>
 
 	<ThingDef Name="MSE_ModuleArchotech" ParentName="BodyPartProstheticBase" Abstract="True">
+		<techLevel>Archotech</techLevel>
+    <thingCategories>
+      <li>MSE2Modules</li>
+    </thingCategories>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemArchotech3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
-		<techLevel>Archotech</techLevel>
 		<techHediffsTags>
 			<li>Archotech</li>
 		</techHediffsTags>
 		<thingSetMakerTags>
-			<li>RewardSpecial</li>
+			<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
+    <statBases>
+			<Mass>2</Mass>
+    </statBases>
 	</ThingDef>
 
 </Defs>
