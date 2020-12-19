@@ -7,20 +7,41 @@
 		<defaultLabelColor>(255, 171, 64)</defaultLabelColor>
 	</HediffDef>
 
-	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartProstheticBase" Abstract="True">
+	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>MSE2Modules</li>
+    </thingCategories>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
-		<techLevel>Spacer</techLevel>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+			<Mass>2</Mass>
+    </statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
 			<researchPrerequisite>BionicModules</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
@@ -57,10 +78,6 @@
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<statBases>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
@@ -125,10 +142,6 @@
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<statBases>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
@@ -255,10 +268,6 @@
 			<Plasteel>5</Plasteel>
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
-		<statBases>
-			<WorkToMake>30000</WorkToMake>
-			<Mass>2</Mass>
-		</statBases>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
