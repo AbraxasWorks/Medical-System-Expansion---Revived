@@ -77,6 +77,13 @@
 		</value>
 	</Operation>
 
+	<!-- undo powerclaw patch -->
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/ThingDef[defName="PowerClaw" and @MSE="True"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>MSE_ModuleBionic_Combat</value>
+  </Operation>
+
 
 </Patch>
 

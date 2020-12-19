@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<!-- abstracts -->
@@ -196,6 +196,20 @@
 		<!-- comps and stages copied via patch -->
 		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
 	</HediffDef>
+	
+  <ThingDef ParentName="MSE_ModuleBionic_Combat" MSE="True"> <!-- extra attribute for patch targeting -->
+    <defName>PowerClaw</defName>
+    <label>power claw</label>
+    <description>A combat-oriented hand module that adds hooked claws on each of its fingers. It cuts deep, and it improves strength enough to crush a skull like a hand crushes an egg. The claws can be retracted, to not impede non-combat tasks, however its overall ungainlyness slows down movement slightly.</description>
+    <descriptionHyperlinks><RecipeDef>InstallPowerClaw</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+  </ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>InstallPowerClaw</defName>
