@@ -12,4 +12,14 @@
 		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Bone"]/recipeMaker/researchPrerequisite[text()="Bionics"]</xpath>
 	</Operation>
 
+	<!-- module crafting -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>TableProsthetics</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
 </Patch>
