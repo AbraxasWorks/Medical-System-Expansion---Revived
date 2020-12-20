@@ -8,4 +8,15 @@
 		<fromxpath>/Defs/HediffDef[@Name="addedPartBionics"]/defaultLabelColor</fromxpath>
 	</Operation>
 
+	
+	<!-- module crafting -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>TableBionics</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
 </Patch>
