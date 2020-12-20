@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- tab -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel" or defName="BionicModules"]</xpath>
+		<value>
+			<tab>EPOE</tab>
+		</value>
+	</Operation>
+
+	<!-- bones -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple"]/researchViewX</xpath>
+		<value>
+			<researchViewX>2</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsSimple" or defName="BoneProstheticsPlasteel"]/researchViewY</xpath>
+		<value>
+			<researchViewY>3</researchViewY>
+		</value>
+	</Operation>
+
+	<!-- modules -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewX</xpath>
+		<value>
+			<researchViewX>3</researchViewX>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BionicModules"]/researchViewY</xpath>
+		<value>
+			<researchViewY>1</researchViewY>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- bones -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/hiddenPrerequisites/li[text()="Fabrication"]</xpath>
+		<value>
+			<li>Bionics</li>
+		</value>
+	</Operation>
+
+	<!-- reduce cost of modules and adv bionics -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="AdvancedBionics"]/baseCost</xpath>
+		<value>
+			<baseCost>1500</baseCost>
+		</value>
+	</Operation>
+	
+	<!-- drugged rib prerequisite -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="RibReplacements"]/prerequisites</xpath>
+		<value>
+			<li>BoneProstheticsSimple</li>
+		</value>
+	</Operation>
+
+
+</Patch>
