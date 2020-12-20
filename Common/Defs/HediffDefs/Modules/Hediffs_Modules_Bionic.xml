@@ -296,7 +296,7 @@
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>InstallModuleEfficiency</defName>
 		<label>install advanced processing module</label>
-		<description>Install a advanced processing module.</description>
+		<description>Install an advanced processing module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ModuleEfficiency</ThingDef>
 		</descriptionHyperlinks>
