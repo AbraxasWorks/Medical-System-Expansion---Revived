@@ -19,6 +19,12 @@
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Bionic" ParentName="SurgeryInstallBodyPartArtificialBase">
 		<surgerySuccessChanceFactor>0.90</surgerySuccessChanceFactor>
 		<deathOnFailedSurgeryChance>0.01</deathOnFailedSurgeryChance>
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<!-- internal support -->

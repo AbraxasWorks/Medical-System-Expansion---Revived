@@ -17,7 +17,14 @@
 		</statBases> -->
 	</ThingDef>
 
-	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Archotech" ParentName="SurgeryInstallBodyPartArtificialBase"/>
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Archotech" ParentName="SurgeryInstallBodyPartArtificialBase">
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
 
 	<!-- internal support -->
 

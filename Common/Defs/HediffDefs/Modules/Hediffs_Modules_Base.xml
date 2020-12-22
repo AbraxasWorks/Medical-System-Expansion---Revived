@@ -34,7 +34,13 @@
       </thingDefs>
     </fixedIngredientFilter>
 		<anesthetize>false</anesthetize>
-		
+
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0~4</bodySizeRange>
+			</li>
+		</modExtensions>
   </RecipeDef>
 
 

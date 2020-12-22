@@ -104,6 +104,10 @@
 					<li>DrillArm</li>
 				</whitelist>
 			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
 		</modExtensions>
 	</RecipeDef>
 
@@ -184,6 +188,10 @@
 					<li>DrillArm</li>
 				</whitelist>
 			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
 		</modExtensions>
 	</RecipeDef>
 
@@ -257,6 +265,10 @@
 				<whitelist>
 					<li>MechanicalManipulator</li>
 				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
 			</li>
 		</modExtensions>
 	</RecipeDef>
@@ -367,6 +379,10 @@
 				<whitelist>
 					<li>FieldHand</li>
 				</whitelist>
+			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
 			</li>
 		</modExtensions>
 	</RecipeDef>

@@ -30,6 +30,9 @@
 			<li Class="MSE2.InstallationRestrictions">
 				<onlyOnNatural>true</onlyOnNatural>
 			</li>
+			<li Class="MSE2.AutoRecipeUsers">
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
 		</modExtensions>
 	</RecipeDef>
 
