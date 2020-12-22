@@ -12,9 +12,6 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartAchotech_Limb" ParentName="BodyPartArchotechBase">
-		<!-- <statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases> -->
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Archotech" ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -55,7 +52,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechInternalSupport</defName>
 		<label>install archotech internal support</label>
 		<description>Install an archotech internal support.</description>
@@ -142,7 +139,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechArm</defName>
 		<label>install archotech arm</label>
 		<description>Install an archotech arm.</description>
@@ -214,7 +211,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechForearm</defName>
 		<label>install archotech forearm</label>
 		<description>Install an archotech forearm.</description>
@@ -285,7 +282,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechHand</defName>
 		<label>install archotech hand</label>
 		<description>Install an archotech hand.</description>
@@ -344,7 +341,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechFinger</defName>
 		<label>install archotech finger</label>
 		<description>Install an archotech finger.</description>
@@ -417,7 +414,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechLeg</defName>
 		<label>install archotech leg</label>
 		<description>Install an archotech leg.</description>
@@ -489,7 +486,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechFoot</defName>
 		<label>install archotech foot</label>
 		<description>Install an archotech foot.</description>
@@ -548,7 +545,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Archotech">
 		<defName>InstallArchotechToe</defName>
 		<label>install archotech toe</label>
 		<description>Install an archotech toe.</description>
