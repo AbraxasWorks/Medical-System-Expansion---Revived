@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<RecipeDef Name="AA_MutantSurgery" ParentName="SurgeryFlesh" Abstract="True">
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<bodySizeRange>0.7~1.4</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
 	<!-- mutant bone -->
 
 	<HediffDef ParentName="AA_MutantAddedBodyPartBase">
@@ -43,7 +73,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="AA_MutantSurgery">
 		<defName>AA_InstallMutantBone</defName>
 		<label>install mutant bone</label>
 		<description>Install a mutant bone.</description>
@@ -52,22 +82,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AA_MutantBone</ThingDef>
 		</descriptionHyperlinks>
-		<workAmount>2000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -78,9 +93,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>AA_MutantBone</li>
 			</thingDefs>
@@ -158,7 +170,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="AA_MutantSurgery">
 		<defName>AA_InstallMutantFoot</defName>
 		<label>install mutant foot</label>
 		<description>Install a mutant foot.</description>
@@ -167,22 +179,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AA_MutantFoot</ThingDef>
 		</descriptionHyperlinks>
-		<workAmount>2000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -193,9 +190,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>AA_MutantFoot</li>
 			</thingDefs>
@@ -254,7 +248,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="AA_MutantSurgery">
 		<defName>AA_InstallMutantToe</defName>
 		<label>install mutant toe</label>
 		<description>Install a mutant toe.</description>
@@ -263,22 +257,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AA_MutantToe</ThingDef>
 		</descriptionHyperlinks>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -289,9 +268,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>AA_MutantToe</li>
 			</thingDefs>
@@ -359,7 +335,7 @@
 		</comps>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="AA_MutantSurgery">
 		<defName>AA_InstallMutantHand</defName>
 		<label>install mutant hand</label>
 		<description>Install a mutant hand.</description>
@@ -368,22 +344,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AA_MutantHand</ThingDef>
 		</descriptionHyperlinks>
-		<workAmount>2000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -394,9 +355,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>AA_MutantHand</li>
 			</thingDefs>
@@ -455,7 +413,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="AA_MutantSurgery">
 		<defName>AA_InstallMutantFinger</defName>
 		<label>install mutant finger</label>
 		<description>Install a mutant finger .</description>
@@ -464,22 +422,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AA_MutantFinger</ThingDef>
 		</descriptionHyperlinks>
-		<workAmount>1000</workAmount>
-		<skillRequirements>
-			<Medicine>3</Medicine>
-		</skillRequirements>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
 			<li>
 				<filter>
 					<thingDefs>
@@ -490,9 +433,6 @@
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<categories>
-				<li>Medicine</li>
-			</categories>
 			<thingDefs>
 				<li>AA_MutantFinger</li>
 			</thingDefs>
