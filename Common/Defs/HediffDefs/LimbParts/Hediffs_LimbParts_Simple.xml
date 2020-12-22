@@ -11,9 +11,6 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartProsthetic_Limb" ParentName="BodyPartProstheticMakeableBase">
-		<!-- <statBases>
-			<DeteriorationRate>0</DeteriorationRate>
-		</statBases> -->
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Simple" ParentName="SurgeryInstallBodyPartProstheticBase">
