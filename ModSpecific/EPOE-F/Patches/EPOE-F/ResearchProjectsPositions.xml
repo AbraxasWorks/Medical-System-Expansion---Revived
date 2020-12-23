@@ -21,7 +21,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="BoneProstheticsPlasteel"]/researchViewX</xpath>
 		<value>
-			<researchViewX>3</researchViewX>
+			<researchViewX>4</researchViewX>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
