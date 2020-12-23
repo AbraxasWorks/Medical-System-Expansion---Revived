@@ -39,7 +39,7 @@
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>
-			/Defs/HediffDef[@ParentName="addedPartAdvanced"]
+			/Defs/HediffDef
 			[defName="AdvancedPowerArm" or
 			defName="AdvancedPowerClaw" or
 			defName="AdvancedBionicArm" or
@@ -52,7 +52,7 @@
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>
-			/Defs/ThingDef[@ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase"]
+			/Defs/ThingDef
 			[defName="AdvancedPowerArm" or
 			defName="AdvancedPowerClaw" or
 			defName="AdvancedBionicArm" or
@@ -65,7 +65,7 @@
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>
-			/Defs/RecipeDef[@ParentName="EPIA_RecipeUpgradeAdvanced"]
+			/Defs/RecipeDef
 			[defName="CreateAdvancedPowerArm" or
 			defName="CreateAdvancedPowerClaw" or
 			defName="CreateAdvancedBionicArm" or
@@ -78,7 +78,7 @@
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>
-			/Defs/RecipeDef[@ParentName="EPIASurgeryAdvancedBionic"]
+			/Defs/RecipeDef
 			[defName="InstallAdvancedPowerArm" or
 			defName="InstallAdvancedPowerClaw" or
 			defName="InstallAdvancedBionicArm" or
