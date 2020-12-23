@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- bionic compact weaponry -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/HediffDef[defName="EPOE_ScytherHandTalon" or defName="EPOE_ScytherElbowBlade" or defName="EPOE_ScytherKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/ThingDef[defName="EPOE_ScytherHandTalon" or defName="EPOE_ScytherElbowBlade" or defName="EPOE_ScytherKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="EPIA_UpgradeBionicHandTalon" or defName="EPIA_UpgradeBionicElbowBlade" or defName="EPIA_UpgradeBionicKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="InstallEPOE_ScytherHandTalon" or defName="InstallEPOE_ScytherElbowBlade" or defName="InstallEPOE_ScytherKneeSpike"]
+		</xpath>
+	</Operation>
+
+	<!-- advanced compact weaponry -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/HediffDef[defName="EPOE_AdvancedHandTalon" or defName="EPOE_AdvancedElbowBlade" or defName="EPOE_AdvancedKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/ThingDef[defName="EPOE_AdvancedHandTalon" or defName="EPOE_AdvancedElbowBlade" or defName="EPOE_AdvancedKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="EPIA_UpgradeAdvancedHandTalon" or defName="EPIA_UpgradeAdvancedElbowBlade" or defName="EPIA_UpgradeAdvancedKneeSpike"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="InstallEPOE_AdvancedHandTalon" or defName="InstallEPOE_AdvancedElbowBlade" or defName="InstallEPOE_AdvancedKneeSpike"]
+		</xpath>
+	</Operation>
+
+	<!-- compact weaponry research -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB" and defName="EPOE_AdvancedCompactWeaponry"]</xpath>
+	</Operation>
+
+	<!-- advanced specialized limbs -->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/HediffDef[defName="EPOE_AdvancedDrillArm" or defName="EPOE_AdvancedFieldHand"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/ThingDef[defName="EPOE_AdvancedDrillArm" or defName="EPOE_AdvancedFieldHand"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="EPIA_UpgradeAdvancedDrillArm" or defName="EPIA_UpgradeAdvancedFieldHand"]
+		</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath> /Defs/RecipeDef[defName="InstallEPOE_AdvancedDrillArm" or defName="InstallEPOE_AdvancedFieldHand"]
+		</xpath>
+	</Operation>
+
+	<!-- advanced specialized limbs research -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ResearchProjectDef[@ParentName="BaseBodyPartEmpire_TierB" and defName="EPOE_AdvancedSpecializedLimbs"]</xpath>
+	</Operation>
+
+</Patch>
