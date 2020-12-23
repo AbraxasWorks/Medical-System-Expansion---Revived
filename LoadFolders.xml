@@ -17,6 +17,7 @@
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
 
 		<!-- other mods -->
+		<li IfModActive="kikohi.cybernetic">ModSpecific\CONN</li>
 		<li IfModActive="ChaosKnight.KilhnRace">ModSpecific\KilhnRace</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific\AlphaAnimals</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>

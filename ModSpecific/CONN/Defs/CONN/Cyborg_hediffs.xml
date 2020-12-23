@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ############## Energy Fist ############## -->
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>Trunken_hediff_EnergyFist</defName>
+		<label>energy fist module</label>
+		<description>A combat-oriented hand module.</description>
+		<labelNoun>an energy fist module</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>arm</label>
+						<capacities>
+							<li>Poke</li>
+						</capacities>
+						<power>5.0</power>
+						<cooldownTime>0.25</cooldownTime>
+						<alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>ANN_EnergyFist</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>ANN_EnergyFist</ThingDef>
+		</descriptionHyperlinks>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic_Combat">
+		<defName>ANN_EnergyFist</defName>
+		<label>energy fist module</label>
+		<description>(Replacement) A combat-oriented hand replacement consisting of a technological hand and an implemented pumping system inside the wrist. It is furious in combat, and its mighty mini-servos can crush a skull like a natural hand crushes an egg. The mechanical trigger lets you have control about its sheer power with its poweful speed boosts bounded on neural connectors and energized by a vanometric micro-battery.</description>
+		<costList>
+			<Gold>25</Gold>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>ANN_NeuralNetwork</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+		</recipeMaker>
+		<statBases>
+			<MarketValue>4375</MarketValue>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0.3</DeteriorationRate>
+			<Beauty>1</Beauty>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<thingCategories Inherit="False">
+			<li>ANN_BodyPartsArtificial</li>
+		</thingCategories>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>ANN_InstallEnergyFist</defName>
+		<label>install energy fist module</label>
+		<description>Install an energy fist module.</description>
+		<jobString>Installing energy fist module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ANN_EnergyFist</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ANN_EnergyFist</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Trunken_hediff_EnergyFist</addsHediff>
+		<descriptionHyperlinks>
+			<ThingDef>ANN_EnergyFist</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+	<!-- ############## Outer Blade ############## -->
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>Trunken_hediff_OuterBlade_Module</defName>
+		<label>outer blade module</label>
+		<description>A combat-oriented forearm module.</description>
+		<labelNoun>an outer blade</labelNoun>
+		<comps></comps>		<!-- copied via patch -->
+		<spawnThingOnRemoved>ANN_OuterBlade</spawnThingOnRemoved>
+		<descriptionHyperlinks>
+			<ThingDef>ANN_OuterBlade</ThingDef>
+		</descriptionHyperlinks>
+	</HediffDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>ANN_InstallOuterBlade_Module</defName>
+		<label>install outer blade module</label>
+		<description>Install an outer blade module.</description>
+		<jobString>Installing outer blade module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ANN_OuterBlade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ANN_OuterBlade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>			<!-- Wrist -->
+		</appliedOnFixedBodyParts>
+		<addsHediff>Trunken_hediff_OuterBlade_Module</addsHediff>
+		<descriptionHyperlinks>
+			<ThingDef>ANN_OuterBlade</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+
+  <!-- ############## Synchronizer ############## -->
+  <HediffDef ParentName="MSE_ModuleAddedBionic">
+    <defName>Trunken_hediff_Synchronizer_Module</defName>
+    <label>synchronizer module</label>
+    <description>A tactical military coordination computer module with a digital screen implanted right in the wrist.</description>
+    <labelNoun>a synchronizer module</labelNoun>
+    <stages></stages> <!-- copied via patch -->
+    <spawnThingOnRemoved>ANN_Synchronizer</spawnThingOnRemoved>
+    <descriptionHyperlinks><ThingDef>ANN_Synchronizer</ThingDef></descriptionHyperlinks>
+  </HediffDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>InstallSynchronizer_Module</defName>
+    <label>install synchronizer module</label>
+    <description>Install a synchronizer module.</description>
+    <jobString>Installing wrist computer module.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ANN_Synchronizer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ANN_Synchronizer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>      <!-- Wrist -->
+    </appliedOnFixedBodyParts>
+    <addsHediff>Trunken_hediff_Synchronizer_Module</addsHediff>
+    <descriptionHyperlinks><ThingDef>ANN_Synchronizer</ThingDef></descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>
