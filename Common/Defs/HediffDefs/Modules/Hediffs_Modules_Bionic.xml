@@ -8,40 +8,40 @@
 	</HediffDef>
 
 	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartBase" Abstract="True">
-    <techLevel>Spacer</techLevel>
-    <thingCategories>
-      <li>MSE2Modules</li>
-    </thingCategories>
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>MSE2Modules</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.80</drawSize>
 		</graphicData>
-    <tradeTags>
-      <li>Bionic</li>
-    </tradeTags>
+		<tradeTags>
+			<li>Bionic</li>
+		</tradeTags>
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
 			<Mass>3</Mass>
-    </statBases>
-		<thingSetMakerTags>
+		</statBases>
+		<!-- <thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
+		</thingSetMakerTags> -->
 		<recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>10</Crafting>
-      </skillRequirements>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BionicModules</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
@@ -50,9 +50,9 @@
 		<recipeMaker>
 			<researchPrerequisite>BionicModules</researchPrerequisite>
 		</recipeMaker>
-    <techHediffsTags>
-      <li>AdvancedWeapon</li>
-    </techHediffsTags>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
 	</ThingDef>
 
 	<!-- Ranged platform module -->
@@ -87,6 +87,9 @@
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
@@ -151,6 +154,9 @@
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
@@ -196,20 +202,25 @@
 		<!-- comps and stages copied via patch -->
 		<spawnThingOnRemoved>PowerClaw</spawnThingOnRemoved>
 	</HediffDef>
-	
-  <ThingDef ParentName="MSE_ModuleBionic_Combat" MSE="True"> <!-- extra attribute for patch targeting -->
-    <defName>PowerClaw</defName>
-    <label>power claw module</label>
-    <description>A combat-oriented hand module that adds hooked claws on each of its fingers. It cuts deep, and it improves strength enough to crush a skull like a hand crushes an egg. The claws can be retracted, to not impede non-combat tasks, however its overall ungainlyness slows down movement slightly.</description>
-    <descriptionHyperlinks><RecipeDef>InstallPowerClaw</RecipeDef></descriptionHyperlinks>
-    <costList>
-      <Steel>40</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <statBases>
-      <Mass>4</Mass>
-    </statBases>
-  </ThingDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic_Combat" MSE="True">		<!-- extra attribute for patch targeting -->
+		<defName>PowerClaw</defName>
+		<label>power claw module</label>
+		<description>A combat-oriented hand module that adds hooked claws on each of its fingers. It cuts deep, and it improves strength enough to crush a skull like a hand crushes an egg. The claws can be retracted, to not impede non-combat tasks, however its overall ungainlyness slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPowerClaw</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
 		<defName>InstallPowerClaw</defName>
@@ -291,6 +302,9 @@
 			<Plasteel>5</Plasteel>
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
