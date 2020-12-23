@@ -15,7 +15,7 @@
 
   <RecipeMakeForLimb>make complete {0} ({1})</RecipeMakeForLimb>
   <RecipeMakeForLimbNoComparison>make complete {0}</RecipeMakeForLimbNoComparison>
-	<RecipeMakeForLimbDescription>Make {0} with {1}.</RecipeMakeForLimbDescription>
+	<RecipeMakeForLimbDescription>Make {0} {1}.</RecipeMakeForLimbDescription>
 	<RecipeMakeForLimbJobString>Making {0} ({1}).</RecipeMakeForLimbJobString>
 
 	<!-- Dialog StatsReports -->
