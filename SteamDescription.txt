@@ -17,6 +17,7 @@ This mod only adds the minimum prostheses necessary to make vanilla work with th
 
 
 [h1]Compatibility[/h1]
+Requires [url=steam://url/CommunityFilePage/818773962]HugsLib[/url].
 Patched mods:[list]
 [*][url=steam://store/1149640]Royalty[/url]
 [*][url=steam://url/CommunityFilePage/1631756268]Combat Extended[/url]
