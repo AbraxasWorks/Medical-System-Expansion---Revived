@@ -1,27 +1,25 @@
-# Medical System Expansion
-**Not Just Another Prostheses Mod.** An expansion of vanilla medical system and how they work. Adds full featured prosthesis that uses vanilla standard and integration with another mod.
+# Medical System Expansion 2
+
+A mod to balance and bring more depth to the RimWorld prosthetic mechanics. It fixes the issues of limb prostheses reducing the total hp of pawns, and of making their sub-parts unable to use clothing. It introduces a module system, allowing prostheses to be upgraded with extra weapons or modifications.
 
 ## Main Features
-- Installed prosthesis can keep its child parts. In vanilla or other mod, if you install prosthesis part like peg leg then you lost its foot and toe.
-- Exclusive body part system framework and it's modules. This allows you to install prosthetic modules on installed prosthesis.
-
-**Note that above two main features only work on bionic and archotech prosthesis.** It's not make sense to me if basic and simple body parts can have this features.
-
-- New organ transplant rejection, prosthesis limb and bone adaptation system, and implant complication. Some of this is never done by another mod.
-
-This mod not really that OP. **Raider chance to spawn with prostheses parts and implants now higher and also have same feature.**
-
-- Exclusive implant system framework. Prosthesis part that support this can install implant on installed prosthesis part. of course there's a limit of how many implant can be installed on installed prosthesis part.
-- Fixed vanilla bug where installed basic or simple prosthetic parts can naturally heal. Now you don't get your installed hook hand naturally healed.
+- Prevents installed prostheses from throwing away and ignoring their sub-parts, meaning they are simulated and can be damaged or destroyed.
+- Makes prostheses in item form keep track of all the sub-parts that they include and that will be installed with them, based on the selected configuration.
+- Introduces a module system, which allows prostheses with module slots to be upgraded with weapons or other modifications.
 
 
-###### All Other Features
-- New research projects.
-- 2 new workbenches.
-- About 50+ new prostheses parts and implants.
-- Balancing vanilla prostheses body parts and implants.
-- Adds prostheses parts and implants to trader and raider.
-- Vanilla organs can be harvested and transplanted.
-- Harvested organs can rot and decay.
-- Now all bones can be destroyed by damage or attack.
-- And many other features.
+
+## Mod Compatibility
+This mod is meant to be highly compatible with other mods. It supports the main prosthetic mods (EPOE, EPOE-F, Rahs), and a decent number of others.
+Different races should work by generating new prosthetic limb versions.
+Unpatched limb prostheses should automatically work like in vanilla.
+
+Elite Bionics Framework and one of the main prosthetic mods are recommended.
+
+## Installation and uninstallation
+MSE2 can be added to existing saves, as long as you execute the debug command labelled "Fix all prostheses in the world" the first time a prexisting game is loaded with the mod.
+
+Uninstallation should be mostly fine. In the case of weird glitches, try resetting (clicking Allow all) the filters of storage zones and crafting bills where MSE2 SpecialThingFilters ("Allow complete" and "Allow incomplete" in the BodyParts category) were set to disallow.
+
+## Other information
+This mod was inspired by Oreno's Medical System Expansion. MSE2's source is now all original.
