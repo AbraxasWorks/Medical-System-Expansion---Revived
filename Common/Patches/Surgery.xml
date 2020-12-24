@@ -9,11 +9,4 @@
 		</value>
 	</Operation> 
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/RecipeDef[@Name="SurgeryInstallBodyPartNaturalBase"]/workerClass</xpath>
-		<value>
-			<workerClass>MSE2.Recipe_InstallNaturalBodyPartWithChildren</workerClass>
-		</value>
-	</Operation> 
-
 </Patch>
