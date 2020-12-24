@@ -6,7 +6,8 @@
 	</v1.1>
 	<v1.2>
 		<li>Common</li>
-
+		<li>1.2</li>
+		
 		<!-- main prosthetics -->
 		<!-- <li IfModNotActive="vat.epoeforked, Ykara.EPOE, Rah.RBSE">ModSpecific\None</li> -->
 		<li IfModActive="Ykara.EPOE">ModSpecific\EPOE</li>
@@ -26,6 +27,5 @@
 		<li IfModActive="automatic.bionicicons">ModSpecific\BionicIcons</li>
 
 
-		<li>1.2</li>
 	</v1.2>
 </loadFolders>
