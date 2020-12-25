@@ -103,9 +103,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicArm</defName>
-		<label>bionic arm</label>
-		<labelNoun>a bionic arm</labelNoun>
-		<description>An installed bionic arm.</description>
+		<label>bionic shoulder</label>
+		<labelNoun>a bionic shoulder</labelNoun>
+		<description>An installed bionic shoulder.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicArm</ThingDef>
 		</descriptionHyperlinks>
@@ -184,7 +184,7 @@
 	<HediffDef ParentName="AddedBodyPart_Limb_Bionic">
 		<defName>BionicForearm</defName>
 		<label>bionic arm</label>
-		<labelNoun>a bionic forearm</labelNoun>
+		<labelNoun>a bionic arm</labelNoun>
 		<description>An installed bionic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>BionicForearm</ThingDef>
