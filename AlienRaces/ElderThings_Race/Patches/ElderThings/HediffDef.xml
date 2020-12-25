@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_ElderThing_Race_Standard"]/recipes/li[text()="ET_InstallBionicArm"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_ElderThing_Race_Standard"]/recipes/li[text()="ET_InstallPowerClaw"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName="ET_InstallBionicArm" or defName="ET_InstallPowerClaw"]</xpath>
+			</li>
+			<!-- InstallBionicArm -->
+			<li Class="PatchOperationAddOrMerge">
+				<xpath>/Defs/RecipeDef[defName="InstallBionicForearm" or defName="InstallBionicHand"]</xpath>
+				<value>
+					<recipeUsers>
+						<li>Alien_ElderThing_Race_Standard</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef/appliedOnFixedBodyParts[li="Arm"]</xpath>
+		<value>
+			<li>ElderThing_TentacleArmFirst</li>
+			<li>ElderThing_TentacleArmSecond</li>
+			<li>ElderThing_TentacleArmThird</li>
+			<li>ElderThing_TentacleArmFourth</li>
+			<li>ElderThing_TentacleArmFifth</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef/appliedOnFixedBodyParts[li="Hand"]</xpath>
+		<value>
+			<li>ElderThing_TentacleGrasperFirst</li>
+			<li>ElderThing_TentacleGrasperSecond</li>
+			<li>ElderThing_TentacleGrasperThird</li>
+			<li>ElderThing_TentacleGrasperFourth</li>
+			<li>ElderThing_TentacleGrasperFifth</li>
+		</value>
+	</Operation>
+</Patch>
