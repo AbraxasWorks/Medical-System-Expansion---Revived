@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<!-- limb labeler -->
+	<!-- version labeling -->
 	<LimbComplete>complete</LimbComplete>
 	<LimbSegment>segment</LimbSegment>
 	<LimbVersion>version</LimbVersion>
 	<LimbCompatible>compatible</LimbCompatible>
 	<LimbIncompatible>not compatible</LimbIncompatible>
+	<LimbSelected> (current version)</LimbSelected>
 
 	<!-- Recipe Generation -->	
 	<RecipeMakeSegment>make {0} segment</RecipeMakeSegment>
@@ -26,7 +27,7 @@
 
 	<!-- CompIncludedChildParts -->
 	<CompIncludedChildParts_InspectStringIncludes>Includes {0} direct subparts.</CompIncludedChildParts_InspectStringIncludes>
-	<CompIncludedChildParts_InspectStringTarget>Limb version: {0}</CompIncludedChildParts_InspectStringTarget>
+	<CompIncludedChildParts_InspectStringTarget>Version: {0}</CompIncludedChildParts_InspectStringTarget>
 	<CompIncludedChildParts_InspectStringMissing> ({0} missing parts)</CompIncludedChildParts_InspectStringMissing>
 	<CompIncludedChildParts_StatIncludedParts_Label>Included subparts</CompIncludedChildParts_StatIncludedParts_Label>
 	<CompIncludedChildParts_StatIncludedParts_Description>When implanted it will also install theese:</CompIncludedChildParts_StatIncludedParts_Description>
