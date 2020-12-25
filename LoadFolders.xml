@@ -19,13 +19,14 @@
 
 		<!-- other mods -->
 		<li IfModActive="kikohi.cybernetic">ModSpecific\CONN</li>
-		<li IfModActive="ChaosKnight.KilhnRace">ModSpecific\KilhnRace</li>
 		<li IfModActive="sarg.alphaanimals">ModSpecific\AlphaAnimals</li>
 		<li IfModActive="vat.epoeforkedroyalty">ModSpecific\EPOE-F_Royalty</li>
 		<li IfModActive="K.CyberNet">ModSpecific\CyberNet</li>
 		<li IfModActive="V1024.EBFramework">ModSpecific\EBF</li>
 		<li IfModActive="automatic.bionicicons">ModSpecific\BionicIcons</li>
-
-
+		
+		<!-- race mods -->
+		<li IfModActive="ChaosKnight.KilhnRace">AlienRaces\KilhnRace</li>
+		<li IfModActive="Mlie.CallofCthulhuElderThings">AlienRaces\ElderThings_Race</li>
 	</v1.2>
 </loadFolders>
