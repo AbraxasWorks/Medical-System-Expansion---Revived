@@ -37,7 +37,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName="ANN_OuterBlade" or defName="ANN_Synchronizer"]/graphicData</xpath>
 		<value>
-			<graphicData>
+			<graphicData Inherit="False">
 				<texPath>Things/Item/Health/HealthItemBionic3</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>0.80</drawSize>
