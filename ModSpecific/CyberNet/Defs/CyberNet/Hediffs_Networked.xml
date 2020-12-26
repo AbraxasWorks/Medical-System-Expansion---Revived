@@ -31,6 +31,91 @@
 		</comps>
 	</ThingDef>
 
+	<!-- cnn hand -->
+
+	<HediffDef ParentName="CNHediffProsthetic">
+		<defName>CNNetworkedHand</defName>
+		<label>networked hand</label>
+		<labelNoun>A networked hand</labelNoun>
+		<description>An installed networked hand.</description>
+		<spawnThingOnRemoved>CNNetworkedHand</spawnThingOnRemoved>
+		<comps>
+			<li Class="CyberNet.HediffCompPropertiesCyberNetImplant">
+				<compClass>CyberNet.HediffCompCyberNetImplant</compClass>
+				<DefaultSeverity>1</DefaultSeverity>
+				<BandwidthUsage>0.3</BandwidthUsage>
+				<ProcessorUsage>0.15</ProcessorUsage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="CyberNetProsthetic">
+		<defName>CNNetworkedHand</defName>
+		<label>networked hand</label>
+		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</description>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>CNNetworkedProsthetics</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>CNNetworkedFingerPart</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+  
+  <RecipeDef ParentName="CyberNetSurgery">
+    <defName>CNInstallNetworkedHand</defName>
+    <label>Install Networked Hand</label>
+    <description>Install a Networked Hand</description>
+    <jobString>Installing Networked Hand</jobString>
+    <workAmount>2500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CNNetworkedHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CNNetworkedHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CNNetworkedHand</addsHediff>
+  </RecipeDef>
+
+
 	<!-- cnn leg -->
 
 	<ThingDef ParentName="CyberNetProsthetic">

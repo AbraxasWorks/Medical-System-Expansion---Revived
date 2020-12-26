@@ -303,6 +303,8 @@
 			<li Class="MSE2.InstallationRestrictions">
 				<whitelist>
 					<li>CNNetworkedHandPart</li>
+					<li>CNNetworkedHand</li>
+					<li>CNAdvancedNetworkedHand</li>
 				</whitelist>
 			</li>
 		</modExtensions>

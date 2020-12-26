@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- move verb from arm to hand -->
+	<!-- == normal == -->
+
+	<!-- copy stages to hand -->
 
 	<Operation Class="PatchOperationAddCopy">
-		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic_Subsegment"][defName="CNNetworkedHandPart"]/comps</xpath>
+		<xpath>/Defs/HediffDef[defName="CNNetworkedHand"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/stages</fromxpath>
+	</Operation>
+
+	<!-- move verb from arm to hands -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[defName="CNNetworkedHandPart" or defName="CNNetworkedHand"]/comps</xpath>
 		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
 	</Operation>
 
-	<!-- add price impact -->
+	<!-- == advanced == -->
+
+	<!-- copy stages to hand -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[defName="CNAdvancedNetworkedHand"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/stages</fromxpath>
+	</Operation>
+
+	<!-- move verb from arm to hand -->
+
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[defName="CNAdvancedNetworkedHand"]/comps</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="CNHediffProsthetic"][defName="CNAdvancedNetworkedArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+	</Operation>
 
 </Patch>
