@@ -4,6 +4,7 @@
 	<!-- version labeling -->
 	<LimbComplete>complete</LimbComplete>
 	<LimbSegment>segment</LimbSegment>
+	<LimbSimple>simple</LimbSimple>
 	<LimbVersion>version</LimbVersion>
 	<LimbCompatible>compatible</LimbCompatible>
 	<LimbIncompatible>not compatible</LimbIncompatible>
@@ -38,7 +39,7 @@
 	<CompIncludedChildParts_StatMissing_Desc_None>No parts are missing.</CompIncludedChildParts_StatMissing_Desc_None>
 
 	<!-- ModuleHolder -->
-	<ModuleHolder_Compatible_Label>Compatible modules</ModuleHolder_Compatible_Label>
+	<ModuleHolder_Compatible_Label>Module slots</ModuleHolder_Compatible_Label>
 	<ModuleHolder_Compatible_ReportText>The following modules can be installed in slots belonging to this bionic:</ModuleHolder_Compatible_ReportText>
 
 
