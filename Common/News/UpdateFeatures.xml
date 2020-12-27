@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureMSE2">
+		<modNameReadable>Medical System Expansion 2</modNameReadable>
+		<modIdentifier>MSE2</modIdentifier>
+		<linkUrl>steam://url/CommunityFilePage/2056706586</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureMSE2">
+		<defName>MSE2_Start</defName>
+		<assemblyVersion>1.0</assemblyVersion>
+		<targetAudience>NewPlayers</targetAudience>
+		<content>
+			Thanks for using Medical System Expansion 2, hope you enjoy it!
+			|If you are loading this mod on a pre-existing save, you should do the following to ensure everything is fine:
+			|img:FTS1|caption:1) enable dev mode,
+			|img:FTS2|caption:2) open debug actions menu,
+			|img:FTS3|caption:3) select the option "Fix all prostheses in the world".
+		</content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureMSE2">
+		<defName>MSE2_4_0</defName>
+		<assemblyVersion>4.0</assemblyVersion>
+		<content><![CDATA[
+			<b>This update will cause some errors and warning when saves are loaded for the first time, as well as remove some items. We recommend you back up your game and suggest you use dev mode to compensate the lost items.</b>
+			|Main changes include:
+<b>1) Alien Races support</b> using prosthesis versions, with version specific crafting recipes
+<b>2) New and improved modules</b>, with added <i>Elite Bionics Framework</i> and <i>Cybernetic Organism and Neural Network</i> support
+<b>3) Removed Advanced Bionic and Power tiers of bionics</b> as they are made redundant by the new modules			
+		]]></content>
+	</HugsLib.UpdateFeatureDef>
+
+</Defs>
