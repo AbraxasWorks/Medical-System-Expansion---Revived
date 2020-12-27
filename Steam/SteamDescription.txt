@@ -9,30 +9,29 @@ Improves how the game handles prosthetics by not discarding the sub-parts of add
 [*]Modules can be added to parts to expand on their functionality (extra weapons, stat boosts...)
 [/list]
 This mod only adds the minimum prostheses necessary to make vanilla work with the new system, so we suggest using it together with one of the following supported mods (to be loaded [u]before[/u] MSE2):[list]
-[*][url=steam://url/CommunityFilePage/1949064302]Expanded Prosthetics and Organ Engineering - Forked[/url] (direct crafting is more balanced)
-[*][url=steam://url/CommunityFilePage/725956940]Expanded Prosthetics and Organ Engineering[/url]
-[*][url=steam://url/CommunityFilePage/850429707]Rah's Bionics and Surgery Expansion[/url]
-[*][i]more eventually...[/i]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1949064302]Expanded Prosthetics and Organ Engineering - Forked[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=725956940]Expanded Prosthetics and Organ Engineering[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=850429707]Rah's Bionics and Surgery Expansion[/url]
 [/list]
 
 
 [h1]Compatibility[/h1]
-Requires [url=steam://url/CommunityFilePage/818773962]HugsLib[/url].
+Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]HugsLib[/url].
 Patched mods:[list]
-[*][url=steam://store/1149640]Royalty[/url]
-[*][url=steam://url/CommunityFilePage/1631756268]Combat Extended[/url]
-[*][url=steam://url/CommunityFilePage/1677616980]Bionic Icons[/url] (recommended)
-[*][url=steam://url/CommunityFilePage/1665403571]Elite Bionics Framework[/url] (recommended)
-[*][url=steam://url/CommunityFilePage/2031734067]Compact Hediffs[/url]
-[*][url=steam://url/CommunityFilePage/746425621]A Dog Said... Animal Prosthetics[/url]
-[*][url=steam://url/CommunityFilePage/2008970276]EPOE-Forked: Royalty DLC expansion[/url]
-[*][url=steam://url/CommunityFilePage/1725545225]CyberNet[/url]
-[*][url=steam://url/CommunityFilePage/2045064990]Cybernetic Organism and Neural Network[/url]
-[*][url=steam://url/CommunityFilePage/1541721856]Alpha Animals[/url] (mutant arm and mutant leg)
+[*][url=https://store.steampowered.com/app//1149640]Royalty[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1631756268]Combat Extended[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1677616980]Bionic Icons[/url] (recommended)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1665403571]Elite Bionics Framework[/url] (recommended)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2031734067]Compact Hediffs[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=746425621]A Dog Said... Animal Prosthetics[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2008970276]EPOE-Forked: Royalty DLC expansion[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1725545225]CyberNet[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2045064990]Cybernetic Organism and Neural Network[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856]Alpha Animals[/url] (mutant arm and mutant leg)
 [/list]
 
 Known incompatibilities:[list]
-[*][url=steam://url/CommunityFilePage/735106432]EdB Prepare Carefully[/url] and [url=steam://url/CommunityFilePage/1874644848]Character Editor[/url]: adding limb hediffs doesn't work properly
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=735106432]EdB Prepare Carefully[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848]Character Editor[/url]: adding limb hediffs doesn't work properly
 [/list]
 If a mod not explicitly listed here adds limb prostheses, they will behave like vanilla (it will show a warning in the debug log after the game is loaded).
 If a mod adds races with limbs that have different parts from normal humans, human prostheses will not work properly on them; if they have the same kinds of parts but in different numbers (i.e. 3 fingers instead of 5), or if they have been patched, MSE2 will generate a new limb version.
@@ -52,4 +51,4 @@ If you wish to remove this mod from a save you should first set to allow all spe
 
 [h1]Other info[/h1]
 [url=https://github.com/AbraxasWorks/Medical-System-Expansion---Revived]GitHub repo[/url]
-This mod was inspired by [url=steam://url/CommunityFilePage/1749027802]Medical System Expansion by Oreno[/url] ([url=steam://url/CommunityFilePage/2006968859]1.1 port[/url]). They are quite different from MSE2, and at this point in development all MSE2 source code is original.
+This mod was inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1749027802]Medical System Expansion by Oreno[/url] ([url=https://steamcommunity.com/sharedfiles/filedetails/?id=2006968859]1.1 port[/url]). They are quite different from MSE2, and at this point in development all MSE2 source code is original.
