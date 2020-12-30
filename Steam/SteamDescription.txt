@@ -39,7 +39,7 @@ If you wish for a mod to be patched, you can request it in the Compatibility dis
 
 
 [h1]Adding to pre-existing saves[/h1]
-The first time a game that was created without MSE2 is loaded with it, you can use the debug option labelled "Fix all prostheses in the world" to make everything work properly.
+You can load this mod on an existing save.
 If you wish to remove this mod from a save you should first set to allow all special thing filters MSE2 introduces ("Allow complete" and "Allow incomplete" in the BodyParts category) from any storage zone and crafting bill.
 
 

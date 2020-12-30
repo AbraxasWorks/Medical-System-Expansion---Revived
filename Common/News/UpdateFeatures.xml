@@ -12,10 +12,6 @@
 		<targetAudience>NewPlayers</targetAudience>
 		<content>
 			Thanks for using Medical System Expansion 2, hope you enjoy it!
-			|If you are loading this mod on a pre-existing save, you should do the following to ensure everything is fine:
-			|img:FTS1|caption:1) enable dev mode,
-			|img:FTS2|caption:2) open debug actions menu,
-			|img:FTS3|caption:3) select the option "Fix all prostheses in the world".
 		</content>
 	</HugsLib.UpdateFeatureDef>
 
