@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
-	<v1.2>
-		<li>Common</li>
-		<li>1.2</li>
-		
-		<!-- main prosthetics -->
-		<!-- <li IfModNotActive="vat.epoeforked, Ykara.EPOE, Rah.RBSE">ModSpecific\None</li> -->
-		<li IfModActive="Ykara.EPOE">ModSpecific\EPOE</li>
-		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
-		<li IfModActive="Rah.RBSE">ModSpecific\RBSE</li>
-
-		<!-- royalty -->
-		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
-
+	<v1.2>	
 		<!-- other mods -->
 		<li IfModActive="spoonshortage.ADogSaidAnimalProsthetics">ModSpecific\ADS</li>
 		<li IfModActive="kikohi.cybernetic">ModSpecific\CONN</li>
@@ -25,5 +13,18 @@
 		<!-- race mods -->
 		<li IfModActive="ChaosKnight.KilhnRace">AlienRaces\KilhnRace</li>
 		<li IfModActive="Mlie.CallofCthulhuElderThings">AlienRaces\ElderThings_Race</li>
+
+		<!-- main prosthetics -->
+		<!-- <li IfModNotActive="vat.epoeforked, Ykara.EPOE, Rah.RBSE">ModSpecific\None</li> -->
+		<li IfModActive="Ykara.EPOE">ModSpecific\EPOE</li>
+		<li IfModActive="vat.epoeforked">ModSpecific\EPOE-F</li>
+		<li IfModActive="Rah.RBSE">ModSpecific\RBSE</li>
+
+		<!-- royalty -->
+		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific\Royalty</li>
+
+		<!-- base -->
+		<li>Common</li>
+		<li>1.2</li>
 	</v1.2>
 </loadFolders>
