@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- hand -->
+
+	<CNInstallAdvancedNetworkedHand.label>Install Advanced Networked Hand</CNInstallAdvancedNetworkedHand.label>
+	<CNInstallAdvancedNetworkedHand.description>Install an Advanced Networked Hand</CNInstallAdvancedNetworkedHand.description>
+	<CNInstallAdvancedNetworkedHand.jobString>Installing Advanced Networked Hand</CNInstallAdvancedNetworkedHand.jobString>
+
+
+</LanguageData>

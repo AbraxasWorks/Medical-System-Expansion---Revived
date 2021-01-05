@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Hand Talon -->
+
+	<HandTalonModule.label>발톱손 모듈</HandTalonModule.label>
+	<HandTalonModule.labelNoun>발톱손 모듈</HandTalonModule.labelNoun>
+	<HandTalonModule.description>설치된 발톱손 모듈입니다.</HandTalonModule.description>
+
+
+	<!-- Elbow blade -->
+
+	<ElbowBladeModule.label>팔꿈치 칼날 모듈</ElbowBladeModule.label>
+	<ElbowBladeModule.labelNoun>팔꿈치 칼날 모듈</ElbowBladeModule.labelNoun>
+	<ElbowBladeModule.description>설치된 팔꿈치 칼날 모듈입니다.</ElbowBladeModule.description>
+
+
+	<!-- Knee spike -->
+
+	<KneeSpikeModule.label>무릎 송곳 모듈</KneeSpikeModule.label>
+	<KneeSpikeModule.labelNoun>무릎 송곳 모듈</KneeSpikeModule.labelNoun>
+	<KneeSpikeModule.description>설치된 무릎 송곳 모듈입니다.</KneeSpikeModule.description>
+
+
+	<!-- Venom talon -->
+
+	<VenomTalonModule.label>독 발톱 모듈</VenomTalonModule.label>
+	<VenomTalonModule.labelNoun>독 발톱 모듈</VenomTalonModule.labelNoun>
+	<VenomTalonModule.description>설치된 독 발톱 모듈입니다.</VenomTalonModule.description>
+
+
+</LanguageData>

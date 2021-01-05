@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- paw -->
+
+	<InstallSimpleProstheticPawAnimal.label>인공 동물 손 이식</InstallSimpleProstheticPawAnimal.label>
+	<InstallSimpleProstheticPawAnimal.description>인공 동물 손을 이식합니다.</InstallSimpleProstheticPawAnimal.description>
+	<InstallSimpleProstheticPawAnimal.jobString>인공 동물 손 이식 중.</InstallSimpleProstheticPawAnimal.jobString>
+
+
+	<!-- hoof -->
+
+	<InstallSimpleProstheticHoofAnimal.label>인공 동물 발굽 이식</InstallSimpleProstheticHoofAnimal.label>
+	<InstallSimpleProstheticHoofAnimal.description>인공 동물 발굽을 이식합니다.</InstallSimpleProstheticHoofAnimal.description>
+	<InstallSimpleProstheticHoofAnimal.jobString>인공 동물 발굽 이식 중.</InstallSimpleProstheticHoofAnimal.jobString>
+
+
+	<!-- foot -->
+
+	<InstallSimpleProstheticFootAnimal.label>인공 동물 발 이식</InstallSimpleProstheticFootAnimal.label>
+	<InstallSimpleProstheticFootAnimal.description>인공 동물 발을 이식합니다.</InstallSimpleProstheticFootAnimal.description>
+	<InstallSimpleProstheticFootAnimal.jobString>인공 동물 발 이식 중.</InstallSimpleProstheticFootAnimal.jobString>
+
+
+	<!-- toe -->
+
+	<InstallSimpleProstheticToeAnimal.label>인공 동물 발가락 이식</InstallSimpleProstheticToeAnimal.label>
+	<InstallSimpleProstheticToeAnimal.description>인공 동물 발가락을 이식합니다.</InstallSimpleProstheticToeAnimal.description>
+	<InstallSimpleProstheticToeAnimal.jobString>인공 동물 발가락 이식 중.</InstallSimpleProstheticToeAnimal.jobString>
+
+
+</LanguageData>

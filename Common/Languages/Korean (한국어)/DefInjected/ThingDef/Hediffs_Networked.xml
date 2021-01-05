@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- cnn arm -->
+
+	<CNNetworkedArm.label>Networked Arm</CNNetworkedArm.label>
+	<CNNetworkedArm.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic arms, and more efficient, but requires infrastructure to function.</CNNetworkedArm.description>
+
+
+	<!-- cnn hand -->
+
+	<CNNetworkedHand.label>networked hand</CNNetworkedHand.label>
+	<CNNetworkedHand.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</CNNetworkedHand.description>
+
+
+	<!-- cnn leg -->
+
+	<CNNetworkedLeg.label>Networked Leg</CNNetworkedLeg.label>
+	<CNNetworkedLeg.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic legs, and more efficient, but requires infrastructure to function.</CNNetworkedLeg.description>
+
+
+</LanguageData>

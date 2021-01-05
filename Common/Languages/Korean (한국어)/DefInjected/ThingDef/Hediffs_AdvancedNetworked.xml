@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- arm -->
+
+	<CNAdvancedNetworkedArm.label>Advanced Networked Arm</CNAdvancedNetworkedArm.label>
+	<CNAdvancedNetworkedArm.description>An advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic arms, and it's significantly more efficient. The cost comes from the infrastructure required for it to function.</CNAdvancedNetworkedArm.description>
+
+
+	<!-- hand -->
+
+	<CNAdvancedNetworkedHand.label>Advanced Networked Hand</CNAdvancedNetworkedHand.label>
+	<CNAdvancedNetworkedHand.description>An advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic Hands, and it's significantly more efficient. The cost comes from the infrastructure required for it to function.</CNAdvancedNetworkedHand.description>
+
+
+	<!-- leg -->
+
+	<CNAdvancedNetworkedLeg.label>Advanced Networked Leg</CNAdvancedNetworkedLeg.label>
+	<CNAdvancedNetworkedLeg.description>An advanced networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic legs, and it's significantly more efficient. The cost comes from the infrastructure required for it to function.</CNAdvancedNetworkedLeg.description>
+
+
+</LanguageData>

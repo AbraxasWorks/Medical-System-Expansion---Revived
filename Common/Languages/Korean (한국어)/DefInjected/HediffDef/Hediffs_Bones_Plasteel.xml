@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- sternum -->
+
+	<PlasteelSternum.label>플라스틸 흉골</PlasteelSternum.label>
+	<PlasteelSternum.labelNoun>플라스틸 흉골</PlasteelSternum.labelNoun>
+	<PlasteelSternum.description>이식된 플라스틸 흉골입니다.</PlasteelSternum.description>
+
+
+	<!-- clavicle -->
+
+
+	<PlasteelClavicle.label>플라스틸 쇄골</PlasteelClavicle.label>
+	<PlasteelClavicle.labelNoun>플라스틸 쇄골</PlasteelClavicle.labelNoun>
+	<PlasteelClavicle.description>이식된 플라스틸 쇄골입니다.</PlasteelClavicle.description>
+
+
+
+	<!-- humerus -->
+	<PlasteelHumerus.label>플라스틸 상완골</PlasteelHumerus.label>
+	<PlasteelHumerus.labelNoun>플라스틸 상완골</PlasteelHumerus.labelNoun>
+	<PlasteelHumerus.description>이식된 플라스틸 상완골입니다.</PlasteelHumerus.description>
+
+
+	<!-- radius -->
+	<PlasteelRadius.label>플라스틸 요골</PlasteelRadius.label>
+	<PlasteelRadius.labelNoun>플라스틸 요골</PlasteelRadius.labelNoun>
+	<PlasteelRadius.description>이식된 플라스틸 요골입니다.</PlasteelRadius.description>
+
+
+
+	<PlasteelFemur.label>플라스틸 대퇴골</PlasteelFemur.label>
+	<PlasteelFemur.labelNoun>플라스틸 대퇴골</PlasteelFemur.labelNoun>
+	<PlasteelFemur.description>이식된 플라스틸 대퇴골입니다.</PlasteelFemur.description>
+
+
+	<!-- tibia -->
+
+
+	<PlasteelTibia.label>플라스틸 정강이뼈</PlasteelTibia.label>
+	<PlasteelTibia.labelNoun>플라스틸 정강이뼈</PlasteelTibia.labelNoun>
+	<PlasteelTibia.description>이식된 플라스틸 정강이뼈입니다.</PlasteelTibia.description>
+
+
+</LanguageData>

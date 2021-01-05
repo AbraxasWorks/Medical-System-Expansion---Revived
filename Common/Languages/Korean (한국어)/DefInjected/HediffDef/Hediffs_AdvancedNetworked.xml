@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- hand -->
+
+	<CNAdvancedNetworkedHand.label>Advanced Networked Hand</CNAdvancedNetworkedHand.label>
+	<CNAdvancedNetworkedHand.labelNoun>An Advanced Networked Hand</CNAdvancedNetworkedHand.labelNoun>
+	<CNAdvancedNetworkedHand.description>An installed advanced networked hand.</CNAdvancedNetworkedHand.description>
+
+
+</LanguageData>

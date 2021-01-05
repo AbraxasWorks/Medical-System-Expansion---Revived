@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ############## Hover Feet ############## -->
+
+	<Trunken_hediff_HoverFeet.label>hover foot module</Trunken_hediff_HoverFeet.label>
+	<Trunken_hediff_HoverFeet.description>A self-sustaining hover board mounted on a rail adapter transplantion directly linked to the bones inside the foot.</Trunken_hediff_HoverFeet.description>
+	<Trunken_hediff_HoverFeet.labelNoun>a hover foot</Trunken_hediff_HoverFeet.labelNoun>
+	<Trunken_hediff_HoverFeet.stages.0.label>Robot</Trunken_hediff_HoverFeet.stages.0.label>
+
+
+	<!-- ############## Greenthumb ############## -->
+
+	<Trunken_hediff_Greenthumb.label>greenthumb module</Trunken_hediff_Greenthumb.label>
+	<Trunken_hediff_Greenthumb.description>A dedicated bionic module for hybdrid settlements and colonization.</Trunken_hediff_Greenthumb.description>
+	<Trunken_hediff_Greenthumb.labelNoun>a bionic hand module</Trunken_hediff_Greenthumb.labelNoun>
+
+
+</LanguageData>

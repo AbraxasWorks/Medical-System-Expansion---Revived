@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ############## Hover Feet ############## -->
+
+	<ANN_InstallHoverFeet.label>install hover foot module</ANN_InstallHoverFeet.label>
+	<ANN_InstallHoverFeet.description>Install hover foot module.</ANN_InstallHoverFeet.description>
+	<ANN_InstallHoverFeet.jobString>Installing hover foot module.</ANN_InstallHoverFeet.jobString>
+
+
+	<!-- ############## Greenthumb ############## -->
+
+	<ANN_InstallGreenthumb.label>install greenthumb module</ANN_InstallGreenthumb.label>
+	<ANN_InstallGreenthumb.description>Install a greenthumb module.</ANN_InstallGreenthumb.description>
+	<ANN_InstallGreenthumb.jobString>Installing hand module.</ANN_InstallGreenthumb.jobString>
+
+
+</LanguageData>

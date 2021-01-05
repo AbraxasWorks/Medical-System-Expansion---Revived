@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- arm -->
+
+	<InstallSimpleProstheticArm.label>인공 팔 이식</InstallSimpleProstheticArm.label>
+	<InstallSimpleProstheticArm.description>인공 팔을 이식합니다.</InstallSimpleProstheticArm.description>
+	<InstallSimpleProstheticArm.jobString>인공 팔 이식 중.</InstallSimpleProstheticArm.jobString>
+
+
+	<!-- hand -->
+	<InstallSimpleProstheticHand.label>인공 손 이식</InstallSimpleProstheticHand.label>
+	<InstallSimpleProstheticHand.description>인공 손을 이식합니다.</InstallSimpleProstheticHand.description>
+	<InstallSimpleProstheticHand.jobString>인공 손 이식 중.</InstallSimpleProstheticHand.jobString>
+
+
+	<!-- finger -->
+
+	<InstallSimpleProstheticFinger.label>인공 손가락 이식</InstallSimpleProstheticFinger.label>
+	<InstallSimpleProstheticFinger.description>인공 손가락을 이식합니다.</InstallSimpleProstheticFinger.description>
+	<InstallSimpleProstheticFinger.jobString>인공 손가락 이식 중.</InstallSimpleProstheticFinger.jobString>
+
+	<!-- leg -->
+
+	<InstallSimpleProstheticLeg.label>인공 다리 이식</InstallSimpleProstheticLeg.label>
+	<InstallSimpleProstheticLeg.description>인공 다리를 이식합니다.</InstallSimpleProstheticLeg.description>
+	<InstallSimpleProstheticLeg.jobString>인공 다리 이식 중.</InstallSimpleProstheticLeg.jobString>
+
+
+	<!-- foot -->
+
+	<InstallSimpleProstheticFoot.label>인공 발 이식</InstallSimpleProstheticFoot.label>
+	<InstallSimpleProstheticFoot.description>인공 발을 이식합니다.</InstallSimpleProstheticFoot.description>
+	<InstallSimpleProstheticFoot.jobString>인공 발 이식 중.</InstallSimpleProstheticFoot.jobString>
+
+
+	<!-- toe -->
+
+	<InstallSimpleProstheticToe.label>인공 발가락 이식</InstallSimpleProstheticToe.label>
+	<InstallSimpleProstheticToe.description>인공 발가락을 이식합니다.</InstallSimpleProstheticToe.description>
+	<InstallSimpleProstheticToe.jobString>인공 발가락 이식 중.</InstallSimpleProstheticToe.jobString>
+
+</LanguageData>

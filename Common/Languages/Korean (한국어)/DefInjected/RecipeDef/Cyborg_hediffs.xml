@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ############## Energy Fist ############## -->
+
+	<ANN_InstallEnergyFist.label>install energy fist module</ANN_InstallEnergyFist.label>
+	<ANN_InstallEnergyFist.description>Install an energy fist module.</ANN_InstallEnergyFist.description>
+	<ANN_InstallEnergyFist.jobString>Installing energy fist module.</ANN_InstallEnergyFist.jobString>
+
+
+	<!-- ############## Outer Blade ############## -->
+
+	<ANN_InstallOuterBlade_Module.label>install outer blade module</ANN_InstallOuterBlade_Module.label>
+	<ANN_InstallOuterBlade_Module.description>Install an outer blade module.</ANN_InstallOuterBlade_Module.description>
+	<ANN_InstallOuterBlade_Module.jobString>Installing outer blade module.</ANN_InstallOuterBlade_Module.jobString>
+
+
+	<!-- ############## Synchronizer ############## -->
+
+	<InstallSynchronizer_Module.label>install synchronizer module</InstallSynchronizer_Module.label>
+	<InstallSynchronizer_Module.description>Install a synchronizer module.</InstallSynchronizer_Module.description>
+	<InstallSynchronizer_Module.jobString>Installing wrist computer module.</InstallSynchronizer_Module.jobString>
+
+
+</LanguageData>

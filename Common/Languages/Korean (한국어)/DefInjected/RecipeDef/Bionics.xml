@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- paw -->
+
+	<InstallBionicPawAnimal.label>생체공학 동물 손 이식</InstallBionicPawAnimal.label>
+	<InstallBionicPawAnimal.description>생체공학 동물 손을 이식합니다.</InstallBionicPawAnimal.description>
+	<InstallBionicPawAnimal.jobString>생체공학 동물 손 이식 중.</InstallBionicPawAnimal.jobString>
+
+
+	<!-- hoof -->
+
+	<InstallBionicHoofAnimal.label>생체공학 동물 발굽 이식</InstallBionicHoofAnimal.label>
+	<InstallBionicHoofAnimal.description>생체공학 동물 발굽을 이식합니다.</InstallBionicHoofAnimal.description>
+	<InstallBionicHoofAnimal.jobString>생체공학 동물 발굽 이식 중.</InstallBionicHoofAnimal.jobString>
+
+
+	<!-- power claw -->
+
+	<InstallPowerClawAnimal.label>강화 발톱 모듈 이식</InstallPowerClawAnimal.label>
+	<InstallPowerClawAnimal.description>강화 발톱을 이식합니다..</InstallPowerClawAnimal.description>
+	<InstallPowerClawAnimal.jobString>강화 발톱 이식 중.</InstallPowerClawAnimal.jobString>
+
+
+</LanguageData>

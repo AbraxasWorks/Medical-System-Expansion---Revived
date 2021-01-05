@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ############## Energy Fist ############## -->
+
+	<Trunken_hediff_EnergyFist.label>energy fist module</Trunken_hediff_EnergyFist.label>
+	<Trunken_hediff_EnergyFist.description>A combat-oriented hand module.</Trunken_hediff_EnergyFist.description>
+	<Trunken_hediff_EnergyFist.labelNoun>an energy fist module</Trunken_hediff_EnergyFist.labelNoun>
+	<Trunken_hediff_EnergyFist.comps.0.tools.0.label>arm</Trunken_hediff_EnergyFist.comps.0.tools.0.label>
+
+
+	<!-- ############## Outer Blade ############## -->
+
+	<Trunken_hediff_OuterBlade_Module.label>outer blade module</Trunken_hediff_OuterBlade_Module.label>
+	<Trunken_hediff_OuterBlade_Module.description>A combat-oriented forearm module.</Trunken_hediff_OuterBlade_Module.description>
+	<Trunken_hediff_OuterBlade_Module.labelNoun>an outer blade</Trunken_hediff_OuterBlade_Module.labelNoun>
+
+
+	<!-- ############## Synchronizer ############## -->
+
+	<Trunken_hediff_Synchronizer_Module.label>synchronizer module</Trunken_hediff_Synchronizer_Module.label>
+	<Trunken_hediff_Synchronizer_Module.description>A tactical military coordination computer module with a digital screen implanted right in the wrist.</Trunken_hediff_Synchronizer_Module.description>
+	<Trunken_hediff_Synchronizer_Module.labelNoun>a synchronizer module</Trunken_hediff_Synchronizer_Module.labelNoun>
+
+
+</LanguageData>

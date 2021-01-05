@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- paw -->
+
+	<BionicPawAnimal.label>생체공학 동물 손</BionicPawAnimal.label>
+	<BionicPawAnimal.description>생체공학 동물 손입니다.</BionicPawAnimal.description>
+	<BionicPawAnimal.comps.0.tools.0.label>생체공학 동물 손</BionicPawAnimal.comps.0.tools.0.label>
+
+
+	<!-- hoof -->
+
+	<BionicHoofAnimal.label>생체공학 동물 발굽</BionicHoofAnimal.label>
+	<BionicHoofAnimal.description>생체공학 동물 발굽입니다.</BionicHoofAnimal.description>
+	<BionicHoofAnimal.comps.0.tools.0.label>생체공학 동물 발굽</BionicHoofAnimal.comps.0.tools.0.label>
+
+
+</LanguageData>

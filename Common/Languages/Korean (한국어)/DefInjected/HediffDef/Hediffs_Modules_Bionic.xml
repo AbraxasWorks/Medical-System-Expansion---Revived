@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- armor module -->
+
+	<ModuleArmorEBF_Effector.label>장갑 모듈</ModuleArmorEBF_Effector.label>
+	<ModuleArmorEBF_Effector.labelNoun>장갑 모듈</ModuleArmorEBF_Effector.labelNoun>
+	<ModuleArmorEBF_Effector.description>설치된 장갑 모듈입니다.</ModuleArmorEBF_Effector.description>
+
+	<ModuleArmorEBF.label>장갑 모듈</ModuleArmorEBF.label>
+	<ModuleArmorEBF.labelNoun>장갑 모듈</ModuleArmorEBF.labelNoun>
+	<ModuleArmorEBF.description>설치된 장갑 모듈입니다.</ModuleArmorEBF.description>
+
+
+	<!-- Ranged platform module -->
+
+	<RangedPlatformModule.label>원거리 플랫폼 모듈</RangedPlatformModule.label>
+	<RangedPlatformModule.labelNoun>원거리 플랫폼 모듈</RangedPlatformModule.labelNoun>
+	<RangedPlatformModule.description>설치된 원거리 플랫폼 모듈입니다.</RangedPlatformModule.description>
+
+
+	<!-- melee platform module -->
+
+	<MeleePlatformModule.label>근접 플랫폼 모듈</MeleePlatformModule.label>
+	<MeleePlatformModule.labelNoun>근접 플랫폼 모듈</MeleePlatformModule.labelNoun>
+	<MeleePlatformModule.description>설치된 근접 플랫폼 모듈입니다.</MeleePlatformModule.description>
+
+
+	<!-- power claw -->
+
+	<PowerClaw.label>강화 발톱 모듈</PowerClaw.label>
+	<PowerClaw.labelNoun>강화 발톱 모듈</PowerClaw.labelNoun>
+	<PowerClaw.description>설치된 강화 발톱 모듈입니다.</PowerClaw.description>
+
+
+	<!-- eff mod -->
+
+	<ModuleEfficiency_Effector.label>고급 연산 모듈</ModuleEfficiency_Effector.label>
+	<ModuleEfficiency_Effector.labelNoun>고급 연산 모듈</ModuleEfficiency_Effector.labelNoun>
+	<ModuleEfficiency_Effector.description>설치된 고급 연산 모듈입니다.</ModuleEfficiency_Effector.description>
+
+	<ModuleEfficiency.label>고급 연산 모듈</ModuleEfficiency.label>
+	<ModuleEfficiency.labelNoun>고급 연산 모듈</ModuleEfficiency.labelNoun>
+	<ModuleEfficiency.description>설치된 고급 연산 모듈입니다.</ModuleEfficiency.description>
+
+
+</LanguageData>

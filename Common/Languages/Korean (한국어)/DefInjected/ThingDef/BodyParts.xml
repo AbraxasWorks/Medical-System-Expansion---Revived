@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- drill -->
+
+	<DrillArm.label>드릴 팔</DrillArm.label>
+	<DrillArm.description>채굴 속도를 높이기 위해 설치하는 기계 팔입니다.\n드릴이 내장되어 있어 갱도의 약한 지점을 찾아 빠른 채굴이 가능합니다.\n\n채굴 외에 활용할 수 있는 보조 팔도 있으며, 일상적인 동작에는 잘 맞지 않아 이동속도가 약간 줄어듭니다.</DrillArm.description>
+
+
+	<!-- replacement internal support -->
+
+	<MechanicalInternalSupport.label>기계 내골격 보철물</MechanicalInternalSupport.label>
+	<MechanicalInternalSupport.description>기계 내골격 보철물. 드릴 팔이 설치될 때 요골과 상완골을 대체합니다.</MechanicalInternalSupport.description>
+
+
+	<!-- Mechanical Manipulator -->
+	<MechanicalManipulator.label>다목적 기계 손</MechanicalManipulator.label>
+	<MechanicalManipulator.description>그렇게 좋진 않지만, 어쨌든 없는 것 보단 낫습니다.\n드릴 팔과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</MechanicalManipulator.description>
+
+
+	<!-- Mechanical Finger -->
+
+	<MechanicalFinger.label>기계 손가락</MechanicalFinger.label>
+	<MechanicalFinger.description>다목적 기계 손가락.\n다목적 기계 손과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</MechanicalFinger.description>
+
+
+	<!-- field hand -->
+
+	<FieldHand.label>농업용 기계 손</FieldHand.label>
+	<FieldHand.description>농사일을 더욱 효율적으로 수행하기 위해 만들어진 기계 손입니다.\n같은 작물에서 여러 부위를 동시에 채집할 수도 있으며, 파종을 위한 구멍을 한 번에 대량으로 뚫기도 합니다.\n\n농사 외에 활용할 수 있는 보조 팔도 있으며, 일상적인 동작에는 잘 맞지 않아 이동속도가 약간 줄어듭니다.</FieldHand.description>
+
+
+	<!-- Field Fingers -->
+
+	<FieldFinger.label>농업용 기계 손가락</FieldFinger.label>
+	<FieldFinger.description>농사일을 더욱 효율적으로 수행하기 위해 만들어진 기계 손가락입니다.\n같은 작물에서 여러 부위를 동시에 채집할 수도 있으며, 파종을 위한 구멍을 한 번에 대량으로 뚫기도 합니다.\n\n농업용 기계손과 함께 설치되며, 다른 종류의 의수에는 설치할 수 없습니다.</FieldFinger.description>
+
+
+</LanguageData>

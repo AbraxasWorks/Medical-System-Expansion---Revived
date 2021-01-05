@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- module slot -->
+
+	<MSE_ModuleSlot.label>모듈 슬롯</MSE_ModuleSlot.label>
+	<MSE_ModuleSlot.labelNoun>모듈 슬롯</MSE_ModuleSlot.labelNoun>
+	<MSE_ModuleSlot.description>업그레이드를 위한 슬롯입니다.</MSE_ModuleSlot.description>
+
+</LanguageData>

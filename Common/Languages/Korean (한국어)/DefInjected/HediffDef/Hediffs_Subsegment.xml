@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- internal support -->
+
+	<CNNetworkedInternalSupport.label>bionic internal support</CNNetworkedInternalSupport.label>
+	<CNNetworkedInternalSupport.labelNoun>a networked internal support</CNNetworkedInternalSupport.labelNoun>
+	<CNNetworkedInternalSupport.description>An installed networked internal support.</CNNetworkedInternalSupport.description>
+
+
+	<!-- cnn forearm -->
+
+	<CNNetworkedForearmPart.label>networked arm part</CNNetworkedForearmPart.label>
+	<CNNetworkedForearmPart.labelNoun>a networked forearm part</CNNetworkedForearmPart.labelNoun>
+	<CNNetworkedForearmPart.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic forearms, and more efficient, but requires infrastructure to function.</CNNetworkedForearmPart.description>
+
+
+	<!-- cnn hand -->
+
+	<CNNetworkedHandPart.label>networked hand part</CNNetworkedHandPart.label>
+	<CNNetworkedHandPart.labelNoun>a networked hand part</CNNetworkedHandPart.labelNoun>
+	<CNNetworkedHandPart.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic hands, and more efficient, but requires infrastructure to function.</CNNetworkedHandPart.description>
+
+
+	<!-- cnn finger -->
+
+	<CNNetworkedFingerPart.label>networked finger part</CNNetworkedFingerPart.label>
+	<CNNetworkedFingerPart.labelNoun>a networked finger part</CNNetworkedFingerPart.labelNoun>
+	<CNNetworkedFingerPart.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic fingers, and more efficient, but requires infrastructure to function.</CNNetworkedFingerPart.description>
+
+
+	<!-- cnn foot -->
+
+	<CNNetworkedFootPart.label>networked foot part</CNNetworkedFootPart.label>
+	<CNNetworkedFootPart.labelNoun>a networked foot part</CNNetworkedFootPart.labelNoun>
+	<CNNetworkedFootPart.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic feet, and more efficient, but requires infrastructure to function.</CNNetworkedFootPart.description>
+
+
+	<!-- cnn toe -->
+
+	<CNNetworkedToePart.label>networked toe part</CNNetworkedToePart.label>
+	<CNNetworkedToePart.labelNoun>a networked toe part</CNNetworkedToePart.labelNoun>
+	<CNNetworkedToePart.description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic toes, and more efficient, but requires infrastructure to function.</CNNetworkedToePart.description>
+
+
+</LanguageData>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- sternum -->
+
+	<SimpleProstheticSternum.label>인공 흉골</SimpleProstheticSternum.label>
+	<SimpleProstheticSternum.description>인공 흉골. 진짜 뼈만큼 좋진 않습니다.</SimpleProstheticSternum.description>
+
+
+	<!-- clavicle -->
+
+	<SimpleProstheticClavicle.label>인공 쇄골</SimpleProstheticClavicle.label>
+	<SimpleProstheticClavicle.description>인공 쇄골. 진짜 뼈만큼 좋진 않습니다.</SimpleProstheticClavicle.description>
+
+	<!-- humerus -->
+
+	<SimpleProstheticHumerus.label>인공 상완골</SimpleProstheticHumerus.label>
+	<SimpleProstheticHumerus.description>인공 위팔뼈. 진짜 뼈만큼 좋진 않습니다.</SimpleProstheticHumerus.description>
+
+
+	<!-- radius -->
+
+	<SimpleProstheticRadius.label>인공 요골</SimpleProstheticRadius.label>
+	<SimpleProstheticRadius.description>인공 요골. 진짜 뼈만큼 좋진 않습니다..</SimpleProstheticRadius.description>
+
+
+	<!-- femur -->
+
+	<SimpleProstheticFemur.label>인공 대퇴골</SimpleProstheticFemur.label>
+	<SimpleProstheticFemur.description>인공 대퇴골. 진짜 뼈만큼 좋진 않습니다..</SimpleProstheticFemur.description>
+
+
+	<!-- tibia -->
+
+	<SimpleProstheticTibia.label>인공 정강이뼈</SimpleProstheticTibia.label>
+	<SimpleProstheticTibia.description>인공 정강이뼈. 진짜 뼈만큼 좋진 않습니다..</SimpleProstheticTibia.description>
+
+
+</LanguageData>

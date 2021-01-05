@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- cnn hand -->
+
+	<CNNetworkedHand.label>networked hand</CNNetworkedHand.label>
+	<CNNetworkedHand.labelNoun>A networked hand</CNNetworkedHand.labelNoun>
+	<CNNetworkedHand.description>An installed networked hand.</CNNetworkedHand.description>
+
+
+</LanguageData>

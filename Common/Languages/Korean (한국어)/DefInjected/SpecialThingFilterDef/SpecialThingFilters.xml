@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<AllowProsthesesIncomplete.label>allow incomplete</AllowProsthesesIncomplete.label>
+	<AllowProsthesesIncomplete.description>Allow prostheses that are missing some sub-parts for the selected version.</AllowProsthesesIncomplete.description>
+
+	<AllowProsthesesComplete.label>allow complete</AllowProsthesesComplete.label>
+	<AllowProsthesesComplete.description>Allow prostheses that are not missing any sub-part.</AllowProsthesesComplete.description>
+
+
+</LanguageData>

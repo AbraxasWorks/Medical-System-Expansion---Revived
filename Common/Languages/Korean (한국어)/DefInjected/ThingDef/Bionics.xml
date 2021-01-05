@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- leg -->
+
+	<BionicLegAnimal.label>생체공학 동물 다리</BionicLegAnimal.label>
+	<BionicLegAnimal.description>동물을 위한 생체공학 다리. 종에 구분없이 이식할 수 있습니다.</BionicLegAnimal.description>
+
+
+	<!-- paw -->
+
+	<BionicPawAnimal.label>생체공학 동물 손</BionicPawAnimal.label>
+	<BionicPawAnimal.description>동물을 위한 생체공학 손. 종에 구분없이 이식할 수 있습니다.</BionicPawAnimal.description>
+
+
+	<!-- hoof -->
+
+	<BionicHoofAnimal.label>생체공학 동물 발굽</BionicHoofAnimal.label>
+	<BionicHoofAnimal.description>동물을 위한 생체공학 발굽. 종에 구분없이 이식할 수 있습니다.</BionicHoofAnimal.description>
+
+
+</LanguageData>

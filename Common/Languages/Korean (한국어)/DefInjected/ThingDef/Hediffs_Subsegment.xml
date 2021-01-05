@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- internal support -->
+
+	<CNNetworkedInternalSupport.label>networked internal support</CNNetworkedInternalSupport.label>
+	<CNNetworkedInternalSupport.description>An internal support for a networked prosthetic. Useful replacement to have on hand for when an internal support of a networked prosthesis breaks.</CNNetworkedInternalSupport.description>
+
+
+	<!-- cnn forearm -->
+
+	<CNNetworkedForearmPart.label>networked forearm part</CNNetworkedForearmPart.label>
+	<CNNetworkedForearmPart.description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</CNNetworkedForearmPart.description>
+
+
+	<!-- cnn hand -->
+
+	<CNNetworkedHandPart.label>Networked hand part</CNNetworkedHandPart.label>
+	<CNNetworkedHandPart.description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</CNNetworkedHandPart.description>
+
+
+	<!-- cnn finger -->
+
+	<CNNetworkedFingerPart.label>Networked finger part</CNNetworkedFingerPart.label>
+	<CNNetworkedFingerPart.description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</CNNetworkedFingerPart.description>
+
+
+	<!-- cnn foot -->
+
+	<CNNetworkedFootPart.label>Networked foot part</CNNetworkedFootPart.label>
+	<CNNetworkedFootPart.description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</CNNetworkedFootPart.description>
+
+
+	<!-- cnn toe -->
+
+	<CNNetworkedToePart.label>Networked toe part</CNNetworkedToePart.label>
+	<CNNetworkedToePart.description>A part of a networked prosthetic. Extremely cheap, but requires an actual networked prosthesis, from which it will be controlled. Cannot be used as a standalone part.</CNNetworkedToePart.description>
+
+
+</LanguageData>

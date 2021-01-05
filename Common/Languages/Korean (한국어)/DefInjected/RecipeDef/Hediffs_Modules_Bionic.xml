@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- armor module -->
+
+	<InstallModuleArmorEBF.label>장갑 모듈 설치</InstallModuleArmorEBF.label>
+	<InstallModuleArmorEBF.description>장갑 모듈을 설치합니다.</InstallModuleArmorEBF.description>
+	<InstallModuleArmorEBF.jobString>장갑 모듈 설치 중.</InstallModuleArmorEBF.jobString>
+
+
+	<!-- Ranged platform module -->
+
+	<InstallRangedPlatformModule.label>원거리 플랫폼 모듈 설치</InstallRangedPlatformModule.label>
+	<InstallRangedPlatformModule.description>원거리 플랫폼 모듈을 설치합니다.</InstallRangedPlatformModule.description>
+	<InstallRangedPlatformModule.jobString>원거리 플랫폼 모듈 설치 중.</InstallRangedPlatformModule.jobString>
+
+
+	<!-- melee platform module -->
+
+	<InstallMeleePlatformModule.label>근접 플랫폼 모듈 설치</InstallMeleePlatformModule.label>
+	<InstallMeleePlatformModule.description>근접 플랫폼 모듈을 설치합니다.</InstallMeleePlatformModule.description>
+	<InstallMeleePlatformModule.jobString>근접 플랫폼 모듈 설치 중.</InstallMeleePlatformModule.jobString>
+
+
+	<!-- power claw -->
+
+	<InstallPowerClaw.label>강화 발톱 모듈 이식</InstallPowerClaw.label>
+	<InstallPowerClaw.description>강화 발톱을 이식합니다.</InstallPowerClaw.description>
+	<InstallPowerClaw.jobString>강화 발톱 이식 중.</InstallPowerClaw.jobString>
+
+
+	<!-- eff mod -->
+
+	<InstallModuleEfficiency.label>고급 연산 모듈 설치</InstallModuleEfficiency.label>
+	<InstallModuleEfficiency.description>고급 연산 모듈을 설치합니다.</InstallModuleEfficiency.description>
+	<InstallModuleEfficiency.jobString>고급 연산 모듈 설치 중.</InstallModuleEfficiency.jobString>
+
+
+</LanguageData>

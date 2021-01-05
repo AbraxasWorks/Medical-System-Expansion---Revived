@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- internal support -->
+
+	<ArchotechInternalSupport.label>초월공학 내골격 보철물</ArchotechInternalSupport.label>
+	<ArchotechInternalSupport.labelNoun>초월공학 내골격 보철물</ArchotechInternalSupport.labelNoun>
+	<ArchotechInternalSupport.description>이식된 초월공학 내골격 보철물입니다.</ArchotechInternalSupport.description>
+
+
+	<!-- arm -->
+
+	<ArchotechArm.label>초월공학 어깨</ArchotechArm.label>
+	<ArchotechArm.labelNoun>초월공학 어깨</ArchotechArm.labelNoun>
+	<ArchotechArm.description>이식된 초월공학 어깨입니다.</ArchotechArm.description>
+
+
+	<!-- archotech forearm -->
+
+
+	<ArchotechForearm.label>초월공학 팔</ArchotechForearm.label>
+	<ArchotechForearm.labelNoun>초월공학 팔</ArchotechForearm.labelNoun>
+	<ArchotechForearm.description>이식된 초월공학 팔입니다.</ArchotechForearm.description>
+
+
+
+	<!-- hand -->
+
+	<ArchotechHand.label>초월공학 손</ArchotechHand.label>
+	<ArchotechHand.labelNoun>초월공학 손</ArchotechHand.labelNoun>
+	<ArchotechHand.description>이식된 초월공학 손입니다.</ArchotechHand.description>
+
+
+	<!-- finger -->
+	<ArchotechFinger.label>초월공학 손가락</ArchotechFinger.label>
+	<ArchotechFinger.labelNoun>초월공학 손가락</ArchotechFinger.labelNoun>
+	<ArchotechFinger.description>이식된 초월공학 손가락입니다.</ArchotechFinger.description>
+
+
+	<!-- leg -->
+
+	<ArchotechLeg.label>초월공학 다리</ArchotechLeg.label>
+	<ArchotechLeg.labelNoun>초월공학 다리</ArchotechLeg.labelNoun>
+	<ArchotechLeg.description>이식된 초월공학 다리입니다.</ArchotechLeg.description>
+
+
+	<!-- foot -->
+
+	<ArchotechFoot.label>초월공학 발</ArchotechFoot.label>
+	<ArchotechFoot.labelNoun>초월공학 발</ArchotechFoot.labelNoun>
+	<ArchotechFoot.description>이식된 초월공학 발입니다.</ArchotechFoot.description>
+
+
+	<!-- toe -->
+	<ArchotechToe.label>초월공학 발가락</ArchotechToe.label>
+	<ArchotechToe.labelNoun>초월공학 발가락</ArchotechToe.labelNoun>
+	<ArchotechToe.description>이식된 초월공학 발가락입니다.</ArchotechToe.description>
+
+
+</LanguageData>

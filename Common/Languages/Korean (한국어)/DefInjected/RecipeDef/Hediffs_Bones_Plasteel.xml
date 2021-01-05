@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- sternum -->
+
+	<InstallPlasteelSternum.label>플라스틸 흉골 이식</InstallPlasteelSternum.label>
+	<InstallPlasteelSternum.description>플라스틸 흉골을 이식합니다.</InstallPlasteelSternum.description>
+	<InstallPlasteelSternum.jobString>플라스틸 흉골 이식 중.</InstallPlasteelSternum.jobString>
+
+
+	<!-- clavicle -->
+
+	<InstallPlasteelClavicle.label>플라스틸 쇄골 이식</InstallPlasteelClavicle.label>
+	<InstallPlasteelClavicle.description>플라스틸 쇄골을 이식합니다.</InstallPlasteelClavicle.description>
+	<InstallPlasteelClavicle.jobString>플라스틸 쇄골 이식 중.</InstallPlasteelClavicle.jobString>
+
+
+
+	<!-- humerus -->
+
+	<InstallPlasteelHumerus.label>플라스틸 상완골 이식</InstallPlasteelHumerus.label>
+	<InstallPlasteelHumerus.description>플라스틸 상완골을 이식합니다.</InstallPlasteelHumerus.description>
+	<InstallPlasteelHumerus.jobString>플라스틸 상완골 이식 중.</InstallPlasteelHumerus.jobString>
+
+
+	<!-- radius -->
+
+	<InstallPlasteelRadius.label>플라스틸 요골 이식</InstallPlasteelRadius.label>
+	<InstallPlasteelRadius.description>플라스틸 요골을 이식합니다.</InstallPlasteelRadius.description>
+	<InstallPlasteelRadius.jobString>플라스틸 요골 이식 중.</InstallPlasteelRadius.jobString>
+
+
+	<!-- femur -->
+
+	<InstallPlasteelFemur.label>플라스틸 대퇴골 이식</InstallPlasteelFemur.label>
+	<InstallPlasteelFemur.description>플라스틸 대퇴골을 이식합니다.</InstallPlasteelFemur.description>
+	<InstallPlasteelFemur.jobString>플라스틸 대퇴골 이식 중.</InstallPlasteelFemur.jobString>
+
+
+	<!-- tibia -->
+	<InstallPlasteelTibia.label>플라스틸 정강이뼈 이식</InstallPlasteelTibia.label>
+	<InstallPlasteelTibia.description>플라스틸 정강이뼈를 이식합니다.</InstallPlasteelTibia.description>
+	<InstallPlasteelTibia.jobString>플라스틸 정강이뼈 이식 중.</InstallPlasteelTibia.jobString>
+
+
+</LanguageData>

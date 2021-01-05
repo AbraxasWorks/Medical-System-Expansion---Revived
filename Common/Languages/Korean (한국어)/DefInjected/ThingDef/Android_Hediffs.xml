@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ############## Hover Feet ############## -->
+
+	<ANN_HoverFeet.label>hover foot module</ANN_HoverFeet.label>
+	<ANN_HoverFeet.description>(Replacement) A self-sustaining hover board mounted on a rail adapter transplantion directly linked to the bones inside the foot. Young street gangs used this once upon a time to escape after crime on Urbworlds. Enhances movement speed by gliding.</ANN_HoverFeet.description>
+
+
+	<!-- ############## Greenthumb ############## -->
+
+	<ANN_Greenthumb.label>greenthumb module</ANN_Greenthumb.label>
+	<ANN_Greenthumb.description>(Replacement) A dedicated bionic module for hybdrid settlements and colonization. It replaces the thumb as a full configurable and functionable finger hand device. The storage inside the palm of the hand is linked with a learning nanocomputer, containing informations about vegetation as flora and fauna types. An implemented hub feeds the user with knowledge requests, detected by the openhand sensor. The nail glows green during data scans and loading times.</ANN_Greenthumb.description>
+
+
+</LanguageData>

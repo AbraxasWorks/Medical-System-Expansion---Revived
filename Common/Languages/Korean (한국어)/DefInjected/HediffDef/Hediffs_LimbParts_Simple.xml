@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- arm -->
+
+	<SimpleProstheticArm.label>인공 팔</SimpleProstheticArm.label>
+	<SimpleProstheticArm.labelNoun>인공 팔</SimpleProstheticArm.labelNoun>
+	<SimpleProstheticArm.description>이식된 인공 팔입니다.</SimpleProstheticArm.description>
+
+
+	<!-- hand -->
+
+	<SimpleProstheticHand.label>인공 손</SimpleProstheticHand.label>
+	<SimpleProstheticHand.labelNoun>인공 손</SimpleProstheticHand.labelNoun>
+	<SimpleProstheticHand.description>이식된 인공 손입니다.</SimpleProstheticHand.description>
+
+
+	<!-- finger -->
+
+	<SimpleProstheticFinger.label>인공 손가락</SimpleProstheticFinger.label>
+	<SimpleProstheticFinger.labelNoun>인공 손가락</SimpleProstheticFinger.labelNoun>
+	<SimpleProstheticFinger.description>이식된 인공 손가락.</SimpleProstheticFinger.description>
+
+
+	<!-- leg -->
+
+	<SimpleProstheticLeg.label>인공 다리</SimpleProstheticLeg.label>
+	<SimpleProstheticLeg.labelNoun>인공 다리</SimpleProstheticLeg.labelNoun>
+	<SimpleProstheticLeg.description>이식된 인공 다리입니다.</SimpleProstheticLeg.description>
+
+
+	<!-- foot -->
+
+	<SimpleProstheticFoot.label>인공 발</SimpleProstheticFoot.label>
+	<SimpleProstheticFoot.labelNoun>인공 발</SimpleProstheticFoot.labelNoun>
+	<SimpleProstheticFoot.description>이식된 인공 발입니다.</SimpleProstheticFoot.description>
+
+
+	<!-- toe -->
+
+	<SimpleProstheticToe.label>인공 발가락</SimpleProstheticToe.label>
+	<SimpleProstheticToe.labelNoun>인공 발가락</SimpleProstheticToe.labelNoun>
+	<SimpleProstheticToe.description>이식된 인공 발가락.</SimpleProstheticToe.description>
+
+
+
+</LanguageData>

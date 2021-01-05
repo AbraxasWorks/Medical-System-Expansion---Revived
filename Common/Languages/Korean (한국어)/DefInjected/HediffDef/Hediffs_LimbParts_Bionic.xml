@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- internal support -->
+
+	<BionicInternalSupport.label>생체공학 내골격 보철물</BionicInternalSupport.label>
+	<BionicInternalSupport.labelNoun>생체공학 내골격 보철물</BionicInternalSupport.labelNoun>
+	<BionicInternalSupport.description>이식된 생체공학 내골격 보철물입니다.</BionicInternalSupport.description>
+
+
+	<!-- bionic arm -->
+
+	<BionicArm.label>생체공학 어깨</BionicArm.label>
+	<BionicArm.labelNoun>생체공학 어깨</BionicArm.labelNoun>
+	<BionicArm.description>이식된 생체공학 어깨입니다.</BionicArm.description>
+
+
+	<!-- bionic forearm -->
+	<BionicForearm.label>생체공학 팔</BionicForearm.label>
+	<BionicForearm.labelNoun>생체공학 팔</BionicForearm.labelNoun>
+	<BionicForearm.description>이식된 생체공학 팔입니다.</BionicForearm.description>
+
+
+	<!-- hand -->
+
+	<BionicHand.label>생체공학 손</BionicHand.label>
+	<BionicHand.labelNoun>생체공학 손</BionicHand.labelNoun>
+	<BionicHand.description>이식된 생체공학 손입니다.</BionicHand.description>
+
+
+	<!-- finger -->
+
+
+	<BionicFinger.label>생체공학 손가락r</BionicFinger.label>
+	<BionicFinger.labelNoun>생체공학 손가락</BionicFinger.labelNoun>
+	<BionicFinger.description>이식된 생체공학 손가락입니다.</BionicFinger.description>
+
+	<!-- leg -->
+
+	<BionicLeg.label>생체공학 다리</BionicLeg.label>
+	<BionicLeg.labelNoun>생체공학 다리</BionicLeg.labelNoun>
+	<BionicLeg.description>이식된 생체공학 다리입니다.</BionicLeg.description>
+
+
+	<!-- foot -->
+
+
+	<BionicFoot.label>생체공학 발</BionicFoot.label>
+	<BionicFoot.labelNoun>생체공학 발</BionicFoot.labelNoun>
+	<BionicFoot.description>이식된 생체공학 발입니다.</BionicFoot.description>
+
+
+	<!-- toe -->
+
+	<BionicToe.label>생체공학 발가락</BionicToe.label>
+	<BionicToe.labelNoun>생체공학 발가락</BionicToe.labelNoun>
+	<BionicToe.description>이식된 생체공학 발가락입니다.</BionicToe.description>
+
+
+</LanguageData>

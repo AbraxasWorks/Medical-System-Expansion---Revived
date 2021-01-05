@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- paw -->
+
+	<SimpleProstheticPawAnimal.label>인공 동물 손</SimpleProstheticPawAnimal.label>
+	<SimpleProstheticPawAnimal.description>인공 동물 손입니다.</SimpleProstheticPawAnimal.description>
+	<SimpleProstheticPawAnimal.comps.0.tools.0.label>인공 동물 손</SimpleProstheticPawAnimal.comps.0.tools.0.label>
+
+
+	<!-- hoof -->
+
+	<SimpleProstheticHoofAnimal.label>인공 동물 발굽</SimpleProstheticHoofAnimal.label>
+	<SimpleProstheticHoofAnimal.description>인공 동물 발굽입니다.</SimpleProstheticHoofAnimal.description>
+	<SimpleProstheticHoofAnimal.comps.0.tools.0.label>인공 동물 발굽</SimpleProstheticHoofAnimal.comps.0.tools.0.label>
+
+
+	<!-- foot -->
+
+	<SimpleProstheticFootAnimal.label>인공 동물 발</SimpleProstheticFootAnimal.label>
+	<SimpleProstheticFootAnimal.description>인공 동물 발입니다.</SimpleProstheticFootAnimal.description>
+
+
+	<!-- toe -->
+
+	<SimpleProstheticToeAnimal.label>인공 동물 발가락</SimpleProstheticToeAnimal.label>
+	<SimpleProstheticToeAnimal.description>인공 동물 발가락입니다.</SimpleProstheticToeAnimal.description>
+
+
+</LanguageData>

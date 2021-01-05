@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- internal support -->
+
+	<InstallCNNetworkedInternalSupport.label>install networked internal support</InstallCNNetworkedInternalSupport.label>
+	<InstallCNNetworkedInternalSupport.description>Install a networked internal support.</InstallCNNetworkedInternalSupport.description>
+	<InstallCNNetworkedInternalSupport.jobString>Installing networked internal support.</InstallCNNetworkedInternalSupport.jobString>
+
+
+	<!-- cnn forearm -->
+
+	<CNInstallNetworkedForearmPart.label>Install networked forearm part</CNInstallNetworkedForearmPart.label>
+	<CNInstallNetworkedForearmPart.description>Install a networked forearm part</CNInstallNetworkedForearmPart.description>
+	<CNInstallNetworkedForearmPart.jobString>Installing networked forearm part</CNInstallNetworkedForearmPart.jobString>
+
+
+	<!-- cnn hand -->
+
+	<CNInstallNetworkedHandPart.label>Install networked hand part</CNInstallNetworkedHandPart.label>
+	<CNInstallNetworkedHandPart.description>Install a networked hand part</CNInstallNetworkedHandPart.description>
+	<CNInstallNetworkedHandPart.jobString>Installing networked hand part</CNInstallNetworkedHandPart.jobString>
+
+
+	<!-- cnn finger -->
+
+	<CNInstallNetworkedFingerPart.label>Install networked finger part</CNInstallNetworkedFingerPart.label>
+	<CNInstallNetworkedFingerPart.description>Install a networked finger part</CNInstallNetworkedFingerPart.description>
+	<CNInstallNetworkedFingerPart.jobString>Installing networked finger part</CNInstallNetworkedFingerPart.jobString>
+
+
+	<!-- cnn foot -->
+
+	<CNInstallNetworkedFootPart.label>Install networked foot part</CNInstallNetworkedFootPart.label>
+	<CNInstallNetworkedFootPart.description>Install a networked foot part</CNInstallNetworkedFootPart.description>
+	<CNInstallNetworkedFootPart.jobString>Installing networked foot part</CNInstallNetworkedFootPart.jobString>
+
+
+	<!-- cnn toe -->
+
+	<CNInstallNetworkedToePart.label>Install networked toe part</CNInstallNetworkedToePart.label>
+	<CNInstallNetworkedToePart.description>Install a networked toe part</CNInstallNetworkedToePart.description>
+	<CNInstallNetworkedToePart.jobString>Installing networked toe part</CNInstallNetworkedToePart.jobString>
+
+
+</LanguageData>

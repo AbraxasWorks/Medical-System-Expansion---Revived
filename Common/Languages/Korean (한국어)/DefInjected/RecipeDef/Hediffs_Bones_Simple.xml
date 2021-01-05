@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- sternum -->
+
+	<InstallSimpleProstheticSternum.label>인공 흉골 이식</InstallSimpleProstheticSternum.label>
+	<InstallSimpleProstheticSternum.description>인공 흉골을 이식합니다.</InstallSimpleProstheticSternum.description>
+	<InstallSimpleProstheticSternum.jobString>인공 흉골 이식 중.</InstallSimpleProstheticSternum.jobString>
+
+
+	<!-- clavicle -->
+
+
+	<InstallSimpleProstheticClavicle.label>인공 쇄골 이식</InstallSimpleProstheticClavicle.label>
+	<InstallSimpleProstheticClavicle.description>인공 쇄골을 이식합니다.</InstallSimpleProstheticClavicle.description>
+	<InstallSimpleProstheticClavicle.jobString>인공 쇄골 이식 중.</InstallSimpleProstheticClavicle.jobString>
+
+	<!-- humerus -->
+
+
+	<InstallSimpleProstheticHumerus.label>인공 상완골 이식</InstallSimpleProstheticHumerus.label>
+	<InstallSimpleProstheticHumerus.description>인공 상완골을 이식합니다.</InstallSimpleProstheticHumerus.description>
+	<InstallSimpleProstheticHumerus.jobString>인공 상완골 이식 중.</InstallSimpleProstheticHumerus.jobString>
+
+
+	<!-- radius -->
+
+	<InstallSimpleProstheticRadius.label>인공 요골 이식</InstallSimpleProstheticRadius.label>
+	<InstallSimpleProstheticRadius.description>인공 요골을 이식합니다.</InstallSimpleProstheticRadius.description>
+	<InstallSimpleProstheticRadius.jobString>인공 요골 이식 중.</InstallSimpleProstheticRadius.jobString>
+
+
+	<!-- femur -->
+	<InstallSimpleProstheticFemur.label>인공 대퇴골 이식</InstallSimpleProstheticFemur.label>
+	<InstallSimpleProstheticFemur.description>인공 대퇴골을 이식합니다.</InstallSimpleProstheticFemur.description>
+	<InstallSimpleProstheticFemur.jobString>인공 대퇴골 이식 중.</InstallSimpleProstheticFemur.jobString>
+
+
+
+	<!-- tibia -->
+
+
+	<InstallSimpleProstheticTibia.label>인공 정강이뼈 이식</InstallSimpleProstheticTibia.label>
+	<InstallSimpleProstheticTibia.description>인공 정강이뼈를 이식합니다.</InstallSimpleProstheticTibia.description>
+	<InstallSimpleProstheticTibia.jobString>인공 정강이뼈 이식 중.</InstallSimpleProstheticTibia.jobString>
+
+
+
+</LanguageData>

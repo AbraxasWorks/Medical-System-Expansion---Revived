@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Modules Removal Surgery -->
+
+	<MSE_RemoveModules.label>모듈 제거</MSE_RemoveModules.label>
+	<MSE_RemoveModules.description>몸에 장착된 모듈을 제거합니다.</MSE_RemoveModules.description>
+	<MSE_RemoveModules.jobString>모듈 제거 중.</MSE_RemoveModules.jobString>
+
+
+</LanguageData>

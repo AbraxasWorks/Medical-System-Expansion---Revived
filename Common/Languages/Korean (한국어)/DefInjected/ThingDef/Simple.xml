@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+	<SimpleProstheticLegAnimal.label>인공 동물 다리</SimpleProstheticLegAnimal.label>
+	<SimpleProstheticLegAnimal.description>동물을 위한 생체공학 다리. 종에 구분없이 이식할 수 있습니다.</SimpleProstheticLegAnimal.description>
+
+
+	<!-- paw -->
+
+	<SimpleProstheticPawAnimal.label>인공 동물 손</SimpleProstheticPawAnimal.label>
+	<SimpleProstheticPawAnimal.description>동물을 위한 생체공학 손. 종에 구분없이 이식할 수 있습니다.</SimpleProstheticPawAnimal.description>
+
+
+	<!-- hoof -->
+
+	<SimpleProstheticHoofAnimal.label>인공 동물 발굽</SimpleProstheticHoofAnimal.label>
+	<SimpleProstheticHoofAnimal.description>동물을 위한 생체공학 발굽. 종에 구분없이 이식할 수 있습니다.</SimpleProstheticHoofAnimal.description>
+
+
+	<!-- foot -->
+
+	<SimpleProstheticFootAnimal.label>인공 동물 발</SimpleProstheticFootAnimal.label>
+	<SimpleProstheticFootAnimal.description>동물을 위한 생체공학 발. 종에 구분없이 이식할 수 있습니다.</SimpleProstheticFootAnimal.description>
+
+
+	<!-- toe -->
+
+	<SimpleProstheticToeAnimal.label>인공 동물 발가락</SimpleProstheticToeAnimal.label>
+	<SimpleProstheticToeAnimal.description>동물을 위한 생체공학 발가락. 종에 구분없이 이식할 수 있습니다.</SimpleProstheticToeAnimal.description>
+
+
+</LanguageData>

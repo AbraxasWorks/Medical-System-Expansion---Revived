@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- arm -->
+
+	<SimpleProstheticArm.label>인공 팔</SimpleProstheticArm.label>
+	<SimpleProstheticArm.description>인공 팔. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticArm.description>
+
+
+	<!-- hand -->
+
+	<SimpleProstheticHand.label>인공 손</SimpleProstheticHand.label>
+	<SimpleProstheticHand.description>인공 손. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticHand.description>
+
+
+	<!-- finger -->
+
+	<SimpleProstheticFinger.label>인공 손가락</SimpleProstheticFinger.label>
+	<SimpleProstheticFinger.description>인공 손가락. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticFinger.description>
+
+
+	<!-- leg -->
+
+	<SimpleProstheticLeg.label>인공 다리</SimpleProstheticLeg.label>
+	<SimpleProstheticLeg.description>인공 다리. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticLeg.description>
+
+
+	<!-- foot -->
+
+	<SimpleProstheticFoot.label>인공 발</SimpleProstheticFoot.label>
+	<SimpleProstheticFoot.description>인공 발. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticFoot.description>
+
+
+	<!-- toe -->
+
+	<SimpleProstheticToe.label>인공 발가락</SimpleProstheticToe.label>
+	<SimpleProstheticToe.description>인공 발가락. 정교한 관절 구조 덕분에 신경이 연결되어있지 않음에도 불구하고 어느정도는 자연스럽게 움직일 수 있지만, 진짜만큼 편하진 않습니다.</SimpleProstheticToe.description>
+
+
+</LanguageData>
