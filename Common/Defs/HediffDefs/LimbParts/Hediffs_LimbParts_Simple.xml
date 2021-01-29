@@ -11,6 +11,9 @@
 	</HediffDef>
 
 	<ThingDef Abstract="True" Name="BodyPartProsthetic_Limb" ParentName="BodyPartProstheticMakeableBase">
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
 	</ThingDef>
 
 	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_Simple" ParentName="SurgeryInstallBodyPartProstheticBase">
@@ -27,9 +30,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticArm</defName>
-		<label>prosthetic arm</label>
-		<labelNoun>a prosthetic arm</labelNoun>
-		<description>An installed prosthetic arm.</description>
+		<label>prosthetic shoulder</label>
+		<labelNoun>a prosthetic shoulder</labelNoun>
+		<description>An installed prosthetic shoulder.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticArm</ThingDef>
 		</descriptionHyperlinks>
@@ -40,6 +43,7 @@
 		<modExtensions>
 			<li Class="MSE2.IgnoreSubParts">
 				<ignoredSubParts>
+					<li>Clavicle</li>
 					<li>Humerus</li>
 					<li>Radius</li>
 				</ignoredSubParts>
@@ -55,20 +59,17 @@
 			<RecipeDef>InstallSimpleProstheticArm</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
-			<Steel>21</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>10</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>3</Mass>
+			<WorkToMake>2400</WorkToMake>
+			<Mass>1.4</Mass>
 		</statBases>
-		<techHediffsTags>
-			<li>Simple</li>
-		</techHediffsTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
-					<li>SimpleProstheticHand</li>
+					<li>SimpleProstheticForearm</li>
 				</standardChildren>
 			</li>
 		</comps>
@@ -99,9 +100,86 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Arm</li>
+			<li>Shoulder</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticArm</addsHediff>
+	</RecipeDef>
+
+	<!-- forearm -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
+		<defName>SimpleProstheticForearm</defName>
+		<label>prosthetic arm</label>
+		<labelNoun>a prosthetic arm</labelNoun>
+		<description>An installed prosthetic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearm</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>0.50</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>SimpleProstheticForearm</spawnThingOnRemoved>
+		<modExtensions>
+			<li Class="MSE2.IgnoreSubParts">
+				<ignoredSubParts>
+					<li>Humerus</li>
+					<li>Radius</li>
+				</ignoredSubParts>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProsthetic_Limb">
+		<defName>SimpleProstheticForearm</defName>
+		<label>prosthetic forearm</label>
+		<description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallSimpleProstheticForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>11</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>1.6</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>SimpleProstheticHand</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_Simple">
+		<defName>InstallSimpleProstheticForearm</defName>
+		<label>install prosthetic forearm</label>
+		<description>Installs a prosthetic forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticForearm</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticForearm</addsHediff>
 	</RecipeDef>
 
 	<!-- hand -->
@@ -279,9 +357,6 @@
 			<WorkToMake>6000</WorkToMake>
 			<Mass>6</Mass>
 		</statBases>
-		<techHediffsTags>
-			<li>Simple</li>
-		</techHediffsTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
@@ -352,9 +427,6 @@
 			<WorkToMake>6000</WorkToMake>
 			<Mass>1.4</Mass>
 		</statBases>
-		<techHediffsTags>
-			<li>Simple</li>
-		</techHediffsTags>
 		<comps>
 			<li Class="MSE2.CompProperties_IncludedChildParts">
 				<standardChildren>
