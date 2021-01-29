@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- HediffHideModeSetting -->
+	<HediffHideModeSetting_Title>Hide standard sub-parts</HediffHideModeSetting_Title>
+	<HediffHideModeSetting_Description>Choose when standard subparts should be hidden in the Health Overview tab.
+ - Always: standard sub-parts will be always hidden
+ - Never: standard sub-parts will be always visible
+ - Clean: standard sub-parts will be hidden when there are no other hediffs on their part</HediffHideModeSetting_Description>
+	<HediffHideModeSetting_Always>Always</HediffHideModeSetting_Always>
+	<HediffHideModeSetting_Never>Never</HediffHideModeSetting_Never>
+	<HediffHideModeSetting_Clean>Clean</HediffHideModeSetting_Clean>
+
+
+</LanguageData>
