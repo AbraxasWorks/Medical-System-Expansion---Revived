@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[defName="SimpleProstheticHand" or defName="BionicHand" or defName="ArchotechHand"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="MSE2.IgnoreSubParts">
+					<ignoredSubParts>
+						<li>RightHandClaws</li>
+						<li>LeftHandClaws</li>
+					</ignoredSubParts>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
+
+</Patch>
