@@ -9,8 +9,7 @@
 
 	<!-- module surgery -->
 
-	<RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="SurgeryFlesh" Abstract="True">
-		<workerClass>MSE2.Recipe_InstallModule</workerClass>
+	<RecipeDef Name="MSE_ModuleSurgeryBase" ParentName="SurgeryFlesh" Abstract="True">
 		<workAmount>1500</workAmount>
 		<skillRequirements>
 			<Medicine>5</Medicine>
@@ -18,6 +17,18 @@
 		<recipeUsers>
 			<li>Human</li>
 		</recipeUsers>
+		<anesthetize>false</anesthetize>
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<bodySizeRange>0~4</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- module installation -->
+
+	<RecipeDef Name="MSE_SurgeryInstallModuleBase" ParentName="MSE_ModuleSurgeryBase" Abstract="True">
+		<workerClass>MSE2.Recipe_InstallModule</workerClass>
 		<ingredients>
 			<li>
 				<filter>
@@ -33,31 +44,17 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<anesthetize>false</anesthetize>
-
-		<modExtensions>
-			<li Class="MSE2.AutoRecipeUsers">
-				<minIntelligence>Humanlike</minIntelligence>
-				<bodySizeRange>0~4</bodySizeRange>
-			</li>
-		</modExtensions>
-
 	</RecipeDef>
-
 
 	<!-- Modules Removal Surgery -->
 
-	<RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="MSE_ModuleSurgeryBase">
+		<workerClass>MSE2.Recipe_RemoveModules</workerClass>
 		<defName>MSE_RemoveModules</defName>
 		<label>remove modules</label>
 		<description>Remove a modules from a bodypart.</description>
-		<workerClass>MSE2.Recipe_RemoveModules</workerClass>
 		<jobString>Removing modules.</jobString>
-		<workAmount>1500</workAmount>
-		<recipeUsers>
-			<li>Human</li>
-		</recipeUsers>
-		<anesthetize>false</anesthetize>
+		<isViolation>true</isViolation>
 	</RecipeDef>
 
 	<!-- module slot -->
