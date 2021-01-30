@@ -44,6 +44,7 @@
 			<li Class="MSE2.IgnoreSubParts">
 				<ignoredSubParts>
 					<li>Clavicle</li>
+					<!-- for back compatibility -->
 					<li>Humerus</li>
 					<li>Radius</li>
 				</ignoredSubParts>
