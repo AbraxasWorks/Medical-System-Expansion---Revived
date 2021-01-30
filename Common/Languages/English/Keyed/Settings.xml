@@ -11,5 +11,8 @@
 	<HediffHideModeSetting_Never>Never</HediffHideModeSetting_Never>
 	<HediffHideModeSetting_Clean>Clean</HediffHideModeSetting_Clean>
 
+	<!-- RemoveAllFromSegmentSetting -->
+	<RemoveAllFromSegmentSetting_Title>Remove all sub-parts from segment version</RemoveAllFromSegmentSetting_Title>
+	<RemoveAllFromSegmentSetting_Description>Enabling this will remove and spawn all sub-parts after switching a prosthetic to Segment version.</RemoveAllFromSegmentSetting_Description>
 
 </LanguageData>
