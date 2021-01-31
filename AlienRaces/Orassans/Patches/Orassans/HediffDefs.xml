@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/HediffDef[defName="SimpleProstheticHand" or defName="BionicHand" or defName="ArchotechHand"]</xpath>
+		<xpath>/Defs/HediffDef[defName="SimpleProstheticHand" or defName="BionicHand" or defName="ArchotechHand" or defName="MechanicalManipulator" or defName="FieldHand"]</xpath>
 		<value>
 			<modExtensions>
 				<li Class="MSE2.IgnoreSubParts">
