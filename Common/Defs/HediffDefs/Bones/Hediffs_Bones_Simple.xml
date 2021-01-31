@@ -70,6 +70,7 @@
 		<description>Install a prosthetic sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticSternum</ThingDef>
+			<HediffDef>SimpleProstheticSternum</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic sternum.</jobString>
 		<ingredients>
@@ -127,6 +128,7 @@
 		<description>Install a prosthetic clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticClavicle</ThingDef>
+			<HediffDef>SimpleProstheticClavicle</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic clavicle.</jobString>
 		<ingredients>
@@ -184,6 +186,7 @@
 		<description>Install a prosthetic humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHumerus</ThingDef>
+			<HediffDef>SimpleProstheticHumerus</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic humerus.</jobString>
 		<ingredients>
@@ -241,6 +244,7 @@
 		<description>Install a prosthetic radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticRadius</ThingDef>
+			<HediffDef>SimpleProstheticRadius</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic radius.</jobString>
 		<ingredients>
@@ -298,6 +302,7 @@
 		<description>Install a prosthetic femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFemur</ThingDef>
+			<HediffDef>SimpleProstheticFemur</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic femur.</jobString>
 		<ingredients>
@@ -355,6 +360,7 @@
 		<description>Install a prosthetic tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticTibia</ThingDef>
+			<HediffDef>SimpleProstheticTibia</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic tibia.</jobString>
 		<ingredients>

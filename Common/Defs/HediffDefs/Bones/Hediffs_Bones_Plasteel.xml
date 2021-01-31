@@ -70,6 +70,7 @@
 		<description>Install a plasteel sternum.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelSternum</ThingDef>
+			<HediffDef>PlasteelSternum</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel sternum.</jobString>
 		<ingredients>
@@ -127,6 +128,7 @@
 		<description>Install a plasteel clavicle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelClavicle</ThingDef>
+			<HediffDef>PlasteelClavicle</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel clavicle.</jobString>
 		<ingredients>
@@ -184,6 +186,7 @@
 		<description>Install a plasteel humerus.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelHumerus</ThingDef>
+			<HediffDef>PlasteelHumerus</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel humerus.</jobString>
 		<ingredients>
@@ -241,6 +244,7 @@
 		<description>Install a plasteel radius.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelRadius</ThingDef>
+			<HediffDef>PlasteelRadius</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel radius.</jobString>
 		<ingredients>
@@ -298,6 +302,7 @@
 		<description>Install a plasteel femur.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelFemur</ThingDef>
+			<HediffDef>PlasteelFemur</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel femur.</jobString>
 		<ingredients>
@@ -355,6 +360,7 @@
 		<description>Install a plasteel tibia.</description>
 		<descriptionHyperlinks>
 			<ThingDef>PlasteelTibia</ThingDef>
+			<HediffDef>PlasteelTibia</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing plasteel tibia.</jobString>
 		<ingredients>

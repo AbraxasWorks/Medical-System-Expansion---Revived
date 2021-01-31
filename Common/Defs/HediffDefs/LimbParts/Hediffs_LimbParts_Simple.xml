@@ -160,6 +160,7 @@
 		<description>Installs a prosthetic forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticForearm</ThingDef>
+			<HediffDef>SimpleProstheticForearm</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic forearm.</jobString>
 		<ingredients>
@@ -230,6 +231,7 @@
 		<description>Install a prosthetic hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticHand</ThingDef>
+			<HediffDef>SimpleProstheticHand</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic hand.</jobString>
 		<ingredients>
@@ -296,6 +298,7 @@
 		<description>Install a prosthetic finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFinger</ThingDef>
+			<HediffDef>SimpleProstheticFinger</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic finger.</jobString>
 		<ingredients>
@@ -443,6 +446,7 @@
 		<description>Install a prosthetic foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticFoot</ThingDef>
+			<HediffDef>SimpleProstheticFoot</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic foot.</jobString>
 		<ingredients>
@@ -508,6 +512,7 @@
 		<description>Install a prosthetic toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticToe</ThingDef>
+			<HediffDef>SimpleProstheticToe</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing prosthetic toe.</jobString>
 		<ingredients>

@@ -58,6 +58,7 @@
 		<description>Install an archotech internal support.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechInternalSupport</ThingDef>
+			<HediffDef>ArchotechInternalSupport</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech internal support.</jobString>
 		<ingredients>
@@ -217,6 +218,7 @@
 		<description>Install an archotech forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechForearm</ThingDef>
+			<HediffDef>ArchotechForearm</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech forearm.</jobString>
 		<ingredients>
@@ -288,6 +290,7 @@
 		<description>Install an archotech hand.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechHand</ThingDef>
+			<HediffDef>ArchotechHand</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech hand.</jobString>
 		<ingredients>
@@ -347,6 +350,7 @@
 		<description>Install an archotech finger.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechFinger</ThingDef>
+			<HediffDef>ArchotechFinger</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech finger.</jobString>
 		<ingredients>
@@ -492,6 +496,7 @@
 		<description>Install an archotech foot.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechFoot</ThingDef>
+			<HediffDef>ArchotechFoot</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech foot.</jobString>
 		<ingredients>
@@ -551,6 +556,7 @@
 		<description>Install an archotech toe.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechToe</ThingDef>
+			<HediffDef>ArchotechToe</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech toe.</jobString>
 		<ingredients>
