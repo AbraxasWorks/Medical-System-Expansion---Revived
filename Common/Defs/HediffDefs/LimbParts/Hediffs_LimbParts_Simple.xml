@@ -30,9 +30,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticArm</defName>
-		<label>prosthetic shoulder</label>
-		<labelNoun>a prosthetic shoulder</labelNoun>
-		<description>An installed prosthetic shoulder.</description>
+		<label>prosthetic arm</label>
+		<labelNoun>a prosthetic arm</labelNoun>
+		<description>An installed prosthetic arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticArm</ThingDef>
 		</descriptionHyperlinks>
@@ -110,9 +110,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Simple">
 		<defName>SimpleProstheticForearm</defName>
-		<label>prosthetic arm</label>
-		<labelNoun>a prosthetic arm</labelNoun>
-		<description>An installed prosthetic arm.</description>
+		<label>prosthetic forearm</label>
+		<labelNoun>a prosthetic forearm</labelNoun>
+		<description>An installed prosthetic forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SimpleProstheticForearm</ThingDef>
 		</descriptionHyperlinks>

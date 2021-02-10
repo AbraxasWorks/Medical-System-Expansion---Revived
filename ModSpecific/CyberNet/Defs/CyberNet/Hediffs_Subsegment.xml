@@ -122,7 +122,7 @@
 
 	<HediffDef ParentName="CNHediffProsthetic_Subsegment">
 		<defName>CNNetworkedForearmPart</defName>
-		<label>networked arm part</label>
+		<label>networked forearm part</label>
 		<labelNoun>a networked forearm part</labelNoun>
 		<description>A networked prosthetic that offloads processing to remote processors. Cheaper than self contained bionic forearms, and more efficient, but requires infrastructure to function.</description>
 		<spawnThingOnRemoved>CNNetworkedForearmPart</spawnThingOnRemoved>

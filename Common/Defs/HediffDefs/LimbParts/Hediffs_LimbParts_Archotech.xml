@@ -99,9 +99,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechArm</defName>
-		<label>archotech shoulder</label>
-		<labelNoun>an archotech shoulder</labelNoun>
-		<description>An installed archotech shoulder.</description>
+		<label>archotech arm</label>
+		<labelNoun>an archotech arm</labelNoun>
+		<description>An installed archotech arm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechArm</ThingDef>
 		</descriptionHyperlinks>
@@ -174,9 +174,9 @@
 
 	<HediffDef ParentName="AddedBodyPart_Limb_Archotech">
 		<defName>ArchotechForearm</defName>
-		<label>archotech arm</label>
-		<labelNoun>an archotech arm</labelNoun>
-		<description>An installed archotech arm.</description>
+		<label>archotech forearm</label>
+		<labelNoun>an archotech forearm</labelNoun>
+		<description>An installed archotech forearm.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechForearm</ThingDef>
 		</descriptionHyperlinks>
