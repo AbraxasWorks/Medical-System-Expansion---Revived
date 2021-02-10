@@ -6,5 +6,9 @@
 		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedArchotech"][defName="ArchotechObliterator"]</xpath>
 		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechObliterator"]/*[name()="comps" or name()="stages"]</fromxpath>
 	</Operation>
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedArchotech"][defName="ArchotechDeathClaw"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechDeathClaw"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
 
 </Patch>

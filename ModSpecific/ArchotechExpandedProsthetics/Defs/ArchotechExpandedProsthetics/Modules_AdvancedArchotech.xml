@@ -27,8 +27,11 @@
 		</thingSetMakerTags>
 		<statBases>
 			<MarketValue>18000</MarketValue>
-			<Mass>4</Mass>
+			<Mass>2</Mass>
 		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
 	</ThingDef>
 
 	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
@@ -61,6 +64,64 @@
 		<addsHediff>ArchotechObliterator</addsHediff>
 	</RecipeDef>
 
+	<!-- death claw -->
 
+	<HediffDef ParentName="MSE_ModuleAddedArchotech">
+		<defName>ArchotechDeathClaw</defName>
+		<label>archotech death claw</label>
+		<labelNoun>an archotech death claw</labelNoun>
+		<description>An installed archotech death claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechDeathClaw</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechDeathClaw</spawnThingOnRemoved>
+		<!-- comps added via patch -->
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>ArchotechDeathClaw</defName>
+		<label>archotech death claw</label>
+		<description>An artificial arm built by an archotech. From the arm pertrudes giant spikes and claws which lash out and serrate anything that comes too close. Its internal workings are a mystery to all human minds.</description>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>18000</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallArchotechDeathClaw</defName>
+		<label>install archotech death claw</label>
+		<description>Install an archotech death claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechDeathClaw</ThingDef>
+			<HediffDef>ArchotechDeathClaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech death claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechDeathClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechDeathClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechDeathClaw</addsHediff>
+	</RecipeDef>
 
 </Defs>
