@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!-- base -->
+
+	<HediffDef Abstract="True" Name="AddedBodyPart_Limb_AdvancedArchotech" ParentName="AddedBodyPart_Limb_Archotech">
+		<addedPartProps>
+			<partEfficiency>4</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef Abstract="True" Name="BodyPartAdvancedAchotech_Limb" ParentName="BodyPartAchotech_Limb">
+	</ThingDef>
+
+	<RecipeDef Abstract="True" Name="SurgeryInstallBodyPart_Limb_AdvancedArchotech" ParentName="SurgeryInstallBodyPart_Limb_Archotech">
+	</RecipeDef>
+
+	<!-- internal support -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechInternalSupport</defName>
+		<label>advanced archotech internal support</label>
+		<labelNoun>an advanced archotech internal support</labelNoun>
+		<description>An installed advanced archotech internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechInternalSupport</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechInternalSupport</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>3.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechInternalSupport</defName>
+		<label>advanced archotech internal support</label>
+		<description>An artificial internal support built by an archotech. Useful replacement to have on hand for when an internal component of an advanced archotech prosthesis breaks.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechInternalSupport</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechInternalSupport</defName>
+		<label>install advanced archotech internal support</label>
+		<description>Install an advanced archotech internal support.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechInternalSupport</ThingDef>
+			<HediffDef>AdvancedArchotechInternalSupport</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech internal support.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechInternalSupport</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechInternalSupport</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Clavicle</li>
+			<li>Humerus</li>
+			<li>Radius</li>
+			<li>Femur</li>
+			<li>Tibia</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechInternalSupport</addsHediff>
+		<modExtensions>
+			<li Class="MSE2.InstallationRestrictions">
+				<whitelist>
+					<li>AdvancedArchotechArm</li>
+					<li>AdvancedArchotechForearm</li>
+					<li>AdvancedArchotechLeg</li>
+				</whitelist>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- arm -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechArm</defName>
+		<label>advanced archotech arm</label>
+		<labelNoun>an advanced archotech arm</labelNoun>
+		<description>An installed advanced archotech arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechArm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechArm</defName>
+		<label>advanced archotech arm</label>
+		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechArm</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedArchotechForearm</li>
+					<li>AdvancedArchotechInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechArm</defName>
+		<label>install advanced archotech arm</label>
+		<description>Install an advanced archotech arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechArm</ThingDef>
+			<HediffDef>AdvancedArchotechArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechArm</addsHediff>
+	</RecipeDef>
+
+	<!-- advanced archotech forearm -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechForearm</defName>
+		<label>advanced archotech forearm</label>
+		<labelNoun>an advanced archotech forearm</labelNoun>
+		<description>An installed advanced archotech forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechForearm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechForearm</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechForearm</defName>
+		<label>advanced archotech forearm</label>
+		<description>An artifical forearm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechForearm</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<Mass>0.7</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedArchotechHand</li>
+					<li>AdvancedArchotechInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechForearm</defName>
+		<label>install advanced archotech forearm</label>
+		<description>Install an advanced archotech forearm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechForearm</ThingDef>
+			<HediffDef>AdvancedArchotechForearm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech forearm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechForearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechForearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechForearm</addsHediff>
+	</RecipeDef>
+
+	<!-- hand -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechHand</defName>
+		<label>advanced archotech hand</label>
+		<labelNoun>an advanced archotech hand</labelNoun>
+		<description>An installed advanced archotech hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechHand</ThingDef>
+		</descriptionHyperlinks>
+		<!-- verbs added via patch -->
+		<spawnThingOnRemoved>AdvancedArchotechHand</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechHand</defName>
+		<label>advanced archotech hand</label>
+		<description>An artifical hand built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechHand</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2100</MarketValue>
+			<Mass>0.4</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedArchotechFinger</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechHand</defName>
+		<label>install advanced archotech hand</label>
+		<description>Install an advanced archotech hand.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechHand</ThingDef>
+			<HediffDef>AdvancedArchotechHand</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech hand.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechHand</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechHand</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechHand</addsHediff>
+	</RecipeDef>
+
+	<!-- finger -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechFinger</defName>
+		<label>advanced archotech finger</label>
+		<labelNoun>an advanced archotech finger</labelNoun>
+		<description>An installed advanced archotech finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechFinger</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechFinger</spawnThingOnRemoved>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechFinger</defName>
+		<label>advanced archotech finger</label>
+		<description>An artifical finger built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechFinger</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechFinger</defName>
+		<label>install advanced archotech finger</label>
+		<description>Install an advanced archotech finger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechFinger</ThingDef>
+			<HediffDef>AdvancedArchotechFinger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech finger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechFinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechFinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Finger</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechFinger</addsHediff>
+	</RecipeDef>
+
+	<!-- leg -->
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechLeg</defName>
+		<label>advanced archotech leg</label>
+		<labelNoun>an advanced archotech leg</labelNoun>
+		<description>An installed advanced archotech leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechLeg</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>2</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechLeg</defName>
+		<label>advanced archotech leg</label>
+		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>7000</MarketValue>
+			<Mass>4.75</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedArchotechFoot</li>
+					<li>AdvancedArchotechInternalSupport</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechLeg</defName>
+		<label>install advanced archotech leg</label>
+		<description>Install an advanced archotech leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechLeg</ThingDef>
+			<HediffDef>AdvancedArchotechLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechLeg</addsHediff>
+	</RecipeDef>
+
+
+	<!-- foot -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechFoot</defName>
+		<label>advanced archotech foot</label>
+		<labelNoun>an advanced archotech foot</labelNoun>
+		<description>An installed advanced archotech foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechFoot</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechFoot</spawnThingOnRemoved>
+		<comps>
+			<li Class="MSE2.HediffCompProperties_ModuleHolder">
+				<maxModules>1</maxModules>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechFoot</defName>
+		<label>advanced archotech foot</label>
+		<description>An artifical foot built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechFoot</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>3400</MarketValue>
+			<Mass>0.8</Mass>
+		</statBases>
+		<comps>
+			<li Class="MSE2.CompProperties_IncludedChildParts">
+				<standardChildren>
+					<li>AdvancedArchotechToe</li>
+				</standardChildren>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechFoot</defName>
+		<label>install advanced archotech foot</label>
+		<description>Install an advanced archotech foot.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechFoot</ThingDef>
+			<HediffDef>AdvancedArchotechFoot</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech foot.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechFoot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechFoot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechFoot</addsHediff>
+	</RecipeDef>
+
+	<!-- toe -->
+
+	<HediffDef ParentName="AddedBodyPart_Limb_AdvancedArchotech">
+		<defName>AdvancedArchotechToe</defName>
+		<label>advanced archotech toe</label>
+		<labelNoun>an advanced archotech toe</labelNoun>
+		<description>An installed advanced archotech toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechToe</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AdvancedArchotechToe</spawnThingOnRemoved>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
+		<defName>AdvancedArchotechToe</defName>
+		<label>advanced archotech toe</label>
+		<description>An artifical toe built by an archotech. It looks and feels like a natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallAdvancedArchotechToe</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPart_Limb_AdvancedArchotech">
+		<defName>InstallAdvancedArchotechToe</defName>
+		<label>install advanced archotech toe</label>
+		<description>Install an advanced archotech toe.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AdvancedArchotechToe</ThingDef>
+			<HediffDef>AdvancedArchotechToe</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced archotech toe.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvancedArchotechToe</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvancedArchotechToe</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Toe</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AdvancedArchotechToe</addsHediff>
+	</RecipeDef>
+
+
+</Defs>

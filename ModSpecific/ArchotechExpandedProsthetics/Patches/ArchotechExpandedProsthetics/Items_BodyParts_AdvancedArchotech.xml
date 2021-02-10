@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- copy melee verbs -->
+
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_AdvancedArchotech"][defName="AdvancedArchotechHand"]</xpath>
+		<value>
+			<comps/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddCopy">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_AdvancedArchotech"][defName="AdvancedArchotechHand"]/comps</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="AdvancedArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</fromxpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="AdvancedArchotechArm"]/comps/li[@Class="HediffCompProperties_VerbGiver"]</xpath>
+	</Operation>
+
+
+</Patch>
