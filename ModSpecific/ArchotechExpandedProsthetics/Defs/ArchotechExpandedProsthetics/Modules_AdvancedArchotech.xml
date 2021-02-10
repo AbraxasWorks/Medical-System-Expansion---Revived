@@ -7,7 +7,7 @@
 		<defName>ArchotechObliterator</defName>
 		<label>archotech obliterator</label>
 		<labelNoun>an archotech obliterator</labelNoun>
-		<description>An installed archotech obliterator.</description>
+		<description>An installed archotech obliterator module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechObliterator</ThingDef>
 		</descriptionHyperlinks>
@@ -18,7 +18,7 @@
 	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>ArchotechObliterator</defName>
 		<label>archotech obliterator</label>
-		<description>An artificial arm which employs all the benefits of a normal archotech arm, but includes new melee combat features based around attrition and enemy capture. With extremely fast servos the fist is able to extend and retract at remarkable speeds, causing a minature shockwave to form infront of the fist. Its internal workings are a mystery to all human minds.</description>
+		<description>An archotech weapon module which includes melee combat features based around attrition and enemy capture. With extremely fast servos the fist is able to extend and retract at remarkable speeds, causing a minature shockwave to form infront of the fist. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallArchotechObliterator</RecipeDef>
 		</descriptionHyperlinks>
@@ -70,7 +70,7 @@
 		<defName>ArchotechDeathClaw</defName>
 		<label>archotech death claw</label>
 		<labelNoun>an archotech death claw</labelNoun>
-		<description>An installed archotech death claw.</description>
+		<description>An installed archotech death claw module.</description>
 		<descriptionHyperlinks>
 			<ThingDef>ArchotechDeathClaw</ThingDef>
 		</descriptionHyperlinks>
@@ -81,7 +81,7 @@
 	<ThingDef ParentName="MSE_ModuleArchotech">
 		<defName>ArchotechDeathClaw</defName>
 		<label>archotech death claw</label>
-		<description>An artificial arm built by an archotech. From the arm pertrudes giant spikes and claws which lash out and serrate anything that comes too close. Its internal workings are a mystery to all human minds.</description>
+		<description>An archotech weapon module built by an archotech. From the arm pertrudes giant spikes and claws which lash out and serrate anything that comes too close. Its internal workings are a mystery to all human minds.</description>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
 		</thingSetMakerTags>
@@ -119,7 +119,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Hand</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechDeathClaw</addsHediff>
 	</RecipeDef>

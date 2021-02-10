@@ -109,7 +109,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechArm</defName>
 		<label>advanced archotech arm</label>
-		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<description>An advanced version of the archotech's artificial arm. It looks the same, but studies on glitterworlds have proven the arm to be sentient. This added feature allows the arm to make quick descisions a human brain couldn't possibly make. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechArm</RecipeDef>
 		</descriptionHyperlinks>
@@ -181,7 +181,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechForearm</defName>
 		<label>advanced archotech forearm</label>
-		<description>An artifical forearm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<description>An advanced version of the archotech's artificial forearm. It looks the same, but studies on glitterworlds have proven the forearm to be sentient. This added feature allows the forearm to make quick descisions a human brain couldn't possibly make. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechForearm</RecipeDef>
 		</descriptionHyperlinks>
@@ -251,7 +251,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechHand</defName>
 		<label>advanced archotech hand</label>
-		<description>An artifical hand built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<description>An advanced version of the archotech's artificial hand. It looks the same, but studies on glitterworlds have proven the hand to be sentient. This added feature allows the hand to make quick descisions a human brain couldn't possibly make. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechHand</RecipeDef>
 		</descriptionHyperlinks>
@@ -315,7 +315,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechFinger</defName>
 		<label>advanced archotech finger</label>
-		<description>An artifical finger built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<description>An advanced version of the archotech's artificial finger. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechFinger</RecipeDef>
 		</descriptionHyperlinks>
@@ -375,7 +375,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechLeg</defName>
 		<label>advanced archotech leg</label>
-		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<description>An advanced version of the archotech's artificial leg. It looks the same as a regular leg, but allows you much faster movement. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechLeg</RecipeDef>
 		</descriptionHyperlinks>
@@ -448,7 +448,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechFoot</defName>
 		<label>advanced archotech foot</label>
-		<description>An artifical foot built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<description>An advanced version of the archotech's artificial foot. It looks the same as a regular foot, but allows you much faster movement. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechFoot</RecipeDef>
 		</descriptionHyperlinks>
@@ -512,7 +512,7 @@
 	<ThingDef ParentName="BodyPartAdvancedAchotech_Limb">
 		<defName>AdvancedArchotechToe</defName>
 		<label>advanced archotech toe</label>
-		<description>An artifical toe built by an archotech. It looks and feels like a natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires advanced archotech surgery research to install it.</description>
+		<description>An advanced version of the archotech's artificial toe. It looks the same as a regular toe, but allows you much faster movement. Its internal workings are a mystery to all human minds.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedArchotechToe</RecipeDef>
 		</descriptionHyperlinks>
