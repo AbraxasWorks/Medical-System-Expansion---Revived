@@ -20,9 +20,6 @@
 		<techHediffsTags>
 			<li>Archotech</li>
 		</techHediffsTags>
-		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
-		</thingSetMakerTags>
     <statBases>
 			<Mass>2</Mass>
     </statBases>
