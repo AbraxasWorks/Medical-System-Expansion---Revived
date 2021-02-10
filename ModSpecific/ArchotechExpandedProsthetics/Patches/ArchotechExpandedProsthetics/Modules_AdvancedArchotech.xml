@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- copy melee verbs -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedArchotech"][defName="ArchotechObliterator"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="ArchotechObliterator"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+
+</Patch>

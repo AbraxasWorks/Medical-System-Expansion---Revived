@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Archotech Obliterator -->
+
+	<HediffDef ParentName="MSE_ModuleAddedArchotech">
+		<defName>ArchotechObliterator</defName>
+		<label>archotech obliterator</label>
+		<labelNoun>an archotech obliterator</labelNoun>
+		<description>An installed archotech obliterator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechObliterator</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechObliterator</spawnThingOnRemoved>
+		<!-- comps added via patch -->
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleArchotech">
+		<defName>ArchotechObliterator</defName>
+		<label>archotech obliterator</label>
+		<description>An artificial arm which employs all the benefits of a normal archotech arm, but includes new melee combat features based around attrition and enemy capture. With extremely fast servos the fist is able to extend and retract at remarkable speeds, causing a minature shockwave to form infront of the fist. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallArchotechObliterator</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>18000</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallArchotechObliterator</defName>
+		<label>install archotech obliterator</label>
+		<description>Install an archotech obliterator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechObliterator</ThingDef>
+			<HediffDef>ArchotechObliterator</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech obliterator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechObliterator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechObliterator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechObliterator</addsHediff>
+	</RecipeDef>
+
+
+
+</Defs>
