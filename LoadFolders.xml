@@ -15,6 +15,7 @@
 		<li IfModActive="ChaosKnight.KilhnRace">AlienRaces\KilhnRace</li>
 		<li IfModActive="Mlie.CallofCthulhuElderThings">AlienRaces\ElderThings_Race</li>
 		<li IfModActive="dianawinters.Orassans">AlienRaces\Orassans</li>
+		<li IfModActive="Hauvega.EquiumsSeries.Equiums">AlienRaces\Equiums</li>
 
 		<!-- main prosthetics -->
 		<!-- <li IfModNotActive="vat.epoeforked, Ykara.EPOE, Rah.RBSE">ModSpecific\None</li> -->
