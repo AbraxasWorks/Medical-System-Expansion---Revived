@@ -10,6 +10,7 @@
 		<li IfModActive="V1024.EBFramework">ModSpecific\EBF</li>
 		<li IfModActive="automatic.bionicicons">ModSpecific\BionicIcons</li>
 		<li IfModActive="Teok25.ArchotechExpanded.Prosthetics">ModSpecific\ArchotechExpandedProsthetics</li>
+		<li IfModActive="Ogliss.Mythos.ExtendedHumanBodySimulation">ModSpecific\ExtendedHumanBodySimulation</li>
 		
 		<!-- race mods -->
 		<li IfModActive="ChaosKnight.KilhnRace">AlienRaces\KilhnRace</li>

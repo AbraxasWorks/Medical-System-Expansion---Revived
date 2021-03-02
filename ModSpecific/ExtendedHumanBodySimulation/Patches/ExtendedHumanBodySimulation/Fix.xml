@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- forearm -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/HediffDef[ defName="ArchotechForearm" or defName="BionicForearm" or defName="SimpleProstheticForearm" 
+		or defName="DrillArm" 
+		or defName="AA_MutantArm" 
+		or defName="AdvancedArchotechForearm"
+		or defName="CNNetworkedForearmPart"]</xpath>
+		<value>
+			<li Class="MSE2.IgnoreSubParts"></li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[ defName="ArchotechForearm" or defName="BionicForearm" or defName="SimpleProstheticForearm" 
+		or defName="DrillArm" 
+		or defName="AA_MutantArm" 
+		or defName="AdvancedArchotechForearm"
+		or defName="CNNetworkedForearmPart"] /modExtensions/li[@Class="MSE2.IgnoreSubParts"]</xpath>
+		<value>
+			<ignoredSubParts>
+				<li>Ulna</li>
+			</ignoredSubParts>
+		</value>
+	</Operation>
+
+	<!-- leg -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/HediffDef[defName="ArchotechLeg" or defName="BionicLeg" or defName="SimpleProstheticLeg"
+		or defName ="AA_MutantLeg"
+		or defName ="AdvancedArchotechLeg"
+		or defName ="CNAdvancedNetworkedLeg" or defName ="CNNetworkedLeg"]</xpath>
+		<value>
+			<li Class="MSE2.IgnoreSubParts"></li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddOrMerge">
+		<xpath>/Defs/HediffDef[defName="ArchotechLeg" or defName="BionicLeg" or defName="SimpleProstheticLeg"
+		or defName ="AA_MutantLeg"
+		or defName ="AdvancedArchotechLeg"
+		or defName ="CNAdvancedNetworkedLeg" or defName ="CNNetworkedLeg"] /modExtensions/li[@Class="MSE2.IgnoreSubParts"]</xpath>
+		<value>
+			<ignoredSubParts>
+				<li>Patella</li>
+				<li>Fibula</li>
+			</ignoredSubParts>
+		</value>
+	</Operation>
+
+
+</Patch>
