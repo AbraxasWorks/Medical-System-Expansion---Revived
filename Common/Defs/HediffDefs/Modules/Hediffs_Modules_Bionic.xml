@@ -27,9 +27,6 @@
 			<WorkToMake>20000</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
-		<!-- <thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags> -->
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
