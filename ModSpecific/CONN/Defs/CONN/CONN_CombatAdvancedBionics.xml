@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <ThingDef Name="CombatAdvancedBionicsBase_Module" ParentName="MSE_ModuleBionic" Abstract="True">
+    <!-- copied via patch -->
+  </ThingDef>
+
+	<!-- Outer Blade -->
+  <HediffDef ParentName="MSE_ModuleAddedBionic">
+    <defName>Trunken_hediff_OuterBlade</defName>
+    <label>outer blade module</label>
+    <description>A combat-oriented forearm module consisting of a mechanical implementation with a telescopic blade behind the ulna. It is deadly in combat, and its plasteel breakout weapon can pierce through nearly anything due to the hydraulic forces applied. The blade can be retracted and is easy to hide.</description>
+    <labelNoun>an outer blade module</labelNoun>
+    <defaultLabelColor>(0, 0.6, 0.4)</defaultLabelColor>
+    <spawnThingOnRemoved>ANN_OuterBlade</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_OuterBlade</ThingDef>
+    </descriptionHyperlinks>
+		<!-- comps and stages copied via patch -->
+    <comps>
+    </comps>
+    <stages>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="CombatAdvancedBionicsBase_Module">
+    <defName>ANN_OuterBlade</defName>
+    <label>outer blade module</label>
+    <description>A combat-oriented forearm module consisting of a mechanical implementation with a telescopic blade behind the ulna. It is deadly in combat, and its plasteel breakout weapon can pierce through nearly anything due to the hydraulic forces applied. The blade can be retracted and is easy to hide.</description>
+    <costList>
+      <Gold>3</Gold>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>ANN_InstallOuterBlade</defName>
+    <label>install outer blade module</label>
+    <description>Install outer blade module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_OuterBlade</ThingDef>
+      <HediffDef>Trunken_hediff_OuterBlade</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing outer blade.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ANN_OuterBlade</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ANN_OuterBlade</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Trunken_hediff_OuterBlade</addsHediff>
+    <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>

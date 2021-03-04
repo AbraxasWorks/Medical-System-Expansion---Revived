@@ -6,10 +6,10 @@
 		<xpath> /Defs/HediffDef[@ParentName="AddedBodyPartBase"] [defName="Trunken_hediff_PowerArms"]</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath> /Defs/ThingDef[@ParentName="BodyPartBionicBase"] [defName="ANN_PowerArms"]</xpath>
+		<xpath> /Defs/ThingDef[@ParentName="CombatAdvancedBionicsBase"] [defName="ANN_PowerArms"]</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath> /Defs/RecipeDef[@ParentName="SurgeryFlesh"] [defName="InstallPowerArms"]</xpath>
+		<xpath> /Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"] [defName="ANN_InstallPowerArms"]</xpath>
 	</Operation>
 
 </Patch>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- abstract -->
+
+  <ThingDef Name="CombatBionicsBase_Module" ParentName="MSE_ModuleBionic" Abstract="True">
+    <!-- copied via patch -->
+  </ThingDef>
+
+	<!-- energy fist -->
+
+  <HediffDef ParentName="MSE_ModuleAddedBionic">
+    <defName>Trunken_hediff_EnergyFist</defName>
+    <label>energy fist module</label>
+    <description>A combat-oriented hand module consisting of a pumping system inside the wrist. The pump allows for quick, controlled punches. The mechanical trigger lets you have control about its sheer power with its powerful speed boosts bounded on neural connectors and energized by an ultratech micro-battery.</description>
+    <labelNoun>an energy fist</labelNoun>
+    <defaultLabelColor>(0, 0.8, 0.5)</defaultLabelColor>
+    <spawnThingOnRemoved>ANN_EnergyFist</spawnThingOnRemoved>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_EnergyFist</ThingDef>
+    </descriptionHyperlinks>
+		<stages>
+			<li>
+				<partEfficiencyOffset>0.30</partEfficiencyOffset>
+			</li>
+		</stages>
+		<!-- comps copied via patch -->
+    <comps>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="CombatBionicsBase_Module">
+    <defName>ANN_EnergyFist</defName>
+    <label>energy fist module</label>
+    <description>A combat-oriented hand module consisting of a pumping system inside the wrist. The pump allows for quick, controlled punches. The mechanical trigger lets you have control about its sheer power with its powerful speed boosts bounded on neural connectors and energized by an ultratech micro-battery.</description>
+    <costList>
+      <Gold>3</Gold>
+      <Uranium>10</Uranium>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+    <defName>ANN_InstallEnergyFist</defName>
+    <label>install energy fist module</label>
+    <description>Install energy fist module.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ANN_EnergyFist</ThingDef>
+      <HediffDef>Trunken_hediff_EnergyFist</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing energy fist.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ANN_EnergyFist</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ANN_EnergyFist</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Trunken_hediff_EnergyFist</addsHediff>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ==== CONN_CombatAdvancedBionics ==== -->
+
+	<!-- copy abstract -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/ThingDef[@Name="CombatAdvancedBionicsBase_Module"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="CombatAdvancedBionicsBase"]/*</fromxpath>
+	</Operation>
+
+	<!-- copy outer blade stuff -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="Trunken_hediff_OuterBlade"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="Trunken_hediff_OuterBlade"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+
+
+	<!-- CONN_CombatBionics -->
+
+	<!-- copy abstract -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/ThingDef[@Name="CombatBionicsBase_Module"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="CombatBionicsBase"]/*</fromxpath>
+	</Operation>
+
+	<!-- copy energy fist stuff -->
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/HediffDef[@ParentName="MSE_ModuleAddedBionic"][defName="Trunken_hediff_EnergyFist"]</xpath>
+		<fromxpath>/Defs/HediffDef[@ParentName="AddedBodyPartBase"][defName="Trunken_hediff_EnergyFist"]/*[name()="comps" or name()="stages"]</fromxpath>
+	</Operation>
+
+
+	<!-- === CONN_ProductiveBionics ==== -->
+	
+	<!-- copy abstract -->	
+	<Operation Class="PatchOperationAddOrMergeCopy">
+		<xpath>/Defs/ThingDef[@Name="ProductiveBionicsBase_Module"]</xpath>
+		<fromxpath>/Defs/ThingDef[@Name="ProductiveBionicsBase"]/*</fromxpath>
+	</Operation>
+
+
+</Patch>
