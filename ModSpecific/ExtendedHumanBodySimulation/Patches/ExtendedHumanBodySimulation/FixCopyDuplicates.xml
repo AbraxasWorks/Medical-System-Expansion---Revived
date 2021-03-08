@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- remove extra copied stuff -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[@Abstract="True"][@Name="BodyPartProsthetic_Limb" or @Name="BodyPartProsthetic_Bone"]/graphicData[1]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/HediffDef[@Abstract="True"][@Name="AddedBodyPart_Limb_Simple" or @Name="AddedBodyPart_Bone_Prosthetic"]/defaultLabelColor[1]</xpath>
+	</Operation>
+
+</Patch>
