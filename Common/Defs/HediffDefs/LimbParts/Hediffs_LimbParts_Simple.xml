@@ -40,16 +40,6 @@
 		<addedPartProps>
 			<partEfficiency>0.50</partEfficiency>
 		</addedPartProps>
-		<modExtensions>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Clavicle</li>
-					<!-- for back compatibility -->
-					<li>Humerus</li>
-					<li>Radius</li>
-				</ignoredSubParts>
-			</li>
-		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
@@ -120,14 +110,6 @@
 			<partEfficiency>0.50</partEfficiency>
 		</addedPartProps>
 		<spawnThingOnRemoved>SimpleProstheticForearm</spawnThingOnRemoved>
-		<modExtensions>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Humerus</li>
-					<li>Radius</li>
-				</ignoredSubParts>
-			</li>
-		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
@@ -336,14 +318,6 @@
 		<addedPartProps>
 			<partEfficiency>0.85</partEfficiency>
 		</addedPartProps>
-		<modExtensions>
-			<li Class="MSE2.IgnoreSubParts">
-				<ignoredSubParts>
-					<li>Femur</li>
-					<li>Tibia</li>
-				</ignoredSubParts>
-			</li>
-		</modExtensions>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
