@@ -57,7 +57,9 @@ This is inspired by Medical System Expansion by Oreno.
 	</loadAfter>
 	<incompatibleWith>
 		<li>Abraxas.MSERevived</li>
-		<li>V1024.EliteArchotech</li>
+		<li>V1024.EliteArchotech</li>		<!-- already included -->
+		<li>craftedmutants.velcroboy333</li>		<!-- makes prostheses installable as extra limbs, which breaks balance -->
+		<li>teok25.archotechexpanded</li>		<!-- errors at game load -->
 	</incompatibleWith>
 
 </ModMetaData>
