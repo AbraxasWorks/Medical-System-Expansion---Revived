@@ -52,7 +52,7 @@
 		<workerClass>MSE2.Recipe_RemoveModules</workerClass>
 		<defName>MSE_RemoveModules</defName>
 		<label>remove modules</label>
-		<description>Remove a modules from a bodypart.</description>
+		<description>Remove all modules from a bodypart.</description>
 		<jobString>Removing modules.</jobString>
 		<isViolation>true</isViolation>
 	</RecipeDef>
