@@ -14,15 +14,20 @@
 		<success>Always</success>
 		<xpath>/Defs/HediffDef[@ParentName="AddedBodyPart_Limb_Bionic"][defName="BionicArm" or defName="BionicLeg"]/comps/li[@Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust"]</xpath>
 	</Operation>
-	
+
 	<!-- module crafting -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
-		<value>
-			<recipeUsers>
-				<li>TableBionics</li>
-			</recipeUsers>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>EPOE-Forked: Remove workbench patch</li>
+		</mods>
+		<nomatch Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
+			<value>
+				<recipeUsers>
+					<li>TableBionics</li>
+				</recipeUsers>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>
