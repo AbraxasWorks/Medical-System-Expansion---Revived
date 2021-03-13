@@ -4,9 +4,9 @@
 	<identifier>MSE2.Core</identifier>
 	<version>2.4.6</version>
 	<loadBefore>
-		<li>EPOE-Forked</li>
 	</loadBefore>
 	<loadAfter>
+		<li>EPOE-Forked</li>
 	</loadAfter>
 	<showCrossPromotions>false</showCrossPromotions>
 	<manifestUri></manifestUri>
