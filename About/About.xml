@@ -54,6 +54,7 @@ This is inspired by Medical System Expansion by Oreno.
 		<li>vat.epoeforked</li>
 		<li>vat.epoeforkedroyalty</li>
 		<li>Rah.RBSE</li>
+		<li>troopersmith1.rbsebacktobasics</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>Abraxas.MSERevived</li>
