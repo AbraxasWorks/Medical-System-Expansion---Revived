@@ -16,20 +16,26 @@
 	</Operation>
 
 	<!-- crafting -->
-
-	<Operation Class="PatchOperationAddOrMerge">
-		<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb" or @Name="BodyPartBionic_Bone"]</xpath>
-		<value>
-			<recipeMaker>
-				<soundWorking>RBSESound</soundWorking>
-				<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
-				<recipeUsers Inherit="False">
-					<li>BionicWorkbench</li>
-				</recipeUsers>
-			</recipeMaker>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RBSE Back to Basics Continued [1.0][1.1][1.2]</li>
+			<li>2040569399</li>
+		</mods>
+		<nomatch Class="PatchOperationAddOrMerge">
+			<xpath>/Defs/ThingDef[@Name="BodyPartBionic_Limb" or @Name="BodyPartBionic_Bone"]</xpath>
+			<value>
+				<recipeMaker>
+					<soundWorking>RBSESound</soundWorking>
+					<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+					<recipeUsers Inherit="False">
+						<li>BionicWorkbench</li>
+					</recipeUsers>
+				</recipeMaker>
+			</value>
+		</nomatch>
 	</Operation>
-	
+
+
 	<!-- module crafting -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[@Name="MSE_ModuleBionic"]/recipeMaker/recipeUsers</xpath>
