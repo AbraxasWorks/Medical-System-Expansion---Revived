@@ -152,7 +152,7 @@
 			</xpath>
 		</nomatch>
 		<!-- they move these recipes to the fabrication bench -->
-		<match>
+		<match Class="PatchOperationRemove">
 			<xpath>
 				/Defs/ThingDef[defName="FabricationBench"]/recipes/li
 				[text()="MakePowerArm" or
