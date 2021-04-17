@@ -122,19 +122,6 @@
 			defName="MakePowerClaw"]
 		</xpath>
 	</Operation>
-<!--
-	<Operation Class="PatchOperationRemove">
-		<xpath>
-			/Defs/ThingDef[defName="BionicWorkbench"]/recipes/li
-			[text()="MakePowerArm" or
-			text()="MakeBionicArm" or
-			text()="MakeBionicHand" or
-			text()="MakeBionicLeg" or
-			text()="MakeBionicFoot" or
-			text()="MakePowerClaw"]
-		</xpath>
-	</Operation>
--->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>RBSE Back to Basics Continued [1.0][1.1][1.2]</li>
