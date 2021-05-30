@@ -1,5 +1,3 @@
-[i]To continue playing on the previous version [url=https://github.com/AbraxasWorks/Medical-System-Expansion---Revived/releases/tag/v3.21]click here.[/url][/i]
-
 [h1]Features[/h1]
 Improves how the game handles prosthetics by not discarding the sub-parts of added prostheses. This makes it so adding bionic parts doesn't reduce the total health of the pawn, and the sub-parts can be damaged.
 [list]
@@ -28,14 +26,28 @@ Patched mods:[list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1725545225]CyberNet[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2045064990]Cybernetic Organism and Neural Network[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856]Alpha Animals[/url] (mutant arm and mutant leg)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1467604976]Archotech Expanded Prosthetics[/url]
 [/list]
 
 Known incompatibilities:[list]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=735106432]EdB Prepare Carefully[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848]Character Editor[/url]: adding limb hediffs doesn't work properly
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=735106432]EdB Prepare Carefully[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848]Character Editor[/url]: minor issues when adding limb hediffs
+[*]Archotech Expanded breaks some stuff on game load.
 [/list]
 If a mod not explicitly listed here adds limb prostheses, they will behave like vanilla (it will show a warning in the debug log after the game is loaded).
 If a mod adds races with limbs that have different parts from normal humans, human prostheses will not work properly on them; if they have the same kinds of parts but in different numbers (i.e. 3 fingers instead of 5), or if they have been patched, MSE2 will generate a new limb version.
 If you wish for a mod to be patched, you can request it in the Compatibility discussion below (no promises).
+
+
+[h1]FAQ[/h1]
+[h3]What happened to my advanced bionics?[/h3]
+MSE2 removes the advanced bionic tier of limbs, because they are made redundant by installing an [i]Advanced processing module[/i] on a normal bionic limb.
+[h3]What modules can I install on my prosthesis?[/h3]
+The description of prosthetics contains an entry indicating how many module slots it contains, as well as the list of modules that can be installed on it.
+[h3]What is a segment?[/h3]
+A segment is a piece of a prosthesis, for example a hand without fingers, or just the shoulder part of an arm. In the crafting menu you can find different recipes to craft both a segment or an entire limb; if you have race mods with slightly different limbs you will also find recipes for prostheses compatible with their body.
+[h3]I can't install a prosthesis?!?[/h3]
+Only limbs that are compatible with a pawn will be installable. You can check the entry labelled "Compatible versions" in a prosthesis's description to see what races it can be installed on, and you can use the "Add part" buttons to add the missing parts.
+
 
 
 [h1]Adding to pre-existing saves[/h1]
