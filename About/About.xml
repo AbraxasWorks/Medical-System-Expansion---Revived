@@ -5,13 +5,14 @@
 	<author>JonM0</author>
 	<supportedVersions>
 		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
 
 	<packageId>MSE2.Core</packageId>
 
 	<url>https://github.com/AbraxasWorks/Medical-System-Expansion---Revived</url>
 	<description>
-Version: 2.4.6
+Version: 4.7
 
 Improves how the game handles prosthetics by not discarding the subparts of added prostheses, and adds prosthetic modules.
 
