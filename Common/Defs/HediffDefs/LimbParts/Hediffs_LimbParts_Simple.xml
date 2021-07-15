@@ -38,7 +38,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticArm</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.50</partEfficiency>
+			<partEfficiency>0.75</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 
@@ -107,7 +107,7 @@
 			<ThingDef>SimpleProstheticForearm</ThingDef>
 		</descriptionHyperlinks>
 		<addedPartProps>
-			<partEfficiency>0.50</partEfficiency>
+			<partEfficiency>0.75</partEfficiency>
 		</addedPartProps>
 		<spawnThingOnRemoved>SimpleProstheticForearm</spawnThingOnRemoved>
 	</HediffDef>
@@ -115,7 +115,7 @@
 	<ThingDef ParentName="BodyPartProsthetic_Limb">
 		<defName>SimpleProstheticForearm</defName>
 		<label>prosthetic forearm</label>
-		<description>An advanced artificial forearm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<description>A forearm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real forearm.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallSimpleProstheticForearm</RecipeDef>
 		</descriptionHyperlinks>
@@ -179,7 +179,7 @@
 		<!-- verbs added via patch -->
 		<spawnThingOnRemoved>SimpleProstheticHand</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.50</partEfficiency>
+			<partEfficiency>0.70</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 
@@ -249,7 +249,7 @@
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticFinger</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.50</partEfficiency>
+			<partEfficiency>0.65</partEfficiency>
 		</addedPartProps>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
