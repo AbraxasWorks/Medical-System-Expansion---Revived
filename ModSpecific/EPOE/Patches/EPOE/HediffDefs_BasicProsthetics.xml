@@ -20,6 +20,13 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[@ParentName="addedPartBasic"][defName="SteelArm"]/addedPartProps/partEfficiency</xpath>
+		<value>
+			<partEfficiency>0.12</partEfficiency>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/RecipeDef[defName="InstallSteelArm"]/appliedOnFixedBodyParts</xpath>
 		<value>
 			<appliedOnFixedBodyParts>
