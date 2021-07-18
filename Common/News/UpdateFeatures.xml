@@ -19,12 +19,23 @@
 		<defName>MSE2_4_0</defName>
 		<assemblyVersion>4.0</assemblyVersion>
 		<content><![CDATA[
-			<b>This update will cause some errors and warnings when saves are loaded for the first time, as well as remove some items. We recommend you back up your game and suggest you use dev mode to compensate the lost items.</b>
+			<b>This update will cause some errors and warnings when old saves are loaded for the first time, as well as remove some items. We recommend you back up your game and suggest you use dev mode to compensate the lost items.</b>
 			|Main changes include:
 <b>1) Alien Races support</b> using prosthesis versions, with version specific crafting recipes
 <b>2) New and improved modules</b>, with added <i>Elite Bionics Framework</i> and <i>Cybernetic Organism and Neural Network</i> support
 <b>3) Removed <i>Advanced Bionic</i> and <i>Power</i> tiers of bionic limbs</b> as they are made redundant by the new modules (<i>Advanced processing module</i>)
 			|If you wish to keep playing the previous version, you can find a github link on the workshop page.
+		]]></content>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureMSE2">
+		<defName>MSE2_4_8</defName>
+		<assemblyVersion>4.8</assemblyVersion>
+		<content><![CDATA[			
+			|New features:
+			|You can now install incomplete prothetics.
+			|img:UI/Widgets/FullHand,UI/Widgets/HalfHand|caption:Use the hand button to allow or forbid the usage of incomplete prostheses from the installation bill.
+			|You can now also makeshift repair prostheses (like a missing hand on a bionic arm) using some steel and components.
 		]]></content>
 	</HugsLib.UpdateFeatureDef>
 

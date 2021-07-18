@@ -43,4 +43,9 @@
 	<ModuleHolder_Compatible_ReportText>The following modules can be installed in slots belonging to this bionic:</ModuleHolder_Compatible_ReportText>
 
 
+	<!-- Bills -->
+	<Bill_MedicalLimbAware_AllowIncomplete>Allow installation of incomplete prostheses.</Bill_MedicalLimbAware_AllowIncomplete>
+	<Bill_MedicalLimbAware_OnlyComplete>Only allow installation of compatible prostheses.</Bill_MedicalLimbAware_OnlyComplete>
+
+
 </LanguageData>
