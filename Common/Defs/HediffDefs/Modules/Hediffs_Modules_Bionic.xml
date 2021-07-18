@@ -330,5 +330,88 @@
 		<addsHediff>ModuleEfficiency</addsHediff>
 	</RecipeDef>
 
+	<!-- Crafting tools module -->
+
+	<HediffDef ParentName="MSE_ModuleAddedBionic">
+		<defName>CraftingToolsModule</defName>
+		<label>crafting tools module</label>
+		<labelNoun>a crafting tools module</labelNoun>
+		<description>An installed crafting tools module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CraftingToolsModule</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statFactors>
+					<ConstructSuccessChance>1.15</ConstructSuccessChance>
+					<FixBrokenDownBuildingSuccessChance>1.15</FixBrokenDownBuildingSuccessChance>
+
+					<ButcheryMechanoidEfficiency>1.15</ButcheryMechanoidEfficiency>
+				</statFactors>
+				<statOffsets>
+					<ConstructionSpeed>0.2</ConstructionSpeed>
+					<ButcheryMechanoidSpeed>0.1</ButcheryMechanoidSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.08</offset>
+          </li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>CraftingToolsModule</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="MSE_ModuleBionic">
+		<defName>CraftingToolsModule</defName>
+		<label>crafting tools module</label>
+		<description>A crafting tools module. Provides screwdrivers, shears, welders and other miniaturized mechanical tools to help with smithing, producing items and building. The tools can be retracted to allow normal functionality of the part, however its overall ungainlyness slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallCraftingToolsModule</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Gold>10</Gold>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="MSE_SurgeryInstallModuleBase">
+		<defName>InstallCraftingToolsModule</defName>
+		<label>install crafting tools module</label>
+		<description>Install a crafting tools module.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CraftingToolsModule</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing crafting tools module.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CraftingToolsModule</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CraftingToolsModule</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>CraftingToolsModule</addsHediff>
+	</RecipeDef>
 
 </Defs>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>MakeshiftRepair</defName>
+		<label>makeshift repair</label>
+		<labelNoun>a temporary repair to a prosthesis</labelNoun>
+		<!-- <labelNounPretty>missing a {1}</labelNounPretty> -->
+		<description>This is a temporary repair to a prosthesis, it is worse than the original part, but it is better than nothing.</description>
+
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(0.5, 0.5, 0.8)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>false</priceImpact>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<partEfficiency>0.5</partEfficiency>
+			<solid>true</solid>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<modExtensions>
+			<li Class="MSE2.MSE_cachedStandardParents">
+				<standardParents>
+					<li>MakeshiftRepair</li>
+				</standardParents>
+			</li>
+		</modExtensions>
+		<spawnThingOnRemoved>Steel</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<workerClass>MSE2.Surgey_MakeShiftRepair</workerClass>
+
+		<defName>MakeshiftRepair</defName>
+		<label>makeshift repair</label>
+		<description>Repair a prosthesis using raw materials.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MakeshiftRepair</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Repairing prosthesis.</jobString>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+
+		<addsHediff>MakeshiftRepair</addsHediff>
+
+		<workAmount>3500</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+
+		<modExtensions>
+			<li Class="MSE2.AutoRecipeUsers">
+				<minIntelligence>Humanlike</minIntelligence>
+				<bodySizeRange>0.7~1.2</bodySizeRange>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>
