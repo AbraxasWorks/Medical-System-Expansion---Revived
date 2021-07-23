@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechEye</defName>
+		<label>archotech eye</label>
+		<description>An artifical eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Externally, it looks like a natural human eye, except it can change color at will. Requires archotech surgery research to install it.</description>
+		<!-- <costList>
+			<Uranium>25</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList> -->
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<!-- <WorkToMake>90000</WorkToMake> -->
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechArm</defName>
+		<label>archotech arm</label>
+		<description>An artifical arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<!-- <costList>
+			<Uranium>25</Uranium>
+			<Gold>30</Gold>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList> -->
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<!-- <WorkToMake>70000</WorkToMake> -->
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLeg</defName>
+		<label>archotech leg</label>
+		<description>An artifical leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<!-- <costList>
+			<Uranium>25</Uranium>
+			<Gold>30</Gold>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList> -->
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<!-- <WorkToMake>70000</WorkToMake> -->
+			<Mass>7</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--============== Archotech Organs ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHeart</defName>
+		<label>archotech heart</label>
+		<description>An artifical heart built by an archotech. It more efficient than natural heart and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechStomach</defName>
+		<label>archotech stomach</label>
+		<description>An artifical stomach built by an archotech. It more efficient than natural stomach and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLung</defName>
+		<label>archotech lung</label>
+		<description>An artifical lung built by an archotech. It more efficient than natural lung and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechKidney</defName>
+		<label>archotech kidney</label>
+		<description>An artifical kidney built by an archotech. It more efficient than natural kidney and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechLiver</defName>
+		<label>archotech liver</label>
+		<description>An artifical liver built by an archotech. It more efficient than natural liver and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Archotech Limbs ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechEar</defName>
+		<label>archotech ear</label>
+		<description>An artifical ear built by an archotech. It looks and feels like natural ear, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFoot</defName>
+		<label>archotech foot</label>
+		<description>An artifical foot built by an archotech. It looks and feels like natural foot, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechToe</defName>
+		<label>archotech toe</label>
+		<description>An artifical toe built by an archotech. It looks and feels like natural toe, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechShoulder</defName>
+		<label>archotech shoulder</label>
+		<description>An artifical shoulder built by an archotech. It looks and feels like natural shoulder, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>50</Gold>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHand</defName>
+		<label>archotech hand</label>
+		<description>An artifical hand built by an archotech. It looks and feels like natural hand, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFinger</defName>
+		<label>archotech finger</label>
+		<description>An artifical finger built by an archotech. It looks and feels like natural finger, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechJaw</defName>
+		<label>archotech jaw</label>
+		<description>An artifical jaw built by an archotech. It looks and feels like natural jaw, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Archotech Bones ================-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechSpine</defName>
+		<label>archotech spine</label>
+		<description>An artifical spine built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>30</Gold>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechClavicle</defName>
+		<label>archotech clavicle</label>
+		<description>An artifical clavicle built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechSternum</defName>
+		<label>archotech sternum</label>
+		<description>An artifical sternum built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>5</Uranium>
+			<Gold>10</Gold>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechRib</defName>
+		<label>archotech rib</label>
+		<description>An artifical rib built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechPelvis</defName>
+		<label>archotech pelvis</label>
+		<description>An artifical pelvis built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechHumerus</defName>
+		<label>archotech humerus</label>
+		<description>An artifical humerus built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechRadius</defName>
+		<label>archotech radius</label>
+		<description>An artifical radius built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechFemur</defName>
+		<label>archotech femur</label>
+		<description>An artifical femur built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotech">
+		<defName>ArchotechTibia</defName>
+		<label>archotech tibia</label>
+		<description>An artifical tibia built by an archotech. It's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>15</Uranium>
+			<Gold>20</Gold>
+			<Plasteel>30</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<!--============== Special Archotech ===============-->
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedAntitoxinKidney</defName>
+		<label>advanced antitoxin kidney</label>
+		<description>An advanced antitoxin kidney built by an archotech. It more efficient than natural kidney, has advanced toxin filtering system, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedMedicalLiver</defName>
+		<label>advanced medical liver</label>
+		<description>An advanced medical liver built by an archotech. It more efficient than natural liver, can secreted more kind of immune system, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedEnergizedLiver</defName>
+		<label>advanced energized liver</label>
+		<description>An advanced energized liver built by an archotech. It more efficient than natural liver, can secreted special hormone that make user more energetic, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>MSE_AdvancedPowerBlade</defName>
+		<label>advanced power blade</label>
+		<description>An advanced power blade built by an archotech. It looks and feels like natural shoulder, has scyther blade attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>65</Uranium>
+			<Gold>200</Gold>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>20</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>10000</MarketValue>
+			<WorkToMake>270000</WorkToMake>
+			<Mass>12</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>ArchotechWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedPowerArm</defName>
+		<label>advanced power arm</label>
+		<description>An advanced power arm built by an archotech. It looks and feels like natural arm, have high blunt damage, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>40</Uranium>
+			<Gold>80</Gold>
+			<Plasteel>80</Plasteel>
+			<ComponentSpacer>16</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<WorkToMake>210000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>ArchotechWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedPowerClaw</defName>
+		<label>advanced power claw</label>
+		<description>An advanced power claw built by an archotech. It looks and feels like natural hand, has sharp claw attached to it, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>60</Gold>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>3500</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>ArchotechWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedBreathingSupportRib</defName>
+		<label>advanced breathing support rib</label>
+		<description>An advanced breathing support rib built by an archotech. It can make user breath more ease and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedRelaxationRib</defName>
+		<label>advanced relaxation rib</label>
+		<description>An advanced relaxation rib built by an archotech. It can make user feel more relaxed and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedColdRegulatorRib</defName>
+		<label>advanced cold regulator rib</label>
+		<description>An advanced cold regulator rib built by an archotech. It can support blood to regulate cold temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartArchotechSpecial">
+		<defName>AdvancedHeatRegulatorRib</defName>
+		<label>advanced heat regulator rib</label>
+		<description>An advanced heat regulator rib built by an archotech. It can support blood to regulate hot temperature and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Requires archotech surgery research to install it.</description>
+		<costList>
+			<Uranium>25</Uranium>
+			<Gold>40</Gold>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>
